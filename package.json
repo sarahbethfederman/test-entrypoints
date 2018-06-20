@@ -1,0 +1,54 @@
+{
+  "name": "lendi-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "build-storybook",
+    "build-lib-watch": "tsc -w",
+    "test": "./node_modules/.bin/jest",
+    "storybook": "start-storybook -p 6006",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "precommit": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/helper-plugin-utils": "^7.0.0-beta.51",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-beta.46",
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "@storybook/addon-actions": "^3.4.7",
+    "@storybook/addon-info": "^3.4.7",
+    "@storybook/addon-knobs": "^3.4.7",
+    "@storybook/react": "4.0.0-alpha.9",
+    "@types/enzyme": "^3.1.10",
+    "@types/jest": "^23.1.0",
+    "@types/react": "^16.4.0",
+    "@types/react-dom": "^16.0.6",
+    "awesome-typescript-loader": "^5.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "enzyme": "^3.3.0",
+    "husky": "^0.14.3",
+    "jest": "^23.1.0",
+    "lint-staged": "^7.2.0",
+    "prettier": "^1.13.5",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0",
+    "source-map-loader": "^0.2.3",
+    "storybook-addon-jsx": "^5.3.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "rootDir": "src/components"
+  }
+}
