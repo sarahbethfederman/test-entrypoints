@@ -15,6 +15,7 @@ export interface Props {
 const noop = () => {}; // tslint:disable-line
 export const Button = (props: Props) => {
   const { label, onClick, disabled = false } = props;
+
   return (
     <button
       disabled={disabled}

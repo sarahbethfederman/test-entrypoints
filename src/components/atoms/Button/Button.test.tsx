@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import React from 'react';
 
-import { Button } from '../Button/Button';
+import { Button } from './Button';
 
 it('renders', () => {
   const result = shallow(
@@ -14,3 +14,7 @@ it('renders', () => {
 
   expect(result).toBeTruthy();
 });
+
+test("Simple sum", () => {
+  expect(3 + 5).toBe(8);
+})

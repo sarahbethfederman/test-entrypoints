@@ -1,0 +1,27 @@
+{
+  "name": "@trycatchally/button",
+  "version": "0.0.4",
+  "description": "",
+  "main": "build/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "lint": "tsc lib/*.tsx --jsx react"
+  },
+  "keywords": [],
+  "author": "Lendi Devs",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "publishConfig": {}
+}

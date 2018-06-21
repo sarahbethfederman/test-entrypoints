@@ -6,7 +6,7 @@
   "scripts": {
     "build": "build-storybook",
     "build-lib-watch": "tsc -w",
-    "test": "jest --config .jestrc.js",
+    "test": "jest --config ./.jestrc.js",
     "storybook": "start-storybook -p 6006",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
     "precommit": "npm test"
@@ -28,6 +28,7 @@
     "@types/react-dom": "^16.0.6",
     "awesome-typescript-loader": "^5.1.0",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
     "jest": "^23.1.0",
     "lint-staged": "^7.2.0",
@@ -40,8 +41,5 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-react": "^3.6.0",
     "typescript": "^2.9.2"
-  },
-  "jest": {
-    "rootDir": "src/components"
   }
 }
