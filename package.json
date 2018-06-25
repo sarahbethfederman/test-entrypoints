@@ -9,13 +9,14 @@
     "test": "jest --config ./.jestrc.js",
     "storybook": "start-storybook -p 6006",
     "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "precommit": "npm test"
+    "precommit": "$npm_execpath test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "styled-components": "^3.3.3"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.7",
@@ -31,6 +32,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
     "jest": "^23.1.0",
+    "lerna": "^2.11.0",
     "lint-staged": "^7.2.0",
     "prettier": "^1.13.5",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",

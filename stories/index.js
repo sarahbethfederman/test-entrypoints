@@ -1,11 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Button from '../src/components/atoms/Button.tsx';
+import Button from '../src/components/atoms/Button/lib/Button.tsx';
 
 storiesOf('Button', module)
   .add('with text', () => {
-    console.log(Button);
     return (
       <Button onClick={action('clicked')}>Hello Button</Button>
     );

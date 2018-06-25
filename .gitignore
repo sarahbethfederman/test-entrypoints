@@ -1,4 +1,7 @@
-/node_modules
+.DS_Store
 /build
-/dist
 /storybook-static
+**/coverage/*
+**/dist/*
+**/node_modules/*
+**/yarn-error.log
