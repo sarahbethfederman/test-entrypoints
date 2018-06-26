@@ -1,14 +1,13 @@
-import { shallow } from 'enzyme';
-import React from 'react';
+import * as Enzyme from 'enzyme';
+import * as React from 'react';
 
 import { Button } from './Button';
 
 it('renders', () => {
-  const result = shallow(
+  const result = Enzyme.shallow(
     <Button
       label={"label"}
       disabled={false}
-      onClick={() => {}}
     />
   );
 
@@ -17,4 +16,4 @@ it('renders', () => {
 
 test("Simple sum", () => {
   expect(3 + 5).toBe(8);
-})
+});

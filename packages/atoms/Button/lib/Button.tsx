@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from './theme';
+import * as React from 'react';
+import styled from 'styled-components';
 
-export interface Props {
+export interface IProps {
   /** this dictates what the button will say  */
   label: string;
   /** this dictates what the button will do  */
@@ -10,7 +10,7 @@ export interface Props {
    * Disables onclick
    *
    * @default false
-   **/
+   */
   disabled?: boolean;
 }
 
@@ -18,15 +18,13 @@ const ButtonWrapper = styled.button`
   background-color: coral;
 `;
 
-const noop = () => {}; // tslint:disable-line
-
-export const Button = (props: Props) => {
+export const Button = (props: IProps) => {
   const { label, onClick, disabled = false } = props;
 
   return (
     <ButtonWrapper
       disabled={disabled}
-      onClick={!disabled ? onClick : noop}
+      onClick={!disabled ? onClick : undefined}
     >
       <span>{label}</span>
     </ButtonWrapper>

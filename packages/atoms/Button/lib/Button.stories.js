@@ -1,0 +1,32 @@
+import React from 'react';
+
+import { text, boolean } from '@storybook/addon-knobs/react';
+import { storiesOf } from '@storybook/react';
+
+import { Button } from './Button.tsx';
+
+import { wInfo } from '../../../../utils';
+
+storiesOf('Components/Button', module).addWithJSX(
+  'basic Button',
+  wInfo(`
+
+  ### Notes
+
+  This is a button
+
+  ### Usage
+  ~~~js
+  <Button
+    label={'Enroll'}
+    disabled={false}
+    onClick={() => alert('hello there')}
+  />
+  ~~~`)(() => (
+    <Button
+      label={text('label', 'Enroll')}
+      disabled={boolean('disabled', false)}
+      onClick={() => {}}
+    />
+  ))
+);

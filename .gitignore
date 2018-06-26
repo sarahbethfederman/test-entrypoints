@@ -1,6 +1,7 @@
 .DS_Store
 /build
 /storybook-static
+lerna-debug.log
 **/coverage/*
 **/dist/*
 **/node_modules/*

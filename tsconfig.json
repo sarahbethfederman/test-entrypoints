@@ -18,6 +18,14 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "build", "scripts"]
+  "include": [
+    "packages/**/lib/**/*.tsx",
+    "packages/**/lib/**/*.ts"
+  ],
+  "exclude": [
+    "**/node_modules", 
+    "**/dist",
+    "**/lib/*.test.tsx", 
+    "**/lib/*.stories.tsx"
+  ]
 }
