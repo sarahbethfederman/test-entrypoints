@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "lerna clean",
     "bootstrap": "yarn install && lerna bootstrap --hoist",
-    "build": "build-storybook",
-    "build-lib-watch": "tsc -w",
+    "lint": "lerna run lint",
+    "build:packages": "lerna run build",
+    "build:storybook": "build-storybook",
+    "build": "yarn run build:packages && yarn run build:storybook",
     "test": "jest --config ./.jestrc.js",
-    "storybook": "start-storybook -p 6006",
-    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
-    "precommit": "$npm_execpath test",
-    "clean": "lerna clean"
+    "start": "start-storybook -p 6006",
+    "precommit": "$npm_execpath test"
   },
   "author": "",
   "license": "ISC",
