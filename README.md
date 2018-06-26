@@ -3,8 +3,7 @@
 ![King Louie](https://vignette.wikia.nocookie.net/ryans-funny-parts/images/7/71/King-louie.jpg/revision/latest?cb=20160613001549)
 
 ## Getting started 
-1. `yarn`
-2. `npx lerna bootstrap --hoist`
+1. `yarn bootstrap`
 3. `yarn start`
 
 ## Creating a component (TODO)
