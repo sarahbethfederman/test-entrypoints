@@ -1,0 +1,30 @@
+image: node:latest
+
+pipelines:
+  default:
+
+    - parallel:
+
+      - step:
+          name: Lint ✔︎
+          caches:
+            - node
+          script:
+            - yarn
+            - yarn run lint
+
+      - step:
+          name: Build ⚒
+          caches:
+            - node
+          script:
+            - yarn
+            - yarn run build
+
+      - step:
+          name: Test 🤖
+          caches:
+            - node
+          script:
+            - yarn
+            - yarn run test
