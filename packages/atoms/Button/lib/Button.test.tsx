@@ -6,8 +6,9 @@ import { Button } from './Button';
 it('renders', () => {
   const result = Enzyme.shallow(
     <Button
-      label={"label"}
+      label="label"
       disabled={false}
+      onClick={undefined}
     />
   );
 
