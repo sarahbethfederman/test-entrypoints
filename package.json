@@ -4,16 +4,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "clean": "lerna clean && rm -rf storybook-static",
-    "lint": "lerna run lint",
-    "build:packages": "lerna run build",
-    "build:storybook": "build-storybook",
-    "build": "yarn run build:packages && yarn run build:storybook",
-    "test": "jest --config ./.jestrc.js",
-    "start": "start-storybook -p 6006",
-    "precommit": "$npm_execpath test"
-  },
   "author": "",
   "license": "ISC",
   "workspaces": ["packages/atoms/*"],
@@ -38,6 +28,7 @@
     "jest": "^23.1.0",
     "lerna": "^2.11.0",
     "lint-staged": "^7.2.0",
+    "netlify": "^1.2.0",
     "prettier": "^1.13.5",
     "react-docgen-typescript-webpack-plugin": "^1.1.0",
     "source-map-loader": "^0.2.3",
@@ -47,5 +38,15 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-react": "^3.6.0",
     "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "clean": "lerna clean && rm -rf node_modules storybook-static",
+    "lint": "lerna run lint",
+    "build:packages": "lerna run build",
+    "build:storybook": "build-storybook",
+    "build": "yarn run build:packages && yarn run build:storybook",
+    "test": "jest --config ./.jestrc.js",
+    "start": "start-storybook -p 6006",
+    "precommit": "$npm_execpath test"
   }
 }

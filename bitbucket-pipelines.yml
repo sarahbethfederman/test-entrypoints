@@ -3,28 +3,41 @@ image: node:latest
 pipelines:
   default:
 
+    - step:
+        name: ⬇️ Install
+        caches:
+          - node
+        script:
+          - yarn 
+
     - parallel:
 
       - step:
-          name: Lint ✔︎
+          name: ✅ Lint
           caches:
             - node
           script:
-            - yarn
             - yarn run lint
 
       - step:
-          name: Build ⚒
+          name: ⚒ Build
           caches:
             - node
+          artifacts:
+            - "storybook-static/**"
           script:
-            - yarn
             - yarn run build
 
       - step:
-          name: Test 🤖
+          name: 📝 Test
           caches:
             - node
           script:
-            - yarn
             - yarn run test
+
+    - step:
+        name: 🚀 Deploy
+        caches:
+          - node
+        script:
+          - node ./scripts/deploy.js
