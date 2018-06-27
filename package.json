@@ -1,11 +1,11 @@
 {
   "name": "lendi-ui",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "lerna clean",
-    "bootstrap": "yarn install && lerna bootstrap --hoist",
+    "clean": "lerna clean && rm -rf storybook-static",
     "lint": "lerna run lint",
     "build:packages": "lerna run build",
     "build:storybook": "build-storybook",
@@ -16,6 +16,7 @@
   },
   "author": "",
   "license": "ISC",
+  "workspaces": ["packages/atoms/*"],
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
