@@ -7,7 +7,9 @@
   "author": "",
   "license": "ISC",
   "workspaces": [
-    "packages/atoms/*"
+    "packages/atoms/*",
+    "packages/utils/*",
+    "packages/website"
   ],
   "dependencies": {
     "react": "^16.4.0",
@@ -15,15 +17,10 @@
     "styled-components": "^3.3.3"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.4.7",
-    "@storybook/addon-info": "^3.4.7",
-    "@storybook/addon-knobs": "^3.4.7",
-    "@storybook/react": "4.0.0-alpha.9",
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^23.1.0",
     "@types/react": "^16.4.0",
     "@types/react-dom": "^16.0.6",
-    "awesome-typescript-loader": "^5.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "husky": "^0.14.3",
@@ -33,9 +30,6 @@
     "netlify": "^1.2.0",
     "prettier": "^1.13.5",
     "prettier-check": "^2.0.0",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0",
-    "source-map-loader": "^0.2.3",
-    "storybook-addon-jsx": "^5.3.0",
     "ts-jest": "^22.4.6",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
@@ -43,13 +37,12 @@
     "typescript": "^2.9.2"
   },
   "scripts": {
-    "clean": "lerna clean && rm -rf node_modules storybook-static",
-    "lint": "lerna run lint",
-    "build:packages": "lerna run build",
-    "build:storybook": "build-storybook",
-    "build": "yarn run build:packages && yarn run build:storybook",
+    "clean": "lerna exec \"rm -rf dist\" && lerna clean && rm -rf node_modules",
+    "lint": "tslint packages/**/src/*.ts packages/**/src/*.tsx",
+    "build": "lerna run build",
     "test": "jest --config ./.jestrc.js",
-    "start": "start-storybook -p 6006",
+    "start": "cd packages/website && yarn start",
+    "deploy": "lerna run deploy",
     "precommit": "yarn run lint && yarn run test && yarn run lint-staged"
   },
   "lint-staged": {

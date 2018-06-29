@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.sources.json",
+  "compilerOptions": {
+    "declaration": false
+  },
+  "include": ["packages/*/*/src/**/*.test.ts", "packages/*/*/src/**/*.test.tsx"]
+}

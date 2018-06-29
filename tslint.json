@@ -1,14 +1,12 @@
 {
   "defaultSeverity": "error",
-  "extends": [
-    "tslint:recommended",
-    "tslint-react", 
-    "tslint-config-prettier"
-  ],
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "jsRules": {},
   "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
     "no-unused-expression": false,
-    "interface-name" : [true, "never"]
+    "interface-name": [true, "never"]
   },
   "rulesDirectory": []
 }

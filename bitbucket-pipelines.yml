@@ -7,37 +7,46 @@ pipelines:
         name: ⬇️ Install
         script:
           - yarn 
-
-        # save installing in the next few steps
-        artifacts:
-          - "node_modules/**"
-          - "**/node_modules/**"
-
-        # save installing on the next time we build
         caches:
-          - node
+          - nodemonorepo
 
     - parallel:
 
       - step:
           name: ✅ Lint
           script:
+            - yarn
             - yarn run lint
             #- "\"$(yarn bin)/prettier-check\" \"**/*.{json,js,jsx,ts,tsx,md}\""
+          caches:
+            - nodemonorepo
 
       - step:
           name: ⚒ Build
           script:
+            - yarn
             - yarn run build
+          caches:
+            - nodemonorepo 
           artifacts:
-            - "storybook-static/**"
+            - "**/dist/**"
 
       - step:
           name: 📝 Test
           script:
+            - yarn
             - yarn run test
+          caches:
+            - nodemonorepo
 
     - step:
         name: 🚀 Deploy
         script:
-          - node ./scripts/deploy.js
+          - yarn
+          - yarn run deploy
+        caches:
+          - nodemonorepo
+
+definitions:
+  caches:
+    nodemonorepo: "**/node_modules/**"

@@ -6,8 +6,6 @@
     "target": "es5",
     "jsx": "react",
     "moduleResolution": "node",
-    "rootDirs": ["src", "stories"],
-    "baseUrl": "src",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
@@ -17,15 +15,5 @@
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true
-  },
-  "include": [
-    "packages/**/lib/**/*.tsx",
-    "packages/**/lib/**/*.ts"
-  ],
-  "exclude": [
-    "**/node_modules", 
-    "**/dist",
-    "**/lib/*.test.tsx", 
-    "**/lib/*.stories.tsx"
-  ]
+  }
 }

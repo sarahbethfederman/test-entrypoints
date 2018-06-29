@@ -1,0 +1,15 @@
+{
+  "name": "@lui/story-utils",
+  "private": true,
+  "version": "1.0.0",
+  "source": "src/index.tsx",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@types/storybook__addon-info": "^3.2.3",
+    "@storybook/addon-info": "^3.4.8"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
