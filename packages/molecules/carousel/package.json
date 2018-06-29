@@ -1,0 +1,28 @@
+{
+  "name": "@auscred/carousel",
+  "version": "0.0.1",
+  "main": "dist/Carousel.js",
+  "types": "dist/Carousel.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "lint": "tslint ./lib/*.tsx"
+  },
+  "keywords": [],
+  "author": "Lendi Devs",
+  "license": "ISC",
+  "devDependencies": {
+    "@lui/story-utils": "^1.0.0",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "peerDependencies": {
+    "@types/react": "^16.4.0",
+    "react": "^16.4.0",
+    "styled-components": "^3.3.3"
+  }
+}

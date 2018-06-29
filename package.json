@@ -8,6 +8,7 @@
   "license": "ISC",
   "workspaces": [
     "packages/atoms/*",
+    "packages/molecules/*",
     "packages/utils/*",
     "packages/website"
   ],
@@ -41,6 +42,7 @@
     "lint": "tslint packages/**/src/*.ts packages/**/src/*.tsx",
     "build": "lerna run build",
     "test": "jest --config ./.jestrc.js",
+    "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd packages/website && yarn start",
     "deploy": "lerna run deploy",
     "precommit": "yarn run lint && yarn run test && yarn run lint-staged"
