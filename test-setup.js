@@ -1,5 +1,5 @@
 /**
- * Defines the React 16 Adapter for Enzyme. 
+ * Defines the React 16 Adapter for Enzyme.
  */
 const enzyme = require('enzyme');
 const Adapter = require('enzyme-adapter-react-16');

@@ -17,7 +17,7 @@ pipelines:
           script:
             - yarn
             - yarn run lint
-            #- "\"$(yarn bin)/prettier-check\" \"**/*.{json,js,jsx,ts,tsx,md}\""
+            - "\"$(yarn bin)/prettier-check\" \"*.{json,js,jsx,ts,tsx,md}\" \"packages/*/*/src/**/*.{json,js,jsx,ts,tsx,md}\""
           caches:
             - nodemonorepo
 
