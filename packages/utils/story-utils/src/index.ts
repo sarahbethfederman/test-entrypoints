@@ -1,7 +1,7 @@
 // @ts-ignore
 import * as React from 'react';
 import { withInfo } from '@storybook/addon-info';
-const wInfoStyle = {
+export const wInfoStyle = {
   header: {
     h1: {
       marginRight: '20px',
