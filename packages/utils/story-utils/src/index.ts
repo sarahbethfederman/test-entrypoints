@@ -23,4 +23,5 @@ export const wInfoStyle = {
     lineHeight: '2',
   },
 };
+
 export const wInfo = (text: string) => withInfo({ inline: true, source: false, styles: wInfoStyle, text });
