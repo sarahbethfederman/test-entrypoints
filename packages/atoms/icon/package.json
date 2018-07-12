@@ -1,0 +1,25 @@
+{
+  "name": "@auscred/icon",
+  "version": "0.0.1",
+  "source": "src/Icon.tsx",
+  "main": "dist/Icon.js",
+  "types": "dist/Icon.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [],
+  "author": "Lendi Devs",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "@lui/story-utils": "^1.0.0",
+    "@storybook/addon-knobs": "^3.4.8",
+    "@types/storybook__addon-knobs": "^3.3.1"
+  },
+  "scripts": {
+    "build": "node ./src/build.js && tsc -p ./tsconfig.json"
+  },
+  "dependencies": {
+    "svg-sprite": "^1.4.0"
+  }
+}

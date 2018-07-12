@@ -4,3 +4,4 @@ lerna-debug.log
 **/dist/*
 **/node_modules/*
 **/yarn-error.log
+packages/website/static/sprite.symbol.svg
