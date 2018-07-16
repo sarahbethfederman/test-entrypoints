@@ -46,7 +46,6 @@ const iconList = [
   'transparent-convenient-home',
 ];
 
-// @ts-ignore - addWithJSX has no types
 storiesOf('Components/Icons', module).addWithJSX(
   'basic',
   wInfo(`

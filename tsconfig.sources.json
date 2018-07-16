@@ -16,5 +16,6 @@
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true
-  }
+  },
+  "files": ["typings/storybook-addon-jsx.d.ts"]
 }

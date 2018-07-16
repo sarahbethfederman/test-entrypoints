@@ -23,7 +23,6 @@ const Child = ({ label }: { label: string }) => (
   </div>
 );
 
-// @ts-ignore - addWithJSX has no types
 storiesOf('Components/Carousel', module).addWithJSX(
   'basic Carousel',
   wInfo(`

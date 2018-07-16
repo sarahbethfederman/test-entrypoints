@@ -4,7 +4,6 @@ import { storiesOf } from '@storybook/react';
 import { Button } from './Button';
 import { wInfo } from '@lui/story-utils';
 
-// @ts-ignore - addWithJSX has no types
 storiesOf('Components/Button', module).addWithJSX(
   'basic',
   wInfo(`
