@@ -1,11 +1,11 @@
 {
   "name": "@auscred/button",
   "version": "0.0.1",
-  "source": "src/Button.tsx",
-  "main": "dist/Button.js",
-  "types": "dist/Button.d.ts",
+  "source": "src/index.tsx",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",

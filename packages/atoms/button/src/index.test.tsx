@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
-import { Button } from './Button';
+import { Button } from './index';
 
 it('should render a button with children', () => {
   const node = mount(

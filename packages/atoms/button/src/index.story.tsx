@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { text, boolean } from '@storybook/addon-knobs/react';
 import { storiesOf } from '@storybook/react';
-import { Button } from './Button';
+import { Button } from './index';
 import { wInfo } from '@lui/story-utils';
 
 storiesOf('Components/Button', module).addWithJSX(
