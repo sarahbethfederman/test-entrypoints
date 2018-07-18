@@ -4,7 +4,7 @@
   "main": "dist/Carousel.js",
   "types": "dist/Carousel.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",

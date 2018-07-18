@@ -5,7 +5,7 @@
   "main": "dist/Colour.js",
   "types": "dist/Colour.d.js",
   "files": [
-    "lib"
+    "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",

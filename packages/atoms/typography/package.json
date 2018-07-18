@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "main": "dist/Typography.js",
   "types": "dist/Typography.d.ts",
-  "directories": {
-    "lib": "lib"
-  },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",

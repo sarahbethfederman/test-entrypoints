@@ -5,7 +5,7 @@
   "main": "dist/Icon.js",
   "types": "dist/Icon.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",
