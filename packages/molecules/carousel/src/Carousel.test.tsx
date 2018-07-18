@@ -18,21 +18,21 @@ describe('<Carousel />', () => {
       );
       jest.useFakeTimers();
     });
-    test('should be defined', () => {
+    it('should be defined', () => {
       expect(wrapper).toBeDefined();
     });
-    test('should render all slides', () => {
+    it('should render all slides', () => {
       expect(wrapper.find('.slide').length).toEqual(slides.length);
     });
-    test('should render an indicator for each slide', () => {
+    it('should render an indicator for each slide', () => {
       expect(wrapper.find('indicatorContainer span').length).toEqual(slides.length);
     });
-    test('should go to the next slide after the specified duration elapsed', () => {
+    it('should go to the next slide after the specified duration elapsed', () => {
       const currentActiveIdx = wrapper.state().activeIdx;
       jest.runAllTimers();
       expect(wrapper.state().activeIdx).toEqual(currentActiveIdx + 1);
     });
-    test('should repeat when the last slide duration elapsed', () => {
+    it('should repeat when the last slide duration elapsed', () => {
       wrapper
         .find('indicatorContainer span')
         .last()
@@ -41,7 +41,7 @@ describe('<Carousel />', () => {
       jest.runAllTimers();
       expect(wrapper.state().activeIdx).toEqual(0);
     });
-    test('should go to the selected slide', () => {
+    it('should go to the selected slide', () => {
       wrapper
         .find('indicatorContainer span')
         .last()

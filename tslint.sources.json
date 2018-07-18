@@ -6,7 +6,11 @@
     "ordered-imports": false,
     "object-literal-sort-keys": false,
     "no-unused-expression": false,
-    "interface-name": [true, "never"]
+    "interface-name": false,
+    "no-implicit-dependencies": true,
+    "mocha-avoid-only": true,
+    "member-ordering": false,
+    "jsx-no-lambda": false
   },
-  "rulesDirectory": []
+  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"]
 }

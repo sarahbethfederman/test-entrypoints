@@ -14,12 +14,7 @@
     "react": "^16.4.0",
     "styled-components": "^3.3.3"
   },
-  "devDependencies": {
-    "@lui/story-utils": "^1.0.0",
-    "@storybook/addon-knobs": "^3.4.8",
-    "@types/storybook__addon-knobs": "^3.3.1"
-  },
   "scripts": {
-    "build": "tsc -p ./tsconfig.json"
+    "build": "tsc --pretty"
   }
 }

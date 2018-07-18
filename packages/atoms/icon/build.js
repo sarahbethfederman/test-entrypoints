@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
+const directory = `${__dirname}/src/icons`;
+
 const spritify = new SVGSpriter({
   dest: 'dist',
   mode: {
@@ -11,13 +13,18 @@ const spritify = new SVGSpriter({
   },
 });
 
-fs.readdir(`${__dirname}/icons`, (err, files) => {
+fs.readdir(directory, (err, files) => {
+  if (err) {
+    console.error(err);
+    return;
+  }
+
   files.forEach((file) => {
     if (file.endsWith('.svg')) {
       spritify.add(
-        path.resolve(`${__dirname}/icons/${file}`),
+        path.resolve(`${directory}/${file}`),
         file,
-        fs.readFileSync(`${__dirname}/icons/${file}`, { encoding: 'utf-8' })
+        fs.readFileSync(`${directory}/${file}`, { encoding: 'utf-8' })
       );
     }
   });

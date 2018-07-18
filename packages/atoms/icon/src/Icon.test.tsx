@@ -6,11 +6,11 @@ import { Icon } from './Icon';
  * Parses all elements on the DOM, checks no duplicate ids
  */
 const hasMultipleIds = () => {
-  var ids = {};
-  var all = document.getElementsByTagName('*');
+  const ids = {};
+  const all = document.getElementsByTagName('*');
 
-  for (var i = 0, l = all.length; i < l; i++) {
-    var id = all[i].id;
+  for (let i = 0, l = all.length; i < l; i++) {
+    const id = all[i].id;
     if (id) {
       if (ids[id]) {
         return true;
@@ -23,11 +23,11 @@ const hasMultipleIds = () => {
 };
 
 describe('Icon component', () => {
-  let textResolve = Promise.resolve('<svg />');
-  let fetchResponse = Promise.resolve({
+  const textResolve = Promise.resolve('<svg />');
+  const fetchResponse = Promise.resolve({
     text: () => textResolve,
   });
-  let fetchMock = jest.fn(() => fetchResponse);
+  const fetchMock = jest.fn(() => fetchResponse);
 
   beforeEach(() => {
     (window as any).fetch = fetchMock;

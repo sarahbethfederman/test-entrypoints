@@ -86,10 +86,10 @@ storiesOf('Components/Color', module)
           <ColorSwab backgroundColor={colorBrandPrimary}>
             <div>colorBrandPrimary</div> {colorBrandPrimary}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandPrimaryMedium} darkFont>
+          <ColorSwab backgroundColor={colorBrandPrimaryMedium} darkFont={true}>
             <div>colorBrandPrimaryMedium</div> {colorBrandPrimaryMedium}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandPrimaryLight} darkFont>
+          <ColorSwab backgroundColor={colorBrandPrimaryLight} darkFont={true}>
             <div>colorBrandPrimaryLight</div> {colorBrandPrimaryLight}
           </ColorSwab>
         </ColourContainer>
@@ -100,10 +100,10 @@ storiesOf('Components/Color', module)
           <ColorSwab backgroundColor={colorBrandSecondary}>
             <div>colorBrandSecondary</div> {colorBrandSecondary}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandSecondaryMedium} darkFont>
+          <ColorSwab backgroundColor={colorBrandSecondaryMedium} darkFont={true}>
             <div>colorBrandSecondaryMedium</div> {colorBrandSecondaryMedium}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandSecondaryLight} darkFont>
+          <ColorSwab backgroundColor={colorBrandSecondaryLight} darkFont={true}>
             <div>colorBrandSecondaryLight</div> {colorBrandSecondaryLight}
           </ColorSwab>
         </ColourContainer>
@@ -114,10 +114,10 @@ storiesOf('Components/Color', module)
           <ColorSwab backgroundColor={colorBrandTertiary}>
             <div>colorBrandTertiary</div> {colorBrandTertiary}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandTertiaryMedium} darkFont>
+          <ColorSwab backgroundColor={colorBrandTertiaryMedium} darkFont={true}>
             <div>colorBrandTertiaryMedium</div> {colorBrandTertiaryMedium}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandTertiaryLight} darkFont>
+          <ColorSwab backgroundColor={colorBrandTertiaryLight} darkFont={true}>
             <div>colorBrandTertiaryLight</div> {colorBrandTertiaryLight}
           </ColorSwab>
         </ColourContainer>
@@ -128,10 +128,10 @@ storiesOf('Components/Color', module)
           <ColorSwab backgroundColor={colorBrandQuaternary}>
             <div>colorBrandQuaternary</div> {colorBrandQuaternary}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandQuaternaryMedium} darkFont>
+          <ColorSwab backgroundColor={colorBrandQuaternaryMedium} darkFont={true}>
             <div>colorBrandQuaternaryMedium</div> {colorBrandQuaternaryMedium}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorBrandQuaternaryLight} darkFont>
+          <ColorSwab backgroundColor={colorBrandQuaternaryLight} darkFont={true}>
             <div>colorBrandQuaternaryLight</div> {colorBrandQuaternaryLight}
           </ColorSwab>
         </ColourContainer>
@@ -151,25 +151,25 @@ storiesOf('Components/Color', module)
     })(() => (
       <React.Fragment>
         <ColourContainer>
-          <ColorSwab backgroundColor={colorShadeLight1} darkFont>
+          <ColorSwab backgroundColor={colorShadeLight1} darkFont={true}>
             <div>colorShadeLight1</div> {colorShadeLight1}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeLight2} darkFont>
+          <ColorSwab backgroundColor={colorShadeLight2} darkFont={true}>
             <div>colorShadeLight2</div> {colorShadeLight2}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeLight3} darkFont>
+          <ColorSwab backgroundColor={colorShadeLight3} darkFont={true}>
             <div>colorShadeLight3</div> {colorShadeLight3}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeMedium1} darkFont>
+          <ColorSwab backgroundColor={colorShadeMedium1} darkFont={true}>
             <div>colorShadeMedium1</div> {colorShadeMedium1}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeMedium2} darkFont>
+          <ColorSwab backgroundColor={colorShadeMedium2} darkFont={true}>
             <div>colorShadeMedium2</div> {colorShadeMedium2}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeMedium3} darkFont>
+          <ColorSwab backgroundColor={colorShadeMedium3} darkFont={true}>
             <div>colorShadeMedium3</div> {colorShadeMedium3}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorShadeDark1} darkFont>
+          <ColorSwab backgroundColor={colorShadeDark1} darkFont={true}>
             <div>colorShadeDark1</div> {colorShadeDark1}
           </ColorSwab>
           <ColorSwab backgroundColor={colorShadeDark2}>
@@ -195,57 +195,57 @@ storiesOf('Components/Color', module)
     })(() => (
       <React.Fragment>
         <ColourContainer>
-          <ColorSwab backgroundColor={colorWarnDark} darkFont>
+          <ColorSwab backgroundColor={colorWarnDark} darkFont={true}>
             <div>colorWarnDark</div>
             {colorWarnDark}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorWarn} darkFont>
+          <ColorSwab backgroundColor={colorWarn} darkFont={true}>
             <div>colorWarn</div>
             {colorWarn}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorWarnLight} darkFont>
+          <ColorSwab backgroundColor={colorWarnLight} darkFont={true}>
             <div>colorWarnLight</div>
             {colorWarnLight}
           </ColorSwab>
         </ColourContainer>
         <ColourContainer>
-          <ColorSwab backgroundColor={colorInfoDark} darkFont>
+          <ColorSwab backgroundColor={colorInfoDark} darkFont={true}>
             <div>colorInfoDark</div>
             {colorInfoDark}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorInfo} darkFont>
+          <ColorSwab backgroundColor={colorInfo} darkFont={true}>
             <div>colorInfo</div>
             {colorInfo}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorInfoLight} darkFont>
+          <ColorSwab backgroundColor={colorInfoLight} darkFont={true}>
             <div>colorInfoLight</div>
             {colorInfoLight}
           </ColorSwab>
         </ColourContainer>
         <ColourContainer>
-          <ColorSwab backgroundColor={colorSuccessDark} darkFont>
+          <ColorSwab backgroundColor={colorSuccessDark} darkFont={true}>
             <div>colorSuccessDark</div>
             {colorSuccessDark}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorSuccess} darkFont>
+          <ColorSwab backgroundColor={colorSuccess} darkFont={true}>
             <div>colorSuccess</div>
             {colorSuccess}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorSuccessLight} darkFont>
+          <ColorSwab backgroundColor={colorSuccessLight} darkFont={true}>
             <div>colorSuccessLight</div>
             {colorSuccessLight}
           </ColorSwab>
         </ColourContainer>
         <ColourContainer>
-          <ColorSwab backgroundColor={colorDangerDark} darkFont>
+          <ColorSwab backgroundColor={colorDangerDark} darkFont={true}>
             <div>colorDangerDark</div>
             {colorDangerDark}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorDanger} darkFont>
+          <ColorSwab backgroundColor={colorDanger} darkFont={true}>
             <div>colorDanger</div>
             {colorDanger}
           </ColorSwab>
-          <ColorSwab backgroundColor={colorDangerLight} darkFont>
+          <ColorSwab backgroundColor={colorDangerLight} darkFont={true}>
             <div>colorDangerLight</div>
             {colorDangerLight}
           </ColorSwab>

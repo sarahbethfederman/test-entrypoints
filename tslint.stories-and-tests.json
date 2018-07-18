@@ -1,0 +1,8 @@
+{
+  "extends": ["./tslint.sources.json"],
+  "rules": {
+    // we've disabled the dependency check for devDependencies so we can add them once
+    // at the top level package.json to avoid adding them for every package
+    "no-implicit-dependencies": [false, "dev"]
+  }
+}

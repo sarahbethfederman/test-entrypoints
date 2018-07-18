@@ -4,22 +4,20 @@
   "source": "src/Icon.tsx",
   "main": "dist/Icon.js",
   "types": "dist/Icon.d.ts",
-  "directories": {
-    "lib": "lib"
-  },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",
+  "peerDependencies": {
+    "@types/react": "^16.4.6",
+    "react": "^16.4.1"
+  },
   "devDependencies": {
-    "jest": "^23.1.0",
-    "@lui/story-utils": "^1.0.0",
-    "@storybook/addon-knobs": "^3.4.8",
-    "@types/storybook__addon-knobs": "^3.3.1"
+    "svg-sprite": "^1.4.0"
   },
   "scripts": {
-    "build": "node ./src/build.js && tsc -p ./tsconfig.json"
-  },
-  "dependencies": {
-    "svg-sprite": "^1.4.0"
+    "build": "node ./build.js && tsc --pretty"
   }
 }

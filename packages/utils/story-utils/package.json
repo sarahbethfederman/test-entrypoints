@@ -5,9 +5,13 @@
   "source": "src/index.tsx",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "@types/react": "^16.4.6",
+    "react": "^16.4.1"
+  },
   "dependencies": {
-    "@types/storybook__addon-info": "^3.2.3",
-    "@storybook/addon-info": "^3.4.8"
+    "@storybook/addon-info": "^3.4.8",
+    "@types/storybook__addon-info": "^3.2.3"
   },
   "scripts": {
     "build": "tsc"

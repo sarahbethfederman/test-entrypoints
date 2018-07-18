@@ -4,24 +4,19 @@
   "source": "src/Color.tsx",
   "main": "dist/Colour.js",
   "types": "dist/Colour.d.js",
-  "directories": {
-    "lib": "lib"
-  },
-  "scripts": {
-    "build": "tsc -p ./tsconfig.json"
-  },
+  "files": [
+    "lib"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",
-  "devDependencies": {
-    "@lui/story-utils": "^1.0.0",
-    "@storybook/addon-knobs": "^3.4.8",
-    "@types/storybook__addon-knobs": "^3.3.1"
-  },
   "peerDependencies": {
     "@types/react": "^16.4.0",
     "react": "^16.4.0",
     "styled-components": "^3.3.3"
+  },
+  "scripts": {
+    "build": "tsc --pretty"
   }
 }
   

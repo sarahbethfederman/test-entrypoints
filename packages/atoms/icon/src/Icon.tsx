@@ -38,6 +38,7 @@ export class Icon extends React.Component<IIconProps> {
           this.mountSVGSpritesheet(text);
         })
         .catch((error) => {
+          /* tslint:disable-next-line no-console */
           console.warn(error);
           loadedSpritesheet = false;
         });
