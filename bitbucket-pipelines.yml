@@ -6,6 +6,7 @@ pipelines:
     - step:
         name: ⬇️ Install
         script:
+          - mv .npmrc_config .npmrc
           - yarn 
         caches:
           - nodemonorepo
@@ -15,6 +16,7 @@ pipelines:
       - step:
           name: ✅ Lint
           script:
+            - mv .npmrc_config .npmrc
             - yarn
             - yarn run lint
             - "\"$(yarn bin)/prettier-check\" \"*.{json,js,jsx,ts,tsx,md}\" \"packages/*/*/src/**/*.{json,js,jsx,ts,tsx,md}\""
@@ -24,6 +26,7 @@ pipelines:
       - step:
           name: ⚒ Build
           script:
+            - mv .npmrc_config .npmrc
             - yarn
             - yarn run build
           caches:
@@ -34,6 +37,7 @@ pipelines:
       - step:
           name: 📝 Test
           script:
+            - mv .npmrc_config .npmrc
             - yarn
             - yarn run test
           caches:
@@ -42,6 +46,7 @@ pipelines:
     - step:
         name: 🚀 Deploy
         script:
+          - mv .npmrc_config .npmrc
           - yarn
           - yarn run deploy
         caches:
