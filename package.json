@@ -13,6 +13,7 @@
     "packages/website"
   ],
   "dependencies": {
+    "@auscred/create-lui-component": "^1.0.24",
     "@lui/story-utils": "^1.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.14",
     "@storybook/addon-info": "^4.0.0-alpha.14",
@@ -23,8 +24,8 @@
     "@types/jest": "^23.1.0",
     "@types/react": "^16.4.0",
     "@types/react-dom": "^16.0.6",
-    "@types/storybook__addon-knobs": "^3.3.1",
     "@types/storybook__addon-info": "^3.2.3",
+    "@types/storybook__addon-knobs": "^3.3.1",
     "@types/storybook__react": "^3.0.7",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
@@ -60,7 +61,8 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd packages/website && yarn start",
     "deploy": "lerna run deploy",
-    "precommit": "yarn run lint && yarn run test && yarn run lint-staged"
+    "precommit": "yarn run lint && yarn run test && yarn run lint-staged",
+    "create-component": "create-lui-component"
   },
   "lint-staged": {
     "**/*.{json,js,jsx,ts,tsx,md}": [

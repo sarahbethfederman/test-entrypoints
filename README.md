@@ -12,3 +12,7 @@
 1. Login to our private registry under the auscred scope - `npm login --scope=@auscred` 
 2. If this is a new component, expose it to Lerna - `npx lerna bootstrap`
 3. Publish the component. Lerna will ask you if it's a major/minor/patch change. Choose the appropriate option `npx lerna publish`
+
+### Scripts
+
+`yarn create-lui-component (atom|molecule) PackageName`
