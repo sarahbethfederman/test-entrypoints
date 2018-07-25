@@ -2,8 +2,8 @@
   "name": "@auscred/color",
   "version": "0.0.1",
   "source": "src/Color.tsx",
-  "main": "dist/Colour.js",
-  "types": "dist/Colour.d.js",
+  "main": "dist/Color.js",
+  "types": "dist/Color.d.js",
   "files": [
     "dist"
   ],

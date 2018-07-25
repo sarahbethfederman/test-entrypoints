@@ -13,7 +13,6 @@
     "packages/website"
   ],
   "dependencies": {
-    "@auscred/create-lui-component": "^1.0.24",
     "@lui/story-utils": "^1.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.14",
     "@storybook/addon-info": "^4.0.0-alpha.14",

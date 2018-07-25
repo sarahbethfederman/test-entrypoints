@@ -39,6 +39,7 @@ pipelines:
           script:
             - mv .npmrc_config .npmrc
             - yarn
+            - yarn run build
             - yarn run test
           caches:
             - nodemonorepo
