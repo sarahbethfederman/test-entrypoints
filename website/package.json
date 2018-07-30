@@ -1,0 +1,15 @@
+{
+  "name": "@lui/website",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "@lui/story-utils": "^1.0.0",
+    "awesome-typescript-loader": "^5.2.0",
+    "react-docgen-typescript-webpack-plugin": "^1.1.0"
+  },
+  "scripts": {
+    "start": "start-storybook --config-dir ./cfg --static-dir ./static --port 6006",
+    "build": "build-storybook --config-dir ./cfg --static-dir ./static --output-dir ./dist",
+    "deploy": "node ./bin/deploy.js"
+  }
+}

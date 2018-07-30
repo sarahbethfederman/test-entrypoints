@@ -1,0 +1,17 @@
+{
+  "name": "@auscred/reset",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "peerDependencies": {
+    "styled-components": "^3.3.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

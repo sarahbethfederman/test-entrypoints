@@ -1,7 +1,5 @@
+// this file is used by the tests
 {
-  "extends": "./tsconfig.sources.json",
-  "compilerOptions": {
-    "declaration": false
-  },
-  "include": ["packages/*/*/src/**/*.test.ts", "packages/*/*/src/**/*.test.tsx"]
+  "extends": "./tsconfig.base.json",
+  "include": ["packages/*/src/**/*.test.ts", "packages/*/src/**/*.test.tsx"]
 }

@@ -10,7 +10,8 @@
     "no-implicit-dependencies": true,
     "mocha-avoid-only": true,
     "member-ordering": false,
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "array-type": [true, "array"]
   },
   "rulesDirectory": ["node_modules/tslint-microsoft-contrib"]
 }

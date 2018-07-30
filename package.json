@@ -2,15 +2,10 @@
   "name": "lendi-ui",
   "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
   "workspaces": [
-    "packages/atoms/*",
-    "packages/molecules/*",
-    "packages/utils/*",
-    "packages/website"
+    "packages/*",
+    "utils/*",
+    "website"
   ],
   "dependencies": {
     "@lui/story-utils": "^1.0.0",
@@ -48,19 +43,21 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-react": "^3.6.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.1.0-dev.20180724"
   },
   "scripts": {
-    "clean": "lerna exec \"rm -rf dist\" && lerna clean && rm -rf node_modules",
-    "lint:sources": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' 'packages/**/src/*.+(ts|tsx)'",
-    "lint:stories-and-tests": "tslint -c ./tslint.stories-and-tests.json --format stylish 'packages/**/src/*.+(story|test).+(ts|tsx)'",
+    "list": "lerna ls",
+    "clean:node_modules": "lerna clean && rm -rf node_modules",
+    "clean:assets": "lerna exec 'rm -rf dist'",
+    "lint:sources": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' '+(packages|utils|website)/*/src/*.+(ts|tsx)'",
+    "lint:stories-and-tests": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils|website)/*/src/*.+(story|test).+(ts|tsx)'",
     "lint": "yarn run lint:sources && yarn run lint:stories-and-tests",
     "build": "lerna run build",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
-    "start": "cd packages/website && yarn start",
+    "start": "cd website && yarn start",
     "deploy": "lerna run deploy",
-    "precommit": "yarn run lint && yarn run test && yarn run lint-staged",
+    "precommit": "yarn run lint && yarn run test && yarn run build && yarn run lint-staged",
     "create-component": "create-lui-component"
   },
   "lint-staged": {

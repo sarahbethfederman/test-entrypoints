@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading H1 should render styles for size 1`] = `
+.c0 {
+  font-size: 46px;
+  line-height: 1.2173913043478262;
+  font-weight: bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`Heading H2 should render styles for size 1`] = `
+.c0 {
+  font-size: 37px;
+  line-height: 1.2972972972972974;
+  font-weight: semi-bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Heading H3 should render styles for size 1`] = `
+.c0 {
+  font-size: 28px;
+  line-height: 1.2857142857142858;
+  font-weight: semi-bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Heading H4 should render styles for size 1`] = `
+.c0 {
+  font-size: 22px;
+  line-height: 1.2727272727272727;
+  font-weight: semi-bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Heading H5 should render styles for size 1`] = `
+.c0 {
+  font-size: 18px;
+  line-height: 1.3333333333333333;
+  font-weight: semi-bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Heading H6 should render styles for size 1`] = `
+.c0 {
+  font-size: 15;
+  line-height: 1.3333333333333333;
+  font-weight: semi-bold;
+  font-family: 'Cabin',sans-serif;
+}
+
+<div
+  className="c0"
+/>
+`;

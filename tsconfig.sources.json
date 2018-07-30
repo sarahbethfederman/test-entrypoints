@@ -1,21 +1,7 @@
+// this file is used by Typescript for transpiling
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "sourceMap": true,
-    "noImplicitAny": true,
-    "module": "commonjs",
-    "target": "es5",
-    "lib": ["dom", "es2017"],
-    "jsx": "react",
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "declaration": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true
-  },
-  "files": ["typings/storybook-addon-jsx.d.ts"]
+    "declaration": true
+  }
 }

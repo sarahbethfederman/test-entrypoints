@@ -1,8 +1,6 @@
+// this file is used by the website
 {
-  "extends": "./tsconfig.sources.json",
-  "compilerOptions": {
-    "declaration": false,
-    "jsx": "react"
-  },
-  "include": ["packages/*/*/src/**/*.story.ts", "packages/*/*/src/**/*.story.tsx"]
+  "extends": "./tsconfig.base.json",
+  "include": ["packages/*/src/**/*.story.ts", "packages/*/src/**/*.story.tsx"],
+  "files": ["types/storybook-addon-jsx.d.ts"]
 }
