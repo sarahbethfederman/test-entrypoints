@@ -1,17 +1,3 @@
 {
-  "defaultSeverity": "error",
-  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-  "jsRules": {},
-  "rules": {
-    "ordered-imports": false,
-    "object-literal-sort-keys": false,
-    "no-unused-expression": false,
-    "interface-name": false,
-    "no-implicit-dependencies": true,
-    "mocha-avoid-only": true,
-    "member-ordering": false,
-    "jsx-no-lambda": false,
-    "array-type": [true, "array"]
-  },
-  "rulesDirectory": ["node_modules/tslint-microsoft-contrib"]
+  "extends": ["./node_modules/@auscred/tslint-rules/tslint.json"]
 }

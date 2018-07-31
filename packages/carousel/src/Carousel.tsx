@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CarouselContainer, Indicator, IndicatorContainer, Slide } from './Carousel.style';
 
-export interface ICarouselProps {
+export interface CarouselProps {
   children: JSX.Element[];
   width?: string;
   height?: string;
@@ -10,15 +10,15 @@ export interface ICarouselProps {
   duration?: number;
 }
 
-export interface ICarouselState {
+export interface CarouselState {
   activeIdx: number;
   disabled: boolean;
   prevActiveIdx: number | null;
   length: number;
 }
 
-export class Carousel extends React.Component<ICarouselProps, ICarouselState> {
-  public static defaultProps: Partial<ICarouselProps> = {
+export class Carousel extends React.Component<CarouselProps, CarouselState> {
+  public static defaultProps: Partial<CarouselProps> = {
     defaultIndex: 0,
     duration: 5000,
     height: '500px',
@@ -28,7 +28,7 @@ export class Carousel extends React.Component<ICarouselProps, ICarouselState> {
 
   private timer: any;
 
-  constructor(props: ICarouselProps) {
+  constructor(props: CarouselProps) {
     super(props);
     this.state = {
       activeIdx: props.defaultIndex || 0,

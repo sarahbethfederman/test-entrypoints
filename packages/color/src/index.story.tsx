@@ -51,7 +51,9 @@ const BrandStory = withTheme(({ theme }: { theme: any }) => (
         <h5>{prefix}</h5>
         {Object.keys(theme.colors.brand)
           .filter((name) => name.startsWith(prefix))
-          .map((c) => <ColorComponent key={`brand.${c}`} name={`brand.${c}`} />)}
+          .map((c) => (
+            <ColorComponent key={`brand.${c}`} name={`brand.${c}`} />
+          ))}
       </>
     ))}
   </>
@@ -60,7 +62,9 @@ const BrandStory = withTheme(({ theme }: { theme: any }) => (
 const ShadeStory = withTheme(({ theme }: { theme: any }) => (
   <>
     <h1>Shade</h1>
-    {Object.keys(theme.colors.shade).map((c: string) => <ColorComponent key={`shade.${c}`} name={`shade.${c}`} />)}
+    {Object.keys(theme.colors.shade).map((c: string) => (
+      <ColorComponent key={`shade.${c}`} name={`shade.${c}`} />
+    ))}
   </>
 ));
 
@@ -72,7 +76,9 @@ const AlertStory = withTheme(({ theme }: { theme: any }) => (
         <h5>{prefix}</h5>
         {Object.keys(theme.colors.alert)
           .filter((name) => name.startsWith(prefix))
-          .map((c) => <ColorComponent key={`alert.${c}`} name={`alert.${c}`} />)}
+          .map((c) => (
+            <ColorComponent key={`alert.${c}`} name={`alert.${c}`} />
+          ))}
       </>
     ))}
   </>

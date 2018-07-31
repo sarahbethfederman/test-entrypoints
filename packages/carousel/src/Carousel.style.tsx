@@ -1,8 +1,9 @@
 // @ts-ignore
 import * as React from 'react';
-import styledComponents, { css } from 'styled-components';
+// @ts-ignore
+import styledComponents, { css, StyledComponentClass } from 'styled-components';
 
-interface ICarouselContainer {
+export interface CarouselContainerProps {
   width?: string;
   height?: string;
 }
@@ -10,11 +11,11 @@ interface ICarouselContainer {
 export const CarouselContainer = styledComponents.div`
     position: relative;
     overflow: hidden;
-    width: ${({ width }: ICarouselContainer) => width};
+    width: ${({ width }: CarouselContainerProps) => width};
     height: ${({ height }) => height};
 `;
 
-interface ISlide {
+export interface SlideProps {
   duration?: number;
   speed?: number;
   width?: string;
@@ -26,15 +27,15 @@ interface ISlide {
 export const Slide = styledComponents.div`
     position: absolute;
     left: 100%;
-    width: ${({ width }: ISlide) => width};
-    height: ${({ height }: ISlide) => height};
-    ${({ active }: ISlide) =>
+    width: ${({ width }: SlideProps) => width};
+    height: ${({ height }: SlideProps) => height};
+    ${({ active }: SlideProps) =>
       active &&
       css`
         transition: left ${({ speed }) => speed}ms linear;
         left: 0;
       `}
-    ${({ prevActiveIdx }: ISlide) =>
+    ${({ prevActiveIdx }: SlideProps) =>
       prevActiveIdx &&
       css`
         transition: left ${({ speed }) => speed}ms linear;
@@ -52,7 +53,7 @@ export const IndicatorContainer = styledComponents.div`
 
 IndicatorContainer.displayName = 'indicatorContainer';
 
-interface IIndicator {
+export interface IndicatorProps {
   active: boolean;
   indicatorColor?: string;
   indicatorActiveColor?: string;
@@ -67,7 +68,7 @@ export const Indicator = styledComponents.span`
     transition: background 100ms linear;
     cursor: pointer;
     background: #CCCCCC;
-    ${({ active }: IIndicator) =>
+    ${({ active }: IndicatorProps) =>
       active &&
       css`
         background: #666666;

@@ -1,4 +1,5 @@
 module.exports = {
+  testURL: 'http://localhost:6006/',
   transform: {
     '.(ts|tsx)': '<rootDir>/node_modules/ts-jest/preprocessor.js',
   },

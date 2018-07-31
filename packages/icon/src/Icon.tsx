@@ -2,19 +2,19 @@ import * as React from 'react';
 
 let loadedSpritesheet = false;
 
-export interface IIconProps {
+export interface IconProps {
   /** Name of the svg icon */
   name: string; // @TODO LIP-530 create enum of possible svgs
 
   className?: string;
 }
 
-export class Icon extends React.Component<IIconProps> {
-  public static defaultProps: Partial<IIconProps> = {
+export class Icon extends React.Component<IconProps> {
+  public static defaultProps: Partial<IconProps> = {
     className: undefined,
   };
 
-  constructor(props: IIconProps) {
+  constructor(props: IconProps) {
     super(props);
   }
 

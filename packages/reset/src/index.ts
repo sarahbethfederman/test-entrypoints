@@ -6,7 +6,7 @@ import { injectGlobal } from 'styled-components';
   Just like with the BEM methodology, each component should fully define all the styles necessary for display,
   so that it can be inserted on any page regardless of the containing elements.
 */
-
+/* tslint:disable:no-unused-expression */
 injectGlobal`
   html, body {
     margin: 0;

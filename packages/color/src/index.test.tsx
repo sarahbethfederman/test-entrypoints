@@ -9,6 +9,7 @@ const breakpoints = {
   desktop: '80em',
 };
 
+// tslint:disable-next-line
 const colors = {
   a: 'green',
   b: {

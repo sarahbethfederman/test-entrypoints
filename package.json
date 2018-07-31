@@ -8,6 +8,7 @@
     "website"
   ],
   "dependencies": {
+    "@auscred/tslint-rules": "^1.0.11",
     "@lui/story-utils": "^1.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.14",
     "@storybook/addon-info": "^4.0.0-alpha.14",
@@ -58,7 +59,7 @@
     "start": "cd website && yarn start",
     "deploy": "lerna run deploy",
     "precommit": "yarn run lint && yarn run test && yarn run build && yarn run lint-staged",
-    "create-component": "create-lui-component"
+    "create-component": "npx -p @auscred/create-lui-component create-lui-component"
   },
   "lint-staged": {
     "**/*.{json,js,jsx,ts,tsx,md}": [

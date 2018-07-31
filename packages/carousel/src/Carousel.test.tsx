@@ -1,10 +1,10 @@
 import { mount, ReactWrapper } from 'enzyme';
 import * as React from 'react';
-import { Carousel, ICarouselState } from './Carousel';
+import { Carousel, CarouselState } from './Carousel';
 
 describe('<Carousel />', () => {
   const slides = ['slide1', 'slide2'];
-  let wrapper: ReactWrapper<Carousel, ICarouselState>;
+  let wrapper: ReactWrapper<Carousel, CarouselState>;
   describe('when it is mounted', () => {
     beforeEach(() => {
       wrapper = mount(
