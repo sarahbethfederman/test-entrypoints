@@ -1,7 +1,7 @@
 // @ts-ignore
 import * as React from 'react';
 import styled from 'styled-components';
-import { heading, HeadingOptions } from '@auscred/typography';
+import { heading, HeadingOptions } from '@lendi-ui/typography';
 
 const H1 = styled.h1`
   ${(props: HeadingOptions) => heading({ ...props, size: 1 })};

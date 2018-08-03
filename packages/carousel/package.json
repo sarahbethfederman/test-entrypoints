@@ -1,5 +1,5 @@
 {
-  "name": "@auscred/carousel",
+  "name": "@lendi-ui/carousel",
   "version": "0.0.1",
   "main": "dist/Carousel.js",
   "types": "dist/Carousel.d.ts",

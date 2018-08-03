@@ -18,8 +18,8 @@
     "target": "es5",
     "baseUrl": "./",
     "paths": {
-      "@auscred/*": ["./packages/*/src"],
-      "@lui/*-utils": ["./utils/*-utils/src"]
+      "@lendi-ui/*": ["./packages/*/src"],
+      "@lendi-ui/*-utils": ["./utils/*-utils/src"]
     }
   },
   "exclude": ["node_modules"]

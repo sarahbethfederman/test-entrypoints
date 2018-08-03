@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
-import { select } from '@auscred/theme';
-import { map, BreakpointValue, BreakpointValueMap } from '@auscred/breakpoint';
+import { select } from '@lendi-ui/theme';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
 export type NameOrNameMap = BreakpointValue<string> | BreakpointValueMap<string>;
 

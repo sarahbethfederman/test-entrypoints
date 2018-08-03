@@ -1,5 +1,5 @@
 {
-  "name": "@auscred/button",
+  "name": "@lendi-ui/button",
   "version": "0.0.1",
   "source": "src/index.tsx",
   "main": "dist/index.js",

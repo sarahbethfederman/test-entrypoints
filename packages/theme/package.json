@@ -1,5 +1,5 @@
 {
-  "name": "@auscred/theme",
+  "name": "@lendi-ui/theme",
   "version": "1.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",

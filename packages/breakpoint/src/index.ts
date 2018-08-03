@@ -1,5 +1,5 @@
 import { css, SimpleInterpolation } from 'styled-components';
-import { select } from '@auscred/theme';
+import { select } from '@lendi-ui/theme';
 
 export type BreakpointName = string;
 export type BreakpointValue<V> = V;

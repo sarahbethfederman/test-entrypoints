@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import '@auscred/reset';
-import { bg } from '@auscred/color';
-import { p } from '@auscred/spacing';
-import Theme from '@auscred/theme';
+import '@lendi-ui/reset';
+import { bg } from '@lendi-ui/color';
+import { p } from '@lendi-ui/spacing';
+import Theme from '@lendi-ui/theme';
 import { container } from '.';
 
 const Page = styled.div`

@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { select } from '@auscred/theme';
+import { select } from '@lendi-ui/theme';
 
 export const container = () => css`
   box-sizing: border-box;

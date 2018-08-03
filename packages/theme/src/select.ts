@@ -4,7 +4,7 @@ export function select(path: string, defaultValue?: any): any {
   return ({ theme }: { theme?: Partial<Theme> }) => {
     if (!theme) {
       throw new Error(
-        '@auscred/theme: Theme not found. Please ensure your components are wrapped in the Theme component e.g. <Theme><App/></Theme>'
+        '@lendi-ui/theme: Theme not found. Please ensure your components are wrapped in the Theme component e.g. <Theme><App/></Theme>'
       );
     }
 
@@ -25,7 +25,7 @@ export function select(path: string, defaultValue?: any): any {
         if (defaultValue !== undefined) {
           return defaultValue;
         } else {
-          throw new Error(`@auscred/theme: Could not find a property named "${path}" on the theme.`);
+          throw new Error(`@lendi-ui/theme: Could not find a property named "${path}" on the theme.`);
         }
       }
 

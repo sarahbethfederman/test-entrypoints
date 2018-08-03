@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
-import { select } from '@auscred/theme';
-import { map, BreakpointValue, BreakpointValueMap } from '@auscred/breakpoint';
-import { fg } from '@auscred/color';
+import { select } from '@lendi-ui/theme';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { fg } from '@lendi-ui/color';
 
 export type Size = 1 | 2 | 3 | 4 | 5 | 6;
 export type SizeOrSizeMap = BreakpointValue<Size> | BreakpointValueMap<Size>;

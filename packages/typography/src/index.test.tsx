@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
-import { theme } from '@auscred/theme';
-import { color } from '@auscred/color';
+import { theme } from '@lendi-ui/theme';
+import { color } from '@lendi-ui/color';
 import { heading, body } from './index';
 
 describe('heading()', () => {

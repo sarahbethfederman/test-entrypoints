@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import Theme from '@auscred/theme';
+import Theme from '@lendi-ui/theme';
 import { heading, body } from '.';
 
 const Heading = styled.p`

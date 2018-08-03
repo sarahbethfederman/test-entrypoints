@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { gte, between, map } from '.';
-import Theme from '@auscred/theme';
+import Theme from '@lendi-ui/theme';
 
 const GteResponsiveColor = styled.div`
   ${gte('mobile')`

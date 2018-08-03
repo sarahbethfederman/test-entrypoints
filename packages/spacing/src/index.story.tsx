@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import Theme from '@auscred/theme';
-import { BreakpointValue, BreakpointValueMap } from '@auscred/breakpoint';
+import Theme from '@lendi-ui/theme';
+import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px } from '.';
 
 interface ExampleComponentProps {

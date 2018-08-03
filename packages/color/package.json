@@ -1,5 +1,5 @@
 {
-  "name": "@auscred/color",
+  "name": "@lendi-ui/color",
   "version": "1.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -9,11 +9,11 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@auscred/theme": "^1.0.0",
+    "@lendi-ui/theme": "^1.0.0",
     "styled-components": "^3.3.3"
   },
   "dependencies": {
-    "@auscred/breakpoint": "^1.0.0"
+    "@lendi-ui/breakpoint": "^1.0.0"
   },
   "scripts": {
     "build": "tsc"

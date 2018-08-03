@@ -2,9 +2,9 @@ import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import { color, fg, bg } from '.';
-import { m, p } from '@auscred/spacing';
-import { body } from '@auscred/typography';
-import Theme from '@auscred/theme';
+import { m, p } from '@lendi-ui/spacing';
+import { body } from '@lendi-ui/typography';
+import Theme from '@lendi-ui/theme';
 
 const borderRadius = '4px';
 

@@ -1,11 +1,11 @@
 {
-  "name": "@auscred/heading",
+  "name": "@lendi-ui/heading",
   "version": "1.0.0",
   "source": "./src/index.tsx",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
-    "@auscred/typography": "^1.0.0"
+    "@lendi-ui/typography": "^1.0.0"
   },
   "peerDependencies": {
     "@types/react": "^16.4.0",

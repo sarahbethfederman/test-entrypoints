@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import { theme } from '@auscred/theme';
-import { color as getColor } from '@auscred/color';
+import { theme } from '@lendi-ui/theme';
+import { color as getColor } from '@lendi-ui/color';
 import { H1, H2, H3, H4, H5, H6 } from './index';
 
 describe('Heading', () => {

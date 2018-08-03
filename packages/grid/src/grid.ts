@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { map, BreakpointValue, BreakpointValueMap } from '@auscred/breakpoint';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
 export type Wrap = boolean;
 export type Reverse = boolean;

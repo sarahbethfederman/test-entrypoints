@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import Theme from '@auscred/theme';
-import { p } from '@auscred/spacing';
-import { bg, color } from '@auscred/color';
-import { body } from '@auscred/typography';
+import Theme from '@lendi-ui/theme';
+import { p } from '@lendi-ui/spacing';
+import { bg, color } from '@lendi-ui/color';
+import { body } from '@lendi-ui/typography';
 import { grid, unit } from '.';
 
 const Grid = styled.div`
