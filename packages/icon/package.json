@@ -11,8 +11,8 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@types/react": "^16.4.6",
-    "react": "^16.4.1"
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4"
   },
   "devDependencies": {
     "svg-sprite": "^1.4.0"

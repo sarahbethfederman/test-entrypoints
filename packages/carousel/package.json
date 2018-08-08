@@ -10,9 +10,9 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@types/react": "^16.4.0",
-    "react": "^16.4.0",
-    "styled-components": "^3.3.3"
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "styled-components": "^2 || ^3"
   },
   "scripts": {
     "build": "tsc"

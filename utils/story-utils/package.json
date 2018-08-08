@@ -6,8 +6,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "peerDependencies": {
-    "@types/react": "^16.4.6",
-    "react": "^16.4.1"
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4"
   },
   "dependencies": {
     "@storybook/addon-info": "^3.4.8",
