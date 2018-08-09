@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { Carousel } from './Carousel';
+import { Carousel } from '.';
 
-import { wInfo } from '@lui/story-utils';
+import { wInfo } from '@lendi-ui/story-utils';
 
 const Child = ({ label }: { label: string }) => (
   <div

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
-import { Icon } from './Icon';
+import { Icon } from '.';
 
 /**
  * Parses all elements on the DOM, checks no duplicate ids

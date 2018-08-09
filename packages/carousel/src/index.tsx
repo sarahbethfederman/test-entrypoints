@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CarouselContainer, Indicator, IndicatorContainer, Slide } from './Carousel.style';
+import { CarouselContainer, Indicator, IndicatorContainer, Slide } from './index.style';
 
 export interface CarouselProps {
   children: JSX.Element[];

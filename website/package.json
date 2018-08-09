@@ -1,9 +1,9 @@
 {
-  "name": "@lui/website",
+  "name": "@lendi-ui/website",
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "@lui/story-utils": "^1.0.0",
+    "@lendi-ui/story-utils": "^1.0.0",
     "awesome-typescript-loader": "^5.2.0",
     "react-docgen-typescript-webpack-plugin": "^1.1.0"
   },

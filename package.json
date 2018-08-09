@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "@auscred/tslint-rules": "^1.0.11",
-    "@lui/story-utils": "^1.0.0",
+    "@lendi-ui/story-utils": "^1.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.14",
     "@storybook/addon-info": "^4.0.0-alpha.14",
     "@storybook/addon-knobs": "^4.0.0-alpha.14",
@@ -48,8 +48,8 @@
   },
   "scripts": {
     "list": "lerna ls",
-    "clean:node_modules": "lerna clean && rm -rf node_modules",
-    "clean:assets": "lerna exec 'rm -rf dist'",
+    "clean:node": "lerna clean && rm -rf node_modules",
+    "clean:workspaces": "lerna exec 'rm -rf dist'",
     "lint:sources": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' '+(packages|utils|website)/*/src/*.+(ts|tsx)'",
     "lint:stories-and-tests": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils|website)/*/src/*.+(story|test).+(ts|tsx)'",
     "lint": "yarn run lint:sources && yarn run lint:stories-and-tests",

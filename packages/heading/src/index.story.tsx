@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { storiesOf } from '@storybook/react';
-import { wInfo } from '@lui/story-utils';
+import { wInfo } from '@lendi-ui/story-utils';
 import Theme from '@lendi-ui/theme';
 import { H1, H2, H3, H4, H5, H6 } from '.';
 

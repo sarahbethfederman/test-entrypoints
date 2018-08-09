@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
-import { wInfo } from '@lui/story-utils';
+import { wInfo } from '@lendi-ui/story-utils';
 
-import Icon from './Icon';
+import Icon from '.';
 
 const IconContainer = styled.section`
   display: flex;

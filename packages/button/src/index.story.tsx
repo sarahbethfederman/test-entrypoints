@@ -2,7 +2,7 @@ import * as React from 'react';
 import { text, boolean } from '@storybook/addon-knobs/react';
 import { storiesOf } from '@storybook/react';
 import { Button } from './index';
-import { wInfo } from '@lui/story-utils';
+import { wInfo } from '@lendi-ui/story-utils';
 
 storiesOf('Components/button', module).addWithJSX(
   'basic',

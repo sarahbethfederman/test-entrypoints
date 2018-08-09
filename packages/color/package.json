@@ -2,8 +2,9 @@
   "name": "@lendi-ui/color",
   "version": "1.0.0",
   "source": "src/index.ts",
-  "main": "dist/index.js",
-  "types": "dist/index.d.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "files": [
     "dist"
   ],
@@ -16,7 +17,10 @@
     "@lendi-ui/breakpoint": "^1.0.0"
   },
   "scripts": {
-    "build": "tsc"
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
   }
 }
   

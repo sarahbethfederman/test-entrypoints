@@ -1,6 +1,6 @@
 import { mount, ReactWrapper } from 'enzyme';
 import * as React from 'react';
-import { Carousel, CarouselState } from './Carousel';
+import { Carousel, CarouselState } from '.';
 
 describe('<Carousel />', () => {
   const slides = ['slide1', 'slide2'];

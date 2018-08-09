@@ -1,9 +1,10 @@
 {
   "name": "@lendi-ui/heading",
   "version": "1.0.0",
-  "source": "./src/index.tsx",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "dependencies": {
     "@lendi-ui/typography": "^1.0.0"
   },
@@ -13,6 +14,9 @@
     "styled-components": "^2 || ^3"
   },
   "scripts": {
-    "build": "tsc"
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
   }
 }

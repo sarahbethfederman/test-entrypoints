@@ -1,0 +1,7 @@
+// this file is used by Typescript for transpiling commonjs
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs"
+  }
+}

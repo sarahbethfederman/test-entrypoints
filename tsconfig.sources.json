@@ -1,7 +1,0 @@
-// this file is used by Typescript for transpiling
-{
-  "extends": "./tsconfig.base.json",
-  "compilerOptions": {
-    "declaration": true
-  }
-}
