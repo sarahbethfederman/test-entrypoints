@@ -58,7 +58,7 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",
     "deploy": "lerna run deploy",
-    "precommit": "yarn run lint && yarn run test && yarn run build && yarn run lint-staged",
+    "precommit": "yarn run lint-staged && yarn run lint && yarn run test && yarn run build",
     "create-component": "npx -p @auscred/create-lui-component create-lui-component"
   },
   "lint-staged": {

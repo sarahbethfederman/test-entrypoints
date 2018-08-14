@@ -6,7 +6,7 @@ import { color } from '@lendi-ui/color';
 import { heading, body } from './index';
 
 describe('heading()', () => {
-  const headingSizes = [1, 2, 3, 4, 5, 6];
+  const headingSizes = ['xl', 'lg', 'md', 'sm', 'xs'];
   const headingColors = ['brand.primary', 'shade.0', 'shade.1'];
   const headingAlignments = ['left', 'center', 'right', 'justify'];
 
@@ -23,7 +23,7 @@ describe('heading()', () => {
   headingColors.forEach((headingColor) => {
     it(`should display styles for color ${headingColor}`, () => {
       const Component = styled.div`
-        ${heading({ color: headingColor })};
+        ${heading({ size: 'xl', color: headingColor })};
       `;
       const wrapper = shallow(<Component theme={theme} />);
       expect(wrapper).toHaveStyleRule('color', color(headingColor)({ theme }));
@@ -33,7 +33,7 @@ describe('heading()', () => {
   headingAlignments.forEach((headingAlignment) => {
     it(`should display styles for align ${headingAlignment}`, () => {
       const Component = styled.div`
-        ${heading({ align: headingAlignment })};
+        ${heading({ size: 'xl', align: headingAlignment })};
       `;
       const wrapper = shallow(<Component theme={theme} />);
       expect(wrapper).toHaveStyleRule('text-align', headingAlignment);
@@ -42,15 +42,15 @@ describe('heading()', () => {
 
   it(`display styles for the default color`, () => {
     const Component = styled.div`
-      ${heading()};
+      ${heading({ size: 'xl' })};
     `;
     const wrapper = shallow(<Component theme={theme} />);
-    expect(wrapper).not.toHaveStyleRule('color');
+    expect(wrapper).toHaveStyleRule('color', color('shade.1')({ theme }));
   });
 
   it(`should display styles for the default align`, () => {
     const Component = styled.div`
-      ${heading()};
+      ${heading({ size: 'xl' })};
     `;
     const wrapper = shallow(<Component theme={theme} />);
     expect(wrapper).not.toHaveStyleRule('text-align');

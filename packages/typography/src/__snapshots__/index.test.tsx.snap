@@ -1,37 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`heading() should display styles for size 1 1`] = `
+exports[`heading() should display styles for size lg 1`] = `
 .c0 {
-  font-size: 46px;
-  line-height: 1.2173913043478262;
-  font-weight: bold;
-  font-family: 'Cabin',sans-serif;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`heading() should display styles for size 2 1`] = `
-.c0 {
-  font-size: 37px;
-  line-height: 1.2972972972972974;
-  font-weight: semi-bold;
-  font-family: 'Cabin',sans-serif;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`heading() should display styles for size 3 1`] = `
-.c0 {
+  color: #4A4A4A;
   font-size: 28px;
-  line-height: 1.2857142857142858;
-  font-weight: semi-bold;
+  font-weight: 500;
+  line-height: calc(34 / 28);
   font-family: 'Cabin',sans-serif;
+}
+
+@media (min-width:46.0625em) {
+  .c0 {
+    font-size: 37px;
+    line-height: calc(40/37);
+  }
 }
 
 <div
@@ -39,12 +21,20 @@ exports[`heading() should display styles for size 3 1`] = `
 />
 `;
 
-exports[`heading() should display styles for size 4 1`] = `
+exports[`heading() should display styles for size md 1`] = `
 .c0 {
+  color: #4A4A4A;
   font-size: 22px;
-  line-height: 1.2727272727272727;
-  font-weight: semi-bold;
+  font-weight: 500;
+  line-height: calc(28 / 22);
   font-family: 'Cabin',sans-serif;
+}
+
+@media (min-width:46.0625em) {
+  .c0 {
+    font-size: 28px;
+    line-height: calc(32/28);
+  }
 }
 
 <div
@@ -52,12 +42,20 @@ exports[`heading() should display styles for size 4 1`] = `
 />
 `;
 
-exports[`heading() should display styles for size 5 1`] = `
+exports[`heading() should display styles for size sm 1`] = `
 .c0 {
+  color: #4A4A4A;
   font-size: 18px;
-  line-height: 1.3333333333333333;
-  font-weight: semi-bold;
+  font-weight: 500;
+  line-height: calc(24 / 18);
   font-family: 'Cabin',sans-serif;
+}
+
+@media (min-width:46.0625em) {
+  .c0 {
+    font-size: 22px;
+    line-height: calc(28/22);
+  }
 }
 
 <div
@@ -65,12 +63,41 @@ exports[`heading() should display styles for size 5 1`] = `
 />
 `;
 
-exports[`heading() should display styles for size 6 1`] = `
+exports[`heading() should display styles for size xl 1`] = `
 .c0 {
-  font-size: 15;
-  line-height: 1.3333333333333333;
-  font-weight: semi-bold;
+  color: #4A4A4A;
+  font-size: 37px;
+  font-weight: bold;
+  line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
+}
+
+@media (min-width:46.0625em) {
+  .c0 {
+    font-size: 46px;
+    line-height: calc(50/46);
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`heading() should display styles for size xs 1`] = `
+.c0 {
+  color: #4A4A4A;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: calc(20 / 15);
+  font-family: 'Cabin',sans-serif;
+}
+
+@media (min-width:46.0625em) {
+  .c0 {
+    font-size: 18px;
+    line-height: calc(24/18);
+  }
 }
 
 <div

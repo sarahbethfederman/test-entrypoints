@@ -1,68 +1,10 @@
 const typography = {
   heading: {
     fontFamily: "'Cabin', sans-serif",
-    sizes: [
-      {
-        fontSize: `46px`,
-        lineHeight: 56 / 46,
-        fontWeight: 'bold',
-      },
-      {
-        fontSize: `37px`,
-        lineHeight: 48 / 37,
-        fontWeight: 'semi-bold',
-      },
-      {
-        fontSize: `28px`,
-        lineHeight: 36 / 28,
-        fontWeight: 'semi-bold',
-      },
-      {
-        fontSize: `22px`,
-        lineHeight: 28 / 22,
-        fontWeight: 'semi-bold',
-      },
-      {
-        fontSize: `18px`,
-        lineHeight: 24 / 18,
-        fontWeight: 'semi-bold',
-      },
-      {
-        fontSize: `15`,
-        lineHeight: 20 / 15,
-        fontWeight: 'semi-bold',
-      },
-    ],
   },
 
   body: {
     fontFamily: "'Open Sans', sans-serif",
-    sizes: [
-      {
-        fontSize: `18px`,
-        lineHeight: 24 / 18,
-      },
-      {
-        fontSize: `16px`,
-        lineHeight: 22 / 16,
-      },
-      {
-        fontSize: `14px`,
-        lineHeight: 20 / 14,
-      },
-      {
-        fontSize: `13px`,
-        lineHeight: 18 / 13,
-      },
-      {
-        fontSize: `12px`,
-        lineHeight: 16 / 12,
-      },
-      {
-        fontSize: `11px`,
-        lineHeight: 14 / 11,
-      },
-    ],
   },
 };
 

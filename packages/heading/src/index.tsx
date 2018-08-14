@@ -1,30 +1,26 @@
 // @ts-ignore
 import * as React from 'react';
 import styled from 'styled-components';
-import { heading, HeadingOptions } from '@lendi-ui/typography';
+import { my } from '@lendi-ui/spacing';
+import { heading, HeadingSize, HeadingOptions } from '@lendi-ui/typography';
 
-const H1 = styled.h1`
-  ${(props: HeadingOptions) => heading({ ...props, size: 1 })};
+const componentBySize: { [size in HeadingSize]: string } = {
+  xs: 'h5',
+  sm: 'h4',
+  md: 'h3',
+  lg: 'h2',
+  xl: 'h1',
+};
+
+export interface HeadingProps extends HeadingOptions {
+  as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+}
+
+function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
+  const Component = as || componentBySize[size];
+  return <Component size={size} {...otherProps} />;
+}
+
+export default styled(HeadingTag)`
+  ${my(0)} ${heading};
 `;
-
-const H2 = styled.div`
-  ${(props: HeadingOptions) => heading({ ...props, size: 2 })};
-`;
-
-const H3 = styled.div`
-  ${(props: HeadingOptions) => heading({ ...props, size: 3 })};
-`;
-
-const H4 = styled.div`
-  ${(props: HeadingOptions) => heading({ ...props, size: 4 })};
-`;
-
-const H5 = styled.div`
-  ${(props: HeadingOptions) => heading({ ...props, size: 5 })};
-`;
-
-const H6 = styled.div`
-  ${(props: HeadingOptions) => heading({ ...props, size: 6 })};
-`;
-
-export { H1, H2, H3, H4, H5, H6 };
