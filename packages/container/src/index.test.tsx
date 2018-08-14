@@ -3,18 +3,12 @@ import styled from 'styled-components';
 import { shallow } from 'enzyme';
 import { container } from '.';
 
-const theme = {
-  container: {
-    width: '200px',
-  },
-};
-
 describe('container()', () => {
-  it('should use the width value from the theme', () => {
+  it('should have a max width', () => {
     const Component = styled.div`
       ${container()};
     `;
-    const element = shallow(<Component theme={theme} />);
-    expect(element).toHaveStyleRule('max-width', theme.container.width);
+    const element = shallow(<Component />);
+    expect(element).toHaveStyleRule('max-width', '1024px');
   });
 });

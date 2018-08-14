@@ -9122,9 +9122,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^3.1.0-dev.20180724:
-  version "3.1.0-dev.20180807"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.0-dev.20180807.tgz#17774f3b12c7d81e323dd8274f389e135eddddbc"
+typescript@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.1.tgz#43738f29585d3a87575520a4b93ab6026ef11fdb"
 
 ua-parser-js@^0.7.18:
   version "0.7.18"

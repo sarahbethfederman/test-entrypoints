@@ -1,49 +1,42 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
-import { m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SizeOrSizeMap } from '.';
+import { Breakpoint } from '@lendi-ui/breakpoint';
+import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap } from '.';
 
-const breakpoints = {
-  mobile: '0',
-  tablet: '40em',
-  desktop: '80em',
-};
+export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
 
-const spacing = ['0', '4px', '8px', '32px'];
-
-const theme = { breakpoints, spacing };
-
-function createTests(n: string, fn: (size: SizeOrSizeMap) => any, rules: string[]) {
+function createTests(n: string, fn: (size: SpacingNameOrNameMap) => any, rules: string[]) {
   describe(`${n}()`, () => {
-    spacing.forEach((value, name) => {
+    keys(Spacing).forEach((name) => {
       it(`should use the correct spacing for ${name}`, () => {
         const Component = styled.div`
           ${fn(name)};
         `;
-        const element = shallow(<Component theme={theme} />);
+        const element = shallow(<Component />);
         rules.forEach((rule) => {
-          expect(element).toHaveStyleRule(rule, value);
+          expect(element).toHaveStyleRule(rule, Spacing[name]);
         });
       });
     });
 
     it(`should use the correct spacing at each breakpoint`, () => {
       const Component = styled.div`
-        ${fn({ mobile: 0, tablet: 1, desktop: 2 })};
+        ${fn({ mobile: 'xxs', tablet: 'md', desktop: 'xxl' })};
       `;
-      const element = shallow(<Component theme={theme} />);
+      const element = shallow(<Component />);
       rules.forEach((rule1) => {
-        expect(element).toHaveStyleRule(rule1, spacing[0], {
-          media: `(min-width: ${breakpoints.mobile})`,
+        expect(element).toHaveStyleRule(rule1, Spacing.xxs, {
+          media: `(min-width:${Breakpoint.mobile})`,
         });
         rules.forEach((rule2) => {
-          expect(element).toHaveStyleRule(rule2, spacing[1], {
-            media: `(min-width: ${breakpoints.tablet})`,
+          expect(element).toHaveStyleRule(rule2, Spacing.md, {
+            media: `(min-width:${Breakpoint.tablet})`,
           });
         });
         rules.forEach((rule3) => {
-          expect(element).toHaveStyleRule(rule3, spacing[2], {
-            media: `(min-width: ${breakpoints.desktop})`,
+          expect(element).toHaveStyleRule(rule3, Spacing.xxl, {
+            media: `(min-width:${Breakpoint.desktop})`,
           });
         });
       });

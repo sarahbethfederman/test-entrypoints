@@ -1,8 +1,5 @@
-import { css } from 'styled-components';
-import { select } from '@lendi-ui/theme';
-
-export const container = () => css`
+export const container = () => `
   box-sizing: border-box;
-  max-width: ${select('container.width')};
+  max-width: 1024px;
   margin: auto;
 `;

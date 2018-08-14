@@ -12,7 +12,7 @@ const Page = styled.div`
 `;
 
 const Content = styled.div`
-  ${p(2)}
+  ${p('xxs')}
   ${bg('brand.primary.medium')}
   ${container()}
 `;

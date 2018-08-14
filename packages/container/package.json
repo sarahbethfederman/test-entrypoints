@@ -9,10 +9,6 @@
     "dist"
   ],
   "license": "ISC",
-  "peerDependencies": {
-    "@lendi-ui/theme": "^1.0.0",
-    "styled-components": "^2 || ^3"
-  },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",

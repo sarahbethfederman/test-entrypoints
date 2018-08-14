@@ -1,17 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
+import { Breakpoint } from '@lendi-ui/breakpoint';
 import { grid } from '.';
-
-const breakpoints = {
-  mobile: '0',
-  tablet: '40em',
-  desktop: '80em',
-};
-
-const theme = {
-  breakpoints,
-};
 
 describe('grid()', () => {
   const Grid = styled.div`
@@ -50,15 +41,15 @@ describe('grid()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Grid halign={{ mobile: 'left', tablet: 'center', desktop: 'right' }} theme={theme} />);
+      const element = shallow(<Grid halign={{ mobile: 'left', tablet: 'center', desktop: 'right' }} />);
       expect(element).toHaveStyleRule('justify-content', 'flex-start', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('justify-content', 'center', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('justify-content', 'flex-end', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });
@@ -90,15 +81,15 @@ describe('grid()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Grid valign={{ mobile: 'top', tablet: 'center', desktop: 'bottom' }} theme={theme} />);
+      const element = shallow(<Grid valign={{ mobile: 'top', tablet: 'center', desktop: 'bottom' }} />);
       expect(element).toHaveStyleRule('align-items', 'flex-start', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('align-items', 'center', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('align-items', 'flex-end', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });
@@ -120,15 +111,15 @@ describe('grid()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Grid reverse={{ mobile: true, tablet: false, desktop: true }} theme={theme} />);
+      const element = shallow(<Grid reverse={{ mobile: true, tablet: false, desktop: true }} />);
       expect(element).toHaveStyleRule('flex-direction', 'row-reverse', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('flex-direction', 'row', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('flex-direction', 'row-reverse', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });
@@ -160,15 +151,15 @@ describe('grid()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Grid wrap={{ mobile: true, tablet: false, desktop: true }} theme={theme} />);
+      const element = shallow(<Grid wrap={{ mobile: true, tablet: false, desktop: true }} />);
       expect(element).toHaveStyleRule('flex-wrap', 'wrap', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('flex-wrap', 'nowrap', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('flex-wrap', 'wrap', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });

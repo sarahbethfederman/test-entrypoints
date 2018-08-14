@@ -1,15 +1,24 @@
 import { css, SimpleInterpolation } from 'styled-components';
-import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
-export type SizeOrSizeMap = BreakpointValue<number> | BreakpointValueMap<number>;
-
-export function spacing(size: SizeOrSizeMap) {
-  return select(`spacing.${size}`);
+export enum Spacing {
+  'nil' = '0',
+  'xxxs' = '4px',
+  'xxs' = '8px',
+  'xs' = '12px',
+  'sm' = '16px',
+  'md' = '24px',
+  'lg' = '32px',
+  'xl' = '40px',
+  'xxl' = '64px',
+  'xxxl' = '80px',
 }
 
-function createSpacingMixin(mapSizeToStyle: (size: SizeOrSizeMap) => SimpleInterpolation) {
-  return (size: SizeOrSizeMap) => map(size, (s) => (s === undefined ? '' : mapSizeToStyle(spacing(s))));
+export type SpacingName = keyof typeof Spacing;
+export type SpacingNameOrNameMap = BreakpointValue<SpacingName> | BreakpointValueMap<SpacingName>;
+
+function createSpacingMixin(mapValueToStyle: (value: string) => SimpleInterpolation) {
+  return (size: SpacingNameOrNameMap) => map(size, (s) => (s === undefined ? '' : mapValueToStyle(Spacing[s])));
 }
 
 export const m = createSpacingMixin(

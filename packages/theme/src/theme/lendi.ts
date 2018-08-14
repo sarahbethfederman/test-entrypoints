@@ -1,23 +1,3 @@
-const container = {
-  width: '1024px',
-};
-
-const breakpoints = {
-  mobile: 0,
-  tablet: '46.0625em',
-  desktop: '64.0625em',
-};
-
-const spacing = {
-  0: 0,
-  1: '4px',
-  2: '8px',
-  3: '16px',
-  4: '24px',
-  5: '64px',
-  6: '80px',
-};
-
 const typography = {
   heading: {
     fontFamily: "'Cabin', sans-serif",
@@ -126,9 +106,6 @@ const colors = {
 };
 
 export const theme = {
-  container,
-  breakpoints,
-  spacing,
   typography,
   colors,
 };

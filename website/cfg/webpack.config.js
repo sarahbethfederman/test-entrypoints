@@ -18,7 +18,7 @@ module.exports = (baseConfig, env, config) => {
   config.plugins.push(new CheckerPlugin());
 
   // document typescript props
-  config.plugins.push(new TSDocgenPlugin());
+  // config.plugins.push(new TSDocgenPlugin());
 
   return config;
 };

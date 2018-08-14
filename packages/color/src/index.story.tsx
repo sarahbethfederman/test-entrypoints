@@ -9,7 +9,7 @@ import Theme from '@lendi-ui/theme';
 const borderRadius = '4px';
 
 const ColorWrapper = styled.section`
-  ${m(2)} display: inline-block;
+  ${m('xxs')} display: inline-block;
   width: 200px;
   border: 1px solid ${color('shade.5')};
   border-radius: ${borderRadius};
@@ -20,14 +20,14 @@ interface ColorSwabProps {
 }
 
 const ColorSwab = styled.div`
-  ${p(5)} ${(props: ColorSwabProps) => bg(props.color)};
+  ${p('xxl')} ${(props: ColorSwabProps) => bg(props.color)};
   border-top-left-radius: ${borderRadius};
   border-top-right-radius: ${borderRadius};
   border-bottom: 1px solid ${color('shade.5')};
 `;
 
 const ColorDetail = styled.section`
-  ${p(3)}
+  ${p('xs')}
   ${fg('shade.1')}
   ${body()}
 `;

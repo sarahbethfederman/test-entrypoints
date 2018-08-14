@@ -44,7 +44,7 @@
     "tslint-config-prettier": "^1.13.0",
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.1.0-dev.20180724"
+    "typescript": "^3.0.1"
   },
   "scripts": {
     "list": "lerna ls",

@@ -1,13 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
+import { Breakpoint } from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '.';
-
-const breakpoints = {
-  mobile: '0',
-  tablet: '40em',
-  desktop: '80em',
-};
 
 // tslint:disable-next-line
 const colors = {
@@ -20,7 +15,6 @@ const colors = {
 };
 
 const theme = {
-  breakpoints,
   colors,
 };
 
@@ -49,13 +43,13 @@ describe('fg()', () => {
     `;
     const element = shallow(<Component theme={theme} />);
     expect(element).toHaveStyleRule('color', colors.b.primary, {
-      media: `(min-width:${breakpoints.mobile})`,
+      media: `(min-width:${Breakpoint.mobile})`,
     });
     expect(element).toHaveStyleRule('color', colors.c[0], {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('color', colors.a, {
-      media: `(min-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.desktop})`,
     });
   });
 });
@@ -75,13 +69,13 @@ describe('bg()', () => {
     `;
     const element = shallow(<Component theme={theme} />);
     expect(element).toHaveStyleRule('background-color', colors.b.primary, {
-      media: `(min-width:${breakpoints.mobile})`,
+      media: `(min-width:${Breakpoint.mobile})`,
     });
     expect(element).toHaveStyleRule('background-color', colors.c[0], {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('background-color', colors.a, {
-      media: `(min-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.desktop})`,
     });
   });
 });

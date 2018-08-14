@@ -1,19 +1,8 @@
 import 'jest-styled-components';
 import * as React from 'react';
-import styled, { css, ThemeProvider } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { mount } from 'enzyme';
-import { gte, between, map, BreakpointValue, BreakpointValueMap } from '.';
-
-const breakpoints = {
-  mobile: 0,
-  tablet: '23.5em',
-  desktop: '64.0625em',
-};
-
-const render = (tree, theme) => {
-  return mount(<ThemeProvider theme={theme}>{tree}</ThemeProvider>);
-};
-
+import { gte, between, map, Breakpoint, BreakpointValue, BreakpointValueMap } from '.';
 describe('gte()', () => {
   it('should wrap styles in a media rule', () => {
     const Component = styled.div`
@@ -28,15 +17,15 @@ describe('gte()', () => {
       `}
     `;
 
-    const element = render(<Component />, { breakpoints });
+    const element = mount(<Component />);
     expect(element).toHaveStyleRule('color', 'red', {
-      media: `(min-width:${breakpoints.mobile})`,
+      media: `(min-width:${Breakpoint.mobile})`,
     });
     expect(element).toHaveStyleRule('color', 'green', {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('color', 'blue', {
-      media: `(min-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.desktop})`,
     });
   });
 
@@ -47,9 +36,9 @@ describe('gte()', () => {
       `};
     `;
 
-    const element = render(<ComplexComponent color="purple" />, { breakpoints });
+    const element = mount(<ComplexComponent color="purple" />);
     expect(element).toHaveStyleRule('color', 'purple', {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
   });
 });
@@ -65,12 +54,12 @@ describe('between()', () => {
       color: blue;
     `;
 
-    const element = render(<Component />, { breakpoints });
+    const element = mount(<Component />);
     expect(element).toHaveStyleRule('color', 'red', {
-      media: `(min-width:${breakpoints.mobile}) and (max-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.mobile}) and (max-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('color', 'green', {
-      media: `(min-width:${breakpoints.tablet}) and (max-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.tablet}) and (max-width:${Breakpoint.desktop})`,
     });
     expect(element).toHaveStyleRule('color', 'blue');
   });
@@ -82,9 +71,9 @@ describe('between()', () => {
       `};
     `;
 
-    const element = render(<ComplexComponent color="purple" />, { breakpoints });
+    const element = mount(<ComplexComponent color="purple" />);
     expect(element).toHaveStyleRule('color', 'purple', {
-      media: `(min-width:${breakpoints.tablet}) and (max-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.tablet}) and (max-width:${Breakpoint.desktop})`,
     });
   });
 });
@@ -115,44 +104,40 @@ describe('map()', () => {
   `;
 
   it('should not wrap styles in a media rule', () => {
-    const element = render(<SimpleMapComponent bg="red" />, { breakpoints });
+    const element = mount(<SimpleMapComponent bg="red" />);
     expect(element).toHaveStyleRule('background-color', 'red');
   });
 
   it('should wrap styles in a media rule at each breakpoint', () => {
-    const element = render(<SimpleMapComponent bg={{ mobile: 'red', tablet: 'green', desktop: 'blue' }} />, {
-      breakpoints,
-    });
+    const element = mount(<SimpleMapComponent bg={{ mobile: 'red', tablet: 'green', desktop: 'blue' }} />);
     expect(element).toHaveStyleRule('background-color', 'unset');
     expect(element).toHaveStyleRule('background-color', 'red', {
-      media: `(min-width:${breakpoints.mobile})`,
+      media: `(min-width:${Breakpoint.mobile})`,
     });
     expect(element).toHaveStyleRule('background-color', 'green', {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('background-color', 'blue', {
-      media: `(min-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.desktop})`,
     });
   });
 
   it('should not wrap styles consisting of functions in a media rule', () => {
-    const element = render(<ComplexMapComponent size={1 / 2} multiplier={2} />, { breakpoints });
+    const element = mount(<ComplexMapComponent size={1 / 2} multiplier={2} />);
     expect(element).toHaveStyleRule('width', '100%');
   });
 
   it('should wrap styles consisting of functions in a media rule at each breakpoint', () => {
-    const element = render(<ComplexMapComponent size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} multiplier={2} />, {
-      breakpoints,
-    });
+    const element = mount(<ComplexMapComponent size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} multiplier={2} />);
     expect(element).toHaveStyleRule('width', '200%');
     expect(element).toHaveStyleRule('width', '200%', {
-      media: `(min-width:${breakpoints.mobile})`,
+      media: `(min-width:${Breakpoint.mobile})`,
     });
     expect(element).toHaveStyleRule('width', '100%', {
-      media: `(min-width:${breakpoints.tablet})`,
+      media: `(min-width:${Breakpoint.tablet})`,
     });
     expect(element).toHaveStyleRule('width', '50%', {
-      media: `(min-width:${breakpoints.desktop})`,
+      media: `(min-width:${Breakpoint.desktop})`,
     });
   });
 });

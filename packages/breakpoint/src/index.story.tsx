@@ -30,17 +30,17 @@ const MapResponsiveColor = styled.div`
 `;
 
 storiesOf('Foundation/breakpoint', module)
-  .addWithJSX('gte()', () => (
+  .add('gte()', () => (
     <Theme>
       <GteResponsiveColor>Hello World!</GteResponsiveColor>
     </Theme>
   ))
-  .addWithJSX('between()', () => (
+  .add('between()', () => (
     <Theme>
       <BetweenResponsiveColor>Hello World!</BetweenResponsiveColor>
     </Theme>
   ))
-  .addWithJSX('map()', () => (
+  .add('map()', () => (
     <Theme>
       <MapResponsiveColor>Hello World!</MapResponsiveColor>
     </Theme>

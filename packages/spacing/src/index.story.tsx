@@ -2,21 +2,22 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import Theme from '@lendi-ui/theme';
-import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
-import { m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px } from '.';
+import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap } from '.';
+
+export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
 
 interface ExampleComponentProps {
-  size: BreakpointValue<number> | BreakpointValueMap<number>;
+  size: SpacingNameOrNameMap;
 }
 
 const createMarginComponent = (fn: (props: ExampleComponentProps) => any) => {
   const Outer = styled.span`
-    ${m(2)} display: inline-block;
+    ${m('xs')} display: inline-block;
     outline: 1px dotted tomato;
   `;
 
   const Inner = styled.code`
-    ${p(2)} ${fn}
+    ${p('xs')} ${fn}
     display: inline-block;
     background-color: grey;
   `;
@@ -30,13 +31,13 @@ const createMarginComponent = (fn: (props: ExampleComponentProps) => any) => {
 
 const createPaddingComponent = (fn: (props: ExampleComponentProps) => any) => {
   const Outer = styled.span`
-    ${m(2)} ${fn}
+    ${m('xs')} ${fn}
     display: inline-block;
     background-color: tomato;
   `;
 
   const Inner = styled.code`
-    ${p(2)} display: inline-block;
+    ${p('xs')} display: inline-block;
     background-color: grey;
   `;
 
@@ -64,45 +65,37 @@ const PB = createPaddingComponent(({ size }) => pb(size));
 const PL = createPaddingComponent(({ size }) => pl(size));
 
 storiesOf('Foundation/spacing', module)
-  .addWithJSX('margin', () => (
+  .add('margin', () => (
     <Theme>
       <>
-        <M size={0} />
-        <M size={1} />
-        <M size={2} />
-        <M size={3} />
-        <M size={4} />
-        <M size={5} />
-        <M size={6} />
-        <M size={{ mobile: 2, tablet: 4, desktop: 6 }} />
+        {keys(Spacing).map((name) => (
+          <M size={name} />
+        ))}
+        <M size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} />
         <hr />
-        <MX size={3} />
-        <MY size={3} />
-        <MT size={3} />
-        <MR size={3} />
-        <MB size={3} />
-        <ML size={3} />
+        <MX size="md" />
+        <MY size="md" />
+        <MT size="md" />
+        <MR size="md" />
+        <MB size="md" />
+        <ML size="md" />
       </>
     </Theme>
   ))
-  .addWithJSX('padding', () => (
+  .add('padding', () => (
     <Theme>
       <>
-        <P size={0} />
-        <P size={1} />
-        <P size={2} />
-        <P size={3} />
-        <P size={4} />
-        <P size={5} />
-        <P size={6} />
-        <P size={{ mobile: 2, tablet: 4, desktop: 6 }} />
+        {keys(Spacing).map((name) => (
+          <P size={name} />
+        ))}
+        <P size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} />
         <hr />
-        <PX size={3} />
-        <PY size={3} />
-        <PT size={3} />
-        <PR size={3} />
-        <PB size={3} />
-        <PL size={3} />
+        <PX size="md" />
+        <PY size="md" />
+        <PT size="md" />
+        <PR size="md" />
+        <PB size="md" />
+        <PL size="md" />
       </>
     </Theme>
   ));

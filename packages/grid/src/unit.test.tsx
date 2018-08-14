@@ -1,17 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
+import { Breakpoint } from '@lendi-ui/breakpoint';
 import { unit } from '.';
-
-const breakpoints = {
-  mobile: '0',
-  tablet: '40em',
-  desktop: '80em',
-};
-
-const theme = {
-  breakpoints,
-};
 
 describe('unit()', () => {
   const Unit = styled.div`
@@ -50,15 +41,15 @@ describe('unit()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} theme={theme} />);
+      const element = shallow(<Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} />);
       expect(element).toHaveStyleRule('max-width', '100%', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('max-width', '50%', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('max-width', '25%', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });
@@ -80,15 +71,15 @@ describe('unit()', () => {
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Unit visible={{ mobile: true, tablet: false, desktop: true }} theme={theme} />);
+      const element = shallow(<Unit visible={{ mobile: true, tablet: false, desktop: true }} />);
       expect(element).toHaveStyleRule('display', 'flex', {
-        media: `(min-width:${breakpoints.mobile})`,
+        media: `(min-width:${Breakpoint.mobile})`,
       });
       expect(element).toHaveStyleRule('display', 'none', {
-        media: `(min-width:${breakpoints.tablet})`,
+        media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(element).toHaveStyleRule('display', 'flex', {
-        media: `(min-width:${breakpoints.desktop})`,
+        media: `(min-width:${Breakpoint.desktop})`,
       });
     });
   });

@@ -12,14 +12,14 @@ const Grid = styled.div`
 `;
 
 const Unit = styled.code`
-  ${p(2)}
+  ${p('xxs')}
   ${bg('brand.primary.light')}
   ${body({ align: 'center' })}
   ${unit}
   border: 1px solid ${color('shade.8')}
 `;
 
-storiesOf('Foundation/grid', module).addWithJSX('basic', () => (
+storiesOf('Foundation/grid', module).add('basic', () => (
   <Theme>
     <>
       <Grid>
