@@ -130,7 +130,7 @@ export interface HeadingOptions {
 }
 
 export function heading(options: HeadingOptions) {
-  const { color = 'shade.1', align, size } = options;
+  const { color = 'shade.700', align, size } = options;
   return css`
     ${color && fg(color)}
     ${align && alignMixin(align)}
@@ -146,7 +146,7 @@ export interface BodyOptions {
 }
 
 export function body(options: BodyOptions = {}) {
-  const { color = 'shade.1', align, size = 'md' } = options;
+  const { color = 'shade.700', align, size = 'md' } = options;
   return css`
     ${color && fg(color)}
     ${align && alignMixin(align)}

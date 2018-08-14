@@ -22,5 +22,5 @@ function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
 }
 
 export default styled(HeadingTag)`
-  ${my(0)} ${heading};
+  ${my('nil')} ${heading};
 `;

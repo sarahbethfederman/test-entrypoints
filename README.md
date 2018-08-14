@@ -16,5 +16,3 @@ yarn start
 ```
 npx create-lui-component (atom|molecule) PackageName
 ```
-
-

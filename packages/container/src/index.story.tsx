@@ -8,12 +8,12 @@ import Theme from '@lendi-ui/theme';
 import { container } from '.';
 
 const Page = styled.div`
-  ${bg('brand.primary.light')} overflow: hidden;
+  ${bg('primary.300')} overflow: hidden;
 `;
 
 const Content = styled.div`
   ${p('xxs')}
-  ${bg('brand.primary.medium')}
+  ${bg('primary.500')}
   ${container()}
 `;
 

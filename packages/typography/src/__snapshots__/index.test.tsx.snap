@@ -2,14 +2,14 @@
 
 exports[`heading() should display styles for size lg 1`] = `
 .c0 {
-  color: #4A4A4A;
+  color: #474747;
   font-size: 28px;
   font-weight: 500;
   line-height: calc(34 / 28);
   font-family: 'Cabin',sans-serif;
 }
 
-@media (min-width:46.0625em) {
+@media (min-width:36.0625em) {
   .c0 {
     font-size: 37px;
     line-height: calc(40/37);
@@ -23,14 +23,14 @@ exports[`heading() should display styles for size lg 1`] = `
 
 exports[`heading() should display styles for size md 1`] = `
 .c0 {
-  color: #4A4A4A;
+  color: #474747;
   font-size: 22px;
   font-weight: 500;
   line-height: calc(28 / 22);
   font-family: 'Cabin',sans-serif;
 }
 
-@media (min-width:46.0625em) {
+@media (min-width:36.0625em) {
   .c0 {
     font-size: 28px;
     line-height: calc(32/28);
@@ -44,14 +44,14 @@ exports[`heading() should display styles for size md 1`] = `
 
 exports[`heading() should display styles for size sm 1`] = `
 .c0 {
-  color: #4A4A4A;
+  color: #474747;
   font-size: 18px;
   font-weight: 500;
   line-height: calc(24 / 18);
   font-family: 'Cabin',sans-serif;
 }
 
-@media (min-width:46.0625em) {
+@media (min-width:36.0625em) {
   .c0 {
     font-size: 22px;
     line-height: calc(28/22);
@@ -65,14 +65,14 @@ exports[`heading() should display styles for size sm 1`] = `
 
 exports[`heading() should display styles for size xl 1`] = `
 .c0 {
-  color: #4A4A4A;
+  color: #474747;
   font-size: 37px;
   font-weight: bold;
   line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
 }
 
-@media (min-width:46.0625em) {
+@media (min-width:36.0625em) {
   .c0 {
     font-size: 46px;
     line-height: calc(50/46);
@@ -86,14 +86,14 @@ exports[`heading() should display styles for size xl 1`] = `
 
 exports[`heading() should display styles for size xs 1`] = `
 .c0 {
-  color: #4A4A4A;
+  color: #474747;
   font-size: 15px;
   font-weight: 500;
   line-height: calc(20 / 15);
   font-family: 'Cabin',sans-serif;
 }
 
-@media (min-width:46.0625em) {
+@media (min-width:36.0625em) {
   .c0 {
     font-size: 18px;
     line-height: calc(24/18);

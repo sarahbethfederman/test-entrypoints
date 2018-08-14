@@ -8,22 +8,21 @@ describe('select()', () => {
   it('should return the value when the path exists in the theme', () => {
     expect(select('version')({ theme: { version: '1.0.0' } })).toEqual('1.0.0');
     expect(select('breakpoints.mobile')({ theme: { breakpoints: { mobile: 0 } } })).toEqual(0);
-    expect(select('colors.brand.primary')({ theme: { colors: { brand: { primary: 'green' } } } })).toEqual('green');
-    expect(select('colors.brand.primary.dark')({ theme: { colors: { brand: { 'primary.dark': 'green' } } } })).toEqual(
-      'green'
-    );
+    expect(select('colors.primary.500')({ theme: { colors: { primary: { '500': 'green' } } } })).toEqual('green');
+    expect(select('colors.primary.800')({ theme: { colors: { 'primary.800': 'green' } } })).toEqual('green');
+    expect(select('colors.primary.500')({ theme: { colors: { primary: { '500': 'green' } } } })).toEqual('green');
   });
 
   it('should return the default value when the path does not exist in the theme', () => {
     expect(select('version', '1.0.0')({ theme: {} })).toEqual('1.0.0');
     expect(select('breakpoints.mobile', 0)({ theme: {} })).toEqual(0);
     expect(select('breakpoints.mobile', 0)({ theme: { breakpoints: {} } })).toEqual(0);
-    expect(select('colors.brand.primary', 'green')({ theme: {} })).toEqual('green');
-    expect(select('colors.brand.primary', 'green')({ theme: { colors: {} } })).toEqual('green');
-    expect(select('colors.brand.primary', 'green')({ theme: { colors: { brand: {} } } })).toEqual('green');
-    expect(select('colors.brand.primary.dark', 'green')({ theme: {} })).toEqual('green');
-    expect(select('colors.brand.primary.dark', 'green')({ theme: { colors: {} } })).toEqual('green');
-    expect(select('colors.brand.primary.dark', 'green')({ theme: { colors: { brand: {} } } })).toEqual('green');
+    expect(select('colors.primary', 'green')({ theme: {} })).toEqual('green');
+    expect(select('colors.primary', 'green')({ theme: { colors: {} } })).toEqual('green');
+    expect(select('colors.primary', 'green')({ theme: { colors: { primary: 'green' } } })).toEqual('green');
+    expect(select('colors.primary.800', 'green')({ theme: {} })).toEqual('green');
+    expect(select('colors.primary.800', 'green')({ theme: { colors: {} } })).toEqual('green');
+    expect(select('colors.primary.800', 'green')({ theme: { colors: { brand: {} } } })).toEqual('green');
   });
 
   it('should throw an error when the path does not exist in the theme', () => {

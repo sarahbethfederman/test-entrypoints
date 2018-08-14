@@ -16,10 +16,10 @@ storiesOf('Components/heading', module).add('Heading', () => (
       <Heading size="xs">{copy}</Heading>
 
       <h5>color</h5>
-      <Heading size="xl" color="brand.primary">
+      <Heading size="xl" color="primary.500">
         {copy}
       </Heading>
-      <Heading size="xl" color="brand.secondary">
+      <Heading size="xl" color="secondary.500">
         {copy}
       </Heading>
 

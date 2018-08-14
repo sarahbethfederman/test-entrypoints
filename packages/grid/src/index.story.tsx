@@ -13,10 +13,10 @@ const Grid = styled.div`
 
 const Unit = styled.code`
   ${p('xxs')}
-  ${bg('brand.primary.light')}
+  ${bg('primary.300')}
   ${body({ align: 'center' })}
   ${unit}
-  border: 1px solid ${color('shade.8')}
+  border: 1px solid ${color('shade.800')}
 `;
 
 storiesOf('Foundation/grid', module).add('basic', () => (

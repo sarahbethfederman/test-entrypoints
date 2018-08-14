@@ -11,7 +11,7 @@ const borderRadius = '4px';
 const ColorWrapper = styled.section`
   ${m('xxs')} display: inline-block;
   width: 200px;
-  border: 1px solid ${color('shade.5')};
+  border: 1px solid ${color('shade.500')};
   border-radius: ${borderRadius};
 `;
 
@@ -23,12 +23,12 @@ const ColorSwab = styled.div`
   ${p('xxl')} ${(props: ColorSwabProps) => bg(props.color)};
   border-top-left-radius: ${borderRadius};
   border-top-right-radius: ${borderRadius};
-  border-bottom: 1px solid ${color('shade.5')};
+  border-bottom: 1px solid ${color('shade.500')};
 `;
 
 const ColorDetail = styled.section`
   ${p('xs')}
-  ${fg('shade.1')}
+  ${fg('shade.400')}
   ${body()}
 `;
 
@@ -43,60 +43,21 @@ const ColorComponent = withTheme(({ name, theme }: { name: string; theme: any })
   </ColorWrapper>
 ));
 
-const BrandStory = withTheme(({ theme }: { theme: any }) => (
-  <>
-    <h1>Brand</h1>
-    {['primary', 'secondary', 'tertiary', 'quaternary'].map((prefix: string) => (
-      <>
-        <h5>{prefix}</h5>
-        {Object.keys(theme.colors.brand)
-          .filter((name) => name.startsWith(prefix))
-          .map((c) => (
-            <ColorComponent key={`brand.${c}`} name={`brand.${c}`} />
-          ))}
-      </>
-    ))}
-  </>
-));
-
-const ShadeStory = withTheme(({ theme }: { theme: any }) => (
-  <>
-    <h1>Shade</h1>
-    {Object.keys(theme.colors.shade).map((c: string) => (
-      <ColorComponent key={`shade.${c}`} name={`shade.${c}`} />
-    ))}
-  </>
-));
-
 const AlertStory = withTheme(({ theme }: { theme: any }) => (
   <>
-    <h1>Alert</h1>
-    {['info', 'warn', 'error', 'success'].map((prefix: string) => (
+    {Object.keys(theme.colors).map((prefix) => (
       <>
         <h5>{prefix}</h5>
-        {Object.keys(theme.colors.alert)
-          .filter((name) => name.startsWith(prefix))
-          .map((c) => (
-            <ColorComponent key={`alert.${c}`} name={`alert.${c}`} />
-          ))}
+        {Object.keys(theme.colors[prefix]).map((colorIndex) => (
+          <ColorComponent key={`${prefix}.${colorIndex}`} name={`${prefix}.${colorIndex}`} />
+        ))}
       </>
     ))}
   </>
 ));
 
-storiesOf('Foundation/color', module)
-  .add('brand', () => (
-    <Theme>
-      <BrandStory />
-    </Theme>
-  ))
-  .add('shade', () => (
-    <Theme>
-      <ShadeStory />
-    </Theme>
-  ))
-  .add('alert', () => (
-    <Theme>
-      <AlertStory />
-    </Theme>
-  ));
+storiesOf('Foundation/color', module).add('color()', () => (
+  <Theme>
+    <AlertStory />
+  </Theme>
+));

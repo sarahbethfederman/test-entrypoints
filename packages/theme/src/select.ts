@@ -14,6 +14,7 @@ export function select(path: string, defaultValue?: any): any {
     do {
       // check if there is a key that matches the remainder of the path
       const restOfPath = path.substr(startIndex + 1);
+
       if (obj.hasOwnProperty(restOfPath)) {
         return obj[restOfPath];
       }
@@ -21,6 +22,7 @@ export function select(path: string, defaultValue?: any): any {
       // check if there is a key that matches the next part of the path
       finishIndex = path.indexOf('.', startIndex + 1);
       const nextPartOfPath = path.substr(startIndex + 1, finishIndex - startIndex - 1);
+
       if (finishIndex === -1 || !obj.hasOwnProperty(nextPartOfPath)) {
         if (defaultValue !== undefined) {
           return defaultValue;

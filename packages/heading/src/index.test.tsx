@@ -7,7 +7,7 @@ import { color } from '../../../node_modules/@types/storybook__addon-knobs';
 
 describe('Heading', () => {
   const sizes = ['xl', 'lg', 'md', 'sm', 'xs'];
-  const colors = ['brand.primary', 'shade.0', 'shade.1'];
+  const colors = ['primary.500', 'shade.0', 'shade.1000'];
   const alignments = ['left', 'center', 'right'];
   sizes.forEach((size, index) => {
     it(`should render styles for size ${size}`, () => {
@@ -37,7 +37,7 @@ describe('Heading', () => {
 
   it(`should render default styles for color when no color prop is passed`, () => {
     const wrapper = shallow(<Heading size="xl" theme={theme} />);
-    expect(wrapper).toHaveStyleRule('color', getColor('shade.1')({ theme }));
+    expect(wrapper).toHaveStyleRule('color', getColor('shade.700')({ theme }));
   });
 
   it(`should render default styles for align when no align prop is passed`, () => {

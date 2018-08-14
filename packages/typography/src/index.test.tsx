@@ -7,7 +7,7 @@ import { heading, body } from './index';
 
 describe('heading()', () => {
   const headingSizes = ['xl', 'lg', 'md', 'sm', 'xs'];
-  const headingColors = ['brand.primary', 'shade.0', 'shade.1'];
+  const headingColors = ['primary.500', 'shade.0', 'shade.1000'];
   const headingAlignments = ['left', 'center', 'right', 'justify'];
 
   headingSizes.forEach((headingSize) => {
@@ -45,7 +45,7 @@ describe('heading()', () => {
       ${heading({ size: 'xl' })};
     `;
     const wrapper = shallow(<Component theme={theme} />);
-    expect(wrapper).toHaveStyleRule('color', color('shade.1')({ theme }));
+    expect(wrapper).toHaveStyleRule('color', color('shade.700')({ theme }));
   });
 
   it(`should display styles for the default align`, () => {

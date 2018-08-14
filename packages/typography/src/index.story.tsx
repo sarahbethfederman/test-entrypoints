@@ -26,10 +26,10 @@ storiesOf('Foundation/typography', module)
         <Heading size="xs">{copy}</Heading>
 
         <h5>color</h5>
-        <Heading size="xl" color="brand.primary">
+        <Heading size="xl" color="primary.500">
           {copy}
         </Heading>
-        <Heading size="xl" color="brand.secondary">
+        <Heading size="xl" color="secondary.500">
           {copy}
         </Heading>
 
@@ -56,8 +56,8 @@ storiesOf('Foundation/typography', module)
         <Body size="xs">{copy}</Body>
 
         <h5>color</h5>
-        <Body color="brand.primary">{copy}</Body>
-        <Body color="brand.secondary">{copy}</Body>
+        <Body color="primary.500">{copy}</Body>
+        <Body color="secondary.500">{copy}</Body>
 
         <h5>align</h5>
         <Body align="left">{copy}</Body>
