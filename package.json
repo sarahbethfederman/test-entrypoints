@@ -35,6 +35,7 @@
     "netlify": "^1.2.0",
     "prettier": "^1.13.5",
     "prettier-check": "^2.0.0",
+    "publish-if-not-published": "^1.0.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "storybook-addon-jsx": "^5.3.0",
@@ -50,16 +51,16 @@
     "list": "lerna ls",
     "clean:node": "lerna clean && rm -rf node_modules",
     "clean:workspaces": "lerna exec 'rm -rf dist'",
-    "lint:sources": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' '+(packages|utils|website)/*/src/*.+(ts|tsx)'",
-    "lint:stories-and-tests": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils|website)/*/src/*.+(story|test).+(ts|tsx)'",
-    "lint": "yarn run lint:sources && yarn run lint:stories-and-tests",
+    "check:lint-source": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' '+(packages|utils|website)/*/src/*.+(ts|tsx)'",
+    "check:lint-story-and-test": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils|website)/*/src/*.+(story|test).+(ts|tsx)'",
+    "check:format": "prettier-check '*.{json,js,jsx,ts,tsx,md}' 'packages/*/*/src/**/*.{json,js,jsx,ts,tsx,md}'",
+    "check": "yarn run check:lint-source && yarn run check:lint-story-and-test && yarn run check:format",
     "build": "lerna run build",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",
-    "deploy": "lerna run deploy",
-    "precommit": "yarn run lint-staged && yarn run lint && yarn run test && yarn run build",
-    "create-component": "npx -p @auscred/create-lui-component create-lui-component"
+    "create-component": "npx -p @auscred/create-lui-component create-lui-component",
+    "precommit": "yarn run lint-staged && yarn run check && yarn run test && yarn run build"
   },
   "lint-staged": {
     "**/*.{json,js,jsx,ts,tsx,md}": [

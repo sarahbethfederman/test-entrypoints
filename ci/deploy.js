@@ -8,12 +8,12 @@ const BITBUCKET_REPO_SLUG = process.env.BITBUCKET_REPO_SLUG;
 const BITBUCKET_REPO_OWNER = process.env.BITBUCKET_REPO_OWNER;
 
 // bitbucket user details
-const BITBUCKET_USERNAME = 'jamesatlendi';
+const BITBUCKET_USERNAME = process.env.BITBUCKET_USERNAME;
 const BITBUCKET_PASSWORD = process.env.BITBUCKET_PASSWORD;
 
 // netlify API token
 const NETLIFY_TOKEN = process.env.NETLIFY_TOKEN;
-const NETLIFY_SITE = '05ed6280-f2e0-4de3-8b93-867aaed424cf';
+const NETLIFY_SITE = process.env.NETLIFY_SITE;
 
 (async function() {
   const isMasterBranch = BITBUCKET_BRANCH === 'master';
@@ -28,7 +28,7 @@ const NETLIFY_SITE = '05ed6280-f2e0-4de3-8b93-867aaed424cf';
   try {
     const client = netlify.createClient({ access_token: NETLIFY_TOKEN });
     const site = await client.site(NETLIFY_SITE);
-    const deploy = await site.createDeploy({ dir: './dist', draft: !isMasterBranch });
+    const deploy = await site.createDeploy({ dir: './website/dist', draft: !isMasterBranch });
     await deploy.waitForReady();
 
     const branchDeployUrl = isMasterBranch ? deploy.ssl_url : deploy.deploy_ssl_url;

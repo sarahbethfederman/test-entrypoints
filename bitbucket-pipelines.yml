@@ -3,32 +3,19 @@ image: node:latest
 pipelines:
   default:
 
-    - step:
-        name: ⬇️ Install
-        script:
-          - mv .npmrc_config .npmrc
-          - yarn 
-        caches:
-          - nodemonorepo
-
     - parallel:
 
       - step:
           name: ✅ Lint
           script:
-            - mv .npmrc_config .npmrc
-            - yarn
-            - yarn run lint
-            - "\"$(yarn bin)/prettier-check\" \"*.{json,js,jsx,ts,tsx,md}\" \"packages/*/*/src/**/*.{json,js,jsx,ts,tsx,md}\""
+            - ./ci/lint.sh 
           caches:
             - nodemonorepo
 
       - step:
           name: ⚒ Build
           script:
-            - mv .npmrc_config .npmrc
-            - yarn
-            - yarn run build
+            - ./ci/build.sh
           caches:
             - nodemonorepo 
           artifacts:
@@ -37,20 +24,61 @@ pipelines:
       - step:
           name: 📝 Test
           script:
-            - mv .npmrc_config .npmrc
-            - yarn
-            - yarn run test
+            - ./ci/test.sh
           caches:
             - nodemonorepo
 
-    - step:
-        name: 🚀 Deploy
-        script:
-          - mv .npmrc_config .npmrc
-          - yarn
-          - yarn run deploy
-        caches:
-          - nodemonorepo
+    - parallel:
+          
+      - step:
+          name: 🚀 Deploy
+          script:
+            - ./ci/deploy.sh
+          caches:
+            - nodemonorepo
+
+  master:
+
+    - parallel:
+
+      - step:
+          name: ✅ Lint
+          script:
+            - ./ci/lint.sh 
+          caches:
+            - nodemonorepo
+
+      - step:
+          name: ⚒ Build
+          script:
+            - ./ci/build.sh
+          caches:
+            - nodemonorepo 
+          artifacts:
+            - "**/dist/**"
+
+      - step:
+          name: 📝 Test
+          script:
+            - ./ci/test.sh
+          caches:
+            - nodemonorepo
+
+    - parallel:
+          
+      - step:
+          name: 🚀 Deploy
+          script:
+            - ./ci/deploy.sh
+          caches:
+            - nodemonorepo
+        
+      - step:
+          name: 📦 Publish 
+          script:
+            - ./ci/publish.sh
+          caches:
+            - nodemonorepo
 
 definitions:
   caches:
