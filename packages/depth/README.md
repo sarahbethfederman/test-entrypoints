@@ -1,17 +1,17 @@
-# @lendi-au/depth
+# @lendi-ui/depth
 
 A depth component.
 
 ## Installation
 
 ```
-yarn add @lendi-au/depth
+yarn add @lendi-ui/depth
 ```
 
 ## Usage
 
 ```
-import {depth} from '@lendi-au/depth';
+import {depth} from '@lendi-ui/depth';
 
 <ComponentName/>
 ```
