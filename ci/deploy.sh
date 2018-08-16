@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-./ci/utils/install.sh
+source ./ci/utils/install.sh
 
 node ./ci/deploy.js
