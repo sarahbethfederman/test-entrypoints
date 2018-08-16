@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# fail on first error
+set -e
+
 # add yarn binaries to the path
 export PATH="$PATH:$(yarn bin)"
 echo $PATH
