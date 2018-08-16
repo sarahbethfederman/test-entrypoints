@@ -1,5 +1,8 @@
 image: node:latest
 
+clone:
+  depth: 1 # only include the last commit for faster checkouts
+
 pipelines:
   default:
 
@@ -28,46 +31,45 @@ pipelines:
           caches:
             - nodemonorepo
 
-    - parallel:
+    - step:
+        name: 🚀 Deploy
+        deployment: test
+        script:
+          - ./ci/deploy.sh
+        caches:
+          - nodemonorepo
           
+  branches:
+    master:
+
+      - parallel:
+
+        - step:
+            name: ✅ Lint
+            script:
+              - ./ci/lint.sh 
+            caches:
+              - nodemonorepo
+
+        - step:
+            name: ⚒ Build
+            script:
+              - ./ci/build.sh
+            caches:
+              - nodemonorepo 
+            artifacts:
+              - "**/dist/**"
+
+        - step:
+            name: 📝 Test
+            script:
+              - ./ci/test.sh
+            caches:
+              - nodemonorepo
+
       - step:
           name: 🚀 Deploy
-          script:
-            - ./ci/deploy.sh
-          caches:
-            - nodemonorepo
-
-  master:
-
-    - parallel:
-
-      - step:
-          name: ✅ Lint
-          script:
-            - ./ci/lint.sh 
-          caches:
-            - nodemonorepo
-
-      - step:
-          name: ⚒ Build
-          script:
-            - ./ci/build.sh
-          caches:
-            - nodemonorepo 
-          artifacts:
-            - "**/dist/**"
-
-      - step:
-          name: 📝 Test
-          script:
-            - ./ci/test.sh
-          caches:
-            - nodemonorepo
-
-    - parallel:
-          
-      - step:
-          name: 🚀 Deploy
+          deployment: production
           script:
             - ./ci/deploy.sh
           caches:
