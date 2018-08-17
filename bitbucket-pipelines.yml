@@ -33,7 +33,6 @@ pipelines:
 
     - step:
         name: 🚀 Deploy
-        deployment: test
         script:
           - ./ci/deploy.sh
         caches:

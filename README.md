@@ -16,3 +16,11 @@ yarn start
 ```
 npx create-lui-component (atom|molecule) PackageName
 ```
+
+## Publishing
+
+Bump the `version` in the package's `package.json` then create a Pull Request and Merge it to the `master` branch. After CI checks, tests and builds your changes, it will publish any packages with an unpublished `version`.
+
+### Versioning
+
+Please use [`semver`](https://semver.org/) and avoid breaking changes where possible in order to prevent churn on consumers of `lendi-ui`.
