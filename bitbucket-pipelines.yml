@@ -30,6 +30,13 @@ pipelines:
             - ./ci/test.sh
           caches:
             - nodemonorepo
+      
+      - step:
+          name: Test React 15
+          script:
+            - ./ci/test-react-15.sh
+          caches:
+            - nodemonorepo
 
     - step:
         name: 🚀 Deploy
