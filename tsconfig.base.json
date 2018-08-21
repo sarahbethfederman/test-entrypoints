@@ -15,12 +15,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "target": "es5",
-    "baseUrl": "./",
-    "paths": {
-      "@lendi-ui/*-utils": ["./utils/*-utils/src"],
-      "@lendi-ui/*": ["./packages/*/src"]
-    }
+    "target": "es5"
   },
   "exclude": ["node_modules"]
 }

@@ -51,6 +51,7 @@
     "list": "lerna ls",
     "clean:node": "lerna clean && rm -rf node_modules",
     "clean:workspaces": "lerna exec 'rm -rf dist'",
+    "clean": "yarn run clean:workspaces && yarn run clean:node",
     "check:lint-source": "tslint -c ./tslint.sources.json --format stylish --exclude '**/*.+(story|test).+(ts|tsx)' '+(packages|utils|website)/*/src/*.+(ts|tsx)'",
     "check:lint-story-and-test": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils|website)/*/src/*.+(story|test).+(ts|tsx)'",
     "check:format": "prettier-check '*.{json,js,jsx,ts,tsx,md}' 'packages/*/*/src/**/*.{json,js,jsx,ts,tsx,md}'",
