@@ -1,4 +1,5 @@
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
+
 import { select } from '@lendi-ui/theme';
 import { gte, map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { fg } from '@lendi-ui/color';
@@ -7,6 +8,7 @@ export type Alignment = 'left' | 'center' | 'right' | 'jusify';
 export type AlignmentOrAlignmentMap = BreakpointValue<Alignment> | BreakpointValueMap<Alignment>;
 export type HeadingSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type BodySize = 'xs' | 'sm' | 'md' | 'lg';
+export type LinkSize = 'sm' | 'md' | 'lg';
 
 const alignMixin = (alignment: AlignmentOrAlignmentMap) => {
   return map(alignment, (val) => {
@@ -154,3 +156,40 @@ export function body(options: BodyOptions = {}) {
     font-family: ${select('typography.body.fontFamily', '"Open sans", sans-serif')};
   `;
 }
+
+export const Body = styled.p`
+  ${link};
+`;
+
+export interface LinkOptions {
+  color?: string;
+  href?: string;
+  size?: LinkSize;
+}
+
+/**
+ * Link component
+ * @param props LinkOptions
+ */
+export function link(props: LinkOptions = {}) {
+  const { color = 'primary.500', size } = props;
+
+  return css`
+    ${color && fg(color)}
+    ${size && bodySizeMixin(size)}
+    font-family: ${select('typography.body.fontFamily', '"Open sans", sans-serif')};
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover, 
+    &:focus,
+    &:active { 
+      text-decoration: underline;
+      ${fg('primary.700')}
+    }
+  `;
+}
+
+export const Link = styled.a`
+  ${link};
+`;

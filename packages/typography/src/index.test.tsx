@@ -1,9 +1,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+
 import { theme } from '@lendi-ui/theme';
-import { color } from '@lendi-ui/color';
-import { heading, body } from './index';
+import { color as getColor } from '@lendi-ui/color';
+
+import { heading, body, Link } from './index';
+
+const Body = styled.p`
+  ${body};
+`;
 
 describe('heading()', () => {
   const headingSizes = ['xl', 'lg', 'md', 'sm', 'xs'];
@@ -26,7 +32,7 @@ describe('heading()', () => {
         ${heading({ size: 'xl', color: headingColor })};
       `;
       const wrapper = shallow(<Component theme={theme} />);
-      expect(wrapper).toHaveStyleRule('color', color(headingColor)({ theme }));
+      expect(wrapper).toHaveStyleRule('color', getColor(headingColor)({ theme }));
     });
   });
 
@@ -45,7 +51,7 @@ describe('heading()', () => {
       ${heading({ size: 'xl' })};
     `;
     const wrapper = shallow(<Component theme={theme} />);
-    expect(wrapper).toHaveStyleRule('color', color('shade.700')({ theme }));
+    expect(wrapper).toHaveStyleRule('color', getColor('shade.700')({ theme }));
   });
 
   it(`should display styles for the default align`, () => {
@@ -54,5 +60,49 @@ describe('heading()', () => {
     `;
     const wrapper = shallow(<Component theme={theme} />);
     expect(wrapper).not.toHaveStyleRule('text-align');
+  });
+});
+
+describe('Link', () => {
+  const sizes = ['lg', 'md', 'sm'];
+  const colors = ['primary.500', 'shade.0', 'shade.1000'];
+
+  sizes.forEach((size, index) => {
+    it(`should render styles for size ${size}`, () => {
+      const wrapper = shallow(<Link size={size} theme={theme} />);
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  colors.forEach((color) => {
+    it(`should render styles for color ${color} based on props`, () => {
+      const wrapper = shallow(<Link size="lg" theme={theme} color={color} />);
+      expect(wrapper).toHaveStyleRule('color', getColor(color)({ theme }));
+    });
+  });
+
+  it('should have correct tag', () => {
+    const wrapper = mount(<Link theme={theme} />);
+    expect(wrapper.find('a')).toHaveLength(1);
+  });
+
+  it('should render default styles for color when no color prop is passed', () => {
+    const wrapper = shallow(<Link size="lg" theme={theme} />);
+    expect(wrapper).toHaveStyleRule('color', getColor('primary.500')({ theme }));
+  });
+
+  it('should render default styles for align when no align prop is passed', () => {
+    const wrapper = shallow(<Link size="lg" theme={theme} />);
+    expect(wrapper).not.toHaveStyleRule('text-align');
+  });
+
+  it('should inherit the enclosing Body size if no size defined on the component', () => {
+    const wrapper = mount(
+      <Body size="lg" theme={theme}>
+        <Link theme={theme} />
+      </Body>
+    );
+    expect(wrapper).toHaveStyleRule('font-size', '16px');
+    expect(wrapper.find('a')).not.toHaveStyleRule('font-size');
   });
 });

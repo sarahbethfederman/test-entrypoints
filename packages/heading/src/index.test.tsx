@@ -17,7 +17,7 @@ describe('Heading', () => {
 
     it(`should render tag for size ${size}`, () => {
       const wrapper = mount(<Heading size={size} theme={theme} />);
-      expect(wrapper.find(`h${index + 1}`)).toBeTruthy();
+      expect(wrapper.find(`h${index + 1}`)).toHaveLength(1);
     });
   });
 

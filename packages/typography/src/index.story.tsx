@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { storiesOf } from '@storybook/react';
 import Theme from '@lendi-ui/theme';
-import { heading, body } from '.';
+import { heading, body, Link } from '.';
 
 const copy = 'The quick brown fox jumps over the lazy dog';
 
@@ -63,6 +63,31 @@ storiesOf('Foundation/typography', module)
         <Body align="left">{copy}</Body>
         <Body align="center">{copy}</Body>
         <Body align="right">{copy}</Body>
+      </>
+    </Theme>
+  ))
+  .add('link', () => (
+    <Theme>
+      <>
+        <h5>size</h5>
+        <Link size="lg">{copy}</Link>
+        <Link size="md">{copy}</Link>
+        <Link size="sm">{copy}</Link>
+
+        <h5>color</h5>
+        <Link color="tertiary.500">{copy}</Link>
+        <Link color="secondary.500">{copy}</Link>
+
+        <h5>Within a body</h5>
+        <Body size="lg">
+          Lorem ipsum doler <Link>{copy}</Link> some more text here
+        </Body>
+        <Body size="md">
+          Lorem ipsum doler <Link>{copy}</Link> some more text here
+        </Body>
+        <Body size="sm">
+          Lorem ipsum doler <Link>{copy}</Link> some more text here
+        </Body>
       </>
     </Theme>
   ));

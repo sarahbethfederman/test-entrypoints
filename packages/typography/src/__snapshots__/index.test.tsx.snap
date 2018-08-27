@@ -1,5 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Link should render styles for size lg 1`] = `
+.c0 {
+  color: #00c0a5;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    font-size: 18px;
+    line-height: calc(24/18);
+  }
+}
+
+<a
+  className="c0"
+  size="lg"
+/>
+`;
+
+exports[`Link should render styles for size md 1`] = `
+.c0 {
+  color: #00c0a5;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    font-size: 16px;
+    line-height: calc(24/16);
+  }
+}
+
+<a
+  className="c0"
+  size="md"
+/>
+`;
+
+exports[`Link should render styles for size sm 1`] = `
+.c0 {
+  color: #00c0a5;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    font-size: 14px;
+    line-height: calc(20/14);
+  }
+}
+
+<a
+  className="c0"
+  size="sm"
+/>
+`;
+
 exports[`heading() should display styles for size lg 1`] = `
 .c0 {
   color: #474747;
