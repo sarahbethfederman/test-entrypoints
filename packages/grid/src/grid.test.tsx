@@ -127,7 +127,7 @@ describe('grid()', () => {
   describe('wrap', () => {
     it('should render correctly when default ', () => {
       const element = shallow(<Grid />);
-      expect(element).not.toHaveStyleRule('flex-wrap');
+      expect(element).toHaveStyleRule('flex-wrap', 'wrap');
     });
 
     it('should render correctly when true and not reversed', () => {

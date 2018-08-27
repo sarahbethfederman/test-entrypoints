@@ -117,7 +117,7 @@ function wrapMixin({
   reverse?: BreakpointValue<Reverse> | BreakpointValueMap<Reverse>;
 }) {
   if (wrap === undefined) {
-    return '';
+    return 'flex-wrap: wrap;';
   }
   return map(wrap, (value = true) => {
     if (value && reverse) {
