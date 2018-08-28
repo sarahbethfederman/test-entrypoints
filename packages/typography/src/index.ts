@@ -164,7 +164,7 @@ export function body(options: BodyOptions = {}) {
  * Body component
  */
 export const Body = styled.p`
-  ${link};
+  ${body};
 `;
 
 export interface LinkOptions {
