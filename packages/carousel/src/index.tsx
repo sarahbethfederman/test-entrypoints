@@ -5,19 +5,18 @@ export interface CarouselProps {
   children: JSX.Element[];
   width?: string;
   height?: string;
-  defaultIndex?: number;
   speed?: number;
   duration?: number;
+  defaultIndex?: number;
 }
 
 export interface CarouselState {
-  activeIdx: number;
-  disabled: boolean;
-  prevActiveIdx: number | null;
-  length: number;
+  isDisabled: boolean;
+  currentIndex: number;
+  previousIndex: number | null;
 }
 
-export class Carousel extends React.Component<CarouselProps, CarouselState> {
+export default class Carousel extends React.Component<CarouselProps, CarouselState> {
   public static defaultProps: Partial<CarouselProps> = {
     defaultIndex: 0,
     duration: 5000,
@@ -31,10 +30,9 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   constructor(props: CarouselProps) {
     super(props);
     this.state = {
-      activeIdx: props.defaultIndex || 0,
-      disabled: false,
-      length: props.children.length,
-      prevActiveIdx: null,
+      currentIndex: props.defaultIndex || 0,
+      isDisabled: false,
+      previousIndex: null,
     };
 
     this.timer = setTimeout(() => this.goToNextSlide(), props.duration);
@@ -42,38 +40,38 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
   public render() {
     const { children, height, width, speed, duration } = this.props;
-    const { activeIdx, prevActiveIdx } = this.state;
+    const { currentIndex, previousIndex } = this.state;
     return (
       <CarouselContainer height={height} width={width}>
-        {children.map((child, idx) => (
+        {React.Children.map(children, (child, index) => (
           <Slide
             {...{ height, width, speed, duration }}
-            key={idx}
-            active={activeIdx === idx}
-            prevActiveIdx={prevActiveIdx === idx}
+            key={index}
+            isActive={currentIndex === index}
+            previousIndex={previousIndex === index}
             onTransitionEnd={this.handleTransitionEnd}
           >
             {child}
           </Slide>
         ))}
         <IndicatorContainer>
-          {children.map((child, idx) => (
-            <Indicator onClick={this.goToSlide.bind(this, idx)} key={idx} active={activeIdx === idx} />
+          {React.Children.map(children, (child, index) => (
+            <Indicator key={index} isActive={currentIndex === index} onClick={this.goToSlide.bind(this, index)} />
           ))}
         </IndicatorContainer>
       </CarouselContainer>
     );
   }
 
-  private goToSlide(idx: number): void {
-    if (this.state.disabled) {
+  private goToSlide(index: number): void {
+    if (this.state.isDisabled) {
       return;
     }
-    if (this.state.activeIdx !== idx) {
+    if (this.state.currentIndex !== index) {
       this.setState((prevState) => ({
-        activeIdx: idx,
-        disabled: true,
-        prevActiveIdx: prevState.activeIdx,
+        isDisabled: true,
+        currentIndex: index,
+        previousIndex: prevState.currentIndex,
       }));
       clearTimeout(this.timer);
       this.timer = setTimeout(() => this.goToNextSlide(), this.props.duration);
@@ -81,13 +79,13 @@ export class Carousel extends React.Component<CarouselProps, CarouselState> {
   }
 
   private goToNextSlide(): void {
-    this.goToSlide((this.state.activeIdx + 1) % this.state.length);
+    this.goToSlide((this.state.currentIndex + 1) % React.Children.count(this.props.children));
   }
 
   private handleTransitionEnd(): void {
     this.setState({
-      disabled: false,
-      prevActiveIdx: null,
+      isDisabled: false,
+      previousIndex: null,
     });
   }
 }

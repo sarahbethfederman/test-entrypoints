@@ -53,34 +53,4 @@ describe('unit()', () => {
       });
     });
   });
-
-  describe('visible', () => {
-    it('should render correctly when default', () => {
-      const element = shallow(<Unit />);
-      expect(element).not.toHaveStyleRule('display');
-    });
-
-    it('should render correctly when true', () => {
-      const element = shallow(<Unit visible={true} />);
-      expect(element).toHaveStyleRule('display', 'flex');
-    });
-
-    it('should render correctly when false', () => {
-      const element = shallow(<Unit visible={false} />);
-      expect(element).toHaveStyleRule('display', 'none');
-    });
-
-    it('should render correctly across breakpoints', () => {
-      const element = shallow(<Unit visible={{ mobile: true, tablet: false, desktop: true }} />);
-      expect(element).toHaveStyleRule('display', 'flex', {
-        media: `(min-width:${Breakpoint.mobile})`,
-      });
-      expect(element).toHaveStyleRule('display', 'none', {
-        media: `(min-width:${Breakpoint.tablet})`,
-      });
-      expect(element).toHaveStyleRule('display', 'flex', {
-        media: `(min-width:${Breakpoint.desktop})`,
-      });
-    });
-  });
 });

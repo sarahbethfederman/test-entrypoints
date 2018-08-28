@@ -2,7 +2,7 @@
 
 ![King Louie](https://vignette.wikia.nocookie.net/ryans-funny-parts/images/7/71/King-louie.jpg/revision/latest?cb=20160613001549)
 
-## Getting started 
+## Getting started
 
 ```
 yarn

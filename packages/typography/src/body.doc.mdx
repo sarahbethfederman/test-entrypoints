@@ -1,0 +1,22 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# body(options)
+
+Styles for body copy.
+
+## Usage
+
+```js
+const Text = styled.div`
+  ${body({size: 'lg', color: 'primary.500'})}
+`;
+
+render(<Text>The quick brown fox jumps over the lazy dog</Text>)
+```
+
+## Options
+
+<PropTable>
+  <PropTable.Entry name="size" type={'"lg" | "md" | "sm" | "xs"'} description="The body copy size."/>
+  <PropTable.Entry name="color" type={'string'} description="The body copy color."/>
+</PropTable>

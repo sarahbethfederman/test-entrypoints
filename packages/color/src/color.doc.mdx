@@ -1,0 +1,21 @@
+
+# color(color)
+
+Return the color value.
+
+## Import 
+```
+import { color } from '@lendi-ui/color';
+```
+
+## Usage
+
+```js
+const Circle = styled.span`
+  width: 0;
+  border-radius: 1em;
+  border: 1em solid ${color('primary.500')}
+`;
+
+render(<Circle/>);
+```

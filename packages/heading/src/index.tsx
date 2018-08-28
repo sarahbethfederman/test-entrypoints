@@ -12,6 +12,8 @@ const componentBySize: { [size in HeadingSize]: string } = {
   xl: 'h1',
 };
 
+export { HeadingSize };
+
 export interface HeadingProps extends HeadingOptions {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
@@ -21,6 +23,10 @@ function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
   return <Component size={size} {...otherProps} />;
 }
 
-export default styled(HeadingTag)`
+const Heading = styled(HeadingTag)`
   ${my('nil')} ${heading};
 `;
+
+Heading.displayName = 'Heading';
+
+export default Heading;

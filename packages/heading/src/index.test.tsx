@@ -3,7 +3,6 @@ import { mount, shallow } from 'enzyme';
 import { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 import Heading from './index';
-import { color } from '../../../node_modules/@types/storybook__addon-knobs';
 
 describe('Heading', () => {
   const sizes = ['xl', 'lg', 'md', 'sm', 'xs'];
@@ -42,6 +41,6 @@ describe('Heading', () => {
 
   it(`should render default styles for align when no align prop is passed`, () => {
     const wrapper = shallow(<Heading size="xl" theme={theme} />);
-    expect(wrapper).not.toHaveStyleRule('text-align');
+    expect(wrapper).toHaveStyleRule('text-align', undefined);
   });
 });

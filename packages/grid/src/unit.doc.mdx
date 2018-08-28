@@ -1,0 +1,48 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+import { grid, unit } from '.';
+
+# unit(options)
+
+A grid unit mixin.
+
+## Import 
+```
+import { unit } from '@lendi-ui/grid';
+```
+
+## Usage
+
+```js
+
+const Grid = styled.div`
+  ${grid()}
+`;
+
+const Quarter = styled.div`
+  ${unit({offset: 1/4, size: 1/4})}
+  text-align: center;
+  background: tomato;
+`;
+
+const Eighth = styled.div`
+  ${unit({size: 1/8})}
+  text-align: center;
+  background: peachpuff;
+`;
+
+render(
+  <Grid>
+    <Eighth> ⅛ </Eighth>
+    <Quarter> ¼ </Quarter>
+    <Eighth> ⅛ </Eighth>
+  </Grid>
+)
+```
+
+### Options
+
+<PropTable>
+  <PropTable.Entry name="offset" type="number" defaultValue={0} description="The size of the grid unit offset as a fraction."/>
+  <PropTable.Entry name="size" type="number" defaultValue={1} description="The size of the grid unit as a fraction."/>
+</PropTable>
+

@@ -13,7 +13,7 @@ export interface LogoProps {
 export default function Logo(props: LogoProps) {
   const { variant = 'dark' } = props;
   const primary = 'primary.500';
-  const secondary = variant === 'dark' ? 'secondary.975' : 'shade.0';
+  const secondary = variant === 'dark' ? 'secondary.900' : 'shade.0';
   return (
     <Svg viewBox="0 0 143 35.428" {...props}>
       <Path

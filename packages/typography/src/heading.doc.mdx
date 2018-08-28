@@ -1,0 +1,22 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# heading(options)
+
+Styles for heading copy.
+
+## Usage
+
+```js
+  const Heading = styled.div`
+    ${heading({size: 'lg', color: 'primary.500'})}
+  `;
+  
+  render(<Heading>The quick brown fox jumps over the lazy dog</Heading>)
+```
+
+## Options
+
+<PropTable>
+  <PropTable.Entry name="size" type={'"xl" | lg" | "md" | "sm" | "xs"'} required description="The heading copy size."/>
+  <PropTable.Entry name="color" type={'string'} description="The heading copy color."/>
+</PropTable>

@@ -1,0 +1,49 @@
+
+# gte(breakpoint)
+
+Apply styles at a size larger or equal to the specified breakpoint.
+
+## Import 
+```
+import { gte } from '@lendi-ui/breakpoint';
+```
+
+## Usage
+
+```js
+
+const common = css`
+  display: block;
+  ${p('sm')}
+  ${body}
+  ${fg('shade.800')}
+  ${bg('shade.300')}
+`;
+
+const Mobile = styled.code`
+  ${common} ${gte('mobile')`
+    ${bg('primary.800')}
+  `};
+`;
+
+const Tablet = styled.code`
+  ${common} ${gte('tablet')`
+    ${bg('primary.500')}
+  `};
+`;
+
+const Desktop = styled.code`
+  ${common} ${gte('desktop')`
+    ${bg('primary.300')}
+  `};
+`;
+
+render(
+  <>
+    👇 Resize the window to see the color change at each breakpoint:
+    <Mobile>gte('mobile')</Mobile>
+    <Tablet>gte('tablet')</Tablet>
+    <Desktop>gte('desktop')</Desktop>
+  </>
+);
+```

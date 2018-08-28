@@ -1,5 +1,5 @@
 {
-  "extends": ["./node_modules/@auscred/tslint-rules/tslint.json"],
+  "extends": ["./tslint.base.json"],
   "rules": {
     // we've disabled the dependency check for devDependencies so we can add them once
     // at the top level package.json to avoid adding them for every package

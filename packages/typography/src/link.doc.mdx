@@ -1,0 +1,22 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# link(options)
+
+Styles for links.
+
+## Usage
+
+```js
+const A = styled.a`
+  ${link()}
+`;
+
+render(<p>The <A>quick brown fox</A> jumps over the <A>lazy dog</A>.</p>)
+```
+
+## Options
+
+<PropTable>
+  <PropTable.Entry name="size" type={'"lg" | "md" | "sm" | "xs"'} description="The link copy size."/>
+  <PropTable.Entry name="color" type={'string'} description="The link copy color."/>
+</PropTable>

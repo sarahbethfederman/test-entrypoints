@@ -3,13 +3,36 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "@lendi-ui/story-utils": "^1.0.0",
-    "awesome-typescript-loader": "^5.2.0",
-    "react-docgen-typescript-webpack-plugin": "^1.1.0"
+    "@mdx-js/tag": "^0.15.0",
+    "@types/react-helmet": "^5.0.7",
+    "@types/react-router-dom": "^4.3.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.3.1"
+  },
+  "devDependencies": {
+    "@mdx-js/loader": "^0.15.0",
+    "@mdx-js/mdx": "^0.15.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "connect-history-api-fallback": "^1.5.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "fast-glob": "^2.2.2",
+    "fork-ts-checker-webpack-plugin": "^0.4.8",
+    "html-webpack-plugin": "^3.2.0",
+    "koa-connect": "^2.0.1",
+    "loader-utils": "^1.1.0",
+    "ts-loader": "^4.4.2",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-serve": "^2.0.2",
+    "workspace-metadata-webpack-plugin": "^1.0.1"
   },
   "scripts": {
-    "start": "start-storybook --config-dir ./cfg --static-dir ./static --port 6006",
-    "build": "build-storybook --config-dir ./cfg --static-dir ./static --output-dir ./dist",
+    "start": "webpack-serve",
+    "build": "NODE_ENV=production webpack",
     "deploy": "node ./bin/deploy.js"
   }
 }

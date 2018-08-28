@@ -4,7 +4,7 @@ import { select } from '@lendi-ui/theme';
 import { gte, map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { fg } from '@lendi-ui/color';
 
-export type Alignment = 'left' | 'center' | 'right' | 'jusify';
+export type Alignment = 'left' | 'center' | 'right' | 'justify';
 export type AlignmentOrAlignmentMap = BreakpointValue<Alignment> | BreakpointValueMap<Alignment>;
 export type HeadingSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type BodySize = 'xs' | 'sm' | 'md' | 'lg';
@@ -147,6 +147,9 @@ export interface BodyOptions {
   size?: BodySize;
 }
 
+/**
+ * Body mixin
+ */
 export function body(options: BodyOptions = {}) {
   const { color = 'shade.700', align, size = 'md' } = options;
   return css`
@@ -157,6 +160,9 @@ export function body(options: BodyOptions = {}) {
   `;
 }
 
+/**
+ * Body component
+ */
 export const Body = styled.p`
   ${link};
 `;
@@ -168,11 +174,10 @@ export interface LinkOptions {
 }
 
 /**
- * Link component
- * @param props LinkOptions
+ * Link mixin
  */
-export function link(props: LinkOptions = {}) {
-  const { color = 'primary.500', size } = props;
+export function link(options: LinkOptions = {}) {
+  const { color = 'primary.500', size } = options;
 
   return css`
     ${color && fg(color)}
@@ -181,15 +186,18 @@ export function link(props: LinkOptions = {}) {
     font-weight: bold;
     cursor: pointer;
 
-    &:hover, 
+    &:hover,
     &:focus,
-    &:active { 
+    &:active {
       text-decoration: underline;
       ${fg('primary.700')}
     }
   `;
 }
 
+/**
+ * Link component
+ */
 export const Link = styled.a`
   ${link};
 `;

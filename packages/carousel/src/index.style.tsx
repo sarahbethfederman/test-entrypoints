@@ -20,8 +20,8 @@ export interface SlideProps {
   speed?: number;
   width?: string;
   height?: string;
-  active: boolean;
-  prevActiveIdx?: boolean;
+  isActive: boolean;
+  previousIndex?: boolean;
 }
 
 export const Slide = styledComponents.div`
@@ -29,14 +29,14 @@ export const Slide = styledComponents.div`
     left: 100%;
     width: ${({ width }: SlideProps) => width};
     height: ${({ height }: SlideProps) => height};
-    ${({ active }: SlideProps) =>
-      active &&
+    ${({ isActive }: SlideProps) =>
+      isActive &&
       css`
         transition: left ${({ speed }) => speed}ms linear;
         left: 0;
       `}
-    ${({ prevActiveIdx }: SlideProps) =>
-      prevActiveIdx &&
+    ${({ previousIndex }: SlideProps) =>
+      previousIndex &&
       css`
         transition: left ${({ speed }) => speed}ms linear;
         left: -100%;
@@ -51,10 +51,8 @@ export const IndicatorContainer = styledComponents.div`
     text-align: center;
 `;
 
-IndicatorContainer.displayName = 'indicatorContainer';
-
 export interface IndicatorProps {
-  active: boolean;
+  isActive: boolean;
   indicatorColor?: string;
   indicatorActiveColor?: string;
 }
@@ -68,8 +66,8 @@ export const Indicator = styledComponents.span`
     transition: background 100ms linear;
     cursor: pointer;
     background: #CCCCCC;
-    ${({ active }: IndicatorProps) =>
-      active &&
+    ${({ isActive }: IndicatorProps) =>
+      isActive &&
       css`
         background: #666666;
       `}

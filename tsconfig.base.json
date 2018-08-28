@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "alwaysStrict": true,
+    "declaration": false,
     "forceConsistentCasingInFileNames": true,
     "lib": ["dom", "es2018"],
     "jsx": "react",

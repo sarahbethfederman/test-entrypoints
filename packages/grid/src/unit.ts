@@ -1,12 +1,25 @@
 import { css } from 'styled-components';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
+export type Offset = number;
 export type Size = 'min' | 'max' | number;
-export type Visible = boolean;
 
 export interface UnitOptions {
+  offset?: BreakpointValue<Offset> | BreakpointValueMap<Offset>;
   size?: BreakpointValue<Size> | BreakpointValueMap<Size>;
-  visible?: BreakpointValue<Visible> | BreakpointValueMap<Visible>;
+}
+
+function offsetMixin({ offset }: { offset?: BreakpointValue<Offset> | BreakpointValueMap<Offset> }) {
+  if (offset === undefined) {
+    return undefined;
+  }
+  return map(offset, (value) => {
+    if (value) {
+      const pct = Math.round(value * 100 * 10000) / 10000; // round to 4 decimal places
+      return `margin-left: ${pct}%;`;
+    }
+    return undefined;
+  });
 }
 
 function sizeMixin({ size = 1 }: { size?: BreakpointValue<Size> | BreakpointValueMap<Size> }) {
@@ -40,23 +53,9 @@ function sizeMixin({ size = 1 }: { size?: BreakpointValue<Size> | BreakpointValu
   });
 }
 
-function visibleMixin({ visible }: { visible?: BreakpointValue<Visible> | BreakpointValueMap<Visible> }) {
-  // if no value is specified, then don't output any css (it just makes it harder for the consumer to override)
-  if (visible === undefined) {
-    return '';
-  }
-  return map(visible, (value) => {
-    if (value === false) {
-      return 'display: none;';
-    } else {
-      return 'display: flex;'; /* TODO: does this always work as expected? */
-    }
-  });
-}
-
 export function unit(props: UnitOptions = {}) {
   return css`
     box-sizing: border-box;
-    ${sizeMixin(props)} ${visibleMixin(props)};
+    ${offsetMixin(props)} ${sizeMixin(props)};
   `;
 }

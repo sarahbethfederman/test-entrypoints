@@ -5,16 +5,16 @@ import { shallow, mount } from 'enzyme';
 import { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 
-import { heading, body, Link } from './index';
+import { heading, body, Link, HeadingSize, Alignment } from './index';
 
 const Body = styled.p`
   ${body};
 `;
 
 describe('heading()', () => {
-  const headingSizes = ['xl', 'lg', 'md', 'sm', 'xs'];
+  const headingSizes: HeadingSize[] = ['xl', 'lg', 'md', 'sm', 'xs'];
   const headingColors = ['primary.500', 'shade.0', 'shade.1000'];
-  const headingAlignments = ['left', 'center', 'right', 'justify'];
+  const headingAlignments: Alignment[] = ['left', 'center', 'right', 'justify'];
 
   headingSizes.forEach((headingSize) => {
     it(`should display styles for size ${headingSize}`, () => {
@@ -59,7 +59,7 @@ describe('heading()', () => {
       ${heading({ size: 'xl' })};
     `;
     const wrapper = shallow(<Component theme={theme} />);
-    expect(wrapper).not.toHaveStyleRule('text-align');
+    expect(wrapper).toHaveStyleRule('text-align', undefined);
   });
 });
 
@@ -93,7 +93,7 @@ describe('Link', () => {
 
   it('should render default styles for align when no align prop is passed', () => {
     const wrapper = shallow(<Link size="lg" theme={theme} />);
-    expect(wrapper).not.toHaveStyleRule('text-align');
+    expect(wrapper).toHaveStyleRule('text-align', undefined);
   });
 
   it('should inherit the enclosing Body size if no size defined on the component', () => {
@@ -103,6 +103,6 @@ describe('Link', () => {
       </Body>
     );
     expect(wrapper).toHaveStyleRule('font-size', '16px');
-    expect(wrapper.find('a')).not.toHaveStyleRule('font-size');
+    expect(wrapper.find('a')).toHaveStyleRule('font-size', undefined);
   });
 });

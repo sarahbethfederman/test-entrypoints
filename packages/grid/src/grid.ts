@@ -8,9 +8,9 @@ export type VAlign = 'top' | 'bottom' | 'center' | 'stretch';
 
 export interface GridOptions {
   wrap?: BreakpointValue<Wrap> | BreakpointValueMap<Wrap>;
-  reverse?: BreakpointValue<Reverse> | BreakpointValueMap<Reverse>;
   halign?: BreakpointValue<HAlign> | BreakpointValueMap<HAlign>;
   valign?: BreakpointValue<VAlign> | BreakpointValueMap<VAlign>;
+  reverse?: BreakpointValue<Reverse> | BreakpointValueMap<Reverse>;
 }
 
 function halignMixin({

@@ -1,0 +1,33 @@
+import styled from 'styled-components';
+import {fg} from '@lendi-ui/color';
+
+# fg(color)
+
+Set the foreground color.
+
+## Import 
+```
+import { fg } from '@lendi-ui/color';
+```
+
+### Usage
+
+With a single color value:
+
+```js
+const WarningText = styled.span`
+  ${fg('warn.500')}
+`;
+
+render(<WarningText>⚠️ Is there something wrong?</WarningText>);
+```
+
+With a different color value at each breakpoint:
+
+```js
+const RainbowText = styled.span`
+  ${fg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'})}
+`;
+
+render(<RainbowText>Resize the window to see the text change color 👉</RainbowText>);
+```

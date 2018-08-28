@@ -1,0 +1,42 @@
+import styled from 'styled-components';
+import {bg} from '@lendi-ui/color';
+
+# bg(color)
+
+Set the background color.
+
+## Import 
+```
+import { bg } from '@lendi-ui/color';
+```
+
+## Usage
+
+With a single color value:
+
+```js
+const Square = styled.div`
+  width: 2em;
+  height: 2em;
+  ${bg('warn.500')}
+`;
+
+render(<Square/>);
+```
+
+With a different color value at each breakpoint:
+
+```js
+const RainbowSquare = styled.div`
+  width: 2em;
+  height: 2em;
+  ${bg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'})}
+`;
+
+render(
+  <>
+    <RainbowSquare/>
+    Resize the window to see the square change color 👉
+  </>
+);
+```

@@ -12,7 +12,7 @@ describe('grid()', () => {
   describe('halign', () => {
     it('should render correctly when default', () => {
       const element = shallow(<Grid />);
-      expect(element).not.toHaveStyleRule('justify-content');
+      expect(element).toHaveStyleRule('justify-content', undefined);
     });
 
     it('should render correctly when left', () => {
@@ -57,7 +57,7 @@ describe('grid()', () => {
   describe('valign', () => {
     it('should render correctly when default', () => {
       const element = shallow(<Grid />);
-      expect(element).not.toHaveStyleRule('align-items');
+      expect(element).toHaveStyleRule('align-items', undefined);
     });
 
     it('should render correctly when top', () => {
@@ -97,7 +97,7 @@ describe('grid()', () => {
   describe('reverse', () => {
     it('should render correctly when default', () => {
       const element = shallow(<Grid />);
-      expect(element).not.toHaveStyleRule('flex-direction');
+      expect(element).toHaveStyleRule('flex-direction', undefined);
     });
 
     it('should render correctly when true', () => {

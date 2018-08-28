@@ -1,0 +1,19 @@
+// this file is used by the website
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@lendi-ui/*-utils": ["../utils/*-utils/src"],
+      "@lendi-ui/*": ["../packages/*/src"]
+    },
+    "keyofStringsOnly": true // FIXME: react-live has issues, remove when its been updated
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../packages/*/src/**/*.doc.mdx",
+    "typings/**/*.d.ts",
+    "../utils/doc-utils/typings/**/*.d.ts"
+  ]
+}

@@ -1,0 +1,24 @@
+# between(gte, lt)
+
+Apply styles at a size larger or equal to the `gte` breakpoint and less than the `lt` breakpoint.
+
+## Import
+```
+import { between } from '@lendi-ui/breakpoint';
+```
+
+## Usage
+
+```js
+
+const Component = styled.div`
+  ${between('mobile', 'tablet')`
+    color: red;
+  `} ${between('tablet', 'desktop')`
+    color: green;
+  `}
+  color: pink;
+`;
+
+render(<Component>Hello World</Component>)
+```

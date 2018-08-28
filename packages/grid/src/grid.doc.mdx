@@ -1,0 +1,49 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# grid(options)
+
+A grid mixin.
+
+## Import 
+```
+import { grid } from '@lendi-ui/grid';
+```
+
+## Usage
+
+```js
+const Grid = styled.div`
+  ${grid({halign: 'justify-center'})}
+`;
+
+const Quarter = styled.div`
+  ${unit({size: 1/4})}
+  text-align: center;
+  background: tomato;
+`;
+
+const Eighth = styled.div`
+  ${unit({size: 1/8})}
+  text-align: center;
+  background: peachpuff;
+`;
+
+render(
+  <Grid>
+    <Eighth> ⅛ </Eighth>
+    <Quarter> ¼ </Quarter>
+    <Eighth> ⅛ </Eighth>
+  </Grid>
+)
+```
+
+### Options
+
+<PropTable>
+  <PropTable.Entry name="halign" type={`"left" | "center" | "right" | "justify" | "justify-center"`} defaultValue="left" description="Align grid units horizontally."/>
+  <PropTable.Entry name="valign" type={`"top" | "bottom" | "center" | "stretch"`} defaultValue="stretch" description="Align grid units vertically."/>
+  <PropTable.Entry name="reverse" type="boolean" defaultValue={false} description="Reverse the grid units."/>
+  <PropTable.Entry name="wrap" type="boolean" defaultValue={true} />
+</PropTable>
+
+`;

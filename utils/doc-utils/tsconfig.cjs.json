@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.cjs.json",
+  "compilerOptions": {
+    "keyofStringsOnly": true, // FIXME: react-live has issues, remove when its been updated
+    "outDir": "./dist/cjs"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.doc.ts", "src/**/*.doc.tsx"]
+}
