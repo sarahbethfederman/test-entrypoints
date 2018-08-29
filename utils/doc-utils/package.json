@@ -11,14 +11,14 @@
     "styled-components": "^3.0.0"
   },
   "dependencies": {
-    "@lendi-ui/color": "^2.0.0",
-    "@lendi-ui/spacing": "^1.0.0",
+    "@lendi-ui/color": "^2.0.1",
+    "@lendi-ui/spacing": "^1.0.1",
     "@lendi-ui/typography": "^1.0.0",
     "react-live": "^1.11.0",
     "react-element-to-jsx-string": "^14.0.1"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "^2.0.0"
+    "@lendi-ui/theme": "^2.0.1"
   },
   "scripts": {
     "build": "tsc"

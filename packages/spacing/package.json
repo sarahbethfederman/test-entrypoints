@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/spacing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for spacing.",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",

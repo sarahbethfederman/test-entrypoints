@@ -10,14 +10,14 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^2.0.0",
+    "@lendi-ui/theme": "^2.0.1",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^2 || ^3"
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^1.0.0",
-    "@lendi-ui/color": "^2.0.0"
+    "@lendi-ui/color": "^2.0.1"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
