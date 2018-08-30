@@ -21,6 +21,9 @@
     "@lendi-ui/theme": "^2.0.1"
   },
   "scripts": {
-    "build": "tsc"
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
   }
 }

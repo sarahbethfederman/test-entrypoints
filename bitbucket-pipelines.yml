@@ -11,7 +11,7 @@ pipelines:
       - step:
           name: ✅ Lint
           script:
-            - ./ci/lint.sh 
+            - ./ci/lint.sh
           caches:
             - nodemonorepo
 
@@ -20,19 +20,19 @@ pipelines:
           script:
             - ./ci/build.sh
           caches:
-            - nodemonorepo 
+            - nodemonorepo
           artifacts:
             - "**/dist/**"
 
       - step:
-          name: 📝 Test
+          name: 📝 Test (react@^16)
           script:
             - ./ci/test.sh
           caches:
             - nodemonorepo
-      
+
       - step:
-          name: 📋 Test React 15
+          name: 📝 Test (react@^15)
           script:
             - ./ci/test-react-15.sh
           caches:
@@ -44,7 +44,7 @@ pipelines:
           - ./ci/deploy.sh
         caches:
           - nodemonorepo
-          
+
   branches:
     master:
 
@@ -53,7 +53,7 @@ pipelines:
         - step:
             name: ✅ Lint
             script:
-              - ./ci/lint.sh 
+              - ./ci/lint.sh
             caches:
               - nodemonorepo
 
@@ -62,14 +62,21 @@ pipelines:
             script:
               - ./ci/build.sh
             caches:
-              - nodemonorepo 
+              - nodemonorepo
             artifacts:
               - "**/dist/**"
 
         - step:
-            name: 📝 Test
+            name: 📝 Test (react@^16)
             script:
               - ./ci/test.sh
+            caches:
+              - nodemonorepo
+
+        - step:
+            name: 📝 Test (react@^15)
+            script:
+              - ./ci/test-react-15.sh
             caches:
               - nodemonorepo
 
@@ -80,9 +87,9 @@ pipelines:
             - ./ci/deploy.sh
           caches:
             - nodemonorepo
-        
+
       - step:
-          name: 📦 Publish 
+          name: 📦 Publish
           script:
             - ./ci/publish.sh
           caches:

@@ -1,0 +1,31 @@
+{
+  "name": "@lendi-ui/button",
+  "version": "1.0.0",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "@lendi-ui/theme": "^2.0.0",
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "styled-components": "^2 || ^3"
+  },
+  "dependencies": {
+    "@lendi-ui/color": "^2.0.0",
+    "@lendi-ui/depth": "^1.0.0"
+  },
+  "devDependencies": {
+    "@lendi-ui/spacing": "^1.0.0"
+  },
+  "license": "ISC",
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
+  }
+}

@@ -1,0 +1,28 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```js
+render(
+  <div>
+    <Button variant="secondary">&lt;</Button>
+    {' '}
+    <Button variant="primary">Continue</Button>
+  </div>
+);
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type."/>
+  <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The button size."/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the button is inversed."/>
+  <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Whether the button takes up the full width of the container."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the button responds to user input."/>
+  <PropTable.Entry name="before" type="React.ReactNode" description="Content before the button label."/>
+  <PropTable.Entry name="after" type="React.ReactNode" description="Content after the button label."/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The button content."/>
+</PropTable>
+
+

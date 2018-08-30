@@ -12,6 +12,7 @@ import Logo from '@lendi-ui/logo';
 import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';
 import Icon from '@lendi-ui/icon';
+import Button from '@lendi-ui/button';
 import { Playground } from '@lendi-ui/doc-utils';
 
 const scope = {
@@ -36,6 +37,7 @@ const scope = {
   Carousel,
   FeaturePanel,
   Icon,
+  Button,
 };
 
 interface GenericProps {

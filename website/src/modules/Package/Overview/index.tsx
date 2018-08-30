@@ -6,6 +6,7 @@ import { body } from '@lendi-ui/typography';
 import { mb } from '@lendi-ui/spacing';
 import { Workspace } from '../../../utils/info';
 import { DocumentViewer } from '../../../utils/DocumentViewer';
+import { Link } from 'react-router-dom';
 
 const Description = styled.p`
   ${body({ size: 'lg' })};
@@ -27,7 +28,7 @@ export class Overview extends React.Component<OverviewProps> {
 
   render() {
     const {
-      workspace: { org, name, description },
+      workspace: { org, name, description, examples },
     } = this.props;
     return (
       <>
@@ -36,6 +37,19 @@ export class Overview extends React.Component<OverviewProps> {
         </Helmet>
 
         {description && <Description>{description}</Description>}
+
+        <Section>
+          <Heading size="lg">Examples</Heading>
+          <ul>
+            {examples.map((example) => (
+              <li key={example.slug}>
+                <Link to={`/package/${name}/example/${example.slug}`} target="_blank">
+                  {example.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Section>
 
         <Section>
           <Heading size="lg">Installation</Heading>

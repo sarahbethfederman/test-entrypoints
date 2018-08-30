@@ -6,7 +6,7 @@ import Logo from '@lendi-ui/logo';
 import Heading from '@lendi-ui/heading';
 import { fg } from '@lendi-ui/color';
 
-import metadata, { Doc } from '../../../../utils/info';
+import metadata, { Doc } from '../../../utils/info';
 import { Wrapper, LogoWrapper, NavGroup, SubNav } from './index.style';
 
 const foundations = ['color', 'typography', 'breakpoint', 'spacing', 'grid', 'reset', 'theme'];
@@ -65,7 +65,7 @@ export class Sidebar extends React.Component {
                 <SubNav>
                   {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
                     <div key={doc.name}>
-                      <SidebarLink to={`/package/${workspace.name}/${doc.name}`}>{doc.name}</SidebarLink>
+                      <SidebarLink to={`/package/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
                     </div>
                   ))}
                 </SubNav>
@@ -83,7 +83,7 @@ export class Sidebar extends React.Component {
                 <SubNav>
                   {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
                     <div key={doc.name}>
-                      <SidebarLink to={`/package/${workspace.name}/${doc.name}`}>{doc.name}</SidebarLink>
+                      <SidebarLink to={`/package/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
                     </div>
                   ))}
                 </SubNav>

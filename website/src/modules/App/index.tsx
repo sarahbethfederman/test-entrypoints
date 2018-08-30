@@ -4,11 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import '@lendi-ui/reset';
 import Theme from '@lendi-ui/theme';
 import { Home } from '../Home';
-import { Package } from '../Package';
 import { GettingStarted } from '../GettingStarted';
-import { Layout } from './components/Layout';
-import { Sidebar } from './components/Sidebar';
-import { Footer } from './components/Footer';
+import { PackageExample } from '../PackageExample';
+import { Package } from '../Package';
 
 export class App extends React.Component {
   render() {
@@ -20,17 +18,12 @@ export class App extends React.Component {
         />
         <Theme>
           <BrowserRouter>
-            <Layout
-              sidebar={<Sidebar />}
-              content={
-                <Switch>
-                  <Route path="/" exact={true} component={Home} />
-                  <Route path="/getting-started" component={GettingStarted} />
-                  <Route path="/package/:pkg" component={Package} />
-                </Switch>
-              }
-              footer={<Footer />}
-            />
+            <Switch>
+              <Route path="/" exact={true} component={Home} />
+              <Route path="/getting-started" component={GettingStarted} />
+              <Route path="/package/:pkg/example/:example" component={PackageExample} />
+              <Route path="/package/:pkg" component={Package} />
+            </Switch>
           </BrowserRouter>
         </Theme>
       </>

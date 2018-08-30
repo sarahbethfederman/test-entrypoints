@@ -4,6 +4,11 @@ declare module 'workspace-metadata' {
     load(): Promise<any>;
   }
 
+  export interface ExampleMetadata {
+    name: string;
+    load(): Promise<any>;
+  }
+
   export interface RootMetadata {
     name: string;
     description: string;
@@ -14,6 +19,7 @@ declare module 'workspace-metadata' {
     version: string;
     description: string;
     docs: DocMetadata[];
+    examples: ExampleMetadata[];
   }
 
   export interface Metadata {

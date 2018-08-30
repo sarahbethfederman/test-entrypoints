@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import metadata, { Workspace } from '../../utils/info';
+import { Layout } from '../Layout';
 import { Header } from './Header';
 import { Overview } from './Overview';
 import { Doc } from './Doc';
@@ -28,7 +29,7 @@ export class Package extends React.Component<PackageProps> {
   render() {
     const { match } = this.props;
     return (
-      <>
+      <Layout>
         <Header workspace={this.workspace} />
         <Content>
           <Switch>
@@ -40,7 +41,7 @@ export class Package extends React.Component<PackageProps> {
             </Route>
           </Switch>
         </Content>
-      </>
+      </Layout>
     );
   }
 }
