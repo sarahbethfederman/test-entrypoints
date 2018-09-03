@@ -11,7 +11,8 @@ const FeatureItemWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-  ${heading({ size: 'sm' })} ${mt('xs')};
+  ${heading({ size: 'sm' })} ${mt('sm')};
+  text-align: center;
 `;
 
 const Subtitle = styled.p`
