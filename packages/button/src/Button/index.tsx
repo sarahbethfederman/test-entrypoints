@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Variant, Size, Wrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
+import { ButtonVariant, ButtonSize, Wrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 
-export { Size, Variant };
+export { ButtonSize, ButtonVariant };
 
 export interface ButtonProps {
-  variant: Variant;
-  size?: Size;
+  variant: ButtonVariant;
+  size?: ButtonSize;
   isInverse?: boolean;
   isFullWidth?: boolean;
   isDisabled?: boolean;
@@ -14,7 +14,7 @@ export interface ButtonProps {
   children?: React.ReactNode;
 }
 
-class Button extends React.Component<ButtonProps> {
+export class Button extends React.Component<ButtonProps> {
   render() {
     const { variant, size = 'md', isInverse, isFullWidth, isDisabled, before, after, children } = this.props;
     return (
@@ -28,5 +28,3 @@ class Button extends React.Component<ButtonProps> {
     );
   }
 }
-
-export default Button;

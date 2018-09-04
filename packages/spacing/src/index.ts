@@ -2,6 +2,7 @@ import { css, SimpleInterpolation } from 'styled-components';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
 export enum Spacing {
+  'auto' = 'auto',
   'nil' = '0',
   'xxxs' = '4px',
   'xxs' = '8px',

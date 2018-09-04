@@ -3,16 +3,17 @@ import styled, { css } from 'styled-components';
 import * as breakpoints from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '@lendi-ui/color';
 import { heading, body, Body, link, Link } from '@lendi-ui/typography';
-import { container } from '@lendi-ui/container';
+import Container, { container } from '@lendi-ui/container';
 import * as spacing from '@lendi-ui/spacing';
-import { grid, unit } from '@lendi-ui/grid';
+import Grid, { grid, unit } from '@lendi-ui/grid';
 import { depth } from '@lendi-ui/depth';
 import Heading, { HeadingSize } from '@lendi-ui/heading';
 import Logo from '@lendi-ui/logo';
 import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';
 import Icon from '@lendi-ui/icon';
-import Button from '@lendi-ui/button';
+import { Button, ButtonGroup } from '@lendi-ui/button';
+import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 
 const scope = {
@@ -23,10 +24,12 @@ const scope = {
   bg,
   depth,
   container,
+  Grid,
   grid,
   unit,
   ...breakpoints,
   ...spacing,
+  ...utils,
   heading,
   body,
   link,
@@ -38,6 +41,8 @@ const scope = {
   FeaturePanel,
   Icon,
   Button,
+  ButtonGroup,
+  Container,
 };
 
 interface GenericProps {

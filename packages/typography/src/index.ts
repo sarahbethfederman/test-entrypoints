@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { gte, map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { fg } from '@lendi-ui/color';
+import { m } from '@lendi-ui/spacing';
 
 export type Alignment = 'left' | 'center' | 'right' | 'justify';
 export type AlignmentOrAlignmentMap = BreakpointValue<Alignment> | BreakpointValueMap<Alignment>;
@@ -164,7 +165,7 @@ export function body(options: BodyOptions = {}) {
  * Body component
  */
 export const Body = styled.p`
-  ${body};
+  ${m('nil')} ${body};
 `;
 
 export interface LinkOptions {

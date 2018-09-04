@@ -1,7 +1,7 @@
 {
   "name": "@lendi-ui/button",
-  "version": "1.0.1",
-  "source": "src/index.tsx",
+  "version": "2.0.0",
+  "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
@@ -16,10 +16,8 @@
   },
   "dependencies": {
     "@lendi-ui/color": "^2.0.0",
-    "@lendi-ui/depth": "^1.0.0"
-  },
-  "devDependencies": {
-    "@lendi-ui/spacing": "^1.0.0"
+    "@lendi-ui/depth": "^1.0.0",
+    "@lendi-ui/spacing": "^1.1.0"
   },
   "license": "ISC",
   "scripts": {

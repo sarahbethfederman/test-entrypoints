@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper should have spacing at size "lg" 1`] = `
+.c0 .c1 + .c1 {
+  margin-left: 24px;
+}
+
+<styled.div
+  size="lg"
+>
+  <div
+    className="c0"
+    size="lg"
+  />
+</styled.div>
+`;
+
+exports[`Wrapper should have spacing at size "md" 1`] = `
+.c0 .c1 + .c1 {
+  margin-left: 24px;
+}
+
+<styled.div
+  size="lg"
+>
+  <div
+    className="c0"
+    size="lg"
+  />
+</styled.div>
+`;
+
+exports[`Wrapper should have spacing at size "sm" 1`] = `
+.c0 .c1 + .c1 {
+  margin-left: 24px;
+}
+
+<styled.div
+  size="lg"
+>
+  <div
+    className="c0"
+    size="lg"
+  />
+</styled.div>
+`;
+
+exports[`Wrapper should have spacing at size "xs" 1`] = `
+.c0 .c1 + .c1 {
+  margin-left: 24px;
+}
+
+<styled.div
+  size="lg"
+>
+  <div
+    className="c0"
+    size="lg"
+  />
+</styled.div>
+`;

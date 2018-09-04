@@ -9,6 +9,9 @@ describe('container()', () => {
       ${container()};
     `;
     const element = shallow(<Component />);
-    expect(element).toHaveStyleRule('max-width', '1024px');
+    expect(element).toHaveStyleRule('width', '100%');
+    expect(element).toHaveStyleRule('max-width', '1200px');
+    expect(element).toHaveStyleRule('margin-left', 'auto');
+    expect(element).toHaveStyleRule('margin-right', 'auto');
   });
 });

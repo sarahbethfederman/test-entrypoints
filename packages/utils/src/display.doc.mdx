@@ -1,0 +1,30 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# display
+
+Change the display of an element at each breakpoint.
+
+## Usage
+
+```js
+
+const OnlyVisibleOnMobile = styled.div`
+  ${display({mobile: 'block', tablet: 'none'})}
+`;
+
+const OnlyVisibleOnTablet = styled.div`
+  ${display({mobile: 'none', tablet: 'block', desktop: 'none'})}
+`;
+
+const OnlyVisibleOnDesktop = styled.div`
+  ${display({mobile: 'none', desktop: 'block'})}
+`;
+
+render(
+  <>
+    <OnlyVisibleOnMobile>Mobile 📱</OnlyVisibleOnMobile>
+    <OnlyVisibleOnTablet>Tablet</OnlyVisibleOnTablet>
+    <OnlyVisibleOnDesktop>Desktop 🖥</OnlyVisibleOnDesktop>
+  </>
+);
+```

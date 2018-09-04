@@ -2,12 +2,12 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import Button, { Size, Variant } from '.';
+import { Button, ButtonSize, ButtonVariant } from '.';
 import { heightBySize, Wrapper } from './index.style';
 
-const allVariants: Variant[] = ['primary', 'emphasis', 'secondary', 'empty'];
-const outlinedVariants: Variant[] = ['secondary', 'empty'];
-const sizes: Size[] = ['lg', 'md', 'sm', 'xs'];
+const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
+const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
+const sizes: ButtonSize[] = ['lg', 'md', 'sm', 'xs'];
 
 let element;
 

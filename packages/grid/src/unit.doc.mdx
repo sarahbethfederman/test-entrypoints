@@ -1,16 +1,14 @@
 import {PropTable} from '@lendi-ui/doc-utils';
-import { grid, unit } from '.';
 
-# unit(options)
+# unit
 
-A grid unit mixin.
+A grid unit.
 
-## Import 
+## Mixin
+
 ```
 import { unit } from '@lendi-ui/grid';
 ```
-
-## Usage
 
 ```js
 
@@ -40,6 +38,27 @@ render(
 ```
 
 ### Options
+
+<PropTable>
+  <PropTable.Entry name="offset" type="number" defaultValue={0} description="The size of the grid unit offset as a fraction."/>
+  <PropTable.Entry name="size" type="number" defaultValue={1} description="The size of the grid unit as a fraction."/>
+</PropTable>
+
+## Component
+
+```
+import Grid from '@lendi-ui/grid';
+```
+
+```jsx
+<Grid>
+  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
+  <Grid.Unit offset={1/4} size={1/4}> ¼ </Grid.Unit>
+  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
+</Grid>
+```
+
+### Properties
 
 <PropTable>
   <PropTable.Entry name="offset" type="number" defaultValue={0} description="The size of the grid unit offset as a fraction."/>

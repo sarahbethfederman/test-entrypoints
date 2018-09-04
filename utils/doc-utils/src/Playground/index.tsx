@@ -4,6 +4,7 @@ import reactElementToJSXString from 'react-element-to-jsx-string';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { color, bg } from '@lendi-ui/color';
 import { p } from '@lendi-ui/spacing';
+import { body } from '@lendi-ui/typography';
 
 export type PlaygroundBackground = 'light' | 'dark' | 'chequered';
 
@@ -17,10 +18,8 @@ interface PreviewProps {
 }
 
 const Preview = styled(LivePreview)`
-  display: flex;
-  flex-direction: column;
   ${p('sm')};
-  ${({ background }: PreviewProps) => {
+  ${body()} ${({ background }: PreviewProps) => {
     switch (background) {
       case 'light':
         return bg('shade.0');
@@ -68,7 +67,7 @@ export class Playground extends React.Component<PlaygroundProps> {
 
     /*
       We use a bit of a hack to get react-live working:
-      - we recieve JSX from MDX and convert that into a string... doing so 
+      - we recieve JSX from MDX and convert that into a string... doing so
         relies on each component having a `displayName` set or inferred which SFCs
         dont always have
       - in the future, we could look at writing a write a MDX (remark) AST plugin that allows us to write

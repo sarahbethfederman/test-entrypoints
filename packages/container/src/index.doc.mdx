@@ -1,10 +1,25 @@
 
-## Usage
+
+## Mixin
+
+```
+import {container} from '@lendi-ui/container';
+```
 
 ```js
-const Container = styled.div`
+const Content = styled.div`
   ${container}
 `;
 
-render(<Container>The container has a fixed max-width and is centered on the page.</Container>)
+render(<Content>The container has a fixed max-width and is centered on the page.</Content>);
+```
+
+## Component
+
+```
+import Container from '@lendi-ui/container';
+```
+
+```jsx
+<Container>The container has a fixed max-width and is centered on the page.</Container>
 ```

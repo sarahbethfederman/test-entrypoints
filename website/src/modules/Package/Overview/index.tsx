@@ -38,18 +38,20 @@ export class Overview extends React.Component<OverviewProps> {
 
         {description && <Description>{description}</Description>}
 
-        <Section>
-          <Heading size="lg">Examples</Heading>
-          <ul>
-            {examples.map((example) => (
-              <li key={example.slug}>
-                <Link to={`/package/${name}/example/${example.slug}`} target="_blank">
-                  {example.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </Section>
+        {examples.length > 0 && (
+          <Section>
+            <Heading size="lg">Examples</Heading>
+            <ul>
+              {examples.map((example) => (
+                <li key={example.slug}>
+                  <Link to={`/package/${name}/example/${example.slug}`} target="_blank">
+                    {example.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </Section>
+        )}
 
         <Section>
           <Heading size="lg">Installation</Heading>

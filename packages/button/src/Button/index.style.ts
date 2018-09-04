@@ -3,24 +3,24 @@ import { select } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 
-export type Size = 'lg' | 'md' | 'sm' | 'xs';
-export type Variant = 'primary' | 'secondary' | 'emphasis' | 'empty';
+export type ButtonSize = 'lg' | 'md' | 'sm' | 'xs';
+export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
-export const heightBySize: { [size in Size]: string } = {
+export const heightBySize: { [size in ButtonSize]: string } = {
   lg: '64px',
   md: '48px',
   sm: '40px',
   xs: '24px',
 };
 
-const fontBySize: { [size in Size]: string } = {
+const fontBySize: { [size in ButtonSize]: string } = {
   lg: '22px',
   md: '18px',
   sm: '16px',
   xs: '12px',
 };
 
-const spacingBySize: { [size in Size]: string } = {
+const spacingBySize: { [size in ButtonSize]: string } = {
   lg: '16px',
   md: '16px',
   sm: '8px',
@@ -178,8 +178,8 @@ const buttonStyle = ({ variant, isInverse }: WrapperProps) => {
 };
 
 export interface WrapperProps {
-  variant: Variant;
-  size: Size;
+  variant: ButtonVariant;
+  size: ButtonSize;
   isInverse?: boolean;
   isFullWidth?: boolean;
 }
@@ -196,9 +196,9 @@ export const Layout = styled.div`
 `;
 
 export const BeforeWrapper = styled.span`
-  margin-right: ${({ size }: { size: Size }) => spacingBySize[size]};
+  margin-right: ${({ size }: { size: ButtonSize }) => spacingBySize[size]};
 `;
 
 export const AfterWrapper = styled.span`
-  margin-left: ${({ size }: { size: Size }) => spacingBySize[size]};
+  margin-left: ${({ size }: { size: ButtonSize }) => spacingBySize[size]};
 `;

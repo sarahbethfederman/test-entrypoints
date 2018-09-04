@@ -1,20 +1,42 @@
 import {PropTable} from '@lendi-ui/doc-utils';
 
-# body(options)
+# body
 
 Styles for body copy.
 
-## Usage
+## Mixin
+
+```
+import {body} from '@lendi-ui/typography';
+```
 
 ```js
 const Text = styled.div`
-  ${body({size: 'lg', color: 'primary.500'})}
+  ${body({size: 'lg', color: 'warn.500'})}
 `;
 
 render(<Text>The quick brown fox jumps over the lazy dog</Text>)
 ```
 
-## Options
+### Options
+
+<PropTable>
+  <PropTable.Entry name="size" type={'"lg" | "md" | "sm" | "xs"'} description="The body copy size."/>
+  <PropTable.Entry name="color" type={'string'} description="The body copy color."/>
+</PropTable>
+
+
+## Component
+
+```
+import {Body} from '@lendi-ui/typography';
+```
+
+```jsx
+<Body size="lg" color="warn.500">The quick brown fox jumps over the lazy dog</Body>
+```
+
+### Properties
 
 <PropTable>
   <PropTable.Entry name="size" type={'"lg" | "md" | "sm" | "xs"'} description="The body copy size."/>

@@ -1,0 +1,35 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import {ButtonGroup} from '@lendi-ui/button';
+```
+
+```jsx
+<ButtonGroup size="xs">
+  <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
+  <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
+</ButtonGroup>
+```
+
+## ButtonGroup Properties
+
+<PropTable>
+  <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The buttons size."/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the buttons are inversed."/>
+  <PropTable.Entry name="children" type="React.ReactElement<ButtonGroupButtonProps>" description="The buttons."/>
+</PropTable>
+
+
+## ButtonGroup.Button Properties
+
+<PropTable>
+  <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the button responds to user input."/>
+  <PropTable.Entry name="before" type="React.ReactNode" description="Content before the button label."/>
+  <PropTable.Entry name="after" type="React.ReactNode" description="Content after the button label."/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The button content."/>
+</PropTable>
+
+

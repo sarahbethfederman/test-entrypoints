@@ -1,19 +1,17 @@
 {
-  "name": "@lendi-ui/heading",
-  "version": "1.0.1",
-  "source": "src/index.tsx",
+  "name": "@lendi-ui/utils",
+  "version": "1.0.0",
+  "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "@lendi-ui/spacing": "^1.1.0",
-    "@lendi-ui/typography": "^1.0.0"
+    "@lendi-ui/breakpoint": "^1.0.0"
   },
-  "peerDependencies": {
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^2 || ^3"
-  },
+  "license": "ISC",
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
