@@ -27,6 +27,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "error": Object {
           "100": "#ffd1da",
           "200": "#ffa4b6",
+          "25": "#fff3f5",
           "300": "#ff7692",
           "400": "#ff496e",
           "50": "#ffe8ec",
@@ -40,6 +41,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "info": Object {
           "100": "#dae7f7",
           "200": "#b5d0ef",
+          "25": "#f5f9fd",
           "300": "#91b9e8",
           "400": "#6ca2e0",
           "50": "#ecf3fb",
@@ -53,6 +55,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "primary": Object {
           "100": "#ccf2ed",
           "200": "#99e5db",
+          "25": "#f2fbfa",
           "300": "#66d9c9",
           "400": "#32ccb7",
           "50": "#e5f8f6",
@@ -66,6 +69,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "secondary": Object {
           "100": "#cedee1",
           "200": "#9ebdc4",
+          "25": "#f2f6f7",
           "300": "#6d9ca7",
           "400": "#3d7a8a",
           "50": "#e6eef0",
@@ -81,6 +85,7 @@ exports[`Heading should render styles for size lg 1`] = `
           "100": "#e3e3e3",
           "1000": "#000000",
           "200": "#c8c8c8",
+          "25": "#f8f8f8",
           "300": "#adadad",
           "400": "#929292",
           "50": "#f1f1f1",
@@ -94,6 +99,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "success": Object {
           "100": "#dbf2cc",
           "200": "#b8e599",
+          "25": "#f6fbf2",
           "300": "#94d966",
           "400": "#71cc32",
           "50": "#edf8e5",
@@ -107,6 +113,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "tertiary": Object {
           "100": "#ffe2df",
           "200": "#ffc5c0",
+          "25": "#fff7f7",
           "300": "#ffa9a1",
           "400": "#ff8c82",
           "50": "#fff0ef",
@@ -120,6 +127,7 @@ exports[`Heading should render styles for size lg 1`] = `
         "warn": Object {
           "100": "#fdedd3",
           "200": "#fbdba7",
+          "25": "#fefaf4",
           "300": "#f9c97b",
           "400": "#f7b74e",
           "50": "#fef6e9",
@@ -171,6 +179,7 @@ exports[`Heading should render styles for size md 1`] = `
         "error": Object {
           "100": "#ffd1da",
           "200": "#ffa4b6",
+          "25": "#fff3f5",
           "300": "#ff7692",
           "400": "#ff496e",
           "50": "#ffe8ec",
@@ -184,6 +193,7 @@ exports[`Heading should render styles for size md 1`] = `
         "info": Object {
           "100": "#dae7f7",
           "200": "#b5d0ef",
+          "25": "#f5f9fd",
           "300": "#91b9e8",
           "400": "#6ca2e0",
           "50": "#ecf3fb",
@@ -197,6 +207,7 @@ exports[`Heading should render styles for size md 1`] = `
         "primary": Object {
           "100": "#ccf2ed",
           "200": "#99e5db",
+          "25": "#f2fbfa",
           "300": "#66d9c9",
           "400": "#32ccb7",
           "50": "#e5f8f6",
@@ -210,6 +221,7 @@ exports[`Heading should render styles for size md 1`] = `
         "secondary": Object {
           "100": "#cedee1",
           "200": "#9ebdc4",
+          "25": "#f2f6f7",
           "300": "#6d9ca7",
           "400": "#3d7a8a",
           "50": "#e6eef0",
@@ -225,6 +237,7 @@ exports[`Heading should render styles for size md 1`] = `
           "100": "#e3e3e3",
           "1000": "#000000",
           "200": "#c8c8c8",
+          "25": "#f8f8f8",
           "300": "#adadad",
           "400": "#929292",
           "50": "#f1f1f1",
@@ -238,6 +251,7 @@ exports[`Heading should render styles for size md 1`] = `
         "success": Object {
           "100": "#dbf2cc",
           "200": "#b8e599",
+          "25": "#f6fbf2",
           "300": "#94d966",
           "400": "#71cc32",
           "50": "#edf8e5",
@@ -251,6 +265,7 @@ exports[`Heading should render styles for size md 1`] = `
         "tertiary": Object {
           "100": "#ffe2df",
           "200": "#ffc5c0",
+          "25": "#fff7f7",
           "300": "#ffa9a1",
           "400": "#ff8c82",
           "50": "#fff0ef",
@@ -264,6 +279,7 @@ exports[`Heading should render styles for size md 1`] = `
         "warn": Object {
           "100": "#fdedd3",
           "200": "#fbdba7",
+          "25": "#fefaf4",
           "300": "#f9c97b",
           "400": "#f7b74e",
           "50": "#fef6e9",
@@ -315,6 +331,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "error": Object {
           "100": "#ffd1da",
           "200": "#ffa4b6",
+          "25": "#fff3f5",
           "300": "#ff7692",
           "400": "#ff496e",
           "50": "#ffe8ec",
@@ -328,6 +345,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "info": Object {
           "100": "#dae7f7",
           "200": "#b5d0ef",
+          "25": "#f5f9fd",
           "300": "#91b9e8",
           "400": "#6ca2e0",
           "50": "#ecf3fb",
@@ -341,6 +359,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "primary": Object {
           "100": "#ccf2ed",
           "200": "#99e5db",
+          "25": "#f2fbfa",
           "300": "#66d9c9",
           "400": "#32ccb7",
           "50": "#e5f8f6",
@@ -354,6 +373,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "secondary": Object {
           "100": "#cedee1",
           "200": "#9ebdc4",
+          "25": "#f2f6f7",
           "300": "#6d9ca7",
           "400": "#3d7a8a",
           "50": "#e6eef0",
@@ -369,6 +389,7 @@ exports[`Heading should render styles for size sm 1`] = `
           "100": "#e3e3e3",
           "1000": "#000000",
           "200": "#c8c8c8",
+          "25": "#f8f8f8",
           "300": "#adadad",
           "400": "#929292",
           "50": "#f1f1f1",
@@ -382,6 +403,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "success": Object {
           "100": "#dbf2cc",
           "200": "#b8e599",
+          "25": "#f6fbf2",
           "300": "#94d966",
           "400": "#71cc32",
           "50": "#edf8e5",
@@ -395,6 +417,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "tertiary": Object {
           "100": "#ffe2df",
           "200": "#ffc5c0",
+          "25": "#fff7f7",
           "300": "#ffa9a1",
           "400": "#ff8c82",
           "50": "#fff0ef",
@@ -408,6 +431,7 @@ exports[`Heading should render styles for size sm 1`] = `
         "warn": Object {
           "100": "#fdedd3",
           "200": "#fbdba7",
+          "25": "#fefaf4",
           "300": "#f9c97b",
           "400": "#f7b74e",
           "50": "#fef6e9",
@@ -459,6 +483,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "error": Object {
           "100": "#ffd1da",
           "200": "#ffa4b6",
+          "25": "#fff3f5",
           "300": "#ff7692",
           "400": "#ff496e",
           "50": "#ffe8ec",
@@ -472,6 +497,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "info": Object {
           "100": "#dae7f7",
           "200": "#b5d0ef",
+          "25": "#f5f9fd",
           "300": "#91b9e8",
           "400": "#6ca2e0",
           "50": "#ecf3fb",
@@ -485,6 +511,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "primary": Object {
           "100": "#ccf2ed",
           "200": "#99e5db",
+          "25": "#f2fbfa",
           "300": "#66d9c9",
           "400": "#32ccb7",
           "50": "#e5f8f6",
@@ -498,6 +525,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "secondary": Object {
           "100": "#cedee1",
           "200": "#9ebdc4",
+          "25": "#f2f6f7",
           "300": "#6d9ca7",
           "400": "#3d7a8a",
           "50": "#e6eef0",
@@ -513,6 +541,7 @@ exports[`Heading should render styles for size xl 1`] = `
           "100": "#e3e3e3",
           "1000": "#000000",
           "200": "#c8c8c8",
+          "25": "#f8f8f8",
           "300": "#adadad",
           "400": "#929292",
           "50": "#f1f1f1",
@@ -526,6 +555,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "success": Object {
           "100": "#dbf2cc",
           "200": "#b8e599",
+          "25": "#f6fbf2",
           "300": "#94d966",
           "400": "#71cc32",
           "50": "#edf8e5",
@@ -539,6 +569,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "tertiary": Object {
           "100": "#ffe2df",
           "200": "#ffc5c0",
+          "25": "#fff7f7",
           "300": "#ffa9a1",
           "400": "#ff8c82",
           "50": "#fff0ef",
@@ -552,6 +583,7 @@ exports[`Heading should render styles for size xl 1`] = `
         "warn": Object {
           "100": "#fdedd3",
           "200": "#fbdba7",
+          "25": "#fefaf4",
           "300": "#f9c97b",
           "400": "#f7b74e",
           "50": "#fef6e9",
@@ -603,6 +635,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "error": Object {
           "100": "#ffd1da",
           "200": "#ffa4b6",
+          "25": "#fff3f5",
           "300": "#ff7692",
           "400": "#ff496e",
           "50": "#ffe8ec",
@@ -616,6 +649,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "info": Object {
           "100": "#dae7f7",
           "200": "#b5d0ef",
+          "25": "#f5f9fd",
           "300": "#91b9e8",
           "400": "#6ca2e0",
           "50": "#ecf3fb",
@@ -629,6 +663,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "primary": Object {
           "100": "#ccf2ed",
           "200": "#99e5db",
+          "25": "#f2fbfa",
           "300": "#66d9c9",
           "400": "#32ccb7",
           "50": "#e5f8f6",
@@ -642,6 +677,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "secondary": Object {
           "100": "#cedee1",
           "200": "#9ebdc4",
+          "25": "#f2f6f7",
           "300": "#6d9ca7",
           "400": "#3d7a8a",
           "50": "#e6eef0",
@@ -657,6 +693,7 @@ exports[`Heading should render styles for size xs 1`] = `
           "100": "#e3e3e3",
           "1000": "#000000",
           "200": "#c8c8c8",
+          "25": "#f8f8f8",
           "300": "#adadad",
           "400": "#929292",
           "50": "#f1f1f1",
@@ -670,6 +707,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "success": Object {
           "100": "#dbf2cc",
           "200": "#b8e599",
+          "25": "#f6fbf2",
           "300": "#94d966",
           "400": "#71cc32",
           "50": "#edf8e5",
@@ -683,6 +721,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "tertiary": Object {
           "100": "#ffe2df",
           "200": "#ffc5c0",
+          "25": "#fff7f7",
           "300": "#ffa9a1",
           "400": "#ff8c82",
           "50": "#fff0ef",
@@ -696,6 +735,7 @@ exports[`Heading should render styles for size xs 1`] = `
         "warn": Object {
           "100": "#fdedd3",
           "200": "#fbdba7",
+          "25": "#fefaf4",
           "300": "#f9c97b",
           "400": "#f7b74e",
           "50": "#fef6e9",

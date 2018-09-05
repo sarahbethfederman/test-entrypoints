@@ -10,6 +10,7 @@ const typography = {
 
 const colors = {
   primary: {
+    '25': '#f2fbfa',
     '50': '#e5f8f6',
     '100': '#ccf2ed',
     '200': '#99e5db',
@@ -23,6 +24,7 @@ const colors = {
     '950': '#001310',
   },
   secondary: {
+    '25': '#f2f6f7',
     '50': '#e6eef0',
     '100': '#cedee1',
     '200': '#9ebdc4',
@@ -36,6 +38,7 @@ const colors = {
     '950': '#01080a',
   },
   tertiary: {
+    '25': '#fff7f7',
     '50': '#fff0ef',
     '100': '#ffe2df',
     '200': '#ffc5c0',
@@ -50,6 +53,7 @@ const colors = {
   },
   shade: {
     '0': '#ffffff',
+    '25': '#f8f8f8',
     '50': '#f1f1f1',
     '100': '#e3e3e3',
     '200': '#c8c8c8',
@@ -64,6 +68,7 @@ const colors = {
     '1000': '#000000',
   },
   info: {
+    '25': '#f5f9fd',
     '50': '#ecf3fb',
     '100': '#dae7f7',
     '200': '#b5d0ef',
@@ -77,6 +82,7 @@ const colors = {
     '950': '#070d15',
   },
   warn: {
+    '25': '#fefaf4',
     '50': '#fef6e9',
     '100': '#fdedd3',
     '200': '#fbdba7',
@@ -90,6 +96,7 @@ const colors = {
     '950': '#181003',
   },
   error: {
+    '25': '#fff3f5',
     '50': '#ffe8ec',
     '100': '#ffd1da',
     '200': '#ffa4b6',
@@ -103,6 +110,7 @@ const colors = {
     '950': '#190207',
   },
   success: {
+    '25': '#f6fbf2',
     '50': '#edf8e5',
     '100': '#dbf2cc',
     '200': '#b8e599',
