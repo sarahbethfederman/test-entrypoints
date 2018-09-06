@@ -7,7 +7,7 @@ import { heightBySize, Wrapper } from './index.style';
 
 const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
 const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
-const sizes: ButtonSize[] = ['lg', 'md', 'sm', 'xs'];
+const sizes: ButtonSize[] = ['lg', 'md', 'sm'];
 
 let element;
 

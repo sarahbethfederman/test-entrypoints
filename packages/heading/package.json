@@ -6,8 +6,8 @@
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "dependencies": {
-    "@lendi-ui/spacing": "^1.1.0",
-    "@lendi-ui/typography": "^1.0.0"
+    "@lendi-ui/spacing": "^2.0.0",
+    "@lendi-ui/typography": "^2.0.0"
   },
   "peerDependencies": {
     "@types/react": "^15 || ^16.4",

@@ -9,7 +9,7 @@ export const Table = styled.table`
 `;
 
 export const TH = styled.th`
-  ${p('xxs')} ${body({ size: 'xs' })}
+  ${p('xxs')} ${body({ size: 'sm' })}
   font-weight: normal;
   text-align: left;
   text-transform: uppercase;
@@ -18,6 +18,6 @@ export const TH = styled.th`
 
 export const TD = styled.td`
   ${p('xxs')}
-  ${body({ size: 'xs' })}
+  ${body({ size: 'sm' })}
   border-bottom: 1px solid ${color('shade.200')}
 `;

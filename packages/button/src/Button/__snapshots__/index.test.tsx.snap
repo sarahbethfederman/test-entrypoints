@@ -11,9 +11,9 @@ exports[`Button emphasis should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -250,9 +250,9 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -489,9 +489,9 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 64px;
-  padding: 0 16px;
-  font-size: 22px;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.375rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -727,9 +727,9 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -965,9 +965,9 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 40px;
-  padding: 0 8px;
-  font-size: 16px;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -1192,244 +1192,6 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
 </Theme>
 `;
 
-exports[`Button emphasis should render "xs" size styles 1`] = `
-.c0 {
-  cursor: pointer;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  height: 24px;
-  padding: 0 4px;
-  font-size: 12px;
-  font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:hover {
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0:focus {
-  background-color: #ff8c82;
-}
-
-.c0:hover {
-  background-color: #ff8c82;
-}
-
-.c0:active {
-  background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="xs"
-      variant="emphasis"
-    >
-      <styled.button
-        size="xs"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="xs"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
-`;
-
 exports[`Button emphasis should render full width 1`] = `
 .c0 {
   cursor: pointer;
@@ -1441,9 +1203,9 @@ exports[`Button emphasis should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -1681,9 +1443,9 @@ exports[`Button emphasis should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -1920,9 +1682,9 @@ exports[`Button empty should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 64px;
-  padding: 0 16px;
-  font-size: 22px;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.375rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2168,9 +1930,9 @@ exports[`Button empty should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2416,9 +2178,9 @@ exports[`Button empty should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 40px;
-  padding: 0 8px;
-  font-size: 16px;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2653,254 +2415,6 @@ exports[`Button empty should render "sm" size styles 1`] = `
 </Theme>
 `;
 
-exports[`Button empty should render "xs" size styles 1`] = `
-.c0 {
-  cursor: pointer;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  height: 24px;
-  padding: 0 4px;
-  font-size: 12px;
-  font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
-  border-style: dashed;
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:hover {
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0:focus {
-  border-color: #32ccb7;
-}
-
-.c0:hover {
-  border-color: #32ccb7;
-}
-
-.c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
-}
-
-.c0:focus {
-  border-width: 1px;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="xs"
-      variant="empty"
-    >
-      <styled.button
-        size="xs"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="xs"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
-`;
-
 exports[`Button empty should render inverse styles 1`] = `
 .c0 {
   cursor: pointer;
@@ -2912,9 +2426,9 @@ exports[`Button empty should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: transparent;
@@ -3143,9 +2657,9 @@ exports[`Button empty should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -3392,9 +2906,9 @@ exports[`Button primary should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -3631,9 +3145,9 @@ exports[`Button primary should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 64px;
-  padding: 0 16px;
-  font-size: 22px;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.375rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -3869,9 +3383,9 @@ exports[`Button primary should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -4107,9 +3621,9 @@ exports[`Button primary should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 40px;
-  padding: 0 8px;
-  font-size: 16px;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -4334,244 +3848,6 @@ exports[`Button primary should render "sm" size styles 1`] = `
 </Theme>
 `;
 
-exports[`Button primary should render "xs" size styles 1`] = `
-.c0 {
-  cursor: pointer;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  height: 24px;
-  padding: 0 4px;
-  font-size: 12px;
-  font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:hover {
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0:focus {
-  background-color: #32ccb7;
-}
-
-.c0:hover {
-  background-color: #32ccb7;
-}
-
-.c0:active {
-  background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="xs"
-      variant="primary"
-    >
-      <styled.button
-        size="xs"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="xs"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
-`;
-
 exports[`Button primary should render full width 1`] = `
 .c0 {
   cursor: pointer;
@@ -4583,9 +3859,9 @@ exports[`Button primary should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -4823,9 +4099,9 @@ exports[`Button primary should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -5048,9 +4324,9 @@ exports[`Button primary should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -5287,9 +4563,9 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 64px;
-  padding: 0 16px;
-  font-size: 22px;
+  height: 4rem;
+  padding: 0 1rem;
+  font-size: 1.375rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -5530,9 +4806,9 @@ exports[`Button secondary should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -5773,9 +5049,9 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 40px;
-  padding: 0 8px;
-  font-size: 16px;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -6005,249 +5281,6 @@ exports[`Button secondary should render "sm" size styles 1`] = `
 </Theme>
 `;
 
-exports[`Button secondary should render "xs" size styles 1`] = `
-.c0 {
-  cursor: pointer;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-  height: 24px;
-  padding: 0 4px;
-  font-size: 12px;
-  font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
-}
-
-.c0:focus {
-  outline: none;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:hover {
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c0:active {
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c0:focus {
-  border-color: #32ccb7;
-}
-
-.c0:hover {
-  border-color: #32ccb7;
-}
-
-.c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
-}
-
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="xs"
-      variant="secondary"
-    >
-      <styled.button
-        size="xs"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="xs"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
-`;
-
 exports[`Button secondary should render inverse styles 1`] = `
 .c0 {
   cursor: pointer;
@@ -6259,9 +5292,9 @@ exports[`Button secondary should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: transparent;
@@ -6485,9 +5518,9 @@ exports[`Button secondary should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -6729,9 +5762,9 @@ exports[`Button should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -6968,9 +6001,9 @@ exports[`Button should not render full width 2`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -7207,9 +6240,9 @@ exports[`Button should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -7447,9 +6480,9 @@ exports[`Button should render full width 2`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 48px;
-  padding: 0 16px;
-  font-size: 18px;
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.125rem;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;

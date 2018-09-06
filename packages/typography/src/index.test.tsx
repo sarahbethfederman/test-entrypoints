@@ -102,7 +102,7 @@ describe('Link', () => {
         <Link theme={theme} />
       </Body>
     );
-    expect(wrapper).toHaveStyleRule('font-size', '16px');
+    expect(wrapper).toHaveStyleRule('font-size', '1.125rem');
     expect(wrapper.find('a')).toHaveStyleRule('font-size', undefined);
   });
 });

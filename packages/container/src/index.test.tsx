@@ -10,7 +10,7 @@ describe('container()', () => {
     `;
     const element = shallow(<Component />);
     expect(element).toHaveStyleRule('width', '100%');
-    expect(element).toHaveStyleRule('max-width', '1200px');
+    expect(element).toHaveStyleRule('max-width', '75rem');
     expect(element).toHaveStyleRule('margin-left', 'auto');
     expect(element).toHaveStyleRule('margin-right', 'auto');
   });

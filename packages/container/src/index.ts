@@ -3,7 +3,7 @@ import { mx } from '@lendi-ui/spacing';
 
 export const container = () => css`
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 75rem;
   width: 100%;
   ${mx('auto')};
 `;

@@ -2,13 +2,13 @@
 
 exports[`Wrapper should have spacing at size "lg" 1`] = `
 .c0 {
-  margin-top: -24px;
-  margin-right: -24px;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .c0 .c1 {
-  margin-top: 24px;
-  margin-right: 24px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 <styled.div
@@ -23,13 +23,13 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
 
 exports[`Wrapper should have spacing at size "md" 1`] = `
 .c0 {
-  margin-top: -24px;
-  margin-right: -24px;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .c0 .c1 {
-  margin-top: 24px;
-  margin-right: 24px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 <styled.div
@@ -44,13 +44,13 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
 
 exports[`Wrapper should have spacing at size "sm" 1`] = `
 .c0 {
-  margin-top: -24px;
-  margin-right: -24px;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .c0 .c1 {
-  margin-top: 24px;
-  margin-right: 24px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 <styled.div
@@ -65,13 +65,13 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
 
 exports[`Wrapper should have spacing at size "xs" 1`] = `
 .c0 {
-  margin-top: -24px;
-  margin-right: -24px;
+  margin-top: -1.5rem;
+  margin-right: -1.5rem;
 }
 
 .c0 .c1 {
-  margin-top: 24px;
-  margin-right: 24px;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 <styled.div

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 import { select } from '@lendi-ui/theme';
-import { gte, map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { fg } from '@lendi-ui/color';
 import { m } from '@lendi-ui/spacing';
 
@@ -25,58 +25,33 @@ const headingSizeMixin = (size: HeadingSize) => {
   switch (size) {
     case 'xs':
       return css`
-        font-size: 15px;
+        font-size: 1.125rem;
         font-weight: 500;
-        line-height: calc(20 / 15);
-
-        ${gte('tablet')`
-          font-size: 18px;
-          line-height: calc(24/18);
-        `};
+        line-height: calc(24 / 18);
       `;
     case 'sm':
       return css`
-        font-size: 18px;
+        font-size: 1.375rem;
         font-weight: 500;
-        line-height: calc(24 / 18);
-
-        ${gte('tablet')`
-          font-size: 22px;
-          line-height: calc(28/22);
-        `};
+        line-height: calc(28 / 22);
       `;
     case 'md':
       return css`
-        font-size: 22px;
+        font-size: 1.75rem;
         font-weight: 500;
-        line-height: calc(28 / 22);
-
-        ${gte('tablet')`
-          font-size: 28px;
-          line-height: calc(32/28);
-        `};
+        line-height: calc(32 / 28);
       `;
     case 'lg':
       return css`
-        font-size: 28px;
+        font-size: 2.3125rem;
         font-weight: 500;
-        line-height: calc(34 / 28);
-
-        ${gte('tablet')`
-          font-size: 37px;
-          line-height: calc(40/37);
-        `};
+        line-height: calc(40 / 37);
       `;
     case 'xl':
       return css`
-        font-size: 37px;
+        font-size: 2.875rem;
         font-weight: bold;
-        line-height: calc(40 / 37);
-
-        ${gte('tablet')`
-          font-size: 46px;
-          line-height: calc(50/46);
-        `};
+        line-height: calc(50 / 46);
       `;
   }
 };
@@ -85,43 +60,23 @@ const bodySizeMixin = (size: BodySize) => {
   switch (size) {
     case 'xs':
       return css`
-        font-size: 10px;
-        line-height: calc(16 / 10);
-
-        ${gte('tablet')`
-          font-size: 13px;
-          line-height: calc(20/13);
-        `};
+        font-size: 0.75rem;
+        line-height: calc(16 / 12);
       `;
     case 'sm':
       return css`
-        font-size: 12px;
-        line-height: calc(16 / 12);
-
-        ${gte('tablet')`
-          font-size: 14px;
-          line-height: calc(20/14);
-        `};
+        font-size: 0.875rem;
+        line-height: calc(20 / 14);
       `;
     case 'md':
       return css`
-        font-size: 14px;
-        line-height: calc(20 / 14);
-
-        ${gte('tablet')`
-          font-size: 16px;
-          line-height: calc(24/16);
-        `};
+        font-size: 1rem;
+        line-height: calc(24 / 16);
       `;
     case 'lg':
       return css`
-        font-size: 16px;
-        line-height: calc(24 / 16);
-
-        ${gte('tablet')`
-          font-size: 18px;
-          line-height: calc(24/18);
-        `};
+        font-size: 1.125rem;
+        line-height: calc(24 / 18);
       `;
   }
 };
@@ -138,7 +93,7 @@ export function heading(options: HeadingOptions) {
     ${color && fg(color)}
     ${align && alignMixin(align)}
     ${headingSizeMixin(size)}
-    font-family: ${select('typography.heading.fontFamily', '"Cabin", sans-serif')};
+    font-family: ${select('typography.heading.fontFamily')};
   `;
 }
 
@@ -157,7 +112,7 @@ export function body(options: BodyOptions = {}) {
     ${color && fg(color)}
     ${align && alignMixin(align)}
     ${size && bodySizeMixin(size)}
-    font-family: ${select('typography.body.fontFamily', '"Open sans", sans-serif')};
+    font-family: ${select('typography.body.fontFamily')};
   `;
 }
 
@@ -183,7 +138,7 @@ export function link(options: LinkOptions = {}) {
   return css`
     ${color && fg(color)}
     ${size && bodySizeMixin(size)}
-    font-family: ${select('typography.body.fontFamily', '"Open sans", sans-serif')};
+    font-family: ${select('typography.body.fontFamily')};
     font-weight: bold;
     cursor: pointer;
 

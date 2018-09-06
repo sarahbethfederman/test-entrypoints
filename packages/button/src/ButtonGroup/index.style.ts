@@ -6,7 +6,6 @@ const spacingBySize: { [size in ButtonSize]: SpacingName } = {
   lg: 'md',
   md: 'sm',
   sm: 'xs',
-  xs: 'xxs',
 };
 
 export interface WrapperProps {

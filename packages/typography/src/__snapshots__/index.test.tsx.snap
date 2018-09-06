@@ -3,7 +3,31 @@
 exports[`Link should render styles for size lg 1`] = `
 .c0 {
   color: #00c0a5;
-  font-size: 16px;
+  font-size: 1.125rem;
+  line-height: calc(24 / 18);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+<a
+  className="c0"
+  size="lg"
+/>
+`;
+
+exports[`Link should render styles for size md 1`] = `
+.c0 {
+  color: #00c0a5;
+  font-size: 1rem;
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
   font-weight: bold;
@@ -18,23 +42,16 @@ exports[`Link should render styles for size lg 1`] = `
   color: #007363;
 }
 
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 18px;
-    line-height: calc(24/18);
-  }
-}
-
 <a
   className="c0"
-  size="lg"
+  size="md"
 />
 `;
 
-exports[`Link should render styles for size md 1`] = `
+exports[`Link should render styles for size sm 1`] = `
 .c0 {
   color: #00c0a5;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: calc(20 / 14);
   font-family: 'Open Sans',sans-serif;
   font-weight: bold;
@@ -49,44 +66,6 @@ exports[`Link should render styles for size md 1`] = `
   color: #007363;
 }
 
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-    line-height: calc(24/16);
-  }
-}
-
-<a
-  className="c0"
-  size="md"
-/>
-`;
-
-exports[`Link should render styles for size sm 1`] = `
-.c0 {
-  color: #00c0a5;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.c0:hover,
-.c0:focus,
-.c0:active {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #007363;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 14px;
-    line-height: calc(20/14);
-  }
-}
-
 <a
   className="c0"
   size="sm"
@@ -96,17 +75,10 @@ exports[`Link should render styles for size sm 1`] = `
 exports[`heading() should display styles for size lg 1`] = `
 .c0 {
   color: #474747;
-  font-size: 28px;
+  font-size: 2.3125rem;
   font-weight: 500;
-  line-height: calc(34 / 28);
+  line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 37px;
-    line-height: calc(40/37);
-  }
 }
 
 <div
@@ -117,17 +89,10 @@ exports[`heading() should display styles for size lg 1`] = `
 exports[`heading() should display styles for size md 1`] = `
 .c0 {
   color: #474747;
-  font-size: 22px;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: calc(28 / 22);
+  line-height: calc(32 / 28);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 28px;
-    line-height: calc(32/28);
-  }
 }
 
 <div
@@ -138,17 +103,10 @@ exports[`heading() should display styles for size md 1`] = `
 exports[`heading() should display styles for size sm 1`] = `
 .c0 {
   color: #474747;
-  font-size: 18px;
+  font-size: 1.375rem;
   font-weight: 500;
-  line-height: calc(24 / 18);
+  line-height: calc(28 / 22);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 22px;
-    line-height: calc(28/22);
-  }
 }
 
 <div
@@ -159,17 +117,10 @@ exports[`heading() should display styles for size sm 1`] = `
 exports[`heading() should display styles for size xl 1`] = `
 .c0 {
   color: #474747;
-  font-size: 37px;
+  font-size: 2.875rem;
   font-weight: bold;
-  line-height: calc(40 / 37);
+  line-height: calc(50 / 46);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 46px;
-    line-height: calc(50/46);
-  }
 }
 
 <div
@@ -180,17 +131,10 @@ exports[`heading() should display styles for size xl 1`] = `
 exports[`heading() should display styles for size xs 1`] = `
 .c0 {
   color: #474747;
-  font-size: 15px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: calc(20 / 15);
+  line-height: calc(24 / 18);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 18px;
-    line-height: calc(24/18);
-  }
 }
 
 <div

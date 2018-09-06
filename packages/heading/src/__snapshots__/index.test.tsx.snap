@@ -5,17 +5,10 @@ exports[`Heading should render styles for size lg 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  font-size: 28px;
+  font-size: 2.3125rem;
   font-weight: 500;
-  line-height: calc(34 / 28);
+  line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 37px;
-    line-height: calc(40/37);
-  }
 }
 
 <HeadingTag
@@ -157,17 +150,10 @@ exports[`Heading should render styles for size md 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  font-size: 22px;
+  font-size: 1.75rem;
   font-weight: 500;
-  line-height: calc(28 / 22);
+  line-height: calc(32 / 28);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 28px;
-    line-height: calc(32/28);
-  }
 }
 
 <HeadingTag
@@ -309,17 +295,10 @@ exports[`Heading should render styles for size sm 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  font-size: 18px;
+  font-size: 1.375rem;
   font-weight: 500;
-  line-height: calc(24 / 18);
+  line-height: calc(28 / 22);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 22px;
-    line-height: calc(28/22);
-  }
 }
 
 <HeadingTag
@@ -461,17 +440,10 @@ exports[`Heading should render styles for size xl 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  font-size: 37px;
+  font-size: 2.875rem;
   font-weight: bold;
-  line-height: calc(40 / 37);
+  line-height: calc(50 / 46);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 46px;
-    line-height: calc(50/46);
-  }
 }
 
 <HeadingTag
@@ -613,17 +585,10 @@ exports[`Heading should render styles for size xs 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   color: #474747;
-  font-size: 15px;
+  font-size: 1.125rem;
   font-weight: 500;
-  line-height: calc(20 / 15);
+  line-height: calc(24 / 18);
   font-family: 'Cabin',sans-serif;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 18px;
-    line-height: calc(24/18);
-  }
 }
 
 <HeadingTag

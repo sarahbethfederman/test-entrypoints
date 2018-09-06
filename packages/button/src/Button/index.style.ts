@@ -3,28 +3,25 @@ import { select } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 
-export type ButtonSize = 'lg' | 'md' | 'sm' | 'xs';
+export type ButtonSize = 'lg' | 'md' | 'sm';
 export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
 export const heightBySize: { [size in ButtonSize]: string } = {
-  lg: '64px',
-  md: '48px',
-  sm: '40px',
-  xs: '24px',
+  lg: '4rem',
+  md: '3rem',
+  sm: '2.5rem',
 };
 
 const fontBySize: { [size in ButtonSize]: string } = {
-  lg: '22px',
-  md: '18px',
-  sm: '16px',
-  xs: '12px',
+  lg: '1.375rem',
+  md: '1.125rem',
+  sm: '1rem',
 };
 
 const spacingBySize: { [size in ButtonSize]: string } = {
-  lg: '16px',
-  md: '16px',
-  sm: '8px',
-  xs: '4px',
+  lg: '1rem',
+  md: '1rem',
+  sm: '0.5rem',
 };
 
 const commonStyle = css`
