@@ -164,7 +164,7 @@ export function body(options: BodyOptions = {}) {
 /**
  * Body component
  */
-export const Body = styled.p`
+export const Body = styled.p<BodyOptions>`
   ${m('nil')} ${body};
 `;
 
@@ -199,6 +199,6 @@ export function link(options: LinkOptions = {}) {
 /**
  * Link component
  */
-export const Link = styled.a`
+export const Link = styled.a<LinkOptions>`
   ${link};
 `;
