@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Wrapper should have spacing at size "lg" 1`] = `
-.c0 .c1 + .c1 {
-  margin-left: 24px;
+.c0 {
+  margin-top: -24px;
+  margin-right: -24px;
+}
+
+.c0 .c1 {
+  margin-top: 24px;
+  margin-right: 24px;
 }
 
 <styled.div
@@ -16,8 +22,14 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
 `;
 
 exports[`Wrapper should have spacing at size "md" 1`] = `
-.c0 .c1 + .c1 {
-  margin-left: 24px;
+.c0 {
+  margin-top: -24px;
+  margin-right: -24px;
+}
+
+.c0 .c1 {
+  margin-top: 24px;
+  margin-right: 24px;
 }
 
 <styled.div
@@ -31,8 +43,14 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
 `;
 
 exports[`Wrapper should have spacing at size "sm" 1`] = `
-.c0 .c1 + .c1 {
-  margin-left: 24px;
+.c0 {
+  margin-top: -24px;
+  margin-right: -24px;
+}
+
+.c0 .c1 {
+  margin-top: 24px;
+  margin-right: 24px;
 }
 
 <styled.div
@@ -46,8 +64,14 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
 `;
 
 exports[`Wrapper should have spacing at size "xs" 1`] = `
-.c0 .c1 + .c1 {
-  margin-left: 24px;
+.c0 {
+  margin-top: -24px;
+  margin-right: -24px;
+}
+
+.c0 .c1 {
+  margin-top: 24px;
+  margin-right: 24px;
 }
 
 <styled.div

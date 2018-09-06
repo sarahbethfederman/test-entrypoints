@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { bg } from '@lendi-ui/color';
 import { p } from '@lendi-ui/spacing';
-import Button from './index';
+import { Button } from '@lendi-ui/button';
 
 const Background = styled.div`
   ${p('lg')} ${bg('secondary.500')};

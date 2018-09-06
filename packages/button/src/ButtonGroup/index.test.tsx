@@ -27,13 +27,6 @@ describe('ButtonGroup', () => {
     expect(buttons.last().text()).toContain('Next');
   });
 
-  it('should render buttons with spacing', () => {
-    render({ size: 'lg' });
-    const buttons = element.find(Button);
-    expect(buttons).toHaveLength(2);
-    buttons.forEach((button) => expect(button.prop('size')).toEqual('lg'));
-  });
-
   it('should render buttons with size', () => {
     render({ size: 'lg' });
     const buttons = element.find(Button);

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { ml, SpacingName } from '@lendi-ui/spacing';
+import styled, { css } from 'styled-components';
+import { Spacing, mt, mr, SpacingName } from '@lendi-ui/spacing';
 import { Wrapper as ButtonWrapper, ButtonSize } from '../Button/index.style';
 
 const spacingBySize: { [size in ButtonSize]: SpacingName } = {
@@ -8,12 +8,17 @@ const spacingBySize: { [size in ButtonSize]: SpacingName } = {
   sm: 'xs',
   xs: 'xxs',
 };
+
 export interface WrapperProps {
   size: ButtonSize;
 }
 
 export const Wrapper = styled.div`
-  ${ButtonWrapper} + ${ButtonWrapper} {
-    ${({ size }: WrapperProps) => ml(spacingBySize[size])}
+  margin-top: -${({ size }: WrapperProps) => Spacing[spacingBySize[size]]};
+  margin-right: -${({ size }: WrapperProps) => Spacing[spacingBySize[size]]};
+  ${ButtonWrapper} {
+    ${({ size }: WrapperProps) => css`
+      ${mt(spacingBySize[size])} ${mr(spacingBySize[size])};
+    `};
   }
 `;
