@@ -13,6 +13,8 @@ export interface WrapperProps {
 }
 
 export const Wrapper = styled.div`
+  display: inline-flex;
+  flex-wrap: wrap;
   margin-top: -${({ size }: WrapperProps) => Spacing[spacingBySize[size]]};
   margin-right: -${({ size }: WrapperProps) => Spacing[spacingBySize[size]]};
   ${ButtonWrapper} {

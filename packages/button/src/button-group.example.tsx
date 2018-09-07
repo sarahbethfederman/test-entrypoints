@@ -5,6 +5,11 @@ import { ButtonGroup } from '@lendi-ui/button';
 
 const SmallContainer = styled.div`
   max-width: 360px;
+  border-right: 1px dotted red;
+`;
+
+const CenterContainer = styled.div`
+  text-align: center;
 `;
 
 export default () => (
@@ -22,5 +27,13 @@ export default () => (
         <ButtonGroup.Button variant="primary">I want to buy a new home</ButtonGroup.Button>
       </ButtonGroup>
     </SmallContainer>
+    <hr />
+    <Body>Group should be centered:</Body>
+    <CenterContainer>
+      <ButtonGroup>
+        <ButtonGroup.Button variant="primary">I want to refinance</ButtonGroup.Button>
+        <ButtonGroup.Button variant="primary">I want to buy a new home</ButtonGroup.Button>
+      </ButtonGroup>
+    </CenterContainer>
   </>
 );
