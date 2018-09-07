@@ -28,4 +28,15 @@ describe('display()', () => {
       media: `(min-width:${Breakpoint.desktop})`,
     });
   });
+
+  it('should not render undefined when the value is not defined at a breakpoint', () => {
+    const Component = styled.div`
+      ${display({ mobile: 'inline-flex', desktop: 'none' })};
+    `;
+    const element = shallow(<Component />);
+    expect(element).not.toHaveStyleRule('display', 'undefined');
+    expect(element).not.toHaveStyleRule('display', 'undefined', {
+      media: `(min-width:${Breakpoint.tablet})`,
+    });
+  });
 });
