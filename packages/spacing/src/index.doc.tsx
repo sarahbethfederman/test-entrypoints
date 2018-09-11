@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Heading from '@lendi-ui/heading';
+import { Heading } from '@lendi-ui/typography';
 import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap } from '.';
 
 export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];

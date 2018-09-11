@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body should render styles for alignment "[object Object]" 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+@media (min-width:0) {
+  .c0 {
+    text-align: left;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c0 {
+    text-align: right;
+  }
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Body should render styles for alignment "center" 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Body should render styles for alignment "left" 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  text-align: left;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Body should render styles for alignment "right" 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  text-align: right;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Body should render styles for alignment "undefined" 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Body should render styles for size lg 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 1.125rem;
+  line-height: calc(24 / 18);
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+  size="lg"
+/>
+`;
+
+exports[`Body should render styles for size md 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 1rem;
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+  size="md"
+/>
+`;
+
+exports[`Body should render styles for size sm 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 0.875rem;
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+  size="sm"
+/>
+`;
+
+exports[`Body should render styles for size undefined 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #474747;
+  font-size: 1em;
+  font-family: 'Open Sans',sans-serif;
+}
+
+<p
+  className="c0"
+/>
+`;

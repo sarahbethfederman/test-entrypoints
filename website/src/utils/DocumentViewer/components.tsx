@@ -7,7 +7,7 @@ import Container, { container } from '@lendi-ui/container';
 import * as spacing from '@lendi-ui/spacing';
 import Grid, { grid, unit } from '@lendi-ui/grid';
 import { depth } from '@lendi-ui/depth';
-import Heading, { HeadingSize } from '@lendi-ui/heading';
+import { Heading, HeadingSize } from '@lendi-ui/typography';
 import Logo from '@lendi-ui/logo';
 import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';

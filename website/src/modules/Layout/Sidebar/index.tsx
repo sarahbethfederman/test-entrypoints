@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Logo from '@lendi-ui/logo';
-import Heading from '@lendi-ui/heading';
+import { Heading } from '@lendi-ui/typography';
 import { fg } from '@lendi-ui/color';
 
 import metadata, { Doc } from '../../../utils/info';

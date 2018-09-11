@@ -4,7 +4,7 @@ import { gte } from '@lendi-ui/breakpoint';
 import { bg } from '@lendi-ui/color';
 import { container } from '@lendi-ui/container';
 import { mb, px } from '@lendi-ui/spacing';
-import Heading from '@lendi-ui/heading';
+import { Heading } from '@lendi-ui/typography';
 import { Workspace } from '../../../utils/info';
 
 const Container = styled.div`

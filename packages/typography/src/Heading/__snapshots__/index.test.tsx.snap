@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Heading should render styles for size lg 1`] = `
+exports[`Heading should render styles for size "lg" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -145,7 +145,7 @@ exports[`Heading should render styles for size lg 1`] = `
 />
 `;
 
-exports[`Heading should render styles for size md 1`] = `
+exports[`Heading should render styles for size "md" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -290,7 +290,7 @@ exports[`Heading should render styles for size md 1`] = `
 />
 `;
 
-exports[`Heading should render styles for size sm 1`] = `
+exports[`Heading should render styles for size "sm" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -435,7 +435,7 @@ exports[`Heading should render styles for size sm 1`] = `
 />
 `;
 
-exports[`Heading should render styles for size xl 1`] = `
+exports[`Heading should render styles for size "xl" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -580,7 +580,7 @@ exports[`Heading should render styles for size xl 1`] = `
 />
 `;
 
-exports[`Heading should render styles for size xs 1`] = `
+exports[`Heading should render styles for size "xs" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;

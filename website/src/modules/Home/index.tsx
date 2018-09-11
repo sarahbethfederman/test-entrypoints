@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Heading from '@lendi-ui/heading';
+import { Heading } from '@lendi-ui/typography';
 import { body } from '@lendi-ui/typography';
 import { Layout } from '../Layout';
 

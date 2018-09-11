@@ -2,8 +2,7 @@ import * as React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { color, fg, bg } from '.';
 import { m, p } from '@lendi-ui/spacing';
-import { body } from '@lendi-ui/typography';
-import Heading from '@lendi-ui/heading';
+import { Heading, body } from '@lendi-ui/typography';
 
 interface ColorWrapperProps {
   color: string;
@@ -12,8 +11,8 @@ interface ColorWrapperProps {
 const ColorWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  ${m('xxxs')} 
-  ${p('xs')} 
+  ${m('xxxs')}
+  ${p('xs')}
   ${(props: ColorWrapperProps) => bg(props.color)};
 `;
 
