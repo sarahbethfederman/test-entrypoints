@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@auscred/tslint-rules@^1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@auscred/tslint-rules/-/tslint-rules-1.0.11.tgz#7501366cff8cae4adfee4c26eeca94f9a5301774"
+"@auscred/tslint-rules@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@auscred/tslint-rules/-/tslint-rules-1.0.14.tgz#6e2fdeb908270147e25672bfc2180fa19c1a95f9"
   dependencies:
     tslint "^5.10.0"
     tslint-config-prettier "^1.13.0"

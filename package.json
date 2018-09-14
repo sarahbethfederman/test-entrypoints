@@ -8,7 +8,7 @@
     "website"
   ],
   "dependencies": {
-    "@auscred/tslint-rules": "^1.0.11",
+    "@auscred/tslint-rules": "^1.0.14",
     "@lendi-ui/doc-utils": "^1.0.0",
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^23.1.0",
