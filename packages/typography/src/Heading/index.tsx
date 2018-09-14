@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
-import { my } from '@lendi-ui/spacing';
+import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
@@ -81,6 +81,6 @@ function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
   return <Component size={size} {...otherProps} />;
 }
 
-export const Heading = styled<HeadingProps>(HeadingTag)`
-  ${my('nil')} ${heading};
+export const Heading = styled<HeadingProps & MarginOptions>(HeadingTag)`
+  ${my('nil')} ${heading} ${margin};
 `;

@@ -16,10 +16,10 @@ export enum Spacing {
 }
 
 export type SpacingName = keyof typeof Spacing;
-export type SpacingNameOrNameMap = BreakpointValue<SpacingName> | BreakpointValueMap<SpacingName>;
+export type SpacingNameOrSpacingNameMap = BreakpointValue<SpacingName> | BreakpointValueMap<SpacingName>;
 
 function createSpacingMixin(mapValueToStyle: (value: string) => SimpleInterpolation) {
-  return (size: SpacingNameOrNameMap) => map(size, (s) => (s === undefined ? '' : mapValueToStyle(Spacing[s])));
+  return (size: SpacingNameOrSpacingNameMap) => map(size, (s) => (s === undefined ? '' : mapValueToStyle(Spacing[s])));
 }
 
 export const m = createSpacingMixin(
@@ -109,3 +109,23 @@ export const pl = createSpacingMixin(
     padding-left: ${size};
   `
 );
+
+export interface MarginOptions {
+  m?: SpacingNameOrSpacingNameMap;
+  mx?: SpacingNameOrSpacingNameMap;
+  my?: SpacingNameOrSpacingNameMap;
+  mt?: SpacingNameOrSpacingNameMap;
+  mr?: SpacingNameOrSpacingNameMap;
+  mb?: SpacingNameOrSpacingNameMap;
+  ml?: SpacingNameOrSpacingNameMap;
+}
+
+export const margin = css`
+  ${(props: MarginOptions) => props.m && m(props.m)}
+  ${(props: MarginOptions) => props.mx && mx(props.mx)}
+  ${(props: MarginOptions) => props.my && my(props.my)}
+  ${(props: MarginOptions) => props.mt && mt(props.mt)}
+  ${(props: MarginOptions) => props.mr && mr(props.mr)}
+  ${(props: MarginOptions) => props.mb && mb(props.mb)}
+  ${(props: MarginOptions) => props.ml && ml(props.ml)}
+`;

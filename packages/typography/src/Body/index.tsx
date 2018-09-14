@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { fg } from '@lendi-ui/color';
-import { my } from '@lendi-ui/spacing';
+import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
@@ -59,6 +59,6 @@ export const body = (options: BodyOptions = {}) => {
 /**
  * Body component
  */
-export const Body = styled.p<BodyOptions>`
-  ${my('nil')} ${body};
+export const Body = styled.p<BodyOptions & MarginOptions>`
+  ${my('nil')} ${body} ${margin};
 `;
