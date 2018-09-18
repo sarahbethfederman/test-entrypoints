@@ -1,0 +1,60 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# Margin
+
+Utilities for applying margin
+
+## Mixin 
+
+```
+import {m, mx, my, ml, mb, mr, mt} from '@lendi-ui/spacing';
+```
+
+## Usage
+```js
+const Wrapper = styled.div`
+  border: 1px dotted tomato;
+`;
+
+const Box = styled.div`
+  ${m("lg")}
+`;
+
+render(
+  <Wrapper>
+    <Box>The quick brown fox jumps over the lazy dog</Box>
+  </Wrapper>
+)
+```
+
+Can also be used with breakpoints:
+```js
+const Wrapper = styled.div`
+  border: 1px dotted tomato;
+`;
+
+const Box = styled.div`
+  background-color: #fff;
+  ${m({ "mobile": "xxs", "tablet": "md", "desktop": "xxl" })}
+`;
+
+render(
+  <>
+    👇 Resize the window to see the margin change at each breakpoint: 
+    <Wrapper>
+      <Box>The quick brown fox jumps over the lazy dog</Box>
+    </Wrapper>
+  </>
+)
+```
+
+### Properties
+<PropTable>
+  <PropTable.Entry name="m" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin (around whole container)"/>
+  <PropTable.Entry name="mx" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin on the x axis (i.e. margin right and margin left)"/>
+  <PropTable.Entry name="my" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin around the y axis (i.e margin top and margin bottom)"/>
+  <PropTable.Entry name="mt" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin top"/>
+  <PropTable.Entry name="mr" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin right"/>
+  <PropTable.Entry name="mb" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin bottom"/>
+  <PropTable.Entry name="ml" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Margin left"/>
+</PropTable>

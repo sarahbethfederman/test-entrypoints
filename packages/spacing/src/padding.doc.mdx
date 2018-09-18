@@ -1,0 +1,61 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# Padding
+
+Utilities for applying margin
+
+## Mixin
+```
+import {p, px, py, pl, pb, pr, pt} from '@lendi-ui/spacing';
+```
+
+## Usage
+```js
+const Wrapper = styled.div`
+  background-color: tomato;
+  ${p("lg")}
+`;
+
+const Box = styled.div`
+  background-color: #fff;
+`;
+
+render(
+  <Wrapper>
+    <Box>The quick brown fox jumps over the lazy dog</Box>
+  </Wrapper>
+)
+```
+
+Can also be used with breakpoints:
+```js
+const Wrapper = styled.div`
+  background-color: tomato;
+  ${p({ "mobile": "xxs", "tablet": "md", "desktop": "xxl" })}
+`;
+
+const Box = styled.div`
+  background-color: #fff;
+`;
+
+render(
+  <>
+    👇 Resize the window to see the padding change at each breakpoint: 
+    <Wrapper>
+      <Box>The quick brown fox jumps over the lazy dog</Box>
+    </Wrapper>
+  </>
+)
+```
+
+### Properties 
+
+<PropTable>
+  <PropTable.Entry name="p" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding (around whole container)"/>
+  <PropTable.Entry name="px" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding on the x axis (i.e. padding right and padding left)"/>
+  <PropTable.Entry name="py" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding around the y axis (i.e padding top and padding bottom)"/>
+  <PropTable.Entry name="pt" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding top"/>
+  <PropTable.Entry name="pr" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding right"/>
+  <PropTable.Entry name="pb" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding bottom"/>
+  <PropTable.Entry name="pl" type={'"xxxl" | "xxl" | "xl" | lg" | "md" | "sm" | "xs" | "xxs" | "xxxs" | "nil" | "auto"'} description="Padding left"/>
+</PropTable>

@@ -1,5 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { PropTable } from '@lendi-ui/doc-utils';
+
 import { Heading } from '@lendi-ui/typography';
 import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap } from '.';
 
@@ -7,6 +9,7 @@ export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
 
 interface ExampleComponentProps {
   size: SpacingNameOrNameMap;
+  functionName?: string;
 }
 
 const createMarginComponent = (fn: (props: ExampleComponentProps) => any) => {
@@ -21,9 +24,11 @@ const createMarginComponent = (fn: (props: ExampleComponentProps) => any) => {
     background-color: grey;
   `;
 
-  return ({ size }: ExampleComponentProps) => (
+  return ({ size, functionName }: ExampleComponentProps) => (
     <Outer>
-      <Inner size={size}>{JSON.stringify(size, null, 2)}</Inner>
+      <Inner size={size}>
+        {functionName}({JSON.stringify(size, null, 2)})
+      </Inner>
     </Outer>
   );
 };
@@ -40,9 +45,11 @@ const createPaddingComponent = (fn: (props: ExampleComponentProps) => any) => {
     background-color: grey;
   `;
 
-  return ({ size }: ExampleComponentProps) => (
+  return ({ size, functionName }: ExampleComponentProps) => (
     <Outer size={size}>
-      <Inner>{JSON.stringify(size, null, 2)}</Inner>
+      <Inner>
+        {functionName}({JSON.stringify(size, null, 2)})
+      </Inner>
     </Outer>
   );
 };
@@ -65,30 +72,31 @@ const PL = createPaddingComponent(({ size }) => pl(size));
 
 export default () => (
   <>
-    <Heading size="md">Margin</Heading>
+    <Heading size="lg">Margin</Heading>
     {keys(Spacing).map((name) => (
-      <M size={name} />
+      <M size={name} functionName="m" />
     ))}
-    <M size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} />
+    <M size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} functionName="m" />
     <hr />
-    <MX size="md" />
-    <MY size="md" />
-    <MT size="md" />
-    <MR size="md" />
-    <MB size="md" />
-    <ML size="md" />
+    <MX size="md" functionName="mx" />
+    <MY size="md" functionName="my" />
+    <MT size="md" functionName="mt" />
+    <MR size="md" functionName="mr" />
+    <MB size="md" functionName="mb" />
+    <ML size="md" functionName="ml" />
+    <br />
 
-    <Heading size="md">Padding</Heading>
+    <Heading size="lg">Padding</Heading>
     {keys(Spacing).map((name) => (
-      <P size={name} />
+      <P size={name} functionName="p" />
     ))}
-    <P size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} />
+    <P size={{ mobile: 'xxs', tablet: 'md', desktop: 'xxl' }} functionName="p" />
     <hr />
-    <PX size="md" />
-    <PY size="md" />
-    <PT size="md" />
-    <PR size="md" />
-    <PB size="md" />
-    <PL size="md" />
+    <PX size="md" functionName="px" />
+    <PY size="md" functionName="py" />
+    <PT size="md" functionName="pt" />
+    <PR size="md" functionName="pr" />
+    <PB size="md" functionName="pb" />
+    <PL size="md" functionName="pl" />
   </>
 );
