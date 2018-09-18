@@ -1,59 +1,27 @@
 import * as React from 'react';
-
-let loadedSpritesheet = false;
+import styled from 'styled-components';
+import { color, NameOrNameMap } from '@lendi-ui/color';
+import { Icons, IconMap } from './icons-compiled/index';
 
 export interface IconProps {
-  /** Name of the svg icon */
-  name: string; // @TODO LIP-530 create enum of possible svgs
-
-  className?: string;
+  name: keyof IconMap;
+  color: NameOrNameMap;
 }
 
-export class Icon extends React.Component<IconProps> {
-  public static defaultProps: Partial<IconProps> = {
-    className: undefined,
-  };
-
-  constructor(props: IconProps) {
-    super(props);
+const IconWrapper = styled.span`
+  & > svg {
+    fill: ${({ fill }: { fill: NameOrNameMap }) => color(fill)};
   }
+`;
 
-  private mountSVGSpritesheet(response: string) {
-    const svgWrapper: HTMLElement = document.createElement('div');
-    svgWrapper.setAttribute('id', 'svg-icons');
-    svgWrapper.setAttribute('style', 'display:none;');
-    svgWrapper.innerHTML = response;
+const Icon: React.SFC<IconProps> = ({ name, color }) => {
+  const Svg: React.SFC = Icons[name];
 
-    document.body.insertAdjacentHTML('afterbegin', svgWrapper.outerHTML);
-
-    loadedSpritesheet = true;
-  }
-
-  public componentDidMount() {
-    if (!loadedSpritesheet) {
-      loadedSpritesheet = true;
-      fetch('./sprite.symbol.svg')
-        .then((res) => res.text())
-        .then((text) => {
-          this.mountSVGSpritesheet(text);
-        })
-        .catch((error) => {
-          /* tslint:disable-next-line no-console */
-          console.warn(error);
-          loadedSpritesheet = false;
-        });
-    }
-
-    return undefined;
-  }
-
-  public render() {
-    return (
-      <svg className={this.props.className} focusable="false" role="img">
-        <use href={`#${this.props.name}`} />
-      </svg>
-    );
-  }
-}
+  return (
+    <IconWrapper fill={color}>
+      <Svg />
+    </IconWrapper>
+  );
+};
 
 export default Icon;

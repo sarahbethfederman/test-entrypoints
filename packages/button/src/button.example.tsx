@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import { bg } from '@lendi-ui/color';
 import { p } from '@lendi-ui/spacing';
 import { Button } from '@lendi-ui/button';
+import Icon from '@lendi-ui/icon';
 
 const Background = styled.div`
   ${p('lg')} ${bg('secondary.500')};
 `;
+
+const icon = <Icon name="lock" color="shade.0" />;
 
 export default () => (
   <>
@@ -246,17 +249,17 @@ export default () => (
     <Button variant="primary">I want to buy a home</Button>
     <br />
     <br />
-    <Button variant="primary" before="🏠">
+    <Button variant="primary" before={icon}>
       I want to buy a home
     </Button>
     <br />
     <br />
-    <Button variant="primary" after="🏠">
+    <Button variant="primary" after={icon}>
       I want to buy a home
     </Button>
     <br />
     <br />
-    <Button variant="primary" before="🏠" after="💵">
+    <Button variant="primary" before={icon} after="💵">
       I want to buy a home
     </Button>
     <hr />
@@ -265,17 +268,17 @@ export default () => (
     </Button>
     <br />
     <br />
-    <Button variant="primary" before="🏠" isFullWidth>
+    <Button variant="primary" before={icon} isFullWidth>
       I want to buy a home
     </Button>
     <br />
     <br />
-    <Button variant="primary" after="🏠" isFullWidth>
+    <Button variant="primary" after={icon} isFullWidth>
       I want to buy a home
     </Button>
     <br />
     <br />
-    <Button variant="primary" before="🏠" after="💵" isFullWidth>
+    <Button variant="primary" before={icon} after="💵" isFullWidth>
       I want to buy a home
     </Button>
   </>

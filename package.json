@@ -48,13 +48,14 @@
     "check:lint-doc-and-test": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
-    "build": "lerna run build",
-    "test": "jest",
+    "build": "yarn build:icons && lerna run build",
+    "build:icons": "node packages/icon/build.js",
+    "test": "yarn run build:icons && jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",
     "create-component": "npx -p @auscred/create-lui-component create-lui-component",
     "precommit": "yarn run lint-staged && yarn run check && yarn run test && yarn run build",
-    "test-react-15": "jest --config=./react-15-jest.config.js"
+    "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "lint-staged": {
     "**/*.{json,js,jsx,ts,tsx,md}": [

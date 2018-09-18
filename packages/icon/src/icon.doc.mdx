@@ -1,0 +1,23 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+import {Button} from '@lendi-ui/button';
+
+## Usage
+
+```
+import Icon from '@lendi-ui/Icon';
+```
+
+```jsx
+<>
+<Icon name="mortgageProtectInsurance" color="secondary.500" />
+<br />
+<Button variant="secondary">Testing inline<Icon name="lock" color="primary.500" /></Button>
+</>
+```
+
+## Properties
+<PropTable>
+  <PropTable.Entry name="name" type={`'LMI', 'LVR', 'LowDoc', 'MortgageProtectInsurance', 'NoDeposit', 'Offset', 'PreApproval', 'Refinance1', 'Split', 'bloomSavings', 'bookAppointment', 'briefcase', 'calendarHandShake', 'cashFlow', 'cashOut', 'chatSmileyFace', 'chat', 'check', 'chooseLoan', 'clock', 'computerBank', 'computerTools', 'consolidateDebt', 'consolidations', 'construction', 'credit', 'deposits', 'documentArrowLink', 'documentLoan', 'document', 'email', 'emptyBox', 'eyes', 'fixedMortgageRates', 'flow', 'folder', 'gauge', 'graph', 'growSavings', 'guaranteedLoans', 'handshakeSettled', 'hereToHelp', 'homeLoanRepayments', 'homeTime', 'houseHome', 'house', 'idVerify', 'id', 'info', 'largeLock', 'liveChat', 'lockCircle', 'lock', 'message', 'money', 'partyPopper', 'phone', 'pickATime', 'preferences', 'refinanceHome', 'refinance', 'relax', 'savingsOptions', 'savings', 'searchFilter', 'secure', 'secured', 'settings', 'shapes', 'star', 'sunBed', 'target', 'telephone', 'upload', weather,`} description="The Icon name. This is in camelCase and maps directly to the filenames of the icons in this package"/>
+  <PropTable.Entry name="fill" type={`string`} description="The Icon color."/>
+  <PropTable.Entry name="size" type="boolean" defaultValue={false} description="Whether the Icon is inversed."/>
+</PropTable>

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   ${gte('tablet')`
     height: 112px;
   `}
-  ${px({ mobile: 'sm', tablet: 'xxl', desktop: 'nil' })}
+  ${px({ mobile: 'sm', tablet: 'xxl' })}
   ${container()}
 `;
 
