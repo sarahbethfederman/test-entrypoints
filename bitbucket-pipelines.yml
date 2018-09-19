@@ -1,7 +1,7 @@
 image: node:latest
 
 clone:
-  depth: 1 # only include the last commit for faster checkouts
+  depth: 50 # debugging
 
 pipelines:
   default:
