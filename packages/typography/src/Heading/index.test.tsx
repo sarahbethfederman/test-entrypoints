@@ -24,7 +24,7 @@ describe('Heading', () => {
   colors.forEach((color) => {
     it(`should render styles for color "${color}"`, () => {
       const wrapper = shallow(<Heading size="xl" theme={theme} color={color} />);
-      expect(wrapper).toHaveStyleRule('color', getColor(color || 'shade.700')({ theme }));
+      expect(wrapper).toHaveStyleRule('color', color && getColor(color)({ theme }));
     });
   });
 

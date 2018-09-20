@@ -55,9 +55,9 @@ const headingSizeMixin = (size: HeadingSize) =>
   });
 
 export const heading = (options: HeadingOptions) => {
-  const { color = 'shade.700', align, size } = options;
+  const { color, align, size } = options;
   return css`
-    ${fg(color)}
+    ${color && fg(color)}
     ${align && alignMixin(align)}
     ${headingSizeMixin(size)}
     font-family: ${select('typography.heading.fontFamily')};

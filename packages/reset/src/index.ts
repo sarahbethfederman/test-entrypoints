@@ -1,4 +1,5 @@
 import { injectGlobal } from 'styled-components';
+import { fg } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
 /*
 
@@ -15,6 +16,9 @@ injectGlobal`
   }
 
   html {
+
+    ${fg('shade.700')}
+
     ${gte('mobile')`
       font-size: 14px;
     `}

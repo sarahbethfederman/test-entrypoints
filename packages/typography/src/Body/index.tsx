@@ -47,11 +47,11 @@ const bodySizeMixin = (size: BodySize) =>
  * Body mixin
  */
 export const body = (options: BodyOptions = {}) => {
-  const { color = 'shade.700', align, size } = options;
+  const { color, align, size } = options;
   return css`
-    ${fg(color)}
+    ${color && fg(color)}
     ${align && alignMixin(align)}
-    ${size ? bodySizeMixin(size) : 'font-size: 1em;'}
+    ${size && bodySizeMixin(size)}
     font-family: ${select('typography.body.fontFamily')};
   `;
 };

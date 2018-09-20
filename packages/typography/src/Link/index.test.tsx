@@ -10,9 +10,14 @@ describe('Link', () => {
   const sizes: LinkSize[] = ['lg', 'md', 'sm'];
   const colors = ['primary.500', 'shade.0', 'shade.1000'];
 
-  it('should render the styles for the default size', () => {
+  it('should render default styles when no size is specified', () => {
     const wrapper = shallow(<Link theme={theme} />);
-    expect(wrapper).toHaveStyleRule('font-size', '1em');
+    expect(wrapper).toHaveStyleRule('font-size', undefined);
+  });
+
+  it('should render default styles for color when no color is specified', () => {
+    const wrapper = shallow(<Link size="lg" theme={theme} />);
+    expect(wrapper).toHaveStyleRule('color', getColor('primary.500')({ theme }));
   });
 
   sizes.forEach((size, index) => {
@@ -23,14 +28,9 @@ describe('Link', () => {
   });
 
   colors.forEach((color) => {
-    it(`should render styles for color ${color} based on props`, () => {
+    it(`should render styles for color ${color}`, () => {
       const wrapper = shallow(<Link size="lg" theme={theme} color={color} />);
       expect(wrapper).toHaveStyleRule('color', getColor(color)({ theme }));
     });
-  });
-
-  it('should render default styles for color when no color prop is passed', () => {
-    const wrapper = shallow(<Link size="lg" theme={theme} />);
-    expect(wrapper).toHaveStyleRule('color', getColor('primary.500')({ theme }));
   });
 });
