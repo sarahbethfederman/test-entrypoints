@@ -11,14 +11,15 @@ export interface ButtonProps {
   isDisabled?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
+  className?: string;
   children?: React.ReactNode;
 }
 
 export class Button extends React.Component<ButtonProps> {
   render() {
-    const { variant, size = 'md', isInverse, isFullWidth, isDisabled, before, after, children } = this.props;
+    const { size = 'md', before, after, children, ...wrapperProps } = this.props;
     return (
-      <Wrapper variant={variant} size={size} isInverse={isInverse} isFullWidth={isFullWidth} disabled={isDisabled}>
+      <Wrapper size={size} {...wrapperProps}>
         <Layout>
           {before && <BeforeWrapper size={size}>{before}</BeforeWrapper>}
           <span>{children}</span>

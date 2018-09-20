@@ -8,6 +8,7 @@ export interface ButtonGroupButtonProps {
   isDisabled?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
+  className?: string;
   children?: React.ReactNode;
 }
 
@@ -16,6 +17,7 @@ const ButtonGroupButton: React.SFC<ButtonGroupButtonProps> = () => null;
 export interface ButtonGroupProps {
   size?: ButtonSize;
   isInverse?: boolean;
+  className?: string;
   children?: React.ReactElement<ButtonGroupButtonProps> | React.ReactElement<ButtonGroupButtonProps>[];
 }
 
@@ -27,11 +29,11 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
     return (
       <Wrapper size={size}>
         {React.Children.map(children, (child) => {
-          if (React.isValidElement<ButtonGroupButtonProps>(child)) {
-            return <Button {...child.props} {...restProps} size={size} />;
-          } else {
-            return child; // should we error?
+          if (!React.isValidElement<ButtonGroupButtonProps>(child)) {
+            // throw new Error('ButtonGroup: Child must be a ButtonGroup.Button');
+            return null;
           }
+          return <Button {...child.props} {...restProps} size={size} />;
         })}
       </Wrapper>
     );
