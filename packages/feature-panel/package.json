@@ -17,7 +17,7 @@
     "styled-components": "^2 || ^3"
   },
   "dependencies": {
-    "@lendi-ui/spacing": "^2.0.0",
+    "@lendi-ui/spacing": "^3.0.0",
     "@lendi-ui/typography": "^2.0.0",
     "@lendi-ui/grid": "^1.0.1"
   },

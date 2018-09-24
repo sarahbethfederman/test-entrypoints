@@ -11,9 +11,9 @@ exports[`Button emphasis should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -79,164 +79,20 @@ exports[`Button emphasis should not render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={false}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={false}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should not render inverse styles 1`] = `
@@ -250,9 +106,9 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -318,164 +174,20 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={true}
-      variant="emphasis"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={true}
-        size="md"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should render "lg" size styles 1`] = `
@@ -489,9 +201,9 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 4rem;
-  padding: 0 1rem;
-  font-size: 1.375rem;
+  height: 4em;
+  padding: 0 1em;
+  font-size: 1.375em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -557,163 +269,20 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="lg"
-      variant="emphasis"
+<button
+  className="c0"
+  size="lg"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="lg"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="lg"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should render "md" size styles 1`] = `
@@ -727,9 +296,9 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -795,163 +364,20 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="md"
-      variant="emphasis"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="md"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should render "sm" size styles 1`] = `
@@ -965,9 +391,9 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 2.5rem;
-  padding: 0 0.5rem;
-  font-size: 1rem;
+  height: 2.5em;
+  padding: 0 0.5em;
+  font-size: 1em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -1033,163 +459,20 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="sm"
-      variant="emphasis"
+<button
+  className="c0"
+  size="sm"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="sm"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="sm"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should render full width 1`] = `
@@ -1203,9 +486,9 @@ exports[`Button emphasis should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -1272,164 +555,20 @@ exports[`Button emphasis should render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={true}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={true}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button emphasis should render normal styles 1`] = `
@@ -1443,9 +582,9 @@ exports[`Button emphasis should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #ff7063;
@@ -1511,164 +650,20 @@ exports[`Button emphasis should render normal styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={false}
-      variant="emphasis"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={false}
-        size="md"
-        variant="emphasis"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button empty should render "lg" size styles 1`] = `
@@ -1682,9 +677,9 @@ exports[`Button empty should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 4rem;
-  padding: 0 1rem;
-  font-size: 1.375rem;
+  height: 4em;
+  padding: 0 1em;
+  font-size: 1.375em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -1760,163 +755,20 @@ exports[`Button empty should render "lg" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="lg"
-      variant="empty"
+<button
+  className="c0"
+  size="lg"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="lg"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="lg"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button empty should render "md" size styles 1`] = `
@@ -1930,9 +782,9 @@ exports[`Button empty should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2008,163 +860,20 @@ exports[`Button empty should render "md" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="md"
-      variant="empty"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="md"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button empty should render "sm" size styles 1`] = `
@@ -2178,9 +887,9 @@ exports[`Button empty should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 2.5rem;
-  padding: 0 0.5rem;
-  font-size: 1rem;
+  height: 2.5em;
+  padding: 0 0.5em;
+  font-size: 1em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2256,163 +965,20 @@ exports[`Button empty should render "sm" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="sm"
-      variant="empty"
+<button
+  className="c0"
+  size="sm"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="sm"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="sm"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button empty should render inverse styles 1`] = `
@@ -2426,9 +992,9 @@ exports[`Button empty should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: transparent;
@@ -2486,164 +1052,20 @@ exports[`Button empty should render inverse styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={true}
-      variant="empty"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={true}
-        size="md"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button empty should render normal styles 1`] = `
@@ -2657,9 +1079,9 @@ exports[`Button empty should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -2735,164 +1157,20 @@ exports[`Button empty should render normal styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={false}
-      variant="empty"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={false}
-        size="md"
-        variant="empty"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should not render full width 1`] = `
@@ -2906,9 +1184,9 @@ exports[`Button primary should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -2974,164 +1252,20 @@ exports[`Button primary should not render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={false}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={false}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render "lg" size styles 1`] = `
@@ -3145,9 +1279,9 @@ exports[`Button primary should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 4rem;
-  padding: 0 1rem;
-  font-size: 1.375rem;
+  height: 4em;
+  padding: 0 1em;
+  font-size: 1.375em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -3213,163 +1347,20 @@ exports[`Button primary should render "lg" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="lg"
-      variant="primary"
+<button
+  className="c0"
+  size="lg"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="lg"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="lg"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render "md" size styles 1`] = `
@@ -3383,9 +1374,9 @@ exports[`Button primary should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -3451,163 +1442,20 @@ exports[`Button primary should render "md" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="md"
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render "sm" size styles 1`] = `
@@ -3621,9 +1469,9 @@ exports[`Button primary should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 2.5rem;
-  padding: 0 0.5rem;
-  font-size: 1rem;
+  height: 2.5em;
+  padding: 0 0.5em;
+  font-size: 1em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -3689,163 +1537,20 @@ exports[`Button primary should render "sm" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="sm"
-      variant="primary"
+<button
+  className="c0"
+  size="sm"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="sm"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="sm"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render full width 1`] = `
@@ -3859,9 +1564,9 @@ exports[`Button primary should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -3928,164 +1633,20 @@ exports[`Button primary should render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={true}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={true}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render inverse styles 1`] = `
@@ -4099,9 +1660,9 @@ exports[`Button primary should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -4153,164 +1714,20 @@ exports[`Button primary should render inverse styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={true}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={true}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button primary should render normal styles 1`] = `
@@ -4324,9 +1741,9 @@ exports[`Button primary should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -4392,164 +1809,20 @@ exports[`Button primary should render normal styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={false}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={false}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button secondary should render "lg" size styles 1`] = `
@@ -4563,9 +1836,9 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 4rem;
-  padding: 0 1rem;
-  font-size: 1.375rem;
+  height: 4em;
+  padding: 0 1em;
+  font-size: 1.375em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -4636,163 +1909,20 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="lg"
-      variant="secondary"
+<button
+  className="c0"
+  size="lg"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="lg"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="lg"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button secondary should render "md" size styles 1`] = `
@@ -4806,9 +1936,9 @@ exports[`Button secondary should render "md" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -4879,163 +2009,20 @@ exports[`Button secondary should render "md" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="md"
-      variant="secondary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="md"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button secondary should render "sm" size styles 1`] = `
@@ -5049,9 +2036,9 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 2.5rem;
-  padding: 0 0.5rem;
-  font-size: 1rem;
+  height: 2.5em;
+  padding: 0 0.5em;
+  font-size: 1em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -5122,163 +2109,20 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      size="sm"
-      variant="secondary"
+<button
+  className="c0"
+  size="sm"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        size="sm"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="sm"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button secondary should render inverse styles 1`] = `
@@ -5292,9 +2136,9 @@ exports[`Button secondary should render inverse styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: transparent;
@@ -5347,164 +2191,20 @@ exports[`Button secondary should render inverse styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={true}
-      variant="secondary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={true}
-        size="md"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button secondary should render normal styles 1`] = `
@@ -5518,9 +2218,9 @@ exports[`Button secondary should render normal styles 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #00c0a5;
   background-color: #ffffff;
@@ -5591,164 +2291,20 @@ exports[`Button secondary should render normal styles 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isInverse={false}
-      variant="secondary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isInverse={false}
-        size="md"
-        variant="secondary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button should not render full width 1`] = `
@@ -5762,9 +2318,9 @@ exports[`Button should not render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -5830,164 +2386,20 @@ exports[`Button should not render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={false}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={false}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button should not render full width 2`] = `
@@ -6001,9 +2413,9 @@ exports[`Button should not render full width 2`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   color: #ffffff;
   background-color: #00c0a5;
@@ -6069,164 +2481,20 @@ exports[`Button should not render full width 2`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={false}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={false}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button should render full width 1`] = `
@@ -6240,9 +2508,9 @@ exports[`Button should render full width 1`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -6309,164 +2577,20 @@ exports[`Button should render full width 1`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={true}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={true}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;
 
 exports[`Button should render full width 2`] = `
@@ -6480,9 +2604,9 @@ exports[`Button should render full width 2`] = `
   text-align: center;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  height: 3rem;
-  padding: 0 1rem;
-  font-size: 1.125rem;
+  height: 3em;
+  padding: 0 1em;
+  font-size: 1.125em;
   font-family: 'Open Sans',sans-serif;
   width: 100%;
   color: #ffffff;
@@ -6549,162 +2673,18 @@ exports[`Button should render full width 2`] = `
   justify-content: center;
 }
 
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fdedd3",
-            "200": "#fbdba7",
-            "25": "#fefaf4",
-            "300": "#f9c97b",
-            "400": "#f7b74e",
-            "50": "#fef6e9",
-            "500": "#f5a623",
-            "600": "#c4841c",
-            "700": "#936315",
-            "800": "#62420e",
-            "900": "#312107",
-            "950": "#181003",
-          },
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <Button
-      isFullWidth={true}
-      variant="primary"
+<button
+  className="c0"
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c1"
     >
-      <styled.button
-        isFullWidth={true}
-        size="md"
-        variant="primary"
-      >
-        <button
-          className="c0"
-          size="md"
-        >
-          <styled.div>
-            <div
-              className="c1"
-            >
-              <span>
-                Click me!
-              </span>
-            </div>
-          </styled.div>
-        </button>
-      </styled.button>
-    </Button>
-  </ThemeProvider>
-</Theme>
+      <span>
+        Click me!
+      </span>
+    </div>
+  </styled.div>
+</button>
 `;

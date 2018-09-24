@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import '@lendi-ui/reset';
 import Theme from '@lendi-ui/theme';
 import { Home } from '../Home';
 import { GettingStarted } from '../GettingStarted';

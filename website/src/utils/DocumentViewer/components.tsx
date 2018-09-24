@@ -15,6 +15,7 @@ import Icon from '@lendi-ui/icon';
 import { Button, ButtonGroup } from '@lendi-ui/button';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
+import Theme from '@lendi-ui/theme';
 
 const scope = {
   styled,
@@ -43,6 +44,7 @@ const scope = {
   Button,
   ButtonGroup,
   Container,
+  Theme,
 };
 
 interface GenericProps {

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "peerDependencies": {
-    "@lendi-ui/theme": "^2.0.0",
+    "@lendi-ui/theme": "^3.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^2 || ^3"
@@ -17,7 +17,7 @@
   "dependencies": {
     "@lendi-ui/color": "^2.0.0",
     "@lendi-ui/depth": "^1.0.0",
-    "@lendi-ui/spacing": "^2.0.0"
+    "@lendi-ui/spacing": "^3.0.0"
   },
   "license": "ISC",
   "scripts": {

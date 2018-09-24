@@ -11,7 +11,7 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^2.0.1",
+    "@lendi-ui/theme": "^3.0.0",
     "styled-components": "^2 || ^3"
   },
   "dependencies": {

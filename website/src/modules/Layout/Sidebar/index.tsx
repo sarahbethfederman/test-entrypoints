@@ -28,9 +28,7 @@ const KickerLink = styled(Link)`
 export class Sidebar extends React.Component {
   get foundations() {
     const { workspaces } = metadata;
-    return workspaces
-      .filter((workspace) => foundations.includes(workspace.name))
-      .filter((workspace) => workspace.name !== 'reset' && workspace.name !== 'theme');
+    return workspaces.filter((workspace) => foundations.includes(workspace.name));
   }
 
   get components() {

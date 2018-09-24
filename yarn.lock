@@ -104,6 +104,16 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@lendi-ui/spacing@^2.0.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-2.1.0.tgz#b68320566c6765130b59a34c913a369c088b8a05"
+  dependencies:
+    "@lendi-ui/breakpoint" "^1.0.0"
+
+"@lendi-ui/theme@^2.0.1":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/theme/-/theme-2.0.2.tgz#91c9be10b60d1bae8118c8d9176c688df971dc21"
+
 "@lerna/add@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@lerna/add/-/add-3.1.4.tgz#d0d20eb1ca14a43b11ae80cce77da960388529cb"

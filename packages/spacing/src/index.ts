@@ -4,15 +4,15 @@ import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 export enum Spacing {
   'auto' = 'auto',
   'nil' = '0',
-  'xxxs' = '0.25rem',
-  'xxs' = '0.5rem',
-  'xs' = '0.75rem',
-  'sm' = '1rem',
-  'md' = '1.5rem',
-  'lg' = '2rem',
-  'xl' = '2.5rem',
-  'xxl' = '4rem',
-  'xxxl' = '5rem',
+  'xxxs' = '0.25em',
+  'xxs' = '0.5em',
+  'xs' = '0.75em',
+  'sm' = '1em',
+  'md' = '1.5em',
+  'lg' = '2em',
+  'xl' = '2.5em',
+  'xxl' = '4em',
+  'xxxl' = '5em',
 }
 
 export type SpacingName = keyof typeof Spacing;
