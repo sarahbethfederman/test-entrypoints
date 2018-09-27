@@ -8,8 +8,11 @@
     "website"
   ],
   "dependencies": {
-    "@auscred/tslint-rules": "^1.0.14",
     "@lendi-ui/doc-utils": "^1.0.0",
+    "@lendi/editor-config": "^1.0.0",
+    "@lendi/prettier-config": "^1.0.0",
+    "@lendi/tslint-config": "^1.0.0",
+    "@lendi/typescript-config": "^1.0.0",
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^23.1.0",
     "@types/react": "^16.4.8",

@@ -1,8 +1,8 @@
 {
-  "extends": ["./tslint.base.json"],
+  "extends": "@lendi/tslint-config/tests",
   "rules": {
     // we've disabled the dependency check for devDependencies so we can add them once
-    // at the top level package.json to avoid adding them for every package
+    // at the root package.json to save having to add them in every workspace
     "no-implicit-dependencies": [false, "dev"]
   }
 }

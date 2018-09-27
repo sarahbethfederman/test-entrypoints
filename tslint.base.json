@@ -1,6 +1,0 @@
-{
-  "extends": ["./node_modules/@auscred/tslint-rules/tslint.json"],
-  "rules": {
-    "linebreak-style": [false, "LF"] // this is driving me insane! why doesn't prettier or tslint handle it?
-  }
-}
