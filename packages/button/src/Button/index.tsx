@@ -1,5 +1,13 @@
 import * as React from 'react';
-import { ButtonVariant, ButtonSize, Wrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
+import {
+  ButtonVariant,
+  ButtonSize,
+  ButtonWrapper,
+  LinkWrapper,
+  Layout,
+  BeforeWrapper,
+  AfterWrapper,
+} from './index.style';
 
 export { ButtonSize, ButtonVariant };
 
@@ -11,21 +19,64 @@ export interface ButtonProps {
   isDisabled?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
+  href?: string;
+  onClick?: () => void;
   className?: string;
   children?: React.ReactNode;
 }
 
 export class Button extends React.Component<ButtonProps> {
-  render() {
-    const { size = 'md', before, after, children, ...wrapperProps } = this.props;
+  get commonProps() {
+    const { variant, size = 'md', isInverse, isFullWidth, isDisabled, className } = this.props;
+    return {
+      variant,
+      size,
+      isInverse,
+      isFullWidth,
+      isDisabled,
+      className,
+    };
+  }
+
+  get linkProps() {
+    const { href } = this.props;
+    return {
+      href,
+    };
+  }
+
+  get buttonProps() {
+    const { onClick } = this.props;
+    return {
+      onClick,
+    };
+  }
+
+  renderContent() {
+    const { size = 'md', before, after, children } = this.props;
     return (
-      <Wrapper size={size} {...wrapperProps}>
-        <Layout>
-          {before && <BeforeWrapper size={size}>{before}</BeforeWrapper>}
-          <span>{children}</span>
-          {after && <AfterWrapper size={size}>{after}</AfterWrapper>}
-        </Layout>
-      </Wrapper>
+      <Layout>
+        {before && <BeforeWrapper size={size}>{before}</BeforeWrapper>}
+        <span>{children}</span>
+        {after && <AfterWrapper size={size}>{after}</AfterWrapper>}
+      </Layout>
     );
+  }
+
+  render() {
+    const { href } = this.props;
+    if (href) {
+      return (
+        <LinkWrapper {...this.commonProps} {...this.linkProps}>
+          {this.renderContent()}
+        </LinkWrapper>
+      );
+    } else {
+      return (
+        <ButtonWrapper {...this.commonProps} {...this.buttonProps}>
+          {this.renderContent()}
+        </ButtonWrapper>
+      );
+    }
   }
 }

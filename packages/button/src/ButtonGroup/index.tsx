@@ -8,6 +8,8 @@ export interface ButtonGroupButtonProps {
   isDisabled?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
+  href?: string;
+  onClick?: () => void;
   className?: string;
   children?: React.ReactNode;
 }
@@ -25,7 +27,7 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
   static Button = ButtonGroupButton;
 
   render() {
-    const { size = 'md', children, ...restProps } = this.props;
+    const { size = 'md', children, ...btnProps } = this.props;
     return (
       <Wrapper size={size}>
         {React.Children.map(children, (child) => {
@@ -33,7 +35,7 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
             // throw new Error('ButtonGroup: Child must be a ButtonGroup.Button');
             return null;
           }
-          return <Button {...child.props} {...restProps} size={size} />;
+          return <Button {...child.props} {...btnProps} size={size} />;
         })}
       </Wrapper>
     );

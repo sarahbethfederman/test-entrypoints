@@ -181,8 +181,13 @@ export interface WrapperProps {
   isFullWidth?: boolean;
 }
 
-export const Wrapper = styled.button`
+export const ButtonWrapper = styled.button`
   ${buttonStyle};
+`;
+
+export const LinkWrapper = styled(ButtonWrapper.withComponent('a'))`
+  display: inline-block;
+  text-decoration: none;
 `;
 
 export const Layout = styled.div`

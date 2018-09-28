@@ -13,7 +13,8 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
   margin-right: -1.5em;
 }
 
-.c0 .c1 {
+.c0 .c1,
+.c0 .sc-bxivhb {
   margin-top: 1.5em;
   margin-right: 1.5em;
 }
@@ -41,7 +42,8 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
   margin-right: -1.5em;
 }
 
-.c0 .c1 {
+.c0 .c1,
+.c0 .sc-bxivhb {
   margin-top: 1.5em;
   margin-right: 1.5em;
 }
@@ -69,7 +71,8 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
   margin-right: -1.5em;
 }
 
-.c0 .c1 {
+.c0 .c1,
+.c0 .sc-bxivhb {
   margin-top: 1.5em;
   margin-right: 1.5em;
 }
@@ -97,7 +100,8 @@ exports[`Wrapper should have spacing at size "xs" 1`] = `
   margin-right: -1.5em;
 }
 
-.c0 .c1 {
+.c0 .c1,
+.c0 .sc-bxivhb {
   margin-top: 1.5em;
   margin-right: 1.5em;
 }

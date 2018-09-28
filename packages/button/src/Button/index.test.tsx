@@ -2,7 +2,7 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Button, ButtonSize, ButtonVariant } from '.';
-import { heightBySize, Wrapper } from './index.style';
+import { heightBySize } from './index.style';
 
 const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
 const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
@@ -13,13 +13,39 @@ let button;
 function render(props) {
   const element = mount(
     <Theme>
-      <Button {...props}>Click me!</Button>
+      <Button variant="primary" {...props}>
+        Click me!
+      </Button>
     </Theme>
   );
   button = element.find('button');
 }
 
 describe('Button', () => {
+  it('should render a <a> when href specified', () => {
+    const element = mount(
+      <Theme>
+        <Button variant="primary" href="https://www.lendi.com.au/">
+          Click me!
+        </Button>
+      </Theme>
+    );
+    expect(element.find('a')).toHaveLength(1);
+    expect(element.find('button')).toHaveLength(0);
+  });
+
+  it('should render a <button> when href is not specified', () => {
+    const element = mount(
+      <Theme>
+        <Button variant="primary" onClick={jest.fn()}>
+          Click me!
+        </Button>
+      </Theme>
+    );
+    expect(element.find('a')).toHaveLength(0);
+    expect(element.find('button')).toHaveLength(1);
+  });
+
   allVariants.forEach((variant) => {
     describe(`${variant}`, () => {
       sizes.forEach((size) => {
