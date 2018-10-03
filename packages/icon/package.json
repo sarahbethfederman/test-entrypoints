@@ -1,9 +1,9 @@
 {
   "name": "@lendi-ui/icon",
-  "version": "2.0.0",
-  "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
+  "version": "3.0.0",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
+  "source": "src/index.tsx",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -12,6 +12,7 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
+    "@lendi-ui/theme": "^3.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^2 || ^3"
@@ -23,7 +24,7 @@
     "@lendi-ui/color": "^2.0.1"
   },
   "scripts": {
-    "build:svg": "node ./build.js",
+    "build:svg": "node ./build/index.js",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",

@@ -25,5 +25,8 @@
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
+  },
+  "devDependencies": {
+    "@lendi-ui/icon": "^2.0.0"
   }
 }

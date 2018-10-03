@@ -52,7 +52,7 @@
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
     "build": "yarn build:icons && lerna run build",
-    "build:icons": "node packages/icon/build.js",
+    "build:icons": "node packages/icon/build/index.js",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",

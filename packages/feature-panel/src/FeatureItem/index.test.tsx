@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as Enzyme from 'enzyme';
 import { FeatureItem, Title } from '.';
-import Icon from '@lendi-ui/icon';
 
 describe('Feature Item', () => {
   it('should render without title', () => {

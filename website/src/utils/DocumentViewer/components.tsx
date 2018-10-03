@@ -11,7 +11,7 @@ import { Heading, HeadingSize } from '@lendi-ui/typography';
 import Logo from '@lendi-ui/logo';
 import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';
-import Icon from '@lendi-ui/icon';
+import * as icons from '@lendi-ui/icon';
 import { Button, ButtonGroup } from '@lendi-ui/button';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
@@ -40,7 +40,7 @@ const scope = {
   Logo,
   Carousel,
   FeaturePanel,
-  Icon,
+  ...icons,
   Button,
   ButtonGroup,
   Container,
