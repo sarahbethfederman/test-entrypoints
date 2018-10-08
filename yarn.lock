@@ -96,12 +96,6 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@lendi-ui/icon@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/icon/-/icon-2.0.0.tgz#30f91884fc0f6e002dfe069560490c0d6a54f9ac"
-  dependencies:
-    "@lendi-ui/color" "^2.0.1"
-
 "@lendi-ui/spacing@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-2.1.0.tgz#b68320566c6765130b59a34c913a369c088b8a05"
