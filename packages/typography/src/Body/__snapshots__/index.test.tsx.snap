@@ -79,8 +79,7 @@ exports[`Body should render styles for size lg 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.125rem;
-  line-height: calc(24 / 18);
+  font-size: calc(1.125 * var(--lendi-ui-size)) line-height:calc(24 / 18);
   font-family: 'Open Sans',sans-serif;
 }
 
@@ -94,8 +93,7 @@ exports[`Body should render styles for size md 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1rem;
-  line-height: calc(24 / 16);
+  font-size: var(--lendi-ui-size) line-height:calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
 }
 
@@ -109,7 +107,7 @@ exports[`Body should render styles for size sm 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: calc(0.875 * var(--lendi-ui-size));
   line-height: calc(20 / 14);
   font-family: 'Open Sans',sans-serif;
 }

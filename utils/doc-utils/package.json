@@ -18,7 +18,7 @@
     "react-element-to-jsx-string": "^14.0.1"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "^3.1.0"
+    "@lendi-ui/theme": "^4.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

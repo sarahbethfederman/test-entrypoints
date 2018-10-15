@@ -13,18 +13,25 @@ injectGlobal`
     margin: 0;
     padding: 0;
   }
+
+  :root {
+    --lendi-ui-size: 14px;
+  }
+
+  @media (min-width: 36.0625em) {
+    :root {
+      --lendi-ui-size: 16px;
+    }
+  }
 `;
 
 const Root = styled.div`
   color: ${theme.colors.shade[700]};
-  font-size: 14px;
-  @media (min-width: 36.0625em) {
-    font-size: 16px;
-  }
 `;
 
 export function Theme(props: ThemeProps) {
   const { children } = props;
+
   return (
     <ThemeProvider theme={theme}>
       <Root>{children}</Root>

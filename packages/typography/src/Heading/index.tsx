@@ -4,6 +4,7 @@ import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { deriveSize } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
 type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
@@ -21,31 +22,31 @@ const headingSizeMixin = (size: HeadingSize) =>
     switch (val) {
       case 'xs':
         return `
-        font-size: 1.125rem;
+        font-size: ${deriveSize(1.125)};
         font-weight: 500;
         line-height: calc(24 / 18);
       `;
       case 'sm':
         return `
-        font-size: 1.375rem;
+        font-size: ${deriveSize(1.375)};
         font-weight: 500;
         line-height: calc(28 / 22);
       `;
       case 'md':
         return `
-        font-size: 1.75rem;
+        font-size: ${deriveSize(1.75)};
         font-weight: 500;
         line-height: calc(32 / 28);
       `;
       case 'lg':
         return `
-        font-size: 2.3125rem;
+        font-size: ${deriveSize(2.3125)};
         font-weight: 500;
         line-height: calc(40 / 37);
       `;
       case 'xl':
         return `
-        font-size: 2.875rem;
+        font-size: ${deriveSize(2.875)};
         font-weight: bold;
         line-height: calc(50 / 46);
       `;

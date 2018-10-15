@@ -3,6 +3,7 @@ import { select } from '@lendi-ui/theme';
 import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { deriveSize } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
 export type Size = 'xs' | 'sm' | 'md' | 'lg';
@@ -20,22 +21,22 @@ const bodySizeMixin = (size: BodySize) =>
     switch (val) {
       case 'xs':
         return `
-        font-size: 0.75rem;
+        font-size: ${deriveSize(0.75)};
         line-height: calc(16 / 12);
       `;
       case 'sm':
         return `
-        font-size: 0.875rem;
+        font-size: ${deriveSize(0.875)};
         line-height: calc(20 / 14);
       `;
       case 'md':
         return `
-        font-size: 1rem;
+        font-size: ${deriveSize(1)}
         line-height: calc(24 / 16);
       `;
       case 'lg':
         return `
-        font-size: 1.125rem;
+        font-size: ${deriveSize(1.125)}
         line-height: calc(24 / 18);
       `;
       default:

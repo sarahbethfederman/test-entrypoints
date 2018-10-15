@@ -9,14 +9,14 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1.5em;
-  margin-right: -1.5em;
+  margin-top: -calc(1.5 * var(--lendi-ui-size));
+  margin-right: -calc(1.5 * var(--lendi-ui-size));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: 1.5em;
-  margin-right: 1.5em;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-right: calc(1.5 * var(--lendi-ui-size));
 }
 
 <styled.div
@@ -38,14 +38,14 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1.5em;
-  margin-right: -1.5em;
+  margin-top: -calc(1.5 * var(--lendi-ui-size));
+  margin-right: -calc(1.5 * var(--lendi-ui-size));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: 1.5em;
-  margin-right: 1.5em;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-right: calc(1.5 * var(--lendi-ui-size));
 }
 
 <styled.div
@@ -67,14 +67,14 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1.5em;
-  margin-right: -1.5em;
+  margin-top: -calc(1.5 * var(--lendi-ui-size));
+  margin-right: -calc(1.5 * var(--lendi-ui-size));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: 1.5em;
-  margin-right: 1.5em;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-right: calc(1.5 * var(--lendi-ui-size));
 }
 
 <styled.div
@@ -96,14 +96,14 @@ exports[`Wrapper should have spacing at size "xs" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: -1.5em;
-  margin-right: -1.5em;
+  margin-top: -calc(1.5 * var(--lendi-ui-size));
+  margin-right: -calc(1.5 * var(--lendi-ui-size));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: 1.5em;
-  margin-right: 1.5em;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-right: calc(1.5 * var(--lendi-ui-size));
 }
 
 <styled.div

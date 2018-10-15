@@ -1,19 +1,20 @@
 import { css, SimpleInterpolation } from 'styled-components';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { deriveSize } from '@lendi-ui/utils';
 
-export enum Spacing {
-  'auto' = 'auto',
-  'nil' = '0',
-  'xxxs' = '0.25em',
-  'xxs' = '0.5em',
-  'xs' = '0.75em',
-  'sm' = '1em',
-  'md' = '1.5em',
-  'lg' = '2em',
-  'xl' = '2.5em',
-  'xxl' = '4em',
-  'xxxl' = '5em',
-}
+export const Spacing = {
+  auto: 'auto',
+  nil: '0',
+  xxxs: deriveSize(0.25),
+  xxs: deriveSize(0.5),
+  xs: deriveSize(0.75),
+  sm: deriveSize(1),
+  md: deriveSize(1.5),
+  lg: deriveSize(2),
+  xl: deriveSize(2.5),
+  xxl: deriveSize(4),
+  xxxl: deriveSize(5),
+};
 
 export type SpacingName = keyof typeof Spacing;
 export type SpacingNameOrSpacingNameMap = BreakpointValue<SpacingName> | BreakpointValueMap<SpacingName>;

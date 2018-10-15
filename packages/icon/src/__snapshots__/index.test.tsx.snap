@@ -3,19 +3,12 @@
 exports[`Icon component should fetch BloomSavings icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -464,19 +457,12 @@ exports[`Icon component should fetch BloomSavings icon correctly 1`] = `
 exports[`Icon component should fetch BookAppointment icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -701,19 +687,12 @@ exports[`Icon component should fetch BookAppointment icon correctly 1`] = `
 exports[`Icon component should fetch Briefcase icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -920,19 +899,12 @@ exports[`Icon component should fetch Briefcase icon correctly 1`] = `
 exports[`Icon component should fetch CalendarHandShake icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -1255,19 +1227,12 @@ exports[`Icon component should fetch CalendarHandShake icon correctly 1`] = `
 exports[`Icon component should fetch CashFlow icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -1475,19 +1440,12 @@ exports[`Icon component should fetch CashFlow icon correctly 1`] = `
 exports[`Icon component should fetch CashOut icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -1714,19 +1672,12 @@ exports[`Icon component should fetch CashOut icon correctly 1`] = `
 exports[`Icon component should fetch Chat icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -1916,19 +1867,12 @@ exports[`Icon component should fetch Chat icon correctly 1`] = `
 exports[`Icon component should fetch ChatSmileyFace icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -2128,19 +2072,12 @@ exports[`Icon component should fetch ChatSmileyFace icon correctly 1`] = `
 exports[`Icon component should fetch Check icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -2331,19 +2268,12 @@ exports[`Icon component should fetch Check icon correctly 1`] = `
 exports[`Icon component should fetch ChevronDown icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -2516,19 +2446,12 @@ exports[`Icon component should fetch ChevronDown icon correctly 1`] = `
 exports[`Icon component should fetch ChevronLeft icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -2701,19 +2624,12 @@ exports[`Icon component should fetch ChevronLeft icon correctly 1`] = `
 exports[`Icon component should fetch ChevronRight icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -2886,19 +2802,12 @@ exports[`Icon component should fetch ChevronRight icon correctly 1`] = `
 exports[`Icon component should fetch ChevronUp icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -3071,19 +2980,12 @@ exports[`Icon component should fetch ChevronUp icon correctly 1`] = `
 exports[`Icon component should fetch ChooseLoan icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -3327,19 +3229,12 @@ exports[`Icon component should fetch ChooseLoan icon correctly 1`] = `
 exports[`Icon component should fetch Clock icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -3530,19 +3425,12 @@ exports[`Icon component should fetch Clock icon correctly 1`] = `
 exports[`Icon component should fetch Close icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -3715,19 +3603,12 @@ exports[`Icon component should fetch Close icon correctly 1`] = `
 exports[`Icon component should fetch ComputerBank icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -3913,19 +3794,12 @@ exports[`Icon component should fetch ComputerBank icon correctly 1`] = `
 exports[`Icon component should fetch ComputerTools icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -4115,19 +3989,12 @@ exports[`Icon component should fetch ComputerTools icon correctly 1`] = `
 exports[`Icon component should fetch ConsolidateDebt icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -4379,19 +4246,12 @@ exports[`Icon component should fetch ConsolidateDebt icon correctly 1`] = `
 exports[`Icon component should fetch Consolidations icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -4589,19 +4449,12 @@ exports[`Icon component should fetch Consolidations icon correctly 1`] = `
 exports[`Icon component should fetch Construction icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -4791,19 +4644,12 @@ exports[`Icon component should fetch Construction icon correctly 1`] = `
 exports[`Icon component should fetch Credit icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -5009,19 +4855,12 @@ exports[`Icon component should fetch Credit icon correctly 1`] = `
 exports[`Icon component should fetch Deposits icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -5211,19 +5050,12 @@ exports[`Icon component should fetch Deposits icon correctly 1`] = `
 exports[`Icon component should fetch Document icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -5412,19 +5244,12 @@ exports[`Icon component should fetch Document icon correctly 1`] = `
 exports[`Icon component should fetch DocumentArrowLink icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -5641,19 +5466,12 @@ exports[`Icon component should fetch DocumentArrowLink icon correctly 1`] = `
 exports[`Icon component should fetch DocumentLoan icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -5858,19 +5676,12 @@ exports[`Icon component should fetch DocumentLoan icon correctly 1`] = `
 exports[`Icon component should fetch Email icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -6046,19 +5857,12 @@ exports[`Icon component should fetch Email icon correctly 1`] = `
 exports[`Icon component should fetch EmptyBox icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -6278,19 +6082,12 @@ exports[`Icon component should fetch EmptyBox icon correctly 1`] = `
 exports[`Icon component should fetch Eyes icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -6484,19 +6281,12 @@ exports[`Icon component should fetch Eyes icon correctly 1`] = `
 exports[`Icon component should fetch FixedMortgageRates icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -6690,19 +6480,12 @@ exports[`Icon component should fetch FixedMortgageRates icon correctly 1`] = `
 exports[`Icon component should fetch Flow icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -6923,19 +6706,12 @@ exports[`Icon component should fetch Flow icon correctly 1`] = `
 exports[`Icon component should fetch Folder icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -7149,19 +6925,12 @@ exports[`Icon component should fetch Folder icon correctly 1`] = `
 exports[`Icon component should fetch Gauge icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -7344,19 +7113,12 @@ exports[`Icon component should fetch Gauge icon correctly 1`] = `
 exports[`Icon component should fetch Graph icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -7545,19 +7307,12 @@ exports[`Icon component should fetch Graph icon correctly 1`] = `
 exports[`Icon component should fetch GrowSavings icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -7794,19 +7549,12 @@ exports[`Icon component should fetch GrowSavings icon correctly 1`] = `
 exports[`Icon component should fetch GuaranteedLoans icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -8030,19 +7778,12 @@ exports[`Icon component should fetch GuaranteedLoans icon correctly 1`] = `
 exports[`Icon component should fetch Hamburger icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -8215,19 +7956,12 @@ exports[`Icon component should fetch Hamburger icon correctly 1`] = `
 exports[`Icon component should fetch HandshakeSettled icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -8523,19 +8257,12 @@ exports[`Icon component should fetch HandshakeSettled icon correctly 1`] = `
 exports[`Icon component should fetch HereToHelp icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -8733,19 +8460,12 @@ exports[`Icon component should fetch HereToHelp icon correctly 1`] = `
 exports[`Icon component should fetch HomeLoanRepayments icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -8943,19 +8663,12 @@ exports[`Icon component should fetch HomeLoanRepayments icon correctly 1`] = `
 exports[`Icon component should fetch HomeTime icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -9159,19 +8872,12 @@ exports[`Icon component should fetch HomeTime icon correctly 1`] = `
 exports[`Icon component should fetch House icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -9375,19 +9081,12 @@ exports[`Icon component should fetch House icon correctly 1`] = `
 exports[`Icon component should fetch HouseHome icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -9559,19 +9258,12 @@ exports[`Icon component should fetch HouseHome icon correctly 1`] = `
 exports[`Icon component should fetch Id icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -9791,19 +9483,12 @@ exports[`Icon component should fetch Id icon correctly 1`] = `
 exports[`Icon component should fetch IdVerify icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -10030,19 +9715,12 @@ exports[`Icon component should fetch IdVerify icon correctly 1`] = `
 exports[`Icon component should fetch Info icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -10258,19 +9936,12 @@ exports[`Icon component should fetch Info icon correctly 1`] = `
 exports[`Icon component should fetch LargeLock icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -10483,19 +10154,12 @@ exports[`Icon component should fetch LargeLock icon correctly 1`] = `
 exports[`Icon component should fetch LendiLogo icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -10676,19 +10340,12 @@ exports[`Icon component should fetch LendiLogo icon correctly 1`] = `
 exports[`Icon component should fetch LiveChat icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -10874,19 +10531,12 @@ exports[`Icon component should fetch LiveChat icon correctly 1`] = `
 exports[`Icon component should fetch Lmi icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -11072,19 +10722,12 @@ exports[`Icon component should fetch Lmi icon correctly 1`] = `
 exports[`Icon component should fetch Lock icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -11260,19 +10903,12 @@ exports[`Icon component should fetch Lock icon correctly 1`] = `
 exports[`Icon component should fetch LockCircle icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -11494,19 +11130,12 @@ exports[`Icon component should fetch LockCircle icon correctly 1`] = `
 exports[`Icon component should fetch LowDoc icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -11692,19 +11321,12 @@ exports[`Icon component should fetch LowDoc icon correctly 1`] = `
 exports[`Icon component should fetch LuiLogo icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -11885,19 +11507,12 @@ exports[`Icon component should fetch LuiLogo icon correctly 1`] = `
 exports[`Icon component should fetch Lvr icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -12111,19 +11726,12 @@ exports[`Icon component should fetch Lvr icon correctly 1`] = `
 exports[`Icon component should fetch Message icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -12299,19 +11907,12 @@ exports[`Icon component should fetch Message icon correctly 1`] = `
 exports[`Icon component should fetch Money icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -12539,19 +12140,12 @@ exports[`Icon component should fetch Money icon correctly 1`] = `
 exports[`Icon component should fetch MortgageProtectInsurance icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -12737,19 +12331,12 @@ exports[`Icon component should fetch MortgageProtectInsurance icon correctly 1`]
 exports[`Icon component should fetch NoDeposit icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -12943,19 +12530,12 @@ exports[`Icon component should fetch NoDeposit icon correctly 1`] = `
 exports[`Icon component should fetch Offset icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -13141,19 +12721,12 @@ exports[`Icon component should fetch Offset icon correctly 1`] = `
 exports[`Icon component should fetch PartyPopper icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -13390,19 +12963,12 @@ exports[`Icon component should fetch PartyPopper icon correctly 1`] = `
 exports[`Icon component should fetch Phone icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -13578,19 +13144,12 @@ exports[`Icon component should fetch Phone icon correctly 1`] = `
 exports[`Icon component should fetch PickATime icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -13780,19 +13339,12 @@ exports[`Icon component should fetch PickATime icon correctly 1`] = `
 exports[`Icon component should fetch PreApproval icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -13974,19 +13526,12 @@ exports[`Icon component should fetch PreApproval icon correctly 1`] = `
 exports[`Icon component should fetch Preferences icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -14195,19 +13740,12 @@ exports[`Icon component should fetch Preferences icon correctly 1`] = `
 exports[`Icon component should fetch Refinance icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -14392,19 +13930,12 @@ exports[`Icon component should fetch Refinance icon correctly 1`] = `
 exports[`Icon component should fetch RefinanceDocument icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -14590,19 +14121,12 @@ exports[`Icon component should fetch RefinanceDocument icon correctly 1`] = `
 exports[`Icon component should fetch RefinanceHome icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -14777,19 +14301,12 @@ exports[`Icon component should fetch RefinanceHome icon correctly 1`] = `
 exports[`Icon component should fetch Relax icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -14991,19 +14508,12 @@ exports[`Icon component should fetch Relax icon correctly 1`] = `
 exports[`Icon component should fetch Savings icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -15168,7 +14678,7 @@ exports[`Icon component should fetch Savings icon correctly 1`] = `
                   strokeWidth={5}
                 />
                 <path
-                  d="M170.954 36.906h-40.318a97.311 97.311 0 0 0-20.943 2.275C97.871 23.655 78.62 19.425 66.573 18.375a10.01 10.01 0 0 0-10.9 9.962v44.024a96.711 96.711 0 0 0-18.5 35.588H22.5a20 20 0 0 0-20 20v30.171a20 20 0 0 0 20 20h21.818a97.313 97.313 0 0 0 21.126 27.554V239.6a10 10 0 0 0 10 10h31.683a10 10 0 0 0 10-10v-9.683a97.707 97.707 0 0 0 13.509.942h40.318c.716 0 1.43-.012 2.143-.027v8.768a10 10 0 0 0 10 10h31.683a10 10 0 0 0 10-10v-25.046a96.879 96.879 0 0 0 43.149-80.672 96.976 96.976 0 0 0-96.975-96.976z"
+                  d="M170.954 36.906h-40.318a97.311 97.311 0 0 0-20.943 2.275C97.871 23.655 78.62 19.425 66.573 18.375a10.01 10.01 0 0 0-10.9 9.962v44.024a96.711 96.711 0 0 0-18.5 35.588H22.5a20 20 0 0 0-20 20v30.171a20 20 0 0 0 20 20h21.818a97.313 97.313 0 0 0 21.126 27.554V239.6a10 10 0 0 0 10 10h31.683a10 10 0 0 0 10-10v-9.683a97.707 97.707 0 0 0 13.509.942h40.318c.716 0 1.43-.012 2.143-.027v8.768a10 10 0 0 0 10 10h31.683a10 10 0 0 0 10-10v-25.046a96.879 96.879 0 0 0 43.149-80.672h0a96.976 96.976 0 0 0-96.975-96.976z"
                   fill="#edf7f5"
                   stroke="#5fe1cf"
                   strokeMiterlimit={10}
@@ -15215,19 +14725,12 @@ exports[`Icon component should fetch Savings icon correctly 1`] = `
 exports[`Icon component should fetch SavingsOptions icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -15392,7 +14895,7 @@ exports[`Icon component should fetch SavingsOptions icon correctly 1`] = `
                   strokeWidth={5}
                 />
                 <path
-                  d="M128.2 62.387h40.32a97.3 97.3 0 0 1 20.943 2.275c11.822-15.526 31.074-19.756 43.121-20.806a10.009 10.009 0 0 1 10.9 9.962v44.024a96.7 96.7 0 0 1 18.5 35.588h14.673a20 20 0 0 1 20 20v30.17a20 20 0 0 1-20 20h-21.818a97.335 97.335 0 0 1-21.127 27.555v33.923a10 10 0 0 1-10 10H192.03a10 10 0 0 1-10-10V255.4a97.889 97.889 0 0 1-13.51.941H128.2c-.717 0-1.431-.012-2.144-.027v8.768a10 10 0 0 1-10 10h-31.68a10 10 0 0 1-10-10v-25.047a96.878 96.878 0 0 1-43.148-80.672A96.975 96.975 0 0 1 128.2 62.387z"
+                  d="M128.2 62.387h40.32a97.3 97.3 0 0 1 20.943 2.275c11.822-15.526 31.074-19.756 43.121-20.806a10.009 10.009 0 0 1 10.9 9.962v44.024a96.7 96.7 0 0 1 18.5 35.588h14.673a20 20 0 0 1 20 20v30.17a20 20 0 0 1-20 20h-21.818a97.335 97.335 0 0 1-21.127 27.555v33.923a10 10 0 0 1-10 10H192.03a10 10 0 0 1-10-10V255.4a97.889 97.889 0 0 1-13.51.941H128.2c-.717 0-1.431-.012-2.144-.027v8.768a10 10 0 0 1-10 10h-31.68a10 10 0 0 1-10-10v-25.047a96.878 96.878 0 0 1-43.148-80.672h0A96.975 96.975 0 0 1 128.2 62.387z"
                   fill="#edf7f5"
                   stroke="#5fe1cf"
                   strokeMiterlimit={10}
@@ -15438,19 +14941,12 @@ exports[`Icon component should fetch SavingsOptions icon correctly 1`] = `
 exports[`Icon component should fetch SearchFilter icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -15675,19 +15171,12 @@ exports[`Icon component should fetch SearchFilter icon correctly 1`] = `
 exports[`Icon component should fetch Secure icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -15904,19 +15393,12 @@ exports[`Icon component should fetch Secure icon correctly 1`] = `
 exports[`Icon component should fetch Secured icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -16134,19 +15616,12 @@ exports[`Icon component should fetch Secured icon correctly 1`] = `
 exports[`Icon component should fetch Settings icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -16364,19 +15839,12 @@ exports[`Icon component should fetch Settings icon correctly 1`] = `
 exports[`Icon component should fetch Shapes icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -16585,19 +16053,12 @@ exports[`Icon component should fetch Shapes icon correctly 1`] = `
 exports[`Icon component should fetch Split icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -16779,19 +16240,12 @@ exports[`Icon component should fetch Split icon correctly 1`] = `
 exports[`Icon component should fetch Star icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -16971,19 +16425,12 @@ exports[`Icon component should fetch Star icon correctly 1`] = `
 exports[`Icon component should fetch SunBed icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -17173,19 +16620,12 @@ exports[`Icon component should fetch SunBed icon correctly 1`] = `
 exports[`Icon component should fetch Target icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -17394,19 +16834,12 @@ exports[`Icon component should fetch Target icon correctly 1`] = `
 exports[`Icon component should fetch Telephone icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -17595,19 +17028,12 @@ exports[`Icon component should fetch Telephone icon correctly 1`] = `
 exports[`Icon component should fetch Upload icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>
@@ -17784,19 +17210,12 @@ exports[`Icon component should fetch Upload icon correctly 1`] = `
 exports[`Icon component should fetch Weather icon correctly 1`] = `
 .c0 {
   color: #474747;
-  font-size: 14px;
 }
 
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
   height: inherit;
-}
-
-@media (min-width:36.0625em) {
-  .c0 {
-    font-size: 16px;
-  }
 }
 
 <Theme>

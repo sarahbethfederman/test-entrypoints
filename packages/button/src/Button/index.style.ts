@@ -7,21 +7,21 @@ export type ButtonSize = 'lg' | 'md' | 'sm';
 export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
 export const heightBySize: { [size in ButtonSize]: string } = {
-  lg: '4em',
-  md: '3em',
-  sm: '2.5em',
+  lg: `calc(4 * var(--lendi-ui-font-size))`,
+  md: `calc(3 * var(--lendi-ui-font-size))`,
+  sm: `calc(2.5 * var(--lendi-ui-font-size))`,
 };
 
 const fontBySize: { [size in ButtonSize]: string } = {
-  lg: '1.375em',
-  md: '1.125em',
-  sm: '1em',
+  lg: `calc(1.375 * var(--lendi-ui-font-size))`,
+  md: `calc(1.125 * var(--lendi-ui-font-size))`,
+  sm: `calc(1 * var(--lendi-ui-font-size))`,
 };
 
 const spacingBySize: { [size in ButtonSize]: string } = {
-  lg: '1em',
-  md: '1em',
-  sm: '0.5em',
+  lg: `calc(1 * var(--lendi-ui-font-size))`,
+  md: `calc(1 * var(--lendi-ui-font-size))`,
+  sm: `calc(0.5 * var(--lendi-ui-font-size))`,
 };
 
 const commonStyle = css`
