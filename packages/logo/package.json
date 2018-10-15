@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,8 @@
     "styled-components": "^2 || ^3"
   },
   "dependencies": {
-    "@lendi-ui/color": "^2.0.1"
+    "@lendi-ui/color": "^2.0.1",
+    "@lendi-ui/icon": "^3.0.1"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

@@ -8,7 +8,6 @@ export interface SvgProps {
 
 ${files
   .map((file) => `export { ${util.pascalCase(file)} } from './icons-compiled/${util.stripFileExtension(file)}';\n`)
-  .join('')}
-`;
+  .join('')}`;
 
 module.exports = exportFile;

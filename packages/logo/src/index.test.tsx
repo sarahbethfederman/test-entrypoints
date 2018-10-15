@@ -1,18 +1,51 @@
 import * as React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import Logo from '.';
+import Theme from '@lendi-ui/theme';
+import { LendiLogo } from '@lendi-ui/icon';
 
+/**
+ * Test case Logo
+ */
 describe('Logo', () => {
-  it('should render dark styles when no variant is chosen', () => {
-    const element = shallow(<Logo />);
-    expect(element).toMatchSnapshot();
+  let Wrapper;
+  /**
+   * Test Logo wihout color, width and height
+   */
+  describe('with no color, width and height', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme>
+          <Logo />
+        </Theme>
+      );
+    });
+    it('should render "shade.1000" styles when no color is given', () => {
+      expect(Wrapper).toMatchSnapshot();
+    });
   });
-  it('should render dark styles when variant=dark', () => {
-    const element = shallow(<Logo variant="dark" />);
-    expect(element).toMatchSnapshot();
-  });
-  it('should render light styles when variant=light', () => {
-    const element = shallow(<Logo variant="light" />);
-    expect(element).toMatchSnapshot();
+
+  /**
+   * Test Logo with color, width and height
+   */
+  describe('with provided color, width and height', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme>
+          <Logo variant="light" width="240px" height="120px" />
+        </Theme>
+      );
+    });
+    it('should render "shade.800" styles when color is given', () => {
+      expect(Wrapper.find(LendiLogo).props().color).toEqual('shade.0');
+    });
+
+    it('should render width="240px" when width is given', () => {
+      expect(Wrapper.find(Logo).props().width).toEqual('240px');
+    });
+
+    it('should render height="120px" when height is given', () => {
+      expect(Wrapper.find(Logo).props().height).toEqual('120px');
+    });
   });
 });

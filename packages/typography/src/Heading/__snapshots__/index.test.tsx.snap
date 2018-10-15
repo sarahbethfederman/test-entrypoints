@@ -131,6 +131,9 @@ exports[`Heading should render styles for size "lg" 1`] = `
           "950": "#181003",
         },
       },
+      "logo": Object {
+        "logoName": "LendiLogo",
+      },
       "typography": Object {
         "body": Object {
           "fontFamily": "'Open Sans', sans-serif",
@@ -274,6 +277,9 @@ exports[`Heading should render styles for size "md" 1`] = `
           "900": "#312107",
           "950": "#181003",
         },
+      },
+      "logo": Object {
+        "logoName": "LendiLogo",
       },
       "typography": Object {
         "body": Object {
@@ -419,6 +425,9 @@ exports[`Heading should render styles for size "sm" 1`] = `
           "950": "#181003",
         },
       },
+      "logo": Object {
+        "logoName": "LendiLogo",
+      },
       "typography": Object {
         "body": Object {
           "fontFamily": "'Open Sans', sans-serif",
@@ -563,6 +572,9 @@ exports[`Heading should render styles for size "xl" 1`] = `
           "950": "#181003",
         },
       },
+      "logo": Object {
+        "logoName": "LendiLogo",
+      },
       "typography": Object {
         "body": Object {
           "fontFamily": "'Open Sans', sans-serif",
@@ -706,6 +718,9 @@ exports[`Heading should render styles for size "xs" 1`] = `
           "900": "#312107",
           "950": "#181003",
         },
+      },
+      "logo": Object {
+        "logoName": "LendiLogo",
       },
       "typography": Object {
         "body": Object {

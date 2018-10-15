@@ -102,7 +102,7 @@
   dependencies:
     "@lendi-ui/breakpoint" "^1.0.0"
 
-"@lendi-ui/theme@^2.0.1":
+"@lendi-ui/theme@^3.1.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@lendi-ui/theme/-/theme-2.0.2.tgz#91c9be10b60d1bae8118c8d9176c688df971dc21"
 

@@ -8,6 +8,10 @@ const typography = {
   },
 };
 
+const logo = {
+  logoName: 'LendiLogo',
+};
+
 const colors = {
   primary: {
     '25': '#f2fbfa',
@@ -128,4 +132,5 @@ const colors = {
 export const theme = {
   typography,
   colors,
+  logo,
 };
