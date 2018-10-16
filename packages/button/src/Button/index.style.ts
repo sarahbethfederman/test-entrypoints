@@ -2,26 +2,27 @@ import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
+import { deriveSize } from '@lendi-ui/utils';
 
 export type ButtonSize = 'lg' | 'md' | 'sm';
 export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
 export const heightBySize: { [size in ButtonSize]: string } = {
-  lg: `calc(4 * var(--lendi-ui-font-size))`,
-  md: `calc(3 * var(--lendi-ui-font-size))`,
-  sm: `calc(2.5 * var(--lendi-ui-font-size))`,
+  lg: deriveSize(4),
+  md: deriveSize(3),
+  sm: deriveSize(2.5),
 };
 
 const fontBySize: { [size in ButtonSize]: string } = {
-  lg: `calc(1.375 * var(--lendi-ui-font-size))`,
-  md: `calc(1.125 * var(--lendi-ui-font-size))`,
-  sm: `calc(1 * var(--lendi-ui-font-size))`,
+  lg: deriveSize(1.375),
+  md: deriveSize(1.125),
+  sm: deriveSize(1),
 };
 
 const spacingBySize: { [size in ButtonSize]: string } = {
-  lg: `calc(1 * var(--lendi-ui-font-size))`,
-  md: `calc(1 * var(--lendi-ui-font-size))`,
-  sm: `calc(0.5 * var(--lendi-ui-font-size))`,
+  lg: deriveSize(1),
+  md: deriveSize(1),
+  sm: deriveSize(0.5),
 };
 
 const commonStyle = css`
