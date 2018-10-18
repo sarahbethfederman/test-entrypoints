@@ -64,7 +64,7 @@ export class Button extends React.Component<ButtonProps> {
   }
 
   render() {
-    const { href } = this.props;
+    const { href, isDisabled } = this.props;
     if (href) {
       return (
         <LinkWrapper {...this.commonProps} {...this.linkProps}>
@@ -73,7 +73,7 @@ export class Button extends React.Component<ButtonProps> {
       );
     } else {
       return (
-        <ButtonWrapper {...this.commonProps} {...this.buttonProps}>
+        <ButtonWrapper disabled={isDisabled} {...this.commonProps} {...this.buttonProps}>
           {this.renderContent()}
         </ButtonWrapper>
       );

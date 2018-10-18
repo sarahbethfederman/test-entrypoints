@@ -79,6 +79,14 @@ describe('Button', () => {
       expect(button).not.toHaveStyleRule('width', '100%');
       expect(button).toMatchSnapshot();
     });
+    it('should render disabled button', () => {
+      render({ variant: 'primary', isDisabled: true });
+      expect(button).toMatchSnapshot();
+    });
+    it('should render normal button', () => {
+      render({ variant: 'primary', isDisabled: false });
+      expect(button).toMatchSnapshot();
+    });
   });
 
   describe(`emphasis`, () => {
@@ -93,13 +101,21 @@ describe('Button', () => {
       expect(button).toMatchSnapshot();
     });
     it('should render full width', () => {
-      render({ variant: 'primary', isFullWidth: true });
+      render({ variant: 'emphasis', isFullWidth: true });
       expect(button).toHaveStyleRule('width', '100%');
       expect(button).toMatchSnapshot();
     });
     it('should not render full width', () => {
-      render({ variant: 'primary', isFullWidth: false });
+      render({ variant: 'emphasis', isFullWidth: false });
       expect(button).not.toHaveStyleRule('width', '100%');
+      expect(button).toMatchSnapshot();
+    });
+    it('should render disabled button', () => {
+      render({ variant: 'emphasis', isDisabled: true });
+      expect(button).toMatchSnapshot();
+    });
+    it('should render normal button', () => {
+      render({ variant: 'emphasis', isDisabled: false });
       expect(button).toMatchSnapshot();
     });
   });
@@ -125,6 +141,14 @@ describe('Button', () => {
     it('should not render full width', () => {
       render({ variant: 'primary', isFullWidth: false });
       expect(button).not.toHaveStyleRule('width', '100%');
+      expect(button).toMatchSnapshot();
+    });
+    it('should render disabled button', () => {
+      render({ variant: 'primary', isDisabled: true });
+      expect(button).toMatchSnapshot();
+    });
+    it('should render normal button', () => {
+      render({ variant: 'primary', isDisabled: false });
       expect(button).toMatchSnapshot();
     });
   });
