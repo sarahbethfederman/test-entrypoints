@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Logo with no color, width and height should render "shade.1000" styles when no color is given 1`] = `
+exports[`Logo with no color, width, height and className should render "shade.1000" styles when no color is given 1`] = `
 .c0 {
   color: #474747;
 }

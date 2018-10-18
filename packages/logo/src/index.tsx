@@ -10,21 +10,22 @@ export interface LogoProps {
   width?: string;
   height?: string;
   theme?: any;
+  className?: string;
 }
 
 class Logo extends React.Component<LogoProps> {
   render() {
-    const { variant = 'dark', width = '160px', height = '100px' } = this.props;
+    const { variant = 'dark', width = '160px', height = '100px', className } = this.props;
     const logoName = select('logo.logoName', 'LUIlogo')(this.props);
     const color = variant === 'dark' ? 'secondary.900' : 'shade.0';
 
     switch (logoName) {
       case 'LendiLogo':
-        return <LendiLogo color={color} width={width} height={height} />;
+        return <LendiLogo color={color} width={width} height={height} className={className} />;
       case 'LUIlogo':
-        return <LuiLogo color={color} width={width} height={height} />;
+        return <LuiLogo color={color} width={width} height={height} className={className} />;
       default:
-        return <LendiLogo color={color} width={width} height={height} />;
+        return <LendiLogo color={color} width={width} height={height} className={className} />;
     }
   }
 }

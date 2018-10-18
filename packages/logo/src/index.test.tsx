@@ -12,7 +12,7 @@ describe('Logo', () => {
   /**
    * Test Logo wihout color, width and height
    */
-  describe('with no color, width and height', () => {
+  describe('with no color, width, height and className', () => {
     beforeEach(() => {
       Wrapper = mount(
         <Theme>
@@ -28,11 +28,11 @@ describe('Logo', () => {
   /**
    * Test Logo with color, width and height
    */
-  describe('with provided color, width and height', () => {
+  describe('with provided color, width, height and className', () => {
     beforeEach(() => {
       Wrapper = mount(
         <Theme>
-          <Logo variant="light" width="240px" height="120px" />
+          <Logo variant="light" width="240px" height="120px" className="some-class" />
         </Theme>
       );
     });
@@ -46,6 +46,14 @@ describe('Logo', () => {
 
     it('should render height="120px" when height is given', () => {
       expect(Wrapper.find(Logo).props().height).toEqual('120px');
+    });
+
+    it('should render className="some-class" when className is given', () => {
+      expect(Wrapper.find(Logo).props().className).toEqual('some-class');
+    });
+
+    it('should render the icon with class "some-class" when className is given', () => {
+      expect(Wrapper.find(LendiLogo).hasClass('some-class')).toEqual(true);
     });
   });
 });
