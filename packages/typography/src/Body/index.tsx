@@ -31,12 +31,12 @@ const bodySizeMixin = (size: BodySize) =>
       `;
       case 'md':
         return `
-        font-size: ${deriveSize(1)}
+        font-size: ${deriveSize(1)};
         line-height: calc(24 / 16);
       `;
       case 'lg':
         return `
-        font-size: ${deriveSize(1.125)}
+        font-size: ${deriveSize(1.125)};
         line-height: calc(24 / 18);
       `;
       default:
