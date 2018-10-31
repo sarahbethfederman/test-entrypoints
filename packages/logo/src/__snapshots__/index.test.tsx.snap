@@ -12,6 +12,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
 
 .c1 > svg {
   fill: #021215;
+  stroke: #021215;
   width: inherit;
   height: inherit;
 }

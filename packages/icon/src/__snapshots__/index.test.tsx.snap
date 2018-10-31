@@ -7,6 +7,7 @@ exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -461,6 +462,7 @@ exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -691,6 +693,7 @@ exports[`Icon component Briefcase should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -903,6 +906,7 @@ exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1231,6 +1235,7 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1444,6 +1449,7 @@ exports[`Icon component CashOut should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1676,6 +1682,7 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1871,6 +1878,7 @@ exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2076,6 +2084,7 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2265,6 +2274,189 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component ChevronCircle should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <ChevronCircle
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 4c4.41 0 8 3.59 8 8s-3.59 8-8 8-8-3.59-8-8 3.59-8 8-8m0-2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 13l-4-4h8z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </ChevronCircle>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component ChevronDown should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -2272,6 +2464,7 @@ exports[`Icon component ChevronDown should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2450,6 +2643,7 @@ exports[`Icon component ChevronLeft should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2628,6 +2822,7 @@ exports[`Icon component ChevronRight should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2806,6 +3001,7 @@ exports[`Icon component ChevronUp should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2984,6 +3180,7 @@ exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3233,6 +3430,7 @@ exports[`Icon component Clock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3429,6 +3627,7 @@ exports[`Icon component Close should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3607,6 +3806,7 @@ exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3798,6 +3998,7 @@ exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3993,6 +4194,7 @@ exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4250,6 +4452,7 @@ exports[`Icon component Consolidations should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4453,6 +4656,7 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4648,6 +4852,7 @@ exports[`Icon component Credit should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4859,6 +5064,7 @@ exports[`Icon component Deposits should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5054,6 +5260,7 @@ exports[`Icon component Document should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5248,6 +5455,7 @@ exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5470,6 +5678,7 @@ exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5680,6 +5889,7 @@ exports[`Icon component Email should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5861,6 +6071,7 @@ exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6079,6 +6290,185 @@ exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Error should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Error
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Error>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component Eyes should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -6086,6 +6476,7 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6278,6 +6669,228 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <FancyInfo
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                height="1em"
+                viewBox="0 0 304.35 319.826"
+                width="1em"
+              >
+                <circle
+                  cx={149.957}
+                  cy={169.87}
+                  fill="none"
+                  r={147.457}
+                  stroke="#5fe1cf"
+                  strokeMiterlimit={10}
+                  strokeWidth={5}
+                />
+                <circle
+                  cx={255.117}
+                  cy={49.233}
+                  fill="#edf7f5"
+                  r={46.733}
+                  stroke="#5fe1cf"
+                  strokeMiterlimit={10}
+                  strokeWidth={5}
+                />
+                <path
+                  d="M289.873 18a46.733 46.733 0 0 1-75.916 53.378A46.734 46.734 0 1 0 289.873 18z"
+                  fill="#5fe1cf"
+                  opacity={0.2}
+                />
+                <path
+                  d="M256.484 19.396v57.579M226.505 50.045l57.973-1"
+                  fill="none"
+                  stroke="#5fe1cf"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={5}
+                />
+                <rect
+                  fill="#5fe1cf"
+                  height={118.403}
+                  rx={10}
+                  ry={10}
+                  width={20}
+                  x={143.032}
+                  y={132.314}
+                />
+                <ellipse
+                  cx={153.032}
+                  cy={102.74}
+                  fill="#5fe1cf"
+                  rx={10}
+                  ry={9.836}
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </FancyInfo>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -6285,6 +6898,7 @@ exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6484,6 +7098,7 @@ exports[`Icon component Flow should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6710,6 +7325,7 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6929,6 +7545,7 @@ exports[`Icon component Gauge should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7117,6 +7734,7 @@ exports[`Icon component Graph should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7311,6 +7929,7 @@ exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7553,6 +8172,7 @@ exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7782,6 +8402,7 @@ exports[`Icon component Hamburger should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7960,6 +8581,7 @@ exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8261,6 +8883,7 @@ exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8464,6 +9087,7 @@ exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8667,6 +9291,7 @@ exports[`Icon component HomeTime should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8876,6 +9501,7 @@ exports[`Icon component House should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9085,6 +9711,7 @@ exports[`Icon component HouseHome should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9262,6 +9889,7 @@ exports[`Icon component Id should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9487,6 +10115,7 @@ exports[`Icon component IdVerify should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9719,6 +10348,7 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9873,56 +10503,30 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
             >
               <svg
                 height="1em"
-                viewBox="0 0 304.35 319.826"
+                viewBox="0 0 24 24"
                 width="1em"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
               >
-                <circle
-                  cx={149.957}
-                  cy={169.87}
+                <defs>
+                  <path
+                    d="M7.2 10.4h1.6V12H7.2v-1.6zm0-6.4h1.6v4.8H7.2V4zm.792-4C3.576 0 0 3.584 0 8s3.576 8 7.992 8C12.416 16 16 12.416 16 8s-3.584-8-8.008-8zM8 14.4A6.398 6.398 0 0 1 1.6 8c0-3.536 2.864-6.4 6.4-6.4 3.536 0 6.4 2.864 6.4 6.4 0 3.536-2.864 6.4-6.4 6.4z"
+                    id="a"
+                  />
+                </defs>
+                <g
                   fill="none"
-                  r={147.457}
-                  stroke="#5fe1cf"
-                  strokeMiterlimit={10}
-                  strokeWidth={5}
-                />
-                <circle
-                  cx={255.117}
-                  cy={49.233}
-                  fill="#edf7f5"
-                  r={46.733}
-                  stroke="#5fe1cf"
-                  strokeMiterlimit={10}
-                  strokeWidth={5}
-                />
-                <path
-                  d="M289.873 18a46.733 46.733 0 0 1-75.916 53.378A46.734 46.734 0 1 0 289.873 18z"
-                  fill="#5fe1cf"
-                  opacity={0.2}
-                />
-                <path
-                  d="M256.484 19.396v57.579M226.505 50.045l57.973-1"
-                  fill="none"
-                  stroke="#5fe1cf"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={5}
-                />
-                <rect
-                  fill="#5fe1cf"
-                  height={118.403}
-                  rx={10}
-                  ry={10}
-                  width={20}
-                  x={143.032}
-                  y={132.314}
-                />
-                <ellipse
-                  cx={153.032}
-                  cy={102.74}
-                  fill="#5fe1cf"
-                  rx={10}
-                  ry={9.836}
-                />
+                  fillRule="evenodd"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="#FAFAFA"
+                  />
+                  <use
+                    fill="currentColor"
+                    transform="matrix(1 0 0 -1 0 16)"
+                    xlinkHref="#a"
+                  />
+                </g>
               </svg>
             </span>
           </styled.span>
@@ -9940,6 +10544,7 @@ exports[`Icon component LargeLock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10158,6 +10763,7 @@ exports[`Icon component LendiLogo should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10344,6 +10950,7 @@ exports[`Icon component LiveChat should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10535,6 +11142,7 @@ exports[`Icon component Lmi should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10726,6 +11334,7 @@ exports[`Icon component Lock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10907,6 +11516,7 @@ exports[`Icon component LockCircle should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11134,6 +11744,7 @@ exports[`Icon component LowDoc should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11325,6 +11936,7 @@ exports[`Icon component LuiLogo should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11511,6 +12123,7 @@ exports[`Icon component Lvr should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11730,6 +12343,7 @@ exports[`Icon component Message should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11911,6 +12525,7 @@ exports[`Icon component Money should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12144,6 +12759,7 @@ exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`]
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12335,6 +12951,7 @@ exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12534,6 +13151,7 @@ exports[`Icon component Offset should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12725,6 +13343,7 @@ exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12967,6 +13586,7 @@ exports[`Icon component Phone should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13148,6 +13768,7 @@ exports[`Icon component PickATime should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13343,6 +13964,7 @@ exports[`Icon component PreApproval should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13530,6 +14152,7 @@ exports[`Icon component Preferences should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13737,6 +14360,185 @@ exports[`Icon component Preferences should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Question should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Question
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Question>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component Refinance should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -13744,6 +14546,7 @@ exports[`Icon component Refinance should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13934,6 +14737,7 @@ exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14125,6 +14929,7 @@ exports[`Icon component RefinanceHome should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14305,6 +15110,7 @@ exports[`Icon component Relax should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14512,6 +15318,7 @@ exports[`Icon component Savings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14729,6 +15536,7 @@ exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14945,6 +15753,7 @@ exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15175,6 +15984,7 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15397,6 +16207,7 @@ exports[`Icon component Secured should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15620,6 +16431,7 @@ exports[`Icon component Settings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15843,6 +16655,7 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16050,6 +16863,187 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Spinner should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Spinner
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                height="1em"
+                stroke="currentColor"
+                viewBox="0 0 20 20"
+                width="1em"
+              >
+                <path
+                  d="M1.58 10a8 8 0 1 0 8-8"
+                  fill="none"
+                  strokeWidth={3}
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Spinner>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component Split should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -16057,6 +17051,7 @@ exports[`Icon component Split should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16244,6 +17239,7 @@ exports[`Icon component Star should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16422,6 +17418,185 @@ exports[`Icon component Star should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Success should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Success
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Success>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component SunBed should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -16429,6 +17604,7 @@ exports[`Icon component SunBed should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16624,6 +17800,7 @@ exports[`Icon component Target should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16838,6 +18015,7 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17032,6 +18210,7 @@ exports[`Icon component Upload should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17207,6 +18386,185 @@ exports[`Icon component Upload should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Warn should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Warn
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Warn>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component Weather should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -17214,6 +18572,7 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
+  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
