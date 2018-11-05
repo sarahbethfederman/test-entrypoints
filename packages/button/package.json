@@ -28,6 +28,6 @@
     "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
   },
   "devDependencies": {
-    "@lendi-ui/icon": "^4.1.0"
+    "@lendi-ui/icon": "^4.2.0"
   }
 }
