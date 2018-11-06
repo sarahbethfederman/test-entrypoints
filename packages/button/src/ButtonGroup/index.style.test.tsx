@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import { Wrapper } from './index.style';
 import { ButtonSize } from '../Button/index.style';
 
-const sizes: ButtonSize[] = ['lg', 'md', 'sm', 'xs'];
+const sizes: ButtonSize[] = ['lg', 'md', 'sm'];
 
 describe('Wrapper', () => {
   sizes.forEach((size) => {

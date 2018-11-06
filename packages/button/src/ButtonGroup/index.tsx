@@ -1,11 +1,12 @@
 import * as React from 'react';
+import * as createReactContext from 'create-react-context';
 import { Wrapper } from './index.style';
-import { Button, ButtonVariant, ButtonSize } from '../Button';
+import { ButtonVariant, ButtonSize, Button } from '../Button';
 
-// isFullWidth isn't supported in a button group
 export interface ButtonGroupButtonProps {
   variant: ButtonVariant;
   isDisabled?: boolean;
+  isFullWidth?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
   href?: string;
@@ -14,30 +15,38 @@ export interface ButtonGroupButtonProps {
   children?: React.ReactNode;
 }
 
-const ButtonGroupButton: React.SFC<ButtonGroupButtonProps> = () => null;
+const ButtonGroupButton: React.SFC<ButtonGroupButtonProps> = (props) => (
+  <ButtonContext.Consumer>{(state: ButtonGroupContext) => <Button {...props} {...state} />}</ButtonContext.Consumer>
+);
 
-export interface ButtonGroupProps {
+export interface ButtonGroupContext {
   size?: ButtonSize;
   isInverse?: boolean;
   className?: string;
+  isFullWidth?: boolean;
+}
+
+export interface ButtonGroupProps extends ButtonGroupContext {
   children?: React.ReactElement<ButtonGroupButtonProps> | React.ReactElement<ButtonGroupButtonProps>[];
 }
+
+// Supressing "Cannot invoke an expression whose type lacks a call signature." error
+// More details here: https://github.com/jamiebuilds/create-react-context/pull/20
+// @ts-ignore
+const ButtonContext = createReactContext<ButtonGroupContext>({});
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {
   static Button = ButtonGroupButton;
 
   render() {
-    const { size = 'md', children, ...btnProps } = this.props;
+    const { size = 'md', className, isFullWidth, children, ...btnProps } = this.props;
+    const buttonGroupWrapperProps = { ...btnProps, size, isFullWidth };
     return (
-      <Wrapper size={size}>
-        {React.Children.map(children, (child) => {
-          if (!React.isValidElement<ButtonGroupButtonProps>(child)) {
-            // throw new Error('ButtonGroup: Child must be a ButtonGroup.Button');
-            return null;
-          }
-          return <Button {...child.props} {...btnProps} size={size} />;
-        })}
-      </Wrapper>
+      <ButtonContext.Provider value={buttonGroupWrapperProps}>
+        <Wrapper className={className} size={size} isFullWidth={isFullWidth}>
+          {children}
+        </Wrapper>
+      </ButtonContext.Provider>
     );
   }
 }
