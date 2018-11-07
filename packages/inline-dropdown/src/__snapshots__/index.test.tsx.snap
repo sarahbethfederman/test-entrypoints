@@ -1,0 +1,377 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown render BoxArrow component 1`] = `
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  position: absolute;
+  right: 6px;
+  top: calc(0.75 * var(--lendi-ui-size));
+  pointer-events: none;
+}
+
+<Styled(ChevronDown)
+  color="primary.500"
+  size="md"
+>
+  <ChevronDown
+    className="c0"
+    color="primary.500"
+    size="md"
+  >
+    <styled.span
+      className="c0"
+      color="primary.500"
+      size="md"
+    >
+      <span
+        className="c0 c1"
+        color="primary.500"
+        size="md"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+          />
+        </svg>
+      </span>
+    </styled.span>
+  </ChevronDown>
+</Styled(ChevronDown)>
+`;
+
+exports[`Dropdown render SelectedBox component and has size property "md" 1`] = `
+.c3 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  background-color: #f1f1f1;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  border: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  right: 6px;
+  top: calc(0.75 * var(--lendi-ui-size));
+  pointer-events: none;
+}
+
+<styled.div>
+  <div
+    className="c0"
+  >
+    <styled.select
+      selectSize="md"
+    >
+      <select
+        className="c1"
+      >
+        <option
+          key="1"
+        >
+          5 years
+        </option>
+        <option
+          key="2"
+        >
+          10 years
+        </option>
+        <option
+          key="3"
+        >
+          15 years
+        </option>
+        <option
+          key="4"
+        >
+          20 years
+        </option>
+        <option
+          key="5"
+        >
+          25 years
+        </option>
+      </select>
+    </styled.select>
+    <Styled(ChevronDown)
+      color="primary.500"
+      size="md"
+    >
+      <ChevronDown
+        className="c2"
+        color="primary.500"
+        size="md"
+      >
+        <styled.span
+          className="c2"
+          color="primary.500"
+          size="md"
+        >
+          <span
+            className="c2 c3"
+            color="primary.500"
+            size="md"
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </ChevronDown>
+    </Styled(ChevronDown)>
+  </div>
+</styled.div>
+`;
+
+exports[`Dropdown render SelectedBox component and has size property "md" 2`] = `
+.c0 {
+  border: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+<styled.select
+  selectSize="md"
+>
+  <select
+    className="c0"
+  >
+    <option
+      key="1"
+    >
+      5 years
+    </option>
+    <option
+      key="2"
+    >
+      10 years
+    </option>
+    <option
+      key="3"
+    >
+      15 years
+    </option>
+    <option
+      key="4"
+    >
+      20 years
+    </option>
+    <option
+      key="5"
+    >
+      25 years
+    </option>
+  </select>
+</styled.select>
+`;
+
+exports[`Dropdown render SelectedItem component 1`] = `
+Array [
+  <option
+    key="1"
+  >
+    5 years
+  </option>,
+  <option
+    key="2"
+  >
+    10 years
+  </option>,
+  <option
+    key="3"
+  >
+    15 years
+  </option>,
+  <option
+    key="4"
+  >
+    20 years
+  </option>,
+  <option
+    key="5"
+  >
+    25 years
+  </option>,
+]
+`;
+
+exports[`Dropdown render whole component 1`] = `
+.c3 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  background-color: #f1f1f1;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  border: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.c2 {
+  position: absolute;
+  right: 6px;
+  top: calc(0.75 * var(--lendi-ui-size));
+  pointer-events: none;
+}
+
+<Dropdown
+  items={
+    Array [
+      Object {
+        "label": "5 years",
+        "value": "1",
+      },
+      Object {
+        "label": "10 years",
+        "value": "2",
+      },
+      Object {
+        "label": "15 years",
+        "value": "3",
+      },
+      Object {
+        "label": "20 years",
+        "value": "4",
+      },
+      Object {
+        "label": "25 years",
+        "value": "5",
+      },
+    ]
+  }
+  size="md"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.select
+        selectSize="md"
+      >
+        <select
+          className="c1"
+        >
+          <option
+            key="1"
+          >
+            5 years
+          </option>
+          <option
+            key="2"
+          >
+            10 years
+          </option>
+          <option
+            key="3"
+          >
+            15 years
+          </option>
+          <option
+            key="4"
+          >
+            20 years
+          </option>
+          <option
+            key="5"
+          >
+            25 years
+          </option>
+        </select>
+      </styled.select>
+      <Styled(ChevronDown)
+        color="primary.500"
+        size="md"
+      >
+        <ChevronDown
+          className="c2"
+          color="primary.500"
+          size="md"
+        >
+          <styled.span
+            className="c2"
+            color="primary.500"
+            size="md"
+          >
+            <span
+              className="c2 c3"
+              color="primary.500"
+              size="md"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </ChevronDown>
+      </Styled(ChevronDown)>
+    </div>
+  </styled.div>
+</Dropdown>
+`;

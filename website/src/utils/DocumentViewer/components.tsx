@@ -13,6 +13,7 @@ import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';
 import * as icons from '@lendi-ui/icon';
 import { Button, ButtonGroup } from '@lendi-ui/button';
+import Dropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 import Theme from '@lendi-ui/theme';
@@ -45,6 +46,7 @@ const scope = {
   ButtonGroup,
   Container,
   Theme,
+  Dropdown,
 };
 
 interface GenericProps {
