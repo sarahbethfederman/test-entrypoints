@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
 import { body, BodySize } from '../Body';
+import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 
 export type LinkSize = BodySize;
 
@@ -16,7 +17,7 @@ export interface LinkOptions {
 export function link(options: LinkOptions = {}) {
   const { color = 'primary.500', size } = options;
 
-  return css`
+  return css<LinkOptions & MarginOptions>`
     ${body({ size, color })} font-weight: bold;
     cursor: pointer;
     text-decoration: underline;
@@ -27,6 +28,7 @@ export function link(options: LinkOptions = {}) {
       text-decoration: underline;
       ${fg('primary.700')};
     }
+    ${my('nil')} ${margin};
   `;
 }
 
