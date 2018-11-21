@@ -17,6 +17,7 @@ import Dropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 import Theme from '@lendi-ui/theme';
+import Spinner from '@lendi-ui/spinner';
 
 const scope = {
   styled,
@@ -47,6 +48,7 @@ const scope = {
   Container,
   Theme,
   Dropdown,
+  Spinner,
 };
 
 interface GenericProps {
