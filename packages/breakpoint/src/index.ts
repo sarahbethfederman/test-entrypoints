@@ -43,8 +43,11 @@ export function map<V extends string | number | boolean>(
   if (typeof values !== 'object') {
     return mapValueToStyle(values);
   }
-
-  return keys(values).reduce<SimpleInterpolation[]>((accum, breakpoint) => {
+  const breakpoints = keys(values);
+  // sort the breakpoints(responsive-screens) in the order of Breakpoint values so that generated
+  // css will always have the @media-queries in the order of mobile, tablet and desktop.
+  breakpoints.sort((a, b) => parseFloat(Breakpoint[a]) - parseFloat(Breakpoint[b]));
+  return breakpoints.reduce<SimpleInterpolation[]>((accum, breakpoint) => {
     const template = gte(breakpoint);
     const value = values[breakpoint];
     const style = mapValueToStyle(value);

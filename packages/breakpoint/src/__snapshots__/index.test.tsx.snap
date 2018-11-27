@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`map() reponsiveness with different order of screen size 1`] = `
+.c0 {
+  width: undefined;
+}
+
+@media (min-width:0) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<styled.div
+  size={
+    Object {
+      "desktop": "100%",
+      "mobile": "25%",
+      "tablet": "50%",
+    }
+  }
+>
+  <div
+    className="c0"
+    size={
+      Object {
+        "desktop": "100%",
+        "mobile": "25%",
+        "tablet": "50%",
+      }
+    }
+  />
+</styled.div>
+`;
+
+exports[`map() reponsiveness with different order of screen size 2`] = `
+.c0 {
+  width: undefined;
+}
+
+@media (min-width:0) {
+  .c0 {
+    width: 25%;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 50%;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c0 {
+    width: 100%;
+  }
+}
+
+<styled.div
+  size={
+    Object {
+      "desktop": "100%",
+      "mobile": "25%",
+      "tablet": "50%",
+    }
+  }
+>
+  <div
+    className="c0"
+    size={
+      Object {
+        "desktop": "100%",
+        "mobile": "25%",
+        "tablet": "50%",
+      }
+    }
+  />
+</styled.div>
+`;

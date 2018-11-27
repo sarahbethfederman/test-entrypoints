@@ -103,6 +103,14 @@ describe('map()', () => {
       )};
   `;
 
+  interface ResponsiveMapComponentProps {
+    size: BreakpointValue<string> | BreakpointValueMap<string>;
+  }
+
+  const ResponsiveMapComponent = styled.div`
+    ${(props: ResponsiveMapComponentProps) => map(props.size, (val) => `width:${val}`)};
+  `;
+
   it('should not wrap styles in a media rule', () => {
     const element = mount(<SimpleMapComponent bg="red" />);
     expect(element).toHaveStyleRule('background-color', 'red');
@@ -139,5 +147,21 @@ describe('map()', () => {
     expect(element).toHaveStyleRule('width', '50%', {
       media: `(min-width:${Breakpoint.desktop})`,
     });
+  });
+
+  it('reponsiveness with different order of screen size', () => {
+    let element = mount(<ResponsiveMapComponent size={{ tablet: '50%', desktop: '100%', mobile: '25%' }} />);
+    expect(element).toHaveStyleRule('width', '25%', {
+      media: `(min-width:${Breakpoint.mobile})`,
+    });
+    expect(element).toHaveStyleRule('width', '50%', {
+      media: `(min-width:${Breakpoint.tablet})`,
+    });
+    expect(element).toHaveStyleRule('width', '100%', {
+      media: `(min-width:${Breakpoint.desktop})`,
+    });
+    expect(element).toMatchSnapshot();
+    element = mount(<ResponsiveMapComponent size={{ tablet: '50%', mobile: '25%', desktop: '100%' }} />); // change the order and check the snapshot
+    expect(element).toMatchSnapshot();
   });
 });
