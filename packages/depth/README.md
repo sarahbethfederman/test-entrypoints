@@ -1,6 +1,6 @@
 # @lendi-ui/depth
 
-A depth component.
+Depth that style box-shadow for HTML element. Depth receive integer paremeters from [ 1, 2, 3, 4].
 
 ## Installation
 
@@ -10,8 +10,9 @@ yarn add @lendi-ui/depth
 
 ## Usage
 
-```
-import {depth} from '@lendi-ui/depth';
-
-<ComponentName/>
+```jsx
+import { depth } from '@lendi-ui/depth';
+const Panel = styled.div`
+  ${depth(4)};
+`;
 ```
