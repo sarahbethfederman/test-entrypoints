@@ -1,0 +1,30 @@
+{
+  "name": "@lendi-ui/text-input",
+  "version": "1.0.0",
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Lendi Devs",
+  "peerDependencies": {
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "@lendi-ui/theme": "^4.0.0",
+    "styled-components": "^2 || ^3"
+  },
+  "dependencies": {
+    "@lendi-ui/typography": "^2.5.1",
+    "@lendi-ui/utils": "^1.1.0"
+  },
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+  }
+}
