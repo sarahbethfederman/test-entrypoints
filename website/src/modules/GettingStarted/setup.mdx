@@ -1,29 +1,37 @@
-
-
-
 # Setup
 
 > Starting a new application? Our boilerplate, [Liberty](https://bitbucket.org/lendi-dev/liberty/src/master/) has `lendi-ui` set up out-of-the-box.
 
 ## Installation
 
-Install `@lendi-ui/reset`, `@lendi-ui/theme` and whichever other packages you wish to use e.g. `@lendi-ui/logo`.
+Install `@lendi-ui/theme` and whichever other packages you wish to use e.g. `@lendi-ui/logo`.
 
 ```
-yarn add @lendi-ui/reset @lendi-ui/theme @lendi-ui/logo
+yarn add @lendi-ui/theme @lendi-ui/logo
 ```
 
 ## Usage
 
-1. Import `@lendi-ui/reset` and `@lendi-ui/theme` into your root file:
+1. Import `@lendi-ui/theme` into your root file:
 
   ```
-  import '@lendi-ui/reset';
   import Theme from '@lendi-ui/theme';
   ```
 
 
-2. Wrap your root component with the theme:
+2. If you're working within `lendi-app` each time you use a LUI component wrap it in a theme. This is 
+  because older code might rely on old root styles, so we don't want to override those. 
+  ```
+    <div>
+      <p>Some kind of dialog goes here</p>
+      <Theme>
+        <Button variant="primary">Click me</Button>
+      </Theme>
+    </div>
+  ```
+
+
+  If you're working within a newer repo, wrap your root component with the theme:
 
   ```
   ReactDOM.render(

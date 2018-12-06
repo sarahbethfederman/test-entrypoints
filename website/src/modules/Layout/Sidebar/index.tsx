@@ -9,20 +9,14 @@ import { fg } from '@lendi-ui/color';
 import metadata, { Doc } from '../../../utils/info';
 import { Wrapper, LogoWrapper, NavGroup, SubNav } from './index.style';
 
-const foundations = ['color', 'typography', 'breakpoint', 'spacing', 'grid', 'reset', 'theme'];
+const foundations = ['color', 'typography', 'breakpoint', 'spacing', 'grid', 'theme'];
+const deprecatedPackages = ['reset'];
 
 const ignoreIndexDoc = (doc: Doc) => doc.name !== 'index';
 
 const SidebarLink = styled(Link)`
   ${fg('primary.500')};
   text-decoration: none;
-`;
-
-const KickerLink = styled(Link)`
-  ${fg('shade.500')};
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 12px;
 `;
 
 export class Sidebar extends React.Component {
@@ -33,7 +27,10 @@ export class Sidebar extends React.Component {
 
   get components() {
     const { workspaces } = metadata;
-    return workspaces.filter((workspace) => !foundations.includes(workspace.name));
+
+    return workspaces.filter(
+      (workspace) => !foundations.includes(workspace.name) && !deprecatedPackages.includes(workspace.name)
+    );
   }
 
   render() {
@@ -58,7 +55,7 @@ export class Sidebar extends React.Component {
           <Heading size="sm">Foundations</Heading>
           {this.foundations.map((workspace) => (
             <div key={workspace.name}>
-              <KickerLink to={`/package/${workspace.name}`}>{workspace.name}</KickerLink>
+              <SidebarLink to={`/package/${workspace.name}`}>{workspace.name}</SidebarLink>
               {Boolean(workspace.docs.filter(ignoreIndexDoc).length) && (
                 <SubNav>
                   {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
