@@ -19,6 +19,7 @@ import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 import Theme from '@lendi-ui/theme';
 import Spinner from '@lendi-ui/spinner';
+import Transition from '@lendi-ui/transition';
 
 const scope = {
   styled,
@@ -50,6 +51,7 @@ const scope = {
   Theme,
   Dropdown,
   Spinner,
+  Transition,
   Input,
 };
 

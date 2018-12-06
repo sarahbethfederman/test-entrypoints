@@ -1,0 +1,20 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import { Fade } from '@lendi-ui/transition';
+```
+
+```jsx
+  <Fade active={true} timeout={0.34}>
+    {children}
+  </Fade>
+```
+
+## Fade Properties
+
+<PropTable>
+  <PropTable.Entry name="active" type={ 'boolean' } defaultValue="false" description=""/>
+  <PropTable.Entry name="timeout" type={ 'number' } defaultValue={0.25} description="Time to animate fading transition."/>
+</PropTable>
