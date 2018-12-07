@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/icon",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "source": "src/index.tsx",
@@ -15,7 +15,7 @@
     "@lendi-ui/theme": "^4.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
-    "styled-components": "^2 || ^3"
+    "styled-components": "^3"
   },
   "devDependencies": {
     "@svgr/core": "^2.2.0"

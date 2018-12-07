@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -13,7 +13,7 @@
     "@lendi-ui/theme": "^4.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
-    "styled-components": "^2 || ^3"
+    "styled-components": "^3"
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^1.0.0",

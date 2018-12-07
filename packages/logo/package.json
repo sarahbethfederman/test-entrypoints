@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -13,7 +13,7 @@
   "peerDependencies": {
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
-    "styled-components": "^2 || ^3"
+    "styled-components": "^3"
   },
   "dependencies": {
     "@lendi-ui/theme": "^4.0.0",
