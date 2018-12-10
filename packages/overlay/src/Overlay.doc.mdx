@@ -1,0 +1,23 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import Overlay from '@lendi-ui/overlay';
+```
+
+```jsx
+  <Overlay show={false} onHide={() => { console.log('onHide action')}}>
+    <div>This is a demo</div>
+  </Overlay>
+```
+
+## Overlay Properties
+
+<PropTable>
+  <PropTable.Entry name="show" type="boolean" defaultValue={false} description="Show the overlay"/>
+  <PropTable.Entry name="onHide" type="function" description="Callback when overlay is hidden."/>
+  <PropTable.Entry name="hideOnClick" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="hideOnEscape" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="zIndex" type="number" defaultValue={2} />
+</PropTable>
