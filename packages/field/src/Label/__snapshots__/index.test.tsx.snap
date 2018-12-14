@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Large Label it should render LUI "md" Body assistive text component 1`] = `
+.c1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #929292;
+  font-size: calc(0.75 * var(--lendi-ui-size));
+  line-height: calc(16 / 12);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  margin-left: 0;
+}
+
+<Styled(styled.p)
+  color="shade.400"
+  size="xs"
+>
+  <styled.p
+    className="c0"
+    color="shade.400"
+    size="xs"
+  >
+    <p
+      className="c0 c1"
+      color="shade.400"
+      size="xs"
+    >
+      Assistive text
+    </p>
+  </styled.p>
+</Styled(styled.p)>
+`;
+
+exports[`Large Label it should render LUI "md" Body assistive text component 2`] = `
+.c1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #929292;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  margin-left: 0;
+}
+
+<Styled(styled.p)
+  color="shade.400"
+  size="md"
+>
+  <styled.p
+    className="c0"
+    color="shade.400"
+    size="md"
+  >
+    <p
+      className="c0 c1"
+      color="shade.400"
+      size="md"
+    >
+      Assistive text
+    </p>
+  </styled.p>
+</Styled(styled.p)>
+`;
+
+exports[`Large Label it should render LUI "md" Link component 1`] = `
+.c0 {
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  color: #00c0a5;
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+<Component
+  size="sm"
+>
+  <styled.button
+    size="sm"
+  >
+    <button
+      className="c0"
+      size="sm"
+    >
+      forgot?
+    </button>
+  </styled.button>
+</Component>
+`;
+
+exports[`Large Label it should render LUI "md" Link component 2`] = `
+.c0 {
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  color: #00c0a5;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+<Component
+  size="md"
+>
+  <styled.button
+    size="md"
+  >
+    <button
+      className="c0"
+      size="md"
+    >
+      forgot?
+    </button>
+  </styled.button>
+</Component>
+`;
+
+exports[`Large Label it should render LUI "md" body component 1`] = `
+.c1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c0 {
+  display: inline-block;
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+  margin-left: 0;
+}
+
+<Styled(styled.p)
+  ml="xxs"
+  size="md"
+>
+  <styled.p
+    className="c0"
+    ml="xxs"
+    size="md"
+  >
+    <p
+      className="c0 c1"
+      size="md"
+    >
+      <strong>
+        First name
+      </strong>
+    </p>
+  </styled.p>
+</Styled(styled.p)>
+`;
+
+exports[`Large Label it should render LUI "md" heading component 1`] = `
+.c1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: calc(1.75 * var(--lendi-ui-size));
+  font-weight: 500;
+  line-height: calc(32 / 28);
+  font-family: 'Cabin',sans-serif;
+}
+
+.c0 {
+  display: inline-block;
+  margin-right: var(--lendi-ui-size);
+  margin-left: 0;
+}
+
+<Styled(Styled(HeadingTag))
+  size="md"
+>
+  <Styled(HeadingTag)
+    className="c0"
+    size="md"
+  >
+    <HeadingTag
+      className="c0 c1"
+      size="md"
+    >
+      <h3
+        className="c0 c1"
+        size="md"
+      >
+        First name
+      </h3>
+    </HeadingTag>
+  </Styled(HeadingTag)>
+</Styled(Styled(HeadingTag))>
+`;

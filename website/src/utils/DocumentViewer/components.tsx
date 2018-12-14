@@ -18,6 +18,7 @@ import Dropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 import Theme from '@lendi-ui/theme';
+import Field from '@lendi-ui/field';
 import Spinner from '@lendi-ui/spinner';
 import Transition, { Fade } from '@lendi-ui/transition';
 import Overlay from '@lendi-ui/overlay';
@@ -51,6 +52,7 @@ const scope = {
   Container,
   Theme,
   Dropdown,
+  Field,
   Spinner,
   Transition,
   Input,
