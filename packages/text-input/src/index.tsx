@@ -11,7 +11,9 @@ export interface InputProp {
   after?: React.ReactNode;
   placeholder?: string;
   value?: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Input = (props: InputProp) => {
@@ -19,28 +21,24 @@ const Input = (props: InputProp) => {
     size = 'md',
     before,
     after,
-    value,
     isError = false,
     isInverse = false,
     isFullWidth = false,
     isDisabled = false,
-    placeholder,
-    onChange,
+    ...otherProps
   } = props;
   return (
     <Layout size={size} isFullWidth={isFullWidth}>
       {before && <BeforeWrapper size={size}>{before}</BeforeWrapper>}
       <InputWrapper
         type="text"
-        value={value}
-        placeholder={placeholder}
         readOnly={isDisabled}
         isError={isError}
         isInverse={isInverse}
         beforeExist={!!before}
         afterExist={!!after}
         fontSize={size}
-        onChange={onChange}
+        {...otherProps}
       />
       {after && <AfterWrapper size={size}>{after}</AfterWrapper>}
     </Layout>
