@@ -30,6 +30,7 @@ describe('Field', () => {
   const isOptional = true;
   it('it should render wrapper component', () => {
     render({});
+    expect(wrapper.find(ErrorMessage).length).toEqual(0);
     expect(wrapper.find(FieldWrapper).length).toEqual(1);
     expect(wrapper.find(FieldWrapper)).toMatchSnapshot();
     expect(wrapper.find(LabelField).length).toEqual(1);
@@ -43,10 +44,20 @@ describe('Field', () => {
     expect(wrapper.find(Label).prop('assistiveText')).toEqual('Assistive text');
   });
 
-  it('it should render ErrorMessage component properly', () => {
-    render({ error });
-    expect(wrapper.find(ErrorMessage).length).toEqual(1);
+  it('it should render the error message when error is defined and the user has interacted with the component', () => {
+    render({ error, touched: true });
+    expect(wrapper.find(ErrorMessage)).toHaveLength(1);
     expect(wrapper.find(ErrorMessage).prop('error')).toEqual('error message');
+  });
+
+  it('it should not render the error message when error is undefiend and the user has interacted with the component', () => {
+    render({ touched: true });
+    expect(wrapper.find(ErrorMessage)).toHaveLength(0);
+  });
+
+  it('it should not render the error message when error is defined and the user has not interacted with the component', () => {
+    render({ error });
+    expect(wrapper.find(ErrorMessage)).toHaveLength(0);
   });
 
   it('it should render ToolTip component properly', () => {

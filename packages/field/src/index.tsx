@@ -14,6 +14,7 @@ export interface FieldProps {
   tooltip?: React.ReactNode; // replace with ToolTip later when LUI Input added to LUI
   children: React.ReactNode;
   error?: string;
+  touched?: boolean;
 }
 
 const Field = ({
@@ -25,6 +26,7 @@ const Field = ({
   tooltip,
   children,
   error,
+  touched,
 }: FieldProps) => {
   return (
     <FieldWrapper>
@@ -34,7 +36,7 @@ const Field = ({
         {tooltip && <ToolTip size={size} color="secondary.600" />}
       </LabelField>
       {children}
-      {error !== '' && <ErrorMessage error={error} />}
+      {touched && error && <ErrorMessage error={error} />}
     </FieldWrapper>
   );
 };

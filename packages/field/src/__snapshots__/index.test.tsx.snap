@@ -10,47 +10,10 @@ exports[`Field it should render wrapper component 1`] = `
   margin-left: calc(0.5 * var(--lendi-ui-size));
 }
 
-.c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #ff1c4a;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-  margin-left: calc(0.25 * var(--lendi-ui-size));
-}
-
 .c2 {
   display: inline-block;
   margin-right: calc(0.5 * var(--lendi-ui-size));
   margin-left: 0;
-}
-
-.c4 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: base-line;
-  -webkit-box-align: base-line;
-  -ms-flex-align: base-line;
-  align-items: base-line;
-  padding-top: calc(0.25 * var(--lendi-ui-size));
-}
-
-.c5 > svg {
-  fill: #ff1c4a;
-  stroke: #ff1c4a;
-  width: inherit;
-  height: inherit;
 }
 
 .c0 {
@@ -122,51 +85,6 @@ exports[`Field it should render wrapper component 1`] = `
         </Label>
       </label>
     </styled.label>
-    <ErrorMessage>
-      <styled.div
-        color="error.500"
-      >
-        <div
-          className="c4"
-          color="error.500"
-        >
-          <Error
-            color="error.500"
-          >
-            <styled.span
-              color="error.500"
-            >
-              <span
-                className="c5"
-                color="error.500"
-              >
-                <svg
-                  fill="currentColor"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                >
-                  <path
-                    d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-                  />
-                </svg>
-              </span>
-            </styled.span>
-          </Error>
-          <styled.p
-            color="error.500"
-            ml="xxxs"
-            size="xs"
-          >
-            <p
-              className="c6"
-              color="error.500"
-              size="xs"
-            />
-          </styled.p>
-        </div>
-      </styled.div>
-    </ErrorMessage>
   </div>
 </styled.div>
 `;

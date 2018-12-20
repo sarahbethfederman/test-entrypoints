@@ -29,18 +29,3 @@ import Field from '@lendi-ui/field';
   />
 </Field>;
 ```
-
-## Properties
-
-```
-<PropTable>
-  <PropTable.Entry name="children*" type="React.ReactNode" description="The Field content."/>
-  <PropTable.Entry name="size" type={`"lg" | "sm"`} defaultValue="sm" description="The Field Label size."/>
-  <PropTable.Entry name="label" type="string" description="The Label content."/>
-  <PropTable.Entry name="isOptioanl" type="boolean" defaultValue='false' description="The Label optioanl alert."/>
-  <PropTable.Entry name="assistiveText" type="string" description="The Label assistive text content."/>
-  <PropTable.Entry name="link" type="string" description="The Label link content."/>
-  <PropTable.Entry name="toolTip" type="React.ReactNode" description="ToolTip"/>
-  <PropTable.Entry name="isError" type="string" description="Error message and display when validation is not ''"/>
-</PropTable>
-```
