@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { PropTable } from '@lendi-ui/doc-utils';
 
 import { Heading } from '@lendi-ui/typography';
-import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap } from '.';
+import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrSpacingNameMap } from '.';
 
 export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
 
 interface ExampleComponentProps {
-  size: SpacingNameOrNameMap;
+  size: SpacingNameOrSpacingNameMap;
   functionName?: string;
 }
 

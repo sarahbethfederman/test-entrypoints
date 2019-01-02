@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@lendi-ui/theme": "^4.0.0",
-    "@lendi-ui/spacing": "^3.1.0",
+    "@lendi-ui/spacing": "^3.1.2",
     "@lendi-ui/depth": "^1.0.0",
     "@lendi-ui/icon": "^3.1.0",
     "@lendi-ui/utils": "^1.1.0"
