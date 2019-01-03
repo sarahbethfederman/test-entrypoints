@@ -22,6 +22,7 @@ import Field from '@lendi-ui/field';
 import Spinner from '@lendi-ui/spinner';
 import Transition, { Fade } from '@lendi-ui/transition';
 import Overlay from '@lendi-ui/overlay';
+import Legal from '@lendi-ui/legal-stuff';
 
 const scope = {
   styled,
@@ -58,6 +59,7 @@ const scope = {
   Input,
   Fade,
   Overlay,
+  Legal,
 };
 
 interface GenericProps {
