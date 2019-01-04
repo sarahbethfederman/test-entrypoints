@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
+import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { body, BodySize } from '../Body';
 
 export type LinkSize = BodySize;
@@ -33,15 +34,15 @@ export function link(options: LinkOptions = {}) {
 /**
  * Link component
  */
-const LinkWrapper = styled.a`
-  ${link};
+const LinkWrapper = styled.a<LinkOptions & MarginOptions>`
+  ${link} ${margin};
 `;
 
-const ButtonWrapper = styled.button`
+const ButtonWrapper = styled.button<LinkOptions & MarginOptions>`
   font-size: 1em;
   border: none;
   padding: 0;
-  ${link};
+  ${link} ${margin};
 `;
 
 export interface LinkProps extends LinkOptions {

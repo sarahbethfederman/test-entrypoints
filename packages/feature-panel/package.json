@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@lendi-ui/spacing": "^3.1.2",
-    "@lendi-ui/typography": "^2.5.2",
+    "@lendi-ui/typography": "^2.5.4",
     "@lendi-ui/grid": "^1.0.1"
   },
   "scripts": {
