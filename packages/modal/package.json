@@ -1,5 +1,5 @@
 {
-  "name": "@lendi-ui/transition",
+  "name": "@lendi-ui/modal",
   "version": "1.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
@@ -11,19 +11,22 @@
   ],
   "keywords": [],
   "author": "Lendi Devs",
-  "dependencies": {
-    "react-lifecycles-compat": "^3.0.4",
-    "styled-components": "^3.4.2",
-    "@lendi-ui/color": "^2.0.1"
-  },
   "peerDependencies": {
     "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4"
+    "react": "^15 || ^16.4",
+    "styled-components": "^3"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+  },
+  "dependencies": {
+    "@lendi-ui/depth": "^1.0.0",
+    "@lendi-ui/icon": "^4.2.1",
+    "@lendi-ui/overlay": "^1.0.0",
+    "@lendi-ui/theme": "^4.0.0",
+    "@lendi-ui/transition": "^1.0.0"
   }
 }

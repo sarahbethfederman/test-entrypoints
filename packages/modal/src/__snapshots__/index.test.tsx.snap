@@ -1,0 +1,1539 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal size should render "lg" size styles on tablet and desktop 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 600px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="lg"
+  >
+    <div
+      className="modal-container c0"
+      size="lg"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 600px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="lg"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render "md" size styles on tablet and desktop 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="md"
+  >
+    <div
+      className="modal-container c0"
+      size="md"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="md"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render "sm" size styles on tablet and desktop 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 352px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="sm"
+  >
+    <div
+      className="modal-container c0"
+      size="sm"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 352px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="sm"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render 'md' as default if there are no size value on tablet and desktop 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+  >
+    <div
+      className="modal-container c0"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<div
+    className="modal-container c0"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render with full width no matter what "lg" is on mobile 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 600px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="lg"
+  >
+    <div
+      className="modal-container c0"
+      size="lg"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 600px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="lg"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render with full width no matter what "md" is on mobile 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="md"
+  >
+    <div
+      className="modal-container c0"
+      size="md"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 400px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="md"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;
+
+exports[`Modal size should render with full width no matter what "sm" is on mobile 1`] = `
+Array [
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 352px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<styled.div
+    className="modal-container"
+    show={true}
+    size="sm"
+  >
+    <div
+      className="modal-container c0"
+      size="sm"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <Close
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <styled.span
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <span
+              className="c1 c2"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Close>
+      </Styled(Close)>
+    </div>
+  </styled.div>,
+  .c2 > svg {
+  fill: #adadad;
+  stroke: #adadad;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: grid;
+  grid-template-rows: 3fr auto;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+
+.c0 .c4 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c0 .c3 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+}
+
+.c1 {
+  margin: calc(1.5 * var(--lendi-ui-size));
+  right: 0;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: 352px;
+    border-radius: 6px;
+    height: initial;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    border-radius: 6px;
+  }
+}
+
+<div
+    className="modal-container c0"
+    size="sm"
+  >
+    <Styled(Close)
+      color="shade.300"
+      onClick={[MockFunction]}
+    >
+      <Close
+        className="c1"
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <styled.span
+          className="c1"
+          color="shade.300"
+          onClick={[MockFunction]}
+        >
+          <span
+            className="c1 c2"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Close>
+    </Styled(Close)>
+  </div>,
+]
+`;

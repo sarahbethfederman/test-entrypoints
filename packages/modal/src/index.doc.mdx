@@ -1,0 +1,50 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import Modal from '@lendi-ui/modal';
+```
+
+```jsx
+<Modal show={false} size="lg" onHide={() => {}}>
+  <Modal.Content>
+    <span>
+      You already started an application on<br />
+      8 October 2018<br />
+      Would you like to continue?
+    </span>
+  </Modal.Content>
+  <Modal.Footer>
+    <Button variant="primary" isFullWidth onClick={ ()=> {} }>
+      Continue application
+    </Button>
+    <Button variant="secondary" isFullWidth onClick={ ()=>{} }>
+      Start a new application
+    </Button>
+  </Modal.Footer>
+</Modal>
+```
+
+## Modal Properties
+
+<PropTable>
+  <PropTable.Entry name="show" type="boolean" defaultValue="false" description=""/>
+  <PropTable.Entry name="onHide" type="() => void" description="Handle closing the modal"/>
+  <PropTable.Entry name="size" type={ '"sm" | "md" | "lg"' } defaultValue="md" description=""/>
+</PropTable>
+
+<br/><br/>
+
+## Modal.Content
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The content on modal."/>
+</PropTable>
+
+<br/><br/>
+
+## Modal.Footer
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The footer on modal."/>
+</PropTable>
+

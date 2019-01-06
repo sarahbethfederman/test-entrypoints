@@ -12,12 +12,9 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^4.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
-    "styled-components": "^3.4.5",
-    "@lendi-ui/button": "^4.2.0",
-    "@lendi-ui/color": "^2.0.1"
+    "styled-components": "^3.4.5"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
@@ -28,6 +25,9 @@
   "dependencies": {
     "@lendi-ui/transition": "^1.0.0",
     "react-lifecycles-compat": "^3.0.4",
-    "react-scrolllock": "^3.0.2"
+    "react-scrolllock": "^3.0.2",
+    "@lendi-ui/button": "^4.2.0",
+    "@lendi-ui/color": "^2.0.1",
+    "@lendi-ui/theme": "^4.0.0"
   }
 }
