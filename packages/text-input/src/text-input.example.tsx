@@ -3,7 +3,6 @@ import Input from './index';
 
 export interface ExampleState {
   value: string;
-  onChange?: React.EventHandler<React.ChangeEvent<{}>>;
 }
 
 class Example extends React.Component<{}, ExampleState> {

@@ -28,6 +28,16 @@
   dependencies:
     "@lendi-ui/breakpoint" "^1.0.0"
 
+"@lendi-ui/typography@^2.5.4":
+  version "2.5.4"
+  resolved "https://registry.npmjs.org/@lendi-ui/typography/-/typography-2.5.4.tgz#09f73b744d0f5c28d78e91c97c76a31e59597b4c"
+  integrity sha512-BuNe807vVxdF8IkPMN/06WmkbyBHrmhBlcksn71JfTaqr1kANDOm5uFvzIfT8Yt/QitFinCppnNFNDAu20EU3A==
+  dependencies:
+    "@lendi-ui/breakpoint" "^1.0.0"
+    "@lendi-ui/color" "^2.0.1"
+    "@lendi-ui/spacing" "^3.1.2"
+    "@lendi-ui/utils" "^1.1.0"
+
 "@lendi/editor-config@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@lendi/editor-config/-/editor-config-1.0.0.tgz#70b5316ee41823d987de3f69d16136f1afc25541"

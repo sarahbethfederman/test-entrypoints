@@ -22,6 +22,7 @@ import Field from '@lendi-ui/field';
 import Spinner from '@lendi-ui/spinner';
 import Transition, { Fade } from '@lendi-ui/transition';
 import Overlay from '@lendi-ui/overlay';
+import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
 import Legal from '@lendi-ui/legal-stuff';
 import Modal from '@lendi-ui/modal';
 
@@ -60,6 +61,8 @@ const scope = {
   Input,
   Fade,
   Overlay,
+  Checkbox,
+  CheckboxGroup,
   Legal,
   Modal,
 };

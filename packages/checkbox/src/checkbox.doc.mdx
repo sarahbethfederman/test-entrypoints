@@ -1,0 +1,22 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import {Checkbox} from '@lendi-ui/checkbox';
+```
+
+```jsx
+  <Checkbox value='1' label='LUI single Checkbox' onChange={() => {}} />
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="value" type="string" description="Checkbox value."/>
+  <PropTable.Entry name="label" type="string" description="Checkbox display label."/>
+  <PropTable.Entry name="isChecked" type="boolean" defaultValue={false} description="Whether Checkbox is selected."/>
+  <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether Checkbox is wrapped by box."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether Checkbox is unclickable."/>
+  <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Checkbox onChange function."/>
+</PropTable>

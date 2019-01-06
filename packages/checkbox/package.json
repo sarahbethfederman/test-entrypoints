@@ -1,0 +1,34 @@
+{
+  "name": "@lendi-ui/checkbox",
+  "version": "1.0.0",
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Lendi Devs",
+  "peerDependencies": {
+    "@lendi-ui/theme": "^4.0.0",
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "styled-components": "^3"
+  },
+  "dependencies": {
+    "@lendi-ui/color": "^2.0.2",
+    "@lendi-ui/typography": "^2.5.4",
+    "@lendi-ui/spacing": "^3.1.2",
+    "@lendi-ui/utils": "^1.1.0",
+    "create-react-context": "^0.2.3",
+    "prop-types": "^15.6.2"
+  },
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+  }
+}

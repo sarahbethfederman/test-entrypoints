@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox it should render box style when it is setup isBoxed 1`] = `
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 6px;
+  height: calc(3 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  cursor: pointer;
+}
+
+.c0:hover {
+  border: 1px solid #929292;
+}
+
+.c2 {
+  display: inline-block;
+  margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: calc(2 * var(--lendi-ui-size));
+  height: calc(2 * var(--lendi-ui-size));
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c1:hover {
+  border: 1px solid #00c0a5;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c1:checked::after {
+  content: '';
+  width: calc(0.4 * var(--lendi-ui-size));
+  height: calc(0.8 * var(--lendi-ui-size));
+  top: calc(0.45 * var(--lendi-ui-size));
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+<Component
+  isBoxed={true}
+  label="LUI single Checkbox"
+  onChange={[Function]}
+  value="1"
+>
+  <styled.label
+    checked={false}
+    disabled={false}
+    isBoxed={true}
+  >
+    <label
+      checked={false}
+      className="c0"
+      disabled={false}
+    >
+      <styled.input
+        checked={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      >
+        <input
+          checked={false}
+          className="c1"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+      </styled.input>
+      <Styled(styled.p)
+        size="md"
+      >
+        <styled.p
+          className="c2"
+          size="md"
+        >
+          <p
+            className="c2 c3"
+            size="md"
+          >
+            LUI single Checkbox
+          </p>
+        </styled.p>
+      </Styled(styled.p)>
+    </label>
+  </styled.label>
+</Component>
+`;
+
+exports[`Checkbox it should render whole component 1`] = `
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 6px;
+  height: calc(3 * var(--lendi-ui-size));
+  cursor: pointer;
+}
+
+.c2 {
+  display: inline-block;
+  margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: calc(2 * var(--lendi-ui-size));
+  height: calc(2 * var(--lendi-ui-size));
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c1:hover {
+  border: 1px solid #00c0a5;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.c1:checked::after {
+  content: '';
+  width: calc(0.4 * var(--lendi-ui-size));
+  height: calc(0.8 * var(--lendi-ui-size));
+  top: calc(0.45 * var(--lendi-ui-size));
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+<Component
+  label="LUI single Checkbox"
+  onChange={[Function]}
+  value="1"
+>
+  <styled.label
+    checked={false}
+    disabled={false}
+    isBoxed={false}
+  >
+    <label
+      checked={false}
+      className="c0"
+      disabled={false}
+    >
+      <styled.input
+        checked={false}
+        disabled={false}
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      >
+        <input
+          checked={false}
+          className="c1"
+          disabled={false}
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+      </styled.input>
+      <Styled(styled.p)
+        size="md"
+      >
+        <styled.p
+          className="c2"
+          size="md"
+        >
+          <p
+            className="c2 c3"
+            size="md"
+          >
+            LUI single Checkbox
+          </p>
+        </styled.p>
+      </Styled(styled.p)>
+    </label>
+  </styled.label>
+</Component>
+`;
