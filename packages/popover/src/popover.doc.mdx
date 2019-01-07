@@ -1,0 +1,25 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import Popover from '@lendi-ui/popover';
+```
+
+```jsx
+<Popover
+  content={<div><Body size='sm' mb='xxs'>Heading label</Body><Body size='xs'>This is LUI popover conten body. You can input extra infomation here.</Body></div>}
+  position='top'
+  target={<Question color="secondary.600" />}
+/>
+             
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="content" type="React.ReactNode" description="Popover content."/>
+  <PropTable.Entry name="target" type="React.ReactNode" description="Target component that trigger Popover by clicking it"/>
+  <PropTable.Entry name="position" type="{'top' | 'bottom' | 'left' | 'right'}" description="Popover content display position comparing with target component."/>
+  <PropTable.Entry name="className" type="string" description="Custome class name."/>
+</PropTable>

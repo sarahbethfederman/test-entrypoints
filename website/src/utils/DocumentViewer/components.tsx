@@ -17,6 +17,7 @@ import { Button, ButtonGroup } from '@lendi-ui/button';
 import Dropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
+import Popover from '@lendi-ui/popover';
 import Theme from '@lendi-ui/theme';
 import Field from '@lendi-ui/field';
 import Spinner from '@lendi-ui/spinner';
@@ -55,6 +56,7 @@ const scope = {
   Container,
   Theme,
   Dropdown,
+  Popover,
   Field,
   Spinner,
   Transition,
