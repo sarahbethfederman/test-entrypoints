@@ -1,0 +1,1840 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer it should mount Footer component 1`] = `
+.c0 {
+  background-color: #0d5a6d;
+}
+
+.c1 {
+  box-sizing: border-box;
+  max-width: 75rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: calc(1.75 * var(--lendi-ui-size));
+  font-weight: 500;
+  line-height: calc(32 / 28);
+  font-family: 'Cabin',sans-serif;
+}
+
+.c19 {
+  width: 160px;
+  height: 100px;
+}
+
+.c19 > svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+  width: inherit;
+  height: inherit;
+}
+
+.c22 > svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+  width: inherit;
+  height: inherit;
+}
+
+.c18 {
+  display: none;
+}
+
+.c20 {
+  width: 220px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c21 {
+  color: #00c0a5;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  margin-top: calc(2 * var(--lendi-ui-size));
+  margin-bottom: var(--lendi-ui-size);
+}
+
+.c21:hover,
+.c21:focus,
+.c21:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+.c21 svg {
+  height: 35px;
+  width: 35px;
+}
+
+.c10 {
+  overflow-wrap: normal;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: calc(1.5 * var(--lendi-ui-size));
+  overflow: auto;
+}
+
+.c11 {
+  display: inline-block;
+  padding-top: calc(0.25 * var(--lendi-ui-size));
+  padding-bottom: calc(0.25 * var(--lendi-ui-size));
+}
+
+.c13 {
+  height: 20px;
+  width: 1px;
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: calc(1.5 * var(--lendi-ui-size));
+  margin-right: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c12 {
+  color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  display: inline-block;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.c12:hover,
+.c12:focus,
+.c12:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+.c12:hover,
+.c12:active,
+.c12:focus {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c14 {
+  color: #ffffff;
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+  margin-top: var(--lendi-ui-size);
+  margin-bottom: var(--lendi-ui-size);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c16 {
+  display: none;
+}
+
+.c17 {
+  color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.c17:hover,
+.c17:focus,
+.c17:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+.c17:hover {
+  color: #ffffff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 {
+  color: #ffffff;
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  width: 100%;
+}
+
+.c5 {
+  color: #ffffff;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  line-height: calc(24 / 18);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.c5:hover,
+.c5:focus,
+.c5:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+.c5:hover {
+  color: #ffffff;
+}
+
+.c6 {
+  padding: 0;
+  margin-top: var(--lendi-ui-size);
+  border-top: 1px solid #ffffff;
+}
+
+.c6:hover {
+  border-top: 1px solid #00c0a5;
+}
+
+.c7 {
+  list-style-type: none;
+}
+
+.c8 {
+  color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-bottom: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c8:hover,
+.c8:focus,
+.c8:active {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #007363;
+}
+
+.c8:hover {
+  color: #ffffff;
+}
+
+@media (min-width:0) {
+  .c0 {
+    padding-left: var(--lendi-ui-size);
+    padding-right: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    padding-left: var(--lendi-ui-size);
+    padding-right: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c0 {
+    padding-left: calc(0.5 * var(--lendi-ui-size));
+    padding-right: calc(0.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:0) {
+  .c1 {
+    padding-top: calc(1.5 * var(--lendi-ui-size));
+    padding-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c1 {
+    padding-top: calc(1.5 * var(--lendi-ui-size));
+    padding-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c1 {
+    padding-top: calc(2 * var(--lendi-ui-size));
+    padding-bottom: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:0) {
+  .c2 {
+    margin-bottom: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c2 {
+    margin-bottom: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c2 {
+    margin-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:0) {
+  .c18 {
+    padding-top: calc(1.5 * var(--lendi-ui-size));
+    padding-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c18 {
+    padding-top: calc(1.5 * var(--lendi-ui-size));
+    padding-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c18 {
+    padding-top: calc(1.5 * var(--lendi-ui-size));
+    padding-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c18 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:0) {
+  .c9 {
+    margin-top: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c9 {
+    margin-top: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c9 {
+    margin-top: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c9 {
+    -webkit-flex-wrap: initial;
+    -ms-flex-wrap: initial;
+    flex-wrap: initial;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:0) {
+  .c12 {
+    font-size: calc(0.875 * var(--lendi-ui-size));
+    line-height: calc(20 / 14);
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c12 {
+    font-size: var(--lendi-ui-size);
+    line-height: calc(24 / 16);
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c12 {
+    font-size: var(--lendi-ui-size);
+    line-height: calc(24 / 16);
+  }
+}
+
+@media (min-width:0) {
+  .c14 {
+    text-align: left;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c14 {
+    text-align: center;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c14 {
+    text-align: center;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c14 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c16 {
+    display: inline-block;
+    margin-left: calc(0.75 * var(--lendi-ui-size));
+    margin-right: calc(0.75 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c3 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:0) {
+  .c4 {
+    margin-bottom: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c4 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c4 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c4 {
+    width: 25%;
+  }
+}
+
+@media (min-width:0) {
+  .c5 {
+    margin-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c5 {
+    margin-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c5 {
+    margin-bottom: calc(1.5 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:0) {
+  .c7 {
+    margin-top: calc(0.75 * var(--lendi-ui-size));
+    margin-bottom: calc(0.75 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c7 {
+    margin-top: calc(0.75 * var(--lendi-ui-size));
+    margin-bottom: calc(0.75 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c7 {
+    margin-top: var(--lendi-ui-size);
+    margin-bottom: var(--lendi-ui-size);
+  }
+}
+
+@media (min-width:0) {
+  .c8 {
+    font-size: calc(0.875 * var(--lendi-ui-size));
+    line-height: calc(20 / 14);
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c8 {
+    font-size: var(--lendi-ui-size);
+    line-height: calc(24 / 16);
+  }
+}
+
+@media (min-width:75.0625em) {
+  .c8 {
+    font-size: var(--lendi-ui-size);
+    line-height: calc(24 / 16);
+  }
+}
+
+<Footer>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <Styled(HeadingTag)
+            color="shade.0"
+            mb={
+              Object {
+                "desktop": "md",
+                "mobile": "sm",
+                "tablet": "sm",
+              }
+            }
+            size="md"
+          >
+            <HeadingTag
+              className="c2"
+              color="shade.0"
+              mb={
+                Object {
+                  "desktop": "md",
+                  "mobile": "sm",
+                  "tablet": "sm",
+                }
+              }
+              size="md"
+            >
+              <h3
+                className="c2"
+                color="shade.0"
+                mb={
+                  Object {
+                    "desktop": "md",
+                    "mobile": "sm",
+                    "tablet": "sm",
+                  }
+                }
+                size="md"
+              >
+                Still looking?
+              </h3>
+            </HeadingTag>
+          </Styled(HeadingTag)>
+          <Component>
+            <styled.div>
+              <div
+                className="c3"
+              >
+                <styled.div
+                  key="Home Loans"
+                >
+                  <div
+                    className="c4"
+                  >
+                    <styled.a
+                      href="https://lendi.com.au/home-loans/search"
+                    >
+                      <a
+                        className="c5"
+                        href="https://lendi.com.au/home-loans/search"
+                      >
+                        Home Loans
+                      </a>
+                    </styled.a>
+                    <styled.ul>
+                      <ul
+                        className="c6"
+                      >
+                        <styled.li
+                          key="Buying a home"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/buying-property/purchase-property/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/buying-property/purchase-property/"
+                              >
+                                Buying a home
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Refinance my loan"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/owning-property/refinance/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/owning-property/refinance/"
+                              >
+                                Refinance my loan
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Investment home loans"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/property-investment/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/property-investment/"
+                              >
+                                Investment home loans
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Debt consolidation"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/debt-consolidation/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/debt-consolidation/"
+                              >
+                                Debt consolidation
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Home loan guides"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/guides/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/guides/"
+                              >
+                                Home loan guides
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Home loan lenders"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/lenders/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/lenders/"
+                              >
+                                Home loan lenders
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Stamp duty"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/stamp-duty/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/stamp-duty/"
+                              >
+                                Stamp duty
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                      </ul>
+                    </styled.ul>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="Calculators"
+                >
+                  <div
+                    className="c4"
+                  >
+                    <styled.a
+                      href="https://lendi.com.au/calculators/"
+                    >
+                      <a
+                        className="c5"
+                        href="https://lendi.com.au/calculators/"
+                      >
+                        Calculators
+                      </a>
+                    </styled.a>
+                    <styled.ul>
+                      <ul
+                        className="c6"
+                      >
+                        <styled.li
+                          key="Repayment calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/calculators/home-loans/home-loan-repayment-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/calculators/home-loans/home-loan-repayment-calculator/"
+                              >
+                                Repayment calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Borrowing power calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/calculators/borrowing-power-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/calculators/borrowing-power-calculator/"
+                              >
+                                Borrowing power calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Offset calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/calculators/home-loans/offset-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/calculators/home-loans/offset-calculator/"
+                              >
+                                Offset calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Home equity calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/calculators/home-loans/equity-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/calculators/home-loans/equity-calculator/"
+                              >
+                                Home equity calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="LMI calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/calculators/home-loans/lmi-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/calculators/home-loans/lmi-calculator/"
+                              >
+                                LMI calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Debt consolidation calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/calculators/home-loans/debt-consolidation-calculator/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/calculators/home-loans/debt-consolidation-calculator/"
+                              >
+                                Debt consolidation calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Stamp duty calculator"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/home-loans/stamp-duty/calculator/?page=0"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/home-loans/stamp-duty/calculator/?page=0"
+                              >
+                                Stamp duty calculator
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Free property report"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/property-report/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/property-report/"
+                              >
+                                Free property report
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                      </ul>
+                    </styled.ul>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="Get inspired"
+                >
+                  <div
+                    className="c4"
+                  >
+                    <styled.a
+                      href="https://lendi.com.au/inspire/"
+                    >
+                      <a
+                        className="c5"
+                        href="https://lendi.com.au/inspire/"
+                      >
+                        Get inspired
+                      </a>
+                    </styled.a>
+                    <styled.ul>
+                      <ul
+                        className="c6"
+                      >
+                        <styled.li
+                          key="Home design"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/design/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/design/"
+                              >
+                                Home design
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Lendi homes"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/lendi-homes/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/lendi-homes/"
+                              >
+                                Lendi homes
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Finance"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/finance/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/finance/"
+                              >
+                                Finance
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Property"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/property/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/property/"
+                              >
+                                Property
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Lifestyle"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/lifestyle/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/lifestyle/"
+                              >
+                                Lifestyle
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Insights"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/inspire/category/insights/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/inspire/category/insights/"
+                              >
+                                Insights
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                      </ul>
+                    </styled.ul>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="FAQs"
+                >
+                  <div
+                    className="c4"
+                  >
+                    <styled.a
+                      href="https://lendi.com.au/frequently-asked-questions/"
+                    >
+                      <a
+                        className="c5"
+                        href="https://lendi.com.au/frequently-asked-questions/"
+                      >
+                        FAQs
+                      </a>
+                    </styled.a>
+                    <styled.ul>
+                      <ul
+                        className="c6"
+                      >
+                        <styled.li
+                          key="Home loan terms"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/glossary/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/glossary/"
+                              >
+                                Home loan terms
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Applying for a home loan"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/application/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/application/"
+                              >
+                                Applying for a home loan
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="First home owners"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/first-home-owners/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/first-home-owners/"
+                              >
+                                First home owners
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Fees"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/fees/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/fees/"
+                              >
+                                Fees
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Property reports"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/property-reports/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/property-reports/"
+                              >
+                                Property reports
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Investing in property"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/investment/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/investment/"
+                              >
+                                Investing in property
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="What does Lendi do"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/lendi/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/lendi/"
+                              >
+                                What does Lendi do
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Loan types"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/loan-types/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/loan-types/"
+                              >
+                                Loan types
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Finance"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/finance/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/finance/"
+                              >
+                                Finance
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Repayments"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/repayments/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/repayments/"
+                              >
+                                Repayments
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                        <styled.li
+                          key="Rates"
+                        >
+                          <li
+                            className="c7"
+                          >
+                            <styled.a
+                              href="https://www.lendi.com.au/frequently-asked-questions/rates/"
+                            >
+                              <a
+                                className="c8"
+                                href="https://www.lendi.com.au/frequently-asked-questions/rates/"
+                              >
+                                Rates
+                              </a>
+                            </styled.a>
+                          </li>
+                        </styled.li>
+                      </ul>
+                    </styled.ul>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </Component>
+          <Component>
+            <div>
+              <styled.div>
+                <div
+                  className="c9"
+                >
+                  <styled.div>
+                    <div
+                      className="c10"
+                    >
+                      <styled.div
+                        key="About us"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/about-us/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/about-us/"
+                            >
+                              About us
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Media"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/media/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/media/"
+                            >
+                              Media
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Careers"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/careers/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/careers/"
+                            >
+                              Careers
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Privacy policy"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/privacypolicy/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/privacypolicy/"
+                            >
+                              Privacy policy
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Credit guide"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/creditguide/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/creditguide/"
+                            >
+                              Credit guide
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Site map"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/site-map/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/site-map/"
+                            >
+                              Site map
+                            </a>
+                          </styled.a>
+                          <styled.div>
+                            <div
+                              className="c13"
+                            />
+                          </styled.div>
+                        </div>
+                      </styled.div>
+                      <styled.div
+                        key="Contact us"
+                      >
+                        <div
+                          className="c11"
+                        >
+                          <styled.a
+                            href="https://www.lendi.com.au/contactus/"
+                          >
+                            <a
+                              className="c12"
+                              href="https://www.lendi.com.au/contactus/"
+                            >
+                              Contact us
+                            </a>
+                          </styled.a>
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="c14"
+                >
+                  <styled.div>
+                    <div
+                      className="c15"
+                    >
+                      Lendi Pty Ltd
+                    </div>
+                  </styled.div>
+                  <styled.span>
+                    <span
+                      className="c16"
+                    >
+                       · 
+                    </span>
+                  </styled.span>
+                  <div>
+                    Level 9, 37 Pitt St, Sydney NSW 2000 
+                  </div>
+                  <styled.span>
+                    <span
+                      className="c16"
+                    >
+                       · 
+                    </span>
+                  </styled.span>
+                  <styled.a
+                    href="tel:1300323181"
+                  >
+                    <a
+                      className="c17"
+                      href="tel:1300323181"
+                    >
+                       Ph: 1300 323 181 
+                    </a>
+                  </styled.a>
+                </div>
+              </styled.div>
+            </div>
+          </Component>
+          <Component>
+            <styled.div>
+              <div
+                className="c18"
+              >
+                <WithTheme(Logo)
+                  variant="light"
+                >
+                  <Logo
+                    theme={
+                      Object {
+                        "colors": Object {
+                          "error": Object {
+                            "100": "#ffd1da",
+                            "200": "#ffa4b6",
+                            "25": "#fff3f5",
+                            "300": "#ff7692",
+                            "400": "#ff496e",
+                            "50": "#ffe8ec",
+                            "500": "#ff1c4a",
+                            "600": "#cc163b",
+                            "700": "#99102c",
+                            "800": "#660b1d",
+                            "900": "#33050e",
+                            "950": "#190207",
+                          },
+                          "info": Object {
+                            "100": "#dae7f7",
+                            "200": "#b5d0ef",
+                            "25": "#f5f9fd",
+                            "300": "#91b9e8",
+                            "400": "#6ca2e0",
+                            "50": "#ecf3fb",
+                            "500": "#488bd9",
+                            "600": "#396fad",
+                            "700": "#2b5382",
+                            "800": "#1c3756",
+                            "900": "#0e1b2b",
+                            "950": "#070d15",
+                          },
+                          "primary": Object {
+                            "100": "#ccf2ed",
+                            "200": "#99e5db",
+                            "25": "#f2fbfa",
+                            "300": "#66d9c9",
+                            "400": "#32ccb7",
+                            "50": "#e5f8f6",
+                            "500": "#00c0a5",
+                            "600": "#009984",
+                            "700": "#007363",
+                            "800": "#004c42",
+                            "900": "#002621",
+                            "950": "#001310",
+                          },
+                          "secondary": Object {
+                            "100": "#cedee1",
+                            "200": "#9ebdc4",
+                            "25": "#f2f6f7",
+                            "300": "#6d9ca7",
+                            "400": "#3d7a8a",
+                            "50": "#e6eef0",
+                            "500": "#0d5a6d",
+                            "600": "#0a4857",
+                            "700": "#073641",
+                            "800": "#05242b",
+                            "900": "#021215",
+                            "950": "#01080a",
+                          },
+                          "shade": Object {
+                            "0": "#ffffff",
+                            "100": "#e3e3e3",
+                            "1000": "#000000",
+                            "200": "#c8c8c8",
+                            "25": "#f8f8f8",
+                            "300": "#adadad",
+                            "400": "#929292",
+                            "50": "#f1f1f1",
+                            "500": "#777777",
+                            "600": "#5f5f5f",
+                            "700": "#474747",
+                            "800": "#2f2f2f",
+                            "900": "#171717",
+                            "950": "#0b0b0b",
+                          },
+                          "success": Object {
+                            "100": "#dbf2cc",
+                            "200": "#b8e599",
+                            "25": "#f6fbf2",
+                            "300": "#94d966",
+                            "400": "#71cc32",
+                            "50": "#edf8e5",
+                            "500": "#4ec000",
+                            "600": "#3e9900",
+                            "700": "#2e7300",
+                            "800": "#1f4c00",
+                            "900": "#0f2600",
+                            "950": "#071300",
+                          },
+                          "tertiary": Object {
+                            "100": "#ffe2df",
+                            "200": "#ffc5c0",
+                            "25": "#fff7f7",
+                            "300": "#ffa9a1",
+                            "400": "#ff8c82",
+                            "50": "#fff0ef",
+                            "500": "#ff7063",
+                            "600": "#cc594f",
+                            "700": "#99433b",
+                            "800": "#662c27",
+                            "900": "#331613",
+                            "950": "#190b09",
+                          },
+                          "warn": Object {
+                            "100": "#fdedd3",
+                            "200": "#fbdba7",
+                            "25": "#fefaf4",
+                            "300": "#f9c97b",
+                            "400": "#f7b74e",
+                            "50": "#fef6e9",
+                            "500": "#f5a623",
+                            "600": "#c4841c",
+                            "700": "#936315",
+                            "800": "#62420e",
+                            "900": "#312107",
+                            "950": "#181003",
+                          },
+                        },
+                        "logo": Object {
+                          "logoName": "LendiLogo",
+                        },
+                        "typography": Object {
+                          "body": Object {
+                            "fontFamily": "'Open Sans', sans-serif",
+                          },
+                          "heading": Object {
+                            "fontFamily": "'Cabin', sans-serif",
+                          },
+                        },
+                      }
+                    }
+                    variant="light"
+                  >
+                    <LendiLogo
+                      color="shade.0"
+                      height="100px"
+                      width="160px"
+                    >
+                      <styled.span
+                        color="shade.0"
+                        height="100px"
+                        width="160px"
+                      >
+                        <span
+                          className="c19"
+                          color="shade.0"
+                          height="100px"
+                          width="160px"
+                        >
+                          <svg
+                            fill="currentColor"
+                            height="1em"
+                            viewBox="0 0 1915.11 609.271"
+                            width="1em"
+                          >
+                            <path
+                              d="M1830.4 186.955h43.565a41.306 41.306 0 0 1 41.145 41.134v25.421h-84.71v-66.555z"
+                              fill="#00c0a5"
+                            />
+                            <path
+                              d="M693.642 186.955H737.2a40.708 40.708 0 0 1 29.047 11.5 37.7 37.7 0 0 1 12.1 28.429v376.341h-84.7v-416.27zM902.5 409.608h123.43q-2.442-32.675-16.943-48.4-15.74-16.935-44.772-16.938-26.628 0-43.565 16.938-16.959 16.959-18.15 48.4zm145.213 94.383h60.5q-13.321 50.838-50.824 77.445-37.521 27.849-94.389 27.835-68.978 0-107.694-44.778-38.746-43.553-38.726-124.637 0-77.415 37.513-121 38.719-44.757 107.7-44.777 72.606 0 112.539 43.57 38.71 44.784 38.72 124.637v13.311c0 4.048-.416 6.861-1.207 8.472H902.5q1.2 37.516 18.15 55.663 15.714 19.377 47.192 19.363 20.573 0 35.1-8.472a16.9 16.9 0 0 0 6.653-4.233c2-2 4.233-4.238 6.652-6.658q1.2-3.63 9.078-9.678 7.857-6.047 22.389-6.058zM1438.091 603.225h-42.358q-18.147 0-29.647-11.5t-11.5-29.648V397.5q0-29.036-17.544-42.352a63.522 63.522 0 0 0-39.326-13.311 61.025 61.025 0 0 0-38.726 13.311q-16.959 13.33-16.937 42.352v205.725h-84.703V414.447q0-82.274 42.959-110.119 42.93-27.823 94.989-30.254a182.223 182.223 0 0 1 98.016 27.834q44.757 27.856 44.777 112.539v188.778zM1557.406 439.856q0 48.422 18.15 73.819 18.156 25.415 52.037 25.415 32.665 0 50.824-25.415 16.926-25.405 16.937-73.819 0-43.554-18.15-68.974-19.368-24.185-52.031-24.2-31.486 0-49.617 25.42-18.147 24.217-18.15 67.754zm137.948-254.119h41.146q16.934 0 29.041 12.716 12.084 12.69 12.1 28.429v235.969q0 85.938-49.617 116.172a203.093 203.093 0 0 1-107.694 30.248 190.719 190.719 0 0 1-61.715-10.291q-30.265-10.265-48.4-33.268-35.116-44.749-35.094-122.224 0-76.234 35.094-122.211 36.3-47.2 93.176-47.2 30.231 0 53.243 12.1a115.061 115.061 0 0 1 38.72 37.513V185.737zM1830.4 281.338h43.565a41.317 41.317 0 0 1 41.145 41.146v280.741h-84.71V281.338z"
+                            />
+                            <path
+                              d="M513.617 502.385H363.694V346.877H256.8v155.508H106.886v-250.65l207.028-134.282 199.7 133.772v251.16zm83.189-324.092L344.129 9.041a53.445 53.445 0 0 0-58.829-.433L24.359 177.86A53.443 53.443 0 0 0 0 222.7v333.125a53.443 53.443 0 0 0 53.44 53.446h513.622a53.444 53.444 0 0 0 53.446-53.446V222.7a53.437 53.437 0 0 0-23.7-44.407z"
+                              fill="#00c0a5"
+                            />
+                          </svg>
+                        </span>
+                      </styled.span>
+                    </LendiLogo>
+                  </Logo>
+                </WithTheme(Logo)>
+                <styled.div>
+                  <div
+                    className="c20"
+                  >
+                    <styled.a
+                      href="https://www.facebook.com/lendiau/"
+                      key="https://www.facebook.com/lendiau/"
+                    >
+                      <a
+                        className="c21"
+                        href="https://www.facebook.com/lendiau/"
+                      >
+                        <Facebook
+                          color="shade.0"
+                        >
+                          <styled.span
+                            color="shade.0"
+                          >
+                            <span
+                              className="c22"
+                              color="shade.0"
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                viewBox="0 0 39.72 39.72"
+                                width="1em"
+                              >
+                                <path
+                                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm4.94 20.56h-3.23v11.52h-4.79V20.56H14.5v-4.07h2.28v-2.63c0-1.89.9-4.84 4.83-4.84h3.55v4h-2.57a1 1 0 0 0-1 1.11v2.39h3.65zm0 0"
+                                />
+                              </svg>
+                            </span>
+                          </styled.span>
+                        </Facebook>
+                      </a>
+                    </styled.a>
+                    <styled.a
+                      href="https://twitter.com/lendiau"
+                      key="https://twitter.com/lendiau"
+                    >
+                      <a
+                        className="c21"
+                        href="https://twitter.com/lendiau"
+                      >
+                        <Twitter
+                          color="shade.0"
+                        >
+                          <styled.span
+                            color="shade.0"
+                          >
+                            <span
+                              className="c22"
+                              color="shade.0"
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                viewBox="0 0 39.72 39.72"
+                                width="1em"
+                              >
+                                <path
+                                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm8.86 15.32v.59a13 13 0 0 1-20 11 9.81 9.81 0 0 0 1.09.07 9.17 9.17 0 0 0 5.68-2 4.58 4.58 0 0 1-4.27-3.18 4.82 4.82 0 0 0 .86.09 4.35 4.35 0 0 0 1.2-.17 4.56 4.56 0 0 1-3.67-4.47.11.11 0 0 1 0-.06 4.63 4.63 0 0 0 2.07.57 4.57 4.57 0 0 1-2-3.81 4.63 4.63 0 0 1 .62-2.3 13 13 0 0 0 9.42 4.78 4.42 4.42 0 0 1-.12-1 4.58 4.58 0 0 1 7.91-3.13 9 9 0 0 0 2.91-1.11 4.59 4.59 0 0 1-2 2.53A8.91 8.91 0 0 0 31 13a9.34 9.34 0 0 1-2.28 2.37zm0 0"
+                                />
+                              </svg>
+                            </span>
+                          </styled.span>
+                        </Twitter>
+                      </a>
+                    </styled.a>
+                    <styled.a
+                      href="https://www.linkedin.com/company/lendi"
+                      key="https://www.linkedin.com/company/lendi"
+                    >
+                      <a
+                        className="c21"
+                        href="https://www.linkedin.com/company/lendi"
+                      >
+                        <Linkedin
+                          color="shade.0"
+                        >
+                          <styled.span
+                            color="shade.0"
+                          >
+                            <span
+                              className="c22"
+                              color="shade.0"
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                viewBox="0 0 39.72 39.72"
+                                width="1em"
+                              >
+                                <path
+                                  d="M23.48 17a3.15 3.15 0 0 0-2.88 1.59v-1.32h-3.21c.05.9 0 9.63 0 9.63h3.21v-5.38a2.14 2.14 0 0 1 .1-.79 1.76 1.76 0 0 1 1.64-1.17c1.16 0 1.62.89 1.62 2.18v5.16h3.21v-5.53c0-3-1.58-4.33-3.69-4.33zm-2.89 1.62zm-8.17-1.35h3.2v9.63h-3.2z"
+                                />
+                                <path
+                                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm10.53 28.84a1.55 1.55 0 0 1-1.57 1.53H10.76a1.55 1.55 0 0 1-1.57-1.53V10.57A1.56 1.56 0 0 1 10.76 9h18.06a1.55 1.55 0 0 1 1.57 1.53zm0 0"
+                                />
+                                <path
+                                  d="M14 12.62A1.67 1.67 0 1 0 14 16a1.67 1.67 0 1 0 0-3.33zm0 0"
+                                />
+                              </svg>
+                            </span>
+                          </styled.span>
+                        </Linkedin>
+                      </a>
+                    </styled.a>
+                    <styled.a
+                      href="https://www.youtube.com/channel/UClqvf6ktIXZtlD556hyFq1g/featured"
+                      key="https://www.youtube.com/channel/UClqvf6ktIXZtlD556hyFq1g/featured"
+                    >
+                      <a
+                        className="c21"
+                        href="https://www.youtube.com/channel/UClqvf6ktIXZtlD556hyFq1g/featured"
+                      >
+                        <Youtube
+                          color="shade.0"
+                        >
+                          <styled.span
+                            color="shade.0"
+                          >
+                            <span
+                              className="c22"
+                              color="shade.0"
+                            >
+                              <svg
+                                fill="currentColor"
+                                height="1em"
+                                viewBox="0 0 78.2 78.2"
+                                width="1em"
+                              >
+                                <path
+                                  d="M32 47.67l17.55-9.1L32 29.41zm0 0"
+                                />
+                                <path
+                                  d="M39.1 0a39.1 39.1 0 1 0 39.1 39.1A39.1 39.1 0 0 0 39.1 0zm26.64 52.15a7 7 0 0 1-6 5.42 185 185 0 0 1-20.67.77 185.22 185.22 0 0 1-20.68-.77 7 7 0 0 1-6-5.42c-1-4.18-1-8.74-1-13s0-8.87 1-13a7 7 0 0 1 6-5.43 187.64 187.64 0 0 1 20.68-.76 187.37 187.37 0 0 1 20.67.76 7 7 0 0 1 6 5.43c1 4.18 1 8.75 1 13.05a59.21 59.21 0 0 1-1 13zm0 0"
+                                />
+                              </svg>
+                            </span>
+                          </styled.span>
+                        </Youtube>
+                      </a>
+                    </styled.a>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </Component>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</Footer>
+`;

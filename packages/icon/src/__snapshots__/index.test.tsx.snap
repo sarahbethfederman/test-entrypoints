@@ -7206,6 +7206,185 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Facebook should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Facebook
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 39.72 39.72"
+                width="1em"
+              >
+                <path
+                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm4.94 20.56h-3.23v11.52h-4.79V20.56H14.5v-4.07h2.28v-2.63c0-1.89.9-4.84 4.83-4.84h3.55v4h-2.57a1 1 0 0 0-1 1.11v2.39h3.65zm0 0"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Facebook>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -11653,6 +11832,191 @@ exports[`Icon component LendiLogo should fetch icon correctly 1`] = `
             </span>
           </styled.span>
         </LendiLogo>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
+exports[`Icon component Linkedin should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Linkedin
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 39.72 39.72"
+                width="1em"
+              >
+                <path
+                  d="M23.48 17a3.15 3.15 0 0 0-2.88 1.59v-1.32h-3.21c.05.9 0 9.63 0 9.63h3.21v-5.38a2.14 2.14 0 0 1 .1-.79 1.76 1.76 0 0 1 1.64-1.17c1.16 0 1.62.89 1.62 2.18v5.16h3.21v-5.53c0-3-1.58-4.33-3.69-4.33zm-2.89 1.62zm-8.17-1.35h3.2v9.63h-3.2z"
+                />
+                <path
+                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm10.53 28.84a1.55 1.55 0 0 1-1.57 1.53H10.76a1.55 1.55 0 0 1-1.57-1.53V10.57A1.56 1.56 0 0 1 10.76 9h18.06a1.55 1.55 0 0 1 1.57 1.53zm0 0"
+                />
+                <path
+                  d="M14 12.62A1.67 1.67 0 1 0 14 16a1.67 1.67 0 1 0 0-3.33zm0 0"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Linkedin>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -19098,6 +19462,185 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
 </Theme>
 `;
 
+exports[`Icon component Twitter should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Twitter
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 39.72 39.72"
+                width="1em"
+              >
+                <path
+                  d="M19.86 0a19.86 19.86 0 1 0 19.86 19.86A19.88 19.88 0 0 0 19.86 0zm8.86 15.32v.59a13 13 0 0 1-20 11 9.81 9.81 0 0 0 1.09.07 9.17 9.17 0 0 0 5.68-2 4.58 4.58 0 0 1-4.27-3.18 4.82 4.82 0 0 0 .86.09 4.35 4.35 0 0 0 1.2-.17 4.56 4.56 0 0 1-3.67-4.47.11.11 0 0 1 0-.06 4.63 4.63 0 0 0 2.07.57 4.57 4.57 0 0 1-2-3.81 4.63 4.63 0 0 1 .62-2.3 13 13 0 0 0 9.42 4.78 4.42 4.42 0 0 1-.12-1 4.58 4.58 0 0 1 7.91-3.13 9 9 0 0 0 2.91-1.11 4.59 4.59 0 0 1-2 2.53A8.91 8.91 0 0 0 31 13a9.34 9.34 0 0 1-2.28 2.37zm0 0"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Twitter>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
 exports[`Icon component Upload should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
@@ -19658,6 +20201,188 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
             </span>
           </styled.span>
         </Weather>
+      </div>
+    </styled.div>
+  </ThemeProvider>
+</Theme>
+`;
+
+exports[`Icon component Youtube should fetch icon correctly 1`] = `
+.c0 {
+  color: #474747;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  stroke: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+<Theme>
+  <ThemeProvider
+    theme={
+      Object {
+        "colors": Object {
+          "error": Object {
+            "100": "#ffd1da",
+            "200": "#ffa4b6",
+            "25": "#fff3f5",
+            "300": "#ff7692",
+            "400": "#ff496e",
+            "50": "#ffe8ec",
+            "500": "#ff1c4a",
+            "600": "#cc163b",
+            "700": "#99102c",
+            "800": "#660b1d",
+            "900": "#33050e",
+            "950": "#190207",
+          },
+          "info": Object {
+            "100": "#dae7f7",
+            "200": "#b5d0ef",
+            "25": "#f5f9fd",
+            "300": "#91b9e8",
+            "400": "#6ca2e0",
+            "50": "#ecf3fb",
+            "500": "#488bd9",
+            "600": "#396fad",
+            "700": "#2b5382",
+            "800": "#1c3756",
+            "900": "#0e1b2b",
+            "950": "#070d15",
+          },
+          "primary": Object {
+            "100": "#ccf2ed",
+            "200": "#99e5db",
+            "25": "#f2fbfa",
+            "300": "#66d9c9",
+            "400": "#32ccb7",
+            "50": "#e5f8f6",
+            "500": "#00c0a5",
+            "600": "#009984",
+            "700": "#007363",
+            "800": "#004c42",
+            "900": "#002621",
+            "950": "#001310",
+          },
+          "secondary": Object {
+            "100": "#cedee1",
+            "200": "#9ebdc4",
+            "25": "#f2f6f7",
+            "300": "#6d9ca7",
+            "400": "#3d7a8a",
+            "50": "#e6eef0",
+            "500": "#0d5a6d",
+            "600": "#0a4857",
+            "700": "#073641",
+            "800": "#05242b",
+            "900": "#021215",
+            "950": "#01080a",
+          },
+          "shade": Object {
+            "0": "#ffffff",
+            "100": "#e3e3e3",
+            "1000": "#000000",
+            "200": "#c8c8c8",
+            "25": "#f8f8f8",
+            "300": "#adadad",
+            "400": "#929292",
+            "50": "#f1f1f1",
+            "500": "#777777",
+            "600": "#5f5f5f",
+            "700": "#474747",
+            "800": "#2f2f2f",
+            "900": "#171717",
+            "950": "#0b0b0b",
+          },
+          "success": Object {
+            "100": "#dbf2cc",
+            "200": "#b8e599",
+            "25": "#f6fbf2",
+            "300": "#94d966",
+            "400": "#71cc32",
+            "50": "#edf8e5",
+            "500": "#4ec000",
+            "600": "#3e9900",
+            "700": "#2e7300",
+            "800": "#1f4c00",
+            "900": "#0f2600",
+            "950": "#071300",
+          },
+          "tertiary": Object {
+            "100": "#ffe2df",
+            "200": "#ffc5c0",
+            "25": "#fff7f7",
+            "300": "#ffa9a1",
+            "400": "#ff8c82",
+            "50": "#fff0ef",
+            "500": "#ff7063",
+            "600": "#cc594f",
+            "700": "#99433b",
+            "800": "#662c27",
+            "900": "#331613",
+            "950": "#190b09",
+          },
+          "warn": Object {
+            "100": "#fdedd3",
+            "200": "#fbdba7",
+            "25": "#fefaf4",
+            "300": "#f9c97b",
+            "400": "#f7b74e",
+            "50": "#fef6e9",
+            "500": "#f5a623",
+            "600": "#c4841c",
+            "700": "#936315",
+            "800": "#62420e",
+            "900": "#312107",
+            "950": "#181003",
+          },
+        },
+        "logo": Object {
+          "logoName": "LendiLogo",
+        },
+        "typography": Object {
+          "body": Object {
+            "fontFamily": "'Open Sans', sans-serif",
+          },
+          "heading": Object {
+            "fontFamily": "'Cabin', sans-serif",
+          },
+        },
+      }
+    }
+  >
+    <styled.div>
+      <div
+        className="c0"
+      >
+        <Youtube
+          color="primary.500"
+        >
+          <styled.span
+            color="primary.500"
+          >
+            <span
+              className="c1"
+              color="primary.500"
+            >
+              <svg
+                fill="currentColor"
+                height="1em"
+                viewBox="0 0 78.2 78.2"
+                width="1em"
+              >
+                <path
+                  d="M32 47.67l17.55-9.1L32 29.41zm0 0"
+                />
+                <path
+                  d="M39.1 0a39.1 39.1 0 1 0 39.1 39.1A39.1 39.1 0 0 0 39.1 0zm26.64 52.15a7 7 0 0 1-6 5.42 185 185 0 0 1-20.67.77 185.22 185.22 0 0 1-20.68-.77 7 7 0 0 1-6-5.42c-1-4.18-1-8.74-1-13s0-8.87 1-13a7 7 0 0 1 6-5.43 187.64 187.64 0 0 1 20.68-.76 187.37 187.37 0 0 1 20.67.76 7 7 0 0 1 6 5.43c1 4.18 1 8.75 1 13.05a59.21 59.21 0 0 1-1 13zm0 0"
+                />
+              </svg>
+            </span>
+          </styled.span>
+        </Youtube>
       </div>
     </styled.div>
   </ThemeProvider>

@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@lendi-ui/color": "^2.0.0",
-    "@lendi-ui/icon": "^4.2.0"
+    "@lendi-ui/icon": "^4.3.1"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
