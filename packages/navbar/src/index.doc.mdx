@@ -1,0 +1,31 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+import styled from 'styled-components';
+import { bg } from '@lendi-ui/color';
+
+## Usage
+```
+import Navbar from '@lendi-ui/navbar';
+```
+
+```js
+const Mainpage = styled.div`
+  ${bg('warn.500')};
+`;
+
+render(
+  <Mainpage>
+    <Navbar />
+  </Mainpage>
+);
+```
+
+## Properties
+<PropTable>
+  <PropTable.Entry name="variant" type={'"transparent" | "white"'} defaultValue="transparent" description=""/>
+  <PropTable.Entry name="applicantion" type="object" description="Application details"/>
+  <PropTable.Entry name="broker" type={object} description="Assigned broker data"/>
+  <PropTable.Entry name="onChat" type="function" required description="Callback function on chat button on the Right Sidebar"/>
+  <PropTable.Entry name="onLogout" type="function" required description="Callback function on Log Out link in Left Sidebar"/>
+</PropTable>
+
+

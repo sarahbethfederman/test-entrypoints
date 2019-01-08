@@ -11,6 +11,8 @@ module.exports = {
   moduleNameMapper: {
     '^@lendi-ui/(.*)-utils$': '<rootDir>/utils/$1-utils/src',
     '^@lendi-ui/(.*)$': '<rootDir>/packages/$1/src',
+    '.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
+      '<rootDir>/__mocks__/fileMock.ts',
   },
   globals: {
     'ts-jest': {

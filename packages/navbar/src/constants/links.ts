@@ -1,0 +1,13 @@
+export const PROPERTY_REPORT_LINK = '/property-report';
+export const REPAYMENT_CALCULATOR_LINK = '/dashboard/repayment-calculator';
+export const SEARCH_LOAN_LINK = '/home-loans/search';
+export const MANAGE_APPLICATION_LINK = '/dashboard/applications';
+export const LOG_IN_LINK = '/login';
+export const SIGN_UP_LINK = '/sign-up';
+export const OLD_DASHBOARD_LINK = '/dashboard/applications';
+export const DASHBOARD_LINK = '/dashboard/application';
+export const BUY_PROPERTY_LINK = '/buying-property/purchase-property';
+export const REFINANCE_LANDING_PAGE_LINK = '/owning-property/refinance';
+export const GUIDE_PAGE_LINK = '/guides';
+export const INSPIRE_PAGE_LINK = '/inspire';
+export const CALCULATORS_PAGE_LINK = '/calculators';
