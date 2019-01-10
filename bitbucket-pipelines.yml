@@ -1,26 +1,31 @@
 image: node:latest
 
 clone:
-  depth: 50 # debugging
+  depth: full
 
 pipelines:
   default:
 
     - parallel:
-
+      - step:
+          name: 🔎 Check
+          script:
+            - ./ci/check.sh
+          caches:
+            - node
       - step:
           name: ✅ Lint
           script:
             - ./ci/lint.sh
           caches:
-            - nodemonorepo
+            - node
 
       - step:
           name: ⚒ Build
           script:
             - ./ci/build.sh
           caches:
-            - nodemonorepo
+            - node
           artifacts:
             - "**/dist/**"
 
@@ -29,40 +34,45 @@ pipelines:
           script:
             - ./ci/test.sh
           caches:
-            - nodemonorepo
+            - node
 
       - step:
           name: 📝 Test (react@^15)
           script:
             - ./ci/test-react-15.sh
           caches:
-            - nodemonorepo
+            - node
 
     - step:
         name: 🚀 Deploy
         script:
           - ./ci/deploy.sh
         caches:
-          - nodemonorepo
+          - node
 
   branches:
     master:
 
       - parallel:
-
+        - step:
+            name: 🔎 Check
+            script:
+              - ./ci/check.sh
+            caches:
+              - node
         - step:
             name: ✅ Lint
             script:
               - ./ci/lint.sh
             caches:
-              - nodemonorepo
+              - node
 
         - step:
             name: ⚒ Build
             script:
               - ./ci/build.sh
             caches:
-              - nodemonorepo
+              - node
             artifacts:
               - "**/dist/**"
 
@@ -71,14 +81,14 @@ pipelines:
             script:
               - ./ci/test.sh
             caches:
-              - nodemonorepo
+              - node
 
         - step:
             name: 📝 Test (react@^15)
             script:
               - ./ci/test-react-15.sh
             caches:
-              - nodemonorepo
+              - node
 
       - step:
           name: 🚀 Deploy
@@ -86,15 +96,11 @@ pipelines:
           script:
             - ./ci/deploy.sh
           caches:
-            - nodemonorepo
+            - node
 
       - step:
           name: 📦 Publish
           script:
             - ./ci/publish.sh
           caches:
-            - nodemonorepo
-
-definitions:
-  caches:
-    nodemonorepo: "**/node_modules/**"
+            - node

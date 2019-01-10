@@ -50,6 +50,7 @@
     "check:lint-doc-and-test": "tslint -p tsconfig.types.json -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
+    "check:danger": "danger local",
     "build": "yarn build:icons && lerna run build",
     "build:icons": "node packages/icon/build/index.js",
     "test": "jest",
@@ -64,5 +65,9 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "devDependencies": {
+    "danger": "^7.0.2",
+    "fast-glob": "^2.2.6"
   }
 }
