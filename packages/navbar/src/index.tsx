@@ -5,6 +5,7 @@ import { LeftPanelSection } from './LeftPanelSection';
 import { RightSidebar } from './RightSidebar';
 import { RightPanelSection } from './RightPanelSection';
 import { Application, Broker } from './types';
+import Theme from '@lendi-ui/theme';
 
 export interface NavProps {
   isAuthenticated?: boolean;
@@ -54,7 +55,7 @@ class Navbar extends React.Component<NavProps, NavState> {
     const { isLeftSidebarVisible, isRightSidebarVisible } = this.state;
     const { isAuthenticated, application, broker, onChat, onLogout, variant } = this.props;
     return (
-      <div>
+      <Theme>
         <Header
           onOpenLeftSidebar={this.onOpenLeftSidebar}
           onOpenRightSidebar={this.onOpenRightSidebar}
@@ -94,7 +95,7 @@ class Navbar extends React.Component<NavProps, NavState> {
             phoneNumber={broker && broker.phone}
           />
         </RightSidebar>
-      </div>
+      </Theme>
     );
   }
 }

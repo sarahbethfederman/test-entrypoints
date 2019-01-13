@@ -45,7 +45,7 @@ export const style = css`
     ${fg('shade.0')} ${bg('primary.600')};
   }
 
-  :last-of-type {
+  :last-child {
     border-bottom: none;
   }
 `;
