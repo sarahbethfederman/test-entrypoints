@@ -9662,7 +9662,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
-react-create-ref@1.0.1:
+react-create-ref@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-create-ref/-/react-create-ref-1.0.1.tgz#c0cbeec9e05b608c9f9434fafbecbcc46750293d"
   integrity sha512-pryn9uefKa5HPfmgf1Gl93+hwN2rqXeipLSdnq6Q9M7Pd00sx617GyOtluqVoQ0XlvvYJ8Bw/uTorXvH+fgUGQ==
