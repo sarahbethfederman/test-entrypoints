@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/tabs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -19,8 +19,11 @@
   "dependencies": {
     "@lendi-ui/icon": "^4.3.1",
     "@lendi-ui/color": "^2.0.2",
+    "@lendi-ui/grid": "^1.1.1",
+    "@lendi-ui/breakpoint": "^1.0.1",
     "react-create-ref": "^1.0.1",
-    "create-react-context": "^0.2.3"
+    "create-react-context": "^0.2.3",
+    "prop-types": "^15.6.2"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
