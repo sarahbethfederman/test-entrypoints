@@ -41,17 +41,17 @@ function render(props) {
 
 describe('Tabs', () => {
   it('renders positive variant', () => {
-    render({ variant: 'positive' });
+    render({ variant: 'positive', activeTab: 1 });
     expect(tabs).toBeTruthy();
   });
 
   it('renders negative variant', () => {
-    render({ variant: 'negative' });
+    render({ variant: 'negative', activeTab: 1 });
     expect(tabs).toBeTruthy();
   });
 
   it('should show right and left arrows for desktop where scroll is needed', () => {
-    render({ variant: 'positive' });
+    render({ variant: 'positive', activeTab: 1 });
     Object.defineProperty(tabs.getDOMNode(), 'scrollWidth', {
       value: 1920,
     });
@@ -59,12 +59,13 @@ describe('Tabs', () => {
       value: 1392,
     });
     window.dispatchEvent(new Event('resize'));
-    expect(tabs.update().find('RightIconWrapper')).toBeTruthy();
-    expect(tabs.update().find('LeftIconWrapper')).toBeTruthy();
+    expect(tabs.update().find(RightIconWrapper)).toBeTruthy();
+    expect(tabs.update().find(LeftIconWrapper)).toBeTruthy();
   });
 
-  it('should select the first tab by default', () => {
-    render({ variant: 'positive' });
+  it('should select the tab specified by activeTab', () => {
+    let activeTab = 1;
+    render({ variant: 'positive', activeTab });
     expect(
       tabs
         .find(Tab)
@@ -72,18 +73,14 @@ describe('Tabs', () => {
         .find(TabWrapper)
         .props()['isSelected']
     ).toBe(true);
-  });
 
-  it('should select the tab clicked', () => {
-    render({ variant: 'positive' });
+    activeTab = 2;
+    render({ variant: 'positive', activeTab });
     expect(
       tabs
         .find(Tab)
-        .at(2)
-        .simulate('click')
-        .update()
+        .at(1)
         .find(TabWrapper)
-        .at(2)
         .props()['isSelected']
     ).toBe(true);
   });
@@ -95,5 +92,6 @@ describe('Tabs', () => {
       .at(2)
       .simulate('click');
     expect(mockOnChange.mock.calls.length).toBe(1);
+    expect(mockOnChange.mock.calls[0][0]).toBe(3);
   });
 });

@@ -31,7 +31,7 @@ const commonIconWrapperStyle = css`
 
 export const Wrapper = styled.div`
   ${grid({ halign: 'left', wrap: false })};
-  ${(props: WrapperProps) => (props.variant === 'positive' ? bg('primary.500') : bg('shade.0'))};
+  ${(props: WrapperProps) => (props.variant === 'positive' ? bg('primary.500') : 'background: transparent')};
   min-height: 48px;
   overflow-x: auto;
   width: 100%;

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/tabs",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

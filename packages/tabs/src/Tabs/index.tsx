@@ -8,10 +8,10 @@ import TabContext from '../TabContext';
 export interface TabsProps {
   variant: 'negative' | 'positive';
   onChange: (key: number) => void;
+  activeTab: number;
 }
 
 export interface TabsState {
-  selectedTab: number;
   isScrollable: boolean;
 }
 
@@ -24,7 +24,6 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   private node = createRef();
 
   state = {
-    selectedTab: 0,
     isScrollable: false,
   };
 
@@ -56,8 +55,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   };
 
   private handleClick = (index: number) => {
-    this.setState({ selectedTab: index });
-    this.props.onChange(index);
+    this.props.onChange(index + 1);
   };
 
   private calculateTabWidth = () => {
@@ -76,14 +74,14 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, variant } = this.props;
-    const { isScrollable, selectedTab } = this.state;
+    const { children, variant, activeTab } = this.props;
+    const { isScrollable } = this.state;
     return (
       <TabContext.Provider
         value={{
           onClick: this.handleClick,
           tabCount: React.Children.count(children),
-          selectedIndex: selectedTab,
+          selectedIndex: activeTab - 1,
         }}
       >
         <Wrapper innerRef={this.node} variant={variant} isScrollable={isScrollable}>
