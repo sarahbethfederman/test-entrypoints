@@ -29,6 +29,7 @@ import Footer from '@lendi-ui/footer';
 import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
 import Legal from '@lendi-ui/legal-stuff';
 import Modal from '@lendi-ui/modal';
+import Alert from '@lendi-ui/alert';
 
 const scope = {
   styled,
@@ -73,6 +74,7 @@ const scope = {
   CheckboxGroup,
   Legal,
   Modal,
+  Alert,
 };
 
 interface GenericProps {

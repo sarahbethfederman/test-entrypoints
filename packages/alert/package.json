@@ -1,6 +1,6 @@
 {
-  "name": "@lendi-ui/inline-dropdown",
-  "version": "1.0.1",
+  "name": "@lendi-ui/alert",
+  "version": "1.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -12,16 +12,16 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
+    "@lendi-ui/theme": "^4.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^3"
   },
   "dependencies": {
-    "@lendi-ui/theme": "^4.0.0",
-    "@lendi-ui/spacing": "^3.1.2",
-    "@lendi-ui/depth": "^1.0.0",
+    "@lendi-ui/color": "^2.0.2",
     "@lendi-ui/icon": "^4.3.2",
-    "@lendi-ui/utils": "^1.1.0"
+    "@lendi-ui/spacing": "^3.1.2",
+    "@lendi-ui/typography": "^2.5.4"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

@@ -26,13 +26,6 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.12.0"
 
-"@lendi-ui/icon@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/icon/-/icon-3.1.0.tgz#0962cea1e22013e8b6e73265005ef6a7b13d0bdd"
-  integrity sha512-ITlJCce4iXy8l52Zlx96KeqtbmSssSbuwbNQKTODy/uDgyAxe/fqfZxnU3b7gM3uEUbdMB1IO8JduKhhZqHxdg==
-  dependencies:
-    "@lendi-ui/color" "^2.0.1"
-
 "@lendi-ui/spacing@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-2.1.0.tgz#b68320566c6765130b59a34c913a369c088b8a05"
@@ -9664,7 +9657,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
 
 react-create-ref@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-create-ref/-/react-create-ref-1.0.1.tgz#c0cbeec9e05b608c9f9434fafbecbcc46750293d"
+  resolved "https://registry.npmjs.org/react-create-ref/-/react-create-ref-1.0.1.tgz#c0cbeec9e05b608c9f9434fafbecbcc46750293d"
   integrity sha512-pryn9uefKa5HPfmgf1Gl93+hwN2rqXeipLSdnq6Q9M7Pd00sx617GyOtluqVoQ0XlvvYJ8Bw/uTorXvH+fgUGQ==
 
 react-dom@^16.4.2:
