@@ -1,84 +1,116 @@
 import * as React from 'react';
+import styled from 'styled-components';
+import { Body } from '@lendi-ui/typography';
 import { CheckboxGroup } from './CheckboxGroup/index';
+import { container } from '@lendi-ui/container';
+import { Direction } from './CheckboxGroup/index.style';
 
-interface ExampleState {
-  values_1?: string[];
-  labels_1?: string[];
-  value_1?: string[];
-  values_2?: string[];
-  labels_2?: string[];
-  value_2?: string[];
-  values_3?: string[];
-  labels_3?: string[];
-  value_3?: string[];
+const ColumnContainer = styled.div`
+  ${container()};
+`;
+
+interface ExampleStateElement {
+  direction?: Direction;
+  description?: string;
+  isBoxed?: boolean;
+  isDisabled?: boolean;
+  values: string[];
+  labels: string[];
+  value: string[];
 }
 
+interface ExampleState {
+  groups: ExampleStateElement[];
+}
+
+const INITIAL_STATE: ExampleState = {
+  groups: [
+    {
+      description: 'Column CheckboxGroup:',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+    },
+    {
+      description: 'Column CheckboxGroup boxed:',
+      isBoxed: true,
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+    },
+    {
+      description: 'Column CheckboxGroup disabled:',
+      isDisabled: true,
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+    },
+    {
+      direction: 'row',
+      description: 'Row CheckboxGroup:',
+      values: ['1'],
+      labels: ['Yes', 'No', 'Maybe'],
+      value: ['1', '2', '3'],
+    },
+  ],
+};
+
 class Example extends React.Component<{}, ExampleState> {
-  state = {
-    values_1: ['1'],
-    labels_1: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
-    value_1: ['1', '2', '3'],
-    values_2: ['1'],
-    labels_2: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
-    value_2: ['1', '2', '3'],
-    values_3: ['_1'],
-    labels_3: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
-    value_3: ['1', '2', '3'],
-  };
+  state: ExampleState = INITIAL_STATE;
 
-  onChange_1 = (e: any): void => {
-    const newValues = this.state.values_1;
-    if (newValues.includes(e.target.value.toString())) {
-      const index = newValues.indexOf(e.target.value.toString());
+  onChange = (e: React.ChangeEvent<HTMLInputElement>, groupIndex: number): void => {
+    const newValues = this.state.groups[groupIndex].values.slice(0);
+
+    if (!newValues) {
+      return;
+    }
+
+    if (newValues.includes(e.currentTarget.value.toString())) {
+      const index = newValues.indexOf(e.currentTarget.value.toString());
       newValues.splice(index, 1);
     } else {
-      newValues.push(e.target.value.toString());
+      newValues.push(e.currentTarget.value.toString());
     }
-    this.setState({ values_1: newValues });
-  };
 
-  onChange_2 = (e: any): void => {
-    const newValues = this.state.values_2;
-    if (newValues.includes(e.target.value.toString())) {
-      const index = newValues.indexOf(e.target.value.toString());
-      newValues.splice(index, 1);
-    } else {
-      newValues.push(e.target.value.toString());
-    }
-    this.setState({ values_2: newValues });
-  };
+    this.setState((prevState) => {
+      const tmpGroup = {
+        groups: prevState.groups.map((group, index) => {
+          if (index !== groupIndex) {
+            return group;
+          }
 
-  onChange_3 = (e: any): void => {
-    const newValues = this.state.values_3;
-    if (newValues.includes(e.target.value.toString())) {
-      const index = newValues.indexOf(e.target.value.toString());
-      newValues.splice(index, 1);
-    } else {
-      newValues.push(e.target.value.toString());
-    }
-    this.setState({ values_3: newValues });
+          return Object.assign({}, group, { values: newValues });
+        }),
+      };
+
+      return tmpGroup;
+    });
   };
 
   render() {
-    return (
-      <div style={{ width: '600px' }}>
-        <CheckboxGroup values={this.state.values_1} onChange={this.onChange_1}>
-          <CheckboxGroup.Checkbox label={this.state.labels_1[0]} value={this.state.value_1[0]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_1[1]} value={this.state.value_1[1]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_1[2]} value={this.state.value_1[2]} />
+    return this.state.groups.map((group, index) => (
+      <ColumnContainer key={`CheckboxGroup-col-${index}`}>
+        {!!group.description && <Body>{group.description}</Body>}
+        <CheckboxGroup
+          key={`CheckboxGroup-${index}`}
+          values={group.values}
+          onChange={(e) => {
+            this.onChange(e, index);
+          }}
+          direction={group.direction}
+          isDisabled={group.isDisabled}
+          isBoxed={group.isBoxed}
+        >
+          {group.labels.map((label, subIndex) => (
+            <CheckboxGroup.Checkbox
+              key={`CheckboxGroup-${index}-${subIndex}`}
+              label={label}
+              value={group.value[subIndex]}
+            />
+          ))}
         </CheckboxGroup>
-        <CheckboxGroup isBoxed={true} values={this.state.values_2} onChange={this.onChange_2}>
-          <CheckboxGroup.Checkbox label={this.state.labels_2[0]} value={this.state.value_2[0]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_2[1]} value={this.state.value_2[1]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_2[2]} value={this.state.value_2[2]} />
-        </CheckboxGroup>
-        <CheckboxGroup isDisabled={true} values={this.state.values_3} onChange={this.onChange_3}>
-          <CheckboxGroup.Checkbox label={this.state.labels_3[0]} value={this.state.value_3[0]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_3[1]} value={this.state.value_3[1]} />
-          <CheckboxGroup.Checkbox label={this.state.labels_3[2]} value={this.state.value_3[2]} />
-        </CheckboxGroup>
-      </div>
-    );
+      </ColumnContainer>
+    ));
   }
 }
 
