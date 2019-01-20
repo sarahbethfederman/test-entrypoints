@@ -64,7 +64,7 @@
     "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "lint-staged": {
-    "**/*.{json,js,jsx,ts,tsx}": [
+    "**/*.{json,js,jsx,ts,tsx,md}": [
       "prettier --write",
       "git add"
     ]

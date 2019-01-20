@@ -3,3 +3,5 @@
 1.0.2 - Added missing dependencies to the package
 
 1.0.4 - Make tabs component stateless
+
+1.0.5 - Updated icon dependencies
