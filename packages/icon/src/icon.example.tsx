@@ -30,7 +30,7 @@ export default () => (
       const MyComponent: React.SFC<IconProps> = (Icon as any)[component] as React.SFC<IconProps>;
       return (
         <Wrapper key={i}>
-          <MyComponent color="secondary.800" width="50px" height="50px" />
+          <MyComponent color="secondary.500" width="50px" height="50px" />
           <NameWrapper size="sm">{component}</NameWrapper>
         </Wrapper>
       );
