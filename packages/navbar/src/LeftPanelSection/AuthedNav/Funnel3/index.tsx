@@ -1,17 +1,11 @@
 import * as React from 'react';
 import { SidebarNav } from './../../../SidebarNav';
 import { OLD_DASHBOARD_LINK, DASHBOARD_LINK } from './../../../constants/links';
-
-export interface ApplicantDetails {
-  applicant_type?: string;
-  first_name?: string;
-  sfid?: string;
-  uuid?: string;
-}
+import { Applicant } from '../../../types';
 
 interface Funnel3Item {
   applicationSfid?: string;
-  applicants?: ApplicantDetails[];
+  applicants?: Applicant[];
   applicationNumber?: number;
 }
 
@@ -63,8 +57,8 @@ export const FunnelThreeSection = ({ applicants = [], applicationSfid, applicati
         {applicants.map((applicant, index) => {
           let groupLabel = 'Your financials';
           if (index > 0) {
-            groupLabel = applicant.first_name
-              ? `${applicant.first_name}'s financials`
+            groupLabel = applicant.firstName
+              ? `${applicant.firstName}'s financials`
               : `Applicant ${index + 1}'s financials`;
           }
           return (

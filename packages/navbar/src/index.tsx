@@ -75,7 +75,11 @@ class Navbar extends React.Component<NavProps, NavState> {
             }
           }
         >
-          <LeftPanelSection isAuthenticated={isAuthenticated} application={application} />
+          <LeftPanelSection
+            isAuthenticated={isAuthenticated}
+            application={application}
+            applicants={application && application.applicants}
+          />
         </LeftSidebar>
         <RightSidebar
           onChat={onChat}

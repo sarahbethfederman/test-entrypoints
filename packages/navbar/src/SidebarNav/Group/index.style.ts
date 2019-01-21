@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { color } from '@lendi-ui/color';
-import { ml, mt, mb } from '@lendi-ui/spacing';
+import { ml, pt, pb } from '@lendi-ui/spacing';
 import { Button } from '../Item/index.style';
 
 export const Wrapper = styled.div``;
@@ -28,13 +27,13 @@ export const MenuContent = styled.div`
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.25s;
-  ${({ isExpanded }: MenuProps) => isExpanded && `max-height: 20em;`} > :first-child {
-    ${mt('xxxs')};
+  ${({ isExpanded }: MenuProps) => isExpanded && `max-height: 20em;`};
+
+  > :first-child {
+    ${pt('xxxs')};
   }
 
   > :last-child {
-    ${mb('xs')};
+    ${pb('xxxs')};
   }
-
-  border-bottom: 1px solid ${color('shade.100')};
 `;

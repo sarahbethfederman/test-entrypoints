@@ -4,24 +4,25 @@ import { SEARCH_LOAN_LINK, MANAGE_APPLICATION_LINK, PROPERTY_REPORT_LINK } from 
 import { SidebarNav } from './../../SidebarNav';
 import { ToolBoxSection } from './ToolBox';
 import { FunnelTwoSection } from './Funnel2';
-import { FunnelThreeSection, ApplicantDetails } from './Funnel3';
+import { FunnelThreeSection } from './Funnel3';
+import { Applicant } from '../../types';
 
 interface AuthedNavDetails {
   applicationStage?: string;
-  applicants?: ApplicantDetails[];
+  applicants?: Applicant[];
   applicationSfid?: string;
   transactionType?: string;
   applicationNumber?: number;
 }
 
 export const AuthedNav = ({
-  applicationStage = APPLICATION_STAGES[0],
+  applicationStage,
   applicants = [],
   applicationSfid,
   transactionType,
   applicationNumber,
 }: AuthedNavDetails) => {
-  const primaryApplicant = applicants.find((applicant) => applicant.applicant_type === 'primary');
+  const primaryApplicant = applicants.find((applicant) => applicant.type === 'primary');
   const primaryApplicantSfid = (primaryApplicant && primaryApplicant.sfid) || '';
   const numberOfApplicants = applicants.length;
 
@@ -38,15 +39,6 @@ export const AuthedNav = ({
     case APPLICATION_STAGES[0]: {
       return (
         <SidebarNav.Section>
-          <SidebarNav.Item href={SEARCH_LOAN_LINK}>Start a new loan</SidebarNav.Item>
-          <SidebarNav.Item href={MANAGE_APPLICATION_LINK}>My dashboard</SidebarNav.Item>
-          <SidebarNav.Item href={PROPERTY_REPORT_LINK}>My property reports</SidebarNav.Item>
-        </SidebarNav.Section>
-      );
-    }
-    case APPLICATION_STAGES[1]: {
-      return (
-        <SidebarNav.Section>
           <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>
           <FunnelTwoSection
             applicationSfid={applicationSfid}
@@ -58,7 +50,7 @@ export const AuthedNav = ({
         </SidebarNav.Section>
       );
     }
-    case APPLICATION_STAGES[2]: {
+    case APPLICATION_STAGES[1]: {
       return (
         <SidebarNav.Section>
           <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>
@@ -80,7 +72,7 @@ export const AuthedNav = ({
         </SidebarNav.Section>
       );
     }
-    case APPLICATION_STAGES[3]: {
+    case APPLICATION_STAGES[2]: {
       return (
         <SidebarNav.Section>
           <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>

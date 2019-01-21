@@ -39,13 +39,17 @@ export const style = css`
 
   :hover {
     ${fg('shade.0')} ${bg('primary.500')};
+
+    svg {
+      stroke: ${color('shade.0')};
+    }
   }
 
   :active {
     ${fg('shade.0')} ${bg('primary.600')};
   }
 
-  :last-child {
+  :last-type {
     border-bottom: none;
   }
 `;

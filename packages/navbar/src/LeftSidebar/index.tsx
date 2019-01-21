@@ -6,7 +6,6 @@ import { MenuButton, LogoWrapper, HeaderLogo } from '../Header/index.style';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../SidebarNav';
 import Sidebar from '../Sidebar';
 import { Footer } from './../SidebarFooter';
-import { APPLICATION_STAGES } from './../constants/application-stages';
 import { MANAGE_APPLICATION_LINK, LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
 
 export type SidebarSectionProps = SectionProps;
@@ -58,12 +57,11 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
       );
     }
 
-    const applicationStage = applicationDetails && applicationDetails.applicationStage;
     const applicationNumber = applicationDetails && applicationDetails.applicationNumber;
-    if (applicationStage !== APPLICATION_STAGES[0] && applicationNumber) {
+    if (applicationNumber) {
       return (
         <Body size="sm">
-          >{`Application ${applicationNumber}`} |
+          {`Application ${applicationNumber}`} <span> | </span>
           <StyledLink href={MANAGE_APPLICATION_LINK}>Manage applications</StyledLink>
         </Body>
       );
@@ -91,7 +89,7 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
       <Footer>
         <Body size="lg">Need help?</Body>
         <Body size="md" mt="xxs">
-          <StyledLink onClick={onChat}>Live chat</StyledLink> or call
+          <StyledLink onClick={onChat}>Live chat</StyledLink> <span> or call </span>
           <StyledLink href="tel:1300323181">1300 323 181</StyledLink>
         </Body>
       </Footer>

@@ -1,16 +1,17 @@
 import * as React from 'react';
 import { UnauthedNav } from './UnauthedNav';
 import { AuthedNav } from './AuthedNav';
-import { Application } from './../types';
+import { Application, Applicant } from './../types';
 
 export interface LeftPanelSectionProps {
   isAuthenticated?: boolean;
   application?: Application;
+  applicants?: Applicant[];
 }
 
-export const LeftPanelSection = ({ isAuthenticated, application }: LeftPanelSectionProps) => {
+export const LeftPanelSection = ({ isAuthenticated, application, applicants }: LeftPanelSectionProps) => {
   if (isAuthenticated && application) {
-    const { stage, sfid, type, applicants, number } = application;
+    const { stage, sfid, type, number } = application;
     return (
       <AuthedNav
         applicationStage={stage}
@@ -20,6 +21,11 @@ export const LeftPanelSection = ({ isAuthenticated, application }: LeftPanelSect
         applicationNumber={number}
       />
     );
+  }
+
+  // user who has an account but doesn't have any application/opportunity yet
+  if (isAuthenticated && !application) {
+    return <AuthedNav />;
   }
   return <UnauthedNav />;
 };

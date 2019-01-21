@@ -33,6 +33,7 @@ export const Logout = styled.a`
   ${py('xs')}
   ${bg('shade.25')}
   ${link({ size: 'sm' })}
+  text-decoration: none;
 `;
 
 export const StyledLink = styled(Link)`

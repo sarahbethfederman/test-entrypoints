@@ -1,5 +1,4 @@
 export type ApplicationStage =
-  | 'no_application'
   | 'started_application'
   | 'finished_funnel2'
   | 'finished_funnel3'
@@ -12,6 +11,7 @@ export interface Applicant {
   uuid?: string;
   sfid?: string;
   type?: 'primary' | string;
+  firstName?: string;
 }
 export interface Application {
   type?: ApplicationType;

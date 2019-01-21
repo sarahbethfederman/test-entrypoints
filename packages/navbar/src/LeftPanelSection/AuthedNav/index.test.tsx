@@ -26,20 +26,10 @@ describe('Authed Left Nav', () => {
     expect(firstNavItem.href && firstNavItem.href.includes('/home-loans/search')).toBeTruthy();
   });
 
-  it('should render start new loan nav item if user has no application', () => {
-    const wrapper = shallow(<AuthedNav applicationStage={APPLICATION_STAGES[0]} />);
-    const firstNavItem = wrapper
-      .find(SidebarNav.Item)
-      .first()
-      .props();
-    expect(firstNavItem.children === 'Start a new loan').toBeTruthy();
-    expect(firstNavItem.href && firstNavItem.href.includes('/home-loans/search')).toBeTruthy();
-  });
-
   it('should render profile, funnel2 and toolbox nav items if user has started application', () => {
     const wrapper = mount(
       <Theme>
-        <AuthedNav {...applicationDetails} applicationStage={APPLICATION_STAGES[1]} />
+        <AuthedNav {...applicationDetails} applicationStage={APPLICATION_STAGES[0]} />
       </Theme>
     );
     const navItems = wrapper.find(SidebarNav.Item);
@@ -55,7 +45,7 @@ describe('Authed Left Nav', () => {
   it('should render profile, funnel2, funnel3 and toolbox nav items if user finished funnel2', () => {
     const wrapper = mount(
       <Theme>
-        <AuthedNav {...applicationDetails} applicationStage={APPLICATION_STAGES[2]} />
+        <AuthedNav {...applicationDetails} applicationStage={APPLICATION_STAGES[1]} />
       </Theme>
     );
     const navItems = wrapper.find(SidebarNav.Item);
