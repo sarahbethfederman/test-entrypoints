@@ -7,10 +7,17 @@ import {ButtonGroup} from '@lendi-ui/button';
 ```
 
 ```jsx
+<>
 <ButtonGroup size="sm">
   <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
   <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
 </ButtonGroup>
+<br /><br />
+<ButtonGroup size={{mobile:'sm', tablet:'md', desktop:'lg'}}>
+  <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
+  <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
+</ButtonGroup>
+</>
 ```
 
 ## ButtonGroup Properties

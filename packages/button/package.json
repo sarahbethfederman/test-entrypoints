@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -20,7 +20,8 @@
     "@lendi-ui/spacing": "^3.1.2",
     "@lendi-ui/utils": "^1.1.0",
     "create-react-context": "^0.2.3",
-    "prop-types": "^15.6.2"
+    "prop-types": "^15.6.2",
+    "@lendi-ui/breakpoint": "^1.0.1"
   },
   "license": "ISC",
   "scripts": {

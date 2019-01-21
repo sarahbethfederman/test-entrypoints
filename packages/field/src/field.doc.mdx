@@ -9,7 +9,7 @@ import Field from '@lendi-ui/field';
 ```jsx
 // still need to implement Tooltip
     <Field 
-        labelSize='sm'
+        size={{mobile:'sm', tablet:'sm', desktop:'lg'}}
         label='This is a label'
         assistiveText='Assistive text'
         link={<Link>forgot</Link>}
@@ -17,7 +17,7 @@ import Field from '@lendi-ui/field';
         error='error message'
     >
        <Input
-            size="md"
+            size={{mobile:'sm', tablet:'md', desktop:'lg'}}
             placeholder="input here ..."
             onChange={() =>{}}
             isFullWidth={true}

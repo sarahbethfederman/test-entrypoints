@@ -11,8 +11,8 @@ exports[`Dropdown render BoxArrow component 1`] = `
 .c0 {
   position: absolute;
   right: 6px;
-  top: calc(0.75 * var(--lendi-ui-size));
   pointer-events: none;
+  top: calc(0.75 * var(--lendi-ui-size));
 }
 
 <Styled(ChevronDown)
@@ -74,17 +74,17 @@ exports[`Dropdown render SelectedBox component and has size property "md" 1`] = 
   border: none;
   border-radius: 4px 4px 0 0;
   font-family: 'Open Sans',sans-serif;
-  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
-  font-size: var(--lendi-ui-size);
   -webkit-appearance: none;
   cursor: pointer;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
 }
 
 .c2 {
   position: absolute;
   right: 6px;
-  top: calc(0.75 * var(--lendi-ui-size));
   pointer-events: none;
+  top: calc(0.75 * var(--lendi-ui-size));
 }
 
 <styled.div>
@@ -166,10 +166,10 @@ exports[`Dropdown render SelectedBox component and has size property "md" 2`] = 
   border: none;
   border-radius: 4px 4px 0 0;
   font-family: 'Open Sans',sans-serif;
-  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
-  font-size: var(--lendi-ui-size);
   -webkit-appearance: none;
   cursor: pointer;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
 }
 
 <styled.select
@@ -261,17 +261,17 @@ exports[`Dropdown render whole component 1`] = `
   border: none;
   border-radius: 4px 4px 0 0;
   font-family: 'Open Sans',sans-serif;
-  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
-  font-size: var(--lendi-ui-size);
   -webkit-appearance: none;
   cursor: pointer;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
 }
 
 .c2 {
   position: absolute;
   right: 6px;
-  top: calc(0.75 * var(--lendi-ui-size));
   pointer-events: none;
+  top: calc(0.75 * var(--lendi-ui-size));
 }
 
 <Dropdown

@@ -3,27 +3,77 @@ import { select } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 import { deriveSize } from '@lendi-ui/utils';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
-export type ButtonSize = 'lg' | 'md' | 'sm';
+export type Size = 'lg' | 'md' | 'sm';
+export type ButtonSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
-export const heightBySize: { [size in ButtonSize]: string } = {
-  lg: deriveSize(4),
-  md: deriveSize(3),
-  sm: deriveSize(2.5),
-};
+const commonStyleBySizeMixin = (size: ButtonSize) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'sm':
+        return `
+          height: ${deriveSize(2.5)};
+          padding: 0 ${deriveSize(0.5)};
+          font-size: ${deriveSize(1)};
+      `;
+      case 'md':
+        return `
+          height: ${deriveSize(3)};
+          padding: 0 ${deriveSize(1)};
+          font-size: ${deriveSize(1.125)};
+      `;
+      case 'lg':
+        return `
+          height: ${deriveSize(4)};
+          padding: 0 ${deriveSize(1)};
+          font-size: ${deriveSize(1.375)};
+      `;
+      default:
+        return undefined;
+    }
+  });
 
-const fontBySize: { [size in ButtonSize]: string } = {
-  lg: deriveSize(1.375),
-  md: deriveSize(1.125),
-  sm: deriveSize(1),
-};
+const beforeBySizeMixin = (size: ButtonSize) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'sm':
+        return `
+          margin-right: ${deriveSize(0.5)};
+      `;
+      case 'md':
+        return `
+          margin-right: ${deriveSize(1)};
+      `;
+      case 'lg':
+        return `
+         margin-right: ${deriveSize(1)};
+      `;
+      default:
+        return undefined;
+    }
+  });
 
-const spacingBySize: { [size in ButtonSize]: string } = {
-  lg: deriveSize(1),
-  md: deriveSize(1),
-  sm: deriveSize(0.5),
-};
+const afterBySizeMixin = (size: ButtonSize) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'sm':
+        return `
+          margin-left: ${deriveSize(0.5)};
+      `;
+      case 'md':
+        return `
+          margin-left: ${deriveSize(1)};
+      `;
+      case 'lg':
+        return `
+         margin-left: ${deriveSize(1)};
+      `;
+      default:
+        return undefined;
+    }
+  });
 
 const commonStyle = css`
   cursor: pointer;
@@ -36,9 +86,7 @@ const commonStyle = css`
   transition: all 0.1s;
 
   ${({ size }: WrapperProps) => css`
-    height: ${heightBySize[size]};
-    padding: 0 ${spacingBySize[size]};
-    font-size: ${fontBySize[size]};
+    ${size && commonStyleBySizeMixin(size)}
     font-family: ${select('typography.body.fontFamily')};
   `} ${({ isFullWidth = false }: WrapperProps) => {
     if (isFullWidth) {
@@ -199,9 +247,9 @@ export const Layout = styled.div`
 `;
 
 export const BeforeWrapper = styled.span`
-  margin-right: ${({ size }: { size: ButtonSize }) => spacingBySize[size]};
+  ${({ size }: { size: ButtonSize }) => beforeBySizeMixin(size)};
 `;
 
 export const AfterWrapper = styled.span`
-  margin-left: ${({ size }: { size: ButtonSize }) => spacingBySize[size]};
+  ${({ size }: { size: ButtonSize }) => afterBySizeMixin(size)};
 `;

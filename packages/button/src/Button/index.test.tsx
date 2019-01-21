@@ -2,7 +2,6 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Button, ButtonSize, ButtonVariant } from '.';
-import { heightBySize } from './index.style';
 
 const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
 const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
@@ -51,7 +50,6 @@ describe('Button', () => {
       sizes.forEach((size) => {
         it(`should render "${size}" size styles`, () => {
           render({ variant, size });
-          expect(button).toHaveStyleRule('height', heightBySize[size]);
           expect(button).toMatchSnapshot();
         });
       });

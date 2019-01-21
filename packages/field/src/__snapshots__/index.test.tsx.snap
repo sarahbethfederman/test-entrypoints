@@ -1,19 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Field it should render wrapper component 1`] = `
+.c5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #929292;
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
+}
+
 .c3 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: var(--lendi-ui-size);
-  line-height: calc(24 / 16);
-  font-family: 'Open Sans',sans-serif;
-  margin-left: calc(0.5 * var(--lendi-ui-size));
+  font-size: calc(1.375 * var(--lendi-ui-size));
+  font-weight: 500;
+  line-height: calc(28 / 22);
+  font-family: 'Cabin',sans-serif;
 }
 
 .c2 {
-  display: inline-block;
+  font-size: var(--lendi-ui-size);
   margin-right: calc(0.5 * var(--lendi-ui-size));
-  margin-left: 0;
+  display: inline-block;
+}
+
+.c4 {
+  font-size: calc(0.75 * var(--lendi-ui-size));
 }
 
 .c0 {
@@ -62,23 +75,40 @@ exports[`Field it should render wrapper component 1`] = `
           size="sm"
         >
           <div>
+            <Styled(Styled(HeadingTag))
+              size="sm"
+            >
+              <Styled(HeadingTag)
+                className="c2"
+                size="sm"
+              >
+                <HeadingTag
+                  className="c2 c3"
+                  size="sm"
+                >
+                  <h4
+                    className="c2 c3"
+                    size="sm"
+                  >
+                    First name
+                  </h4>
+                </HeadingTag>
+              </Styled(HeadingTag)>
+            </Styled(Styled(HeadingTag))>
             <Styled(styled.p)
-              ml="xxs"
-              size="md"
+              color="shade.400"
+              size="sm"
             >
               <styled.p
-                className="c2"
-                ml="xxs"
-                size="md"
+                className="c4"
+                color="shade.400"
+                size="sm"
               >
                 <p
-                  className="c2 c3"
-                  size="md"
-                >
-                  <strong>
-                    First name
-                  </strong>
-                </p>
+                  className="c4 c5"
+                  color="shade.400"
+                  size="sm"
+                />
               </styled.p>
             </Styled(styled.p)>
           </div>

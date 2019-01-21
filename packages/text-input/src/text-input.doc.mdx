@@ -8,16 +8,17 @@ import Input from '@lendi-ui/text-input';
 
 ```jsx
 
-<><Input
+<>
+<Input
     size="md"
     placeholder="input here ..."
     onChange={() =>{}}
     isFullWidth={true}
     after={<span style={{ width: '24px', height: '24px' }}>x</span>}
  />
-
+<br /><br />
  <Input
-    size="md"
+    size={{mobile:'sm', tablet:'md', desktop:'lg'}}
     value={"sdds"}
     placeholder="input here ..."
     onChange={() =>{}}

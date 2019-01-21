@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/field",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -20,7 +20,8 @@
     "@lendi-ui/typography": "^2.5.4",
     "@lendi-ui/icon": "^4.3.2",
     "@lendi-ui/spacing": "^3.1.2",
-    "@lendi-ui/utils": "^1.1.0"
+    "@lendi-ui/utils": "^1.1.0",
+    "@lendi-ui/breakpoint": "^1.0.1"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

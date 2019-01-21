@@ -5,62 +5,28 @@ exports[`Large Label it should render LUI "md" Body assistive text component 1`]
   margin-top: 0;
   margin-bottom: 0;
   color: #929292;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  line-height: calc(24 / 18);
   font-family: 'Open Sans',sans-serif;
 }
 
 .c0 {
-  margin-left: 0;
-}
-
-<Styled(styled.p)
-  color="shade.400"
-  size="xs"
->
-  <styled.p
-    className="c0"
-    color="shade.400"
-    size="xs"
-  >
-    <p
-      className="c0 c1"
-      color="shade.400"
-      size="xs"
-    >
-      Assistive text
-    </p>
-  </styled.p>
-</Styled(styled.p)>
-`;
-
-exports[`Large Label it should render LUI "md" Body assistive text component 2`] = `
-.c1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #929292;
   font-size: var(--lendi-ui-size);
-  line-height: calc(24 / 16);
-  font-family: 'Open Sans',sans-serif;
-}
-
-.c0 {
-  margin-left: 0;
 }
 
 <Styled(styled.p)
   color="shade.400"
-  size="md"
+  size="lg"
 >
   <styled.p
     className="c0"
     color="shade.400"
-    size="md"
+    size="lg"
   >
     <p
       className="c0 c1"
       color="shade.400"
-      size="md"
+      size="lg"
     >
       Assistive text
     </p>
@@ -74,45 +40,6 @@ exports[`Large Label it should render LUI "md" Link component 1`] = `
   border: none;
   padding: 0;
   color: #00c0a5;
-  font-size: calc(0.875 * var(--lendi-ui-size));
-  line-height: calc(20 / 14);
-  font-family: 'Open Sans',sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0:hover,
-.c0:focus,
-.c0:active {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #007363;
-}
-
-<Component
-  size="sm"
->
-  <styled.button
-    size="sm"
-  >
-    <button
-      className="c0"
-      size="sm"
-    >
-      forgot?
-    </button>
-  </styled.button>
-</Component>
-`;
-
-exports[`Large Label it should render LUI "md" Link component 2`] = `
-.c0 {
-  font-size: 1em;
-  border: none;
-  padding: 0;
-  color: #00c0a5;
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -144,78 +71,41 @@ exports[`Large Label it should render LUI "md" Link component 2`] = `
     </button>
   </styled.button>
 </Component>
-`;
-
-exports[`Large Label it should render LUI "md" body component 1`] = `
-.c1 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: var(--lendi-ui-size);
-  line-height: calc(24 / 16);
-  font-family: 'Open Sans',sans-serif;
-  margin-left: calc(0.5 * var(--lendi-ui-size));
-}
-
-.c0 {
-  display: inline-block;
-  margin-right: calc(0.5 * var(--lendi-ui-size));
-  margin-left: 0;
-}
-
-<Styled(styled.p)
-  ml="xxs"
-  size="md"
->
-  <styled.p
-    className="c0"
-    ml="xxs"
-    size="md"
-  >
-    <p
-      className="c0 c1"
-      size="md"
-    >
-      <strong>
-        First name
-      </strong>
-    </p>
-  </styled.p>
-</Styled(styled.p)>
 `;
 
 exports[`Large Label it should render LUI "md" heading component 1`] = `
 .c1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: calc(1.75 * var(--lendi-ui-size));
+  font-size: calc(2.3125 * var(--lendi-ui-size));
   font-weight: 500;
-  line-height: calc(32 / 28);
+  line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
 }
 
 .c0 {
-  display: inline-block;
+  font-size: calc(1.75 * var(--lendi-ui-size));
   margin-right: var(--lendi-ui-size);
-  margin-left: 0;
+  display: inline-block;
 }
 
 <Styled(Styled(HeadingTag))
-  size="md"
+  size="lg"
 >
   <Styled(HeadingTag)
     className="c0"
-    size="md"
+    size="lg"
   >
     <HeadingTag
       className="c0 c1"
-      size="md"
+      size="lg"
     >
-      <h3
+      <h2
         className="c0 c1"
-        size="md"
+        size="lg"
       >
         First name
-      </h3>
+      </h2>
     </HeadingTag>
   </Styled(HeadingTag)>
 </Styled(Styled(HeadingTag))>
