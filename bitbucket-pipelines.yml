@@ -5,8 +5,13 @@ clone:
 
 pipelines:
   default:
-
     - parallel:
+      - step:
+          name: Deduplicate
+          script:
+            - ./ci/deduplicate.sh
+          caches:
+            - node
       - step:
           name: 🔎 Check
           script:
@@ -52,8 +57,13 @@ pipelines:
 
   branches:
     master:
-
       - parallel:
+        - step:
+            name: Deduplicate
+            script:
+              - ./ci/deduplicate.sh
+            caches:
+              - node
         - step:
             name: 🔎 Check
             script:

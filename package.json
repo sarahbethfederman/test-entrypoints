@@ -54,13 +54,15 @@
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
     "check:danger": "danger local",
+    "remove:duplicates": "yarn-deduplicate",
+    "check:duplicates": "yarn-deduplicate --list --fail",
     "build": "yarn build:icons && lerna run build",
     "build:icons": "node packages/icon/build/index.js",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",
     "create-component": "npx create-lui-component",
-    "precommit": "yarn run lint-staged && yarn run check && yarn run test && yarn run build",
+    "precommit": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build",
     "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "lint-staged": {
@@ -71,6 +73,8 @@
   },
   "devDependencies": {
     "danger": "^7.0.2",
-    "fast-glob": "^2.2.6"
+    "fast-glob": "^2.2.6",
+    "yarn-deduplicate": "^1.1.0",
+    "yarn": "^1.0.0"
   }
 }
