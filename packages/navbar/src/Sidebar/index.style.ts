@@ -66,3 +66,8 @@ export const CloseButton = styled(MenuButton)`
   position: absolute;
   top: ${Spacing.xxxs};
 `;
+
+export const OverlayWrapper = styled.div`
+  position: fixed;
+  z-index: ${ZINDEX.OVERLAY};
+`;

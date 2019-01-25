@@ -110,7 +110,7 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
 
   public componentDidMount() {
     if (this.state.state === 'enter') {
-      this.enter();
+      setTimeout(() => this.enter(), 0);
     }
     if (this.state.state === 'exit') {
       this.exit();
@@ -119,7 +119,7 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
 
   public componentDidUpdate(prevProps: TransitionProps, prevState: TransitionState) {
     if (prevState.state !== 'enter' && this.state.state === 'enter') {
-      this.enter();
+      setTimeout(() => this.enter(), 0);
     }
     if (prevState.state !== 'exit' && this.state.state === 'exit') {
       this.exit();
