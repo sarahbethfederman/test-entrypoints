@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import Input from './index';
+import { Input } from './index';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 
 const sizes: InputSize[] = ['lg', 'md', 'sm'];

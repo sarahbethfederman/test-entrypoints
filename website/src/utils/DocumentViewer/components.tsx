@@ -12,7 +12,7 @@ import Logo from '@lendi-ui/logo';
 import Carousel from '@lendi-ui/carousel';
 import FeaturePanel from '@lendi-ui/feature-panel';
 import * as icons from '@lendi-ui/icon';
-import Input from '@lendi-ui/text-input';
+import { Input, InputButton } from '@lendi-ui/text-input';
 import { Button, ButtonGroup } from '@lendi-ui/button';
 import Dropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
@@ -65,6 +65,7 @@ const scope = {
   Spinner,
   Transition,
   Input,
+  InputButton,
   Fade,
   Overlay,
   Tabs,

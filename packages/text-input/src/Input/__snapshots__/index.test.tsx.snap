@@ -10,7 +10,6 @@ exports[`input it should match all styles in different size of Input component l
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -22,21 +21,27 @@ exports[`input it should match all styles in different size of Input component l
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #777777;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ffffff;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #777777;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #f8f8f8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -55,28 +60,14 @@ exports[`input it should match all styles in different size of Input component l
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2:active {
-  border: 1px solid #f8f8f8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 <Theme>
@@ -217,13 +208,16 @@ exports[`input it should match all styles in different size of Input component l
       <div
         className="c0"
       >
-        <Input
+        <Component
           isInverse={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={false}
             isFullWidth={false}
+            isInverse={true}
             size="md"
           >
             <div
@@ -231,8 +225,6 @@ exports[`input it should match all styles in different size of Input component l
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={true}
@@ -252,7 +244,7 @@ exports[`input it should match all styles in different size of Input component l
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -269,7 +261,6 @@ exports[`input it should match all styles in different size of Input component l
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -281,21 +272,27 @@ exports[`input it should match all styles in different size of Input component l
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #ff1c4a;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -314,28 +311,14 @@ exports[`input it should match all styles in different size of Input component l
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2:active {
-  border: 1px solid #ff1c4a;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -476,13 +459,16 @@ exports[`input it should match all styles in different size of Input component l
       <div
         className="c0"
       >
-        <Input
+        <Component
           isError={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={true}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -490,8 +476,6 @@ exports[`input it should match all styles in different size of Input component l
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={true}
                 isInverse={false}
@@ -511,7 +495,7 @@ exports[`input it should match all styles in different size of Input component l
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -528,7 +512,6 @@ exports[`input it should match all styles in different size of Input component l
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -540,21 +523,28 @@ exports[`input it should match all styles in different size of Input component l
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #929292;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #c8c8c8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -573,28 +563,14 @@ exports[`input it should match all styles in different size of Input component l
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2:active {
-  border: 1px solid #c8c8c8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -735,13 +711,16 @@ exports[`input it should match all styles in different size of Input component l
       <div
         className="c0"
       >
-        <Input
+        <Component
           isDisabled={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={true}
+            isError={false}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -749,8 +728,6 @@ exports[`input it should match all styles in different size of Input component l
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={false}
@@ -770,7 +747,7 @@ exports[`input it should match all styles in different size of Input component l
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -787,7 +764,6 @@ exports[`input it should match all styles in different size of Input component m
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -799,21 +775,27 @@ exports[`input it should match all styles in different size of Input component m
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #777777;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ffffff;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #777777;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #f8f8f8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -832,28 +814,14 @@ exports[`input it should match all styles in different size of Input component m
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2:active {
-  border: 1px solid #f8f8f8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 <Theme>
@@ -994,13 +962,16 @@ exports[`input it should match all styles in different size of Input component m
       <div
         className="c0"
       >
-        <Input
+        <Component
           isInverse={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={false}
             isFullWidth={false}
+            isInverse={true}
             size="md"
           >
             <div
@@ -1008,8 +979,6 @@ exports[`input it should match all styles in different size of Input component m
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={true}
@@ -1029,7 +998,7 @@ exports[`input it should match all styles in different size of Input component m
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -1046,7 +1015,6 @@ exports[`input it should match all styles in different size of Input component m
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1058,21 +1026,27 @@ exports[`input it should match all styles in different size of Input component m
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #ff1c4a;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -1091,28 +1065,14 @@ exports[`input it should match all styles in different size of Input component m
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2:active {
-  border: 1px solid #ff1c4a;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -1253,13 +1213,16 @@ exports[`input it should match all styles in different size of Input component m
       <div
         className="c0"
       >
-        <Input
+        <Component
           isError={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={true}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -1267,8 +1230,6 @@ exports[`input it should match all styles in different size of Input component m
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={true}
                 isInverse={false}
@@ -1288,7 +1249,7 @@ exports[`input it should match all styles in different size of Input component m
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -1305,7 +1266,6 @@ exports[`input it should match all styles in different size of Input component m
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1317,21 +1277,28 @@ exports[`input it should match all styles in different size of Input component m
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #929292;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #c8c8c8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -1350,28 +1317,14 @@ exports[`input it should match all styles in different size of Input component m
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2:active {
-  border: 1px solid #c8c8c8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -1512,13 +1465,16 @@ exports[`input it should match all styles in different size of Input component m
       <div
         className="c0"
       >
-        <Input
+        <Component
           isDisabled={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={true}
+            isError={false}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -1526,8 +1482,6 @@ exports[`input it should match all styles in different size of Input component m
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={false}
@@ -1547,7 +1501,7 @@ exports[`input it should match all styles in different size of Input component m
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -1564,7 +1518,6 @@ exports[`input it should match all styles in different size of Input component s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1576,21 +1529,27 @@ exports[`input it should match all styles in different size of Input component s
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #777777;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ffffff;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #777777;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #f8f8f8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -1609,28 +1568,14 @@ exports[`input it should match all styles in different size of Input component s
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2:active {
-  border: 1px solid #f8f8f8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #777777;
-  border: 1px solid #e3e3e3;
 }
 
 <Theme>
@@ -1771,13 +1716,16 @@ exports[`input it should match all styles in different size of Input component s
       <div
         className="c0"
       >
-        <Input
+        <Component
           isInverse={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={false}
             isFullWidth={false}
+            isInverse={true}
             size="md"
           >
             <div
@@ -1785,8 +1733,6 @@ exports[`input it should match all styles in different size of Input component s
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={true}
@@ -1806,7 +1752,7 @@ exports[`input it should match all styles in different size of Input component s
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -1823,7 +1769,6 @@ exports[`input it should match all styles in different size of Input component s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1835,21 +1780,27 @@ exports[`input it should match all styles in different size of Input component s
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #ff1c4a;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -1868,28 +1819,14 @@ exports[`input it should match all styles in different size of Input component s
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2:active {
-  border: 1px solid #ff1c4a;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -2030,13 +1967,16 @@ exports[`input it should match all styles in different size of Input component s
       <div
         className="c0"
       >
-        <Input
+        <Component
           isError={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={true}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -2044,8 +1984,6 @@ exports[`input it should match all styles in different size of Input component s
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={true}
                 isInverse={false}
@@ -2065,7 +2003,7 @@ exports[`input it should match all styles in different size of Input component s
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -2082,7 +2020,6 @@ exports[`input it should match all styles in different size of Input component s
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2094,21 +2031,28 @@ exports[`input it should match all styles in different size of Input component s
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #929292;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #c8c8c8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -2127,28 +2071,14 @@ exports[`input it should match all styles in different size of Input component s
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2:active {
-  border: 1px solid #c8c8c8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -2289,13 +2219,16 @@ exports[`input it should match all styles in different size of Input component s
       <div
         className="c0"
       >
-        <Input
+        <Component
           isDisabled={true}
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={true}
+            isError={false}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -2303,8 +2236,6 @@ exports[`input it should match all styles in different size of Input component s
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={false}
@@ -2324,7 +2255,7 @@ exports[`input it should match all styles in different size of Input component s
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>
@@ -2341,7 +2272,6 @@ exports[`input it should render the whole input component and a text input 1`] =
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2353,21 +2283,27 @@ exports[`input it should render the whole input component and a text input 1`] =
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #c8c8c8;
   width: auto;
   height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c1:hover:not(:focus) {
+  border: 1px solid #929292;
 }
 
 .c2 {
   height: 100%;
   width: 100%;
+  border: 0px;
   border-radius: 6px;
-  box-sizing: border-box;
-  background-color: #ffffff;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   font-family: 'Open Sans',sans-serif;
-  border: 1px solid #c8c8c8;
-  padding: 0 12px 0 12px;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
 
 .c2::-webkit-input-placeholder {
@@ -2386,28 +2322,14 @@ exports[`input it should render the whole input component and a text input 1`] =
   color: #adadad;
 }
 
-.c2:focus {
-  border: 1px solid transparent;
-}
-
-.c2:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2:active {
-  border: 1px solid #c8c8c8;
-}
-
 .c2:-moz-read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 .c2:read-only {
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #ffffff;
 }
 
 <Theme>
@@ -2548,12 +2470,15 @@ exports[`input it should render the whole input component and a text input 1`] =
       <div
         className="c0"
       >
-        <Input
+        <Component
           onChange={[MockFunction]}
           placeholder="input here ..."
         >
           <styled.div
+            isDisabled={false}
+            isError={false}
             isFullWidth={false}
+            isInverse={false}
             size="md"
           >
             <div
@@ -2561,8 +2486,6 @@ exports[`input it should render the whole input component and a text input 1`] =
               size="md"
             >
               <styled.input
-                afterExist={false}
-                beforeExist={false}
                 fontSize="md"
                 isError={false}
                 isInverse={false}
@@ -2582,7 +2505,7 @@ exports[`input it should render the whole input component and a text input 1`] =
               </styled.input>
             </div>
           </styled.div>
-        </Input>
+        </Component>
       </div>
     </styled.div>
   </ThemeProvider>

@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputButton it should render InputButton in after wrapper 1`] = `
+.c2 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  height: calc(3 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c2:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c2:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c2:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c2:disabled,
+.c2:disabled:hover,
+.c2:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c2:focus {
+  background-color: #32ccb7;
+}
+
+.c2:hover {
+  background-color: #32ccb7;
+}
+
+.c2:active {
+  background-color: #009984;
+}
+
+.c2:disabled:hover,
+.c2:disabled:active,
+.c2:disabled:focus {
+  background-color: #00c0a5;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1:focus {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c4 .c0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0 0 0 -1.5px;
+}
+
+.c5 .c0 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0 -1.5px 0 0;
+}
+
+<Styled(Button)
+  size="md"
+  variant="primary"
+>
+  <Button
+    className="c0 c1"
+    size="md"
+    variant="primary"
+  >
+    <styled.button
+      className="c0 c1"
+      size="md"
+      variant="primary"
+    >
+      <button
+        className="c0 c1 c2"
+        size="md"
+      >
+        <styled.div>
+          <div
+            className="c3"
+          >
+            <span>
+              search
+            </span>
+          </div>
+        </styled.div>
+      </button>
+    </styled.button>
+  </Button>
+</Styled(Button)>
+`;
+
+exports[`InputButton it should render InputButton in before wrapper 1`] = `
+.c2 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  height: calc(3 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c2:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c2:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c2:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c2:disabled,
+.c2:disabled:hover,
+.c2:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c2:focus {
+  background-color: #32ccb7;
+}
+
+.c2:hover {
+  background-color: #32ccb7;
+}
+
+.c2:active {
+  background-color: #009984;
+}
+
+.c2:disabled:hover,
+.c2:disabled:active,
+.c2:disabled:focus {
+  background-color: #00c0a5;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1:active {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c1:focus {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c4 .c0 {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin: 0 0 0 -1.5px;
+}
+
+<Styled(Button)
+  size="md"
+  variant="primary"
+>
+  <Button
+    className="c0 c1"
+    size="md"
+    variant="primary"
+  >
+    <styled.button
+      className="c0 c1"
+      size="md"
+      variant="primary"
+    >
+      <button
+        className="c0 c1 c2"
+        size="md"
+      >
+        <styled.div>
+          <div
+            className="c3"
+          >
+            <span>
+              search
+            </span>
+          </div>
+        </styled.div>
+      </button>
+    </styled.button>
+  </Button>
+</Styled(Button)>
+`;
