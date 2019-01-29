@@ -4,7 +4,7 @@
 
 ## Before start with LUI
 
-If it's first time to work on LUI, please make sure that your npm account has been added to @lendi, @lendi-ui, @auscred. And log in your npm config user_name and user_email.
+If it's first time to work on LUI, please make sure that your npm account has been added to `@lendi`, `@lendi-ui`, `@auscred`. And log in your npm config user_name and user_email.
 
 ```
 npm login
