@@ -80,6 +80,7 @@ exports[`Button emphasis should not render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -175,6 +176,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -270,6 +272,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="lg"
 >
@@ -365,6 +368,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -460,6 +464,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="sm"
 >
@@ -555,6 +560,7 @@ exports[`Button emphasis should render disabled button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={true}
   size="md"
@@ -652,6 +658,7 @@ exports[`Button emphasis should render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -747,6 +754,7 @@ exports[`Button emphasis should render normal button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={false}
   size="md"
@@ -843,6 +851,7 @@ exports[`Button emphasis should render normal styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -948,6 +957,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="lg"
 >
@@ -1053,6 +1063,7 @@ exports[`Button empty should render "md" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -1158,6 +1169,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="sm"
 >
@@ -1245,6 +1257,7 @@ exports[`Button empty should render inverse styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -1350,6 +1363,7 @@ exports[`Button empty should render normal styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -1445,6 +1459,7 @@ exports[`Button primary should not render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -1540,6 +1555,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="lg"
 >
@@ -1635,6 +1651,7 @@ exports[`Button primary should render "md" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -1730,6 +1747,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="sm"
 >
@@ -1825,6 +1843,7 @@ exports[`Button primary should render disabled button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={true}
   size="md"
@@ -1922,6 +1941,7 @@ exports[`Button primary should render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2003,6 +2023,7 @@ exports[`Button primary should render inverse styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2098,6 +2119,7 @@ exports[`Button primary should render normal button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={false}
   size="md"
@@ -2194,6 +2216,7 @@ exports[`Button primary should render normal styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2294,6 +2317,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="lg"
 >
@@ -2394,6 +2418,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2494,6 +2519,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="sm"
 >
@@ -2576,6 +2602,7 @@ exports[`Button secondary should render inverse styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2676,6 +2703,7 @@ exports[`Button secondary should render normal styles 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2771,6 +2799,7 @@ exports[`Button should not render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2866,6 +2895,7 @@ exports[`Button should not render full width 2`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -2961,6 +2991,7 @@ exports[`Button should render disabled button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={true}
   size="md"
@@ -3057,6 +3088,7 @@ exports[`Button should render disabled button 2`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={true}
   size="md"
@@ -3154,6 +3186,7 @@ exports[`Button should render full width 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -3250,6 +3283,7 @@ exports[`Button should render full width 2`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   size="md"
 >
@@ -3345,6 +3379,7 @@ exports[`Button should render normal button 1`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={false}
   size="md"
@@ -3441,6 +3476,7 @@ exports[`Button should render normal button 2`] = `
 }
 
 <button
+  aria-label="Click me!"
   className="c0"
   disabled={false}
   size="md"

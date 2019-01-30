@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
+import { Lock } from '@lendi-ui/icon';
 import { Button, ButtonSize, ButtonVariant } from '.';
 
 const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
@@ -43,6 +44,28 @@ describe('Button', () => {
     );
     expect(element.find('a')).toHaveLength(0);
     expect(element.find('button')).toHaveLength(1);
+  });
+
+  it('should infer aria-label on button with string children', () => {
+    const element = mount(
+      <Theme>
+        <Button variant="primary" onClick={jest.fn()}>
+          Click me!
+        </Button>
+      </Theme>
+    );
+    expect(element.find('button[aria-label]').prop('aria-label')).toEqual('Click me!');
+  });
+
+  it('should have ability to pass aria label when context cannot be inferred', () => {
+    const element = mount(
+      <Theme>
+        <Button ariaLabel="Locked" variant="primary" onClick={jest.fn()}>
+          <Lock color="primary.500" />>
+        </Button>
+      </Theme>
+    );
+    expect(element.find('button[aria-label]').prop('aria-label')).toEqual('Locked');
   });
 
   allVariants.forEach((variant) => {

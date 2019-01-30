@@ -9,7 +9,9 @@ import {Button} from '@lendi-ui/button';
 ```jsx
 <>
 <Button variant="primary">Continue</Button>
-<br /><br />
+<br/><br/>
+<Button variant="primary" ariaLabel="locked"><Lock color="shade.0"/></Button>
+<br/><br/>
 <Button variant="primary" size={{mobile:'sm', tablet:'md', desktop:'lg'}}>Continue</Button>
 </>
 ```
@@ -27,4 +29,5 @@ import {Button} from '@lendi-ui/button';
   <PropTable.Entry name="href" type="string" description="URL to link to."/>
   <PropTable.Entry name="onClick" type="() => void" description="Handle the click event."/>
   <PropTable.Entry name="children" type="React.ReactNode" description="The button content."/>
+  <PropTable.Entry name="ariaLabel" type="string" description=""/>
 </PropTable>

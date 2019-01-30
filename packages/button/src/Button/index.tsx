@@ -12,6 +12,7 @@ import {
 export { ButtonSize, ButtonVariant };
 
 export interface ButtonProps {
+  ariaLabel?: string;
   variant: ButtonVariant;
   size?: ButtonSize;
   isInverse?: boolean;
@@ -72,8 +73,16 @@ export class Button extends React.Component<ButtonProps> {
         </LinkWrapper>
       );
     } else {
+      const { ariaLabel = '', children } = this.props;
+      let buttonLabel: string = ariaLabel;
+
+      // infer the aria-label from children if possible
+      if (!ariaLabel.length && typeof children === 'string') {
+        buttonLabel = children;
+      }
+
       return (
-        <ButtonWrapper disabled={isDisabled} {...this.commonProps} {...this.buttonProps}>
+        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.commonProps} {...this.buttonProps}>
           {this.renderContent()}
         </ButtonWrapper>
       );

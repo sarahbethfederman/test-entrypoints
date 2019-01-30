@@ -228,6 +228,7 @@ export interface WrapperProps {
   size: ButtonSize;
   isInverse?: boolean;
   isFullWidth?: boolean;
+  ariaLabel?: string;
 }
 
 export const ButtonWrapper = styled.button`
