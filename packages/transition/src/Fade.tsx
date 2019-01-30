@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Transition, { StyleOptions, style } from './Transition';
 
-const TIMEOUT = 0.25;
+const TIMEOUT = 250;
 
 const STYLES: StyleOptions = {
   enter: { opacity: '0' },
@@ -23,9 +23,9 @@ export interface FadeProps {
 export const Fade = (props: FadeProps) => {
   const { timeout: customTimeout, children, ...transitionProps } = props;
   return (
-    <Transition timeout={TIMEOUT || customTimeout} {...transitionProps}>
+    <Transition timeout={customTimeout || TIMEOUT} {...transitionProps}>
       {(state) => (
-        <div style={{ opacity: 0, transition: `opacity ${TIMEOUT}s`, ...style(state, STYLES) }}>{children}</div>
+        <div style={{ opacity: 0, transition: `opacity ${TIMEOUT / 1000}s`, ...style(state, STYLES) }}>{children}</div>
       )}
     </Transition>
   );
