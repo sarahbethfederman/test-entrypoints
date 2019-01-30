@@ -64,7 +64,6 @@ exports[`Alert it should mount Alert component with heading 1`] = `
 
 .c3 > svg {
   fill: #ff1c4a;
-  stroke: #ff1c4a;
   width: inherit;
   height: inherit;
 }
@@ -192,7 +191,6 @@ exports[`Alert it should mount Alert component without heading 1`] = `
 
 .c2 > svg {
   fill: #ff1c4a;
-  stroke: #ff1c4a;
   width: inherit;
   height: inherit;
 }

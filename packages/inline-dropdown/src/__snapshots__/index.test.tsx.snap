@@ -3,7 +3,6 @@
 exports[`Dropdown render BoxArrow component 1`] = `
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -53,7 +52,6 @@ exports[`Dropdown render BoxArrow component 1`] = `
 exports[`Dropdown render SelectedBox component and has size property "md" 1`] = `
 .c3 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -240,7 +238,6 @@ Array [
 exports[`Dropdown render whole component 1`] = `
 .c3 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }

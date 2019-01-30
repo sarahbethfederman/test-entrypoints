@@ -30,14 +30,12 @@ exports[`Footer it should mount Footer component 1`] = `
 
 .c19 > svg {
   fill: #ffffff;
-  stroke: #ffffff;
   width: inherit;
   height: inherit;
 }
 
 .c22 > svg {
   fill: #ffffff;
-  stroke: #ffffff;
   width: inherit;
   height: inherit;
 }

@@ -17,7 +17,6 @@ export const IconWrapper = styled.span\`
 
   & > svg {
     fill: \${({ color }: IconProps) => getColor(color)};
-    stroke: \${({ color }: IconProps) => getColor(color)};
     width: inherit;
     height: inherit;
   }

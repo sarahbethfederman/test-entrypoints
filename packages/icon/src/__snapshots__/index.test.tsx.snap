@@ -7,7 +7,6 @@ exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -462,7 +461,6 @@ exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -693,7 +691,6 @@ exports[`Icon component Briefcase should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -906,7 +903,6 @@ exports[`Icon component Calendar should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1085,7 +1081,6 @@ exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1414,7 +1409,6 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1628,7 +1622,6 @@ exports[`Icon component CashOut should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -1861,7 +1854,6 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2057,7 +2049,6 @@ exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2263,7 +2254,6 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2460,7 +2450,6 @@ exports[`Icon component ChevronCircle should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2643,7 +2632,6 @@ exports[`Icon component ChevronDown should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -2822,7 +2810,6 @@ exports[`Icon component ChevronLeft should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3001,7 +2988,6 @@ exports[`Icon component ChevronRight should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3180,7 +3166,6 @@ exports[`Icon component ChevronUp should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3359,7 +3344,6 @@ exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3609,7 +3593,6 @@ exports[`Icon component Clock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3806,7 +3789,6 @@ exports[`Icon component Close should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -3985,7 +3967,6 @@ exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4177,7 +4158,6 @@ exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4373,7 +4353,6 @@ exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4631,7 +4610,6 @@ exports[`Icon component Consolidations should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -4835,7 +4813,6 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5031,7 +5008,6 @@ exports[`Icon component Credit should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5243,7 +5219,6 @@ exports[`Icon component Deposits should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5439,7 +5414,6 @@ exports[`Icon component Document should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5634,7 +5608,6 @@ exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -5857,7 +5830,6 @@ exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6068,7 +6040,6 @@ exports[`Icon component Dollar should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6247,7 +6218,6 @@ exports[`Icon component Email should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6429,7 +6399,6 @@ exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6655,7 +6624,6 @@ exports[`Icon component Error should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -6834,7 +6802,6 @@ exports[`Icon component Eye should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7013,7 +6980,6 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7213,7 +7179,6 @@ exports[`Icon component Facebook should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7392,7 +7357,6 @@ exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7614,7 +7578,6 @@ exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -7814,7 +7777,6 @@ exports[`Icon component Flow should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8041,7 +8003,6 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8261,7 +8222,6 @@ exports[`Icon component Gauge should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8450,7 +8410,6 @@ exports[`Icon component Graph should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8645,7 +8604,6 @@ exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -8888,7 +8846,6 @@ exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9118,7 +9075,6 @@ exports[`Icon component Hamburger should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9297,7 +9253,6 @@ exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9599,7 +9554,6 @@ exports[`Icon component Heart should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9778,7 +9732,6 @@ exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -9982,7 +9935,6 @@ exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10186,7 +10138,6 @@ exports[`Icon component HomeTime should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10396,7 +10347,6 @@ exports[`Icon component House should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10575,7 +10525,6 @@ exports[`Icon component HouseHome should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10753,7 +10702,6 @@ exports[`Icon component Id should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -10979,7 +10927,6 @@ exports[`Icon component IdVerify should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11212,7 +11159,6 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11392,7 +11338,6 @@ exports[`Icon component LargeLock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11611,7 +11556,6 @@ exports[`Icon component Left should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11792,7 +11736,6 @@ exports[`Icon component LendiLogo should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -11979,7 +11922,6 @@ exports[`Icon component Linkedin should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12164,7 +12106,6 @@ exports[`Icon component LiveChat should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12356,7 +12297,6 @@ exports[`Icon component Lmi should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12548,7 +12488,6 @@ exports[`Icon component Lock should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12730,7 +12669,6 @@ exports[`Icon component LockCircle should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -12958,7 +12896,6 @@ exports[`Icon component LowDoc should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13150,7 +13087,6 @@ exports[`Icon component LuiLogo should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13337,7 +13273,6 @@ exports[`Icon component Lvr should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13557,7 +13492,6 @@ exports[`Icon component Message should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13739,7 +13673,6 @@ exports[`Icon component Mobile should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -13918,7 +13851,6 @@ exports[`Icon component Money should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14152,7 +14084,6 @@ exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`]
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14344,7 +14275,6 @@ exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14544,7 +14474,6 @@ exports[`Icon component Offset should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14736,7 +14665,6 @@ exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -14979,7 +14907,6 @@ exports[`Icon component Phone should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15161,7 +15088,6 @@ exports[`Icon component PickATime should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15357,7 +15283,6 @@ exports[`Icon component PreApproval should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15545,7 +15470,6 @@ exports[`Icon component Preferences should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15760,7 +15684,6 @@ exports[`Icon component Question should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -15939,7 +15862,6 @@ exports[`Icon component Refinance should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16121,7 +16043,6 @@ exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16313,7 +16234,6 @@ exports[`Icon component RefinanceHome should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16494,7 +16414,6 @@ exports[`Icon component Relax should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16702,7 +16621,6 @@ exports[`Icon component Right should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -16882,7 +16800,6 @@ exports[`Icon component Savings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17100,7 +17017,6 @@ exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17317,7 +17233,6 @@ exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17548,7 +17463,6 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17771,7 +17685,6 @@ exports[`Icon component Secured should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -17995,7 +17908,6 @@ exports[`Icon component Settings should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -18219,7 +18131,6 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -18434,7 +18345,6 @@ exports[`Icon component Spinner should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -18589,14 +18499,11 @@ exports[`Icon component Spinner should fetch icon correctly 1`] = `
             >
               <svg
                 height="1em"
-                stroke="currentColor"
                 viewBox="0 0 20 20"
                 width="1em"
               >
                 <path
-                  d="M1.58 10a8 8 0 1 0 8-8"
-                  fill="none"
-                  strokeWidth={3}
+                  d="M10.088.584v3c2.96 0 5.062 1.734 6.006 4.014.944 2.28.682 4.99-1.41 7.082-2.093 2.092-4.803 2.354-7.082 1.41-2.28-.944-4.014-3.047-4.014-6.006h-3c0 4.168 2.576 7.415 5.865 8.777 3.289 1.362 7.406.889 10.354-2.058 2.947-2.947 3.42-7.065 2.058-10.354C17.503 3.16 14.256.584 10.088.584z"
                 />
               </svg>
             </span>
@@ -18615,7 +18522,6 @@ exports[`Icon component Split should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -18803,7 +18709,6 @@ exports[`Icon component Star should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -18989,7 +18894,6 @@ exports[`Icon component Success should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -19168,7 +19072,6 @@ exports[`Icon component SunBed should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -19364,7 +19267,6 @@ exports[`Icon component Target should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -19579,7 +19481,6 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -19774,7 +19675,6 @@ exports[`Icon component Twitter should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -19953,7 +19853,6 @@ exports[`Icon component Upload should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -20136,7 +20035,6 @@ exports[`Icon component Warn should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -20315,7 +20213,6 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -20519,7 +20416,6 @@ exports[`Icon component Youtube should fetch icon correctly 1`] = `
 
 .c1 > svg {
   fill: #00c0a5;
-  stroke: #00c0a5;
   width: inherit;
   height: inherit;
 }

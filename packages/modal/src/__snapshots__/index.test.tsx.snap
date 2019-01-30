@@ -4,7 +4,6 @@ exports[`Modal size should render "lg" size styles on tablet and desktop 1`] = `
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -121,7 +120,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -237,7 +235,6 @@ exports[`Modal size should render "md" size styles on tablet and desktop 1`] = `
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -345,7 +342,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -452,7 +448,6 @@ exports[`Modal size should render "sm" size styles on tablet and desktop 1`] = `
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -560,7 +555,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -667,7 +661,6 @@ exports[`Modal size should render 'md' as default if there are no size value on 
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -773,7 +766,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -879,7 +871,6 @@ exports[`Modal size should render with full width no matter what "lg" is on mobi
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -996,7 +987,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -1112,7 +1102,6 @@ exports[`Modal size should render with full width no matter what "md" is on mobi
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -1220,7 +1209,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -1327,7 +1315,6 @@ exports[`Modal size should render with full width no matter what "sm" is on mobi
 Array [
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
@@ -1435,7 +1422,6 @@ Array [
   </styled.div>,
   .c2 > svg {
   fill: #adadad;
-  stroke: #adadad;
   width: inherit;
   height: inherit;
 }
