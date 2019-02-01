@@ -23,7 +23,7 @@
     "@lendi-ui/logo": "^2.1.1",
     "@lendi-ui/overlay": "^1.0.0",
     "@lendi-ui/spacing": "^3.1.0",
-    "@lendi-ui/transition": "^1.1.0",
+    "@lendi-ui/transition": "^2.0.0",
     "@types/react-stickynode": "^1.4.0",
     "react-stickynode": "^2.1.0"
   },

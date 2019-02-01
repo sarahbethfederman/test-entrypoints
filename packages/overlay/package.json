@@ -14,7 +14,7 @@
   "dependencies": {
     "@lendi-ui/button": "^4.2.0",
     "@lendi-ui/color": "^2.0.1",
-    "@lendi-ui/transition": "^1.0.0",
+    "@lendi-ui/transition": "^2.0.0",
     "react-lifecycles-compat": "^3.0.4",
     "react-scrolllock": "^3.0.2"
   },

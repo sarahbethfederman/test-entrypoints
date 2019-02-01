@@ -27,6 +27,6 @@
     "@lendi-ui/icon": "^4.3.2",
     "@lendi-ui/overlay": "^1.0.0",
     "@lendi-ui/theme": "^4.0.0",
-    "@lendi-ui/transition": "^1.0.0"
+    "@lendi-ui/transition": "^2.0.0"
   }
 }
