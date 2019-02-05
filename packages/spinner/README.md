@@ -11,14 +11,14 @@ yarn add @lendi-ui/spinner
 ## Usage
 
 ```jsx
-import { Spinner } from '@lendi-ui/spinner';
+import Spinner from '@lendi-ui/spinner';
 <Spinner variant="dark" />;
 ```
 
 ## Properties
 
-```
+```jsx
 <PropTable>
-  <PropTable.Entry name="variant" type={ '"light" | "dark"' } defaultValue="dark" description=""/>
+  <PropTable.Entry name="variant" type={'"light" | "dark"'} defaultValue="dark" description="" />
 </PropTable>
 ```
