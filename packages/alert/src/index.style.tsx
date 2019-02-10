@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { color, fg, bg } from '@lendi-ui/color';
 import { Body } from '@lendi-ui/typography';
+import { color, fg, bg } from '@lendi-ui/color';
 import { p, ml, mt } from '@lendi-ui/spacing';
 
 export type AlertVariant = 'error' | 'info' | 'success' | 'warn';
