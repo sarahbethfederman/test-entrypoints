@@ -6,6 +6,7 @@ import {
   LeftGroup,
   RightGroup,
   LogoWrapper,
+  LogoLink,
   HeaderLogo,
   MenuButton,
   HeaderButton,
@@ -13,7 +14,7 @@ import {
 import { Hamburger } from '@lendi-ui/icon';
 import * as ZINDEX from '../constants/z-index';
 import { ButtonGroup } from '@lendi-ui/button';
-import { LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
+import { HOME_PAGE_LINK, LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
 
 export interface HeaderProps {
   onOpenLeftSidebar?: (done: () => void) => void;
@@ -96,7 +97,9 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 <Hamburger color={!isHeaderBgTransparent ? 'primary.500' : 'shade.0'} />
               </MenuButton>
               <LogoWrapper>
-                <HeaderLogo variant={isHeaderBgTransparent ? 'light' : 'dark'} />
+                <LogoLink href={HOME_PAGE_LINK}>
+                  <HeaderLogo variant={isHeaderBgTransparent ? 'light' : 'dark'} />
+                </LogoLink>
               </LogoWrapper>
             </LeftGroup>
             <RightGroup>

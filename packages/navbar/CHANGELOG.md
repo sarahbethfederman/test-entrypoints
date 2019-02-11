@@ -17,3 +17,9 @@
 ### Changed
 
 - Gave the Overlay in Sidebar and wrapper to fix z-index stacking context issue that was causing the overlay to be painted behind the header while fading
+
+## [1.0.5] = 2019-02-08
+
+### Changed
+
+- Fixed that the logo in the header didn't link to '/'

@@ -11,3 +11,4 @@ export const REFINANCE_LANDING_PAGE_LINK = '/owning-property/refinance';
 export const GUIDE_PAGE_LINK = '/guides';
 export const INSPIRE_PAGE_LINK = '/inspire';
 export const CALCULATORS_PAGE_LINK = '/calculators';
+export const HOME_PAGE_LINK = '/';

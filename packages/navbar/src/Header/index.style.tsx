@@ -60,6 +60,10 @@ export const LogoWrapper = styled.div`
   ${ml({ mobile: 'xxxs', tablet: 'xs', desktop: 'sm' })};
 `;
 
+export const LogoLink = styled.a`
+  cursor: pointer;
+`;
+
 export const HeaderLogo = styled(Logo)`
   width: 66px;
   height: 21px;
