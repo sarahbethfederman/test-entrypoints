@@ -49,6 +49,7 @@ const Legal = () => {
           rights reserved.
         </BodyContainer>
       </ContentContainer>
+      <meta name="format-detection" content="telephone=no" />
     </Wrapper>
   );
 };

@@ -114,6 +114,10 @@ exports[`Legal should mount 1`] = `
           </styled.div>
         </div>
       </styled.div>
+      <meta
+        content="telephone=no"
+        name="format-detection"
+      />
     </div>
   </styled.div>
 </Legal>
