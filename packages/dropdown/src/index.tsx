@@ -9,19 +9,21 @@ export interface Item {
 export interface DropdownProps {
   size?: ListSize;
   items: Item[];
+  isFullWidth?: boolean;
 }
 
-const InlineDropdown = ({ size = 'md', items }: DropdownProps) => {
+const Dropdown = ({ size = 'md', items, isFullWidth = true }: DropdownProps) => {
   return (
-    <DropdownWrapper>
-      <Select selectSize={size}>
+    <DropdownWrapper isFullWidth={isFullWidth}>
+      <Select selectSize={size} isFullWidth={isFullWidth}>
         {items.map((item) => (
           <option key={item.value}>{item.label}</option>
         ))}
       </Select>
+
       <IconDown color="primary.500" size={size} />
     </DropdownWrapper>
   );
 };
 
-export default InlineDropdown;
+export default Dropdown;

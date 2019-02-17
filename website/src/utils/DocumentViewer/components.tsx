@@ -14,7 +14,8 @@ import FeaturePanel from '@lendi-ui/feature-panel';
 import * as icons from '@lendi-ui/icon';
 import { Input, InputButton } from '@lendi-ui/text-input';
 import { Button, ButtonGroup } from '@lendi-ui/button';
-import Dropdown from '@lendi-ui/inline-dropdown';
+import Dropdown from '@lendi-ui/dropdown';
+import InlineDropdown from '@lendi-ui/inline-dropdown';
 import * as utils from '@lendi-ui/utils';
 import { Playground } from '@lendi-ui/doc-utils';
 import Popover from '@lendi-ui/popover';
@@ -60,6 +61,7 @@ const scope = {
   Container,
   Theme,
   Dropdown,
+  InlineDropdown,
   Popover,
   Field,
   Spinner,

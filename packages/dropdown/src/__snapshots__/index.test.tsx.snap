@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InlineDropdown render BoxArrow component 1`] = `
+exports[`Dropdown render BoxArrow component 1`] = `
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -49,7 +49,55 @@ exports[`InlineDropdown render BoxArrow component 1`] = `
 </Styled(ChevronDown)>
 `;
 
-exports[`InlineDropdown render SelectedBox component and has size property "md" 1`] = `
+exports[`Dropdown render Dropdown component and has size property "md" 1`] = `
+.c0 {
+  border: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
+  width: 100%;
+}
+
+<styled.select
+  isFullWidth={true}
+  selectSize="md"
+>
+  <select
+    className="c0"
+  >
+    <option
+      key="1"
+    >
+      5 years
+    </option>
+    <option
+      key="2"
+    >
+      10 years
+    </option>
+    <option
+      key="3"
+    >
+      15 years
+    </option>
+    <option
+      key="4"
+    >
+      20 years
+    </option>
+    <option
+      key="5"
+    >
+      25 years
+    </option>
+  </select>
+</styled.select>
+`;
+
+exports[`Dropdown render DropdownWrapper 1`] = `
 .c3 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -61,7 +109,7 @@ exports[`InlineDropdown render SelectedBox component and has size property "md" 
   cursor: pointer;
   position: relative;
   background-color: #f1f1f1;
-  margin-left: calc(0.5 * var(--lendi-ui-size));
+  width: 100%;
 }
 
 .c0:hover {
@@ -76,6 +124,7 @@ exports[`InlineDropdown render SelectedBox component and has size property "md" 
   cursor: pointer;
   padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
   font-size: var(--lendi-ui-size);
+  width: 100%;
 }
 
 .c2 {
@@ -85,11 +134,14 @@ exports[`InlineDropdown render SelectedBox component and has size property "md" 
   top: calc(0.75 * var(--lendi-ui-size));
 }
 
-<styled.div>
+<styled.div
+  isFullWidth={true}
+>
   <div
     className="c0"
   >
     <styled.select
+      isFullWidth={true}
       selectSize="md"
     >
       <select
@@ -159,53 +211,7 @@ exports[`InlineDropdown render SelectedBox component and has size property "md" 
 </styled.div>
 `;
 
-exports[`InlineDropdown render SelectedBox component and has size property "md" 2`] = `
-.c0 {
-  border: none;
-  border-radius: 4px 4px 0 0;
-  font-family: 'Open Sans',sans-serif;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
-  font-size: var(--lendi-ui-size);
-}
-
-<styled.select
-  selectSize="md"
->
-  <select
-    className="c0"
-  >
-    <option
-      key="1"
-    >
-      5 years
-    </option>
-    <option
-      key="2"
-    >
-      10 years
-    </option>
-    <option
-      key="3"
-    >
-      15 years
-    </option>
-    <option
-      key="4"
-    >
-      20 years
-    </option>
-    <option
-      key="5"
-    >
-      25 years
-    </option>
-  </select>
-</styled.select>
-`;
-
-exports[`InlineDropdown render SelectedItem component 1`] = `
+exports[`Dropdown render SelectedItem component 1`] = `
 Array [
   <option
     key="1"
@@ -235,7 +241,7 @@ Array [
 ]
 `;
 
-exports[`InlineDropdown render whole component 1`] = `
+exports[`Dropdown render whole component 1`] = `
 .c3 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -247,7 +253,7 @@ exports[`InlineDropdown render whole component 1`] = `
   cursor: pointer;
   position: relative;
   background-color: #f1f1f1;
-  margin-left: calc(0.5 * var(--lendi-ui-size));
+  width: 100%;
 }
 
 .c0:hover {
@@ -262,6 +268,7 @@ exports[`InlineDropdown render whole component 1`] = `
   cursor: pointer;
   padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
   font-size: var(--lendi-ui-size);
+  width: 100%;
 }
 
 .c2 {
@@ -271,7 +278,7 @@ exports[`InlineDropdown render whole component 1`] = `
   top: calc(0.75 * var(--lendi-ui-size));
 }
 
-<InlineDropdown
+<Dropdown
   items={
     Array [
       Object {
@@ -298,11 +305,14 @@ exports[`InlineDropdown render whole component 1`] = `
   }
   size="md"
 >
-  <styled.div>
+  <styled.div
+    isFullWidth={true}
+  >
     <div
       className="c0"
     >
       <styled.select
+        isFullWidth={true}
         selectSize="md"
       >
         <select
@@ -370,5 +380,5 @@ exports[`InlineDropdown render whole component 1`] = `
       </Styled(ChevronDown)>
     </div>
   </styled.div>
-</InlineDropdown>
+</Dropdown>
 `;

@@ -3,7 +3,7 @@ import {PropTable} from '@lendi-ui/doc-utils';
 ## Usage
 
 ```
-import Dropdown from '@lendi-ui/inline-dropdown';
+import Dropdown from '@lendi-ui/dropdown';
 ```
 
 ```jsx
@@ -31,9 +31,10 @@ items= [
     }
 ],
 
- <InlineDropdown
+ <Dropdown
     size={{mobile:'sm', tablet:'md', desktop:'lg'}}
     items={items}
+    isFullWidth={true}
 />
 
 
@@ -44,5 +45,6 @@ items= [
 
 <PropTable>
   <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="the inline-dropdown size"/>
-  <PropTable.Entry name="items*" type="[{value: string, label: string}]" description="an object array with 'value' and 'label' that display in this component"/>
+  <PropTable.Entry name="items" required type="[{value: string, label: string}]" description="an object array with 'value' and 'label' that display in this component"/>
+  <PropTable.Entry name="isFullWidth" type={'"true | false"'} defaultValue="true" description="the dropdown is intended to use the full width of the container"/>
 </PropTable>
