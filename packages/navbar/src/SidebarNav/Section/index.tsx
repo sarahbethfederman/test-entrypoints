@@ -1,7 +1,8 @@
 import * as React from 'react';
+import * as Fragment from 'react-dot-fragment';
 import { ItemProps } from '../Item';
 import { GroupProps } from '../Group';
-import { Title } from './index.style';
+import { Title, ListWrapper } from './index.style';
 
 // Restrict to Item/Group elements and allow conditional components
 type SectionChild =
@@ -20,9 +21,9 @@ export interface SectionProps {
 export const Section = (props: SectionProps) => {
   const { title, children } = props;
   return (
-    <div>
+    <Fragment>
       {title && <Title>{title}</Title>}
-      {children}
-    </div>
+      <ListWrapper aria-role="menu">{children}</ListWrapper>
+    </Fragment>
   );
 };

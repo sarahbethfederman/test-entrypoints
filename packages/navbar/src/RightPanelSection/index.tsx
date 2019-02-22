@@ -18,7 +18,7 @@ export const RightPanelSection = (props: RightPanelSectionProps) => {
       <RightSidebar.Item icon={<Telephone color="primary.500" />} href={toTel(phoneNumber)}>
         {phoneNumber}
       </RightSidebar.Item>
-      <RightSidebar.Item icon={<LiveChat color="primary.500" />} onClick={onChat}>
+      <RightSidebar.Item icon={<LiveChat color="primary.500" />} onClick={onChat} labelText={'chat online'}>
         Chat online
       </RightSidebar.Item>
       <RightSidebar.Item icon={<PickATime color="primary.500" />} href="/appointment-booking">

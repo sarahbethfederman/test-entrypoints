@@ -2,9 +2,20 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 import { Item } from '../Item/index';
 import { Group } from './index';
-import { MenuToggle, MenuContent } from './index.style';
+import { MenuToggle, MenuContent, ListItem } from './index.style';
 
 describe('Group', () => {
+  it('should render', () => {
+    const group = shallow(
+      <Group title="Your financials">
+        <Item>A</Item>
+        <Item>B</Item>
+        <Item>C</Item>
+      </Group>
+    );
+    expect(group.find(ListItem)).toHaveLength(1);
+  });
+
   it('should be collapsed initially', () => {
     const group = shallow(
       <Group title="Your financials">

@@ -57,6 +57,7 @@ export const style = css`
 export const Link = styled.a`
   ${style};
   text-decoration: none;
+  width: 100%;
 `;
 
 export const Button = styled.button`
@@ -65,4 +66,18 @@ export const Button = styled.button`
 
 export const Icon = styled.div`
   ${mr('sm')};
+`;
+
+export const ListItem = styled.li`
+  ${style};
+  padding: 0;
+  list-style: none;
+
+  > a {
+    border-bottom: 0;
+  }
+
+  > button {
+    border-bottom: 0;
+  }
 `;

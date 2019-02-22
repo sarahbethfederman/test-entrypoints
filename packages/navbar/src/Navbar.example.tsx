@@ -139,7 +139,7 @@ class NavbarExample extends React.Component {
             <div>
               <div>
                 <Heading size="md" my="xs">
-                  Broker status (Changes in the Rigth Sidebar)
+                  Broker status (Changes in the Right Sidebar)
                 </Heading>
                 <ButtonGroup size="lg">
                   <Button variant="secondary" onClick={() => this.setState({ broker: BROKER_DATA })}>

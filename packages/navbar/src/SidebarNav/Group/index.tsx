@@ -1,7 +1,8 @@
 import * as React from 'react';
+import * as Fragment from 'react-dot-fragment';
 import { ChevronDown } from '@lendi-ui/icon';
 import { ItemProps } from '../Item';
-import { Wrapper, MenuToggle, MenuContent } from './index.style';
+import { MenuToggle, MenuContent, ListWrapper, ListItem } from './index.style';
 
 export interface GroupProps {
   title: React.ReactNode;
@@ -27,20 +28,29 @@ export class Group extends React.Component<GroupProps, GroupState> {
     const { title, children } = this.props;
     const { isExpanded } = this.state;
     return (
-      <Wrapper>
-        <MenuToggle isExpanded={isExpanded} onClick={this.handleClick}>
-          <span>{title}</span>
-          <ChevronDown color="primary.500" />
-        </MenuToggle>
-        <MenuContent isExpanded={isExpanded}>
-          {React.Children.map(children, (child) => {
-            if (!React.isValidElement<ItemProps>(child)) {
-              return child;
-            }
-            return React.cloneElement<ItemProps>(child, { depth: 1 });
-          })}
-        </MenuContent>
-      </Wrapper>
+      <Fragment>
+        <ListItem role="none">
+          <MenuToggle
+            isExpanded={isExpanded}
+            onClick={this.handleClick}
+            role="expand submenu"
+            aria-expanded={isExpanded}
+          >
+            <span>{title}</span>
+            <ChevronDown color="primary.500" />
+          </MenuToggle>
+          <MenuContent isExpanded={isExpanded}>
+            <ListWrapper role="menu">
+              {React.Children.map(children, (child) => {
+                if (!React.isValidElement<ItemProps>(child)) {
+                  return child;
+                }
+                return React.cloneElement<ItemProps>(child, { depth: 1 });
+              })}
+            </ListWrapper>
+          </MenuContent>
+        </ListItem>
+      </Fragment>
     );
   }
 }

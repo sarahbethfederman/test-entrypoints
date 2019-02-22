@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as Fragment from 'react-dot-fragment';
 import { SidebarNav } from './../../../SidebarNav';
 import { OLD_DASHBOARD_LINK, DASHBOARD_LINK } from './../../../constants/links';
 import { Applicant } from '../../../types';
@@ -53,7 +54,7 @@ export const FunnelThreeSection = ({ applicants = [], applicationSfid, applicati
 
   if (applicants.length) {
     return (
-      <div>
+      <Fragment>
         {applicants.map((applicant, index) => {
           let groupLabel = 'Your financials';
           if (index > 0) {
@@ -72,7 +73,7 @@ export const FunnelThreeSection = ({ applicants = [], applicationSfid, applicati
             />
           );
         })}
-      </div>
+      </Fragment>
     );
   }
   return null;

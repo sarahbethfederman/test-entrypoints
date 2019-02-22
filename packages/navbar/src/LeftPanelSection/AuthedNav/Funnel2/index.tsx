@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as Fragment from 'react-dot-fragment';
 import { SidebarNav } from './../../../SidebarNav';
 import { OLD_DASHBOARD_LINK, DASHBOARD_LINK } from './../../../constants/links';
 
@@ -23,24 +24,24 @@ export const FunnelTwoSection = ({
       : `${DASHBOARD_LINK}/${applicationSfid}/applicant/primary/`;
   if (transactionType === 'Refinance') {
     return (
-      <div>
+      <Fragment>
         <SidebarNav.Group title="Property">
           <SidebarNav.Item href={`${DASHBOARD_LINK}/${applicationSfid}/lender/lender_name/`}>Lender</SidebarNav.Item>
           <SidebarNav.Item href={propertyLink}>Property address</SidebarNav.Item>
           <SidebarNav.Item href={additionalPropertyLink}>Additional property</SidebarNav.Item>
         </SidebarNav.Group>
         <SidebarNav.Item href={applicantLink}>Applicants</SidebarNav.Item>
-      </div>
+      </Fragment>
     );
   }
 
   return (
-    <div>
+    <Fragment>
       <SidebarNav.Group title="Property">
         <SidebarNav.Item href={propertyLink}>Property address</SidebarNav.Item>
         <SidebarNav.Item href={additionalPropertyLink}>Additional property</SidebarNav.Item>
       </SidebarNav.Group>
       <SidebarNav.Item href={applicantLink}>Applicants</SidebarNav.Item>
-    </div>
+    </Fragment>
   );
 };

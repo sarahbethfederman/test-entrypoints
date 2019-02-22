@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Group should mount 1`] = `
+<styled.nav
+  role="Primary navigation"
+>
+  <Component>
+    <Group
+      title="A"
+    >
+      <Component>
+        A.1
+      </Component>
+    </Group>
+    <Component>
+      B
+    </Component>
+    <Component>
+      C
+    </Component>
+  </Component>
+</styled.nav>
+`;

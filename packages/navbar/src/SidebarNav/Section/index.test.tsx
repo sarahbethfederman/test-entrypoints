@@ -3,9 +3,22 @@ import { shallow } from 'enzyme';
 import { Group } from '../Group/index';
 import { Item } from '../Item/index';
 import { Section } from './index';
-import { Title } from './index.style';
+import { Title, ListWrapper } from './index.style';
 
 describe('Group', () => {
+  it('should render', () => {
+    const section = shallow(
+      <Section title="Your financials">
+        <Group title="A">
+          <Item>A.1</Item>
+        </Group>
+        <Item>B</Item>
+        <Item>C</Item>
+      </Section>
+    );
+    expect(section.find(ListWrapper)).toHaveLength(1);
+  });
+
   it('should render the title when the title is defined', () => {
     const section = shallow(
       <Section title="Your financials">

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, Button, Icon } from './index.style';
+import { Link, Button, Icon, ListItem } from './index.style';
 
 export interface ItemProps {
   href?: string;
@@ -7,23 +7,28 @@ export interface ItemProps {
   depth?: number;
   icon?: React.ReactNode;
   children?: React.ReactNode;
+  labelText?: string;
 }
 
 export const Item = (props: ItemProps) => {
-  const { href, depth = 0, icon, children, onClick } = props;
+  const { href, depth = 0, icon, children, onClick, labelText } = props;
   if (href) {
     return (
-      <Link depth={depth} href={href}>
-        {icon && <Icon>{icon}</Icon>}
-        {children}
-      </Link>
+      <ListItem role="none">
+        <Link depth={depth} href={href} role={labelText ? labelText : 'menu item'}>
+          {icon && <Icon>{icon}</Icon>}
+          {children}
+        </Link>
+      </ListItem>
     );
   } else {
     return (
-      <Button depth={depth} onClick={onClick}>
-        {icon && <Icon>{icon}</Icon>}
-        {children}
-      </Button>
+      <ListItem role="none">
+        <Button depth={depth} onClick={onClick} aria-label={labelText}>
+          {icon && <Icon>{icon}</Icon>}
+          {children}
+        </Button>
+      </ListItem>
     );
   }
 };

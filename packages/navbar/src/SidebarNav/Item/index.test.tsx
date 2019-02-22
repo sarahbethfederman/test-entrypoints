@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 import { Item } from './index';
-import { Link, Button } from './index.style';
+import { ListItem, Link, Button } from './index.style';
 
 describe('Item', () => {
   it('should render a link when there is a href', () => {
@@ -13,6 +13,7 @@ describe('Item', () => {
         href: expect.any(String),
       })
     );
+    expect(item).toMatchSnapshot();
   });
 
   it('should render a button when there is not a href', () => {
@@ -24,5 +25,6 @@ describe('Item', () => {
         onClick: expect.any(Function),
       })
     );
+    expect(item).toMatchSnapshot();
   });
 });

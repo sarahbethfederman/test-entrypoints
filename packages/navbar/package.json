@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -25,6 +25,7 @@
     "@lendi-ui/spacing": "^3.1.0",
     "@lendi-ui/transition": "^2.0.0",
     "@types/react-stickynode": "^1.4.0",
+    "react-dot-fragment": "^0.2.8",
     "react-stickynode": "^2.1.0"
   },
   "peerDependencies": {

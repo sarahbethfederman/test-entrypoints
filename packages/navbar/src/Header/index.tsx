@@ -93,7 +93,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
         <FullWidthContainer transparent={isHeaderBgTransparent}>
           <Container>
             <LeftGroup>
-              <MenuButton onClick={this.handleMenuButtonClick}>
+              <MenuButton onClick={this.handleMenuButtonClick} aria-label="expand menu">
                 <Hamburger color={!isHeaderBgTransparent ? 'primary.500' : 'shade.0'} />
               </MenuButton>
               <LogoWrapper>

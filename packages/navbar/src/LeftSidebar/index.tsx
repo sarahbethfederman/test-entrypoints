@@ -36,7 +36,7 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
     const { onHide } = this.props;
     return (
       <Header>
-        <MenuButton onClick={onHide}>
+        <MenuButton onClick={onHide} aria-label="hide menu">
           <Hamburger color={'primary.500'} />
         </MenuButton>
         <LogoWrapper>
@@ -80,7 +80,7 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
 
   private renderNav() {
     const { children } = this.props;
-    return <SidebarNav>{children}</SidebarNav>;
+    return <SidebarNav labelText="Main Navigation">{children}</SidebarNav>;
   }
 
   private renderFooter() {

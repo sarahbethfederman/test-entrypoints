@@ -8,6 +8,7 @@ export { SectionProps, GroupProps, ItemProps };
 
 export interface NavProps {
   children?: React.ReactElement<SectionProps> | React.ReactElement<SectionProps>[];
+  labelText?: string;
 }
 
 export class SidebarNav extends React.Component<NavProps> {
@@ -16,7 +17,7 @@ export class SidebarNav extends React.Component<NavProps> {
   public static Item = Item;
 
   render() {
-    const { children } = this.props;
-    return <Wrapper>{children}</Wrapper>;
+    const { children, labelText } = this.props;
+    return <Wrapper role={labelText}>{children}</Wrapper>;
   }
 }

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item should render a button when there is not a href 1`] = `
+<styled.li
+  role="none"
+>
+  <styled.button
+    depth={0}
+    onClick={[MockFunction]}
+  />
+</styled.li>
+`;
+
+exports[`Item should render a link when there is a href 1`] = `
+<styled.li
+  role="none"
+>
+  <styled.a
+    depth={0}
+    href="#foobar"
+    role="menu item"
+  >
+    Foo Bar
+  </styled.a>
+</styled.li>
+`;

@@ -23,3 +23,9 @@
 ### Changed
 
 - Fixed that the logo in the header didn't link to '/'
+
+## [1.0.6] = 2019-02-14
+
+### Changed
+
+- Added header tag to Header to improve semantics

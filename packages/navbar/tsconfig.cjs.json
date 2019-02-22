@@ -3,6 +3,6 @@
   "compilerOptions": {
     "outDir": "./dist/cjs"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/*.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/*.d.ts", "packages/*/src/**/*.d.ts"],
   "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.example.tsx"]
 }

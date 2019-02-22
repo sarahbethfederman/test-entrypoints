@@ -88,7 +88,7 @@ export class RightSidebar extends React.Component<RightSidebarProps> {
             {this.renderBroker()}
             {this.renderBrokers()}
           </Header>
-          <SidebarNav>{children}</SidebarNav>
+          <SidebarNav labelText="Broker Menu">{children}</SidebarNav>
           <Footer>
             <Body size="lg">We love feedback!</Body>
             <Body size="md" mt="xxs">

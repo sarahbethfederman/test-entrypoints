@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import { ml, pt, pb } from '@lendi-ui/spacing';
 import { Button } from '../Item/index.style';
 
-export const Wrapper = styled.div``;
-
 export interface ToggleProps {
   isExpanded: boolean;
 }
@@ -28,6 +26,12 @@ export const MenuContent = styled.div`
   overflow: hidden;
   transition: max-height 0.25s;
   ${({ isExpanded }: MenuProps) => isExpanded && `max-height: 20em;`};
+`;
+
+export const ListWrapper = styled.ul`
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
   > :first-child {
     ${pt('xxxs')};
@@ -36,4 +40,10 @@ export const MenuContent = styled.div`
   > :last-child {
     ${pb('xxxs')};
   }
+`;
+
+export const ListItem = styled.li`
+  width: 100%;
+  padding: 0;
+  list-style: none;
 `;

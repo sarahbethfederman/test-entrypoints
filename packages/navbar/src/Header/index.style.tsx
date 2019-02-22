@@ -29,7 +29,7 @@ export const IconButton = styled.button`
   }
 `;
 
-export const FullWidthContainer = styled.div<{ transparent?: boolean }>`
+export const FullWidthContainer = styled.header<{ transparent?: boolean }>`
   width: 100%;
   max-width: 100%;
   ${(p) =>

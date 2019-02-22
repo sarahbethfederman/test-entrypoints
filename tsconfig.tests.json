@@ -8,5 +8,5 @@
       "@lendi-ui/*": ["./packages/*/src"]
     }
   },
-  "include": ["packages/*/src/**/*.test.ts", "packages/*/src/**/*.test.tsx"]
+  "include": ["packages/*/src/**/*.d.ts", "packages/*/src/**/*.test.ts", "packages/*/src/**/*.test.tsx"]
 }
