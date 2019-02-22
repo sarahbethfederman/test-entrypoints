@@ -33,7 +33,7 @@ exports[`Alert it should mount Alert component with heading 1`] = `
   flex-direction: column;
   border: 1px solid #ff1c4a;
   color: #ff1c4a;
-  background-color: #ffe8ec;
+  background-color: #fff3f5;
 }
 
 .c1 {
@@ -178,7 +178,7 @@ exports[`Alert it should mount Alert component without heading 1`] = `
   flex-direction: row;
   border: 1px solid #ff1c4a;
   color: #ff1c4a;
-  background-color: #ffe8ec;
+  background-color: #fff3f5;
 }
 
 .c1 {

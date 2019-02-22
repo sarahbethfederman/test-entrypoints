@@ -30,22 +30,22 @@ export const Wrapper = styled.div`
         case 'error':
           return css`
             border: 1px solid ${color('error.500')};
-            ${fg('error.500')} ${bg('error.50')};
+            ${fg('error.500')} ${bg('error.25')};
           `;
         case 'info':
           return css`
             border: 1px solid ${color('info.500')};
-            ${fg('info.500')} ${bg('info.50')};
+            ${fg('info.500')} ${bg('info.25')};
           `;
         case 'success':
           return css`
             border: 1px solid ${color('success.500')};
-            ${fg('success.500')} ${bg('success.50')};
+            ${fg('success.500')} ${bg('success.25')};
           `;
         case 'warn':
           return css`
             border: 1px solid ${color('warn.500')};
-            ${fg('warn.500')} ${bg('warn.50')};
+            ${fg('warn.500')} ${bg('warn.25')};
           `;
         default:
           return undefined;
