@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch should render the whole component 1`] = `
+.c2 {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.c2:focus ~ span {
+  border: 2px solid #66d9c9;
+  box-shadow: 0 0 3px 0 rgba(0,192,165,0.8);
+}
+
+.c1 {
+  width: calc(2.5 * var(--lendi-ui-size));
+  height: calc(2 * var(--lendi-ui-size));
+  position: relative;
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  --width: calc(2.125 * var(--lendi-ui-size));
+  --height: calc(0.875 * var(--lendi-ui-size));
+  --handle-width: calc(1.25 * var(--lendi-ui-size));
+  position: absolute;
+  content: '';
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height)/2);
+  border-radius: 6px;
+  margin-left: calc(var(--handle-width) * 0.3);
+  margin-right: calc(var(--handle-width) * 0.3);
+  box-sizing: border-box;
+  background-color: #adadad;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c4 {
+  --width: calc(1.25 * var(--lendi-ui-size));
+  --track-width: calc(2.125 * var(--lendi-ui-size));
+  --height: var(--width);
+  --track-margin: var(--width) * 0.3;
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.1), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.14);
+  position: absolute;
+  content: '';
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height)/2);
+  border: 1px solid transparent;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  box-sizing: border-box;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.c6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 6px;
+  min-height: 48px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.c0:hover > span > div {
+  border-color: #00c0a5;
+}
+
+.c0:active > span > div {
+  background-color: #777777;
+}
+
+.c5 {
+  display: inline-block;
+  margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+<ToggleSwitch
+  label="Test Toggle Switch"
+  onChange={[MockFunction]}
+  value="1"
+>
+  <styled.label
+    checked={false}
+    disabled={false}
+    errored={false}
+    isBoxed={false}
+  >
+    <label
+      checked={false}
+      className="c0"
+      disabled={false}
+    >
+      <Toggle
+        isChecked={false}
+        isDisabled={false}
+        isErrored={false}
+        isLoading={false}
+        onChange={[MockFunction]}
+        size="md"
+        value="1"
+      >
+        <styled.span
+          size="md"
+        >
+          <span
+            className="c1"
+            size="md"
+          >
+            <styled.input
+              checked={false}
+              disabled={false}
+              errored={false}
+              onChange={[MockFunction]}
+              type="checkbox"
+              value="1"
+            >
+              <input
+                checked={false}
+                className="c2"
+                disabled={false}
+                onChange={[MockFunction]}
+                type="checkbox"
+                value="1"
+              />
+            </styled.input>
+            <styled.span
+              checked={false}
+              disabled={false}
+              errored={false}
+              size="md"
+            >
+              <span
+                checked={false}
+                className="c3"
+                disabled={false}
+                size="md"
+              />
+            </styled.span>
+            <styled.div
+              checked={false}
+              disabled={false}
+              errored={false}
+              size="md"
+            >
+              <div
+                checked={false}
+                className="c4"
+                disabled={false}
+                size="md"
+              />
+            </styled.div>
+          </span>
+        </styled.span>
+      </Toggle>
+      <Styled(styled.p)
+        size="md"
+      >
+        <styled.p
+          className="c5"
+          size="md"
+        >
+          <p
+            className="c5 c6"
+            size="md"
+          >
+            Test Toggle Switch
+          </p>
+        </styled.p>
+      </Styled(styled.p)>
+    </label>
+  </styled.label>
+</ToggleSwitch>
+`;

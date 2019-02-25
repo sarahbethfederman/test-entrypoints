@@ -31,6 +31,7 @@ import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
 import Legal from '@lendi-ui/legal-stuff';
 import Modal from '@lendi-ui/modal';
 import Alert from '@lendi-ui/alert';
+import ToggleSwitch from '@lendi-ui/toggle-switch';
 
 const scope = {
   styled,
@@ -78,6 +79,7 @@ const scope = {
   Legal,
   Modal,
   Alert,
+  ToggleSwitch,
 };
 
 interface GenericProps {
