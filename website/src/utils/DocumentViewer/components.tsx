@@ -31,6 +31,7 @@ import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
 import Legal from '@lendi-ui/legal-stuff';
 import Modal from '@lendi-ui/modal';
 import Alert from '@lendi-ui/alert';
+import MenuDropdown from '@lendi-ui/menu-dropdown';
 import Card from '@lendi-ui/card';
 import ToggleSwitch from '@lendi-ui/toggle-switch';
 
@@ -80,6 +81,7 @@ const scope = {
   Legal,
   Modal,
   Alert,
+  MenuDropdown,
   Card,
   ToggleSwitch,
 };

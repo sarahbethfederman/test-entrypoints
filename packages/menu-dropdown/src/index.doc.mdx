@@ -1,0 +1,44 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+import { Facebook, ChevronDown } from '@lendi-ui/icon';
+
+## Usage
+
+```
+import MenuDropdown from '@lendi-ui/MenuDropdown';
+```
+
+```jsx
+<MenuDropdown>
+  <MenuDropdown.Trigger iconBefore={<Facebook color="primary.500"/>} iconAfter={<ChevronDown color="primary.500"/>}>
+    mail.com 
+  </MenuDropdown.Trigger>
+  <MenuDropdown.Content>
+
+      <MenuDropdown.Content.Item size={'sm'} onClick={() => console.log("clicked")} icon={<Facebook color="primary.500"/>}>
+         This is one item
+      </MenuDropdown.Content.Item>
+
+      <MenuDropdown.Content.Divider />
+
+      <MenuDropdown.Content.Item size={'md'} onClick={() => console.log("clicked")} icon={<Facebook color="primary.500"/>}>
+        item 3
+      </MenuDropdown.Content.Item>
+
+      <MenuDropdown.Content.Item size={'lg'} onClick={() => console.log("clicked")} icon={<Facebook color="primary.500"/>}>
+        item 3
+      </MenuDropdown.Content.Item>
+
+  </MenuDropdown.Content>
+</MenuDropdown>
+             
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="iconBefore" type="MenuDropdown.Trigger" defaultValue="none" description="Icon before the Trigger"/>
+  <PropTable.Entry name="iconAfter" type="MenuDropdown.Trigger" defaultValue="none" description="Icon after the Trigger"/>
+  <PropTable.Entry name="size" type="MenuDropdown.Content.Item" defaultValue="md" description="Size of the Menu Dropdown Item"/>
+  <PropTable.Entry name="onClick" type="MenuDropdown.Content.Item" defaultValue="none" description="Callback you pass down to be called when item is clicked"/>
+  <PropTable.Entry name="icon" type="MenuDropdown.Content.Item" defaultValue="none" description="Icon for the content item"/>
+</PropTable>
