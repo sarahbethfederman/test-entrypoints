@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card render card with icon and cancel button 1`] = `
+.c0 {
+  border: 1px solid #e3e3e3;
+  position: relative;
+  border-radius: 12px;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-bottom: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c1 {
+  border-radius: 12px 12px 0 0;
+  background-color: #f1f1f1;
+  min-height: 48px;
+  margin-bottom: -1px;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  border-bottom: 1px solid #f1f1f1;
+  zoom: 1;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 0 0 0;
+}
+
+.c3 {
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+}
+
+.c5 {
+  padding-top: calc(0.75 * var(--lendi-ui-size));
+  padding-bottom: calc(0.75 * var(--lendi-ui-size));
+  overflow-wrap: normal;
+  word-wrap: break-word;
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: calc(0.25 * var(--lendi-ui-size));
+}
+
+.c8 {
+  padding-left: var(--lendi-ui-size);
+  padding-right: var(--lendi-ui-size);
+  padding-top: calc(2 * var(--lendi-ui-size));
+  padding-bottom: calc(2 * var(--lendi-ui-size));
+  background: transparent;
+}
+
+.c7 {
+  border: none;
+  color: #00c0a5;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c4 > svg {
+  fill: #0d5a6d;
+  width: inherit;
+  height: inherit;
+}
+
+<Card
+  cardTitleIcon={
+    <Lock
+      color="secondary.500"
+    />
+  }
+  onCancel={[Function]}
+  title="My Testing card"
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.div>
+            <div
+              className="c2"
+            >
+              <styled.div>
+                <div
+                  className="c3"
+                >
+                  <Lock
+                    color="secondary.500"
+                  >
+                    <styled.span
+                      color="secondary.500"
+                    >
+                      <span
+                        className="c4"
+                        color="secondary.500"
+                      >
+                        <svg
+                          height="1em"
+                          viewBox="0 0 24 24"
+                          width="1em"
+                        >
+                          <path
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                          />
+                          <path
+                            d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                          />
+                        </svg>
+                      </span>
+                    </styled.span>
+                  </Lock>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="c5"
+                >
+                  My Testing card
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="c6"
+                >
+                  <styled.div
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="c7"
+                      onClick={[Function]}
+                    >
+                      Cancel
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c8"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</Card>
+`;
+
+exports[`Card render card with interactive title 1`] = `
+.c0 {
+  border: 1px solid #e3e3e3;
+  position: relative;
+  border-radius: 12px;
+  margin-top: calc(1.5 * var(--lendi-ui-size));
+  margin-bottom: calc(1.5 * var(--lendi-ui-size));
+}
+
+.c1 {
+  border-radius: 12px 12px 0 0;
+  background-color: #f1f1f1;
+  min-height: 48px;
+  margin-bottom: -1px;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  border-bottom: 1px solid #f1f1f1;
+  zoom: 1;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 5px 0 0 0;
+}
+
+.c3 {
+  padding-top: calc(0.75 * var(--lendi-ui-size));
+  padding-bottom: calc(0.75 * var(--lendi-ui-size));
+  overflow-wrap: normal;
+  word-wrap: break-word;
+  font-size: 14px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: calc(0.25 * var(--lendi-ui-size));
+}
+
+.c10 {
+  padding-left: var(--lendi-ui-size);
+  padding-right: var(--lendi-ui-size);
+  padding-top: calc(2 * var(--lendi-ui-size));
+  padding-bottom: calc(2 * var(--lendi-ui-size));
+  background: transparent;
+}
+
+.c9 {
+  border: none;
+  color: #00c0a5;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c7 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c4 {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+.c4:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c5 {
+  border: none;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Open Sans',sans-serif;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  font-size: var(--lendi-ui-size);
+  width: 100%;
+}
+
+.c6 {
+  position: absolute;
+  right: 6px;
+  pointer-events: none;
+  top: calc(0.75 * var(--lendi-ui-size));
+}
+
+<Card
+  interactiveTitle={
+    <Dropdown
+      items={
+        Array [
+          Object {
+            "label": "5 years",
+            "value": "1",
+          },
+          Object {
+            "label": "10 years",
+            "value": "2",
+          },
+        ]
+      }
+    />
+  }
+>
+  <styled.div>
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.div>
+            <div
+              className="c2"
+            >
+              <styled.div>
+                <div
+                  className="c3"
+                >
+                  <Dropdown
+                    items={
+                      Array [
+                        Object {
+                          "label": "5 years",
+                          "value": "1",
+                        },
+                        Object {
+                          "label": "10 years",
+                          "value": "2",
+                        },
+                      ]
+                    }
+                  >
+                    <styled.div
+                      isFullWidth={true}
+                    >
+                      <div
+                        className="c4"
+                      >
+                        <styled.select
+                          isFullWidth={true}
+                          selectSize="md"
+                        >
+                          <select
+                            className="c5"
+                          >
+                            <option
+                              key="1"
+                            >
+                              5 years
+                            </option>
+                            <option
+                              key="2"
+                            >
+                              10 years
+                            </option>
+                          </select>
+                        </styled.select>
+                        <Styled(ChevronDown)
+                          color="primary.500"
+                          size="md"
+                        >
+                          <ChevronDown
+                            className="c6"
+                            color="primary.500"
+                            size="md"
+                          >
+                            <styled.span
+                              className="c6"
+                              color="primary.500"
+                              size="md"
+                            >
+                              <span
+                                className="c6 c7"
+                                color="primary.500"
+                                size="md"
+                              >
+                                <svg
+                                  fill="currentColor"
+                                  height="1em"
+                                  viewBox="0 0 24 24"
+                                  width="1em"
+                                >
+                                  <path
+                                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                                  />
+                                </svg>
+                              </span>
+                            </styled.span>
+                          </ChevronDown>
+                        </Styled(ChevronDown)>
+                      </div>
+                    </styled.div>
+                  </Dropdown>
+                </div>
+              </styled.div>
+              <styled.div>
+                <div
+                  className="c8"
+                >
+                  <styled.div
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="c9"
+                      onClick={[Function]}
+                    >
+                      Cancel
+                    </div>
+                  </styled.div>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c10"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</Card>
+`;
