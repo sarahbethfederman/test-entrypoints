@@ -15,7 +15,7 @@ const TabWrapper = css`
   color: #0d5a6d;
   cursor: pointer;
   text-align: center;
-  ${body({ size: 'md' })}
+  ${body({ size: 'sm' })}
   border-bottom: ${(props: TabWrapperProps) => (props.isSelected ? `2px solid ${bg('secondary.600')}` : 'none')};
   ${(props: TabWrapperProps) => unit({ size: 1 / props.tabCount })};
   &:focus {
