@@ -1,8 +1,13 @@
 import * as React from 'react';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 
-export interface InputProp {
+type ReactInputProps = React.InputHTMLAttributes<HTMLInputElement>;
+export type InputProp = Pick<
+  ReactInputProps,
+  Exclude<keyof ReactInputProps, 'size' | 'placeholder' | 'value' | 'readonly'>
+> & {
   size?: InputSize;
+  inputSize?: React.InputHTMLAttributes<HTMLInputElement>['size'];
   isError?: boolean;
   isInverse?: boolean;
   isDisabled?: boolean;
@@ -14,7 +19,7 @@ export interface InputProp {
   onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+};
 
 export const Input = ({
   size = 'md',
@@ -24,18 +29,20 @@ export const Input = ({
   isInverse = false,
   isFullWidth = false,
   isDisabled = false,
+  inputSize,
   ...otherProps
 }: InputProp) => {
   return (
     <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={isDisabled}>
       {before && <BeforeWrapper isDisabled={isDisabled}>{before}</BeforeWrapper>}
       <InputWrapper
+        {...otherProps}
         type="text"
         readOnly={isDisabled}
         isError={isError}
         isInverse={isInverse}
         fontSize={size}
-        {...otherProps}
+        size={inputSize}
       />
       {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
     </Layout>

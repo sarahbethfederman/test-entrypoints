@@ -20,6 +20,7 @@ class Example extends React.Component<{}, ExampleState> {
     return (
       <div style={{ width: '600px' }}>
         <Input
+          autoFocus
           size="md"
           value={this.state.value}
           placeholder="input here ..."

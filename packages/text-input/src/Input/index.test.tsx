@@ -68,4 +68,28 @@ describe('input', () => {
       });
     });
   });
+
+  it('should be able to passed down other input attributes', () => {
+    const inputProps = {
+      autoFocus: true,
+      autoComplete: 'on',
+      tabIndex: 0,
+    };
+    render(inputProps);
+    const InputElement = element.find(InputWrapper);
+    expect(InputElement.props().autoFocus).toBe(true);
+    expect(InputElement.props().autoComplete).toBe('on');
+    expect(InputElement.props().tabIndex).toBe(0);
+  });
+
+  it('should pass down Input inputSize prop as the input html size attribute', () => {
+    const inputSize = 3;
+    const size = 'md';
+    render({ inputSize, size });
+    const InputElement = element.find(InputWrapper);
+    const LayoutElement = element.find(Layout);
+    expect(InputElement.props().size).toBe(inputSize);
+    expect(InputElement.props().fontSize).toBe(size);
+    expect(LayoutElement.props().size).toBe(size);
+  });
 });
