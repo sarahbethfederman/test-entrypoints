@@ -73,8 +73,8 @@ describe('ToggleSwitch', () => {
     expect(element.find(Spinner)).toHaveLength(1);
   });
 
-  it('should render the correct colours and icon when errored', () => {
-    render({ isErrored: true });
+  it('should render the correct colours and icon when error', () => {
+    render({ isError: true });
 
     expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', theme.colors.error['200']);
     expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', theme.colors.error['500']);

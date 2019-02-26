@@ -7,7 +7,7 @@ import { Size } from '../index.style';
 export interface ToggleProps {
   isChecked?: boolean;
   isDisabled?: boolean;
-  isErrored?: boolean;
+  isError?: boolean;
   isLoading?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: Size;
@@ -16,7 +16,7 @@ export interface ToggleProps {
 
 export class Toggle extends React.Component<ToggleProps, {}> {
   getHandleIcon = () => {
-    if (this.props.isErrored) {
+    if (this.props.isError) {
       return (
         <IconWrapper>
           <Warn color={'shade.0'} />
@@ -33,8 +33,8 @@ export class Toggle extends React.Component<ToggleProps, {}> {
   };
 
   render() {
-    const { isChecked = false, isDisabled = false, isErrored = false, onChange, size = 'md', value } = this.props;
-    const commonProps = { checked: isChecked, disabled: isDisabled, errored: isErrored };
+    const { isChecked = false, isDisabled = false, isError = false, onChange, size = 'md', value } = this.props;
+    const commonProps = { checked: isChecked, disabled: isDisabled, error: isError };
     return (
       <ToggleWrapper size={size}>
         <ToggleCheckboxWrapper {...commonProps} type="checkbox" value={value} onChange={onChange} />

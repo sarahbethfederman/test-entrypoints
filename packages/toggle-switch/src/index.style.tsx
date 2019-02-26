@@ -9,7 +9,7 @@ interface WrapperProps {
   isBoxed: boolean;
   checked: boolean;
   disabled: boolean;
-  errored: boolean;
+  error: boolean;
 }
 
 export const Wrapper = styled.label`
@@ -84,8 +84,8 @@ export const Wrapper = styled.label`
 
   /* Hover effects for child div (Toggle Handle) */
   :hover > span > div {
-    ${({ errored, checked, disabled }: WrapperProps) => {
-      if (!errored && !disabled) {
+    ${({ error, checked, disabled }: WrapperProps) => {
+      if (!error && !disabled) {
         return checked
           ? bg('primary.300')
           : css`
@@ -98,8 +98,8 @@ export const Wrapper = styled.label`
 
   /* Active style for child div (Toggle Handle) */
   :active > span > div {
-    ${({ errored, checked }: WrapperProps) => {
-      return !errored && (checked ? bg('primary.600') : bg('shade.500'));
+    ${({ error, checked }: WrapperProps) => {
+      return !error && (checked ? bg('primary.600') : bg('shade.500'));
     }};
   }
 `;

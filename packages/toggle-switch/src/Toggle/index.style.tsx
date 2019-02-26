@@ -62,7 +62,7 @@ const ToggleHandleBySizeMixin = (size: Size) => {
 interface ToggleCheckboxWrapperProps {
   checked: boolean;
   disabled: boolean;
-  errored: boolean;
+  error: boolean;
 }
 
 export const ToggleCheckboxWrapper = styled.input`
@@ -73,8 +73,8 @@ export const ToggleCheckboxWrapper = styled.input`
 
   /* Focus styles for sibling span (Toggle Track) */
   :focus ~ span {
-  ${({ errored, checked, disabled }: ToggleCheckboxWrapperProps) => {
-    if (!errored && !disabled) {
+  ${({ error, checked, disabled }: ToggleCheckboxWrapperProps) => {
+    if (!error && !disabled) {
       const checkedCSS = css`
           ${bg('primary.300')}
           border: 2px solid ${color('primary.300')};
@@ -91,8 +91,8 @@ export const ToggleCheckboxWrapper = styled.input`
 
   /* Focus styles for sibling div (Toggle Handle) */
   :focus ~ div {
-  ${({ errored, checked, disabled }: ToggleCheckboxWrapperProps) => {
-    return !errored && !disabled && checked && bg('primary.300');
+  ${({ error, checked, disabled }: ToggleCheckboxWrapperProps) => {
+    return !error && !disabled && checked && bg('primary.300');
   }};
 `;
 
@@ -112,7 +112,7 @@ export const ToggleWrapper = styled.span`
 interface TogglePartsProps {
   checked: boolean;
   disabled: boolean;
-  errored: boolean;
+  error: boolean;
   size: Size;
 }
 
@@ -141,8 +141,8 @@ export const ToggleTrack = styled.span`
   }}
 
   /* Error styles */
-  ${({ errored }: TogglePartsProps) => {
-    return errored && bg('error.200');
+  ${({ error }: TogglePartsProps) => {
+    return error && bg('error.200');
   }}
 `;
 
@@ -179,8 +179,8 @@ export const ToggleHandle = styled.div`
   }}
 
   /* Error styles */
-  ${({ errored }: TogglePartsProps) => {
-    return errored && bg('error.500');
+  ${({ error }: TogglePartsProps) => {
+    return error && bg('error.500');
   }}
 `;
 

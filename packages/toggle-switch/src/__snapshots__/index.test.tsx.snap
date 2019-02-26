@@ -109,7 +109,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   <styled.label
     checked={false}
     disabled={false}
-    errored={false}
+    error={false}
     isBoxed={false}
   >
     <label
@@ -120,7 +120,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
       <Toggle
         isChecked={false}
         isDisabled={false}
-        isErrored={false}
+        isError={false}
         isLoading={false}
         onChange={[MockFunction]}
         size="md"
@@ -136,7 +136,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
             <styled.input
               checked={false}
               disabled={false}
-              errored={false}
+              error={false}
               onChange={[MockFunction]}
               type="checkbox"
               value="1"
@@ -153,7 +153,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
             <styled.span
               checked={false}
               disabled={false}
-              errored={false}
+              error={false}
               size="md"
             >
               <span
@@ -166,7 +166,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
             <styled.div
               checked={false}
               disabled={false}
-              errored={false}
+              error={false}
               size="md"
             >
               <div

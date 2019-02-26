@@ -7,7 +7,7 @@ export interface ToggleSwitchProps {
   isBoxed?: boolean;
   isChecked?: boolean;
   isDisabled?: boolean;
-  isErrored?: boolean;
+  isError?: boolean;
   isLoading?: boolean;
   label?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -22,16 +22,16 @@ class ToggleSwitch extends React.Component<ToggleSwitchProps, {}> {
       isBoxed = false,
       isChecked = false,
       isDisabled = false,
-      isErrored = false,
+      isError = false,
       isLoading = false,
       label,
       onChange,
       size = 'md',
       value,
     } = this.props;
-    const toggleProps = { isChecked, isDisabled, isErrored, isLoading, onChange, size, value };
+    const toggleProps = { isChecked, isDisabled, isError, isLoading, onChange, size, value };
     return (
-      <Wrapper isBoxed={isBoxed} checked={isChecked} disabled={isDisabled} errored={isErrored} className={className}>
+      <Wrapper isBoxed={isBoxed} checked={isChecked} disabled={isDisabled} error={isError} className={className}>
         <Toggle {...toggleProps} />
         <ToggleLabel size={size} color={isDisabled ? 'shade.200' : undefined}>
           {label}

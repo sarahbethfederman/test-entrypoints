@@ -27,7 +27,7 @@ class Example extends React.Component<{}, ExampleState> {
         <ToggleSwitch value={value} label={'Boxed'} isChecked={isChecked} onChange={this.handleChange} isBoxed />
         <ToggleSwitch value={value} label={'Disabled'} isChecked={isChecked} onChange={this.handleChange} isDisabled />
         <ToggleSwitch value={value} label={'Loading'} isChecked={isChecked} onChange={this.handleChange} isLoading />
-        <ToggleSwitch value={value} label={'Errored'} isChecked={isChecked} onChange={this.handleChange} isErrored />
+        <ToggleSwitch value={value} label={'Error'} isChecked={isChecked} onChange={this.handleChange} isError />
         <ToggleSwitch value={value} label={'Small'} isChecked={isChecked} onChange={this.handleChange} size={'sm'} />
       </div>
     );
