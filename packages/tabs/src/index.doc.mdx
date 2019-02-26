@@ -1,5 +1,5 @@
 import {PropTable} from '@lendi-ui/doc-utils';
-import { Lock } from '@lendi-ui/icon';
+import { Heart } from '@lendi-ui/icon';
 
 ## Usage
 
@@ -9,47 +9,64 @@ import Tabs from '@lendi-ui/tabs';
 
 ```jsx
 <Tabs variant='positive' onChange={() => console.log('changed')} activeTab={1}>
-        <Tabs.Tab icon={<Lock color="secondary.500"/>} >
-            string
-        </Tabs.Tab>
-        <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-        <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-        <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-         <Tabs.Tab icon={<Lock color="secondary.500"/>}>
-            string
-        </Tabs.Tab>
-      </Tabs>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>} href="https://lendi.com.au">
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+    <Tabs.Tab icon={<Heart color="secondary.500"/>}>
+        string
+    </Tabs.Tab>
+</Tabs>
 ```
+
+## Tabs Properties
+
+<PropTable>
+  <PropTable.Entry name="variant" type="positive" description="make tab background color as primary.500, otherwise transparent"/>
+  <PropTable.Entry name="onChange" type="() => void" description="Handle the change event"/>
+  <PropTable.Entry name="activeTab" type="number" description="index of active tab"/>
+</PropTable>
+
+<br/><br/>
+
+## Tabs.Tab Properties
+
+<PropTable>
+  <PropTable.Entry name="icon" type="React.ReactNode" description="Icon on top of text."/>
+  <PropTable.Entry name="href" type="string" description="URL to link to"/>
+</PropTable>

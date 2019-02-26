@@ -1,18 +1,21 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { unit } from '@lendi-ui/grid';
 import { bg } from '@lendi-ui/color';
+import { py } from '@lendi-ui/spacing';
+import { body } from '@lendi-ui/typography';
 
 export interface TabWrapperProps {
   tabCount: number;
   isSelected: boolean;
 }
 
-export const TabWrapper = styled.button`
+const TabWrapper = css`
   border: 0;
   background: none;
   color: #0d5a6d;
   cursor: pointer;
   text-align: center;
+  ${body({ size: 'md' })}
   border-bottom: ${(props: TabWrapperProps) => (props.isSelected ? `2px solid ${bg('secondary.600')}` : 'none')};
   ${(props: TabWrapperProps) => unit({ size: 1 / props.tabCount })};
   &:focus {
@@ -26,5 +29,17 @@ export const TabWrapper = styled.button`
     background-color: rgba(0, 0, 0, 0.1);
   }
   min-width: 120px;
-  box-sizing: border-box;
+`;
+
+export const TabWrapperBtn = styled.button`
+  ${TabWrapper};
+`;
+
+export const TabWrapperA = styled.a`
+  ${TabWrapper} text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  ${py('xxs')};
 `;

@@ -3,7 +3,7 @@ import * as Enzyme from 'enzyme';
 import Tabs from '.';
 import { Lock } from '@lendi-ui/icon';
 import Theme from '@lendi-ui/theme';
-import { TabWrapper } from '../Tab/index.style';
+import { TabWrapperBtn, TabWrapperA } from '../Tab/index.style';
 import { RightIconWrapper, LeftIconWrapper } from './index.style';
 import { Tab } from '../Tab';
 
@@ -50,6 +50,11 @@ describe('Tabs', () => {
     expect(tabs).toBeTruthy();
   });
 
+  it('render a element if href props was provided', () => {
+    render({ variant: 'positive', activeTab: 1, href: 'https://lendi.com.au' });
+    expect(tabs.find(TabWrapperA)).toBeTruthy();
+  });
+
   it('should show right and left arrows for desktop where scroll is needed', () => {
     render({ variant: 'positive', activeTab: 1 });
     Object.defineProperty(tabs.getDOMNode(), 'scrollWidth', {
@@ -70,7 +75,7 @@ describe('Tabs', () => {
       tabs
         .find(Tab)
         .at(0)
-        .find(TabWrapper)
+        .find(TabWrapperBtn)
         .props()['isSelected']
     ).toBe(true);
 
@@ -80,7 +85,7 @@ describe('Tabs', () => {
       tabs
         .find(Tab)
         .at(1)
-        .find(TabWrapper)
+        .find(TabWrapperBtn)
         .props()['isSelected']
     ).toBe(true);
   });

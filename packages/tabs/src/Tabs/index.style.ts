@@ -15,7 +15,6 @@ const commonScrollGradientStyle = css`
   position: sticky;
   content: '\\2007 \\2007';
   width: 20px;
-  height: 48px;
   pointer-events: none;
   z-index: ${GRADIENT};
 `;
