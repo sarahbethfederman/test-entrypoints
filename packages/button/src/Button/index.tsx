@@ -28,7 +28,7 @@ export interface ButtonProps {
 
 export class Button extends React.Component<ButtonProps> {
   get commonProps() {
-    const { variant, size = 'md', isInverse, isFullWidth, isDisabled, className } = this.props;
+    const { variant, size = 'md', isInverse, isFullWidth, isDisabled, className, onClick } = this.props;
     return {
       variant,
       size,
@@ -36,6 +36,7 @@ export class Button extends React.Component<ButtonProps> {
       isFullWidth,
       isDisabled,
       className,
+      onClick,
     };
   }
 
@@ -43,13 +44,6 @@ export class Button extends React.Component<ButtonProps> {
     const { href } = this.props;
     return {
       href,
-    };
-  }
-
-  get buttonProps() {
-    const { onClick } = this.props;
-    return {
-      onClick,
     };
   }
 
@@ -82,7 +76,7 @@ export class Button extends React.Component<ButtonProps> {
       }
 
       return (
-        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.commonProps} {...this.buttonProps}>
+        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.commonProps}>
           {this.renderContent()}
         </ButtonWrapper>
       );
