@@ -33,16 +33,16 @@ function getVersionFromManifest(workspaceDirectory): string {
 }
 
 function wereFilesInWorkspaceCreatedOrModified(workspaceDirectory: string): boolean {
-  const created = danger.git.created_files.find((file) => file.startsWith(workspaceDirectory));
-  const modified = danger.git.modified_files.find((file) => file.startsWith(workspaceDirectory));
+  const created = danger.git.created_files.find((file) => file.startsWith(`${workspaceDirectory}/`));
+  const modified = danger.git.modified_files.find((file) => file.startsWith(`${workspaceDirectory}/`));
   return Boolean(created || modified);
 }
 
 function wereCreatedOrModifiedFilesExcluded(workspaceDirectory: string): boolean {
   const manifestExcludes = require(`./${workspaceDirectory}/tsconfig.cjs.json`).exclude;
   const manifestIncludes = require(`./${workspaceDirectory}/tsconfig.cjs.json`).include;
-  const created = danger.git.created_files.filter((file) => file.startsWith(workspaceDirectory));
-  const modified = danger.git.modified_files.filter((file) => file.startsWith(workspaceDirectory));
+  const created = danger.git.created_files.filter((file) => file.startsWith(`${workspaceDirectory}/`));
+  const modified = danger.git.modified_files.filter((file) => file.startsWith(`${workspaceDirectory}/`));
 
   // nothing to see, assume excluded
   if (created.length < 1 && modified.length < 1) {
