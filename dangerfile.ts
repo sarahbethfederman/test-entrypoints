@@ -112,9 +112,10 @@ async function expectManifestToBeBumped() {
 async function expectChangelogToBeCreatedOrUpdated() {
   const workspaceDirectories = getWorkspaceDirectories();
   workspaceDirectories.forEach((workspaceDirectory) => {
+    const filesCreatedOrModifiedFilesExcluded = wereCreatedOrModifiedFilesExcluded(workspaceDirectory);
     const filesInWorkspaceWereCreatedOrModified = wereFilesInWorkspaceCreatedOrModified(workspaceDirectory);
     const changelogWasUpdated = isWorkspaceChangelogUpdated(workspaceDirectory);
-    if (filesInWorkspaceWereCreatedOrModified && !changelogWasUpdated) {
+    if (filesInWorkspaceWereCreatedOrModified && !changelogWasUpdated && !filesCreatedOrModifiedFilesExcluded) {
       fail(`Files in the "${workspaceDirectory}" workspace were modified but the CHANGELOG.md was not.`);
     }
   });
