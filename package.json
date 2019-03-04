@@ -63,7 +63,8 @@
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
     "start": "cd website && yarn start",
     "create-component": "npx create-lui-component",
-    "precommit": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build",
+    "precommit": "yarn run lint-staged",
+    "prepush": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build",
     "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "lint-staged": {
