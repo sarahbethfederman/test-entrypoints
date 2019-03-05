@@ -2,3 +2,5 @@
 **/dist/**/*
 **/icons-compiled/**/*
 **/CHANGELOG.md
+**/.vscode/**/*
+*.mdx

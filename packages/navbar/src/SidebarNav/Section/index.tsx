@@ -23,7 +23,7 @@ export const Section = (props: SectionProps) => {
   return (
     <Fragment>
       {title && <Title>{title}</Title>}
-      <ListWrapper aria-role="menu">{children}</ListWrapper>
+      <ListWrapper role="menu">{children}</ListWrapper>
     </Fragment>
   );
 };

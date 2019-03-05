@@ -53,6 +53,7 @@
     "check:lint-source": "tslint -p tsconfig.types.json -c ./tslint.sources.json --format stylish --exclude '**/*.+(doc|example|test).+(ts|tsx)' '+(packages|utils)/*/src/*.+(ts|tsx)' '+website/src/**/*.+(ts|tsx)'",
     "check:lint-doc-and-test": "tslint -p tsconfig.types.json -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
+    "format:fix": "prettier --write",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
     "check:danger": "danger local --base master",
     "remove:duplicates": "yarn-deduplicate",

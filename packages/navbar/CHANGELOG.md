@@ -29,3 +29,10 @@
 ### Changed
 
 - Added header tag to Header to improve semantics
+
+## [1.0.7] = 2019-03-01
+
+### Changed
+
+- Removed aria-role attribute for just role on ul element.
+- Fixed React warning under unit tests
