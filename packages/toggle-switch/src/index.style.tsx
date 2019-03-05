@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
-import { bg, color } from '@lendi-ui/color';
 import { Body } from '@lendi-ui/typography';
+import { bg, color } from '@lendi-ui/color';
 import { ml } from '@lendi-ui/spacing';
 
 export type Size = 'md' | 'sm';
