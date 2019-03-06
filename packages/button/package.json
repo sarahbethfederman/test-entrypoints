@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -31,6 +31,6 @@
     "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
   },
   "devDependencies": {
-    "@lendi-ui/icon": "^4.3.2"
+    "@lendi-ui/icon": "^5.0.1"
   }
 }

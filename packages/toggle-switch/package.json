@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/toggle-switch",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@lendi-ui/color": "^2.0.2",
     "@lendi-ui/depth": "^1.0.0",
-    "@lendi-ui/icon": "^4.4.0",
+    "@lendi-ui/icon": "^5.0.1",
     "@lendi-ui/typography": "^2.5.4",
     "@lendi-ui/spacing": "^3.1.2",
     "@lendi-ui/spinner": "^1.0.1",
