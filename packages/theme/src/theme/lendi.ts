@@ -1,3 +1,5 @@
+import { ThemeMap } from '../types';
+
 const typography = {
   heading: {
     fontFamily: "'Cabin', sans-serif",
@@ -129,7 +131,7 @@ const colors = {
   },
 };
 
-export const theme = {
+export const theme: ThemeMap = {
   typography,
   colors,
   logo,

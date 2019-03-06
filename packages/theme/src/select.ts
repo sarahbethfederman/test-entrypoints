@@ -1,7 +1,7 @@
-import { Theme } from './types';
+import { ThemeMap } from './types';
 
 export function select(path: string, defaultValue?: any): any {
-  return ({ theme }: { theme?: Partial<Theme> }) => {
+  return ({ theme }: { theme?: Partial<ThemeMap> }) => {
     if (!theme) {
       throw new Error(
         '@lendi-ui/theme: Theme not found. Please ensure your components are wrapped in the Theme component e.g. <Theme><App/></Theme>'

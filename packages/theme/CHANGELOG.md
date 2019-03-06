@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.0.0] - 2019-03-06 - [BRAVO-387] (https://creditandfinance.atlassian.net/browse/BRAVO-387)
+
+### Changed
+-- added optional theme kind prop
+
 ## [4.0.2] - 2019-02-25 - [BRAVO-511] (https://creditandfinance.atlassian.net/browse/BRAVO-511)
  
 ### Changed

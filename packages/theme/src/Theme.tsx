@@ -1,8 +1,10 @@
 import * as React from 'react';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import { theme } from './theme/lendi';
+import { ThemeMap } from './types';
 
 interface ThemeProps {
+  kind?: ThemeMap;
   children?: React.ReactNode;
 }
 
@@ -31,9 +33,10 @@ const Root = styled.div`
 
 export function Theme(props: ThemeProps) {
   const { children } = props;
+  const kind = props.kind || theme;
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={kind}>
       <Root>{children}</Root>
     </ThemeProvider>
   );
