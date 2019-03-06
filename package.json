@@ -46,26 +46,26 @@
     "node": "^10"
   },
   "scripts": {
-    "list": "lerna ls",
-    "clean:node": "lerna clean && rm -rf node_modules",
-    "clean:workspaces": "lerna exec 'rm -rf dist'",
-    "clean": "yarn run clean:workspaces && yarn run clean:node",
-    "check:lint-source": "tslint -p tsconfig.types.json -c ./tslint.sources.json --format stylish --exclude '**/*.+(doc|example|test).+(ts|tsx)' '+(packages|utils)/*/src/*.+(ts|tsx)' '+website/src/**/*.+(ts|tsx)'",
-    "check:lint-doc-and-test": "tslint -p tsconfig.types.json -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
-    "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
-    "format:fix": "prettier --write",
-    "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
-    "check:danger": "danger local --base master",
-    "remove:duplicates": "yarn-deduplicate",
-    "check:duplicates": "yarn-deduplicate --list --fail",
     "build": "yarn build:icons && lerna run build",
     "build:icons": "node packages/icon/build/index.js",
+    "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
+    "check:danger": "danger local --base master",
+    "check:duplicates": "yarn-deduplicate --list --fail",
+    "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
+    "check:lint-doc-and-test": "tslint -p tsconfig.types.json -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
+    "check:lint-source": "tslint -p tsconfig.types.json -c ./tslint.sources.json --format stylish --exclude '**/*.+(doc|example|test).+(ts|tsx)' '+(packages|utils)/*/src/*.+(ts|tsx)' '+website/src/**/*.+(ts|tsx)'",
+    "clean": "yarn run clean:workspaces && yarn run clean:node",
+    "clean:node": "lerna clean && rm -rf node_modules",
+    "clean:workspaces": "lerna exec 'rm -rf dist'",
+    "create-component": "npx create-lui-component",
+    "format:fix": "prettier --write",
+    "list": "lerna ls",
+    "precommit": "yarn run lint-staged",
+    "prepush": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build --since=master",
+    "remove:duplicates": "yarn-deduplicate",
+    "start": "cd website && yarn start",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",
-    "start": "cd website && yarn start",
-    "create-component": "npx create-lui-component",
-    "precommit": "yarn run lint-staged",
-    "prepush": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build",
     "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "lint-staged": {
@@ -77,7 +77,7 @@
   "devDependencies": {
     "danger": "^7.0.2",
     "fast-glob": "^2.2.6",
-    "yarn-deduplicate": "^1.1.0",
-    "yarn": "^1.0.0"
+    "yarn": "^1.13.0",
+    "yarn-deduplicate": "^1.1.0"
   }
 }
