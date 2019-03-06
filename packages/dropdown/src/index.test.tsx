@@ -64,3 +64,19 @@ describe('Dropdown', () => {
     expect(Wrapper.find(IconDown)).toMatchSnapshot();
   });
 });
+
+describe('Dropdown onChange', () => {
+  const onChange = jest.fn();
+
+  const wrapper = mount(
+    <Theme>
+      <Dropdown size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onChange={onChange} />
+    </Theme>
+  );
+
+  it('should call onChange prop', () => {
+    const select = wrapper.find(Select);
+    select.simulate('change', { target: { value: '2' } });
+    expect(onChange.mock.calls).toEqual([['2']]);
+  });
+});

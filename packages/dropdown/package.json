@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/dropdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

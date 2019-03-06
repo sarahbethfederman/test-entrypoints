@@ -4,3 +4,7 @@
 ### Created
 - component forked from @lendi-ui/dropdown
 - added isFullWidth option for conditions where dropdown is intended to use the full width of container
+
+## [1.0.1] - 2019-03-05 - [BRAVO-456](https://creditandfinance.atlassian.net/browse/BRAVO-387)
+### Created
+- added onChange prop

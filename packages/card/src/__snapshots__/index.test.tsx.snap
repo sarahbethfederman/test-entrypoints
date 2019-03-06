@@ -352,18 +352,22 @@ exports[`Card render card with interactive title 1`] = `
                       >
                         <styled.select
                           isFullWidth={true}
+                          onChange={[Function]}
                           selectSize="md"
                         >
                           <select
                             className="c5"
+                            onChange={[Function]}
                           >
                             <option
                               key="1"
+                              value="1"
                             >
                               5 years
                             </option>
                             <option
                               key="2"
+                              value="2"
                             >
                               10 years
                             </option>
