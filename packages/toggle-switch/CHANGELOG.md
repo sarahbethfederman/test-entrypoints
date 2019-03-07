@@ -1,5 +1,10 @@
 # Changelog - @lendi-ui/toggle-switch
 
+## [1.0.4] - 2019-03-07 - [BRAVO-592] (https://creditandfinance.atlassian.net/browse/BRAVO-592)
+ 
+### Created
+- Added the 'name' prop
+
 ## [1.0.3] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
  
 ### Changed

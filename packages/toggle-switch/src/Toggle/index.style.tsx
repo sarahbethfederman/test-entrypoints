@@ -65,7 +65,7 @@ interface ToggleCheckboxWrapperProps {
   error: boolean;
 }
 
-export const ToggleCheckboxWrapper = styled.input`
+export const ToggleCheckbox = styled.input`
   position: absolute;
   opacity: 0;
   height: 0;

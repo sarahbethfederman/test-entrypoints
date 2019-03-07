@@ -5,7 +5,7 @@ import { Warn } from '@lendi-ui/icon';
 import Spinner from '@lendi-ui/spinner';
 import ToggleSwitch from './index';
 import { ToggleLabel, Wrapper } from './index.style';
-import { IconWrapper, ToggleCheckboxWrapper, ToggleHandle, ToggleTrack, ToggleWrapper } from './Toggle/index.style';
+import { IconWrapper, ToggleCheckbox, ToggleHandle, ToggleTrack, ToggleWrapper } from './Toggle/index.style';
 
 let element;
 let mockOnChange: jest.Mock<{}>;
@@ -24,7 +24,7 @@ describe('ToggleSwitch', () => {
   it('should render the whole component', () => {
     render({});
     expect(element.find(ToggleSwitch)).toHaveLength(1);
-    expect(element.find(ToggleCheckboxWrapper)).toHaveLength(1);
+    expect(element.find(ToggleCheckbox)).toHaveLength(1);
     expect(element.find(ToggleHandle)).toHaveLength(1);
     expect(element.find(ToggleLabel)).toHaveLength(1);
     expect(element.find(ToggleTrack)).toHaveLength(1);
@@ -37,10 +37,10 @@ describe('ToggleSwitch', () => {
 
   it('should have the correct checked property based on passed props', () => {
     render({ isChecked: false });
-    expect(element.find(ToggleCheckboxWrapper).props().checked).toBeFalsy();
+    expect(element.find(ToggleCheckbox).props().checked).toBeFalsy();
 
     render({ isChecked: true });
-    expect(element.find(ToggleCheckboxWrapper).props().checked).toBeTruthy();
+    expect(element.find(ToggleCheckbox).props().checked).toBeTruthy();
   });
 
   it('should render correct default styles when off', () => {

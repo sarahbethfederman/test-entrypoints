@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Warn } from '@lendi-ui/icon';
 import Spinner from '@lendi-ui/spinner';
-import { IconWrapper, ToggleCheckboxWrapper, ToggleHandle, ToggleTrack, ToggleWrapper } from './index.style';
+import { IconWrapper, ToggleCheckbox, ToggleHandle, ToggleTrack, ToggleWrapper } from './index.style';
 import { Size } from '../index.style';
 
 export interface ToggleProps {
@@ -9,6 +9,7 @@ export interface ToggleProps {
   isDisabled?: boolean;
   isError?: boolean;
   isLoading?: boolean;
+  name?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: Size;
   value?: string;
@@ -33,11 +34,11 @@ export class Toggle extends React.Component<ToggleProps, {}> {
   };
 
   render() {
-    const { isChecked = false, isDisabled = false, isError = false, onChange, size = 'md', value } = this.props;
+    const { isChecked = false, isDisabled = false, isError = false, onChange, name, size = 'md', value } = this.props;
     const commonProps = { checked: isChecked, disabled: isDisabled, error: isError };
     return (
       <ToggleWrapper size={size}>
-        <ToggleCheckboxWrapper {...commonProps} type="checkbox" value={value} onChange={onChange} />
+        <ToggleCheckbox name={name} {...commonProps} type="checkbox" value={value} onChange={onChange} />
         <ToggleTrack {...commonProps} size={size} />
         <ToggleHandle {...commonProps} size={size}>
           {this.getHandleIcon()}

@@ -10,6 +10,7 @@ export interface ToggleSwitchProps {
   isError?: boolean;
   isLoading?: boolean;
   label?: string;
+  name?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   size?: Size;
   value?: string;
@@ -25,11 +26,12 @@ class ToggleSwitch extends React.Component<ToggleSwitchProps, {}> {
       isError = false,
       isLoading = false,
       label,
+      name,
       onChange,
       size = 'md',
       value,
     } = this.props;
-    const toggleProps = { isChecked, isDisabled, isError, isLoading, onChange, size, value };
+    const toggleProps = { isChecked, isDisabled, isError, isLoading, onChange, name, size, value };
     return (
       <Wrapper isBoxed={isBoxed} checked={isChecked} disabled={isDisabled} error={isError} className={className}>
         <Toggle {...toggleProps} />
