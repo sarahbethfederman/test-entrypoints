@@ -47,14 +47,19 @@ const ButtonWrapper = styled.button<LinkOptions & MarginOptions>`
 
 export interface LinkProps extends LinkOptions {
   href?: string;
+  children?: React.ReactNode;
   onClick?: () => void;
 }
 
 export const Link = (props: LinkProps) => {
-  const { href, ...otherProps } = props;
+  const { href, children, ...otherProps } = props;
   if (href) {
-    return <LinkWrapper href={href} {...otherProps} />;
+    return (
+      <LinkWrapper href={href} {...otherProps}>
+        {children}
+      </LinkWrapper>
+    );
   } else {
-    return <ButtonWrapper {...otherProps} />;
+    return <ButtonWrapper {...otherProps}>{children}</ButtonWrapper>;
   }
 };
