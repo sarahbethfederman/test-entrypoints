@@ -30,6 +30,16 @@ yarn add @lendi-ui/theme @lendi-ui/logo
     </div>
   ```
 
+3. Custom UI theme could be achieved by importing custom theme skeleton and feeding it to the main Theme
+  component.
+  ```
+    import { theme as domainTheme } from '@lendi-iu/theme-domain';
+    
+    <Theme kind={domainTheme}>
+      <Button variant="primary">Click me</Button>
+    </Theme>
+  ```
+
 
   If you're working within a newer repo, wrap your root component with the theme:
 

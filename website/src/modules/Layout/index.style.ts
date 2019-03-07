@@ -3,6 +3,7 @@ import { gte } from '@lendi-ui/breakpoint';
 import { bg } from '@lendi-ui/color';
 
 export const Wrapper = styled.div`
+  padding-top: 10px;
   min-height: 100vh;
   display: grid;
 

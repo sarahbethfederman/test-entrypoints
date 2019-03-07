@@ -10,15 +10,20 @@ export interface DropdownProps {
   size?: ListSize;
   items: Item[];
   isFullWidth?: boolean;
+  value?: string;
   onChange?: (value: string) => void;
 }
 
-const Dropdown = ({ size = 'md', items, isFullWidth = true, onChange }: DropdownProps) => {
+const Dropdown = ({ size = 'md', items, isFullWidth = true, value, onChange }: DropdownProps) => {
+  // React requires value prop to be undefined or empty string if not provided
+  value = value || undefined;
+
   return (
     <DropdownWrapper isFullWidth={isFullWidth}>
       <Select
         selectSize={size}
         isFullWidth={isFullWidth}
+        value={value}
         onChange={(e) => (onChange ? onChange(e.target.value) : null)}
       >
         {items.map((item) => (
