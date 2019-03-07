@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme-domain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -16,8 +16,8 @@
     "react": "^15 || ^16.4",
     "styled-components": "^3"
   },
-  "dependencies": {
-    "@lendi-ui/utils": "1.1.1"
+  "devDependencies": {
+    "@lendi-ui/theme": "^5.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

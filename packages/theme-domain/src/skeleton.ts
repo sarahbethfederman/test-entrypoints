@@ -1,4 +1,4 @@
-import { ThemeMap } from '@lendi-ui/utils';
+import { ThemeMap } from '@lendi-ui/theme';
 
 const typography = {
   heading: {

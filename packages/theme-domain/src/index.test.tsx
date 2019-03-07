@@ -1,16 +1,17 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
-import ThemeDomain from './index';
-
-let element;
+import { theme } from './skeleton';
+import Theme from '@lendi-ui/theme';
 
 describe('ThemeDomain', () => {
+  let element;
+
   beforeEach(() => {
-    element = mount(<ThemeDomain />);
+    element = mount(<Theme kind={theme} />);
   });
 
   it('should mount', () => {
-    expect(element.find(ThemeDomain)).toHaveLength(1);
-    expect(element.find(ThemeDomain)).toMatchSnapshot();
+    expect(element.find(Theme)).toHaveLength(1);
+    expect(element.find(Theme).props().kind).toEqual(theme);
   });
 });

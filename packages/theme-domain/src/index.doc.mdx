@@ -1,17 +1,14 @@
 ## About
-Theme does a couple of things: 
-* It injects some basic cross browser resets into the 
-head and body of the document (such as resetting margins and padding to 0)
-* It sets the font size (as a px unit) at different breakpoints. We can then use r/ems and not 
-worry about having to change the font size for every single component.
-* Defines the theme color and font-family 
+This repo represents a collection of colors, fonts, typography, etc,
+as part of Domain theme
 
 ```jsx
+import Theme from '@lendi-ui/theme';
+import { theme as domainTheme } from '@lendi-ui/theme-domain'
+
   <div> 
-    // This sets the base font sizes in px that we use, as 
-    // well as the theme (colors, fonts)
-    <ThemeDomain>
+    <Theme kind={domainTheme}>
       ...New stuff using LUI components
-    <ThemeDomain/>
+    <Theme/>
   </div>
 ```
