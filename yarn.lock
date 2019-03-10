@@ -26,6 +26,15 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.12.0"
 
+"@lendi-ui/logo@^2.1.1", "@lendi-ui/logo@^2.1.2":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/logo/-/logo-2.1.3.tgz#4e5e00780f35904ce0c6d602b7fc6633e5e1b382"
+  integrity sha512-UTFIkuOJ2RBwIwb6E7BLSZAW8UnCX3gdSQQUZjCAvH+YB3Ux6tK9tytO9lvPr21O7xyi9A+KaQLgHsMqI7UCaA==
+  dependencies:
+    "@lendi-ui/color" "^2.0.1"
+    "@lendi-ui/icon" "^5.0.1"
+    "@lendi-ui/theme" "^4.0.0"
+
 "@lendi-ui/spacing@^2.0.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-2.1.0.tgz#b68320566c6765130b59a34c913a369c088b8a05"
