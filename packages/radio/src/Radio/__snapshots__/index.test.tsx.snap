@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`radioButton it should render correct styles when disabled 1`] = `
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #c8c8c8;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: calc(3 * var(--lendi-ui-size));
+  border-radius: 6px;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.c2 {
+  display: inline-block;
+  margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1 {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1:before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.c1:active::before {
+  border: 1px solid #009984;
+}
+
+.c1:focus:before {
+  border: 2px solid #66d9c9;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+<Component
+  isDisabled={true}
+  label="LUI single Radio Button"
+  onChange={[MockFunction]}
+  value="1"
+>
+  <styled.label
+    checked={false}
+    disabled={true}
+    isBoxed={false}
+  >
+    <label
+      checked={false}
+      className="c0"
+      disabled={true}
+    >
+      <styled.input
+        checked={false}
+        disabled={true}
+        onChange={[MockFunction]}
+        type="radio"
+        value="1"
+      >
+        <input
+          checked={false}
+          className="c1"
+          disabled={true}
+          onChange={[MockFunction]}
+          type="radio"
+          value="1"
+        />
+      </styled.input>
+      <Styled(styled.p)
+        color="shade.200"
+        size="md"
+      >
+        <styled.p
+          className="c2"
+          color="shade.200"
+          size="md"
+        >
+          <p
+            className="c2 c3"
+            color="shade.200"
+            size="md"
+          >
+            LUI single Radio Button
+          </p>
+        </styled.p>
+      </Styled(styled.p)>
+    </label>
+  </styled.label>
+</Component>
+`;

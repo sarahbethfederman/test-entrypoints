@@ -1,0 +1,42 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+# Usage
+
+```
+import {RadioGroup} from '@lendi-ui/radio';
+```
+
+```jsx
+<RadioGroup selectedValue={'1'} onChange={() => {}}>
+        <RadioGroup.Radio
+          label='LUI Radio Group option 1'
+          value='1'
+        />
+        <RadioGroup.Radio
+          label='LUI Radio Group option 2'
+          value='2'
+        />
+        <RadioGroup.Radio
+          label='LUI Radio Group option 3'
+          value='3'
+        />
+</RadioGroup>
+```
+
+## RadioGroup Properties
+
+<PropTable>
+  <PropTable.Entry name="selectedValue" type="string" description="A single value set by the selected radio button."/>
+  <PropTable.Entry name="direction" type='{"row" | "column"}' defaultValue={"column"} description="RadioGroup display direction."/>
+  <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether all items in RadioGroup are wrapped by box."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether all items in RadioGroup are disabled."/>
+  <PropTable.Entry name="onChange*" type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Radio onChange function."/>
+</PropTable>
+
+## RadioGroup.Radio Properties
+
+<PropTable>
+  <PropTable.Entry name="value" type="string" description="Radio value."/>
+  <PropTable.Entry name="label" type="string" description="Radio display value."/>
+  <PropTable.Entry name="isDisabled" type="boolean" description="Whether Radio is unclickable."/>
+</PropTable>
