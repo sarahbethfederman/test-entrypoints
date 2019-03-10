@@ -1,6 +1,5 @@
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
-export { ThemeMap } from './theme';
 export type DisplyValue = BreakpointValue<string> | BreakpointValueMap<string>;
 export const display = (val: DisplyValue) => map(val, (v) => v && `display: ${v};`);
 
