@@ -5,6 +5,7 @@ import Theme from '@lendi-ui/theme';
 import { CardHead, CardBody, MoreContainer, CardTitleIcon } from './index.style';
 import Dropdown, { Item } from '@lendi-ui/dropdown';
 import { Lock, Info } from '../../icon/src';
+import { deriveSize } from '@lendi-ui/utils';
 
 let wrapper;
 const render = (props: CardProps) => {
@@ -55,6 +56,33 @@ describe('Card', () => {
     });
     expect(wrapper.find(CardTitleIcon)).toHaveLength(1);
     expect(wrapper.find(Card).props().cardTitleIcon).toBeDefined();
+    expect(wrapper.find(CardHead)).toHaveStyleRule('font-size', deriveSize(1)); // default size
+    expect(wrapper.find(Card)).toMatchSnapshot();
+  });
+
+  it('render card with lg headersize', () => {
+    render({
+      title: 'My Testing card',
+      headerSize: 'lg',
+      onCancel: () => console.log('on cancel clicked'),
+    });
+    expect(wrapper.find(Card).props().headerSize).toEqual('lg');
+    expect(wrapper.find(CardHead)).toHaveStyleRule('font-size', deriveSize(1.5));
+    expect(wrapper.find(Card)).toMatchSnapshot();
+  });
+  it('render card with just more icon', () => {
+    render({
+      title: 'My Testing card',
+      moreIcon: <Info color="secondary.500" />,
+      onIconClick: () => console.log('Icon clicked!'),
+    });
+    expect(wrapper.find(Card).props().title).toEqual('My Testing card');
+    expect(wrapper.find(Card).props().moreIcon).toEqual(
+      expect.objectContaining({
+        props: { color: 'secondary.500' },
+      })
+    );
+    expect(wrapper.find(Card).props().onIconClick).toBeInstanceOf(Function);
     expect(wrapper.find(Card)).toMatchSnapshot();
   });
 });

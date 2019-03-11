@@ -10,10 +10,11 @@ import {
   TitleContainer,
   CardTitleIcon,
   MoreIcon,
+  Size,
 } from './index.style';
 import { DropdownProps } from '@lendi-ui/dropdown';
 import { IconProps } from '@lendi-ui/icon';
-
+import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 export interface CardProps {
   title?: string;
   interactiveTitle?: React.ReactElement<DropdownProps>;
@@ -22,6 +23,8 @@ export interface CardProps {
   subTitle?: string;
   children?: React.ReactNode;
   onCancel?: () => void;
+  onIconClick?: () => void;
+  headerSize?: BreakpointValue<Size> | BreakpointValueMap<Size>;
 }
 
 export default class Card extends React.Component<CardProps> {
@@ -31,25 +34,27 @@ export default class Card extends React.Component<CardProps> {
       interactiveTitle = '',
       cardTitleIcon = '',
       subTitle = '',
-      onCancel = () => {},
+      onCancel,
+      onIconClick,
       children = '',
       moreIcon = '',
+      headerSize = 'sm',
     } = this.props;
 
     return (
       <CardWrapper>
-        <CardHead>
+        <CardHead size={headerSize}>
           <TitleContainer>
             {cardTitleIcon && <CardTitleIcon>{cardTitleIcon}</CardTitleIcon>}
             <CardTitle>{interactiveTitle || title}</CardTitle>
-            {(onCancel || moreIcon) && (
-              <MoreContainer>
-                {onCancel && <CancelButton onClick={onCancel}>Cancel</CancelButton>}
-                {moreIcon && <MoreIcon>{moreIcon}</MoreIcon>}
-              </MoreContainer>
-            )}
+            {subTitle && <CardHeadSubTitle>{subTitle}</CardHeadSubTitle>}
           </TitleContainer>
-          {subTitle && <CardHeadSubTitle>{subTitle}</CardHeadSubTitle>}
+          {(onCancel || moreIcon) && (
+            <MoreContainer>
+              {onCancel && <CancelButton onClick={onCancel}>Cancel</CancelButton>}
+              {moreIcon && <MoreIcon onClick={onIconClick}>{moreIcon}</MoreIcon>}
+            </MoreContainer>
+          )}
         </CardHead>
         <CardBody>{children}</CardBody>
       </CardWrapper>

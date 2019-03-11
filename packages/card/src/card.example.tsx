@@ -14,11 +14,11 @@ const items: Item[] = [
 ];
 export default () => (
   <>
-    <Card title="Card title" onCancel={() => console.log('clicked!')}>
+    <Card title="Add credit cards or store cards" onCancel={() => console.log('clicked!')}>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book.
-      <Card title="Inner Card with Subtitle" subTitle="Here we go">
+      <Card headerSize="lg" title="Inner Card with Subtitle with headersize 'lg'" subTitle="Here we go">
         Child card
       </Card>
       <Card
@@ -49,6 +49,14 @@ export default () => (
         cardTitleIcon={<Lock color="secondary.500" />}
         onCancel={() => console.log('clicked!')}
         moreIcon={<Info color="secondary.500" />}
+        onIconClick={() => console.log('Icon clicked!')}
+      >
+        Card with icon and cancel
+      </Card>
+      <Card
+        title="Card with more icon click"
+        moreIcon={<Info color="secondary.500" />}
+        onIconClick={() => console.log('Icon clicked!')}
       >
         Card with icon and cancel
       </Card>

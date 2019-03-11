@@ -1,6 +1,27 @@
 import styled from 'styled-components';
 import { bg, color, fg } from '@lendi-ui/color';
-import { p, my, px, py, ml } from '@lendi-ui/spacing';
+import { p, my, px, ml, mr } from '@lendi-ui/spacing';
+import { Heading } from '@lendi-ui/typography';
+import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { deriveSize } from '@lendi-ui/utils';
+
+export type Size = 'lg' | 'sm';
+
+const headingStyleBySizeMixin = (size: BreakpointValue<Size> | BreakpointValueMap<Size>) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'sm':
+        return `
+          font-size: ${deriveSize(1)};
+      `;
+      case 'lg':
+        return `
+          font-size: ${deriveSize(1.5)};
+      `;
+      default:
+        return `font-size: ${deriveSize(1)}`;
+    }
+  });
 
 export const CardWrapper = styled.div`
   border: 1px solid ${color('shade.100')};
@@ -9,38 +30,38 @@ export const CardWrapper = styled.div`
   ${my('md')};
 `;
 
-export const CardHead = styled.div`
+export const CardHead = styled(Heading)`
   border-radius: 12px 12px 0 0;
   ${bg('shade.50')};
-  min-height: 48px;
+  min-height: 40px;
   margin-bottom: -1px;
-  ${px('md')};
-  font-weight: 600;
+  ${p('xxs')};
   border-bottom: 1px solid ${color('shade.50')};
   zoom: 1;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  ${({ size }: { size: BreakpointValue<Size> | BreakpointValueMap<Size> }) => headingStyleBySizeMixin(size)};
 `;
 
 export const TitleContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5px 0 0 0;
+  margin: auto 0;
+  ${px('xs')};
 `;
 
-export const CardTitleIcon = styled.div`
+export const CardTitleIcon = styled.span`
   flex: 0;
+  ${mr('xxxs')};
 `;
 
 export const CardTitle = styled.div`
-  ${py('xs')};
   overflow-wrap: normal;
   word-wrap: break-word;
-  font-size: 14px;
   flex: 1;
+  display: inline-block;
 `;
 
 export const CardHeadSubTitle = styled.div`
-  padding-bottom: 5px;
   overflow-wrap: normal;
   font-size: 12px;
 `;
@@ -53,8 +74,7 @@ export const MoreContainer = styled.div`
 `;
 
 export const CardBody = styled.div`
-  ${px('sm')};
-  ${py('lg')};
+  ${p('lg')};
   background: transparent;
 `;
 
