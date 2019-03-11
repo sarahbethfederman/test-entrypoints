@@ -28,13 +28,16 @@ const Field = ({
   error,
   touched,
 }: FieldProps) => {
+  const labelPropExists = label || isOptional || assistiveText || link || tooltip;
   return (
     <FieldWrapper>
-      <LabelField>
-        <Label size={size} isOptional={isOptional} label={label} assistiveText={assistiveText} link={link} />
-        {/* replace with ToolTip later when LUI Input added to LUI */}
-        {tooltip && <ToolTip size={size} color="secondary.600" />}
-      </LabelField>
+      {labelPropExists && (
+        <LabelField>
+          <Label size={size} label={label} isOptional={isOptional} assistiveText={assistiveText} link={link} />
+          {/* replace with ToolTip later when LUI Input added to LUI */}
+          {tooltip && <ToolTip size={size} color="secondary.600" />}
+        </LabelField>
+      )}
       {children}
       {touched && error && <ErrorMessage error={error} />}
     </FieldWrapper>

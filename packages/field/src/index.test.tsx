@@ -13,14 +13,13 @@ let wrapper;
 function render(props) {
   wrapper = mount(
     <Theme>
-      <Field label="First name" {...props}>
-        {props.children}
-      </Field>
+      <Field {...props}>{props.children}</Field>
     </Theme>
   );
 }
 
 describe('Field', () => {
+  const label = 'First name';
   const size = 'sm';
   const link = <Link size="sm">forgot?</Link>;
   const assistiveText = 'Assistive text';
@@ -29,7 +28,7 @@ describe('Field', () => {
   const children = <input type="text" />;
   const isOptional = true;
   it('it should render wrapper component', () => {
-    render({});
+    render({ label });
     expect(wrapper.find(ErrorMessage).length).toEqual(0);
     expect(wrapper.find(FieldWrapper).length).toEqual(1);
     expect(wrapper.find(FieldWrapper)).toMatchSnapshot();
@@ -37,8 +36,9 @@ describe('Field', () => {
   });
 
   it('it should render Label component properly', () => {
-    render({ size, link, assistiveText });
+    render({ label, size, link, assistiveText });
     expect(wrapper.find(Label).length).toEqual(1);
+    expect(wrapper.find(Label).prop('label')).toEqual('First name');
     expect(wrapper.find(Label).prop('size')).toEqual('sm');
     expect(wrapper.find(Label).prop('link')).toEqual(<Link size="sm">forgot?</Link>);
     expect(wrapper.find(Label).prop('assistiveText')).toEqual('Assistive text');
@@ -71,7 +71,25 @@ describe('Field', () => {
   });
 
   it('it should render Label component with Optional properly', () => {
-    render({ isOptional });
+    render({ label, isOptional });
     expect(wrapper.find('Label').prop('isOptional')).toEqual(true);
+  });
+
+  it('it should not render Label component if no related props are passed', () => {
+    render({});
+    expect(wrapper.find(LabelField).length).toEqual(0);
+  });
+
+  it('it should render Label component if at least one related prop is passed', () => {
+    render({ label });
+    expect(wrapper.find(LabelField).length).toEqual(1);
+    render({ isOptional });
+    expect(wrapper.find(LabelField).length).toEqual(1);
+    render({ assistiveText });
+    expect(wrapper.find(LabelField).length).toEqual(1);
+    render({ link });
+    expect(wrapper.find(LabelField).length).toEqual(1);
+    render({ tooltip });
+    expect(wrapper.find(LabelField).length).toEqual(1);
   });
 });
