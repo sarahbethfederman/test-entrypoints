@@ -27,7 +27,7 @@ describe('Card', () => {
   });
 
   it('renders card with Cancel button', () => {
-    render({ title: 'My Testing card', onCancel: () => console.log('on cancel clicked') });
+    render({ title: 'My Testing card', onCancel: () => alert('on cancel clicked') });
     expect(wrapper.find(MoreContainer)).toHaveLength(1);
     expect(wrapper.find(Card).props().onCancel).toBeDefined();
   });
@@ -52,7 +52,7 @@ describe('Card', () => {
     render({
       title: 'My Testing card',
       cardTitleIcon: <Lock color="secondary.500" />,
-      onCancel: () => console.log('on cancel clicked'),
+      onCancel: () => alert('on cancel clicked'),
     });
     expect(wrapper.find(CardTitleIcon)).toHaveLength(1);
     expect(wrapper.find(Card).props().cardTitleIcon).toBeDefined();
@@ -64,7 +64,7 @@ describe('Card', () => {
     render({
       title: 'My Testing card',
       headerSize: 'lg',
-      onCancel: () => console.log('on cancel clicked'),
+      onCancel: () => alert('on cancel clicked'),
     });
     expect(wrapper.find(Card).props().headerSize).toEqual('lg');
     expect(wrapper.find(CardHead)).toHaveStyleRule('font-size', deriveSize(1.5));
@@ -74,7 +74,7 @@ describe('Card', () => {
     render({
       title: 'My Testing card',
       moreIcon: <Info color="secondary.500" />,
-      onIconClick: () => console.log('Icon clicked!'),
+      onIconClick: () => alert('Icon clicked!'),
     });
     expect(wrapper.find(Card).props().title).toEqual('My Testing card');
     expect(wrapper.find(Card).props().moreIcon).toEqual(

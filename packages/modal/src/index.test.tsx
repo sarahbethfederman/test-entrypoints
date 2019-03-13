@@ -76,7 +76,7 @@ describe('Modal', () => {
     it(`should render 'md' as default if there are no size value on tablet and desktop`, () => {
       render({ show: true, onHide });
       modalContainer = element.find('.modal-container');
-      expect(modalContainer).toHaveStyleRule('width', widthBySize['md'], {
+      expect(modalContainer).toHaveStyleRule('width', widthBySize.md, {
         media: `(min-width:${Breakpoint.tablet})`,
       });
       expect(modalContainer).toMatchSnapshot();

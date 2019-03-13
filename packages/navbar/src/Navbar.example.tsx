@@ -83,11 +83,11 @@ class NavbarExample extends React.Component {
   };
 
   onChat = () => {
-    console.log('Chat is triggered');
+    alert('Chat is triggered');
   };
 
   onLogOut = () => {
-    console.log('Log out is clicked');
+    alert('Log out is clicked');
   };
 
   render() {

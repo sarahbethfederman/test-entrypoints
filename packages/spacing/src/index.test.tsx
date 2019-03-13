@@ -2,11 +2,11 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
-import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrNameMap, margin } from '.';
+import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrSpacingNameMap, margin } from '.';
 
 export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
 
-function createTests(n: string, fn: (size: SpacingNameOrNameMap) => any, rules: string[]) {
+function createTests(n: string, fn: (size: SpacingNameOrSpacingNameMap) => any, rules: string[]) {
   describe(`${n}()`, () => {
     keys(Spacing).forEach((name) => {
       it(`should use the correct spacing for ${name}`, () => {

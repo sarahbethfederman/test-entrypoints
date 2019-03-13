@@ -78,7 +78,7 @@ class Example extends React.Component<{}, ExampleState> {
           if (index !== groupIndex) {
             return group;
           }
-          return Object.assign({}, group, { selectedValue: currentValue });
+          return { ...group, selectedValue: currentValue };
         }),
       };
 

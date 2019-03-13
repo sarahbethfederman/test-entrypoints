@@ -30,14 +30,14 @@ export interface CardProps {
 export default class Card extends React.Component<CardProps> {
   render() {
     const {
-      title = '',
-      interactiveTitle = '',
-      cardTitleIcon = '',
-      subTitle = '',
+      title,
+      interactiveTitle,
+      cardTitleIcon,
+      subTitle,
       onCancel,
       onIconClick,
-      children = '',
-      moreIcon = '',
+      children,
+      moreIcon,
       headerSize = 'sm',
     } = this.props;
 

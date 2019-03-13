@@ -45,11 +45,11 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
             </span>
           </Modal.Content>
           <Modal.Footer>
-            <Button variant="primary" isFullWidth onClick={() => {}}>
+            <Button variant="primary" isFullWidth onClick={() => alert('Clicked')}>
               Continue application
             </Button>
             <Space />
-            <Button variant="secondary" isFullWidth onClick={() => {}}>
+            <Button variant="secondary" isFullWidth onClick={() => alert('Clicked')}>
               open a modal
             </Button>
           </Modal.Footer>

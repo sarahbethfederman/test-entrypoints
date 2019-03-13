@@ -14,7 +14,7 @@ const items: Item[] = [
 ];
 export default () => (
   <>
-    <Card title="Add credit cards or store cards" onCancel={() => console.log('clicked!')}>
+    <Card title="Add credit cards or store cards" onCancel={() => alert('clicked!')}>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book.
@@ -27,11 +27,11 @@ export default () => (
         of Lorem Ipsum"
         subTitle="More subtitle...... "
         moreIcon={<Info color="secondary.500" />}
-        onCancel={() => console.log('clicked!')}
+        onCancel={() => alert('clicked!')}
       >
         Child card
       </Card>
-      <Card interactiveTitle={<Dropdown items={items} />} onCancel={() => console.log('clicked!')}>
+      <Card interactiveTitle={<Dropdown items={items} />} onCancel={() => alert('clicked!')}>
         Interactive Card title - Dropdown
       </Card>
       <Card title="Card with icon" cardTitleIcon={<Lock color="secondary.500" />}>
@@ -40,23 +40,23 @@ export default () => (
       <Card
         title="Card with icon and cancel"
         cardTitleIcon={<Lock color="secondary.500" />}
-        onCancel={() => console.log('clicked!')}
+        onCancel={() => alert('clicked!')}
       >
         Card with icon and cancel
       </Card>
       <Card
         title="Card with icon and cancel, more icon"
         cardTitleIcon={<Lock color="secondary.500" />}
-        onCancel={() => console.log('clicked!')}
+        onCancel={() => alert('clicked!')}
         moreIcon={<Info color="secondary.500" />}
-        onIconClick={() => console.log('Icon clicked!')}
+        onIconClick={() => alert('Icon clicked!')}
       >
         Card with icon and cancel
       </Card>
       <Card
         title="Card with more icon click"
         moreIcon={<Info color="secondary.500" />}
-        onIconClick={() => console.log('Icon clicked!')}
+        onIconClick={() => alert('Icon clicked!')}
       >
         Card with icon and cancel
       </Card>

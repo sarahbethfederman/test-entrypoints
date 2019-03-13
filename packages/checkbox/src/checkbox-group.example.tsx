@@ -79,7 +79,7 @@ class Example extends React.Component<{}, ExampleState> {
             return group;
           }
 
-          return Object.assign({}, group, { values: newValues });
+          return { ...group, values: newValues };
         }),
       };
 

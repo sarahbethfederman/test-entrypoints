@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import Footer from './index';
 
-let element = mount(
+const element = mount(
   <Theme>
     <Footer />
   </Theme>

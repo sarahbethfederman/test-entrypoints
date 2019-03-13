@@ -2,7 +2,7 @@ export type ColorKeys = '25' | '50' | '100' | '200' | '300' | '400' | '500' | '6
 
 export type ColorsMap = { [key in ColorKeys]: string };
 
-export type Typography = {
+export interface Typography {
   heading: {
     fontFamily: string;
   };
@@ -10,13 +10,13 @@ export type Typography = {
   body: {
     fontFamily: string;
   };
-};
+}
 
-export type Logo = {
+export interface Logo {
   logoName: string;
-};
+}
 
-export type Colors = {
+export interface Colors {
   primary: ColorsMap;
   secondary: ColorsMap;
   tertiary: ColorsMap;
@@ -25,10 +25,10 @@ export type Colors = {
   warn: ColorsMap;
   error: ColorsMap;
   success: ColorsMap;
-};
+}
 
-export type ThemeMap = {
+export interface ThemeMap {
   typography: Typography;
   colors: Colors;
   logo: Logo;
-};
+}
