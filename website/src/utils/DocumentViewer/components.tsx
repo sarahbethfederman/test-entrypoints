@@ -35,6 +35,7 @@ import { Radio, RadioGroup } from '@lendi-ui/radio';
 import MenuDropdown from '@lendi-ui/menu-dropdown';
 import Card from '@lendi-ui/card';
 import ToggleSwitch from '@lendi-ui/toggle-switch';
+import Pagination from '@lendi-ui/pagination';
 
 const scope = {
   styled,
@@ -87,6 +88,7 @@ const scope = {
   MenuDropdown,
   Card,
   ToggleSwitch,
+  Pagination,
 };
 
 interface GenericProps {
