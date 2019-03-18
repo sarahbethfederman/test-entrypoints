@@ -2,14 +2,14 @@ import * as React from 'react';
 import { Wrapper, StatusBadgeVariant, StatusBadgeSize, IconWrapper, ContentWrapper } from './index.style';
 import { InfoTwo, SuccessTwo, WarnTwo } from '@lendi-ui/icon';
 
-export interface Props {
+export interface StatusBadgeProps {
   variant: StatusBadgeVariant;
   size?: StatusBadgeSize;
   hasIcon?: boolean;
   statusText?: string;
 }
 
-const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm' }: Props) => {
+const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm' }: StatusBadgeProps) => {
   let badgeIcon;
   const withIcon = !!hasIcon;
   const iconHeight = size === 'lg' ? '1.5em' : '1em';
