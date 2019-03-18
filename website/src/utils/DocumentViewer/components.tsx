@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import * as breakpoints from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '@lendi-ui/color';
-import { heading, body, Body, link, Link } from '@lendi-ui/typography';
+import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
 import Container, { container } from '@lendi-ui/container';
 import * as spacing from '@lendi-ui/spacing';
 import Grid, { grid, unit } from '@lendi-ui/grid';
@@ -57,6 +57,8 @@ const scope = {
   Heading,
   Body,
   Link,
+  overline,
+  Overline,
   Logo,
   Carousel,
   FeaturePanel,
