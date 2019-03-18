@@ -36,6 +36,7 @@ import MenuDropdown from '@lendi-ui/menu-dropdown';
 import Card from '@lendi-ui/card';
 import ToggleSwitch from '@lendi-ui/toggle-switch';
 import Pagination from '@lendi-ui/pagination';
+import StatusBadge from '@lendi-ui/status-badge';
 
 const scope = {
   styled,
@@ -91,6 +92,7 @@ const scope = {
   Card,
   ToggleSwitch,
   Pagination,
+  StatusBadge,
 };
 
 interface GenericProps {
