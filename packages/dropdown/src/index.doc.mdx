@@ -35,6 +35,7 @@ items= [
     size={{mobile:'sm', tablet:'md', desktop:'lg'}}
     items={items}
     isFullWidth={true}
+    value='2'
 />
 
 
@@ -47,4 +48,8 @@ items= [
   <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="the inline-dropdown size"/>
   <PropTable.Entry name="items" required type="[{value: string, label: string}]" description="an object array with 'value' and 'label' that display in this component"/>
   <PropTable.Entry name="isFullWidth" type={'"true | false"'} defaultValue="true" description="the dropdown is intended to use the full width of the container"/>
+  <PropTable.Entry name="isDisabled" type={'"true | false"'} defaultValue="false" description="Whether the dropdown is disabled."/>
+  <PropTable.Entry name="isError" type={'"true | false"'} defaultValue="false" description="Whether the dropdown is not selected."/>
+  <PropTable.Entry name="isLoading" type={'"true | false"'} defaultValue="false" description="Whether the dropdown icon is Spinner or ChevronDown."/>
+  <PropTable.Entry name="className" type="string" description="The custom style for Dropdown."/>
 </PropTable>

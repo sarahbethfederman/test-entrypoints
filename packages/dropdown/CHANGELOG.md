@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/dropdown
 
+## [1.1.0] - 2019-03-14 - [BRAVO-671](https://creditandfinance.atlassian.net/browse/BRAVO-671)
+### Added
+- added `isError`, `isDisabled` and `isLoading` prop
+
 ## [1.0.2] - 2019-03-05 - [BRAVO-387](https://creditandfinance.atlassian.net/browse/BRAVO-387)
 ### Changed
 - added value prop

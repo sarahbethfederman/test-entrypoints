@@ -267,9 +267,7 @@ exports[`Card render card with interactive title 1`] = `
 
 .c5 {
   display: inline-block;
-  cursor: pointer;
   position: relative;
-  background-color: #f1f1f1;
   width: 100%;
 }
 
@@ -278,21 +276,23 @@ exports[`Card render card with interactive title 1`] = `
 }
 
 .c6 {
-  border: none;
   border-radius: 4px 4px 0 0;
   font-family: 'Open Sans',sans-serif;
   -webkit-appearance: none;
   cursor: pointer;
-  padding: calc(0.6 * var(--lendi-ui-size)) calc(1.5 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size)) calc(0.6 * var(--lendi-ui-size));
+  padding: calc(0.4 * var(--lendi-ui-size)) calc(2.5 * var(--lendi-ui-size)) calc(0.4 * var(--lendi-ui-size)) calc(0.66 * var(--lendi-ui-size));
   font-size: var(--lendi-ui-size);
   width: 100%;
+  border: none;
 }
 
 .c7 {
   position: absolute;
   right: 6px;
   pointer-events: none;
-  top: calc(0.75 * var(--lendi-ui-size));
+  top: calc(0.45 * var(--lendi-ui-size));
+  width: calc(1.25 * var(--lendi-ui-size));
+  height: calc(1.25 * var(--lendi-ui-size));
 }
 
 <Card
@@ -355,18 +355,21 @@ exports[`Card render card with interactive title 1`] = `
                         }
                       >
                         <styled.div
+                          isDisabled={false}
                           isFullWidth={true}
                         >
                           <div
                             className="c5"
                           >
                             <styled.select
-                              isFullWidth={true}
+                              disabled={false}
+                              isError={false}
                               onChange={[Function]}
                               selectSize="md"
                             >
                               <select
                                 className="c6"
+                                disabled={false}
                                 onChange={[Function]}
                               >
                                 <option

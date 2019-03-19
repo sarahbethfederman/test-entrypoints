@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/card",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -12,6 +12,7 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
+    "@lendi-ui/theme": "^5.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^2 || ^3"
@@ -23,10 +24,9 @@
     "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
   },
   "dependencies": {
-    "@lendi-ui/theme": "^4.0.0",
     "@lendi-ui/color": "^2.0.2",
-    "@lendi-ui/dropdown": "^1.0.0",
-    "@lendi-ui/icon": "^5.0.1",
+    "@lendi-ui/dropdown": "^1.1.0",
+    "@lendi-ui/icon": "^5.1.0",
     "@lendi-ui/spacing": "^3.1.2",
     "@lendi-ui/typography": "^2.5.5",
     "@lendi-ui/breakpoint": "^1.0.1",

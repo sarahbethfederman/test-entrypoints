@@ -4,7 +4,7 @@ import Card, { CardProps } from '.';
 import Theme from '@lendi-ui/theme';
 import { CardHead, CardBody, MoreContainer, CardTitleIcon } from './index.style';
 import Dropdown, { Item } from '@lendi-ui/dropdown';
-import { Lock, Info } from '../../icon/src';
+import { Lock, Info } from '@lendi-ui/icon';
 import { deriveSize } from '@lendi-ui/utils';
 
 let wrapper;

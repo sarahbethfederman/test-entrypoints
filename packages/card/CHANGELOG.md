@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/card
 
+## [1.0.2] - 2019-03-15 - [BRAVO-671] (https://creditandfinance.atlassian.net/browse/BRAVO-671)
+### Changed
+- Change Theme from 'dependencies' to 'peerDependencies'
+
 ## [1.0.1] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
  
 ### Changed

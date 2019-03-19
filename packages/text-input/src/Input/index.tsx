@@ -19,6 +19,7 @@ export type InputProp = Pick<
   onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
 };
 
 export const Input = ({

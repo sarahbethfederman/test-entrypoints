@@ -6,3 +6,8 @@
  
 ### Changed
 - Updated icon dependency from ^4 to ^5
+
+## [1.0.3] - 2019-03-14 - [BRAVO-671] (https://creditandfinance.atlassian.net/browse/BRAVO-671)
+ 
+### Changed
+- Add classname to Spinner then allow custom style applied

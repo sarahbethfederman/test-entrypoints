@@ -5,12 +5,13 @@ export type SpinnerColorVariant = 'dark' | 'light';
 
 export interface SpinnerProps {
   variant?: SpinnerColorVariant;
+  className?: string;
 }
 
 export default class Spinner extends React.Component<SpinnerProps> {
   render() {
-    const { variant = 'dark' } = this.props;
+    const { variant = 'dark', className } = this.props;
     const color = variant === 'dark' ? 'primary.500' : 'shade.0';
-    return <SpinnerIconWrapper color={color} />;
+    return <SpinnerIconWrapper color={color} className={className} />;
   }
 }
