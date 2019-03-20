@@ -111,7 +111,11 @@ export const Select = styled.select<LayoutProp>`
   }} ${({ selectSize }: { selectSize: ListSize }) => dropBySizeMixin(selectSize)};
   width: 100%;
   ${({ isError }: { isError: boolean }) =>
-    isError ? `border: 1px solid ${select('colors.error.500')};` : 'border: none;'};
+    isError
+      ? css`
+          border: 1px solid ${select('colors.error.500')};
+        `
+      : 'border: none;'};
 `;
 
 export const IconDown = styled(ChevronDown)`
