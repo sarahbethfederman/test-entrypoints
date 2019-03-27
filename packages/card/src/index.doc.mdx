@@ -7,13 +7,15 @@ import Card from '@lendi-ui/card';
 ```
 
 ```jsx
-<Card title="Card title" onCancel={() => alert('clicked!')}>
-       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-      type specimen book.
-      <Card title="Inner Card with Subtitle" subTitle="Here we go">
-        Child card
-      </Card>
+<Card 
+  title="Card title"
+  headerSize="sm"
+  subTitle="I'm a sub-title"
+  rightHeaderContent=<Lock color="secondary.500" onClick={() => alert('clicked!')}/>
+>
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+  type specimen book.
 </Card>
 ```
 
@@ -21,10 +23,32 @@ import Card from '@lendi-ui/card';
 
 <PropTable>
   <PropTable.Entry name="title" type="string" description="Title of card"/>
-  <PropTable.Entry name="subtitle" type="string" description="SubTitle of card"/>
+  <PropTable.Entry name="headerSize" type={`"xs" | "sm" | "md"`} defaultValue='sm' description="Size of the header as per Heading typography component"/>
+  <PropTable.Entry name="subTitle" type="string" description="SubTitle of card"/>
   <PropTable.Entry name="interactiveTitle" type="React.ReactElement<DropdownProps>" description="Interactive title - a dropdown to switch between content."/>
   <PropTable.Entry name="cardTitleIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along title"/>
-  <PropTable.Entry name="moreIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along Cancel button"/>
   <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card."/>
-  <PropTable.Entry name="onCancel" type="() => void" description="Handle the click event."/>
+  <PropTable.Entry name="rightHeaderContent" type="React.ReactNode" description="The content of the RHS of the header. This will commonly be a button (eg. 'Cancel', 'Edit' etc), or an icon, or both."/>
 </PropTable>
+
+## RHS button content
+
+Optimal order of appearance: Negative, Neutral, Positive (left to right)
+
+  Negative actions:
+
+  ```
+  No, Cancel, Delete, Close, Hide, Dismiss, Reset, Back, Previous
+  ```
+  Neutral actions:
+
+  ```
+  Not sure, Edit, Save, Help, Export, Upload, Download, Move, Settings, Options, Browse, 
+  Preferences, Copy, Preview
+  ```
+  Positive actions:
+
+  ```
+  Yes, Next, Continue, Accept, OK, Commit, Submit, Complete, View, Show, Add, Start, Create, 
+  Contact, Learn more, Confirm, Open, Send, Enable, New
+  ```

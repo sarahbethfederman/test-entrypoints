@@ -1,5 +1,11 @@
 # Changelog - @lendi-ui/card
 
+## [2.0.0] - 2019-03-26 - [HUB-42] (https://creditandfinance.atlassian.net/browse/HUB-42)
+### Changed
+- Remove top RHS content (Cancel button and moreIcon) and replace it with a ReactNode prop
+- Add a header size prop (xs, sm, md), change RHS button padding to "sm", correct border radius of card
+- Documentation improvements
+
 ## [1.0.2] - 2019-03-15 - [BRAVO-671] (https://creditandfinance.atlassian.net/browse/BRAVO-671)
 ### Changed
 - Change Theme from 'dependencies' to 'peerDependencies'

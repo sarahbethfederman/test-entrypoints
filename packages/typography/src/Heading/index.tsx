@@ -65,20 +65,30 @@ export const heading = (options: HeadingOptions) => {
   `;
 };
 
-const componentBySize: { [size in Size]: string } = {
-  xs: 'h5',
-  sm: 'h4',
-  md: 'h3',
-  lg: 'h2',
-  xl: 'h1',
-};
+const componentBySize = (size: HeadingSize) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'xs':
+        return 'h5';
+      case 'sm':
+        return 'h4';
+      case 'md':
+        return 'h3';
+      case 'lg':
+        return 'h2';
+      case 'xl':
+        return 'h1';
+      default:
+        return 'h1';
+    }
+  });
 
 export interface HeadingProps extends HeadingOptions {
   as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 }
 
 function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
-  const Component = as || (typeof size !== 'object' ? componentBySize[size] : 'h1');
+  const Component = as || (typeof size !== 'object' ? componentBySize(size) : 'h1');
   return <Component size={size} {...otherProps} />;
 }
 

@@ -5,16 +5,13 @@ import {
   CardTitle,
   MoreContainer,
   CardBody,
-  CancelButton,
   CardHeadSubTitle,
   TitleContainer,
   CardTitleIcon,
-  MoreIcon,
   Size,
 } from './index.style';
 import { DropdownProps } from '@lendi-ui/dropdown';
 import { IconProps } from '@lendi-ui/icon';
-import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 export interface CardProps {
   title?: string;
   interactiveTitle?: React.ReactElement<DropdownProps>;
@@ -22,9 +19,8 @@ export interface CardProps {
   moreIcon?: React.ReactElement<IconProps>;
   subTitle?: string;
   children?: React.ReactNode;
-  onCancel?: () => void;
-  onIconClick?: () => void;
-  headerSize?: BreakpointValue<Size> | BreakpointValueMap<Size>;
+  rightHeaderContent?: React.ReactNode;
+  headerSize?: Size;
 }
 
 export default class Card extends React.Component<CardProps> {
@@ -34,27 +30,20 @@ export default class Card extends React.Component<CardProps> {
       interactiveTitle,
       cardTitleIcon,
       subTitle,
-      onCancel,
-      onIconClick,
+      rightHeaderContent,
       children,
-      moreIcon,
       headerSize = 'sm',
     } = this.props;
 
     return (
       <CardWrapper>
-        <CardHead size={headerSize}>
+        <CardHead>
           <TitleContainer>
             {cardTitleIcon && <CardTitleIcon>{cardTitleIcon}</CardTitleIcon>}
-            <CardTitle>{interactiveTitle || title}</CardTitle>
+            <CardTitle size={headerSize}>{interactiveTitle || title}</CardTitle>
             {subTitle && <CardHeadSubTitle>{subTitle}</CardHeadSubTitle>}
           </TitleContainer>
-          {(onCancel || moreIcon) && (
-            <MoreContainer>
-              {onCancel && <CancelButton onClick={onCancel}>Cancel</CancelButton>}
-              {moreIcon && <MoreIcon onClick={onIconClick}>{moreIcon}</MoreIcon>}
-            </MoreContainer>
-          )}
+          {rightHeaderContent && <MoreContainer>{rightHeaderContent}</MoreContainer>}
         </CardHead>
         <CardBody>{children}</CardBody>
       </CardWrapper>

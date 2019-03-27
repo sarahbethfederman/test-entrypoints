@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Card from '.';
 import Dropdown, { Item } from '@lendi-ui/dropdown';
-import { Lock, Info } from '@lendi-ui/icon';
+import { Info } from '@lendi-ui/icon';
 const items: Item[] = [
   {
     value: '1',
@@ -14,52 +14,21 @@ const items: Item[] = [
 ];
 export default () => (
   <>
-    <Card title="Add credit cards or store cards" onCancel={() => alert('clicked!')}>
+    <Card
+      title="Add credit cards or store cards"
+      rightHeaderContent={
+        <div onClick={() => alert('clicked!')}>
+          <Info color="secondary.500" />
+        </div>
+      }
+    >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book.
-      <Card headerSize="lg" title="Inner Card with Subtitle with headersize 'lg'" subTitle="Here we go">
+      <Card headerSize="xs" title="Inner Card with Subtitle with headerSize 'xs'" subTitle="Here we go">
         Child card
       </Card>
-      <Card
-        title="It was popularised in the 1960s with the release of Letraset sheets containing
-        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum"
-        subTitle="More subtitle...... "
-        moreIcon={<Info color="secondary.500" />}
-        onCancel={() => alert('clicked!')}
-      >
-        Child card
-      </Card>
-      <Card interactiveTitle={<Dropdown items={items} />} onCancel={() => alert('clicked!')}>
-        Interactive Card title - Dropdown
-      </Card>
-      <Card title="Card with icon" cardTitleIcon={<Lock color="secondary.500" />}>
-        Card with icon
-      </Card>
-      <Card
-        title="Card with icon and cancel"
-        cardTitleIcon={<Lock color="secondary.500" />}
-        onCancel={() => alert('clicked!')}
-      >
-        Card with icon and cancel
-      </Card>
-      <Card
-        title="Card with icon and cancel, more icon"
-        cardTitleIcon={<Lock color="secondary.500" />}
-        onCancel={() => alert('clicked!')}
-        moreIcon={<Info color="secondary.500" />}
-        onIconClick={() => alert('Icon clicked!')}
-      >
-        Card with icon and cancel
-      </Card>
-      <Card
-        title="Card with more icon click"
-        moreIcon={<Info color="secondary.500" />}
-        onIconClick={() => alert('Icon clicked!')}
-      >
-        Card with icon and cancel
-      </Card>
+      <Card interactiveTitle={<Dropdown items={items} />}>Interactive Card title - Dropdown</Card>
     </Card>
   </>
 );
