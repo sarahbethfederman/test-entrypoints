@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextBubble should mount 1`] = `
+.c0 {
+  display: inline-block;
+  margin-bottom: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1 {
+  display: block;
+  font-family: 'Cabin',sans-serif;
+  text-transform: uppercase;
+  font-size: calc(0.75 * var(--lendi-ui-size));
+  font-weight: 600;
+  line-height: calc(0.75 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
+  -moz-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
+  -ms-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
+  letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
+  color: #929292;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.c2 {
+  color: #474747;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  margin-top: calc(0.5 * var(--lendi-ui-size));
+  border-radius: 6px;
+  background-color: #e5f8f6;
+  padding: calc(0.75 * var(--lendi-ui-size));
+}
+
+<TextBubble
+  label="Test Label"
+>
+  <styled.div
+    isFullWidth={false}
+  >
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          Test Label
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c2"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</TextBubble>
+`;
