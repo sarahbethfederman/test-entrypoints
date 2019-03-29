@@ -12,6 +12,6 @@ const Grid = styled.div`
   ${grid};
 `;
 
-(Grid as any).Unit = Unit;
+(Grid as typeof Grid & { Unit: typeof Unit }).Unit = Unit;
 
-export default Grid;
+export default Grid as typeof Grid & { Unit: typeof Unit };
