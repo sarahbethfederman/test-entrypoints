@@ -1,0 +1,28 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import Collapse from '@lendi-ui/collapse';
+```
+
+```jsx
+<Collapse title="Collapse Title" subTitle="this is the subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</Collapse>
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="title" required type="string" description="Title of collapse"/>
+  <PropTable.Entry name="subTitle" type="string" description="SubTitle of collapse"/>
+  <PropTable.Entry name="isExpanded" type="boolean" defaultValue="false" description="expanded/collapsed"/>
+  <PropTable.Entry name="footer" type="React.ReactElement" description="Footer of the collapse"/>
+  <PropTable.Entry name="onClick" type="(isExpanded) => void" description="Handle the click event. Consumer can get the current state of collapse - expanded/collapsed"/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the collapse."/>
+  <PropTable.Entry name="headerSize" type={`"xs" | "sm" | "md"`} defaultValue='sm' description="header size to collapse header"/>
+  <PropTable.Entry name="className" type="string" description="external classname to override style of the component"/>
+</PropTable>
