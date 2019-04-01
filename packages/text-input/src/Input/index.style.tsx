@@ -119,6 +119,7 @@ export interface InputWrapperProps {
 
 export const InputWrapper = styled.input`
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;

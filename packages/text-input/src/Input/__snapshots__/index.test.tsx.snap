@@ -35,6 +35,7 @@ exports[`input it should match all styles in different size of Input component l
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -286,6 +287,7 @@ exports[`input it should match all styles in different size of Input component l
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -538,6 +540,7 @@ exports[`input it should match all styles in different size of Input component l
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -789,6 +792,7 @@ exports[`input it should match all styles in different size of Input component m
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -1040,6 +1044,7 @@ exports[`input it should match all styles in different size of Input component m
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -1292,6 +1297,7 @@ exports[`input it should match all styles in different size of Input component m
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -1543,6 +1549,7 @@ exports[`input it should match all styles in different size of Input component s
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -1794,6 +1801,7 @@ exports[`input it should match all styles in different size of Input component s
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -2046,6 +2054,7 @@ exports[`input it should match all styles in different size of Input component s
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
@@ -2297,6 +2306,7 @@ exports[`input it should render the whole input component and a text input 1`] =
 
 .c2 {
   height: 100%;
+  min-width: 0;
   width: 100%;
   border: 0px;
   border-radius: 6px;
