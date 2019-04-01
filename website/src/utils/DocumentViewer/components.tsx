@@ -39,6 +39,7 @@ import Pagination from '@lendi-ui/pagination';
 import StatusBadge from '@lendi-ui/status-badge';
 import Collapse from '@lendi-ui/collapse';
 import TextBubble from '@lendi-ui/text-bubble';
+import DatePicker from '@lendi-ui/date-picker';
 
 const scope = {
   styled,
@@ -97,6 +98,7 @@ const scope = {
   StatusBadge,
   Collapse,
   TextBubble,
+  DatePicker,
 };
 
 interface GenericProps {

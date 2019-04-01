@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker should render the component with month and year sections 1`] = `
+.c2 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  height: calc(3 * var(--lendi-ui-size));
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  min-width: calc(11.75 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  font-family: 'Open Sans',sans-serif;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0:hover {
+  border: solid 1px #5f5f5f;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: calc(3 * var(--lendi-ui-size));
+  padding-top: calc(0.1875 * var(--lendi-ui-size));
+  font-size: calc(1.875 * var(--lendi-ui-size));
+}
+
+.c4 {
+  font-size: inherit;
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.c6 {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: inherit;
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.c3 {
+  border-left: solid 1px #c8c8c8;
+  width: 100%;
+  height: 100%;
+}
+
+.c5 {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  border-left: solid 1px #c8c8c8;
+  width: 100%;
+  height: 100%;
+}
+
+<DatePicker
+  dayOnChange={[MockFunction]}
+  monthOnChange={[MockFunction]}
+  yearOnChange={[MockFunction]}
+>
+  <styled.div
+    hasDayField={false}
+    isDisabled={false}
+    isError={false}
+    size="md"
+  >
+    <div
+      className="c0"
+      size="md"
+    >
+      <styled.div
+        size="md"
+      >
+        <div
+          className="c1"
+          size="md"
+        >
+          <Calendar
+            color="primary.500"
+          >
+            <styled.span
+              color="primary.500"
+            >
+              <span
+                className="c2"
+                color="primary.500"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                  />
+                </svg>
+              </span>
+            </styled.span>
+          </Calendar>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c3"
+        >
+          <styled.input
+            maxLength={2}
+            onChange={[Function]}
+            placeholder="MM"
+            readOnly={false}
+            type="text"
+          >
+            <input
+              className="c4"
+              maxLength={2}
+              onChange={[Function]}
+              placeholder="MM"
+              readOnly={false}
+              type="text"
+            />
+          </styled.input>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c5"
+        >
+          <styled.input
+            isRightEdge={true}
+            maxLength={4}
+            onChange={[Function]}
+            placeholder="YYYY"
+            readOnly={false}
+            type="text"
+          >
+            <input
+              className="c6"
+              maxLength={4}
+              onChange={[Function]}
+              placeholder="YYYY"
+              readOnly={false}
+              type="text"
+            />
+          </styled.input>
+        </div>
+      </styled.div>
+    </div>
+  </styled.div>
+</DatePicker>
+`;
