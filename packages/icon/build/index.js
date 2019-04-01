@@ -53,7 +53,9 @@ fs.readdir(SOURCE_PATH, async (err, files) => {
             .replace(/import React from 'react';/, `import * as React from \'react\';`)
             .replace(/{\.\.\.props}/, '')
             .replace(/\(props\)/, '(props)')
-            .replace(/<svg viewBox/, '<IconWrapper {...props}>\n\t<svg viewBox')
+            .replace(/<svg/, '<IconWrapper {...props}>\n\t<svg')
+            .replace(/<clipPath[\s\S]*clipPath>\s/, '')
+            .replace(/clipPath=".+?"\s/, '')
             .replace('</svg>', '</svg>\n</IconWrapper>')
             .replace(/export default ([\w]+)/, 'export {$1}');
 
