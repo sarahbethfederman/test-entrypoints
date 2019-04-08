@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InlineDropdown render BoxArrow component 1`] = `
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -50,6 +54,10 @@ exports[`InlineDropdown render BoxArrow component 1`] = `
 `;
 
 exports[`InlineDropdown render SelectedBox component and has size property "md" 1`] = `
+.c3 {
+  vertical-align: middle;
+}
+
 .c3 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -236,6 +244,10 @@ Array [
 `;
 
 exports[`InlineDropdown render whole component 1`] = `
+.c3 {
+  vertical-align: middle;
+}
+
 .c3 > svg {
   fill: #00c0a5;
   width: inherit;

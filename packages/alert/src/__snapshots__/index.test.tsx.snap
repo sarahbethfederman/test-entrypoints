@@ -62,6 +62,10 @@ exports[`Alert it should mount Alert component with heading 1`] = `
   margin-top: calc(0.25 * var(--lendi-ui-size));
 }
 
+.c3 {
+  vertical-align: middle;
+}
+
 .c3 > svg {
   fill: #ff1c4a;
   width: inherit;
@@ -187,6 +191,10 @@ exports[`Alert it should mount Alert component without heading 1`] = `
 
 .c3 {
   margin-left: calc(0.75 * var(--lendi-ui-size));
+}
+
+.c2 {
+  vertical-align: middle;
 }
 
 .c2 > svg {

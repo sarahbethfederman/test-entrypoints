@@ -21,6 +21,10 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
   padding-top: calc(0.25 * var(--lendi-ui-size));
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #ff1c4a;
   width: inherit;
@@ -85,6 +89,10 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
 `;
 
 exports[`ErrorMessage it should render a icon called "Error" 1`] = `
+.c0 {
+  vertical-align: middle;
+}
+
 .c0 > svg {
   fill: #ff1c4a;
   width: inherit;
@@ -161,6 +169,10 @@ exports[`ErrorMessage it should render whole component 1`] = `
   -ms-flex-align: base-line;
   align-items: base-line;
   padding-top: calc(0.25 * var(--lendi-ui-size));
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {

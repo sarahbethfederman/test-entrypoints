@@ -5,6 +5,10 @@ exports[`Dropdown it should render disable when isDisabled = true  1`] = `null`;
 exports[`Dropdown it should render error when isError = true  1`] = `null`;
 
 exports[`Dropdown it should render whole component 1`] = `
+.c3 {
+  vertical-align: middle;
+}
+
 .c3 > svg {
   fill: #00c0a5;
   width: inherit;

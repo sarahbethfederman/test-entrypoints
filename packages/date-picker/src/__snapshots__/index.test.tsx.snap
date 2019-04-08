@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatePicker should render the component with month and year sections 1`] = `
+.c2 {
+  vertical-align: middle;
+}
+
 .c2 > svg {
   fill: #00c0a5;
   width: inherit;

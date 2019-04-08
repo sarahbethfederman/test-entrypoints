@@ -5,6 +5,10 @@ exports[`Icon component AccountBalance should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -184,6 +188,10 @@ exports[`Icon component AccountBalance should fetch icon correctly 1`] = `
 exports[`Icon component Add should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -367,6 +375,10 @@ exports[`Icon component AddAlert should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -546,6 +558,10 @@ exports[`Icon component AddAlert should fetch icon correctly 1`] = `
 exports[`Icon component Alarm should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -729,6 +745,10 @@ exports[`Icon component Assessment should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -908,6 +928,10 @@ exports[`Icon component Assessment should fetch icon correctly 1`] = `
 exports[`Icon component Assignment should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -1091,6 +1115,10 @@ exports[`Icon component AssignmentReturn should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -1270,6 +1298,10 @@ exports[`Icon component AssignmentReturn should fetch icon correctly 1`] = `
 exports[`Icon component AssignmentReturned should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -1453,6 +1485,10 @@ exports[`Icon component AssignmentTurnedIn should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -1632,6 +1668,10 @@ exports[`Icon component AssignmentTurnedIn should fetch icon correctly 1`] = `
 exports[`Icon component AttachFile should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -1815,6 +1855,10 @@ exports[`Icon component Autorenew should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -1994,6 +2038,10 @@ exports[`Icon component Autorenew should fetch icon correctly 1`] = `
 exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -2450,6 +2498,10 @@ exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -2680,6 +2732,10 @@ exports[`Icon component Briefcase should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -2892,6 +2948,10 @@ exports[`Icon component Build should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -3074,6 +3134,10 @@ exports[`Icon component Calendar should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -3250,6 +3314,10 @@ exports[`Icon component Calendar should fetch icon correctly 1`] = `
 exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -3580,6 +3648,10 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -3791,6 +3863,10 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
 exports[`Icon component CashOut should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -4025,6 +4101,10 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -4218,6 +4298,10 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
 exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -4425,6 +4509,10 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -4621,6 +4709,10 @@ exports[`Icon component Check2 should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -4800,6 +4892,10 @@ exports[`Icon component Check2 should fetch icon correctly 1`] = `
 exports[`Icon component ChevronCircle should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -4984,6 +5080,10 @@ exports[`Icon component ChevronDown should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -5160,6 +5260,10 @@ exports[`Icon component ChevronDown should fetch icon correctly 1`] = `
 exports[`Icon component ChevronLeft should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -5340,6 +5444,10 @@ exports[`Icon component ChevronRight should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -5518,6 +5626,10 @@ exports[`Icon component ChevronUp should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -5694,6 +5806,10 @@ exports[`Icon component ChevronUp should fetch icon correctly 1`] = `
 exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -5945,6 +6061,10 @@ exports[`Icon component Clock should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -6141,6 +6261,10 @@ exports[`Icon component Close should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -6317,6 +6441,10 @@ exports[`Icon component Close should fetch icon correctly 1`] = `
 exports[`Icon component Computer should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -6498,6 +6626,10 @@ exports[`Icon component Computer should fetch icon correctly 1`] = `
 exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -6689,6 +6821,10 @@ exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
 exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -6884,6 +7020,10 @@ exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
 exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -7143,6 +7283,10 @@ exports[`Icon component Consolidations should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -7346,6 +7490,10 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -7539,6 +7687,10 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
 exports[`Icon component Credit should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -7752,6 +7904,10 @@ exports[`Icon component CreditCard should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -7931,6 +8087,10 @@ exports[`Icon component CreditCard should fetch icon correctly 1`] = `
 exports[`Icon component Dashboard should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -8114,6 +8274,10 @@ exports[`Icon component DataUsage should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -8293,6 +8457,10 @@ exports[`Icon component DataUsage should fetch icon correctly 1`] = `
 exports[`Icon component DateRange should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -8476,6 +8644,10 @@ exports[`Icon component Delete should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -8657,6 +8829,10 @@ exports[`Icon component DeleteOutline should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -8836,6 +9012,10 @@ exports[`Icon component DeleteOutline should fetch icon correctly 1`] = `
 exports[`Icon component Deposits should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -9033,6 +9213,10 @@ exports[`Icon component Description should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -9212,6 +9396,10 @@ exports[`Icon component Description should fetch icon correctly 1`] = `
 exports[`Icon component Document should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -9406,6 +9594,10 @@ exports[`Icon component Document should fetch icon correctly 1`] = `
 exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -9630,6 +9822,10 @@ exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -9840,6 +10036,10 @@ exports[`Icon component Dollar should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -10016,6 +10216,10 @@ exports[`Icon component Dollar should fetch icon correctly 1`] = `
 exports[`Icon component DomainLogo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -10252,6 +10456,10 @@ exports[`Icon component DoneAll should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -10431,6 +10639,10 @@ exports[`Icon component DoneAll should fetch icon correctly 1`] = `
 exports[`Icon component Edit should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -10614,6 +10826,10 @@ exports[`Icon component Email should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -10793,6 +11009,10 @@ exports[`Icon component Email should fetch icon correctly 1`] = `
 exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -11020,6 +11240,10 @@ exports[`Icon component Error should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -11196,6 +11420,10 @@ exports[`Icon component Error should fetch icon correctly 1`] = `
 exports[`Icon component Error2 should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -11379,6 +11607,10 @@ exports[`Icon component ErrorOutline should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -11560,6 +11792,10 @@ exports[`Icon component Eye should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -11736,6 +11972,10 @@ exports[`Icon component Eye should fetch icon correctly 1`] = `
 exports[`Icon component Eyes should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -11937,6 +12177,10 @@ exports[`Icon component Facebook should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -12113,6 +12357,10 @@ exports[`Icon component Facebook should fetch icon correctly 1`] = `
 exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -12336,6 +12584,10 @@ exports[`Icon component FavoriteBorder should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -12515,6 +12767,10 @@ exports[`Icon component FavoriteBorder should fetch icon correctly 1`] = `
 exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -12714,6 +12970,10 @@ exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
 exports[`Icon component Flow should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -12942,6 +13202,10 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -13161,6 +13425,10 @@ exports[`Icon component Fullscreen should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -13340,6 +13608,10 @@ exports[`Icon component Fullscreen should fetch icon correctly 1`] = `
 exports[`Icon component Gauge should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -13530,6 +13802,10 @@ exports[`Icon component Gavel should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -13714,6 +13990,10 @@ exports[`Icon component GetApp should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -13893,6 +14173,10 @@ exports[`Icon component GetApp should fetch icon correctly 1`] = `
 exports[`Icon component Graph should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -14087,6 +14371,10 @@ exports[`Icon component Graph should fetch icon correctly 1`] = `
 exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -14331,6 +14619,10 @@ exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -14560,6 +14852,10 @@ exports[`Icon component Hamburger should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -14736,6 +15032,10 @@ exports[`Icon component Hamburger should fetch icon correctly 1`] = `
 exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -15039,6 +15339,10 @@ exports[`Icon component Heart should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -15215,6 +15519,10 @@ exports[`Icon component Heart should fetch icon correctly 1`] = `
 exports[`Icon component Help should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -15398,6 +15706,10 @@ exports[`Icon component HelpOutline should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -15577,6 +15889,10 @@ exports[`Icon component HelpOutline should fetch icon correctly 1`] = `
 exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -15782,6 +16098,10 @@ exports[`Icon component HighlightOff should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -15963,6 +16283,10 @@ exports[`Icon component History should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -16142,6 +16466,10 @@ exports[`Icon component History should fetch icon correctly 1`] = `
 exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -16345,6 +16673,10 @@ exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
 exports[`Icon component HomeTime should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -16556,6 +16888,10 @@ exports[`Icon component HourglassEmpty should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -16737,6 +17073,10 @@ exports[`Icon component House should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -16915,6 +17255,10 @@ exports[`Icon component HouseHome should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -17090,6 +17434,10 @@ exports[`Icon component HouseHome should fetch icon correctly 1`] = `
 exports[`Icon component Id should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -17315,6 +17663,10 @@ exports[`Icon component Id should fetch icon correctly 1`] = `
 exports[`Icon component IdVerify should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -17549,6 +17901,10 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -17726,6 +18082,10 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
 exports[`Icon component Info2 should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -17909,6 +18269,10 @@ exports[`Icon component InfoTwo should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -18086,6 +18450,10 @@ exports[`Icon component InfoTwo should fetch icon correctly 1`] = `
 exports[`Icon component LargeLock should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -18306,6 +18674,10 @@ exports[`Icon component Launch should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -18487,6 +18859,10 @@ exports[`Icon component Left should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -18665,6 +19041,10 @@ exports[`Icon component Left should fetch icon correctly 1`] = `
 exports[`Icon component LendiLogo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -18853,6 +19233,10 @@ exports[`Icon component Linkedin should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -19035,6 +19419,10 @@ exports[`Icon component Linkedin should fetch icon correctly 1`] = `
 exports[`Icon component LiveChat should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -19228,6 +19616,10 @@ exports[`Icon component Lmi should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -19419,6 +19811,10 @@ exports[`Icon component Lock should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -19598,6 +19994,10 @@ exports[`Icon component Lock should fetch icon correctly 1`] = `
 exports[`Icon component LockCircle should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -19827,6 +20227,10 @@ exports[`Icon component LowDoc should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -20018,6 +20422,10 @@ exports[`Icon component LuiLogo should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -20202,6 +20610,10 @@ exports[`Icon component LuiLogo should fetch icon correctly 1`] = `
 exports[`Icon component Lvr should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -20421,6 +20833,10 @@ exports[`Icon component Lvr should fetch icon correctly 1`] = `
 exports[`Icon component Maintenance should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -20658,6 +21074,10 @@ exports[`Icon component Message should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -20839,6 +21259,10 @@ exports[`Icon component Mobile should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -21015,6 +21439,10 @@ exports[`Icon component Mobile should fetch icon correctly 1`] = `
 exports[`Icon component MonetizationOn should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -21196,6 +21624,10 @@ exports[`Icon component MonetizationOn should fetch icon correctly 1`] = `
 exports[`Icon component Money should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -21431,6 +21863,10 @@ exports[`Icon component MoreHoriz should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -21612,6 +22048,10 @@ exports[`Icon component MoreVert should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -21791,6 +22231,10 @@ exports[`Icon component MoreVert should fetch icon correctly 1`] = `
 exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -21982,6 +22426,10 @@ exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`]
 exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -22183,6 +22631,10 @@ exports[`Icon component NotificationImportant should fetch icon correctly 1`] = 
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -22362,6 +22814,10 @@ exports[`Icon component NotificationImportant should fetch icon correctly 1`] = 
 exports[`Icon component Offset should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -22555,6 +23011,10 @@ exports[`Icon component OpenWith should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -22734,6 +23194,10 @@ exports[`Icon component OpenWith should fetch icon correctly 1`] = `
 exports[`Icon component PageNotFound should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -22985,6 +23449,10 @@ exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -23227,6 +23695,10 @@ exports[`Icon component People should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -23408,6 +23880,10 @@ exports[`Icon component Phone should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -23587,6 +24063,10 @@ exports[`Icon component Phone should fetch icon correctly 1`] = `
 exports[`Icon component PickATime should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -23784,6 +24264,10 @@ exports[`Icon component PowerSettingsNew should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -23963,6 +24447,10 @@ exports[`Icon component PowerSettingsNew should fetch icon correctly 1`] = `
 exports[`Icon component PreApproval should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -24150,6 +24638,10 @@ exports[`Icon component PreApproval should fetch icon correctly 1`] = `
 exports[`Icon component Preferences should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -24366,6 +24858,10 @@ exports[`Icon component Question should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -24542,6 +25038,10 @@ exports[`Icon component Question should fetch icon correctly 1`] = `
 exports[`Icon component Refinance should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -24723,6 +25223,10 @@ exports[`Icon component Refinance should fetch icon correctly 1`] = `
 exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -24916,6 +25420,10 @@ exports[`Icon component RefinanceHome should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -25094,6 +25602,10 @@ exports[`Icon component RefinanceHome should fetch icon correctly 1`] = `
 exports[`Icon component Relax should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -25303,6 +25815,10 @@ exports[`Icon component RemoveCircle should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -25482,6 +25998,10 @@ exports[`Icon component RemoveCircle should fetch icon correctly 1`] = `
 exports[`Icon component ReportProblem should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -25665,6 +26185,10 @@ exports[`Icon component Right should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -25842,6 +26366,10 @@ exports[`Icon component Right should fetch icon correctly 1`] = `
 exports[`Icon component Room should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -26025,6 +26553,10 @@ exports[`Icon component Save should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -26204,6 +26736,10 @@ exports[`Icon component Save should fetch icon correctly 1`] = `
 exports[`Icon component Savings should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -26423,6 +26959,10 @@ exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -26639,6 +27179,10 @@ exports[`Icon component Schedule should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -26823,6 +27367,10 @@ exports[`Icon component Search should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -27002,6 +27550,10 @@ exports[`Icon component Search should fetch icon correctly 1`] = `
 exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -27234,6 +27786,10 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -27454,6 +28010,10 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
 exports[`Icon component Secured should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -27679,6 +28239,10 @@ exports[`Icon component SentimentSatisfiedAlt should fetch icon correctly 1`] = 
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -27882,6 +28446,10 @@ exports[`Icon component SentimentSatisfiedAlt should fetch icon correctly 1`] = 
 exports[`Icon component Settings should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -28107,6 +28675,10 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -28321,6 +28893,10 @@ exports[`Icon component Share should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -28502,6 +29078,10 @@ exports[`Icon component Spinner should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -28677,6 +29257,10 @@ exports[`Icon component Spinner should fetch icon correctly 1`] = `
 exports[`Icon component Split should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -28866,6 +29450,10 @@ exports[`Icon component Star should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -29051,6 +29639,10 @@ exports[`Icon component StayCurrentPortrait should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -29232,6 +29824,10 @@ exports[`Icon component Success should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -29408,6 +30004,10 @@ exports[`Icon component Success should fetch icon correctly 1`] = `
 exports[`Icon component SuccessTwo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -29587,6 +30187,10 @@ exports[`Icon component SuccessTwo should fetch icon correctly 1`] = `
 exports[`Icon component SunBed should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -29782,6 +30386,10 @@ exports[`Icon component SunBed should fetch icon correctly 1`] = `
 exports[`Icon component Target should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -29998,6 +30606,10 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -30192,6 +30804,10 @@ exports[`Icon component ThumbUp should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -30371,6 +30987,10 @@ exports[`Icon component ThumbUp should fetch icon correctly 1`] = `
 exports[`Icon component Timeline should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -30557,6 +31177,10 @@ exports[`Icon component TrendingDown should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -30736,6 +31360,10 @@ exports[`Icon component TrendingDown should fetch icon correctly 1`] = `
 exports[`Icon component TrendingFlat should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -30919,6 +31547,10 @@ exports[`Icon component TrendingUp should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -31100,6 +31732,10 @@ exports[`Icon component Twitter should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -31276,6 +31912,10 @@ exports[`Icon component Twitter should fetch icon correctly 1`] = `
 exports[`Icon component Upload should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -31460,6 +32100,10 @@ exports[`Icon component Warn should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -31636,6 +32280,10 @@ exports[`Icon component Warn should fetch icon correctly 1`] = `
 exports[`Icon component WarnTwo should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -31817,6 +32465,10 @@ exports[`Icon component Warning should fetch icon correctly 1`] = `
   color: #474747;
 }
 
+.c1 {
+  vertical-align: middle;
+}
+
 .c1 > svg {
   fill: #00c0a5;
   width: inherit;
@@ -31996,6 +32648,10 @@ exports[`Icon component Warning should fetch icon correctly 1`] = `
 exports[`Icon component Weather should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {
@@ -32199,6 +32855,10 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
 exports[`Icon component Youtube should fetch icon correctly 1`] = `
 .c0 {
   color: #474747;
+}
+
+.c1 {
+  vertical-align: middle;
 }
 
 .c1 > svg {

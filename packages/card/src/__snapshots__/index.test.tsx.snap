@@ -62,6 +62,10 @@ exports[`Card render card with interactive title 1`] = `
   font-family: 'Open Sans',sans-serif;
 }
 
+.c8 {
+  vertical-align: middle;
+}
+
 .c8 > svg {
   fill: #00c0a5;
   width: inherit;
