@@ -39,6 +39,7 @@ import Pagination from '@lendi-ui/pagination';
 import StatusBadge from '@lendi-ui/status-badge';
 import Collapse from '@lendi-ui/collapse';
 import TextBubble from '@lendi-ui/text-bubble';
+import TextArea from '@lendi-ui/text-area';
 import DatePicker from '@lendi-ui/date-picker';
 
 const scope = {
@@ -98,6 +99,7 @@ const scope = {
   StatusBadge,
   Collapse,
   TextBubble,
+  TextArea,
   DatePicker,
 };
 

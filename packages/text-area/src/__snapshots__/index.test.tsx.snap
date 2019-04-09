@@ -1,0 +1,737 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text area should render the text area component 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<TextArea
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+>
+  <styled.textarea
+    className=""
+    disabled={false}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={false}
+    isInverse={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </styled.textarea>
+</TextArea>
+`;
+
+exports[`Text area variations of the text area in all given sizes lg should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: 100%;
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes lg should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={true}
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={true}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes lg should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes lg should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes md should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: 100%;
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes md should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={true}
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={true}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes md should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes md should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes sm should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: 100%;
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes sm should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+<styled.textarea
+  className=""
+  disabled={true}
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={true}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes sm should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #474747;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
+
+exports[`Text area variations of the text area in all given sizes sm should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  resize: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  width: calc(21.5 * var(--lendi-ui-size));
+  height: calc(6 * var(--lendi-ui-size));
+  padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  border: 1px solid #f8f8f8;
+  background-color: transparent;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+<styled.textarea
+  className=""
+  disabled={false}
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  onChange={[MockFunction]}
+  placeholder="input here ..."
+  size="md"
+>
+  <textarea
+    className="c0"
+    disabled={false}
+    onChange={[MockFunction]}
+    placeholder="input here ..."
+    size="md"
+  />
+</styled.textarea>
+`;
