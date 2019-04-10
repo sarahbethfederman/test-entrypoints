@@ -1,3 +1,4 @@
+
 ## [2.6.0] - 2019-03-14 - [BRAVO-571](https://creditandfinance.atlassian.net/browse/BRAVO-571)
 ### Added
 - Added `Overline` sub-package, which includes `overline` mixin and `Overline` component.
