@@ -37,6 +37,7 @@ import Card from '@lendi-ui/card';
 import ToggleSwitch from '@lendi-ui/toggle-switch';
 import Pagination from '@lendi-ui/pagination';
 import StatusBadge from '@lendi-ui/status-badge';
+import { Navigation, Menu, MenuItem, BrokerNavigation } from '@lendi-ui/navigation';
 import Collapse from '@lendi-ui/collapse';
 import TextBubble from '@lendi-ui/text-bubble';
 import TextArea from '@lendi-ui/text-area';
@@ -97,6 +98,10 @@ const scope = {
   ToggleSwitch,
   Pagination,
   StatusBadge,
+  Navigation,
+  Menu,
+  MenuItem,
+  BrokerNavigation,
   Collapse,
   TextBubble,
   TextArea,

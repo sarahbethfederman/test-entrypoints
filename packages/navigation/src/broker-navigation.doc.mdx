@@ -1,0 +1,42 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import { BrokerNavigation } from '@lendi-ui/navigation';
+```
+
+```jsx
+
+<BrokerNavigation
+  processState={{
+    loanStructure: true,
+    applicants: true,
+    assetsLiabilities: false,
+    additionalIncome: true,
+    workshopYourDeal: false,
+    lenderSelection: false,
+    documents: false,
+    loanProgress: true,
+    additionalFactFind: false,
+    dealConditions: true,
+    creditHistory: false,
+    decisionEngine: true,
+    }}
+  applicantName='leo leo'
+  applicantState={{contactDetails: true,
+    personalDetails: true,
+    employmentHistory: true,
+    eConsent: true}}
+/>
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="width" type="string" defaultValue="376px" description="The BrokerNavigation component width."/>
+  <PropTable.Entry name="processState" required type="object" description="The header title of MenuItem component."/>
+  <PropTable.Entry name="applicantName" required type="string" description="The current application name."/>
+  <PropTable.Entry name="applicantState" required type='"contactdetails" | "personaldetails" | "employmentHistory" | "E-consent" | ""' defaultValue=""  description="The current propcess in applicant panel."/>
+  <PropTable.Entry name="className" type="string" defaultValue="" description="The custom style for BrokerNavigation component."/>
+</PropTable>

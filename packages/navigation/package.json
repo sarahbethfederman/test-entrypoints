@@ -1,0 +1,35 @@
+{
+  "name": "@lendi-ui/navigation",
+  "version": "0.1.0",
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Lendi Devs",
+  "peerDependencies": {
+    "@lendi-ui/theme": "^5.0.0",
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "styled-components": "^3"
+  },
+  "dependencies": {
+    "@lendi-ui/color": "^2.0.2",
+    "@lendi-ui/depth": "^1.0.0",
+    "@lendi-ui/icon": "^5.2.0",
+    "@lendi-ui/spacing": "^3.1.2",
+    "@lendi-ui/status-badge": "^1.0.1",
+    "@lendi-ui/typography": "^2.6.0",
+    "@lendi-ui/utils": "^1.1.2"
+  },
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+  }
+}

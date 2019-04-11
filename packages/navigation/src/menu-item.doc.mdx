@@ -1,0 +1,23 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import { MenuItem } from '@lendi-ui/navigation';
+```
+
+```jsx
+
+<MenuItem itemHeader='Loan structure' badge={<StatusBadge variant='success' hasIcon={false} size='sm' statusText="COMPLETED" />}  />             
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="itemHeader" type="string" description="The header title of MenuItem component."/>
+  <PropTable.Entry name="handleClick" type="(itemHeader:string) => void" description="The function that handle click MenuItem header event."/>
+  <PropTable.Entry name="isSelected" type="boolean" description="Whether this MenuItem is selected."/>
+  <PropTable.Entry name="badge" type="React.ReactElement<StatusBadgeProps>" description="The badge component."/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The content of MenuItem component."/>
+  <PropTable.Entry name="className" type="string" defaultValue="" description="The custom style for MenuItem component."/>
+</PropTable>
