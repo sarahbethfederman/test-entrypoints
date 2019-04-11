@@ -7,7 +7,7 @@ Styles for overline copy.
 ## Mixin
 
 ```
-import {overline} from '@lendi-ui/overline';
+import {overline} from '@lendi-ui/typography';
 ```
 
 ```js
@@ -21,9 +21,9 @@ render(<Text>Default overline</Text>)
 ### Options
 
 <PropTable>
-  <PropTable.Entry name="size" type={'"lg | "md" | "sm"'} required description="The overline copy size."/>
-  <PropTable.Entry name="colorScheme" type={'"light" | "dark"'} default="light" description="Determines the colour scheme for the overline copy. If no value is specified, defaults to 'light'. Light should be implemented on light backgrounds. Dark should be implemented on dark backgrounds."/>
-  <PropTable.Entry name="align" type={'"left" | "center" | right"'} default="left" description="Horizontal alignment of overline copy. If value is not provided, this defaults to left text alignment."/>
+  <PropTable.Entry name="size" type={'"sm" | "md" | "lg" | "xl"'} required description="The overline copy size."/>
+  <PropTable.Entry name="colorScheme" type={'"light" | "dark"'} defaultValue="light" description="Determines the colour scheme for the overline copy."/>
+  <PropTable.Entry name="align" type={'"left" | "center" | right"'} defaultValue="left" description="Horizontal alignment of overline copy."/>
 </PropTable>
 
 
@@ -34,13 +34,20 @@ import {Overline} from '@lendi-ui/typography';
 ```
 
 ```jsx
-<Overline size="md" href="#" colorScheme="light">Default Overline</Overline>
+<>
+  <div style={{padding: '1rem'}}>
+    <Overline size="md" colorScheme="light">Default Overline</Overline>
+  </div>
+  <div style={{backgroundColor: 'darkslategrey', padding: '1rem'}}>
+    <Overline size="md" href="#" colorScheme="dark">Dark Overline with href</Overline>
+  </div>
+</>
 ```
 
 ### Properties
 <PropTable>
-  <PropTable.Entry name="size" type={'"lg | "md" | "sm"'} required description="The overline copy size."/>
-  <PropTable.Entry name="colorScheme" type={'"light" | "dark"'} default="light" description="Determines the colour scheme for the overline copy. If no value is specified, defaults to 'light'. Light should be implemented on light backgrounds. Dark should be implemented on dark backgrounds."/>
-  <PropTable.Entry name="align" type={'"left" | "center" | right"'} default="left" description="Horizontal alignment of overline copy. If value is not provided, this defaults to left text alignment."/>
-  <PropTable.Entry name="href*" type="string" description="If provided, the overline copy will render as a link using the href value provided. Styling will also alter to include hover/focus/active states, using `${color(primary.500)}` as the base colour."/>
+  <PropTable.Entry name="size" type={'"sm" | "md" | "lg" | "xl" '} required description="The overline copy size."/>
+  <PropTable.Entry name="colorScheme" type={'"light" | "dark"'} defaultValue="light" description="Determines the colour scheme for the overline copy."/>
+  <PropTable.Entry name="align" type={'"left" | "center" | right"'} defaultValue="left" description="Horizontal alignment of overline copy."/>
+  <PropTable.Entry name="href" type="string" description="If href value is provided, the overline copy will render as a link."/>
 </PropTable>

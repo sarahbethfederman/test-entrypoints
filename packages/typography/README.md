@@ -1,6 +1,6 @@
 # @lendi-ui/typography
 
-Typography including Body, Heading and Link.
+Typography including Body, Heading, Overline, and Link.
 
 ## Installation
 
@@ -33,4 +33,11 @@ import { Heading } from '@lendi-ui/typography';
 ```jsx
 import { Link } from '@lendi-ui/typography';
 <Link>quick brown fox</Link>;
+```
+
+- Overline
+
+```jsx
+import { Overline } from '@lendi-ui/typography';
+<Overline>quick brown fox</Overline>;
 ```

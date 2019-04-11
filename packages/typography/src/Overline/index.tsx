@@ -6,7 +6,7 @@ import { deriveSize } from '@lendi-ui/utils';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
-type Size = 'sm' | 'md' | 'lg';
+type Size = 'sm' | 'md' | 'lg' | 'xl';
 export type OverlineSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type OverlineAlignment = AlignmentOrAlignmentMap;
 
@@ -33,6 +33,13 @@ const overlineSizeMixin = (size: OverlineSize) =>
         font-weight: 600;
         line-height: ${deriveSize(0.875)};
         letter-spacing: calc(${deriveSize(0.875)}/10);
+      `;
+      case 'xl':
+        return `
+        font-size: ${deriveSize(1)};
+        font-weight: 600;
+        line-height: ${deriveSize(1)};
+        letter-spacing: calc(${deriveSize(1)}/10);
       `;
       default:
         return undefined;

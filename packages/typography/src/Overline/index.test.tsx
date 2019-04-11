@@ -6,7 +6,7 @@ import { color as getColor } from '@lendi-ui/color';
 
 import { Overline, OverlineSize, OverlineAlignment } from '..';
 
-const sizes: OverlineSize[] = ['lg', 'md', 'sm'];
+const sizes: OverlineSize[] = ['sm', 'md', 'lg', 'xl'];
 const alignments: OverlineAlignment[] = [undefined, 'left', 'center', 'right'];
 
 describe('Overline', () => {
