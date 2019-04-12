@@ -41,3 +41,8 @@
  
 ### Changed
 - Updated icon dependency from ^4 to ^5
+
+## [1.0.9] - 2019-04-12 [HUB-89](https://creditandfinance.atlassian.net/browse/HUB-89)
+
+### Changed
+- Changed left navbar header wrapper to explicitly use box-sizing: border-box; and removed the height on the header, resolving a bug where half the header was being cutoff based on box-sizing.

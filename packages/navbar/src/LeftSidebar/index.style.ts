@@ -6,6 +6,7 @@ import { Link } from '@lendi-ui/typography';
 
 export const Wrapper = styled.div`
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   height: 100%;
 `;
@@ -15,7 +16,6 @@ export const Header = styled.header`
   flex-shrink: 0;
   flex-direction: row;
   align-items: flex-end;
-  height: 2em;
   ${p('md')};
 `;
 
