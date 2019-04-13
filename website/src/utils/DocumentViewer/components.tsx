@@ -25,7 +25,7 @@ import Spinner from '@lendi-ui/spinner';
 import Transition, { Fade } from '@lendi-ui/transition';
 import Overlay from '@lendi-ui/overlay';
 import Tabs from '@lendi-ui/tabs';
-import Navbar from '@lendi-ui/navbar';
+import Navbar, { fetchApplication, fetchBroker } from '@lendi-ui/navbar';
 import Footer from '@lendi-ui/footer';
 import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
 import Legal from '@lendi-ui/legal-stuff';
@@ -85,6 +85,8 @@ const scope = {
   Overlay,
   Tabs,
   Navbar,
+  fetchApplication,
+  fetchBroker,
   Footer,
   Checkbox,
   CheckboxGroup,

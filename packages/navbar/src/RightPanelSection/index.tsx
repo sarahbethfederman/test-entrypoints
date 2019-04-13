@@ -15,7 +15,7 @@ export const RightPanelSection = (props: RightPanelSectionProps) => {
   const { phoneNumber = PHONE, applicationNumber = 0, onChat } = props;
   return (
     <RightSidebar.Section>
-      <RightSidebar.Item icon={<Telephone color="primary.500" />} href={toTel(phoneNumber)}>
+      <RightSidebar.Item icon={<Telephone color="primary.500" />} href={phoneNumber && toTel(phoneNumber)}>
         {phoneNumber}
       </RightSidebar.Item>
       <RightSidebar.Item icon={<LiveChat color="primary.500" />} onClick={onChat} labelText={'chat online'}>

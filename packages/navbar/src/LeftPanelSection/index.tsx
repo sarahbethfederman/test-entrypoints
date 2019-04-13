@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { UnauthedNav } from './UnauthedNav';
 import { AuthedNav } from './AuthedNav';
-import { Application, Applicant } from './../types';
+import { Application, Applicant } from '../types';
 
 export interface LeftPanelSectionProps {
   isAuthenticated?: boolean;

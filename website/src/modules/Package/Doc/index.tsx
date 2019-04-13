@@ -34,6 +34,7 @@ export class Doc extends React.Component<DocProps, DocState> {
         <Helmet>
           <title>{`${doc.name} / ${workspace.name}`}</title>
         </Helmet>
+        {/* <ChangeLog /> */}
         <DocumentViewer loader={doc.load} />
       </>
     );

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -12,7 +12,8 @@
   "keywords": [],
   "author": "Lendi Devs",
   "devDependencies": {
-    "cpx": "^1.5.0"
+    "cpx": "^1.5.0",
+    "moxios": "^0.4.0"
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^1.0.0",
@@ -24,7 +25,9 @@
     "@lendi-ui/overlay": "^1.0.0",
     "@lendi-ui/spacing": "^3.1.0",
     "@lendi-ui/transition": "^2.0.0",
+    "@types/axios": "^0.14.0",
     "@types/react-stickynode": "^1.4.0",
+    "axios": "^0.18.0",
     "react-dot-fragment": "^0.2.8",
     "react-stickynode": "^2.1.0"
   },
