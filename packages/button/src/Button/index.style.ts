@@ -15,20 +15,23 @@ const commonStyleBySizeMixin = (size: ButtonSize) =>
       case 'sm':
         return `
           height: ${deriveSize(2.5)};
-          padding: 0 ${deriveSize(0.5)};
-          font-size: ${deriveSize(1)};
+          padding: 0 ${deriveSize(0.75)};
+          font-size: ${deriveSize(0.75)};
+          letter-spacing: ${deriveSize(0.05)};
       `;
       case 'md':
         return `
           height: ${deriveSize(3)};
           padding: 0 ${deriveSize(1)};
-          font-size: ${deriveSize(1.125)};
+          font-size: ${deriveSize(0.875)};
+          letter-spacing: ${deriveSize(0.0625)};
       `;
       case 'lg':
         return `
           height: ${deriveSize(4)};
-          padding: 0 ${deriveSize(1)};
-          font-size: ${deriveSize(1.375)};
+          padding: 0 ${deriveSize(1.5)};
+          font-size: ${deriveSize(1)};
+          letter-spacing: ${deriveSize(0.075)};
       `;
       default:
         return undefined;
@@ -84,6 +87,7 @@ const commonStyle = css`
   line-height: 1;
   text-align: center;
   transition: all 0.1s;
+  text-transform: uppercase;
 
   ${({ size }: WrapperProps) => css`
     ${size && commonStyleBySizeMixin(size)}
