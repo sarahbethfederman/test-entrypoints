@@ -6,9 +6,9 @@ import createRef from 'react-create-ref';
 import TabContext from '../TabContext';
 
 export interface TabsProps {
-  variant: 'negative' | 'positive';
   onChange: (key: number) => void;
   activeTab: number;
+  isInverse?: boolean;
 }
 
 export interface TabsState {
@@ -74,7 +74,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, variant, activeTab } = this.props;
+    const { children, isInverse = false, activeTab } = this.props;
     const { isScrollable } = this.state;
     return (
       <TabContext.Provider
@@ -84,7 +84,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           selectedIndex: activeTab - 1,
         }}
       >
-        <Wrapper innerRef={this.node} variant={variant} isScrollable={isScrollable}>
+        <Wrapper innerRef={this.node} isInverse={isInverse} isScrollable={isScrollable}>
           {isScrollable && (
             <LeftIconWrapper onClick={this.handleMoveScrollbarRight}>
               <Left height="24px" width="24px" color="secondary.500" />

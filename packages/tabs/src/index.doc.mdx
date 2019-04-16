@@ -8,7 +8,7 @@ import Tabs from '@lendi-ui/tabs';
 ```
 
 ```jsx
-<Tabs variant='positive' onChange={() => alert('changed')} activeTab={1}>
+<Tabs onChange={() => alert('changed')} activeTab={1}>
     <Tabs.Tab icon={<Heart color="secondary.500"/>} href="https://lendi.com.au">
         string
     </Tabs.Tab>
@@ -57,9 +57,9 @@ import Tabs from '@lendi-ui/tabs';
 ## Tabs Properties
 
 <PropTable>
-  <PropTable.Entry name="variant" type="positive" description="make tab background color as primary.500, otherwise transparent"/>
-  <PropTable.Entry name="onChange" type="() => void" description="Handle the change event"/>
-  <PropTable.Entry name="activeTab" type="number" description="index of active tab"/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue="false" description="Whether the background is primary.500 (false) or transparent (true)."/>
+  <PropTable.Entry name="onChange" type="(key: number) => void" description="Handle the change event."/>
+  <PropTable.Entry name="activeTab" type="number" description="Index of the active tab."/>
 </PropTable>
 
 <br/><br/>
@@ -68,5 +68,5 @@ import Tabs from '@lendi-ui/tabs';
 
 <PropTable>
   <PropTable.Entry name="icon" type="React.ReactNode" description="Icon on top of text."/>
-  <PropTable.Entry name="href" type="string" description="URL to link to"/>
+  <PropTable.Entry name="href" type="string" description="URL to link to."/>
 </PropTable>

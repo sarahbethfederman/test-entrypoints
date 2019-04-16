@@ -40,23 +40,23 @@ function render(props) {
 }
 
 describe('Tabs', () => {
-  it('renders positive variant', () => {
-    render({ variant: 'positive', activeTab: 1 });
+  it('renders isInverse state with transparent background', () => {
+    render({ isInverse: false, activeTab: 1 });
     expect(tabs).toBeTruthy();
   });
 
-  it('renders negative variant', () => {
-    render({ variant: 'negative', activeTab: 1 });
+  it('renders when isInverse is false', () => {
+    render({ isInverse: true, activeTab: 1 });
     expect(tabs).toBeTruthy();
   });
 
   it('render a element if href props was provided', () => {
-    render({ variant: 'positive', activeTab: 1, href: 'https://lendi.com.au' });
+    render({ isInverse: false, activeTab: 1, href: 'https://lendi.com.au' });
     expect(tabs.find(TabWrapperA)).toBeTruthy();
   });
 
   it('should show right and left arrows for desktop where scroll is needed', () => {
-    render({ variant: 'positive', activeTab: 1 });
+    render({ isInverse: false, activeTab: 1 });
     Object.defineProperty(tabs.getDOMNode(), 'scrollWidth', {
       value: 1920,
     });
@@ -70,7 +70,7 @@ describe('Tabs', () => {
 
   it('should select the tab specified by activeTab', () => {
     let activeTab = 1;
-    render({ variant: 'positive', activeTab });
+    render({ isInverse: false, activeTab });
     expect(
       tabs
         .find(Tab)
@@ -80,7 +80,7 @@ describe('Tabs', () => {
     ).toBe(true);
 
     activeTab = 2;
-    render({ variant: 'positive', activeTab });
+    render({ isInverse: false, activeTab });
     expect(
       tabs
         .find(Tab)
@@ -91,7 +91,7 @@ describe('Tabs', () => {
   });
 
   it('should call props onChange when tab is clicked', () => {
-    render({ variant: 'positive' });
+    render({ isInverse: false });
     tabs
       .find(Tab)
       .at(2)
