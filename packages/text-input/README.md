@@ -30,7 +30,7 @@ import Input from '@lendi-ui/input-text';
   <PropTable.Entry name="placeholder" type='string' description="The input placeholder."/>
   <PropTable.Entry name="isInverse" type='boolean' defaultValue="false" description="Whether the input is inversed."/>
   <PropTable.Entry name="isError" type='boolean' defaultValue="false" description="Whether the input content is valid."/>
-  <PropTable.Entry name="isDisabled" type='boolean' defaultValue="false" description="Whether the input is reaonly."/>
+  <PropTable.Entry name="isDisabled" type='boolean' defaultValue="false" description="Whether the input is disabled."/>
   <PropTable.Entry name="isFullWidth" type='boolean' defaultValue="false" description="Whether the input is full width."/>
   <PropTable.Entry name="before" type="React.ReactNode" description="Content before the input content."/>
   <PropTable.Entry name="after" type="React.ReactNode" description="Content after the input content."/>

@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Input } from './index';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
+import { color } from '@lendi-ui/color';
 
 const sizes: InputSize[] = ['lg', 'md', 'sm'];
 
@@ -39,36 +40,40 @@ describe('input', () => {
     expect(element.find(AfterWrapper).length).toEqual(1);
   });
 
-  describe('it should match all styles in different size of Input component', () => {
+  describe('variations of the text input in all given sizes', () => {
     sizes.forEach((size) => {
       describe(`${size}`, () => {
-        it('it should render 100% width of Input component', () => {
+        it('should render 100% width of with isFullWidth prop', () => {
           const isFullWidth = true;
           render({ isFullWidth });
           expect(element.find(Layout)).toHaveStyleRule('width', '100%');
+          expect(element.find(Layout)).toMatchSnapshot();
         });
 
-        it('it should render readonly style of Input component', () => {
+        it('should render the component in a disabled state with the isDisabled prop', () => {
           const isDisabled = true;
           render({ isDisabled });
-          expect(element).toMatchSnapshot();
+          expect(element.find(Layout)).toHaveStyleRule(`'background-color', ${color('shade.25')}`);
+          expect(element.find(Layout)).toMatchSnapshot();
         });
 
-        it('it should render dark theme style of Input component', () => {
+        it('should render the component with a white border and transparent background if the isInverse prop is true', () => {
           const isInverse = true;
           render({ isInverse });
-          expect(element).toMatchSnapshot();
+          expect(element.find(Layout)).toHaveStyleRule('background-color', 'transparent');
+          expect(element.find(Layout)).toHaveStyleRule(`'border', '1px solid ${color('shade.25')}'`);
+          expect(element.find(Layout)).toMatchSnapshot();
         });
 
-        it('it should render error style of Input component', () => {
+        it('should render the component with a red border if the isError state is true', () => {
           const isError = true;
           render({ isError });
-          expect(element).toMatchSnapshot();
+          expect(element.find(Layout)).toHaveStyleRule(`'border', '1px solid ${color('warn.500')}`);
+          expect(element.find(Layout)).toMatchSnapshot();
         });
       });
     });
   });
-
   it('should be able to passed down other input attributes', () => {
     const inputProps = {
       autoFocus: true,

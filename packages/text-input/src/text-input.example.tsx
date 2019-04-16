@@ -17,31 +17,35 @@ class Example extends React.Component<{}, ExampleState> {
   };
 
   render() {
+    const { value } = this.state;
     return (
-      <div style={{ width: '600px' }}>
+      <div>
+        <br />
+        <br />
+        <Input size="sm" value={value} onChange={this.onChange} placeholder="So smol 🎉" />
+        <br />
+        <br />
+        <Input size="md" value={value} onChange={this.onChange} placeholder="I'm medium 🎉" />
+        <br />
+        <br />
+        <Input size="lg" value={value} onChange={this.onChange} placeholder="Wow I'm LARGE! 🎉" />
+        <br />
+        <br />
+        <div style={{ background: 'gray', borderRadius: '6px', padding: '15px' }}>
+          <Input isInverse value={value} onChange={this.onChange} placeholder="Inverse 👌" />
+        </div>
+        <br />
+        <Input isDisabled value={value} onChange={this.onChange} placeholder="I'm disabled guys 😪" />
+        <br />
+        <br />
+        <Input isError value={value} onChange={this.onChange} placeholder="Uh oh, error mode 😬" />
+        <br />
+        <br />
         <Input
-          autoFocus
-          size="md"
-          value={this.state.value}
-          placeholder="input here ..."
+          isFullWidth
+          value={value}
           onChange={this.onChange}
-          isFullWidth={true}
-          after={<span style={{ width: '24px', height: '24px' }}>x</span>}
-        />
-        <Input
-          size="md"
-          value={this.state.value}
-          placeholder="input here ..."
-          onChange={this.onChange}
-          isFullWidth={false}
-          after={<span style={{ width: '24px', height: '24px' }}>x</span>}
-        />
-        <Input
-          size="md"
-          value={this.state.value}
-          placeholder="input here ..."
-          onChange={this.onChange}
-          after={<span style={{ width: '24px', height: '24px' }}>x</span>}
+          placeholder="I'm really, really long and so very full-width 😳"
         />
       </div>
     );

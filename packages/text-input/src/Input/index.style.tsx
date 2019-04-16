@@ -93,14 +93,14 @@ export const Layout = styled.div`
       return css`
         cursor: not-allowed;
         width: ${isFullWidth ? '100%' : 'auto'} ${heightBySizeMixin(size)};
-        background-color: ${isInverse ? select('colors.shade.500') : select('colors.shade.25')};
+        background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
         border: 1px solid ${isInverse ? select('colors.shade.0') : select('colors.shade.100')};
       `;
     } else {
       return css`
         border: 1px solid ${InputBorderColor};
         width: ${isFullWidth ? '100%' : 'auto'} ${heightBySizeMixin(size)};
-        background-color: ${isInverse ? select('colors.shade.500') : select('colors.shade.0')};
+        background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
       `;
     }
   }};
@@ -126,6 +126,7 @@ export const InputWrapper = styled.input`
   ${({ fontSize, isInverse }: InputWrapperProps) => css`
     ${fontBySizeMixin(fontSize)}
     color: ${isInverse ? select('colors.shade.0') : select('colors.shade.700')};
+    background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
     font-family: ${select('typography.body.fontFamily')};
     padding: 0 ${deriveSize(0.75)};
   `} ::placeholder {
@@ -135,7 +136,7 @@ export const InputWrapper = styled.input`
   :read-only {
     cursor: not-allowed;
     ${({ isInverse }: InputWrapperProps) => css`
-      background-color: ${isInverse ? select('colors.shade.500') : select('colors.shade.25')};
+      background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
     `};
   }
 `;
@@ -146,6 +147,7 @@ export const BeforeWrapper = styled.span`
     border-bottom-right-radius: 0;
     margin: 0 0 0 -1.5px;
   }
+  display: flex;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`
@@ -162,6 +164,7 @@ export const AfterWrapper = styled.span`
     border-bottom-left-radius: 0;
     margin: 0 -1.5px 0 0;
   }
+  display: flex;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`

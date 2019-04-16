@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.2 - [2019-04-15] - [HUB-78](https://creditandfinance.atlassian.net/browse/HUB-78)
+### Fixed
+- Correct isInverse UI, add examples, improve tests.
+
 ## 2.1.1 - [02-04-2019] - [HUB-67](https://creditandfinance.atlassian.net/browse/HUB-67)
 ### Changed
 - Added `min-width: 0;` to the InputWrapper to resolve firefox display bug.

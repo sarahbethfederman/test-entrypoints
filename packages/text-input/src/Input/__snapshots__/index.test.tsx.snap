@@ -1,2276 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`input it should match all styles in different size of Input component lg it should render dark theme style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #f8f8f8;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #777777;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #ffffff;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isInverse={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={false}
-            isFullWidth={false}
-            isInverse={true}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={true}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component lg it should render error style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #ff1c4a;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #ffffff;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isError={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={true}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={true}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component lg it should render readonly style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  cursor: not-allowed;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isDisabled={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={true}
-            isError={false}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={true}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={true}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component md it should render dark theme style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #f8f8f8;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #777777;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #ffffff;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isInverse={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={false}
-            isFullWidth={false}
-            isInverse={true}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={true}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component md it should render error style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #ff1c4a;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #ffffff;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isError={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={true}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={true}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component md it should render readonly style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  cursor: not-allowed;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isDisabled={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={true}
-            isError={false}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={true}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={true}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component sm it should render dark theme style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #f8f8f8;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #777777;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ffffff;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #ffffff;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #777777;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isInverse={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={false}
-            isFullWidth={false}
-            isInverse={true}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={true}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component sm it should render error style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  border: 1px solid #ff1c4a;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #ffffff;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isError={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={false}
-            isError={true}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={true}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={false}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={false}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
-exports[`input it should match all styles in different size of Input component sm it should render readonly style of Input component 1`] = `
-.c0 {
-  color: #474747;
-}
-
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border-radius: 6px;
-  box-sizing: border-box;
-  cursor: not-allowed;
-  width: auto;
-  height: calc(3 * var(--lendi-ui-size));
-  background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
-}
-
-.c1:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
-.c2 {
-  height: 100%;
-  min-width: 0;
-  width: 100%;
-  border: 0px;
-  border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
-  color: #474747;
-  font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
-}
-
-.c2::-webkit-input-placeholder {
-  color: #adadad;
-}
-
-.c2::-moz-placeholder {
-  color: #adadad;
-}
-
-.c2:-ms-input-placeholder {
-  color: #adadad;
-}
-
-.c2::placeholder {
-  color: #adadad;
-}
-
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-<Theme>
-  <ThemeProvider
-    theme={
-      Object {
-        "colors": Object {
-          "error": Object {
-            "100": "#ffd1da",
-            "200": "#ffa4b6",
-            "25": "#fff3f5",
-            "300": "#ff7692",
-            "400": "#ff496e",
-            "50": "#ffe8ec",
-            "500": "#ff1c4a",
-            "600": "#cc163b",
-            "700": "#99102c",
-            "800": "#660b1d",
-            "900": "#33050e",
-            "950": "#190207",
-          },
-          "info": Object {
-            "100": "#dae7f7",
-            "200": "#b5d0ef",
-            "25": "#f5f9fd",
-            "300": "#91b9e8",
-            "400": "#6ca2e0",
-            "50": "#ecf3fb",
-            "500": "#488bd9",
-            "600": "#396fad",
-            "700": "#2b5382",
-            "800": "#1c3756",
-            "900": "#0e1b2b",
-            "950": "#070d15",
-          },
-          "primary": Object {
-            "100": "#ccf2ed",
-            "200": "#99e5db",
-            "25": "#f2fbfa",
-            "300": "#66d9c9",
-            "400": "#32ccb7",
-            "50": "#e5f8f6",
-            "500": "#00c0a5",
-            "600": "#009984",
-            "700": "#007363",
-            "800": "#004c42",
-            "900": "#002621",
-            "950": "#001310",
-          },
-          "secondary": Object {
-            "100": "#cedee1",
-            "200": "#9ebdc4",
-            "25": "#f2f6f7",
-            "300": "#6d9ca7",
-            "400": "#3d7a8a",
-            "50": "#e6eef0",
-            "500": "#0d5a6d",
-            "600": "#0a4857",
-            "700": "#073641",
-            "800": "#05242b",
-            "900": "#021215",
-            "950": "#01080a",
-          },
-          "shade": Object {
-            "0": "#ffffff",
-            "100": "#e3e3e3",
-            "1000": "#000000",
-            "200": "#c8c8c8",
-            "25": "#f8f8f8",
-            "300": "#adadad",
-            "400": "#929292",
-            "50": "#f1f1f1",
-            "500": "#777777",
-            "600": "#5f5f5f",
-            "700": "#474747",
-            "800": "#2f2f2f",
-            "900": "#171717",
-            "950": "#0b0b0b",
-          },
-          "success": Object {
-            "100": "#dbf2cc",
-            "200": "#b8e599",
-            "25": "#f6fbf2",
-            "300": "#94d966",
-            "400": "#71cc32",
-            "50": "#edf8e5",
-            "500": "#4ec000",
-            "600": "#3e9900",
-            "700": "#2e7300",
-            "800": "#1f4c00",
-            "900": "#0f2600",
-            "950": "#071300",
-          },
-          "tertiary": Object {
-            "100": "#ffe2df",
-            "200": "#ffc5c0",
-            "25": "#fff7f7",
-            "300": "#ffa9a1",
-            "400": "#ff8c82",
-            "50": "#fff0ef",
-            "500": "#ff7063",
-            "600": "#cc594f",
-            "700": "#99433b",
-            "800": "#662c27",
-            "900": "#331613",
-            "950": "#190b09",
-          },
-          "warn": Object {
-            "100": "#fcddcc",
-            "200": "#f9bc99",
-            "25": "#fef6f2",
-            "300": "#f69a66",
-            "400": "#f37932",
-            "50": "#fdeee5",
-            "500": "#f05800",
-            "600": "#c04600",
-            "700": "#903400",
-            "800": "#602300",
-            "900": "#301100",
-            "950": "#170800",
-          },
-        },
-        "logo": Object {
-          "logoName": "LendiLogo",
-        },
-        "typography": Object {
-          "body": Object {
-            "fontFamily": "'Open Sans', sans-serif",
-          },
-          "heading": Object {
-            "fontFamily": "'Cabin', sans-serif",
-          },
-        },
-      }
-    }
-  >
-    <styled.div>
-      <div
-        className="c0"
-      >
-        <Component
-          isDisabled={true}
-          onChange={[MockFunction]}
-          placeholder="input here ..."
-        >
-          <styled.div
-            isDisabled={true}
-            isError={false}
-            isFullWidth={false}
-            isInverse={false}
-            size="md"
-          >
-            <div
-              className="c1"
-              size="md"
-            >
-              <styled.input
-                fontSize="md"
-                isError={false}
-                isInverse={false}
-                onChange={[MockFunction]}
-                placeholder="input here ..."
-                readOnly={true}
-                type="text"
-              >
-                <input
-                  className="c2"
-                  fontSize="md"
-                  onChange={[MockFunction]}
-                  placeholder="input here ..."
-                  readOnly={true}
-                  type="text"
-                />
-              </styled.input>
-            </div>
-          </styled.div>
-        </Component>
-      </div>
-    </styled.div>
-  </ThemeProvider>
-</Theme>
-`;
-
 exports[`input it should render the whole input component and a text input 1`] = `
 .c0 {
   color: #474747;
@@ -2312,6 +41,7 @@ exports[`input it should render the whole input component and a text input 1`] =
   border-radius: 6px;
   font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
+  background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
   padding: 0 calc(0.75 * var(--lendi-ui-size));
 }
@@ -2520,4 +250,1219 @@ exports[`input it should render the whole input component and a text input 1`] =
     </styled.div>
   </ThemeProvider>
 </Theme>
+`;
+
+exports[`input variations of the text input in all given sizes lg should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes lg should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={true}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={true}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes lg should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={true}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes lg should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: transparent;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes md should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes md should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={true}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={true}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes md should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={true}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes md should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: transparent;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes sm should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes sm should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  cursor: not-allowed;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={true}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={true}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes sm should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #ff1c4a;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: #ffffff;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ff1c4a;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={true}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes sm should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 1px solid #f8f8f8;
+  width: auto;
+  height: calc(3 * var(--lendi-ui-size));
+  background-color: transparent;
+}
+
+.c0:hover:not(:focus) {
+  border: 1px solid #ffffff;
+}
+
+.c1 {
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  border-radius: 6px;
+  font-size: calc(1.125 * var(--lendi-ui-size));
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 calc(0.75 * var(--lendi-ui-size));
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:-moz-read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.c1:read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      fontSize="md"
+      isError={false}
+      isInverse={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      readOnly={false}
+      type="text"
+    >
+      <input
+        className="c1"
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        readOnly={false}
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
 `;
