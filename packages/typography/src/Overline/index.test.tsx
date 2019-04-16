@@ -1,42 +1,57 @@
 import * as React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
-import { theme } from '@lendi-ui/theme';
+import Theme, { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 
 import { Overline, OverlineSize, OverlineAlignment } from '..';
+import { deriveSize } from '@lendi-ui/utils';
 
 const sizes: OverlineSize[] = ['sm', 'md', 'lg', 'xl'];
-const alignments: OverlineAlignment[] = [undefined, 'left', 'center', 'right'];
+const alignments: OverlineAlignment[] = ['left', 'center', 'right'];
+
+let wrapper;
+const render = (props) => {
+  wrapper = mount(
+    <Theme>
+      <Overline {...props} />
+    </Theme>
+  );
+};
 
 describe('Overline', () => {
   sizes.forEach((size) => {
     it(`should render styles for size "${size}"`, () => {
-      const wrapper = shallow(<Overline size={size} theme={theme} />);
-      expect(wrapper).toMatchSnapshot();
+      render({ size });
+      expect(wrapper.find(Overline)).toMatchSnapshot();
     });
   });
 
   it('should render styles for the dark colorScheme', () => {
-    const wrapper = shallow(<Overline size="lg" theme={theme} colorScheme="dark" />);
-    expect(wrapper).toHaveStyleRule('color', `${getColor('shade.0')({ theme })}`);
+    render({ size: 'lg', colorScheme: 'dark' });
+    expect(wrapper.find(Overline)).toHaveStyleRule('color', `${getColor('shade.0')({ theme })}`);
   });
 
   it('should render styles for the light colorScheme', () => {
-    const wrapper = shallow(<Overline size="lg" theme={theme} colorScheme="light" />);
-    expect(wrapper).toHaveStyleRule('color', `${getColor('shade.400')({ theme })}`);
+    render({ size: 'lg', colorScheme: 'light' });
+    expect(wrapper.find(Overline)).toHaveStyleRule('color', `${getColor('shade.400')({ theme })}`);
   });
 
   it('should render as a link with link styles when href prop is provided', () => {
-    const wrapper = shallow(<Overline size="lg" theme={theme} href="#" />);
-    expect(wrapper).toHaveStyleRule('color', `${getColor('primary.500')({ theme })}`);
-    expect(wrapper.find('a')).toBeTruthy();
+    render({ size: 'lg', href: '#' });
+    expect(wrapper.find(Overline)).toHaveStyleRule('color', `${getColor('primary.500')({ theme })}`);
+    expect(wrapper.find(Overline).find('a')).toBeTruthy();
   });
 
   alignments.forEach((alignment) => {
-    it(`should render styles for align "${alignment}"`, () => {
-      const wrapper = shallow(<Overline size="lg" theme={theme} align={alignment} />);
-      expect(wrapper).toHaveStyleRule('text-align', alignment);
+    it(`should render styles for align ${alignment}`, () => {
+      render({ size: 'lg', align: `${alignment}` });
+      expect(wrapper.find(Overline)).toHaveStyleRule('text-align', `${alignment}`);
     });
+  });
+
+  it('should render styles for margin', () => {
+    render({ size: 'lg', m: 'md' });
+    expect(wrapper.find(Overline)).toHaveStyleRule('margin', `${deriveSize(1.5)}`);
   });
 });

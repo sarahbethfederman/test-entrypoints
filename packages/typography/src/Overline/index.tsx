@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
 import { select } from '@lendi-ui/theme';
 import { deriveSize } from '@lendi-ui/utils';
+import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
@@ -115,13 +116,14 @@ export const overlineLink = (options: OverlineOptions) => {
 /**
  * Overline component
  */
-const LinkWrapper = styled.a<OverlineOptions>`
-  ${overline};
-  ${overlineLink};
+const LinkWrapper = styled.a<OverlineOptions & MarginOptions>`
+  ${overline}
+  ${overlineLink}
+  ${margin};
 `;
 
-const TextWrapper = styled.span<OverlineOptions>`
-  ${overline};
+const TextWrapper = styled.span<OverlineOptions & MarginOptions>`
+  ${overline} ${margin};
 `;
 
 export interface OverlineProps extends OverlineOptions {

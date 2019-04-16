@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Body, Link, Overline } from '.';
+import { Body, Heading, Link, Overline } from '.';
 
 class Typography extends React.Component {
   render() {
@@ -8,7 +8,12 @@ class Typography extends React.Component {
         <Body size="lg" align="left">
           This is the body
         </Body>
+        <br />
+        <Heading size="md">This is Heading.</Heading>
+        <br />
         <Link size="sm">This is a Link.</Link>
+        <br />
+        <br />
         <Overline size="md">This is Overline.</Overline>
       </div>
     );

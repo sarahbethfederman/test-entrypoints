@@ -1,53 +1,71 @@
 import * as React from 'react';
 import { shallow, mount } from 'enzyme';
 
-import { theme } from '@lendi-ui/theme';
+import Theme, { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 
-import { Body, Link, LinkSize } from '..';
+import { Link, LinkSize } from '..';
+import { deriveSize } from '@lendi-ui/utils';
+
+let wrapper;
+const render = (props) => {
+  wrapper = mount(
+    <Theme>
+      <Link {...props} />
+    </Theme>
+  );
+};
 
 describe('Link', () => {
   const sizes: LinkSize[] = ['lg', 'md', 'sm'];
   const colors = ['primary.500', 'shade.0', 'shade.1000'];
 
   it('should render a <button> when onClick is specified', () => {
-    const wrapper = mount(<Link theme={theme} onClick={jest.fn()} />);
+    const onClick = jest.fn();
+    render({ onClick });
     expect(wrapper.find('button')).toHaveLength(1);
     expect(wrapper.find('a')).toHaveLength(0);
   });
 
   it('should render a <a> when onClick is not specified', () => {
-    const wrapper = mount(<Link theme={theme} href="https://www.lendi.com.au/" />);
+    const href = 'https://www.lendi.com.au/';
+    render({ href });
     expect(wrapper.find('button')).toHaveLength(0);
     expect(wrapper.find('a')).toHaveLength(1);
   });
 
   it('should render default styles when no size is specified', () => {
-    const wrapper = shallow(<Link href="#abc" theme={theme} />);
-    expect(wrapper).toHaveStyleRule('font-size', undefined);
+    const href = '#abc';
+    render({ href });
+    expect(wrapper.find(Link)).toHaveStyleRule('font-size', undefined);
   });
 
   it('should render default styles when no size or href is specified', () => {
-    const wrapper = shallow(<Link theme={theme} />);
-    expect(wrapper).toHaveStyleRule('font-size', '1em');
+    render({});
+    expect(wrapper.find(Link)).toHaveStyleRule('font-size', '1em');
   });
 
   it('should render default styles for color when no color is specified', () => {
-    const wrapper = shallow(<Link size="lg" theme={theme} />);
-    expect(wrapper).toHaveStyleRule('color', getColor('primary.500')({ theme }));
+    render({ size: 'lg' });
+    expect(wrapper.find(Link)).toHaveStyleRule('color', getColor('primary.500')({ theme }));
   });
 
   sizes.forEach((size, index) => {
     it(`should render styles for size ${size}`, () => {
-      const wrapper = shallow(<Link size={size} theme={theme} />);
-      expect(wrapper).toMatchSnapshot();
+      render({ size });
+      expect(wrapper.find(Link)).toMatchSnapshot();
     });
   });
 
   colors.forEach((color) => {
     it(`should render styles for color ${color}`, () => {
-      const wrapper = shallow(<Link size="lg" theme={theme} color={color} />);
-      expect(wrapper).toHaveStyleRule('color', getColor(color)({ theme }));
+      render({ size: 'lg', color });
+      expect(wrapper.find(Link)).toHaveStyleRule('color', getColor(color)({ theme }));
     });
+  });
+
+  it('should render styles for margin', () => {
+    render({ size: 'lg', m: 'md' });
+    expect(wrapper.find(Link)).toHaveStyleRule('margin', `${deriveSize(1.5)}`);
   });
 });

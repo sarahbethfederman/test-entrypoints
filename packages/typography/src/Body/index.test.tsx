@@ -1,9 +1,19 @@
 import * as React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 
-import { theme } from '@lendi-ui/theme';
+import Theme, { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 import { Body, BodySize, BodyAlign } from '..';
+import { deriveSize } from '@lendi-ui/utils';
+
+let wrapper;
+const render = (props) => {
+  wrapper = mount(
+    <Theme>
+      <Body {...props} />
+    </Theme>
+  );
+};
 
 describe('Body', () => {
   const sizes: BodySize[] = [undefined, 'lg', 'md', 'sm'];
@@ -12,22 +22,27 @@ describe('Body', () => {
 
   sizes.forEach((size) => {
     it(`should render styles for size ${size}`, () => {
-      const wrapper = shallow(<Body size={size} theme={theme} />);
-      expect(wrapper).toMatchSnapshot();
+      render({ size });
+      expect(wrapper.find(Body)).toMatchSnapshot();
     });
   });
 
   colors.forEach((color) => {
     it(`should render styles for color ${color}`, () => {
-      const wrapper = shallow(<Body size="lg" theme={theme} color={color} />);
-      expect(wrapper).toHaveStyleRule('color', color && getColor(color)({ theme }));
+      render({ size: 'lg', color });
+      expect(wrapper.find(Body)).toHaveStyleRule('color', color && getColor(color)({ theme }));
     });
   });
 
   alignments.forEach((alignment) => {
     it(`should render styles for alignment "${alignment}"`, () => {
-      const wrapper = shallow(<Body align={alignment} theme={theme} />);
-      expect(wrapper).toMatchSnapshot();
+      render({ size: 'lg', align: `${alignment}` });
+      expect(wrapper.find(Body)).toHaveStyleRule('text-align', `${alignment}`);
     });
+  });
+
+  it('should render styles for margin', () => {
+    render({ size: 'lg', m: 'md' });
+    expect(wrapper.find(Body)).toHaveStyleRule('margin', `${deriveSize(1.5)}`);
   });
 });

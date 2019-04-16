@@ -1,3 +1,7 @@
+## [2.7.1] - 2019-04-10 - [HUB-50](https://creditandfinance.atlassian.net/browse/HUB-50)
+### Changed
+- Fix margin bug for Overline and adding some test for margin alignment in all typography 
+
 ## [2.7.0] - 2019-04-10 - [HUB-90](https://creditandfinance.atlassian.net/browse/HUB-90)
 ### Added
 - Added "xl" size variant.
