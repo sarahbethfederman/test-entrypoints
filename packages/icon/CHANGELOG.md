@@ -1,3 +1,7 @@
+## [6.0.0] - 2019-04-16 - [HUB-49](https://creditandfinance.atlassian.net/browse/HUB-49)
+### Changed
+- Remove Left and Right Icons.
+
 ## [5.3.1] - 2019-04-08 - [HUB-71](https://creditandfinance.atlassian.net/browse/HUB-71)
 ### Changed
 - Added styling to the icon container to align text and icon baseline when using inline icons.

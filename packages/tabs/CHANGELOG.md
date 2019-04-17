@@ -1,3 +1,8 @@
+## [2.0.1] - 2019-04-16 - [HUB-49] (https://creditandfinance.atlassian.net/browse/HUB-49)
+ 
+### Changed
+- Replace Left and Right icons with ChevronLeft and ChevronRight.
+
 ## [2.0.0] - 2019-04-11 - [HUB-77] (https://creditandfinance.atlassian.net/browse/HUB-77)
  
 ### Changed

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Wrapper, RightIconWrapper, LeftIconWrapper } from './index.style';
 import { Tab, TabProps } from '../Tab';
-import { Left, Right } from '@lendi-ui/icon';
+import { ChevronLeft, ChevronRight } from '@lendi-ui/icon';
 import createRef from 'react-create-ref';
 import TabContext from '../TabContext';
 
@@ -87,13 +87,13 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
         <Wrapper innerRef={this.node} isInverse={isInverse} isScrollable={isScrollable}>
           {isScrollable && (
             <LeftIconWrapper onClick={this.handleMoveScrollbarRight}>
-              <Left height="24px" width="24px" color="secondary.500" />
+              <ChevronLeft height="24px" width="24px" color="secondary.500" />
             </LeftIconWrapper>
           )}
           {React.Children.map(children, this.renderTab)}
           {isScrollable && (
             <RightIconWrapper onClick={this.handleMoveScrollbarLeft}>
-              <Right height="24px" width="24px" color="secondary.500" />
+              <ChevronRight height="24px" width="24px" color="secondary.500" />
             </RightIconWrapper>
           )}
         </Wrapper>
