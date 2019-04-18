@@ -16,7 +16,7 @@ import TextBubble from '@lendi-ui/TextBubble';
   Your loan has been approved! This is also an example of how it looks when there are multiple lines!
 </TextBubble>
 
-<TextBubble label="The content of this label is longer than the content text, so it will expand the bubble and wrap when appropriate.">
+<TextBubble label="The content of this label is longer than the content text, so it will expand the bubble and wrap when appropriate">
   Your loan has been approved!
 </TextBubble>
 
@@ -37,23 +37,23 @@ import TextBubble from '@lendi-ui/TextBubble';
     name="label"
     type="string"
     defaultValue={"Timestamp"}
-    description="Label to appear above the text bubble, or else defaults to a current timestamp."
+    description="Label to appear above the text bubble, or else defaults to a current timestamp"
   />
   <PropTable.Entry
     name="children"
     type="React.ReactNode"
-    description="Content of the Text Bubble."
+    description="Content of the Text Bubble"
   />
   <PropTable.Entry
     name="hasOverline"
     type="boolean"
     defaultValue={true}
-    description="Flag for whether or not to include the overline text above. The label property will be ignored if this is disabled."
+    description="Flag for whether or not to include the overline text above. The label property will be ignored if this is disabled"
   />
   <PropTable.Entry
     name="isFullWidth"
     type="boolean"
     defaultValue={false}
-    description="Flag for whether or not the element should use the full width of the parent container."
+    description="Flag for whether or not the element should use the full width of the parent container"
   />
 </PropTable>

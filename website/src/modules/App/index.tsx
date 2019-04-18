@@ -7,7 +7,7 @@ import { Home } from '../Home';
 import { GettingStarted } from '../GettingStarted';
 import { PackageExample } from '../PackageExample';
 import { Package } from '../Package';
-import { ThemeType, AppContext } from '../common';
+import { ThemeType, AppContext } from '../Common';
 
 type AppState = {
   theme: ThemeType;
@@ -41,8 +41,8 @@ export class App extends React.Component<{}, AppState> {
               <Switch>
                 <Route path="/" exact={true} component={Home} />
                 <Route path="/getting-started" component={GettingStarted} />
-                <Route path="/package/:pkg/example/:example" component={PackageExample} />
-                <Route path="/package/:pkg" component={Package} />
+                <Route path="/packages/:pkg/example/:example" component={PackageExample} />
+                <Route path="/packages/:pkg" component={Package} />
               </Switch>
             </BrowserRouter>
           </AppContext.Provider>

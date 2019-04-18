@@ -24,9 +24,9 @@ import Carousel from '@lendi-ui/carousel';
 
 ```
 <PropTable>
-  <PropTable.Entry name="width" type="string" defaultValue="100%" description="The carousel width."/>
-  <PropTable.Entry name="height" type="string" defaultValue="500px" description="The carousel height."/>
-  <PropTable.Entry name="defaultIndex" type="number" defaultValue={0} description="The index of inital slide shown by the carousel."/>
-  <PropTable.Entry name="children" type="React.ReactNode" description="The slides."/>
+  <PropTable.Entry name="width" type="string" defaultValue="100%" description="The carousel width"/>
+  <PropTable.Entry name="height" type="string" defaultValue="500px" description="The carousel height"/>
+  <PropTable.Entry name="defaultIndex" type="number" defaultValue={0} description="The index of inital slide shown by the carousel"/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The slides"/>
 </PropTable>
 ```

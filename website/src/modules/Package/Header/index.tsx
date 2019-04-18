@@ -4,7 +4,7 @@ import { gte } from '@lendi-ui/breakpoint';
 import { bg } from '@lendi-ui/color';
 import { container } from '@lendi-ui/container';
 import { mb, px } from '@lendi-ui/spacing';
-import { Heading } from '@lendi-ui/typography';
+import { Heading, Body } from '@lendi-ui/typography';
 import { Workspace } from '../../../utils/info';
 
 const Container = styled.div`
@@ -37,7 +37,7 @@ export class Header extends React.Component<HeaderProps> {
           <Heading size="xl" color="shade.0">
             {name}
           </Heading>
-          @{version}
+          <Body color="shade.0">@{version}</Body>
         </Wrapper>
       </Container>
     );

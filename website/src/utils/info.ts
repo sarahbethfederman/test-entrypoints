@@ -41,7 +41,7 @@ export class Workspace {
     return this.info.name.split('/')[0];
   }
 
-  get name() {
+  get name(): string {
     return this.info.name.split('/')[1];
   }
 
@@ -81,11 +81,11 @@ export class Workspace {
 export class Project {
   constructor(private info: Metadata) {}
 
-  get name() {
+  get name(): string {
     return this.info.root.name;
   }
 
-  get description() {
+  get description(): string {
     return this.info.root.description;
   }
 

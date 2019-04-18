@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Logo from '@lendi-ui/logo';
-import { Heading } from '@lendi-ui/typography';
-import { fg } from '@lendi-ui/color';
-import { ThemeType, AppContext } from '../../common';
+import Dropdown from '@lendi-ui/dropdown';
+import { Heading, overline, link } from '@lendi-ui/typography';
+import { pl } from '@lendi-ui/spacing';
+import { color } from '@lendi-ui/color';
 
+import { ThemeType, AppContext } from '../../Common';
 import metadata, { Doc } from '../../../utils/info';
 import { Wrapper, LogoWrapper, NavGroup, SubNav } from './index.style';
-import Dropdown from '@lendi-ui/dropdown';
 
 const foundations = ['color', 'typography', 'breakpoint', 'spacing', 'grid', 'theme'];
 const deprecatedPackages = ['reset'];
@@ -22,11 +23,29 @@ const themeItems: { value: ThemeType; label: string }[] = [
 const ignoreIndexDoc = (doc: Doc) => doc.name !== 'index';
 
 const SidebarLink = styled(Link)`
-  ${fg('primary.500')};
-  text-decoration: none;
+  ${link} text-decoration: none;
 `;
 
-export class Sidebar extends React.Component {
+const SidebarHeader = styled(SidebarLink)`
+  ${overline};
+`;
+
+const SidebarGroup = styled.div`
+  ${pl('xxxs')} ${({ isSelected = false }: { isSelected: boolean }) => {
+    if (isSelected) {
+      return css`
+        border-left: 4px solid ${color('secondary.500')};
+      `;
+    }
+    return `border-left: 4px solid transparent;`;
+  }};
+`;
+
+export interface SidebarProps {
+  match: string;
+}
+
+export class Sidebar extends React.Component<SidebarProps> {
   get foundations() {
     const { workspaces } = metadata;
     return workspaces.filter((workspace) => foundations.includes(workspace.name));
@@ -34,13 +53,14 @@ export class Sidebar extends React.Component {
 
   get components() {
     const { workspaces } = metadata;
-
     return workspaces.filter(
       (workspace) => !foundations.includes(workspace.name) && !deprecatedPackages.includes(workspace.name)
     );
   }
 
   render() {
+    const { match } = this.props;
+
     return (
       <Wrapper>
         <LogoWrapper>
@@ -48,10 +68,6 @@ export class Sidebar extends React.Component {
             <Logo />
           </SidebarLink>
         </LogoWrapper>
-
-        <NavGroup>
-          <SidebarLink to={`/overview`}>Overview</SidebarLink>
-        </NavGroup>
 
         <NavGroup>
           <Heading size="sm">Getting Started</Heading>
@@ -65,7 +81,7 @@ export class Sidebar extends React.Component {
               <Dropdown
                 size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }}
                 items={themeItems}
-                isFullWidth={false}
+                isFullWidth
                 value={theme}
                 onChange={(value) => changeTheme(value as ThemeType)}
               />
@@ -76,36 +92,42 @@ export class Sidebar extends React.Component {
         <NavGroup>
           <Heading size="sm">Foundations</Heading>
           {this.foundations.map((workspace) => (
-            <div key={workspace.name}>
-              <SidebarLink to={`/package/${workspace.name}`}>{workspace.name}</SidebarLink>
+            <SidebarGroup key={workspace.name} isSelected={workspace.name === match}>
+              <SidebarHeader size="lg" to={`/packages/${workspace.name}`}>
+                {workspace.name}
+              </SidebarHeader>
               {Boolean(workspace.docs.filter(ignoreIndexDoc).length) && (
                 <SubNav>
                   {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
                     <div key={doc.name}>
-                      <SidebarLink to={`/package/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
+                      <SidebarLink to={`/packages/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
                     </div>
                   ))}
                 </SubNav>
               )}
-            </div>
+            </SidebarGroup>
           ))}
         </NavGroup>
 
         <NavGroup>
           <Heading size="sm">Components</Heading>
           {this.components.map((workspace) => (
-            <div key={workspace.name}>
-              <SidebarLink to={`/package/${workspace.name}`}>{workspace.name}</SidebarLink>
-              {Boolean(workspace.docs.filter(ignoreIndexDoc).length) && (
-                <SubNav>
-                  {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
-                    <div key={doc.name}>
-                      <SidebarLink to={`/package/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
-                    </div>
-                  ))}
-                </SubNav>
-              )}
-            </div>
+            <SidebarGroup key={workspace.name} isSelected={workspace.name === match}>
+              <SidebarHeader size="lg" to={`/packages/${workspace.name}`}>
+                {workspace.name}
+              </SidebarHeader>
+              <SubNav>
+                {Boolean(workspace.docs.filter(ignoreIndexDoc).length) && (
+                  <>
+                    {workspace.docs.filter(ignoreIndexDoc).map((doc) => (
+                      <div key={doc.name}>
+                        <SidebarLink to={`/packages/${workspace.name}/${doc.slug}`}>{doc.name}</SidebarLink>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </SubNav>
+            </SidebarGroup>
           ))}
         </NavGroup>
       </Wrapper>

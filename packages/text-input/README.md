@@ -14,7 +14,7 @@ yarn add @lendi-ui/input-text
 import Input from '@lendi-ui/input-text';
 <Input
   size="md"
-  placeholder="input here ..."
+  placeholder="input here .."
   onChange={() => {}}
   isFullWidth={true}
   after={<span style={{ width: '24px', height: '24px' }}>x</span>}

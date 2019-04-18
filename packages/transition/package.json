@@ -25,5 +25,8 @@
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+  },
+  "devDependencies": {
+    "@lendi-ui/toggle-switch": "^1.0.4"
   }
 }

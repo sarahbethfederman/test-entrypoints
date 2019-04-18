@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/card
 
+## [2.0.1] - 2019-04-12
+### Changed
+- Added classname to the component
+
 ## [2.0.0] - 2019-03-26 - [HUB-42] (https://creditandfinance.atlassian.net/browse/HUB-42)
 ### Changed
 - Remove top RHS content (Cancel button and moreIcon) and replace it with a ReactNode prop

@@ -5,14 +5,15 @@ import { Wrapper, ContentContainer } from './index.style';
 
 export interface LayoutProps {
   children?: React.ReactNode;
+  match?: string;
 }
 
 export class Layout extends React.Component<LayoutProps> {
   render() {
-    const { children } = this.props;
+    const { children, match = '' } = this.props;
     return (
       <Wrapper>
-        <Sidebar />
+        <Sidebar match={match} />
         <ContentContainer>
           <div>{children}</div>
           <Footer />

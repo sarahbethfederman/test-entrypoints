@@ -12,6 +12,7 @@ import {
 } from './index.style';
 import { DropdownProps } from '@lendi-ui/dropdown';
 import { IconProps } from '@lendi-ui/icon';
+
 export interface CardProps {
   title?: string;
   interactiveTitle?: React.ReactElement<DropdownProps>;
@@ -21,6 +22,7 @@ export interface CardProps {
   children?: React.ReactNode;
   rightHeaderContent?: React.ReactNode;
   headerSize?: Size;
+  className?: string;
 }
 
 export default class Card extends React.Component<CardProps> {
@@ -33,10 +35,11 @@ export default class Card extends React.Component<CardProps> {
       rightHeaderContent,
       children,
       headerSize = 'sm',
+      className = '',
     } = this.props;
 
     return (
-      <CardWrapper>
+      <CardWrapper className={className}>
         <CardHead>
           <TitleContainer>
             {cardTitleIcon && <CardTitleIcon>{cardTitleIcon}</CardTitleIcon>}

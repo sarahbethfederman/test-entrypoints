@@ -31,7 +31,7 @@ import { RadioGroup } from '@lendi-ui/radio';
   <PropTable.Entry name="label" type="string" description="Radio display value."/> <PropTable.Entry name="isChecked" type="boolean" description="Whether the Radio is checked or not."/>
   <PropTable.Entry name="isDisabled" type="boolean" description="Whether the Radio is checked or not."/>
   <PropTable.Entry name="isBoxed" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="className" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="className" defaultValue=""type="boolean" description="Whether the Radio is checked or not."/>
   <PropTable.Entry name="onChange" type="boolean" description="Whether the Radio is checked or not."/>
 </PropTable>
 ```

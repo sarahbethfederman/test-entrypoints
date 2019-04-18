@@ -28,8 +28,10 @@ export class Package extends React.Component<PackageProps> {
 
   render() {
     const { match } = this.props;
+    console.log('match:', match.params.pkg);
+
     return (
-      <Layout>
+      <Layout match={match.params.pkg}>
         <Header workspace={this.workspace} />
         <Content>
           <Switch>

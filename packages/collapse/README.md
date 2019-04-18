@@ -24,8 +24,8 @@ import Collapse from '@lendi-ui/collapse';
   <PropTable.Entry name="isExpanded" type="boolean" defaultValue=false description="expanded/collapsed"/>
   <PropTable.Entry name="footer" type="React.ReactElement" description="Footer of the collapse"/>
   <PropTable.Entry name="onClick" type="(isExpanded) => void" description="Handle the click event. Consumer can get the current state of collapse - expanded/collapsed"/>
-  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the collapse."/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the collapse"/>
   <PropTable.Entry name="headerSize" type={`"xs" | "sm" | "md"`} defaultValue='sm' description="header size to collapse header"/>
-  <PropTable.Entry name="className" type="string" description="external classname to override style of the component"/>
+  <PropTable.Entry name="className" defaultValue=""type="string" description="external classname to override style of the component"/>
 </PropTable>
 ```

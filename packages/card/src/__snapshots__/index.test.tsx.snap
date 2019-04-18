@@ -120,7 +120,9 @@ exports[`Card render card with interactive title 1`] = `
     />
   }
 >
-  <styled.div>
+  <styled.div
+    className=""
+  >
     <div
       className="c0"
     >
@@ -333,7 +335,9 @@ exports[`Card render card with rightHeaderContent 1`] = `
   }
   title="My Testing card"
 >
-  <styled.div>
+  <styled.div
+    className=""
+  >
     <div
       className="c0"
     >
@@ -454,7 +458,9 @@ exports[`Card render card with sm headersize 1`] = `
   headerSize="sm"
   title="My Testing card"
 >
-  <styled.div>
+  <styled.div
+    className=""
+  >
     <div
       className="c0"
     >

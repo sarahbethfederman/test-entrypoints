@@ -5,13 +5,18 @@ import {Button} from '@lendi-ui/button';
 
 ```jsx
 <>
-<Lock color="secondary.500" />
-<br />
-<Button variant="secondary">Testing inline<Lock color="primary.500" /></Button>
+  <div>
+    <Lock color="secondary.500" />
+    <Room color="primary.500" height="2em" width="2em" />
+  </div>
+  <Button variant="secondary">Testing inline<Lock color="primary.500" /></Button>
+  <Button variant="secondary" ariaLabel="Navigate Back"><ChevronLeft color="primary.500" width="20px" height="20px"/></Button>
 </>
 ```
 
 ## Properties
 <PropTable>
   <PropTable.Entry required name="color" type={`string`} description="The Icon color"/>
+  <PropTable.Entry name="width" type={`string`} description="The Icon width"/>
+  <PropTable.Entry name="height" type={`string`} description="The Icon height"/>
 </PropTable>

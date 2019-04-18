@@ -8,36 +8,37 @@ import {CheckboxGroup} from '@lendi-ui/checkbox';
 
 ```jsx
 <CheckboxGroup values={[]} onChange={() => {}}>
-          <CheckboxGroup.Checkbox
-            label='LUI CheckboxGroup option 1'
-            value='1'
-          />
-          <CheckboxGroup.Checkbox
-            label='LUI CheckboxGroup option 2'
-            value='2'
-          />
-          <CheckboxGroup.Checkbox
-            label='LUI CheckboxGroup option 3'
-            value='3'
-          />
+  <CheckboxGroup.Checkbox
+    label='LUI CheckboxGroup option 1'
+    value='1'
+  />
+  <CheckboxGroup.Checkbox
+    label='LUI CheckboxGroup option 2'
+    value='2'
+  />
+  <CheckboxGroup.Checkbox
+    label='LUI CheckboxGroup option 3'
+    value='3'
+  />
   </CheckboxGroup>      
 ```
 
 ## CheckboxGroup Properties
 
 <PropTable>
-  <PropTable.Entry name="values*" type="string[]" description="An array that all selected Checkbox value set."/>
-  <PropTable.Entry name="direction" type='{"row" | "column"}' defaultValue="column" description="CheckboxGroup display direction."/>
-  <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether CheckboxGroup all items are wrapped by box."/>
-  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether CheckboxGroup all items are disabled."/>
-  <PropTable.Entry name="onChange*" type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Checkbox onChange function."/>
+  <PropTable.Entry name="className" defaultValue=""type="string" description="External classname to override style of the component"/>
+  <PropTable.Entry name="direction" type='{"row" | "column"}' defaultValue="column" description="CheckboxGroup display direction"/>
+  <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether CheckboxGroup all items are wrapped by box"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether CheckboxGroup all items are disabled"/>
+  <PropTable.Entry name="onChange" required type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Checkbox onChange function"/>
+  <PropTable.Entry name="values" required type="string[]" description="An array that all selected Checkbox value set"/>
 </PropTable>
 
 
 ## CheckboxGroup.Checkbox Properties
 
 <PropTable>
-  <PropTable.Entry name="value*" type="string" description="Checkbox value."/>
-  <PropTable.Entry name="label" type="string" description="Checkbox display label."/>
-  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether Checkbox is unclickable."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether Checkbox is unclickable"/>
+  <PropTable.Entry name="label" type="string" description="Checkbox display label"/>
+  <PropTable.Entry name="value" required type="string" description="Checkbox value"/>
 </PropTable>

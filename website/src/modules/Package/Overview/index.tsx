@@ -44,7 +44,7 @@ export class Overview extends React.Component<OverviewProps> {
             <ul>
               {examples.map((example) => (
                 <li key={example.slug}>
-                  <Link to={`/package/${name}/example/${example.slug}`} target="_blank">
+                  <Link to={`/packages/${name}/example/${example.slug}`} target="_blank">
                     {example.name}
                   </Link>
                 </li>

@@ -28,10 +28,10 @@ import Card from '@lendi-ui/card';
 <PropTable>
   <PropTable.Entry name="title" type="string" description="Title of card"/>
   <PropTable.Entry name="subtitle" type="string" description="SubTitle of card"/>
-  <PropTable.Entry name="interactiveTitle" type="React.ReactElement<DropdownProps>" description="Interactive title - a dropdown to switch between content."/>
+  <PropTable.Entry name="interactiveTitle" type="React.ReactElement<DropdownProps>" description="Interactive title - a dropdown to switch between content"/>
   <PropTable.Entry name="cardTitleIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along title"/>
   <PropTable.Entry name="moreIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along Cancel button"/>
-  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card."/>
-  <PropTable.Entry name="onCancel" type="() => void" description="Handle the click event."/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+  <PropTable.Entry name="onCancel" type="() => void" description="Handle the click event"/>
 </PropTable>
 ```
