@@ -1,7 +1,7 @@
 {
   "name": "@lendi-ui/website",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.1.0",
   "dependencies": {
     "@lendi-ui/icon": "^5.0.1",
     "@mdx-js/tag": "^0.15.0",

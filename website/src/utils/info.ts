@@ -53,6 +53,10 @@ export class Workspace {
     return this.info.description;
   }
 
+  get deprecated() {
+    return this.info.deprecated;
+  }
+
   get docs() {
     return this.info.docs.map((doc) => new Doc(doc));
   }

@@ -51,7 +51,8 @@ module.exports = {
         return {
           name: workspace.json.name,
           version: workspace.json.version,
-          description: workspace.json.description,
+          description: workspace.json.description || null,
+          deprecated: workspace.json.deprecated,
           docs,
           examples,
         };
@@ -74,6 +75,7 @@ module.exports = {
             name: ${JSON.stringify(workspace.name)},
             version: ${JSON.stringify(workspace.version)},
             description: ${JSON.stringify(workspace.description)},
+            deprecated: ${JSON.stringify(workspace.deprecated)},
             docs: [
               ${workspace.docs.map(
                 (doc) => `{

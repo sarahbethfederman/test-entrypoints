@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { Heading } from '@lendi-ui/typography';
 import { body } from '@lendi-ui/typography';
+import Alert from '@lendi-ui/alert';
 import { mb } from '@lendi-ui/spacing';
 import { Workspace } from '../../../utils/info';
 import { DocumentViewer } from '../../../utils/DocumentViewer';
@@ -28,7 +29,7 @@ export class Overview extends React.Component<OverviewProps> {
 
   render() {
     const {
-      workspace: { org, name, description, examples },
+      workspace: { org, name, description, deprecated, examples },
     } = this.props;
     return (
       <>
@@ -58,6 +59,14 @@ export class Overview extends React.Component<OverviewProps> {
           <code>
             yarn add {org}/{name}
           </code>
+        </Section>
+
+        <Section>
+          {deprecated && (
+            <Alert variant="error" heading="Deprecated">
+              {deprecated}
+            </Alert>
+          )}
         </Section>
 
         {this.indexDoc && <DocumentViewer loader={this.indexDoc.load} />}

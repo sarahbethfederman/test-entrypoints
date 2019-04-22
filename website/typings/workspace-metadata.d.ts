@@ -18,6 +18,7 @@ declare module 'workspace-metadata' {
     name: string;
     version: string;
     description: string;
+    deprecated: string | null;
     docs: DocMetadata[];
     examples: ExampleMetadata[];
   }
