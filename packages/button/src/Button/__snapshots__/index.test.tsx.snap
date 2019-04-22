@@ -78,10 +78,18 @@ exports[`Button emphasis should not render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -93,9 +101,25 @@ exports[`Button emphasis should not render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -179,10 +203,18 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -194,9 +226,25 @@ exports[`Button emphasis should not render inverse styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -280,10 +328,18 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -295,9 +351,25 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c2"
+          size="lg"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c3"
+          size="lg"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -381,10 +453,18 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -396,9 +476,25 @@ exports[`Button emphasis should render "md" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -482,10 +578,18 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
 }
 
 <button
@@ -497,9 +601,150 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c2"
+          size="sm"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c3"
+          size="sm"
+        />
+      </styled.span>
+    </div>
+  </styled.div>
+</button>
+`;
+
+exports[`Button emphasis should render "xs" size styles 1`] = `
+.c0 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  border-radius: 21px;
+  padding: calc(0.5 * var(--lendi-ui-size)) calc(0.5625 * var(--lendi-ui-size));
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -moz-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  background-color: #ff7063;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus {
+  background-color: #ff8c82;
+}
+
+.c0:hover {
+  background-color: #ff8c82;
+}
+
+.c0:active {
+  background-color: #cc594f;
+}
+
+.c0:disabled:hover,
+.c0:disabled:active,
+.c0:disabled:focus {
+  background-color: #ff7063;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+<button
+  aria-label="Click me!"
+  className="c0"
+  size="xs"
+>
+  <styled.div>
+    <div
+      className="c1"
+    >
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c2"
+          size="xs"
+        />
+      </styled.span>
+      <span>
+        Click me!
+      </span>
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c3"
+          size="xs"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -583,10 +828,18 @@ exports[`Button emphasis should render disabled button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -599,9 +852,25 @@ exports[`Button emphasis should render disabled button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -686,10 +955,18 @@ exports[`Button emphasis should render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -701,9 +978,25 @@ exports[`Button emphasis should render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -787,10 +1080,18 @@ exports[`Button emphasis should render normal button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -803,9 +1104,25 @@ exports[`Button emphasis should render normal button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -889,10 +1206,18 @@ exports[`Button emphasis should render normal styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -904,9 +1229,25 @@ exports[`Button emphasis should render normal styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1000,10 +1341,18 @@ exports[`Button empty should render "lg" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1015,9 +1364,25 @@ exports[`Button empty should render "lg" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c2"
+          size="lg"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c3"
+          size="lg"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1111,10 +1476,18 @@ exports[`Button empty should render "md" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1126,9 +1499,25 @@ exports[`Button empty should render "md" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1222,10 +1611,18 @@ exports[`Button empty should render "sm" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
 }
 
 <button
@@ -1237,9 +1634,160 @@ exports[`Button empty should render "sm" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c2"
+          size="sm"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c3"
+          size="sm"
+        />
+      </styled.span>
+    </div>
+  </styled.div>
+</button>
+`;
+
+exports[`Button empty should render "xs" size styles 1`] = `
+.c0 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  border-radius: 21px;
+  padding: calc(0.5 * var(--lendi-ui-size)) calc(0.5625 * var(--lendi-ui-size));
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -moz-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #00c0a5;
+  background-color: #ffffff;
+  border: 1px solid #00c0a5;
+  border-style: dashed;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus {
+  border-color: #32ccb7;
+}
+
+.c0:hover {
+  border-color: #32ccb7;
+}
+
+.c0:active {
+  color: #009984;
+  background-color: #e5f8f6;
+  border-color: #009984;
+}
+
+.c0:disabled:hover,
+.c0:disabled:active,
+.c0:disabled:focus {
+  color: #00c0a5;
+  background-color: #ffffff;
+  border-color: #00c0a5;
+}
+
+.c0:focus {
+  border-width: 1px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+<button
+  aria-label="Click me!"
+  className="c0"
+  size="xs"
+>
+  <styled.div>
+    <div
+      className="c1"
+    >
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c2"
+          size="xs"
+        />
+      </styled.span>
+      <span>
+        Click me!
+      </span>
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c3"
+          size="xs"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1315,10 +1863,18 @@ exports[`Button empty should render inverse styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1330,9 +1886,25 @@ exports[`Button empty should render inverse styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1426,10 +1998,18 @@ exports[`Button empty should render normal styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1441,9 +2021,25 @@ exports[`Button empty should render normal styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1527,10 +2123,18 @@ exports[`Button primary should not render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1542,9 +2146,25 @@ exports[`Button primary should not render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1628,10 +2248,18 @@ exports[`Button primary should render "lg" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1643,9 +2271,25 @@ exports[`Button primary should render "lg" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c2"
+          size="lg"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c3"
+          size="lg"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1729,10 +2373,18 @@ exports[`Button primary should render "md" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1744,9 +2396,25 @@ exports[`Button primary should render "md" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1830,10 +2498,18 @@ exports[`Button primary should render "sm" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
 }
 
 <button
@@ -1845,9 +2521,150 @@ exports[`Button primary should render "sm" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c2"
+          size="sm"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c3"
+          size="sm"
+        />
+      </styled.span>
+    </div>
+  </styled.div>
+</button>
+`;
+
+exports[`Button primary should render "xs" size styles 1`] = `
+.c0 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  border-radius: 21px;
+  padding: calc(0.5 * var(--lendi-ui-size)) calc(0.5625 * var(--lendi-ui-size));
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -moz-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus {
+  background-color: #32ccb7;
+}
+
+.c0:hover {
+  background-color: #32ccb7;
+}
+
+.c0:active {
+  background-color: #009984;
+}
+
+.c0:disabled:hover,
+.c0:disabled:active,
+.c0:disabled:focus {
+  background-color: #00c0a5;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+<button
+  aria-label="Click me!"
+  className="c0"
+  size="xs"
+>
+  <styled.div>
+    <div
+      className="c1"
+    >
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c2"
+          size="xs"
+        />
+      </styled.span>
+      <span>
+        Click me!
+      </span>
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c3"
+          size="xs"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -1931,10 +2748,18 @@ exports[`Button primary should render disabled button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -1947,9 +2772,25 @@ exports[`Button primary should render disabled button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2034,10 +2875,18 @@ exports[`Button primary should render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2049,9 +2898,25 @@ exports[`Button primary should render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2121,10 +2986,18 @@ exports[`Button primary should render inverse styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2136,9 +3009,25 @@ exports[`Button primary should render inverse styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2222,10 +3111,18 @@ exports[`Button primary should render normal button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2238,9 +3135,25 @@ exports[`Button primary should render normal button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2324,10 +3237,18 @@ exports[`Button primary should render normal styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2339,9 +3260,25 @@ exports[`Button primary should render normal styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2430,10 +3367,18 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2445,9 +3390,25 @@ exports[`Button secondary should render "lg" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c2"
+          size="lg"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="lg"
+      >
+        <span
+          className="c3"
+          size="lg"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2536,10 +3497,18 @@ exports[`Button secondary should render "md" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2551,9 +3520,25 @@ exports[`Button secondary should render "md" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2642,10 +3627,18 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
 }
 
 <button
@@ -2657,9 +3650,155 @@ exports[`Button secondary should render "sm" size styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c2"
+          size="sm"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="sm"
+      >
+        <span
+          className="c3"
+          size="sm"
+        />
+      </styled.span>
+    </div>
+  </styled.div>
+</button>
+`;
+
+exports[`Button secondary should render "xs" size styles 1`] = `
+.c0 {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  text-transform: uppercase;
+  border-radius: 21px;
+  padding: calc(0.5 * var(--lendi-ui-size)) calc(0.5625 * var(--lendi-ui-size));
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -moz-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  letter-spacing: calc(0.0625 * var(--lendi-ui-size));
+  font-family: 'Open Sans',sans-serif;
+  color: #00c0a5;
+  background-color: #ffffff;
+  border: 1px solid #00c0a5;
+}
+
+.c0:focus {
+  outline: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:hover {
+  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.c0:disabled,
+.c0:disabled:hover,
+.c0:disabled:active {
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c0:focus {
+  border-color: #32ccb7;
+}
+
+.c0:hover {
+  border-color: #32ccb7;
+}
+
+.c0:active {
+  color: #009984;
+  background-color: #e5f8f6;
+  border-color: #009984;
+}
+
+.c0:disabled:hover,
+.c0:disabled:active,
+.c0:disabled:focus {
+  color: #00c0a5;
+  background-color: #ffffff;
+  border-color: #00c0a5;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+.c3 {
+  margin-left: calc(0.5 * var(--lendi-ui-size));
+}
+
+<button
+  aria-label="Click me!"
+  className="c0"
+  size="xs"
+>
+  <styled.div>
+    <div
+      className="c1"
+    >
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c2"
+          size="xs"
+        />
+      </styled.span>
+      <span>
+        Click me!
+      </span>
+      <styled.span
+        size="xs"
+      >
+        <span
+          className="c3"
+          size="xs"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2730,10 +3869,18 @@ exports[`Button secondary should render inverse styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2745,9 +3892,25 @@ exports[`Button secondary should render inverse styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2836,10 +3999,18 @@ exports[`Button secondary should render normal styles 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2851,9 +4022,25 @@ exports[`Button secondary should render normal styles 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -2937,10 +4124,18 @@ exports[`Button should not render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -2952,9 +4147,25 @@ exports[`Button should not render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3038,10 +4249,18 @@ exports[`Button should not render full width 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3053,9 +4272,25 @@ exports[`Button should not render full width 2`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3139,10 +4374,18 @@ exports[`Button should render disabled button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3155,9 +4398,25 @@ exports[`Button should render disabled button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3241,10 +4500,18 @@ exports[`Button should render disabled button 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3257,9 +4524,25 @@ exports[`Button should render disabled button 2`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3344,10 +4627,18 @@ exports[`Button should render full width 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3359,9 +4650,25 @@ exports[`Button should render full width 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3446,10 +4753,18 @@ exports[`Button should render full width 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3461,9 +4776,25 @@ exports[`Button should render full width 2`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3547,10 +4878,18 @@ exports[`Button should render normal button 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3563,9 +4902,25 @@ exports[`Button should render normal button 1`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>
@@ -3649,10 +5004,18 @@ exports[`Button should render normal button 2`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c3 {
+  margin-left: var(--lendi-ui-size);
 }
 
 <button
@@ -3665,9 +5028,25 @@ exports[`Button should render normal button 2`] = `
     <div
       className="c1"
     >
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c2"
+          size="md"
+        />
+      </styled.span>
       <span>
         Click me!
       </span>
+      <styled.span
+        size="md"
+      >
+        <span
+          className="c3"
+          size="md"
+        />
+      </styled.span>
     </div>
   </styled.div>
 </button>

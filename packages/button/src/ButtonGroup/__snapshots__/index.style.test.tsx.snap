@@ -37,21 +37,21 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: calc(-1 * calc(1.5 * var(--lendi-ui-size)));
+  margin-top: calc(-1 * var(--lendi-ui-size));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: calc(1.5 * var(--lendi-ui-size));
-  margin-right: calc(1.5 * var(--lendi-ui-size));
+  margin-top: var(--lendi-ui-size);
+  margin-right: var(--lendi-ui-size);
 }
 
 <styled.div
-  size="lg"
+  size="md"
 >
   <div
     className="c0"
-    size="lg"
+    size="md"
   />
 </styled.div>
 `;
@@ -65,21 +65,49 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-top: calc(-1 * calc(1.5 * var(--lendi-ui-size)));
+  margin-top: calc(-1 * calc(0.75 * var(--lendi-ui-size)));
 }
 
 .c0 .c1,
 .c0 .sc-bxivhb {
-  margin-top: calc(1.5 * var(--lendi-ui-size));
-  margin-right: calc(1.5 * var(--lendi-ui-size));
+  margin-top: calc(0.75 * var(--lendi-ui-size));
+  margin-right: calc(0.75 * var(--lendi-ui-size));
 }
 
 <styled.div
-  size="lg"
+  size="sm"
 >
   <div
     className="c0"
-    size="lg"
+    size="sm"
+  />
+</styled.div>
+`;
+
+exports[`Wrapper should have spacing at size "xs" 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * calc(0.5 * var(--lendi-ui-size)));
+}
+
+.c0 .c1,
+.c0 .sc-bxivhb {
+  margin-top: calc(0.5 * var(--lendi-ui-size));
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+}
+
+<styled.div
+  size="xs"
+>
+  <div
+    className="c0"
+    size="xs"
   />
 </styled.div>
 `;

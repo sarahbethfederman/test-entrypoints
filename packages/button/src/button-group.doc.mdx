@@ -8,6 +8,11 @@ import {ButtonGroup} from '@lendi-ui/button';
 
 ```jsx
 <>
+<ButtonGroup size="xs">
+  <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
+  <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
+</ButtonGroup>
+<br /><br />
 <ButtonGroup size="sm">
   <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
   <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
@@ -27,7 +32,7 @@ import {ButtonGroup} from '@lendi-ui/button';
   <PropTable.Entry name="className" defaultValue="" type="string" description="External classname to override style of the component"/>
   <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Buttons take up the max width of parent"/>
   <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Switches the foreground and background colours"/>
-  <PropTable.Entry name="size" type={`"sm" | "md" | "lg"`} defaultValue="md" description="The buttons size"/>
+  <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The buttons size"/>
 </PropTable>
 
 

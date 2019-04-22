@@ -51,9 +51,9 @@ export class Button extends React.Component<ButtonProps> {
     const { size = 'md', before, after, children } = this.props;
     return (
       <Layout>
-        {before && <BeforeWrapper size={size}>{before}</BeforeWrapper>}
+        <BeforeWrapper size={size}>{before}</BeforeWrapper>
         <span>{children}</span>
-        {after && <AfterWrapper size={size}>{after}</AfterWrapper>}
+        <AfterWrapper size={size}>{after}</AfterWrapper>
       </Layout>
     );
   }

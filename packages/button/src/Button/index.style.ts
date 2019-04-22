@@ -5,13 +5,20 @@ import { depth } from '@lendi-ui/depth';
 import { deriveSize } from '@lendi-ui/utils';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
-export type Size = 'lg' | 'md' | 'sm';
+export type Size = 'lg' | 'md' | 'sm' | 'xs';
 export type ButtonSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type ButtonVariant = 'primary' | 'secondary' | 'emphasis' | 'empty';
 
 const commonStyleBySizeMixin = (size: ButtonSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          border-radius: 21px;
+          padding: ${deriveSize(0.5)} ${deriveSize(0.5625)};
+          font-size: ${deriveSize(0.625)};
+          letter-spacing: ${deriveSize(0.0625)};
+      `;
       case 'sm':
         return `
           height: ${deriveSize(2.5)};
@@ -41,14 +48,12 @@ const commonStyleBySizeMixin = (size: ButtonSize) =>
 const beforeBySizeMixin = (size: ButtonSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
       case 'sm':
         return `
           margin-right: ${deriveSize(0.5)};
       `;
       case 'md':
-        return `
-          margin-right: ${deriveSize(1)};
-      `;
       case 'lg':
         return `
          margin-right: ${deriveSize(1)};
@@ -61,14 +66,12 @@ const beforeBySizeMixin = (size: ButtonSize) =>
 const afterBySizeMixin = (size: ButtonSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
       case 'sm':
         return `
           margin-left: ${deriveSize(0.5)};
       `;
       case 'md':
-        return `
-          margin-left: ${deriveSize(1)};
-      `;
       case 'lg':
         return `
          margin-left: ${deriveSize(1)};
@@ -248,7 +251,7 @@ export const Layout = styled.div`
   display: flex;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const BeforeWrapper = styled.span`

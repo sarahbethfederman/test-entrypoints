@@ -6,7 +6,7 @@ import { Button, ButtonSize, ButtonVariant } from '.';
 
 const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty'];
 const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
-const sizes: ButtonSize[] = ['lg', 'md', 'sm'];
+const sizes: ButtonSize[] = ['lg', 'md', 'sm', 'xs'];
 
 let button;
 

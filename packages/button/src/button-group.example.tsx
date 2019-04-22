@@ -19,6 +19,12 @@ const FixedWidthContainer = styled.div`
 
 export default () => (
   <>
+    <Body>'xs' button group:</Body>
+    <ButtonGroup size="xs">
+      <ButtonGroup.Button variant="primary">I want to refinance</ButtonGroup.Button>
+      <ButtonGroup.Button variant="primary">I want to buy a new home</ButtonGroup.Button>
+    </ButtonGroup>
+    <hr />
     <Body>Margin should be on the right when not wrapped:</Body>
     <ButtonGroup>
       <ButtonGroup.Button variant="primary">I want to refinance</ButtonGroup.Button>

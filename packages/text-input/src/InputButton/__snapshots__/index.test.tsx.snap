@@ -78,10 +78,18 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c5 {
+  margin-left: var(--lendi-ui-size);
 }
 
 .c1:active {
@@ -96,13 +104,13 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
   transform: scale(1);
 }
 
-.c4 .c0 {
+.c6 .c0 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 0 0 0 -1.5px;
 }
 
-.c5 .c0 {
+.c7 .c0 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   margin: 0 -1.5px 0 0;
@@ -132,9 +140,25 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
           <div
             className="c3"
           >
+            <styled.span
+              size="md"
+            >
+              <span
+                className="c4"
+                size="md"
+              />
+            </styled.span>
             <span>
               search
             </span>
+            <styled.span
+              size="md"
+            >
+              <span
+                className="c5"
+                size="md"
+              />
+            </styled.span>
           </div>
         </styled.div>
       </button>
@@ -221,10 +245,18 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c4 {
+  margin-right: var(--lendi-ui-size);
+}
+
+.c5 {
+  margin-left: var(--lendi-ui-size);
 }
 
 .c1:active {
@@ -239,7 +271,7 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
   transform: scale(1);
 }
 
-.c4 .c0 {
+.c6 .c0 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   margin: 0 0 0 -1.5px;
@@ -269,9 +301,25 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
           <div
             className="c3"
           >
+            <styled.span
+              size="md"
+            >
+              <span
+                className="c4"
+                size="md"
+              />
+            </styled.span>
             <span>
               search
             </span>
+            <styled.span
+              size="md"
+            >
+              <span
+                className="c5"
+                size="md"
+              />
+            </styled.span>
           </div>
         </styled.div>
       </button>

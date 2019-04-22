@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.5.0] - 2019-04-16 - [HUB-21] (https://creditandfinance.atlassian.net/browse/HUB-21)
+ 
+### Added
+
+- Add `xs` button
+
 ## [4.4.0] - 2019-04-15 - [HUB-26] (https://creditandfinance.atlassian.net/browse/HUB-26)
  
 ### Changed

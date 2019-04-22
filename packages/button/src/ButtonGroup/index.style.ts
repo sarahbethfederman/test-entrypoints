@@ -7,14 +7,9 @@ import { deriveSize } from '@lendi-ui/utils';
 const spacingTopBySizeMixin = (size: ButtonSize): SpacingName =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
       case 'sm':
-        return css`
-          margin-top: calc(-1 * ${Spacing[spacingBySize[val]]});
-        `;
       case 'md':
-        return css`
-          margin-top: calc(-1 * ${Spacing[spacingBySize[val]]});
-        `;
       case 'lg':
         return css`
           margin-top: calc(-1 * ${Spacing[spacingBySize[val]]});
@@ -27,14 +22,9 @@ const spacingTopBySizeMixin = (size: ButtonSize): SpacingName =>
 const spacingRightBySizeMixin = (size: ButtonSize): SpacingName =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
       case 'sm':
-        return `
-        margin-right: calc(-1 * ${Spacing[spacingBySize[val]]});
-      `;
       case 'md':
-        return `
-        margin-right: calc(-1 * ${Spacing[spacingBySize[val]]});
-      `;
       case 'lg':
         return `
         margin-right: calc(-1 * ${Spacing[spacingBySize[val]]});
@@ -47,6 +37,11 @@ const spacingRightBySizeMixin = (size: ButtonSize): SpacingName =>
 const wrapperBySizeMixin = (size: ButtonSize): SpacingName =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+        margin-top: ${deriveSize(0.5)};
+        margin-right: ${deriveSize(0.5)};
+      `;
       case 'sm':
         return `
         margin-top: ${deriveSize(0.75)};
@@ -71,6 +66,7 @@ const spacingBySize: { [size in Size]: SpacingName } = {
   lg: 'md',
   md: 'sm',
   sm: 'xs',
+  xs: 'xxs',
 };
 
 export interface WrapperProps {
