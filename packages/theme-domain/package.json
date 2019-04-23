@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme-domain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

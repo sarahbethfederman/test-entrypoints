@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/theme-domain
 
+## [1.0.2] - 2019-04-23 [HUB-9](https://creditandfinance.atlassian.net/browse/HUB-9)
+### Changed
+- Change Domain theme color 'secondary.950' to '#010307'
+
 ## [1.0.1] - 2019-03-07 [BRAVO-387](https://creditandfinance.atlassian.net/browse/BRAVO-387)
 ### Changed
 - made this repo just representing domain theme base skeleton
