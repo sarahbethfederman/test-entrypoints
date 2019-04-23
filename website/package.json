@@ -1,9 +1,10 @@
 {
   "name": "@lendi-ui/website",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "@lendi-ui/icon": "^5.0.1",
+    "@lendi-ui/theme": "^5.0.0",
     "@mdx-js/tag": "^0.15.0",
     "@types/react-helmet": "^5.0.7",
     "@types/react-router-dom": "^4.3.0",

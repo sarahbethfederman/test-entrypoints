@@ -28,7 +28,6 @@ export class Package extends React.Component<PackageProps> {
 
   render() {
     const { match } = this.props;
-    console.log('match:', match.params.pkg);
 
     return (
       <Layout match={match.params.pkg}>
