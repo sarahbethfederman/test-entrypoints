@@ -26,6 +26,7 @@ class Example extends React.Component<{}, ExampleState> {
           placeholder="input here ..."
           onChange={this.onChange}
           isFullWidth={false}
+          isAutoFocus
           after={
             <InputButton variant="primary" size="md" onClick={() => alert(this.state.value)}>
               search

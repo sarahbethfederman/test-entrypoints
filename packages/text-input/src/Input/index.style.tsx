@@ -114,7 +114,7 @@ export interface InputWrapperProps {
   fontSize: InputSize;
   isInverse: boolean;
   isError: boolean;
-  readOnly?: boolean;
+  isDisabled?: boolean;
 }
 
 export const InputWrapper = styled.input`
@@ -133,7 +133,7 @@ export const InputWrapper = styled.input`
     color: ${select('colors.shade.300')};
   }
 
-  :read-only {
+  :disabled {
     cursor: not-allowed;
     ${({ isInverse }: InputWrapperProps) => css`
       background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};

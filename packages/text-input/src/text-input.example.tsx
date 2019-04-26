@@ -22,7 +22,7 @@ class Example extends React.Component<{}, ExampleState> {
       <div>
         <br />
         <br />
-        <Input size="sm" value={value} onChange={this.onChange} placeholder="So smol 🎉" />
+        <Input size="sm" isAutoFocus value={value} onChange={this.onChange} placeholder="So smol 🎉" />
         <br />
         <br />
         <Input size="md" value={value} onChange={this.onChange} placeholder="I'm medium 🎉" />

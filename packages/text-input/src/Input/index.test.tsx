@@ -74,16 +74,50 @@ describe('input', () => {
       });
     });
   });
-  it('should be able to passed down other input attributes', () => {
+
+  it('should take the autoComplete prop', () => {
     const inputProps = {
-      autoFocus: true,
       autoComplete: 'on',
+    };
+    render(inputProps);
+    const InputElement = element.find(InputWrapper);
+    expect(InputElement.props().autoComplete).toBe('on');
+  });
+
+  it('should take the isAutoFocus prop', () => {
+    const inputProps = {
+      isAutoFocus: true,
+    };
+    render(inputProps);
+    const InputElement = element.find('input');
+    expect(InputElement.props().autoFocus).toBe(true);
+    expect(InputElement).toHaveStyleRule("outline: '5px auto -webkit-focus-ring-color'");
+  });
+
+  it('should take the isRequired prop', () => {
+    const inputProps = {
+      isRequired: true,
+    };
+    render(inputProps);
+    const InputElement = element.find('input');
+    expect(InputElement.props().required).toBe(true);
+  });
+
+  it('should take the isReadOnly prop', () => {
+    const inputProps = {
+      isReadOnly: true,
+    };
+    render(inputProps);
+    const InputElement = element.find('input');
+    expect(InputElement.props().readOnly).toBe(true);
+  });
+
+  it('should take the tabIndex prop', () => {
+    const inputProps = {
       tabIndex: 0,
     };
     render(inputProps);
     const InputElement = element.find(InputWrapper);
-    expect(InputElement.props().autoFocus).toBe(true);
-    expect(InputElement.props().autoComplete).toBe('on');
     expect(InputElement.props().tabIndex).toBe(0);
   });
 

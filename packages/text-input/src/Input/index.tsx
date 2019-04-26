@@ -11,6 +11,9 @@ export type InputProp = Pick<
   isError?: boolean;
   isInverse?: boolean;
   isDisabled?: boolean;
+  isReadOnly?: boolean;
+  isAutoFocus?: boolean;
+  isRequired?: boolean;
   isFullWidth?: boolean;
   before?: React.ReactNode;
   after?: React.ReactNode;
@@ -30,6 +33,9 @@ export const Input = ({
   isInverse = false,
   isFullWidth = false,
   isDisabled = false,
+  isReadOnly = false,
+  isAutoFocus = false,
+  isRequired = false,
   inputSize,
   ...otherProps
 }: InputProp) => {
@@ -39,11 +45,14 @@ export const Input = ({
       <InputWrapper
         {...otherProps}
         type="text"
-        readOnly={isDisabled}
+        readOnly={isReadOnly}
+        disabled={isDisabled}
         isError={isError}
         isInverse={isInverse}
         fontSize={size}
         size={inputSize}
+        autoFocus={isAutoFocus}
+        required={isRequired}
       />
       {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
     </Layout>

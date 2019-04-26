@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0 - [2019-04-15] - [HUB-51](https://creditandfinance.atlassian.net/browse/HUB-51)
+### Fixed
+- Add props for isRequired, isAutoFocus and IsReadOnly. Update and improve tests.
+
+# Changelog
+
 ## 2.1.2 - [2019-04-15] - [HUB-78](https://creditandfinance.atlassian.net/browse/HUB-78)
 ### Fixed
 - Correct isInverse UI, add examples, improve tests.

@@ -62,12 +62,7 @@ exports[`input it should render the whole input component and a text input 1`] =
   color: #adadad;
 }
 
-.c2:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c2:read-only {
+.c2:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -226,20 +221,26 @@ exports[`input it should render the whole input component and a text input 1`] =
               size="md"
             >
               <styled.input
+                autoFocus={false}
+                disabled={false}
                 fontSize="md"
                 isError={false}
                 isInverse={false}
                 onChange={[MockFunction]}
                 placeholder="input here ..."
                 readOnly={false}
+                required={false}
                 type="text"
               >
                 <input
+                  autoFocus={false}
                   className="c2"
+                  disabled={false}
                   fontSize="md"
                   onChange={[MockFunction]}
                   placeholder="input here ..."
                   readOnly={false}
+                  required={false}
                   type="text"
                 />
               </styled.input>
@@ -310,12 +311,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -332,20 +328,26 @@ exports[`input variations of the text input in all given sizes lg should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -412,12 +414,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -434,20 +431,26 @@ exports[`input variations of the text input in all given sizes lg should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={true}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
-      readOnly={true}
+      readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={true}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
-        readOnly={true}
+        readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -513,12 +516,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -535,20 +533,26 @@ exports[`input variations of the text input in all given sizes lg should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={true}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -614,12 +618,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: transparent;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: transparent;
 }
@@ -636,20 +635,26 @@ exports[`input variations of the text input in all given sizes lg should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={true}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -715,12 +720,7 @@ exports[`input variations of the text input in all given sizes md should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -737,20 +737,26 @@ exports[`input variations of the text input in all given sizes md should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -817,12 +823,7 @@ exports[`input variations of the text input in all given sizes md should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -839,20 +840,26 @@ exports[`input variations of the text input in all given sizes md should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={true}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
-      readOnly={true}
+      readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={true}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
-        readOnly={true}
+        readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -918,12 +925,7 @@ exports[`input variations of the text input in all given sizes md should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -940,20 +942,26 @@ exports[`input variations of the text input in all given sizes md should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={true}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -1019,12 +1027,7 @@ exports[`input variations of the text input in all given sizes md should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: transparent;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: transparent;
 }
@@ -1041,20 +1044,26 @@ exports[`input variations of the text input in all given sizes md should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={true}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -1120,12 +1129,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -1142,20 +1146,26 @@ exports[`input variations of the text input in all given sizes sm should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -1222,12 +1232,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -1244,20 +1249,26 @@ exports[`input variations of the text input in all given sizes sm should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={true}
       fontSize="md"
       isError={false}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
-      readOnly={true}
+      readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={true}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
-        readOnly={true}
+        readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -1323,12 +1334,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: #f8f8f8;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: #f8f8f8;
 }
@@ -1345,20 +1351,26 @@ exports[`input variations of the text input in all given sizes sm should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={true}
       isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
@@ -1424,12 +1436,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   color: #adadad;
 }
 
-.c1:-moz-read-only {
-  cursor: not-allowed;
-  background-color: transparent;
-}
-
-.c1:read-only {
+.c1:disabled {
   cursor: not-allowed;
   background-color: transparent;
 }
@@ -1446,20 +1453,26 @@ exports[`input variations of the text input in all given sizes sm should render 
     size="md"
   >
     <styled.input
+      autoFocus={false}
+      disabled={false}
       fontSize="md"
       isError={false}
       isInverse={true}
       onChange={[MockFunction]}
       placeholder="input here ..."
       readOnly={false}
+      required={false}
       type="text"
     >
       <input
+        autoFocus={false}
         className="c1"
+        disabled={false}
         fontSize="md"
         onChange={[MockFunction]}
         placeholder="input here ..."
         readOnly={false}
+        required={false}
         type="text"
       />
     </styled.input>
