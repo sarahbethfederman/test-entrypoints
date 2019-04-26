@@ -15,6 +15,7 @@ export interface FieldProps {
   children: React.ReactNode;
   error?: string;
   touched?: boolean;
+  htmlFor?: string;
 }
 
 const Field = ({
@@ -27,12 +28,13 @@ const Field = ({
   children,
   error,
   touched,
+  htmlFor,
 }: FieldProps) => {
   const labelPropExists = label || isOptional || assistiveText || link || tooltip;
   return (
     <FieldWrapper>
       {labelPropExists && (
-        <LabelField>
+        <LabelField htmlFor={htmlFor}>
           <Label size={size} label={label} isOptional={isOptional} assistiveText={assistiveText} link={link} />
           {/* replace with ToolTip later when LUI Input added to LUI */}
           {tooltip && <ToolTip size={size} color="secondary.600" />}

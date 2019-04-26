@@ -93,3 +93,13 @@ describe('Field', () => {
     expect(wrapper.find(LabelField).length).toEqual(1);
   });
 });
+
+describe('field should be a11y(accessibility) by having htmlFor', () => {
+  const id = 'test';
+  beforeEach(() => {
+    render({ label: 'testLabel', htmlFor: id });
+  });
+  it('should render with <label> with htmlFor', () => {
+    expect(wrapper.find(LabelField).props().htmlFor).toBe(id);
+  });
+});
