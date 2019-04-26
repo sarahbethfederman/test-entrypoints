@@ -42,7 +42,7 @@ import Collapse from '@lendi-ui/collapse';
 import TextBubble from '@lendi-ui/text-bubble';
 import TextArea from '@lendi-ui/text-area';
 import DatePicker from '@lendi-ui/date-picker';
-
+import AutoComplete from '@lendi-ui/auto-complete';
 const scope = {
   styled,
   css,
@@ -108,6 +108,7 @@ const scope = {
   TextBubble,
   TextArea,
   DatePicker,
+  AutoComplete,
 };
 
 interface GenericProps {

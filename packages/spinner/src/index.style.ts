@@ -13,7 +13,6 @@ const spin = keyframes`
 
 export const SpinnerIconWrapper = styled(SpinnerIcon)`
   animation: ${spin} 1.2s linear infinite;
-  position: relative;
   display: inline-block;
   line-height: 0;
 `;

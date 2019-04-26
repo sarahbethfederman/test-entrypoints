@@ -11,3 +11,7 @@
  
 ### Changed
 - Add classname to Spinner then allow custom style applied
+
+## [1.0.4] - 2019-04-24 - [HUB-16](https://creditandfinance.atlassian.net/browse/HUB-16)
+### Changed
+- Remove a position:relative to fix a positioning issue.
