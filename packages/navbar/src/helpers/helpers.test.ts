@@ -173,6 +173,7 @@ describe('Navbar helpers', () => {
         number: applicationFromSF.activeApplicationNumber,
         sfid: applicationFromSF.activeApplicationSfid,
         applicants: mapApplicant(applicationFromSF.applicants),
+        createdDate: applicationFromSF.applicationCreatedDate,
         stage: applicationFromSF.applicationStage,
         continueURL: applicationFromSF.continueApplicationLink,
         type: applicationFromSF.transactionType,

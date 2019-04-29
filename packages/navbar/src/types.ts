@@ -19,6 +19,7 @@ export interface Application {
   sfid?: string;
   number?: number;
   stage?: ApplicationStage;
+  createdDate?: string;
   continueURL?: string;
   applicants?: Applicant[];
   isAuth?: boolean;

@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.1.1] - 2019-04-30 - [HUB-135](https://creditandfinance.atlassian.net/browse/HUB-135)
+### Added
+- Added the `createdDate` property to the results of the `fetchApplication()` helper.
+
 ## [1.1.0] - 2019-04-08 - [HUB-68](https://creditandfinance.atlassian.net/browse/HUB-68)
 ### Added
 - Added `fetchApplication` and `fetchBroker` helper methods which can be used to fetch the application & broker data for the `NavBar`, can be imported with `import { fetchApplication, fetchBroker } from '@lendi-ui/navbar'`.

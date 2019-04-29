@@ -56,6 +56,7 @@ export const mapApplication = (application?: ApplicationInSF): Application | und
       type: application.transactionType === 'Refinance' ? 'Refinance' : 'New Purchase',
       sfid: application.activeApplicationSfid,
       number: application.activeApplicationNumber,
+      createdDate: application.applicationCreatedDate,
       stage: checkApplicationStage(application.applicationStage),
       continueURL: application.continueApplicationLink,
       applicants: mapApplicant(application.applicants),
