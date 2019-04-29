@@ -6,17 +6,48 @@ import {PropTable} from '@lendi-ui/doc-utils';
 import Input from '@lendi-ui/text-input';
 ```
 
-```jsx
+```js
+const EmailIcon = styled(Email)`
+  ${pl('sm')}
+`;
 
+render(
 <>
  <Input
     size={'md'}
     placeholder="Input here ..."
     onChange={() =>{}}
     isFullWidth={true}
-    before={<Email color='primary.500' height="26px" style={{marginLeft: "16px"}} />}
- />
- </>
+    before={
+        <EmailIcon
+          color='primary.500'
+          height='26px'
+        />}
+  />
+</>)
+```
+
+## Notes
+When an icon is used as the before/after item with an input there are recommended padding settings to ensure that it is displayed as initially intended. To apply the appropriate amount of padding, use `pl()` for before icons and `pr()` for after icons as per the below examples:
+
+```
+import { styled } from 'styled-components';
+import { pl /* or pr for after icons */ } from 'spacing';
+
+// lg sized input e.g.
+const Wrapper = styled(IconName)`
+  ${pl('md')}
+`;
+
+// md sized input e.g.
+const Wrapper = styled(IconName)`
+  ${pl('sm')}
+`;
+
+// sm sized input e.g.
+const Wrapper = styled(IconName)`
+  ${pl('xs')}
+`;
 ```
 
 ## Properties
