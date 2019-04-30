@@ -1,0 +1,3 @@
+## Custom route headers as per: https://www.netlify.com/docs/headers-and-basic-auth/
+/dist/fonts/*.otf
+  Content-Type: font/otf

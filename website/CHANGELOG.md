@@ -1,5 +1,7 @@
 # Changelog
 
+## 1.1.2 - [2019-04-29] - [HUB-122](https://creditandfinance.atlassian.net/browse/HUB-122)
+- Set custom headers to access fonts for the netlify font routes.
 
 ## 1.1.1 - [2019-04-23] - [HUB-118](https://creditandfinance.atlassian.net/browse/HUB-118)
 ### Fixed

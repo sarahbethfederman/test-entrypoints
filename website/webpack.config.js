@@ -78,7 +78,12 @@ module.exports = {
     }),
 
     // copy static files referenced directly from the HTML file
-    new CopyWebpackPlugin(['src/_redirects', 'src/favicon.ico', 'src/fonts/*']),
+    new CopyWebpackPlugin([
+      'src/_redirects',
+      'src/_headers',
+      'src/favicon.ico',
+      { from: 'src/fonts/*', to: './fonts', flatten: true },
+    ]),
 
     // include workspace information as part of the bundle
     new WorkspaceMetadataPlugin({
