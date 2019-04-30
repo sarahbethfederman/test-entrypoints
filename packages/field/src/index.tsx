@@ -4,7 +4,7 @@ import Label from './Label/index';
 import ErrorMessage from './ErrorMessage/index';
 import { LinkProps } from '@lendi-ui/typography';
 import { FieldWrapper, LabelField, ToolTip } from './index.style';
-
+import * as cuid from 'cuid';
 export interface FieldProps {
   size?: LabelSize;
   label?: string;
@@ -31,6 +31,14 @@ const Field = ({
   htmlFor,
 }: FieldProps) => {
   const labelPropExists = label || isOptional || assistiveText || link || tooltip;
+  if (!htmlFor || htmlFor === '') {
+    htmlFor = cuid();
+  }
+  const childrenWithCustomId = React.isValidElement(children)
+    ? React.cloneElement(children as React.ReactElement<any>, {
+        id: htmlFor,
+      })
+    : '';
   return (
     <FieldWrapper>
       {labelPropExists && (
@@ -40,7 +48,7 @@ const Field = ({
           {tooltip && <ToolTip size={size} color="secondary.600" />}
         </LabelField>
       )}
-      {children}
+      {childrenWithCustomId}
       {touched && error && <ErrorMessage error={error} />}
     </FieldWrapper>
   );

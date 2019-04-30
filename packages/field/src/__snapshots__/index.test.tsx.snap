@@ -65,9 +65,12 @@ exports[`Field it should render wrapper component 1`] = `
   <div
     className="c0"
   >
-    <styled.label>
+    <styled.label
+      htmlFor={123456789}
+    >
       <label
         className="c1"
+        htmlFor={123456789}
       >
         <Label
           isOptional={false}

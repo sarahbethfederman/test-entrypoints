@@ -1,5 +1,10 @@
 # Changelog - @lendi-ui/field
 
+## [1.2.0] - 2019-04-29 - [HUB-97] (https://creditandfinance.atlassian.net/browse/HUB-97)
+### Changed
+- A11y(Accessibility) support for Field using cuid.
+
+
 ## [1.1.2] - 2019-03-11 - [BRAVO-661] (https://creditandfinance.atlassian.net/browse/BRAVO-661)
 
 ### Changed

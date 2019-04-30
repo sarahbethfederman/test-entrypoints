@@ -17,6 +17,7 @@ function render(props) {
     </Theme>
   );
 }
+jest.mock('cuid', () => () => 123456789);
 
 describe('Field', () => {
   const label = 'First name';
@@ -95,11 +96,21 @@ describe('Field', () => {
 });
 
 describe('field should be a11y(accessibility) by having htmlFor', () => {
-  const id = 'test';
-  beforeEach(() => {
-    render({ label: 'testLabel', htmlFor: id });
+  describe('when htmlFor is provided', () => {
+    const id = 'test';
+    beforeEach(() => {
+      render({ label: 'testLabel', htmlFor: id });
+    });
+    it('should render with <label> with htmlFor', () => {
+      expect(wrapper.find(LabelField).props().htmlFor).toBe(id);
+    });
   });
-  it('should render with <label> with htmlFor', () => {
-    expect(wrapper.find(LabelField).props().htmlFor).toBe(id);
+  describe('when htmlFor is NOT provided, then auto generate it and make it available at children', () => {
+    beforeEach(() => {
+      render({ label: 'testLabel' });
+    });
+    it('should render with <label> with htmlFor', () => {
+      expect(wrapper.find(LabelField).props().htmlFor).toBe(123456789);
+    });
   });
 });
