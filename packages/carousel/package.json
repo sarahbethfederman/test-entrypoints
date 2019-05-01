@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/carousel",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -17,9 +17,8 @@
     "styled-components": "^3"
   },
   "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:esm"
   }
 }

@@ -1,5 +1,10 @@
 # Changelog - @lendi-ui/dropdown
 
+## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## [1.1.0] - 2019-03-14 - [BRAVO-671](https://creditandfinance.atlassian.net/browse/BRAVO-671)
 ### Added
 - added `isError`, `isDisabled` and `isLoading` prop

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/card",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -12,24 +12,23 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^5.0.0",
+    "@lendi-ui/theme": "^6.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^2 || ^3"
   },
   "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:cjs && yarn run build:esm && yarn run build:types"
+    "build": "yarn run build:types && yarn run build:esm"
   },
   "dependencies": {
-    "@lendi-ui/color": "^2.0.2",
-    "@lendi-ui/dropdown": "^1.1.0",
-    "@lendi-ui/icon": "^5.1.0",
-    "@lendi-ui/spacing": "^3.1.2",
-    "@lendi-ui/typography": "^2.5.5",
-    "@lendi-ui/breakpoint": "^1.0.1",
-    "@lendi-ui/utils": "^1.1.2"
+    "@lendi-ui/color": "^3.0.0",
+    "@lendi-ui/dropdown": "^2.0.0",
+    "@lendi-ui/icon": "^7.0.0",
+    "@lendi-ui/spacing": "^4.0.0",
+    "@lendi-ui/typography": "^3.0.0",
+    "@lendi-ui/breakpoint": "^2.0.0",
+    "@lendi-ui/utils": "^2.0.0"
   }
 }

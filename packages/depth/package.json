@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/depth",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -11,9 +11,8 @@
   "license": "ISC",
   "author": "Lendi Devs",
   "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:esm"
   }
 }

@@ -8,17 +8,15 @@
   "peerDependencies": {
     "@types/react": "^16.4.0",
     "react": "^16.4.0",
-    "styled-components": "^3.0.0"
+    "styled-components": "^3.0.0",
+    "@lendi-ui/theme": "^6.0.0"
   },
   "dependencies": {
-    "@lendi-ui/color": "^2.0.1",
-    "@lendi-ui/spacing": "^2.0.0",
-    "@lendi-ui/typography": "^2.5.2",
+    "@lendi-ui/color": "^3.0.0",
+    "@lendi-ui/spacing": "^3.0.0",
+    "@lendi-ui/typography": "^3.0.0",
     "react-live": "^1.11.0",
     "react-element-to-jsx-string": "^14.0.1"
-  },
-  "devDependencies": {
-    "@lendi-ui/theme": "^4.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

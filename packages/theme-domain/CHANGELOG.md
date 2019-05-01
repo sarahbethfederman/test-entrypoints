@@ -1,5 +1,10 @@
 # Changelog - @lendi-ui/theme-domain
 
+## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## [1.0.2] - 2019-04-23 [HUB-9](https://creditandfinance.atlassian.net/browse/HUB-9)
 ### Changed
 - Change Domain theme color 'secondary.950' to '#010307'

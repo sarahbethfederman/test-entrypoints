@@ -2,6 +2,11 @@
 All notable changes to this component will be documented in this file.
 The component can be in the packages directory of LUI under [@lendi-ui/radio] (https://bitbucket.org/lendi-dev/lui/src/master/packages/radio/)
 
+## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## [1.0.0] - 2019-02-28 - [BRAVO-423] (https://creditandfinance.atlassian.net/browse/BRAVO-423)
 
 ### Added

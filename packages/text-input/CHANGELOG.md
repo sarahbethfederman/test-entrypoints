@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## 2.2.0 - [2019-04-15] - [HUB-51](https://creditandfinance.atlassian.net/browse/HUB-51)
 ### Fixed
 - Add props for isRequired, isAutoFocus and IsReadOnly. Update and improve tests.

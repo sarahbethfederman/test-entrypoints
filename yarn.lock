@@ -26,33 +26,30 @@
     core-js "^2.5.7"
     regenerator-runtime "^0.12.0"
 
-"@lendi-ui/icon@^5.0.1", "@lendi-ui/icon@^5.1.0", "@lendi-ui/icon@^5.2.0":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/icon/-/icon-5.3.1.tgz#71ec05ee9099f1c5ba8923710b85ee8d79b137de"
-  integrity sha512-Hv2LI2a1r8B5JDSBiyLiwdsl6MoYatXSqvUHtHqk6SqQxSYItNq0hrL+bAD3LVtxoNbe5B2QJ40tDfcLXwG5Tw==
-  dependencies:
-    "@lendi-ui/color" "^2.0.1"
+"@lendi-ui/breakpoint@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@lendi-ui/breakpoint/-/breakpoint-1.0.1.tgz#3acba0d6dc37a78693034598ca102cf398deabb5"
+  integrity sha512-a1KQDUAGQkPa2v3shyTSGB0UaHStCIT+TAeVc2L5vn5N5qDQGDfw4hmVYdxzaTFRICn5oa1uQZPWlZCI3GMxrg==
 
-"@lendi-ui/logo@^2.1.1", "@lendi-ui/logo@^2.1.2":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/logo/-/logo-2.1.3.tgz#4e5e00780f35904ce0c6d602b7fc6633e5e1b382"
-  integrity sha512-UTFIkuOJ2RBwIwb6E7BLSZAW8UnCX3gdSQQUZjCAvH+YB3Ux6tK9tytO9lvPr21O7xyi9A+KaQLgHsMqI7UCaA==
-  dependencies:
-    "@lendi-ui/color" "^2.0.1"
-    "@lendi-ui/icon" "^5.0.1"
-    "@lendi-ui/theme" "^4.0.0"
+"@lendi-ui/depth@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@lendi-ui/depth/-/depth-1.0.0.tgz#6b990560f4edb5051b4551795e958197a2ef5e04"
+  integrity sha512-7ojVnd+F+F3YmLiPNeZB03dJrTsSt9tPXGlD4XzzqAbUtPhSznjH1+oXYhAUrESLp25rvqwPAYrdWiSZrtl39g==
 
-"@lendi-ui/spacing@^2.0.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-2.1.0.tgz#b68320566c6765130b59a34c913a369c088b8a05"
-  integrity sha512-cTvKYeV76hoR8Efg9lld79J2Njy+9W+okheXOyMuBFVgP+YL8P30MR9q6kscNhd9Fhe25/rcsPwRp6bLErgcrA==
+"@lendi-ui/spacing@^3.0.0":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@lendi-ui/spacing/-/spacing-3.1.2.tgz#6f2d5cf1fef2cb8560974aad1e851e48d3fc0a96"
+  integrity sha512-xa6hPNiNweugLvu8TIsLn+EehlzKop7fPkVWagNGujXV43E5ed8Y9pL3GG4PC6GAvao7CzH8j7WvZM/gSH4+CA==
   dependencies:
     "@lendi-ui/breakpoint" "^1.0.0"
+    "@lendi-ui/utils" "^1.1.0"
 
-"@lendi-ui/theme@^4.0.0":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/theme/-/theme-4.0.2.tgz#3532bb1368fc95b9ae4ec40471244a87e98187b5"
-  integrity sha512-8jY6RzfiM/vIkawl04xjb2yKFx1M3P6Db/rLhnwKeOkDDZFSpD1kxt+euXgkSEEt1loXpWIaDKQIaAXKud+/hg==
+"@lendi-ui/utils@^1.1.0":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@lendi-ui/utils/-/utils-1.1.2.tgz#e377e82cbcb1c7cf1923c4d37fd54ad35b02a826"
+  integrity sha512-yZXfSfuPx25Ubgx0TjMJeBeifacv3K28XN6F6zZ4oH1UtDOsOROWjqmyQqKHxfwlh5IUXzWQy+2gNzSVhfDy8A==
+  dependencies:
+    "@lendi-ui/breakpoint" "^1.0.0"
 
 "@lendi/editor-config@^1.0.0":
   version "1.0.0"

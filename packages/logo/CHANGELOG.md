@@ -1,3 +1,8 @@
+## [4.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## [3.0.0] - 2019-03-05 - [BRAVO-387] (https://creditandfinance.atlassian.net/browse/BRAVO-387)
  
 ### Changed

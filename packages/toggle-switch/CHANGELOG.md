@@ -1,5 +1,10 @@
 # Changelog - @lendi-ui/toggle-switch
 
+## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Deleted
+- Remove the CJS bundles
+
 ## [1.0.4] - 2019-03-07 - [BRAVO-592] (https://creditandfinance.atlassian.net/browse/BRAVO-592)
  
 ### Created

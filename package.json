@@ -46,8 +46,10 @@
     "node": "^10"
   },
   "scripts": {
-    "build": "yarn build:icons && lerna run build",
+    "prebuild": "yarn build:icons && yarn build:theme",
+    "build": "lerna run build --ignore @lendi-ui/theme",
     "build:icons": "node packages/icon/build/index.js",
+    "build:theme": "cd packages/theme/ && yarn build",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
     "check:danger": "danger local --base master",
     "check:duplicates": "yarn-deduplicate --list --fail",
@@ -79,5 +81,8 @@
     "fast-glob": "^2.2.6",
     "yarn": "^1.13.0",
     "yarn-deduplicate": "^1.1.0"
+  },
+  "peerDependencies": {
+    "@lendi-ui/theme": "^6.0.0"
   }
 }

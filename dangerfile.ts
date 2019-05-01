@@ -39,8 +39,8 @@ function wereFilesInWorkspaceCreatedOrModified(workspaceDirectory: string): bool
 }
 
 function wereCreatedOrModifiedFilesExcluded(workspaceDirectory: string): boolean {
-  const manifestExcludes = require(`./${workspaceDirectory}/tsconfig.cjs.json`).exclude;
-  const manifestIncludes = require(`./${workspaceDirectory}/tsconfig.cjs.json`).include;
+  const manifestExcludes = require(`./${workspaceDirectory}/tsconfig.esm.json`).exclude;
+  const manifestIncludes = require(`./${workspaceDirectory}/tsconfig.esm.json`).include;
   const created = danger.git.created_files.filter((file) => file.startsWith(`${workspaceDirectory}/`));
   const modified = danger.git.modified_files.filter((file) => file.startsWith(`${workspaceDirectory}/`));
 

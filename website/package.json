@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.1.2",
   "dependencies": {
-    "@lendi-ui/icon": "^5.0.1",
-    "@lendi-ui/theme": "^5.0.0",
+    "@lendi-ui/icon": "^7.0.0",
+    "@lendi-ui/theme": "^6.0.0",
     "@mdx-js/tag": "^0.15.0",
     "@types/react-helmet": "^5.0.7",
     "@types/react-router-dom": "^4.3.0",
