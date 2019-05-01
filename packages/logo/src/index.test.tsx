@@ -2,7 +2,8 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import Logo from '.';
 import Theme from '@lendi-ui/theme';
-import { LendiLogo } from '@lendi-ui/icon';
+import { theme as domainTheme } from '@lendi-ui/theme-domain';
+import { LendiLogo, DomainLogo } from '@lendi-ui/icon';
 
 /**
  * Test case Logo
@@ -54,6 +55,19 @@ describe('Logo', () => {
 
     it('should render the icon with class "some-class" when className is given', () => {
       expect(Wrapper.find(LendiLogo).hasClass('some-class')).toEqual(true);
+    });
+  });
+
+  describe('Logo in Domain theme', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme kind={domainTheme}>
+          <Logo variant="light" width="240px" height="120px" className="some-class" />
+        </Theme>
+      );
+    });
+    it('it should render domain logo', () => {
+      expect(Wrapper.find(DomainLogo).length).toEqual(1);
     });
   });
 });

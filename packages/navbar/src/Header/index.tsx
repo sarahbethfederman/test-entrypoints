@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as Sticky from 'react-stickynode';
+import createRef from 'react-create-ref';
 import {
   FullWidthContainer,
   Container,
@@ -29,7 +30,7 @@ export interface HeaderState {
 }
 
 export class Header extends React.Component<HeaderProps, HeaderState> {
-  private stickyRef = React.createRef<Sticky>();
+  private stickyRef = createRef();
   state = {
     stuck: false,
   };
@@ -74,7 +75,6 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     if (!onOpenLeftSidebar) return;
 
     const { current: currentSticky } = this.stickyRef;
-
     if (currentSticky) {
       // Sticky needs to update to fill the gap caused by overlay.
       // @ts-ignore

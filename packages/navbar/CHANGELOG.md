@@ -1,9 +1,14 @@
 # Changelog
 
+## [2.0.1] - 2019-04-26 - [HUB-99](https://creditandfinance.atlassian.net/browse/HUB-99)
+### Added
+- Bump theme and Logo version
+
 ## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
 ### Deleted
 - Remove the CJS bundles
+
 ## [1.1.1] - 2019-04-30 - [HUB-135](https://creditandfinance.atlassian.net/browse/HUB-135)
 ### Added
 - Added the `createdDate` property to the results of the `fetchApplication()` helper.
