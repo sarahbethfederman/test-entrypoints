@@ -24,6 +24,11 @@ export interface ButtonProps {
   onClick?: () => void;
   className?: string;
   children?: React.ReactNode;
+  [key: string]: any;
+}
+
+interface DataObject {
+  [key: string]: string;
 }
 
 export class Button extends React.Component<ButtonProps> {
@@ -38,6 +43,17 @@ export class Button extends React.Component<ButtonProps> {
       className,
       onClick,
     };
+  }
+
+  get dataProps() {
+    const dataProps: DataObject = {};
+    for (const key in this.props) {
+      if (key.startsWith('data-')) {
+        dataProps[key] = this.props[key];
+      }
+    }
+
+    return dataProps;
   }
 
   get linkProps() {
@@ -76,7 +92,7 @@ export class Button extends React.Component<ButtonProps> {
       }
 
       return (
-        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.commonProps}>
+        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.dataProps} {...this.commonProps}>
           {this.renderContent()}
         </ButtonWrapper>
       );

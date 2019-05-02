@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.1.0] - 2019-04-30 - [HUB-128] (https://creditandfinance.atlassian.net/browse/HUB-128)
+
+### Added
+
+- Allowed the passthrough of any data- properties to the button HTML element.
+
 ## [5.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
 ### Deleted
