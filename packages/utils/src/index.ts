@@ -14,3 +14,26 @@ export const deriveSize = (multiplier: number) => {
 
   return `calc(${multiplier} * var(--lendi-ui-size))`;
 };
+
+interface ComponentProps {
+  [key: string]: any;
+}
+
+interface DataObject {
+  [key: string]: string;
+}
+
+/**
+ * return all the props of an object where the key begins with 'data-'
+ * @param props The props object of a given component
+ */
+export const getDataProps = (props: ComponentProps) => {
+  const dataProps: DataObject = {};
+  for (const key in props) {
+    if (key.startsWith('data-')) {
+      dataProps[key] = props[key];
+    }
+  }
+
+  return dataProps;
+};

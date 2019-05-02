@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { getDataProps } from '@lendi-ui/utils';
 import {
   ButtonVariant,
   ButtonSize,
@@ -24,13 +25,7 @@ export interface ButtonProps {
   onClick?: () => void;
   className?: string;
   children?: React.ReactNode;
-  [key: string]: any;
 }
-
-interface DataObject {
-  [key: string]: string;
-}
-
 export class Button extends React.Component<ButtonProps> {
   get commonProps() {
     const { variant, size = 'md', isInverse, isFullWidth, isDisabled, className, onClick } = this.props;
@@ -43,17 +38,6 @@ export class Button extends React.Component<ButtonProps> {
       className,
       onClick,
     };
-  }
-
-  get dataProps() {
-    const dataProps: DataObject = {};
-    for (const key in this.props) {
-      if (key.startsWith('data-')) {
-        dataProps[key] = this.props[key];
-      }
-    }
-
-    return dataProps;
   }
 
   get linkProps() {
@@ -92,7 +76,12 @@ export class Button extends React.Component<ButtonProps> {
       }
 
       return (
-        <ButtonWrapper aria-label={buttonLabel} disabled={isDisabled} {...this.dataProps} {...this.commonProps}>
+        <ButtonWrapper
+          aria-label={buttonLabel}
+          disabled={isDisabled}
+          {...getDataProps(this.props)}
+          {...this.commonProps}
+        >
           {this.renderContent()}
         </ButtonWrapper>
       );
