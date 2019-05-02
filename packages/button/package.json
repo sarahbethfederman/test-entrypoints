@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -18,7 +18,7 @@
     "@lendi-ui/color": "^3.0.0",
     "@lendi-ui/depth": "^2.0.0",
     "@lendi-ui/spacing": "^4.0.0",
-    "@lendi-ui/utils": "^2.0.0",
+    "@lendi-ui/utils": "^2.1.0",
     "create-react-context": "^0.2.3",
     "prop-types": "^15.6.2",
     "@lendi-ui/breakpoint": "^2.0.0"

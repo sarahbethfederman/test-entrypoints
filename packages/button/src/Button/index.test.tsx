@@ -68,6 +68,21 @@ describe('Button', () => {
     expect(element.find('button[aria-label]').prop('aria-label')).toEqual('Locked');
   });
 
+  it('should pass through any properties starting with "data-" to the button element', () => {
+    const dataKey = 'data-test';
+    const dataValue = '12345';
+    render({ 'data-test': dataValue });
+
+    expect(button.props()[dataKey]).toEqual(dataValue);
+  });
+
+  it('should not pass through unrelated properties', () => {
+    const fakeKey = 'fake-data';
+    render({ fakeKey: 'doesnt exist' });
+
+    expect(button.props()[fakeKey]).toEqual(undefined);
+  });
+
   allVariants.forEach((variant) => {
     describe(`${variant}`, () => {
       sizes.forEach((size) => {

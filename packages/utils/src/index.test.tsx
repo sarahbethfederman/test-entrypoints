@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { shallow } from 'enzyme';
-import { display } from '.';
+import { display, getDataProps } from '.';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 
 describe('display()', () => {
@@ -38,5 +38,22 @@ describe('display()', () => {
     expect(element).not.toHaveStyleRule('display', 'undefined', {
       media: `(min-width:${Breakpoint.tablet})`,
     });
+  });
+});
+
+describe('getDataProps', () => {
+  it('should pass through any properties starting with "data-"', () => {
+    const dataValue = '12345';
+    const dataKey = 'data-test';
+    const result = getDataProps({ [dataKey]: dataValue });
+
+    expect(result[dataKey]).toEqual(dataValue);
+  });
+
+  it('should not pass through unrelated properties', () => {
+    const fakeKey = 'fake-data';
+    const result = getDataProps({ [fakeKey]: 'doesnt exist' });
+
+    expect(result[fakeKey]).toEqual(undefined);
   });
 });
