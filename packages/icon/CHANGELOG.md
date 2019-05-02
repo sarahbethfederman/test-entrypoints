@@ -1,9 +1,12 @@
+## [7.1.0] - 2019-05-02 - [HUB-126] (https://creditandfinance.atlassian.net/browse/HUB-126)
+### Added
+- Added the following new icons: file-upload & FileDownload as an alias to GetApp.
+
 ## [7.0.1] - 2019-05-02 - [HUB-132] (https://creditandfinance.atlassian.net/browse/HUB-132)
 ### Changed
 - Fix MS's Edge Icon rendering issue
 
 ## [7.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Deleted
 - Remove the CJS bundles
 

@@ -1,3 +1,5 @@
+const alias = require('./alias.json');
+
 const stripFileExtension = (str) => str.replace(/\.svg/, '');
 
 const camelCase = (str) =>
@@ -12,8 +14,17 @@ const pascalCase = (str) =>
     return w[0].toUpperCase() + w.slice(1);
   });
 
+const listAlias = (fileName) => {
+  if (Array.isArray(alias[fileName])) {
+    return alias[fileName].map((aliasedName) => `, ${fileName} as ${aliasedName}`).join('');
+  }
+
+  return '';
+};
+
 module.exports = {
   stripFileExtension,
   camelCase,
   pascalCase,
+  listAlias,
 };

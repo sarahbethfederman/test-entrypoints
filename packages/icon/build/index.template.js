@@ -14,7 +14,12 @@ export interface IconProps {
 }
 
 ${files
-  .map((file) => `export { ${util.pascalCase(file)} } from './icons-compiled/${util.stripFileExtension(file)}';\n`)
+  .map((file) => {
+    const fileName = util.pascalCase(file);
+    return `export { ${fileName}${util.listAlias(fileName)} } from './icons-compiled/${util.stripFileExtension(
+      file
+    )}';\n`;
+  })
   .join('')}`;
 
 module.exports = exportFile;
