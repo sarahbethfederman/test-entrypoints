@@ -63,6 +63,8 @@ exports[`Alert it should mount Alert component with heading 1`] = `
 }
 
 .c3 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -194,6 +196,8 @@ exports[`Alert it should mount Alert component without heading 1`] = `
 }
 
 .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 

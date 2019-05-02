@@ -12,8 +12,8 @@ export interface IconProps {
 }
 
 export const IconWrapper = styled.span\`
-  width: \${({ width }: IconProps) => width || undefined};
-  height: \${({ height }: IconProps) => height || undefined};
+  width: \${({ width }: IconProps) => width || '1em'};
+  height: \${({ height }: IconProps) => height || '1em'};
   vertical-align: middle;
 
   & > svg {

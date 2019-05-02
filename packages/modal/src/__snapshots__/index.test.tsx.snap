@@ -3,6 +3,8 @@
 exports[`Modal size should render "lg" size styles on tablet and desktop 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -123,6 +125,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -242,6 +246,8 @@ Array [
 exports[`Modal size should render "md" size styles on tablet and desktop 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -353,6 +359,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -463,6 +471,8 @@ Array [
 exports[`Modal size should render "sm" size styles on tablet and desktop 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -574,6 +584,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -684,6 +696,8 @@ Array [
 exports[`Modal size should render 'md' as default if there are no size value on tablet and desktop 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -793,6 +807,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -902,6 +918,8 @@ Array [
 exports[`Modal size should render with full width no matter what "lg" is on mobile 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -1022,6 +1040,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -1141,6 +1161,8 @@ Array [
 exports[`Modal size should render with full width no matter what "md" is on mobile 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -1252,6 +1274,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -1362,6 +1386,8 @@ Array [
 exports[`Modal size should render with full width no matter what "sm" is on mobile 1`] = `
 Array [
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -1473,6 +1499,8 @@ Array [
     </div>
   </styled.div>,
   .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 

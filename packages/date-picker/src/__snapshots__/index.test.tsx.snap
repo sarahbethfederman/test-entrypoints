@@ -2,6 +2,8 @@
 
 exports[`DatePicker should render the component with month and year sections 1`] = `
 .c2 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 

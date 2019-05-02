@@ -22,6 +22,8 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
 }
 
 .c1 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -90,6 +92,8 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
 
 exports[`ErrorMessage it should render a icon called "Error" 1`] = `
 .c0 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
@@ -172,6 +176,8 @@ exports[`ErrorMessage it should render whole component 1`] = `
 }
 
 .c1 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 

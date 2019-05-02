@@ -63,6 +63,8 @@ exports[`Card render card with interactive title 1`] = `
 }
 
 .c8 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 

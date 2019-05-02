@@ -36,6 +36,8 @@ exports[`Footer it should mount Footer component 1`] = `
 }
 
 .c22 {
+  width: 1em;
+  height: 1em;
   vertical-align: middle;
 }
 
