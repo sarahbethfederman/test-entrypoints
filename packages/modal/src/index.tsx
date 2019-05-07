@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Overlay from '@lendi-ui/overlay';
 import { Fade } from '@lendi-ui/transition';
-import { Container, Content, Footer, ModalSize, CloseIcon } from './index.style';
+import { Wrapper, Container, Content, Footer, ModalSize, CloseIcon } from './index.style';
 
 export interface ModalProps {
   size?: ModalSize;
@@ -17,7 +17,7 @@ class Modal extends React.Component<ModalProps> {
   render() {
     const { show, size, onHide, children } = this.props;
     return (
-      <div>
+      <Wrapper>
         <Overlay show={show} zIndex={5} onHide={onHide} />
         <Fade active={show}>
           <Container show={show} size={size} className="modal-container">
@@ -25,7 +25,7 @@ class Modal extends React.Component<ModalProps> {
             {children}
           </Container>
         </Fade>
-      </div>
+      </Wrapper>
     );
   }
 }

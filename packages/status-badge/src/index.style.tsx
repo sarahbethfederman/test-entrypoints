@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { body } from '@lendi-ui/typography';
 import { color, fg, bg } from '@lendi-ui/color';
 import { pl, pr } from '@lendi-ui/spacing';
+import { normalise } from '@lendi-ui/utils';
 
 export type StatusBadgeVariant = 'error' | 'info' | 'success' | 'warn';
 export type StatusBadgeSize = 'sm' | 'lg';
@@ -15,6 +16,7 @@ interface ContentProps {
 }
 
 export const Wrapper = styled.div`
+    ${normalise};
     display: flex;
     align-items: center;
     flex-direction: row;

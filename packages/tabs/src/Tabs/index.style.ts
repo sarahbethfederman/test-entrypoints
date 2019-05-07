@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { grid } from '@lendi-ui/grid';
 import { bg } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
+import { normalise } from '@lendi-ui/utils';
 
 const GRADIENT = 0;
 const ICON = 1;
@@ -29,6 +30,7 @@ const commonIconWrapperStyle = css`
 `;
 
 export const Wrapper = styled.div`
+  ${normalise};
   ${grid({ halign: 'left', wrap: false })};
   ${(props: WrapperProps) => (props.isInverse ? 'background: transparent' : bg('primary.500'))};
   min-height: 48px;

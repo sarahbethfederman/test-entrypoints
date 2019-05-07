@@ -4,6 +4,7 @@ import { gte } from '@lendi-ui/breakpoint';
 import { m, py, px, pt, pb } from '@lendi-ui/spacing';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
+import { normalise } from '@lendi-ui/utils';
 
 interface ContainerProps {
   show: boolean;
@@ -23,9 +24,9 @@ export const widthBySize: { [size in ModalSize]: string } = {
 };
 
 export const Wrapper = styled.div`
+  ${normalise};
   position: fixed;
   z-index: 20;
-  background-color: #fff;
   width: 600px;
   padding: 80px;
 `;

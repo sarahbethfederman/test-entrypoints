@@ -2,6 +2,16 @@
 
 exports[`InputButton it should render InputButton in after wrapper 1`] = `
 .c2 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -169,6 +179,16 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
 
 exports[`InputButton it should render InputButton in before wrapper 1`] = `
 .c2 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;

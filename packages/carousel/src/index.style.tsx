@@ -2,6 +2,7 @@
 import * as React from 'react';
 // @ts-ignore
 import styledComponents, { css, StyledComponentClass } from 'styled-components';
+import { normalise } from '@lendi-ui/utils';
 
 export interface CarouselContainerProps {
   width?: string;
@@ -9,6 +10,7 @@ export interface CarouselContainerProps {
 }
 
 export const CarouselContainer = styledComponents.div`
+    ${normalise};
     position: relative;
     overflow: hidden;
     width: ${({ width }: CarouselContainerProps) => width};

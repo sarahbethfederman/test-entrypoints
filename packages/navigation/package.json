@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navigation",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -24,7 +24,7 @@
     "@lendi-ui/spacing": "^4.0.0",
     "@lendi-ui/status-badge": "^2.0.0",
     "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.0.0"
+    "@lendi-ui/utils": "^2.2.0"
   },
   "scripts": {
     "build:esm": "tsc --project tsconfig.esm.json",

@@ -1,4 +1,9 @@
-# Changelog
+# Changelog - @lendi-ui/navbar
+
+## [2.0.2] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+### Added
+- Created outer Wrapper component.
+- Added normalise mixin to outer component.
 
 ## [2.0.1] - 2019-04-26 - [HUB-99](https://creditandfinance.atlassian.net/browse/HUB-99)
 ### Added
@@ -7,7 +12,7 @@
 ## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
 ### Deleted
-- Remove the CJS bundles
+- Remove the CJS bundles.
 
 ## [1.1.1] - 2019-04-30 - [HUB-135](https://creditandfinance.atlassian.net/browse/HUB-135)
 ### Added
@@ -18,7 +23,6 @@
 - Added `fetchApplication` and `fetchBroker` helper methods which can be used to fetch the application & broker data for the `NavBar`, can be imported with `import { fetchApplication, fetchBroker } from '@lendi-ui/navbar'`.
 
 ## [1.0.9] - 2019-04-12 [HUB-89](https://creditandfinance.atlassian.net/browse/HUB-89)
-
 ### Changed
 - Changed left navbar header wrapper to explicitly use box-sizing: border-box; and removed the height on the header, resolving a bug where half the header was being cutoff based on box-sizing.
 - Fixed the build script to copy images from src to dist/esm.

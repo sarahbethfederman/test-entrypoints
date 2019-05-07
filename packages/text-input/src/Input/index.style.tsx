@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { InputButton } from '../InputButton/index';
@@ -82,6 +82,7 @@ export interface LayoutProp {
   isDisabled: boolean;
 }
 export const Layout = styled.div`
+  ${normalise};
   display: inline-flex;
   flex-direction: row;
   align-items: center;

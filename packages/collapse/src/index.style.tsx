@@ -2,8 +2,11 @@ import styled, { css } from 'styled-components';
 import { color, bg } from '@lendi-ui/color';
 import { px, p, ml, py } from '@lendi-ui/spacing';
 import { Heading } from '@lendi-ui/typography';
+import { normalise } from '@lendi-ui/utils';
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  ${normalise};
+`;
 export type Size = 'xs' | 'sm' | 'md';
 interface CollapseBodyProps {
   isExpanded?: boolean;

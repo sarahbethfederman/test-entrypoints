@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Spacing, SpacingName } from '@lendi-ui/spacing';
 import { ButtonWrapper, LinkWrapper, ButtonSize, Size } from '../Button/index.style';
 import { map } from '@lendi-ui/breakpoint';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 
 const spacingTopBySizeMixin = (size: ButtonSize): SpacingName =>
   map(size, (val) => {
@@ -75,6 +75,7 @@ export interface WrapperProps {
 }
 
 export const Wrapper = styled.div`
+  ${normalise};
   display: inline-flex;
   flex-wrap: wrap;
   ${({ size }: { size: ButtonSize }) => spacingTopBySizeMixin(size)};

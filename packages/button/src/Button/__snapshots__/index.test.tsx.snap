@@ -2,6 +2,16 @@
 
 exports[`Button emphasis should not render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -127,6 +137,16 @@ exports[`Button emphasis should not render full width 1`] = `
 
 exports[`Button emphasis should not render inverse styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -252,6 +272,16 @@ exports[`Button emphasis should not render inverse styles 1`] = `
 
 exports[`Button emphasis should render "lg" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -377,6 +407,16 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
 
 exports[`Button emphasis should render "md" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -502,6 +542,16 @@ exports[`Button emphasis should render "md" size styles 1`] = `
 
 exports[`Button emphasis should render "sm" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -627,6 +677,16 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
 
 exports[`Button emphasis should render "xs" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -752,6 +812,16 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
 
 exports[`Button emphasis should render disabled button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -878,6 +948,16 @@ exports[`Button emphasis should render disabled button 1`] = `
 
 exports[`Button emphasis should render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1004,6 +1084,16 @@ exports[`Button emphasis should render full width 1`] = `
 
 exports[`Button emphasis should render normal button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1130,6 +1220,16 @@ exports[`Button emphasis should render normal button 1`] = `
 
 exports[`Button emphasis should render normal styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1255,6 +1355,16 @@ exports[`Button emphasis should render normal styles 1`] = `
 
 exports[`Button empty should render "lg" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1390,6 +1500,16 @@ exports[`Button empty should render "lg" size styles 1`] = `
 
 exports[`Button empty should render "md" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1525,6 +1645,16 @@ exports[`Button empty should render "md" size styles 1`] = `
 
 exports[`Button empty should render "sm" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1660,6 +1790,16 @@ exports[`Button empty should render "sm" size styles 1`] = `
 
 exports[`Button empty should render "xs" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1795,6 +1935,16 @@ exports[`Button empty should render "xs" size styles 1`] = `
 
 exports[`Button empty should render inverse styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -1912,6 +2062,16 @@ exports[`Button empty should render inverse styles 1`] = `
 
 exports[`Button empty should render normal styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2047,6 +2207,16 @@ exports[`Button empty should render normal styles 1`] = `
 
 exports[`Button primary should not render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2172,6 +2342,16 @@ exports[`Button primary should not render full width 1`] = `
 
 exports[`Button primary should render "lg" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2297,6 +2477,16 @@ exports[`Button primary should render "lg" size styles 1`] = `
 
 exports[`Button primary should render "md" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2422,6 +2612,16 @@ exports[`Button primary should render "md" size styles 1`] = `
 
 exports[`Button primary should render "sm" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2547,6 +2747,16 @@ exports[`Button primary should render "sm" size styles 1`] = `
 
 exports[`Button primary should render "xs" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2672,6 +2882,16 @@ exports[`Button primary should render "xs" size styles 1`] = `
 
 exports[`Button primary should render disabled button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2798,6 +3018,16 @@ exports[`Button primary should render disabled button 1`] = `
 
 exports[`Button primary should render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -2924,6 +3154,16 @@ exports[`Button primary should render full width 1`] = `
 
 exports[`Button primary should render inverse styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3035,6 +3275,16 @@ exports[`Button primary should render inverse styles 1`] = `
 
 exports[`Button primary should render normal button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3161,6 +3411,16 @@ exports[`Button primary should render normal button 1`] = `
 
 exports[`Button primary should render normal styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3286,6 +3546,16 @@ exports[`Button primary should render normal styles 1`] = `
 
 exports[`Button secondary should render "lg" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3416,6 +3686,16 @@ exports[`Button secondary should render "lg" size styles 1`] = `
 
 exports[`Button secondary should render "md" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3546,6 +3826,16 @@ exports[`Button secondary should render "md" size styles 1`] = `
 
 exports[`Button secondary should render "sm" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3676,6 +3966,16 @@ exports[`Button secondary should render "sm" size styles 1`] = `
 
 exports[`Button secondary should render "xs" size styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3806,6 +4106,16 @@ exports[`Button secondary should render "xs" size styles 1`] = `
 
 exports[`Button secondary should render inverse styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -3918,6 +4228,16 @@ exports[`Button secondary should render inverse styles 1`] = `
 
 exports[`Button secondary should render normal styles 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4048,6 +4368,16 @@ exports[`Button secondary should render normal styles 1`] = `
 
 exports[`Button should not render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4173,6 +4503,16 @@ exports[`Button should not render full width 1`] = `
 
 exports[`Button should not render full width 2`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4298,6 +4638,16 @@ exports[`Button should not render full width 2`] = `
 
 exports[`Button should render disabled button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4424,6 +4774,16 @@ exports[`Button should render disabled button 1`] = `
 
 exports[`Button should render disabled button 2`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4550,6 +4910,16 @@ exports[`Button should render disabled button 2`] = `
 
 exports[`Button should render full width 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4676,6 +5046,16 @@ exports[`Button should render full width 1`] = `
 
 exports[`Button should render full width 2`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4802,6 +5182,16 @@ exports[`Button should render full width 2`] = `
 
 exports[`Button should render normal button 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;
@@ -4928,6 +5318,16 @@ exports[`Button should render normal button 1`] = `
 
 exports[`Button should render normal button 2`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   cursor: pointer;
   box-sizing: border-box;
   border: none;

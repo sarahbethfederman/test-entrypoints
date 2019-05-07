@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { grid, unit } from '@lendi-ui/grid';
+import { normalise } from '@lendi-ui/utils';
 
 export const Wrapper = styled.div`
+  ${normalise};
   ${grid()};
 `;
 

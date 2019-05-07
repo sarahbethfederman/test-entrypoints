@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { Body } from '@lendi-ui/typography';
 import { bg, color } from '@lendi-ui/color';
 import { ml } from '@lendi-ui/spacing';
+import { normalise } from '@lendi-ui/utils';
 
 export type Size = 'md' | 'sm';
 
@@ -13,6 +14,7 @@ interface WrapperProps {
 }
 
 export const Wrapper = styled.label`
+  ${normalise}
   width: 100%;
   display: flex;
   align-items: center;

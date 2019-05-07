@@ -1,9 +1,13 @@
 # Changelog - @lendi-ui/status-badge
 
+## [2.0.1] 2019-04-29 [HUB-94] (http://creditandfinance.atlassian.net/browse/HUB-95)
+### Added
+- Added normalise mixin to outer component.
+- Added utils dependency ^2.0.1.
+
 ## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Deleted
-- Remove the CJS bundles
+- Remove the CJS bundles.
 
 ## [1.0.1] BRAVO-576 https://creditandfinance.atlassian.net/browse/BRAVO-576
 ### Changed

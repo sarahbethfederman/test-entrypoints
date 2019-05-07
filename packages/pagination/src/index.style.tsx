@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { mx } from '@lendi-ui/spacing';
 import { Button } from '@lendi-ui/button';
 import { ChevronLeft, ChevronRight } from '@lendi-ui/icon';
 
 export const Wrapper = styled.div`
+  ${normalise};
   display: flex;
   flex-flow: row;
 `;

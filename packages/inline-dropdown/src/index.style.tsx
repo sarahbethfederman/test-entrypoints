@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { ml } from '@lendi-ui/spacing';
 import { ChevronDown } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
@@ -53,6 +53,7 @@ const iconBySizeMixin = (size: ListSize) =>
   });
 
 export const DropdownWrapper = styled.div`
+  ${normalise};
   display: inline-block;
   cursor: pointer;
   position: relative;

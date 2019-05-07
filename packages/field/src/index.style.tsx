@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import { mb } from '@lendi-ui/spacing';
 import { Question } from '@lendi-ui/icon'; // replace with ToolTip later when LUI Input added to LUI
 import { LabelSize } from './Label/index.style';
+import { normalise } from '@lendi-ui/utils';
 
 export const FieldWrapper = styled.div`
+  ${normalise};
   display: flex;
   flex-direction: column;
   width: 100%;

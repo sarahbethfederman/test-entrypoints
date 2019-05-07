@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/inline-dropdown
 
+## [1.2.1] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+### Added
+- Added normalise mixing to the outer component.
+
 ## [1.2.0] - 2019-04-23 - [HUB-79] (https://creditandfinance.atlassian.net/browse/HUB-79)
 ### Changed
 - Removed hard coded deprecation warning in favour of newly supported package.json deprecation.

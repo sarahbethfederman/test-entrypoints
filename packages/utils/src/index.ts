@@ -1,4 +1,5 @@
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { css } from 'styled-components';
 
 export type DisplyValue = BreakpointValue<string> | BreakpointValueMap<string>;
 export const display = (val: DisplyValue) => map(val, (v) => v && `display: ${v};`);
@@ -15,6 +16,15 @@ export const deriveSize = (multiplier: number) => {
   return `calc(${multiplier} * var(--lendi-ui-size))`;
 };
 
+export const normalise = css`
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+`;
 interface ComponentProps {
   [key: string]: any;
 }

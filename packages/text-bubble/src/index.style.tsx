@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import { overline, body } from '@lendi-ui/typography';
 import { bg } from '@lendi-ui/color';
 import { p, mt, mb } from '@lendi-ui/spacing';
+import { normalise } from '@lendi-ui/utils';
 
 export interface WrapperProps {
   isFullWidth?: boolean;
 }
 
 export const Wrapper = styled.div`
-  display: inline-block;
+  ${normalise} display: inline-block;
   ${mb('xs')};
   ${({ isFullWidth = false }: WrapperProps) => {
     if (isFullWidth) {

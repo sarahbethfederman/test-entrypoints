@@ -6,6 +6,7 @@ import { LeftPanelSection } from './LeftPanelSection';
 import { RightSidebar } from './RightSidebar';
 import { RightPanelSection } from './RightPanelSection';
 import { Application, Broker } from './types';
+import { Wrapper } from './index.style';
 
 export interface NavProps {
   isAuthenticated?: boolean;
@@ -55,7 +56,7 @@ class Navbar extends React.Component<NavProps, NavState> {
     const { isAuthenticated, application, broker, onChat, onLogout, variant } = this.props;
 
     return (
-      <>
+      <Wrapper>
         <Header
           onOpenLeftSidebar={this.onOpenLeftSidebar}
           onOpenRightSidebar={this.onOpenRightSidebar}
@@ -99,7 +100,7 @@ class Navbar extends React.Component<NavProps, NavState> {
             phoneNumber={broker && broker.phone}
           />
         </RightSidebar>
-      </>
+      </Wrapper>
     );
   }
 }

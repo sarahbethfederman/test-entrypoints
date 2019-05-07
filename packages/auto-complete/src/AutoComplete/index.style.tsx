@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { p, px, m, py } from '@lendi-ui/spacing';
 import { bg, fg, color } from '@lendi-ui/color';
 import { Close } from '@lendi-ui/icon';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import Spinner from '@lendi-ui/spinner';
 import { depth } from '@lendi-ui/depth';
 type SizeVariant = 'lg' | 'md' | 'sm';
@@ -56,6 +56,7 @@ export const AutoCompleteListItem = styled.li`
 `;
 
 export const AutoCompleteWrapper = styled.div`
+  ${normalise};
   min-width: 110px;
   max-width: 280px;
 `;

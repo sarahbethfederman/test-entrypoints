@@ -1,9 +1,14 @@
 # Changelog - @lendi-ui/card
 
+## [3.0.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
+### Added
+- Added normalise mixin to outer component.
+### Updated
+- Updated utils dependency to ^2.0.1.
+
 ## [3.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Deleted
-- Remove the CJS bundles
+- Remove the CJS bundles.
 
 ## [2.0.1] - 2019-04-12
 ### Changed

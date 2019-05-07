@@ -73,6 +73,16 @@ exports[`ToggleSwitch should render the whole component 1`] = `
 }
 
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;

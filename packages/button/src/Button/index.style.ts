@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
 export type Size = 'lg' | 'md' | 'sm' | 'xs';
@@ -82,6 +82,7 @@ const afterBySizeMixin = (size: ButtonSize) =>
   });
 
 const commonStyle = css`
+  ${normalise};
   cursor: pointer;
   box-sizing: border-box;
   border: none;

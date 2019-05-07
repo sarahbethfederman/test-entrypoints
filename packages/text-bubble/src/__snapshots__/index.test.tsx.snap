@@ -2,6 +2,16 @@
 
 exports[`TextBubble should mount 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   display: inline-block;
   margin-bottom: calc(0.75 * var(--lendi-ui-size));
 }

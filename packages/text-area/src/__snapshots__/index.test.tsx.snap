@@ -2,6 +2,16 @@
 
 exports[`Text area should render the text area component 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -63,6 +73,16 @@ exports[`Text area should render the text area component 1`] = `
 
 exports[`Text area variations of the text area in all given sizes lg should render 100% width of with isFullWidth prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -119,6 +139,16 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 exports[`Text area variations of the text area in all given sizes lg should render the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -176,6 +206,16 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 exports[`Text area variations of the text area in all given sizes lg should render the component with a red border if the isError state is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -232,6 +272,16 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 exports[`Text area variations of the text area in all given sizes lg should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -288,6 +338,16 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 exports[`Text area variations of the text area in all given sizes md should render 100% width of with isFullWidth prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -344,6 +404,16 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 exports[`Text area variations of the text area in all given sizes md should render the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -401,6 +471,16 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 exports[`Text area variations of the text area in all given sizes md should render the component with a red border if the isError state is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -457,6 +537,16 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 exports[`Text area variations of the text area in all given sizes md should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -513,6 +603,16 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 exports[`Text area variations of the text area in all given sizes sm should render 100% width of with isFullWidth prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -569,6 +669,16 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 exports[`Text area variations of the text area in all given sizes sm should render the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -626,6 +736,16 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 exports[`Text area variations of the text area in all given sizes sm should render the component with a red border if the isError state is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;
@@ -682,6 +802,16 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 exports[`Text area variations of the text area in all given sizes sm should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;

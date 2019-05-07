@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { map } from '@lendi-ui/breakpoint';
 import { select } from '@lendi-ui/theme';
 export type Size = 'sm' | 'md' | 'lg';
@@ -94,6 +94,7 @@ export interface TextAreaProps {
 }
 
 export const TextAreaWrapper = styled.textarea`
+  ${normalise};
   resize: none;
   border-radius: 6px;
   box-sizing: border-box;

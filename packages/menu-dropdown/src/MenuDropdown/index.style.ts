@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { bg, fg } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
+import { normalise } from '@lendi-ui/utils';
 
 export interface ItemContainerProps {
   displayDropdown: boolean;
 }
 
 export const Wrapper = styled.div`
+  ${normalise};
   min-width: 45px;
   min-height: 45px;
   line-height: 45px;

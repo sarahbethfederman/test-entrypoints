@@ -3,8 +3,10 @@ import { bg } from '@lendi-ui/color';
 import { container } from '@lendi-ui/container';
 import { p, mt } from '@lendi-ui/spacing';
 import { body } from '@lendi-ui/typography';
+import { normalise } from '@lendi-ui/utils';
 
 export const Wrapper = styled.div`
+  ${normalise};
   ${bg('secondary.700')};
 `;
 

@@ -1,9 +1,15 @@
 # Changelog - @lendi-ui/field
 
+## [2.0.1] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+### Changed
+- Added normalise mixin to the outer component.
+### Updated
+- Updated utils dependency to ^2.0.1.
+
 ## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Deleted
-- Remove the CJS bundles
+- Remove the CJS bundles.
+
 ## [1.2.0] - 2019-04-29 - [HUB-97] (https://creditandfinance.atlassian.net/browse/HUB-97)
 ### Changed
 - A11y(Accessibility) support for Field using cuid.
@@ -11,10 +17,10 @@
 
 ## [1.1.2] - 2019-03-11 - [BRAVO-661] (https://creditandfinance.atlassian.net/browse/BRAVO-661)
 
+## [1.1.2] - 2019-03-11 - [BRAVO-661] (https://creditandfinance.atlassian.net/browse/BRAVO-661)
 ### Changed
-- Made the rendering of the Label container conditional on the passing of any relevant prop
+- Made the rendering of the Label container conditional on the passing of any relevant prop.
 
 ## [1.1.1] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
- 
 ### Changed
-- Updated icon dependency from ^4 to ^5
+- Updated icon dependency from ^4 to ^5.

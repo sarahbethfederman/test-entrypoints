@@ -1,20 +1,23 @@
+# Changelog - @lendi-ui/tabs
+
+## [3.0.1] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+### Added
+- Added normalise mixin to the outer component.
+- Added utils dependency ^2.0.1.
+
 ## [3.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Deleted
-- Remove the CJS bundles
+- Remove the CJS bundles.
 
 ## [2.0.1] - 2019-04-16 - [HUB-49] (https://creditandfinance.atlassian.net/browse/HUB-49)
- 
 ### Changed
 - Replace Left and Right icons with ChevronLeft and ChevronRight.
 
 ## [2.0.0] - 2019-04-11 - [HUB-77] (https://creditandfinance.atlassian.net/browse/HUB-77)
- 
 ### Changed
 - Replace "variant: string" prop with "isInverse: boolean" prop.
 
 ## [1.1.2] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
- 
 ### Changed
 - Updated icon dependency from ^4 to ^5
 

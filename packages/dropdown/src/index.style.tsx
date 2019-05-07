@@ -3,7 +3,7 @@ import Spinner from '@lendi-ui/spinner';
 import { ChevronDown } from '@lendi-ui/icon';
 import { ml } from '@lendi-ui/spacing';
 import { depth } from '@lendi-ui/depth';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
@@ -71,6 +71,7 @@ export interface DropdownWrapperProp {
 }
 
 export const DropdownWrapper = styled.div`
+  ${normalise};
   display: inline-block;
   position: relative;
   ${({ isFullWidth }: DropdownWrapperProp) => {

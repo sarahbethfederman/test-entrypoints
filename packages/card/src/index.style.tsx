@@ -2,10 +2,12 @@ import styled from 'styled-components';
 import { bg, color } from '@lendi-ui/color';
 import { p, my, px, mr } from '@lendi-ui/spacing';
 import { Heading, body } from '@lendi-ui/typography';
+import { normalise } from '@lendi-ui/utils';
 
 export type Size = 'xs' | 'sm' | 'md';
 
 export const CardWrapper = styled.div`
+  ${normalise};
   border: 1px solid ${color('shade.100')};
   position: relative;
   border-radius: 6px;

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,6 +8,9 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "styled-components": "^3"
+  },
   "dependencies": {
     "@lendi-ui/breakpoint": "^2.0.0"
   },
