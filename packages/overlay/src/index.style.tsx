@@ -12,5 +12,6 @@ export const Wrapper = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: ${color('shade.1000')}66;
+  background-color: ${color('shade.1000')};
+  opacity: 0.4;
 `;
