@@ -8,6 +8,7 @@ import { GettingStarted } from '../GettingStarted';
 import { PackageExample } from '../PackageExample';
 import { Package } from '../Package';
 import { ThemeType, AppContext } from '../Common';
+import PageNotFound from '../PageNotFound';
 
 type AppState = {
   theme: ThemeType;
@@ -43,6 +44,7 @@ export class App extends React.Component<{}, AppState> {
                 <Route path="/getting-started" component={GettingStarted} />
                 <Route path="/packages/:pkg/example/:example" component={PackageExample} />
                 <Route path="/packages/:pkg" component={Package} />
+                <Route component={PageNotFound} />
               </Switch>
             </BrowserRouter>
           </AppContext.Provider>
