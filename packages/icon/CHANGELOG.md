@@ -1,3 +1,9 @@
+
+## [7.1.1] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+ 
+### Changed
+- Change module main entry point to esm in package.json
+
 ## [7.1.0] - 2019-05-02 - [HUB-126] (https://creditandfinance.atlassian.net/browse/HUB-126)
 ### Added
 - Added the following new icons: file-upload & FileDownload as an alias to GetApp.

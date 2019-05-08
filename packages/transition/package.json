@@ -1,9 +1,9 @@
 {
   "name": "@lendi-ui/transition",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "files": [

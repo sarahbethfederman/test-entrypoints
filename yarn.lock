@@ -31,6 +31,11 @@
   resolved "https://registry.npmjs.org/@lendi-ui/breakpoint/-/breakpoint-1.0.1.tgz#3acba0d6dc37a78693034598ca102cf398deabb5"
   integrity sha512-a1KQDUAGQkPa2v3shyTSGB0UaHStCIT+TAeVc2L5vn5N5qDQGDfw4hmVYdxzaTFRICn5oa1uQZPWlZCI3GMxrg==
 
+"@lendi-ui/depth@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/@lendi-ui/depth/-/depth-2.0.0.tgz#5b11d6f0aeb1d9105daf53b1eb7c0af793bb280b"
+  integrity sha512-g12fbDYz1ujlK3PnV4I6adlbtjPl+OHy2irkFobwtjvEC1J29SrXb//Y1dCuJ66cj8eIYt+7MoxkSsQE1w7XZA==
+
 "@lendi-ui/spacing@^3.0.0":
   version "3.1.2"
   resolved "https://registry.npmjs.org/@lendi-ui/spacing/-/spacing-3.1.2.tgz#6f2d5cf1fef2cb8560974aad1e851e48d3fc0a96"

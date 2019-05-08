@@ -1,8 +1,8 @@
 {
   "name": "@lendi-ui/button",
-  "version": "5.1.1",
+  "version": "5.1.2",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "files": [

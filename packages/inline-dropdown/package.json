@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "files": [

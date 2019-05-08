@@ -1,6 +1,11 @@
 # Changelog  - @lendi-ui/button
+
+## [5.1.2] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
-## [5.0.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
+### Changed
+- Change module main entry point to esm in package.json
+
+## [5.1.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
 ### Added
 - Added normalise mixin to outer component.
 ### Updated
