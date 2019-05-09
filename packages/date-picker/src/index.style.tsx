@@ -101,7 +101,7 @@ export const Wrapper = styled.div<WrapperProps>`
         `}
 
   font-family: ${select('typography.body.fontFamily')};
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   display: flex;
   flex-direction: row;
   align-items: flex-start;

@@ -87,7 +87,7 @@ export const Layout = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   ${({ isFullWidth, size, isInverse, isDisabled }: LayoutProp) => {
     if (isDisabled) {
@@ -123,7 +123,7 @@ export const InputWrapper = styled.input`
   min-width: 0;
   width: 100%;
   border: 0px;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${({ fontSize, isInverse }: InputWrapperProps) => css`
     ${fontBySizeMixin(fontSize)}
     color: ${isInverse ? select('colors.shade.0') : select('colors.shade.700')};

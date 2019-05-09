@@ -52,4 +52,8 @@ describe('select()', () => {
       'Could not find a property named "colors.brand.primary.dark" on the theme'
     );
   });
+
+  it(`it should render 'border-radius: 6px;' when select borderRadius from Lendi theme`, () => {
+    expect(select('borderRadius')({ theme: { borderRadius: '6px' } })).toEqual('6px');
+  });
 });

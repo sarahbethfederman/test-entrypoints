@@ -26,7 +26,7 @@ describe('Icon component', () => {
       it('should fetch icon correctly', () => {
         const Component: React.SFC<IconProps> = (Icon as any)[component] as React.SFC<IconProps>;
         const element = render({ Component, color: 'primary.500' });
-        expect(element).toMatchSnapshot();
+        expect(element.find(Component)).toMatchSnapshot();
       });
 
       it('should accept a className', () => {

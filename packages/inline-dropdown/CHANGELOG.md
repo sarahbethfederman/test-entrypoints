@@ -1,14 +1,14 @@
 # Changelog - @lendi-ui/inline-dropdown
 
-## [1.2.1] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+## [1.2.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
 ### Added
 - Added normalise mixing to the outer component.
 
-## [1.2.0] - 2019-04-23 - [HUB-79] (https://creditandfinance.atlassian.net/browse/HUB-79)
+## [1.2.0] - 2019-04-23 - [HUB-79](https://creditandfinance.atlassian.net/browse/HUB-79)
 ### Changed
 - Removed hard coded deprecation warning in favour of newly supported package.json deprecation.
 
-## [1.1.1] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
+## [1.1.1] - 2019-03-05 - [BRAVO-535](https://creditandfinance.atlassian.net/browse/BRAVO-535)
 ### Changed
 - Updated icon dependency from ^4 to ^5
 

@@ -1527,6 +1527,7 @@ exports[`Footer it should mount Footer component 1`] = `
                   <Logo
                     theme={
                       Object {
+                        "borderRadius": "6px",
                         "colors": Object {
                           "error": Object {
                             "100": "#ffd1da",

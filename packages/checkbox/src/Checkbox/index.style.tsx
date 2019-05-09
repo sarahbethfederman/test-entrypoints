@@ -3,6 +3,7 @@ import { Body } from '@lendi-ui/typography';
 import { deriveSize } from '@lendi-ui/utils';
 import { color } from '@lendi-ui/color';
 import { ml } from '@lendi-ui/spacing';
+import { select } from '@lendi-ui/theme';
 
 interface WrapperProps {
   isBoxed: boolean;
@@ -14,7 +15,7 @@ export const Wrapper = styled.label`
   width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   height: ${deriveSize(3)};
   ${({ isBoxed, checked }: WrapperProps) => {
     if (isBoxed) {
@@ -78,7 +79,7 @@ export const CheckboxWrapper = styled.input`
   appearance: none;
   width: ${deriveSize(2)};
   height: ${deriveSize(2)};
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   ${ml('xxs')};
   ${({ checked, disabled }: CheckboxWrapperProps) => {

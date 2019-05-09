@@ -86,7 +86,7 @@ const commonStyle = css`
   cursor: pointer;
   box-sizing: border-box;
   border: none;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   font-weight: 600;
   line-height: 1;
   text-align: center;

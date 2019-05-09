@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { Body } from '@lendi-ui/typography';
 import { color, fg, bg } from '@lendi-ui/color';
 import { p, ml, mt } from '@lendi-ui/spacing';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 export type AlertVariant = 'error' | 'info' | 'success' | 'warn';
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
     ${normalise};
     display: flex;
     align-items: flex-start;
-    border-radius: 6px;
+    border-radius: ${select('borderRadius')};
     ${p('sm')}
     ${({ withHeading }: WrapperProps) => {
       if (withHeading) {

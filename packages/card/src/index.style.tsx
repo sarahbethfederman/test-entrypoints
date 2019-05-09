@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { bg, color } from '@lendi-ui/color';
 import { p, my, px, mr } from '@lendi-ui/spacing';
 import { Heading, body } from '@lendi-ui/typography';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 export type Size = 'xs' | 'sm' | 'md';
@@ -10,12 +11,12 @@ export const CardWrapper = styled.div`
   ${normalise};
   border: 1px solid ${color('shade.100')};
   position: relative;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${my('md')};
 `;
 
 export const CardHead = styled.div`
-  border-radius: 6px 6px 0 0;
+  border-radius: ${select('borderRadius')} ${select('borderRadius')} 0 0;
   ${bg('shade.50')};
   min-height: 40px;
   margin-bottom: -1px;

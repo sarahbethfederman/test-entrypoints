@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { Body } from '@lendi-ui/typography';
 import { bg, color } from '@lendi-ui/color';
 import { ml } from '@lendi-ui/spacing';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 export type Size = 'md' | 'sm';
@@ -18,7 +19,7 @@ export const Wrapper = styled.label`
   width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   min-height: 48px;
   ${bg('shade.0')}
 

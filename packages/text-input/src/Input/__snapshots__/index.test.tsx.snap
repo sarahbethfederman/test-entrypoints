@@ -81,6 +81,7 @@ exports[`input it should render the whole input component and a text input 1`] =
   <ThemeProvider
     theme={
       Object {
+        "borderRadius": "6px",
         "colors": Object {
           "error": Object {
             "100": "#ffd1da",

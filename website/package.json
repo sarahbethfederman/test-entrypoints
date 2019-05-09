@@ -4,7 +4,7 @@
   "version": "1.2.0",
   "dependencies": {
     "@lendi-ui/icon": "^7.0.0",
-    "@lendi-ui/theme": "^6.0.0",
+    "@lendi-ui/theme": "^6.1.0",
     "@mdx-js/tag": "^0.15.0",
     "@types/marked": "^0.6.5",
     "@types/react-helmet": "^5.0.7",

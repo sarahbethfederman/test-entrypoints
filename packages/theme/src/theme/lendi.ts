@@ -14,6 +14,8 @@ const logo = {
   logoName: 'LendiLogo',
 };
 
+const borderRadius = '6px';
+
 const colors = {
   primary: {
     '25': '#f2fbfa',
@@ -135,4 +137,5 @@ export const theme: ThemeMap = {
   typography,
   colors,
   logo,
+  borderRadius,
 };

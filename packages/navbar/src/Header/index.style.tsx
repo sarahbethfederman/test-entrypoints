@@ -5,6 +5,7 @@ import { bg, fg } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 import Logo from '@lendi-ui/logo';
 import { ButtonGroup } from '@lendi-ui/button';
+import { select } from '@lendi-ui/theme';
 
 export const IconButton = styled.button`
   display: inline-flex;
@@ -13,7 +14,7 @@ export const IconButton = styled.button`
   cursor: pointer;
   font-size: 1em;
   border: none;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${fg('primary.500')} background-color: transparent;
 
   :focus {
@@ -81,7 +82,7 @@ export const MenuButton = styled.button`
   ${pb('xxxs')};
   ${fg('primary.500')};
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   font-size: 1.3em;
   background: transparent;
   border: none;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { bg } from '@lendi-ui/color';
 import { px, py } from '@lendi-ui/spacing';
 import { depth } from '@lendi-ui/depth';
+import { select } from '@lendi-ui/theme';
 
 export const Wrapper = styled.div`
     position: relative;
@@ -9,7 +10,7 @@ export const Wrapper = styled.div`
 `;
 
 export const ItemWrapper = styled.div`
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${bg('shade.25')} :hover {
     ${depth(2)} ${bg('shade.0')};
   }
@@ -20,7 +21,7 @@ export const HeadWrapper = styled.button`
   border: none;
   width: 100%;
   height: 100%;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   background: inherit;
   cursor: pointer;
   display: flex;

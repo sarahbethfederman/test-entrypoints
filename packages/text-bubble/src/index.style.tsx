@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { overline, body } from '@lendi-ui/typography';
 import { bg } from '@lendi-ui/color';
 import { p, mt, mb } from '@lendi-ui/spacing';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 export interface WrapperProps {
@@ -26,7 +27,7 @@ export const OverlineContainer = styled.div`
 export const ChildWrapper = styled.div`
   ${body({ size: 'md', color: 'shade.700' })};
   ${mt('xxs')};
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${bg('primary.50')};
   ${p('xs')};
 `;

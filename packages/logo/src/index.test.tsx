@@ -22,7 +22,7 @@ describe('Logo', () => {
       );
     });
     it('should render "shade.1000" styles when no color is given', () => {
-      expect(Wrapper).toMatchSnapshot();
+      expect(Wrapper.find(Logo)).toMatchSnapshot();
     });
   });
 

@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { color, bg } from '@lendi-ui/color';
 import { px, p, ml, py } from '@lendi-ui/spacing';
 import { Heading } from '@lendi-ui/typography';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 export const Wrapper = styled.div`
@@ -21,10 +22,10 @@ export const CollapsePanel = styled.div`
   ${({ isExpanded, isFooterAdded }: CollapseBodyProps) =>
     !isExpanded && !isFooterAdded
       ? css`
-          border-radius: 6px;
+          border-radius: ${select('borderRadius')};
         `
       : css`
-          border-radius: 6px 6px 0 0;
+          border-radius: ${select('borderRadius')} ${select('borderRadius')} 0 0;
         `};
 `;
 
@@ -45,7 +46,7 @@ export const CollapseBody = styled.div`
   ${({ isFooterAdded }: CollapseBodyProps) =>
     !isFooterAdded
       ? css`
-          border-radius: 0 0 6px 6px;
+          border-radius: 0 0 ${select('borderRadius')} ${select('borderRadius')};
         `
       : css`
           border-radius: 0;
@@ -74,7 +75,7 @@ export const CollapseContent = styled.div`
 export const CollapseFooter = styled.div`
   ${bg('secondary.500')};
   min-height: 30px;
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 ${select('borderRadius')} ${select('borderRadius')};
   color: white;
   ${p('xs')};
 `;

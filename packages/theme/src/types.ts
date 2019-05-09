@@ -31,4 +31,5 @@ export interface ThemeMap {
   typography: Typography;
   colors: Colors;
   logo: Logo;
+  borderRadius: string;
 }

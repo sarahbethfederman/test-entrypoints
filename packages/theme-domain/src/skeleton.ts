@@ -14,6 +14,8 @@ const logo = {
   logoName: 'DomainLogo',
 };
 
+const borderRadius = '3px';
+
 const colors = {
   primary: {
     '25': '#f2faf2',
@@ -142,4 +144,5 @@ export const theme: ThemeMap = {
   typography,
   colors,
   logo,
+  borderRadius,
 };

@@ -6,6 +6,8 @@ import { Close } from '@lendi-ui/icon';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 import Spinner from '@lendi-ui/spinner';
 import { depth } from '@lendi-ui/depth';
+import { select } from '@lendi-ui/theme';
+
 type SizeVariant = 'lg' | 'md' | 'sm';
 export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
 interface AutoCompleteListProps {
@@ -17,7 +19,7 @@ export const AutoCompleteList = styled.ul`
   ${py('xxs')};
   ${px('nil')};
   border: 1px solid ${color('shade.0')};
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   max-width: 280px;
   max-height: 192px;
   width: 100%;

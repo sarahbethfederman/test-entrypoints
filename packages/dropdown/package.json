@@ -12,7 +12,7 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.0.0",
+    "@lendi-ui/theme": "^6.1.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
     "styled-components": "^3"

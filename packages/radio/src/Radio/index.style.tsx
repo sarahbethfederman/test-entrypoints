@@ -8,6 +8,7 @@ import { hoverState, hoverCheckedState, boxedHoverState, boxedHoverCheckedState 
 import { focusState, boxedFocusCheckedState, boxedFocusState } from './styles/focus.style';
 import { disabledState, boxedDisabledState, boxedDisabledCheckedState } from './styles/disabled.style';
 import { checkedState, boxedCheckedState } from './styles/checked.style';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 interface WrapperProps {
@@ -27,7 +28,7 @@ export const Wrapper = styled.label`
   display: flex;
   align-items: center;
   height: ${deriveSize(3)};
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   ${({ isBoxed, checked }: WrapperProps) => {
     if (isBoxed) {
       if (checked) {

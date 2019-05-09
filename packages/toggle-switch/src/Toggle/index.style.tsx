@@ -4,6 +4,7 @@ import { depth } from '@lendi-ui/depth';
 import { ml } from '@lendi-ui/spacing';
 import { deriveSize } from '@lendi-ui/utils';
 import { Size } from '../index.style';
+import { select } from '@lendi-ui/theme';
 
 // Small size is 0.75 * medium
 const ToggleWrapperBySizeMixin = (size: Size) => {
@@ -104,7 +105,7 @@ export const ToggleWrapper = styled.span`
   ${({ size }: ToggleProps) => `${size && ToggleWrapperBySizeMixin(size)}`} position: relative;
   display: inline-block;
   appearance: none;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   ${ml('xxs')};
 `;
@@ -123,7 +124,7 @@ export const ToggleTrack = styled.span`
   width: var(--width);
   height: var(--height);
   top: calc(50% - var(--height)/2);
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   margin-left: calc(var(--handle-width) * 0.3);
   margin-right: calc(var(--handle-width) * 0.3);
   box-sizing: border-box;

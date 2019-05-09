@@ -96,7 +96,7 @@ export interface TextAreaProps {
 export const TextAreaWrapper = styled.textarea`
   ${normalise};
   resize: none;
-  border-radius: 6px;
+  border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   font-family: ${select('typography.body.fontFamily')};
   ${({ size, isInverse, isFullWidth }: TextAreaProps) => css`

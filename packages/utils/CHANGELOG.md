@@ -2,7 +2,7 @@
 ### Changed
 - Updated CHANGELOG to match required parsing format.
 
-## [2.2.1] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [2.2.1] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 

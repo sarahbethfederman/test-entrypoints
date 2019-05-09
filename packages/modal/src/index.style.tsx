@@ -4,6 +4,7 @@ import { gte } from '@lendi-ui/breakpoint';
 import { m, py, px, pt, pb } from '@lendi-ui/spacing';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
+import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
 
 interface ContainerProps {
@@ -50,7 +51,7 @@ export const Container = styled.div`
     ${bg('shade.25')};
     ${gte('tablet')`
       width: ${widthBySize[size]};
-      border-radius: 6px;
+      border-radius: ${select('borderRadius')};
       height: initial;
       opacity: 1;
     `}
@@ -70,7 +71,7 @@ export const Container = styled.div`
       border-radius: 0;
       ${depth(3)}
       ${gte('tablet')`
-        border-radius: 6px;
+        border-radius: ${select('borderRadius')};
         ${size === 'lg' && px('lg')};
       `}
     }
