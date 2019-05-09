@@ -104,11 +104,6 @@ export class Overview extends React.Component<OverviewProps> {
           <ChangelogButton variant="primary" onClick={this.onShow}>
             Changelog
           </ChangelogButton>
-          <Modal show={this.state.active} size="lg" onHide={this.onHide}>
-            <Modal.Content>
-              <Changelog dangerouslySetInnerHTML={{ __html: CHANGELOG }} />
-            </Modal.Content>
-          </Modal>
         </ButtonContainer>
 
         {examples.length > 0 && (
@@ -140,6 +135,12 @@ export class Overview extends React.Component<OverviewProps> {
             </Alert>
           )}
         </Section>
+
+        <Modal show={this.state.active} size="lg" onHide={this.onHide}>
+          <Modal.Content>
+            <Changelog dangerouslySetInnerHTML={{ __html: CHANGELOG }} />
+          </Modal.Content>
+        </Modal>
 
         {this.indexDoc && <DocumentViewer loader={this.indexDoc.load} />}
       </>
