@@ -1,3 +1,6 @@
+## [6.1.1] - 2019-05-10 - [HUB-137](https://creditandfinance.atlassian.net/browse/HUB-137)
+### Added
+- Add `-ms-clear` into theme injectGlobal to prevent cross icon in input by Edge and IE browser default style
 ## [6.1.0] - 2019-05-02 - [HUB-88](https://creditandfinance.atlassian.net/browse/HUB-88)
 ### Changed
 - replace `border-radius: 6px` with select function in theme

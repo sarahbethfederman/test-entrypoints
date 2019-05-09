@@ -16,6 +16,10 @@ injectGlobal`
     padding: 0;
   }
 
+  input::-ms-clear {
+    display: none;
+  }
+
   :root {
     --lendi-ui-size: 14px;
   }
