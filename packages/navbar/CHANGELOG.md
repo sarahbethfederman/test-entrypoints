@@ -1,11 +1,12 @@
-# Changelog - @lendi-ui/navbar
+## [2.0.4] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
-## [2.0.3] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+## [2.0.3] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 
-## [2.0.2] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+## [2.0.2] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
 ### Added
 - Created outer Wrapper component.
 - Added normalise mixin to outer component.
@@ -14,7 +15,7 @@
 ### Added
 - Bump theme and Logo version
 
-## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
  
 ### Deleted
 - Remove the CJS bundles.
@@ -32,31 +33,31 @@
 - Changed left navbar header wrapper to explicitly use box-sizing: border-box; and removed the height on the header, resolving a bug where half the header was being cutoff based on box-sizing.
 - Fixed the build script to copy images from src to dist/esm.
 
-## [1.0.8] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
+## [1.0.8] - 2019-03-05 - [BRAVO-535](https://creditandfinance.atlassian.net/browse/BRAVO-535)
 ### Changed
 - Updated icon dependency from ^4 to ^5
 
-## [1.0.7] = 2019-03-01
+## [1.0.7] - 2019-03-01
 ### Changed
 - Removed aria-role attribute for just role on ul element.
 - Fixed React warning under unit tests
 
-## [1.0.6] = 2019-02-14
+## [1.0.6] - 2019-02-14
 ### Changed
 - Added header tag to Header to improve semantics
 
-## [1.0.5] = 2019-02-08
+## [1.0.5] - 2019-02-08
 ### Changed
 - Fixed that the logo in the header didn't link to '/'
 
-## [1.0.4] = 2019-01-24
+## [1.0.4] - 2019-01-24
 ### Changed
 - Gave the Overlay in Sidebar and wrapper to fix z-index stacking context issue that was causing the overlay to be painted behind the header while fading
 
-## [1.0.3] = 2019-01-15
+## [1.0.3] - 2019-01-15
 ### Changed
 - Fixed some styling in LeftSidebar and add more variants to the navbar example.
 
-## [1.0.2] = 2019-01-14
+## [1.0.2] - 2019-01-14
 ### Changed
 - Updated icon dependency from ^4 to ^5

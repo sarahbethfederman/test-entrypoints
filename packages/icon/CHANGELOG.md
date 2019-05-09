@@ -1,18 +1,20 @@
+## [7.1.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
 ## [7.1.1] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
 ### Changed
 - Change module main entry point to esm in package.json
 
-## [7.1.0] - 2019-05-02 - [HUB-126] (https://creditandfinance.atlassian.net/browse/HUB-126)
+## [7.1.0] - 2019-05-02 - [HUB-126](https://creditandfinance.atlassian.net/browse/HUB-126)
 ### Added
 - Added the following new icons: file-upload & FileDownload as an alias to GetApp.
 
-## [7.0.1] - 2019-05-02 - [HUB-132] (https://creditandfinance.atlassian.net/browse/HUB-132)
+## [7.0.1] - 2019-05-02 - [HUB-132](https://creditandfinance.atlassian.net/browse/HUB-132)
 ### Changed
 - Fix MS's Edge Icon rendering issue
 
-## [7.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [7.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 
@@ -34,11 +36,16 @@
 
 ## [5.1.0] - 2019-03-06 - [BRAVO-572](https://creditandfinance.atlassian.net/browse/BRAVO-572)
 ### Added
-- added Maintenance icon and PageNotFound icon
+- Added Maintenance icon and PageNotFound icon.
 
 ## [5.0.1] - 2019-03-05 - [BRAVO-387](https://creditandfinance.atlassian.net/browse/BRAVO-387)
 ### Added
-- added Domain logo
+- Added Domain logo.
 
-5.0.0 - Breaking change version update
-4.4.0 - Bump version for left and right icons
+## [5.0.0]
+### Changed
+- Breaking change version update
+
+## [4.4.0]
+### Changed
+- Bump version for left and right icons

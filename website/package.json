@@ -6,8 +6,12 @@
     "@lendi-ui/icon": "^7.0.0",
     "@lendi-ui/theme": "^6.0.0",
     "@mdx-js/tag": "^0.15.0",
+    "@types/marked": "^0.6.5",
     "@types/react-helmet": "^5.0.7",
     "@types/react-router-dom": "^4.3.0",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^5.0.0",
+    "marked": "^0.6.2",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1"
   },

@@ -1,4 +1,6 @@
-# Changelog - @lendi-ui/utils
+## [2.2.1] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
 ## [2.2.1] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
@@ -8,11 +10,11 @@
 ### Removed
 - Created normalise mixin for LUI components.
 
-## [2.1.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [2.1.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Added
 - Added method to fetch all 'data-' props for a component.
 
-## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 

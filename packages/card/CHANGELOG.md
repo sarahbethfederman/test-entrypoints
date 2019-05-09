@@ -1,4 +1,6 @@
-# Changelog - @lendi-ui/card
+## [3.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
 ## [3.0.2] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
@@ -11,29 +13,28 @@
 ### Updated
 - Updated utils dependency to ^2.0.1.
 
-## [3.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [3.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 
 ## [2.0.1] - 2019-04-12
 ### Changed
-- Added classname to the component
+- Added classname to the component.
 
-## [2.0.0] - 2019-03-26 - [HUB-42] (https://creditandfinance.atlassian.net/browse/HUB-42)
+## [2.0.0] - 2019-03-26 - [HUB-42](https://creditandfinance.atlassian.net/browse/HUB-42)
 ### Changed
-- Remove top RHS content (Cancel button and moreIcon) and replace it with a ReactNode prop
-- Add a header size prop (xs, sm, md), change RHS button padding to "sm", correct border radius of card
-- Documentation improvements
+- Remove top RHS content (Cancel button and moreIcon) and replace it with a ReactNode prop.
+- Add a header size prop (xs, sm, md), change RHS button padding to "sm", correct border radius of card.
+- Documentation improvements.
 
-## [1.0.2] - 2019-03-15 - [BRAVO-671] (https://creditandfinance.atlassian.net/browse/BRAVO-671)
+## [1.0.2] - 2019-03-15 - [BRAVO-671](https://creditandfinance.atlassian.net/browse/BRAVO-671)
 ### Changed
-- Change Theme from 'dependencies' to 'peerDependencies'
+- Change Theme from 'dependencies' to 'peerDependencies'.
 
-## [1.0.1] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
- 
+## [1.0.1] - 2019-03-05 - [BRAVO-535](https://creditandfinance.atlassian.net/browse/BRAVO-535)
 ### Changed
-- Updated icon dependency from ^4 to ^5
+- Updated icon dependency from ^4 to ^5.
 
 ## [1.0.0] - 2019-02-22 - [BRAVO-530](https://creditandfinance.atlassian.net/browse/BRAVO-530)
 ### Created
-- added card component
+- Added card component.

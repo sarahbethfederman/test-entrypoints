@@ -1,11 +1,15 @@
-2.0.2 - New Changelog
+## [3.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
-## [3.0.1] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+## [3.0.1] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 
-## [3.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+## [3.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
-- Remove the CJS bundles.
+- Remove the CJS bundles
+
+## [2.0.2]
+### Added
+ - New Changelog

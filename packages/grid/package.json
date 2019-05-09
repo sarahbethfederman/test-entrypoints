@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/grid",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Grid utilities for layout.",
   "source": "src/index.ts",
   "main": "dist/esm/index.js",

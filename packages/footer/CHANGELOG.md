@@ -1,20 +1,19 @@
-# Changelog - @lendi-ui/footer
+## [2.0.3] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
-## [2.0.2] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 
-## [2.0.1] - 2019-04-29 - [HUB-94] (https://creditandfinance.atlassian.net/browse/HUB-94)
+## [2.0.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
 ### Added
 - Added normalise mixin to the outer component.
 
-## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
+## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 
-## [1.0.1] - 2019-03-05 - [BRAVO-535] (https://creditandfinance.atlassian.net/browse/BRAVO-535)
+## [1.0.1] - 2019-03-05 - [BRAVO-535](https://creditandfinance.atlassian.net/browse/BRAVO-535)
 ### Changed
 - Updated icon dependency from ^4 to ^5
-
-## [1.0.0]

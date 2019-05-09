@@ -1,13 +1,17 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+
 import { Heading } from '@lendi-ui/typography';
 import { body } from '@lendi-ui/typography';
 import Alert from '@lendi-ui/alert';
+import { color } from '@lendi-ui/color';
 import { mb } from '@lendi-ui/spacing';
+import { Button } from '@lendi-ui/button';
+import Modal from '@lendi-ui/modal';
 import { Workspace } from '../../../utils/info';
 import { DocumentViewer } from '../../../utils/DocumentViewer';
-import { Link } from 'react-router-dom';
 
 const Description = styled.p`
   ${body({ size: 'lg' })};
@@ -17,20 +21,76 @@ const Section = styled.section`
   ${mb('md')};
 `;
 
+const ButtonContainer = styled.div`
+  position: relative;
+`;
+
+const ChangelogButton = styled(Button)`
+  position: absolute;
+  right: 0;
+`;
+
+const Changelog = styled.div`
+  font-family: "Open-sans", sans-serif;
+  max-height: 70vh;
+  max-width: 500px;
+  overflow: scroll;
+
+  h2 {
+    color: ${color('secondary.500')};
+  }
+
+  h3 {
+    color: color: ${color('secondary.500')};
+  }
+
+  a {
+    color: ${color('primary.500')};;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+
+    :hover {
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+    }
+  }
+`;
+
 export interface OverviewProps {
   workspace: Workspace;
 }
 
 export class Overview extends React.Component<OverviewProps> {
+  state = {
+    active: false,
+  };
+
   get indexDoc() {
     const { workspace } = this.props;
     return workspace.docs.find((doc) => doc.name === 'index');
   }
 
+  onShow = () => {
+    this.setState({
+      active: true,
+    });
+  };
+
+  onHide = () => {
+    this.setState({
+      active: false,
+    });
+  };
+
   render() {
     const {
       workspace: { org, name, description, deprecated, examples },
     } = this.props;
+    const CHANGELOG = require(`@lendi-ui/${name}/CHANGELOG.md`);
+
     return (
       <>
         <Helmet>
@@ -38,6 +98,18 @@ export class Overview extends React.Component<OverviewProps> {
         </Helmet>
 
         {description && <Description>{description}</Description>}
+
+        {/* Changelog */}
+        <ButtonContainer>
+          <ChangelogButton variant="primary" onClick={this.onShow}>
+            Changelog
+          </ChangelogButton>
+          <Modal show={this.state.active} size="lg" onHide={this.onHide}>
+            <Modal.Content>
+              <Changelog dangerouslySetInnerHTML={{ __html: CHANGELOG }} />
+            </Modal.Content>
+          </Modal>
+        </ButtonContainer>
 
         {examples.length > 0 && (
           <Section>

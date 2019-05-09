@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/esm/index.js",

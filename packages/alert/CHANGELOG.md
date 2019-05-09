@@ -1,4 +1,6 @@
-# Changelog - @lendi-ui/alert
+## [2.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Updated CHANGELOG to match required parsing format.
 
 ## [2.0.2] - 2019-05-08 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
  
@@ -10,8 +12,7 @@
 - Added normalise mixin to outer component.
 - Added utils dependency ^1.2.0.
 
-## [2.0.0] - 2019-04-30 - [HUB-54] (https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 
@@ -21,7 +22,7 @@
 
 ## [1.0.2] - 2019-02-21 - [BRAVO-513] (https://creditandfinance.atlassian.net/browse/BRAVO-513)
 ### Changed
-- change transparency of alert background colours 50 => 25.
+- Changed transparency of alert background colours from 50 to 25.
 
 ## [1.0.1] - 2019-02-08 - [BRAVO-514] (https://creditandfinance.atlassian.net/browse/BRAVO-514)
 ### Changed
@@ -31,4 +32,3 @@
 ## [1.0.0]
 ### Added
 - Build `Alert` component with four types: 'error', 'info', 'success' and 'warn'.
-

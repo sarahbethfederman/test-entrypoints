@@ -1,7 +1,6 @@
 import * as React from 'react';
-
-import { Workspace } from '../../../utils/info';
 import { Helmet } from 'react-helmet';
+import { Workspace } from '../../../utils/info';
 import { DocumentViewer } from '../../../utils/DocumentViewer';
 
 export interface DocProps {
@@ -34,7 +33,6 @@ export class Doc extends React.Component<DocProps, DocState> {
         <Helmet>
           <title>{`${doc.name} / ${workspace.name}`}</title>
         </Helmet>
-        {/* <ChangeLog /> */}
         <DocumentViewer loader={doc.load} />
       </>
     );

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/status-badge",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/esm/index.js",
