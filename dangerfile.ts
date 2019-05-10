@@ -121,6 +121,29 @@ async function expectChangelogToBeCreatedOrUpdated() {
   });
 }
 
+async function expectChangelogToUseValidLinks() {
+  const workspaceDirectories = getWorkspaceDirectories();
+  workspaceDirectories.forEach((workspaceDirectory) => {
+    const changelogWasUpdated = isWorkspaceChangelogUpdated(workspaceDirectory);
+    if (changelogWasUpdated) {
+      const changelogFiles = danger.git.created_files
+        .filter((file) => file.match('CHANGELOG.md'))
+        .concat(danger.git.modified_files.filter((file) => file.match('CHANGELOG.md')));
+
+      changelogFiles.forEach((file) => {
+        const changelog = fs.readFileSync(file).toString();
+        const invalidMarkdownLink = changelog.match(/(\] \()/);
+
+        if (invalidMarkdownLink) {
+          fail(
+            `The file "./${file}" contains invalid markdown links, please check that there are no spaces between a ] and a (.`
+          );
+        }
+      });
+    }
+  });
+}
+
 async function expectChangeLogToBeUpdatedWhenVersionUpdated() {
   const workspaceDirectories = getWorkspaceDirectories();
   workspaceDirectories.forEach(async (workspaceDirectory) => {
@@ -171,6 +194,7 @@ async function expectYarnLockToNotBeDeleted() {
   await expectChangeLogToContainReferenceToManifestVersion();
   await expectChangeLogToBeUpdatedWhenVersionUpdated();
   await expectChangelogToBeCreatedOrUpdated();
+  await expectChangelogToUseValidLinks();
   await expectManifestToBeBumped();
   await expectYarnLockToNotBeDeleted();
 })();
