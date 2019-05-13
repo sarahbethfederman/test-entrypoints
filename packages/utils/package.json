@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "source": "src/index.ts",
   "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",

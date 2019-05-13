@@ -1,3 +1,7 @@
+## [2.0.4] - 2019-05-10 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+### Changed
+- Correctly type this.props.childen
+
 ## [2.0.3] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.

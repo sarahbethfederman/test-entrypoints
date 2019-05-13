@@ -1,3 +1,7 @@
+## [2.0.3] - 2019-05-13 - [HUB-168](https://creditandfinance.atlassian.net/browse/HUB-168)
+### Changed
+- Ponyfill for createReactContext fallback now compatible with ESM imports
+
 ## [2.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.

@@ -3,6 +3,9 @@ import * as createReactContext from 'create-react-context';
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
 
+// @ts-ignore
+const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+
 export interface ButtonGroupButtonProps {
   variant: ButtonVariant;
   isDisabled?: boolean;
@@ -33,7 +36,7 @@ export interface ButtonGroupProps extends ButtonGroupContext {
 // Supressing "Cannot invoke an expression whose type lacks a call signature." error
 // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
 // @ts-ignore
-const ButtonContext = createReactContext<ButtonGroupContext>({});
+const ButtonContext = PonyfillContext<ButtonGroupContext>({});
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {
   static Button = ButtonGroupButton;

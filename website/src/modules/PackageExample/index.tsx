@@ -4,23 +4,14 @@ import { Button } from '@lendi-ui/button';
 import { Build } from '@lendi-ui/icon';
 import ToggleSwitch from '@lendi-ui/toggle-switch';
 import metadata, { Workspace } from '../../utils/info';
-import { DocumentViewer } from '../../utils/DocumentViewer';
+import { DocumentViewer, RouteMatch } from '../../utils/DocumentViewer';
 import { Content, DevToolbar, BackgroundEnum } from './index.style';
-
-export interface PackageExampleProps {
-  match: {
-    path: string;
-    params: {
-      pkg: string;
-      example: string;
-    };
-    url: string;
-  };
-}
 
 export interface PackageExampleState {
   background: BackgroundEnum;
 }
+
+export type PackageExampleProps = {} & RouteMatch;
 
 export class PackageExample extends React.Component<PackageExampleProps, PackageExampleState> {
   state = {
@@ -46,7 +37,6 @@ export class PackageExample extends React.Component<PackageExampleProps, Package
   }
 
   render() {
-    const { workspace, example } = this;
     const { background } = this.state;
 
     const transformPathToCode = (path: string) => {
@@ -56,10 +46,10 @@ export class PackageExample extends React.Component<PackageExampleProps, Package
     return (
       <>
         <Helmet>
-          <title>{`${example.name} / ${workspace.name}`}</title>
+          <title>{`${this.example.name} / ${this.workspace.name}`}</title>
         </Helmet>
         <Content background={background}>
-          <DocumentViewer loader={example.load} />
+          <DocumentViewer loader={this.example.load} />
         </Content>
         <DevToolbar>
           <Button

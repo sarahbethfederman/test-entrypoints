@@ -15,13 +15,12 @@
     "@lendi-ui/color": "^3.0.0",
     "@lendi-ui/spacing": "^3.0.0",
     "@lendi-ui/typography": "^3.0.0",
-    "react-live": "^1.11.0",
+    "react-live": "1.11.0",
     "react-element-to-jsx-string": "^14.0.1"
   },
   "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:esm"
   }
 }

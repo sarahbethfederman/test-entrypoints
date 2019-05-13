@@ -19,6 +19,18 @@ export interface DocumentViewerState {
   components?: ComponentMap;
 }
 
+export interface RouteMatch {
+  match: {
+    path: string;
+    params: {
+      pkg: string;
+      doc: string;
+      example: string;
+    };
+    url: string;
+  };
+}
+
 export class DocumentViewer extends React.Component<DocumentViewerProps, DocumentViewerState> {
   state: DocumentViewerState = {};
 
@@ -32,6 +44,7 @@ export class DocumentViewer extends React.Component<DocumentViewerProps, Documen
         components: components.components,
       });
     } catch (error) {
+      // tslint:disable-next-line:no-console
       console.error(error);
     }
   }

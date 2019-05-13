@@ -2,6 +2,9 @@ import * as createReactContext from 'create-react-context';
 import { Direction } from './index.style';
 import { RadioProps } from '../Radio/index';
 
+// @ts-ignore
+const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+
 export interface RadioGroupContext {
   isBoxed?: boolean;
   selectedValue: string;
@@ -20,4 +23,4 @@ export interface RadioGroupProps extends RadioGroupContext {
 // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
 // @ts-ignore
 
-export const RadioContext = createReactContext<RadioGroupContext>({});
+export const RadioContext = PonyfillContext<RadioGroupContext>({});

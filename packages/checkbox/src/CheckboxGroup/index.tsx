@@ -5,6 +5,9 @@ import { Wrapper, Direction } from './index.style';
 import { Checkbox, CheckboxProps } from '../Checkbox/index';
 import { mb } from '@lendi-ui/spacing';
 
+// @ts-ignore
+const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+
 export interface CheckboxGroupItemProps {
   value: string;
   label?: string;
@@ -26,7 +29,7 @@ const CheckboxGroupItem: React.SFC<CheckboxGroupItemProps> = (props) => (
 
 export interface CheckboxGroupContext {
   isBoxed?: boolean;
-  values: string[]; //all the checked items
+  values: string[]; // all the checked items
   className?: string;
 }
 
@@ -41,7 +44,7 @@ export interface CheckboxGroupProps extends CheckboxGroupContext {
 // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
 // @ts-ignore
 
-const CheckboxContext = createReactContext<CheckboxGroupContext>({});
+const CheckboxContext = PonyfillContext<CheckboxGroupContext>({});
 
 export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
   static Checkbox = CheckboxGroupItem;

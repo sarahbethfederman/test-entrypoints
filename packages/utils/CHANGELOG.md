@@ -1,3 +1,7 @@
+## [2.2.1] - 2019-05-09 - [HUB-168](https://creditandfinance.atlassian.net/browse/HUB-168)
+### Changed
+- Added return type of the getDataProps function
+
 ## [2.2.1] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.

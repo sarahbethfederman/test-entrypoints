@@ -26,14 +26,13 @@ export class Doc extends React.Component<DocProps, DocState> {
   }
 
   render() {
-    const { doc } = this;
     const { workspace } = this.props;
     return (
       <>
         <Helmet>
-          <title>{`${doc.name} / ${workspace.name}`}</title>
+          <title>{`${this.doc.name} / ${workspace.name}`}</title>
         </Helmet>
-        <DocumentViewer loader={doc.load} />
+        <DocumentViewer loader={this.doc.load} />
       </>
     );
   }

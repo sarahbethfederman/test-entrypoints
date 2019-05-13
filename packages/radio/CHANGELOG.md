@@ -1,3 +1,7 @@
+## [2.0.5] - 2019-05-13 - [HUB-168](https://creditandfinance.atlassian.net/browse/HUB-168)
+### Changed
+- Ponyfill for createReactContext fallback now compatible with ESM imports
+
 ## [2.0.4] - 2019-05-02 - [HUB-88](https://creditandfinance.atlassian.net/browse/HUB-88)
 ### Changed
 - replace `border-radius: 6px` with select function in theme

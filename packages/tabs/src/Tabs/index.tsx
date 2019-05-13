@@ -90,7 +90,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
               <ChevronLeft height="24px" width="24px" color="secondary.500" />
             </LeftIconWrapper>
           )}
-          {React.Children.map(children, this.renderTab)}
+          {React.Children.map(children as React.ReactChild, this.renderTab)}
           {isScrollable && (
             <RightIconWrapper onClick={this.handleMoveScrollbarLeft}>
               <ChevronRight height="24px" width="24px" color="secondary.500" />

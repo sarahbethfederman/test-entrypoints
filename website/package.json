@@ -3,8 +3,10 @@
   "private": true,
   "version": "1.2.0",
   "dependencies": {
+    "@lendi-ui/button": "^5.1.4",
     "@lendi-ui/icon": "^7.0.0",
     "@lendi-ui/theme": "^6.1.0",
+    "@lendi-ui/toggle-switch": "^2.0.4",
     "@mdx-js/tag": "^0.15.0",
     "@types/marked": "^0.6.5",
     "@types/react-helmet": "^5.0.7",
@@ -12,6 +14,7 @@
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.2",
+    "react": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1"
   },

@@ -9,25 +9,21 @@ export function color(name: NameOrNameMap) {
 }
 
 export function fg(name: NameOrNameMap) {
-  return map(
-    name,
-    (n?: string) =>
-      n === undefined
-        ? ''
-        : css`
-            color: ${color(n)};
-          `
+  return map(name, (n?: string) =>
+    n === undefined
+      ? ''
+      : css`
+          color: ${color(n)};
+        `
   );
 }
 
 export function bg(name: NameOrNameMap) {
-  return map(
-    name,
-    (n?: string) =>
-      n === undefined
-        ? ''
-        : css`
-            background-color: ${color(n)};
-          `
+  return map(name, (n?: string) =>
+    n === undefined
+      ? ''
+      : css`
+          background-color: ${color(n)};
+        `
   );
 }

@@ -45,18 +45,20 @@ module.exports = {
     };
 
     const workspaces = await Promise.all(
-      metadata.workspaces.filter((workspace) => !workspace.json.private).map(async (workspace) => {
-        const docs = await getDocs(this, workspace.path);
-        const examples = await getExamples(this, workspace.path);
-        return {
-          name: workspace.json.name,
-          version: workspace.json.version,
-          description: workspace.json.description || null,
-          deprecated: workspace.json.deprecated,
-          docs,
-          examples,
-        };
-      })
+      metadata.workspaces
+        .filter((workspace) => !workspace.json.private)
+        .map(async (workspace) => {
+          const docs = await getDocs(this, workspace.path);
+          const examples = await getExamples(this, workspace.path);
+          return {
+            name: workspace.json.name,
+            version: workspace.json.version,
+            description: workspace.json.description || null,
+            deprecated: workspace.json.deprecated,
+            docs,
+            examples,
+          };
+        })
     );
 
     return {

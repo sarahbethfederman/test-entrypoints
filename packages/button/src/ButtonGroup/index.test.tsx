@@ -70,7 +70,8 @@ describe('ButtonGroup', () => {
     beforeEach(() =>
       renderCustomChildren({
         isFullWidth: true,
-      }));
+      })
+    );
 
     it('should render buttons with children', () => {
       const buttons = element.find(Button);
