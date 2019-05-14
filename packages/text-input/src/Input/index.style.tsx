@@ -3,6 +3,7 @@ import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { InputButton } from '../InputButton/index';
+
 type Size = 'sm' | 'md' | 'lg';
 export type InputSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 
@@ -93,9 +94,10 @@ export const Layout = styled.div`
     if (isDisabled) {
       return css`
         cursor: not-allowed;
-        width: ${isFullWidth ? '100%' : 'auto'} ${heightBySizeMixin(size)};
+        width: ${isFullWidth ? '100%' : 'auto'};
         background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
         border: 1px solid ${isInverse ? select('colors.shade.0') : select('colors.shade.100')};
+        ${heightBySizeMixin(size)};
       `;
     } else {
       return css`
@@ -146,9 +148,9 @@ export const BeforeWrapper = styled.span`
   ${InputButton} {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    margin: 0 0 0 -1.5px;
+    margin: 0 0 0 -1px;
   }
-  display: flex;
+  padding-right: 1px;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`
@@ -163,9 +165,9 @@ export const AfterWrapper = styled.span`
   ${InputButton} {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    margin: 0 -1.5px 0 0;
+    margin: 0 -1px 0 0;
   }
-  display: flex;
+  padding-left: 1px;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`

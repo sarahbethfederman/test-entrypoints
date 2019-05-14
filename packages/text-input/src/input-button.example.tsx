@@ -42,7 +42,7 @@ class Example extends React.Component<{}, ExampleState> {
           onChange={this.onChange}
           isFullWidth={true}
           after={
-            <InputButton variant="primary" size="md" onClick={() => alert(this.state.value)}>
+            <InputButton variant="secondary" size="md" onClick={() => alert(this.state.value)}>
               search
             </InputButton>
           }

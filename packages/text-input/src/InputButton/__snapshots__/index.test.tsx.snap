@@ -102,13 +102,16 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
   margin-left: var(--lendi-ui-size);
 }
 
-.c1:active {
+.c1:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  opacity: 1;
+  box-shadow: none;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c1:focus {
+.c1:active {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -117,64 +120,76 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
 .c6 .c0 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  margin: 0 0 0 -1.5px;
+  margin: 0 0 0 -1px;
 }
 
 .c7 .c0 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  margin: 0 -1.5px 0 0;
+  margin: 0 -1px 0 0;
 }
 
-<Styled(Button)
+<Styled(InputWithButton)
   size="md"
   variant="primary"
 >
-  <Button
+  <InputWithButton
     className="c0 c1"
     size="md"
     variant="primary"
   >
-    <styled.button
-      aria-label="search"
+    <Styled(Button)
       className="c0 c1"
       size="md"
       variant="primary"
     >
-      <button
-        aria-label="search"
-        className="c0 c1 c2"
+      <Button
+        className="c0 c1 "
         size="md"
+        variant="primary"
       >
-        <styled.div>
-          <div
-            className="c3"
+        <styled.button
+          aria-label="search"
+          className="c0 c1 "
+          size="md"
+          variant="primary"
+        >
+          <button
+            aria-label="search"
+            className="c0 c1 c2"
+            size="md"
           >
-            <styled.span
-              size="md"
-            >
-              <span
-                className="c4"
-                size="md"
-              />
-            </styled.span>
-            <span>
-              search
-            </span>
-            <styled.span
-              size="md"
-            >
-              <span
-                className="c5"
-                size="md"
-              />
-            </styled.span>
-          </div>
-        </styled.div>
-      </button>
-    </styled.button>
-  </Button>
-</Styled(Button)>
+            <styled.div>
+              <div
+                className="c3"
+              >
+                <styled.span
+                  size="md"
+                >
+                  <span
+                    className="c4"
+                    size="md"
+                  />
+                </styled.span>
+                <span>
+                  search
+                </span>
+                <styled.span
+                  size="md"
+                >
+                  <span
+                    className="c5"
+                    size="md"
+                  />
+                </styled.span>
+              </div>
+            </styled.div>
+          </button>
+        </styled.button>
+      </Button>
+    </Styled(Button)>
+  </InputWithButton>
+</Styled(InputWithButton)>
 `;
 
 exports[`InputButton it should render InputButton in before wrapper 1`] = `
@@ -279,13 +294,16 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
   margin-left: var(--lendi-ui-size);
 }
 
-.c1:active {
+.c1:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  opacity: 1;
+  box-shadow: none;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c1:focus {
+.c1:active {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
@@ -294,56 +312,68 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
 .c6 .c0 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  margin: 0 0 0 -1.5px;
+  margin: 0 0 0 -1px;
 }
 
-<Styled(Button)
+<Styled(InputWithButton)
   size="md"
   variant="primary"
 >
-  <Button
+  <InputWithButton
     className="c0 c1"
     size="md"
     variant="primary"
   >
-    <styled.button
-      aria-label="search"
+    <Styled(Button)
       className="c0 c1"
       size="md"
       variant="primary"
     >
-      <button
-        aria-label="search"
-        className="c0 c1 c2"
+      <Button
+        className="c0 c1 "
         size="md"
+        variant="primary"
       >
-        <styled.div>
-          <div
-            className="c3"
+        <styled.button
+          aria-label="search"
+          className="c0 c1 "
+          size="md"
+          variant="primary"
+        >
+          <button
+            aria-label="search"
+            className="c0 c1 c2"
+            size="md"
           >
-            <styled.span
-              size="md"
-            >
-              <span
-                className="c4"
-                size="md"
-              />
-            </styled.span>
-            <span>
-              search
-            </span>
-            <styled.span
-              size="md"
-            >
-              <span
-                className="c5"
-                size="md"
-              />
-            </styled.span>
-          </div>
-        </styled.div>
-      </button>
-    </styled.button>
-  </Button>
-</Styled(Button)>
+            <styled.div>
+              <div
+                className="c3"
+              >
+                <styled.span
+                  size="md"
+                >
+                  <span
+                    className="c4"
+                    size="md"
+                  />
+                </styled.span>
+                <span>
+                  search
+                </span>
+                <styled.span
+                  size="md"
+                >
+                  <span
+                    className="c5"
+                    size="md"
+                  />
+                </styled.span>
+              </div>
+            </styled.div>
+          </button>
+        </styled.button>
+      </Button>
+    </Styled(Button)>
+  </InputWithButton>
+</Styled(InputWithButton)>
 `;

@@ -407,9 +407,9 @@ exports[`input variations of the text input in all given sizes lg should render 
   box-sizing: border-box;
   cursor: not-allowed;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -856,9 +856,9 @@ exports[`input variations of the text input in all given sizes md should render 
   box-sizing: border-box;
   cursor: not-allowed;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1305,9 +1305,9 @@ exports[`input variations of the text input in all given sizes sm should render 
   box-sizing: border-box;
   cursor: not-allowed;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
