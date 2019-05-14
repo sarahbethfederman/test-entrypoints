@@ -102,8 +102,9 @@ export const Layout = styled.div`
     } else {
       return css`
         border: 1px solid ${InputBorderColor};
-        width: ${isFullWidth ? '100%' : 'auto'} ${heightBySizeMixin(size)};
+        width: ${isFullWidth ? '100%' : 'auto'};
         background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
+        ${heightBySizeMixin(size)};
       `;
     }
   }};

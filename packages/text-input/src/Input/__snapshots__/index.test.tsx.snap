@@ -35,8 +35,8 @@ exports[`input it should render the whole input component and a text input 1`] =
   box-sizing: border-box;
   border: 1px solid #c8c8c8;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c1:hover:not(:focus) {
@@ -295,8 +295,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   box-sizing: border-box;
   border: 1px solid #c8c8c8;
   width: 100%;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -520,8 +520,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   box-sizing: border-box;
   border: 1px solid #ff1c4a;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -632,8 +632,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   box-sizing: border-box;
   border: 1px solid #f8f8f8;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: transparent;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -744,8 +744,8 @@ exports[`input variations of the text input in all given sizes md should render 
   box-sizing: border-box;
   border: 1px solid #c8c8c8;
   width: 100%;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -969,8 +969,8 @@ exports[`input variations of the text input in all given sizes md should render 
   box-sizing: border-box;
   border: 1px solid #ff1c4a;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1081,8 +1081,8 @@ exports[`input variations of the text input in all given sizes md should render 
   box-sizing: border-box;
   border: 1px solid #f8f8f8;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: transparent;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1193,8 +1193,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   box-sizing: border-box;
   border: 1px solid #c8c8c8;
   width: 100%;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1418,8 +1418,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   box-sizing: border-box;
   border: 1px solid #ff1c4a;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1530,8 +1530,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   box-sizing: border-box;
   border: 1px solid #f8f8f8;
   width: auto;
-  height: calc(3 * var(--lendi-ui-size));
   background-color: transparent;
+  height: calc(3 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {

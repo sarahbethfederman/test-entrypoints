@@ -1,3 +1,7 @@
+## [3.0.6] - 2019-05-10 - [HUB-106](https://creditandfinance.atlassian.net/browse/HUB-106)
+### Changed
+- Fix a bug in `Input` height style.
+
 ## [3.0.5] - 2019-05-10 - [HUB-106](https://creditandfinance.atlassian.net/browse/HUB-106)
 ### Changed
 - Change `InputButton` style with browser focus style and change border color when InputButton variant is 'secondary'. And also fix a bug in `Input` height style.
