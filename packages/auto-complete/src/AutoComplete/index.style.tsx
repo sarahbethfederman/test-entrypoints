@@ -1,10 +1,11 @@
+import Spinner from '@lendi-ui/spinner';
+
 import { map, BreakpointValue, BreakpointValueMap, gte } from '@lendi-ui/breakpoint';
 import styled, { css } from 'styled-components';
 import { p, px, m, py } from '@lendi-ui/spacing';
 import { bg, fg, color } from '@lendi-ui/color';
 import { Close } from '@lendi-ui/icon';
 import { deriveSize, normalise } from '@lendi-ui/utils';
-import Spinner from '@lendi-ui/spinner';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
 
