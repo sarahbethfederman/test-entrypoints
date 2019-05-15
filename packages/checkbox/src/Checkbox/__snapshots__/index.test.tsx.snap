@@ -20,7 +20,6 @@ exports[`Checkbox it should render box style when it is setup isBoxed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 6px;
-  height: calc(3 * var(--lendi-ui-size));
   border: 1px solid #c8c8c8;
   cursor: pointer;
 }
@@ -35,6 +34,9 @@ exports[`Checkbox it should render box style when it is setup isBoxed 1`] = `
 }
 
 .c1 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   cursor: pointer;
   position: relative;
   display: inline-block;
@@ -147,7 +149,6 @@ exports[`Checkbox it should render whole component 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 6px;
-  height: calc(3 * var(--lendi-ui-size));
   cursor: pointer;
 }
 
@@ -157,6 +158,9 @@ exports[`Checkbox it should render whole component 1`] = `
 }
 
 .c1 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   cursor: pointer;
   position: relative;
   display: inline-block;

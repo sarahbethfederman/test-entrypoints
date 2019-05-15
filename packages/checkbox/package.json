@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/checkbox",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/esm/index.js",
@@ -18,10 +18,10 @@
     "styled-components": "^3"
   },
   "dependencies": {
-    "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/spacing": "^4.0.0",
-    "@lendi-ui/utils": "^2.2.0",
+    "@lendi-ui/color": "^3.0.2",
+    "@lendi-ui/typography": "^3.0.2",
+    "@lendi-ui/spacing": "^4.0.2",
+    "@lendi-ui/utils": "^2.2.2",
     "create-react-context": "^0.2.3",
     "prop-types": "^15.6.2"
   },

@@ -16,7 +16,6 @@ export const Wrapper = styled.label`
   display: flex;
   align-items: center;
   border-radius: ${select('borderRadius')};
-  height: ${deriveSize(3)};
   ${({ isBoxed, checked }: WrapperProps) => {
     if (isBoxed) {
       if (checked) {
@@ -73,6 +72,7 @@ interface CheckboxWrapperProps {
 }
 
 export const CheckboxWrapper = styled.input`
+  flex-shrink: 0;
   cursor: pointer;
   position: relative;
   display: inline-block;

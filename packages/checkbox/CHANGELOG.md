@@ -1,3 +1,7 @@
+## [2.0.4] - 2019-05-15 - [HUB-173](https://creditandfinance.atlassian.net/browse/HUB-173)
+### Changed
+- Fix a bug that Checkbox will shrink when label content is too much
+
 ## [2.0.3] - 2019-05-13 - [HUB-168](https://creditandfinance.atlassian.net/browse/HUB-168)
 ### Changed
 - Ponyfill for createReactContext fallback now compatible with ESM imports

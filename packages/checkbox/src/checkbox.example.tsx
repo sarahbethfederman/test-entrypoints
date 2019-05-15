@@ -10,7 +10,8 @@ interface ExampleState {
 class Example extends React.Component<{}, ExampleState> {
   state = {
     value: '1',
-    label: 'LUI single Checkbox',
+    label:
+      'LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox  LUI single Checkbox LUI single Checkbox LUI single Checkbox ',
     isChecked: true,
   };
 
