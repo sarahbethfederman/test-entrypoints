@@ -1,9 +1,10 @@
-## [2.0.3] - 2019-05-15 - [HUB-172](https://creditandfinance.atlassian.net/browse/HUB-172)
+## [2.0.5] - 2019-05-15 - [HUB-172](https://creditandfinance.atlassian.net/browse/HUB-172)
 ### Changed
 - Updated - keep import of @spinner component at the top of style file, it is quick fix to solve
 relative path issue in distribution(dist) style definiton file.
+- fix the changelog version
 
-## [2.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+## [2.0.4] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.
 
