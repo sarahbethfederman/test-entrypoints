@@ -4,7 +4,7 @@
 
 ## Before start with LUI
 
-If it's first time to work on LUI, please make sure that your npm account has been added to `@lendi`, `@lendi-ui`, `@auscred`. And log in your npm config user_name and user_email.
+If it's first time to work on LUI, please make sure that your npm account has been added to `@lendi`, `@lendi-ui`. And log in your npm config user_name and user_email.
 
 ```
 npm login
@@ -21,19 +21,39 @@ yarn start
 
 ## Creating a component
 
-- If don't have @auscred/create-lui-component installed globally, run this cli at first:
+- If don't have @lendi/generator-create-lui-component installed globally, run this cli at first:
 
 ```
-yarn add global @auscred/create-lui-component@latest --ignore-workspace-root-check
+yarn global add yo @lendi/generator-create-lui-component@latest
 ```
 
-- If already have @auscred/create-lui-component module and install it globally, then run:
+- If already have @lendi/generator-create-lui-component module and install it globally, then run:
 
 ```
-yarn create-component nameOfComponent
+yarn create-component
 ```
 
-After complete new LUI component, don't forget to add new component to LUI website. In dir `website/src/utils/DocumentViewer/components.tsx` , import new component from build modules and export it in `scope`. After that, run these cli before commit them:
+💬 Answer the questions:
+
+```
+     _-----_     ╭──────────────────────────╮
+    |       |    │      Welcome to the      │
+    |--(o)--|    │   create-lui-component   │
+   `---------´   │        generator!        │
+    ( _´U`_ )    ╰──────────────────────────╯
+    /___A___\   /
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
+
+? Package name: (e.g. text-input) text-input
+```
+
+⏲ Wait for the files to be created and the dependencies to be installed.
+
+🎉 DONE!
+
+After complete a new LUI component, don't forget to add the new component to LUI website. In dir `website/src/utils/DocumentViewer/components.tsx` , import new component from build modules and export it in `scope`. After that, run these cli before commit them:
 
 ```
 yarn
