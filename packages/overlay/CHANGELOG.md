@@ -1,3 +1,9 @@
+## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
+
 ## [2.0.3] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.

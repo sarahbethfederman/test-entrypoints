@@ -1,3 +1,9 @@
+## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
+
 ## [2.0.5] - 2019-05-15 - [HUB-172](https://creditandfinance.atlassian.net/browse/HUB-172)
 ### Changed
 - Updated - keep import of @spinner component at the top of style file, it is quick fix to solve

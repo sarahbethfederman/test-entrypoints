@@ -1,10 +1,9 @@
 {
   "name": "@lendi-ui/checkbox",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/esm/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -29,8 +28,8 @@
     "@lendi-ui/container": "^4.0.0"
   },
   "scripts": {
-    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:cjs"
   }
 }

@@ -1,3 +1,9 @@
+## [6.2.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
+
 ## [6.1.1] - 2019-05-10 - [HUB-137](https://creditandfinance.atlassian.net/browse/HUB-137)
 ### Added
 - Add `-ms-clear` into theme injectGlobal to prevent cross icon in input by Edge and IE browser default style

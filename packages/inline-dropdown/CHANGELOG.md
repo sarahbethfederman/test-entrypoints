@@ -1,4 +1,8 @@
-# Changelog - @lendi-ui/inline-dropdown
+## [1.3.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
 
 ## [1.2.1] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
 ### Added

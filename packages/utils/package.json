@@ -1,9 +1,8 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "2.2.2",
+  "version": "2.3.0",
   "source": "src/index.ts",
-  "main": "dist/esm/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -16,8 +15,8 @@
   },
   "license": "ISC",
   "scripts": {
-    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:cjs"
   }
 }

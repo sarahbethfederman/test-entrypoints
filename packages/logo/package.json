@@ -1,10 +1,9 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "4.0.2",
+  "version": "4.1.0",
   "description": "The logo.",
   "source": "src/index.tsx",
-  "main": "dist/esm/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -22,8 +21,8 @@
     "@lendi-ui/icon": "^7.0.0"
   },
   "scripts": {
-    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:cjs"
   }
 }

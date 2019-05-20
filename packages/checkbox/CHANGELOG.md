@@ -1,3 +1,9 @@
+## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
+
 ## [2.0.4] - 2019-05-15 - [HUB-173](https://creditandfinance.atlassian.net/browse/HUB-173)
 ### Changed
 - Fix a bug that Checkbox will shrink when label content is too much

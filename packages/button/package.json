@@ -1,9 +1,8 @@
 {
   "name": "@lendi-ui/button",
-  "version": "5.1.5",
+  "version": "5.2.0",
   "source": "src/index.ts",
-  "main": "dist/esm/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
     "dist"
@@ -25,9 +24,9 @@
   },
   "license": "ISC",
   "scripts": {
-    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:esm"
+    "build": "yarn run build:types && yarn run build:cjs"
   },
   "devDependencies": {
     "@lendi-ui/icon": "^7.0.0"

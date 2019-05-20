@@ -1,3 +1,9 @@
+## [5.2.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+### Changed
+- Module format reverted back to CJS.
+### Deleted
+- Dropped "module" property from package.json.
+
 ## [5.1.5] - 2019-05-13 - [HUB-168](https://creditandfinance.atlassian.net/browse/HUB-88)
 ### Changed
 - Ponyfill for createReactContext fallback now compatible with ESM imports
