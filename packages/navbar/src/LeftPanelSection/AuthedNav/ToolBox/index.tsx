@@ -6,8 +6,12 @@ import { ListItem } from './index.style';
 export const ToolBoxSection = () => (
   <ListItem>
     <SidebarNav.Section title="Your toolbox">
-      <SidebarNav.Item href={PROPERTY_REPORT_LINK}>Property report</SidebarNav.Item>
-      <SidebarNav.Item href={REPAYMENT_CALCULATOR_LINK}>Repayments calculator</SidebarNav.Item>
+      <SidebarNav.Item href={PROPERTY_REPORT_LINK} labelText="Property report">
+        Property report
+      </SidebarNav.Item>
+      <SidebarNav.Item href={REPAYMENT_CALCULATOR_LINK} labelText="Repayments calculator">
+        Repayments calculator
+      </SidebarNav.Item>
     </SidebarNav.Section>
   </ListItem>
 );

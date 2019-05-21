@@ -1,26 +1,244 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Item should render a button when there is not a href 1`] = `
-<styled.li
-  role="none"
->
-  <styled.button
-    depth={0}
-    onClick={[MockFunction]}
-  />
-</styled.li>
+exports[`Item render a button when there is not a href 1`] = `
+.c1 {
+  height: 3rem;
+  color: #00c0a5;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.c1:hover {
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c1:hover svg {
+  stroke: #ffffff;
+}
+
+.c1:active {
+  color: #ffffff;
+  background-color: #009984;
+}
+
+.c1:last-type {
+  border-bottom: none;
+}
+
+.c0 {
+  height: 3rem;
+  color: #00c0a5;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0;
+  list-style: none;
+}
+
+.c0:hover {
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c0:hover svg {
+  stroke: #ffffff;
+}
+
+.c0:active {
+  color: #ffffff;
+  background-color: #009984;
+}
+
+.c0:last-type {
+  border-bottom: none;
+}
+
+.c0 > a {
+  border-bottom: 0;
+}
+
+.c0 > button {
+  border-bottom: 0;
+}
+
+<Item>
+  <styled.li
+    role="none"
+  >
+    <li
+      className="c0"
+      role="none"
+    >
+      <styled.button
+        depth={0}
+        onClick={[Function]}
+      >
+        <button
+          className="c1"
+          onClick={[Function]}
+        >
+          Foo Bar
+        </button>
+      </styled.button>
+    </li>
+  </styled.li>
+</Item>
 `;
 
-exports[`Item should render a link when there is a href 1`] = `
-<styled.li
-  role="none"
+exports[`Item render a link when there is a href 1`] = `
+.c1 {
+  height: 3rem;
+  color: #00c0a5;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  width: 100%;
+}
+
+.c1:hover {
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c1:hover svg {
+  stroke: #ffffff;
+}
+
+.c1:active {
+  color: #ffffff;
+  background-color: #009984;
+}
+
+.c1:last-type {
+  border-bottom: none;
+}
+
+.c0 {
+  height: 3rem;
+  color: #00c0a5;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  font-weight: 600;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0;
+  list-style: none;
+}
+
+.c0:hover {
+  color: #ffffff;
+  background-color: #00c0a5;
+}
+
+.c0:hover svg {
+  stroke: #ffffff;
+}
+
+.c0:active {
+  color: #ffffff;
+  background-color: #009984;
+}
+
+.c0:last-type {
+  border-bottom: none;
+}
+
+.c0 > a {
+  border-bottom: 0;
+}
+
+.c0 > button {
+  border-bottom: 0;
+}
+
+<Item
+  href="#foobar"
 >
-  <styled.a
-    depth={0}
-    href="#foobar"
-    role="menu item"
+  <styled.li
+    role="none"
   >
-    Foo Bar
-  </styled.a>
-</styled.li>
+    <li
+      className="c0"
+      role="none"
+    >
+      <styled.a
+        depth={0}
+        href="#foobar"
+        onClick={[Function]}
+        role="menu item"
+      >
+        <a
+          className="c1"
+          href="#foobar"
+          onClick={[Function]}
+          role="menu item"
+        >
+          Foo Bar
+        </a>
+      </styled.a>
+    </li>
+  </styled.li>
+</Item>
 `;

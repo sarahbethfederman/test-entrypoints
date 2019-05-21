@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import Footer from './index';
 
-const element = mount(
+const element = shallow(
   <Theme>
     <Footer />
   </Theme>

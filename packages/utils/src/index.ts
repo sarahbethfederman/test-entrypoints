@@ -47,3 +47,6 @@ export const getDataProps = (props: ComponentProps): DataObject => {
 
   return dataProps;
 };
+
+export * from './AnalyticsUtility/AnalyticsContext';
+export * from './AnalyticsUtility/AnalyticsService';

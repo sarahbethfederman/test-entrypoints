@@ -1,3 +1,8 @@
+# Changelog - @lendi-ui/footer
+## [2.2.0] - 2019-05-20 - [HUB-110] (https://creditandfinance.atlassian.net/browse/HUB-110)
+### Added
+- Lendi Analytics support for Footer
+
 ## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

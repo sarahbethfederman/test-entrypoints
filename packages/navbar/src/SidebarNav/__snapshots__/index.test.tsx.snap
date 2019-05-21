@@ -8,16 +8,16 @@ exports[`Group should mount 1`] = `
     <Group
       title="A"
     >
-      <Component>
+      <Item>
         A.1
-      </Component>
+      </Item>
     </Group>
-    <Component>
+    <Item>
       B
-    </Component>
-    <Component>
+    </Item>
+    <Item>
       C
-    </Component>
+    </Item>
   </Component>
 </styled.nav>
 `;

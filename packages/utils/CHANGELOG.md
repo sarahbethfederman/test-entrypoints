@@ -1,3 +1,8 @@
+# Changelog - @lendi-ui/utils
+## [2.4.0] - 2019-05-20] - [HUB-110](https://creditandfinance.atlassian.net/browse/HUB-110)
+### Added
+- Lendi Analytics utility - added AnalyticsContext and Service Util to add analytics
+
 ## [2.3.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.
@@ -8,7 +13,7 @@
 ### Changed
 - Added return type of the getDataProps function
 
-## [2.2.1] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
+## [2.2.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
 ### Changed
 - Updated CHANGELOG to match required parsing format.
 

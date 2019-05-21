@@ -10,6 +10,7 @@
   "dependencies": {
     "@lendi-ui/doc-utils": "^1.0.0",
     "@lendi/editor-config": "^1.0.0",
+    "@lendi/lendi-analytics-package": "^1.0.0",
     "@lendi/prettier-config": "^1.0.0",
     "@lendi/tslint-config": "^1.0.0",
     "@lendi/typescript-config": "^1.0.0",

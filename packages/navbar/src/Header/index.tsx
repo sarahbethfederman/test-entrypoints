@@ -16,6 +16,8 @@ import { Hamburger } from '@lendi-ui/icon';
 import * as ZINDEX from '../constants/z-index';
 import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK, LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
+import { AnalyticsContext } from '@lendi-ui/utils';
+import { WindowPosition } from '@lendi/lendi-analytics-package';
 
 export interface HeaderProps {
   onOpenLeftSidebar?: (done: () => void) => void;
@@ -48,7 +50,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 
     if (!isAuthenticated) {
       return (
-        <HeaderButton variant="secondary" href={SIGN_UP_LINK}>
+        <HeaderButton
+          variant="secondary"
+          href={SIGN_UP_LINK}
+          onClick={() => {
+            this.context.analyticsForNavigation('Log in / Sign up', WindowPosition.header);
+          }}
+        >
           Log in / Sign up
         </HeaderButton>
       );
@@ -56,14 +64,26 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 
     if (!continueApplicationUrl) {
       return (
-        <HeaderButton variant="emphasis" href={LOG_IN_LINK}>
+        <HeaderButton
+          variant="emphasis"
+          href={LOG_IN_LINK}
+          onClick={() => {
+            this.context.analyticsForNavigation('Start application', WindowPosition.header);
+          }}
+        >
           Start application
         </HeaderButton>
       );
     }
 
     return (
-      <HeaderButton variant="emphasis" href={continueApplicationUrl}>
+      <HeaderButton
+        variant="emphasis"
+        href={continueApplicationUrl}
+        onClick={() => {
+          this.context.analyticsForNavigation('Continue application', WindowPosition.header);
+        }}
+      >
         Continue application
       </HeaderButton>
     );
@@ -83,9 +103,9 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
       onOpenLeftSidebar(() => undefined);
     }
   };
-
+  static contextType: any = AnalyticsContext;
   render() {
-    const { onOpenRightSidebar, isTransparent } = this.props;
+    const { onOpenRightSidebar = () => {}, isTransparent } = this.props;
     const { stuck } = this.state;
     const isHeaderBgTransparent = isTransparent && !stuck;
     return (
@@ -93,20 +113,35 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
         <FullWidthContainer transparent={isHeaderBgTransparent}>
           <Container>
             <LeftGroup>
-              <MenuButton onClick={this.handleMenuButtonClick} aria-label="expand menu">
+              <MenuButton
+                onClick={() => {
+                  this.context.analyticsForNavigation('icon', WindowPosition.header);
+                  this.handleMenuButtonClick();
+                }}
+                aria-label="expand menu"
+              >
                 <Hamburger color={!isHeaderBgTransparent ? 'primary.500' : 'shade.0'} />
               </MenuButton>
               <LogoWrapper>
-                <LogoLink href={HOME_PAGE_LINK}>
+                <LogoLink
+                  href={HOME_PAGE_LINK}
+                  onClick={() => this.context.analyticsForNavigation('logo', WindowPosition.header)}
+                >
                   <HeaderLogo variant={isHeaderBgTransparent ? 'light' : 'dark'} />
                 </LogoLink>
               </LogoWrapper>
             </LeftGroup>
             <RightGroup>
               {/* TODO: ButtonGroup needs to accept nullable children
-              //@ts-ignore */}
+                //@ts-ignore */}
               <ButtonGroup isInverse={isHeaderBgTransparent} size="sm">
-                <HeaderButton variant="secondary" onClick={onOpenRightSidebar}>
+                <HeaderButton
+                  variant="secondary"
+                  onClick={() => {
+                    this.context.analyticsForNavigation('Talk to an expert', WindowPosition.header);
+                    onOpenRightSidebar();
+                  }}
+                >
                   Talk to an expert
                 </HeaderButton>
                 {this.renderButtonVariation()}

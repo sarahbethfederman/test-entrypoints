@@ -39,7 +39,9 @@ export const AuthedNav = ({
     case APPLICATION_STAGES[0]: {
       return (
         <SidebarNav.Section>
-          <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>
+          <SidebarNav.Item href={profileLink} labelText="Your profile">
+            Your profile
+          </SidebarNav.Item>
           <FunnelTwoSection
             applicationSfid={applicationSfid}
             transactionType={transactionType}
@@ -53,7 +55,9 @@ export const AuthedNav = ({
     case APPLICATION_STAGES[1]: {
       return (
         <SidebarNav.Section>
-          <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>
+          <SidebarNav.Item href={profileLink} labelText="Your profile">
+            Your profile
+          </SidebarNav.Item>
           <FunnelTwoSection
             applicationSfid={applicationSfid}
             transactionType={transactionType}
@@ -65,9 +69,15 @@ export const AuthedNav = ({
             applicationSfid={applicationSfid}
             applicationNumber={applicationNumber}
           />
-          <SidebarNav.Item href={verifyIdLink}>Verify your ID</SidebarNav.Item>
-          <SidebarNav.Item href={documentLink}>Upload your documents</SidebarNav.Item>
-          <SidebarNav.Item href={dashOverviewLink}>Your dashboard</SidebarNav.Item>
+          <SidebarNav.Item href={verifyIdLink} labelText="Verify your ID">
+            Verify your ID
+          </SidebarNav.Item>
+          <SidebarNav.Item href={documentLink} labelText="Upload your documents">
+            Upload your documents
+          </SidebarNav.Item>
+          <SidebarNav.Item href={dashOverviewLink} labelText="Your dashboard">
+            Your dashboard
+          </SidebarNav.Item>
           <ToolBoxSection />
         </SidebarNav.Section>
       );
@@ -75,7 +85,9 @@ export const AuthedNav = ({
     case APPLICATION_STAGES[2]: {
       return (
         <SidebarNav.Section>
-          <SidebarNav.Item href={profileLink}>Your profile</SidebarNav.Item>
+          <SidebarNav.Item href={profileLink} labelText="Your profile">
+            Your profile
+          </SidebarNav.Item>
           <FunnelTwoSection
             applicationSfid={applicationSfid}
             transactionType={transactionType}
@@ -87,11 +99,21 @@ export const AuthedNav = ({
             applicationSfid={applicationSfid}
             applicationNumber={applicationNumber}
           />
-          <SidebarNav.Item href={verifyIdLink}>Verify your ID</SidebarNav.Item>
-          <SidebarNav.Item href={summaryLink}>View your summary</SidebarNav.Item>
-          <SidebarNav.Item href={lenderSelectionLink}>Choose your loan</SidebarNav.Item>
-          <SidebarNav.Item href={documentLink}>Upload your documents</SidebarNav.Item>
-          <SidebarNav.Item href={dashOverviewLink}>Your dashboard</SidebarNav.Item>
+          <SidebarNav.Item href={verifyIdLink} labelText="Verify your ID">
+            Verify your ID
+          </SidebarNav.Item>
+          <SidebarNav.Item href={summaryLink} labelText="View your summary">
+            View your summary
+          </SidebarNav.Item>
+          <SidebarNav.Item href={lenderSelectionLink} labelText="Choose your loan">
+            Choose your loan
+          </SidebarNav.Item>
+          <SidebarNav.Item href={documentLink} labelText="Upload your documents">
+            Upload your documents
+          </SidebarNav.Item>
+          <SidebarNav.Item href={dashOverviewLink} labelText="Your dashboard">
+            Your dashboard
+          </SidebarNav.Item>
           <ToolBoxSection />
         </SidebarNav.Section>
       );
@@ -99,9 +121,15 @@ export const AuthedNav = ({
     default: {
       return (
         <SidebarNav.Section>
-          <SidebarNav.Item href={SEARCH_LOAN_LINK}>Start a new loan</SidebarNav.Item>
-          <SidebarNav.Item href={MANAGE_APPLICATION_LINK}>My dashboard</SidebarNav.Item>
-          <SidebarNav.Item href={PROPERTY_REPORT_LINK}>My property reports</SidebarNav.Item>
+          <SidebarNav.Item href={SEARCH_LOAN_LINK} labelText="Start a new loan">
+            Start a new loan
+          </SidebarNav.Item>
+          <SidebarNav.Item href={MANAGE_APPLICATION_LINK} labelText="My dashboard">
+            My dashboard
+          </SidebarNav.Item>
+          <SidebarNav.Item href={PROPERTY_REPORT_LINK} labelText="My property reports">
+            My property reports
+          </SidebarNav.Item>
         </SidebarNav.Section>
       );
     }

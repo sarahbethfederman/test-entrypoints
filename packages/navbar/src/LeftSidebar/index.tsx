@@ -7,6 +7,8 @@ import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../SidebarNav';
 import Sidebar from '../Sidebar';
 import { Footer } from './../SidebarFooter';
 import { MANAGE_APPLICATION_LINK, LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
+import { WindowPosition } from '@lendi/lendi-analytics-package';
+import { AnalyticsContext } from '@lendi-ui/utils';
 
 export type SidebarSectionProps = SectionProps;
 export type SidebarGroupProps = GroupProps;
@@ -31,12 +33,19 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
   public static Section = SidebarNav.Section;
   public static Group = SidebarNav.Group;
   public static Item = SidebarNav.Item;
+  static contextType: any = AnalyticsContext;
 
   private renderHeader() {
-    const { onHide } = this.props;
+    const { onHide = () => {} } = this.props;
     return (
       <Header>
-        <MenuButton onClick={onHide} aria-label="hide menu">
+        <MenuButton
+          onClick={() => {
+            this.context.analyticsForNavigation('icon', WindowPosition.navigation_left);
+            onHide();
+          }}
+          aria-label="hide menu"
+        >
           <Hamburger color={'primary.500'} />
         </MenuButton>
         <LogoWrapper>
@@ -51,8 +60,19 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
     if (!isAuthenticated) {
       return (
         <Body size="sm">
-          <StyledLink href={LOG_IN_LINK}>Log in</StyledLink> <span> or </span>
-          <StyledLink href={SIGN_UP_LINK}>Sign up</StyledLink>
+          <StyledLink
+            href={LOG_IN_LINK}
+            onClick={() => this.context.analyticsForNavigation('Log in', WindowPosition.navigation_left)}
+          >
+            Log in
+          </StyledLink>{' '}
+          <span> or </span>
+          <StyledLink
+            href={SIGN_UP_LINK}
+            onClick={() => this.context.analyticsForNavigation('Sign up', WindowPosition.navigation_left)}
+          >
+            Sign up
+          </StyledLink>
         </Body>
       );
     }
@@ -62,7 +82,12 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
       return (
         <Body size="sm">
           {`Application ${applicationNumber}`} <span> | </span>
-          <StyledLink href={MANAGE_APPLICATION_LINK}>Manage applications</StyledLink>
+          <StyledLink
+            href={MANAGE_APPLICATION_LINK}
+            onClick={() => this.context.analyticsForNavigation('Manage Applications', WindowPosition.navigation_left)}
+          >
+            Manage applications
+          </StyledLink>
         </Body>
       );
     }
@@ -84,22 +109,44 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
   }
 
   private renderFooter() {
-    const { onChat } = this.props;
+    const { onChat = () => {} } = this.props;
     return (
       <Footer>
         <Body size="lg">Need help?</Body>
         <Body size="md" mt="xxs">
-          <StyledLink onClick={onChat}>Live chat</StyledLink> <span> or call </span>
-          <StyledLink href="tel:1300323181">1300 323 181</StyledLink>
+          <StyledLink
+            onClick={() => {
+              this.context.analyticsForNavigation('Live chat', WindowPosition.navigation_left);
+              onChat();
+            }}
+          >
+            Live chat
+          </StyledLink>{' '}
+          <span> or call </span>
+          <StyledLink
+            href="tel:1300323181"
+            onClick={() => this.context.analyticsForNavigation('1300 323 181', WindowPosition.navigation_left)}
+          >
+            1300 323 181
+          </StyledLink>
         </Body>
       </Footer>
     );
   }
 
   private renderLogout() {
-    const { isAuthenticated, onLogout } = this.props;
+    const { isAuthenticated, onLogout = () => {} } = this.props;
     if (isAuthenticated) {
-      return <Logout onClick={onLogout}>Log out</Logout>;
+      return (
+        <Logout
+          onClick={() => {
+            this.context.analyticsForNavigation('Log out', WindowPosition.navigation_left);
+            onLogout();
+          }}
+        >
+          Log out
+        </Logout>
+      );
     }
     return null;
   }

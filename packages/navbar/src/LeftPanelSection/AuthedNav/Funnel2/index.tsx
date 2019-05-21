@@ -26,11 +26,19 @@ export const FunnelTwoSection = ({
     return (
       <Fragment>
         <SidebarNav.Group title="Property">
-          <SidebarNav.Item href={`${DASHBOARD_LINK}/${applicationSfid}/lender/lender_name/`}>Lender</SidebarNav.Item>
-          <SidebarNav.Item href={propertyLink}>Property address</SidebarNav.Item>
-          <SidebarNav.Item href={additionalPropertyLink}>Additional property</SidebarNav.Item>
+          <SidebarNav.Item href={`${DASHBOARD_LINK}/${applicationSfid}/lender/lender_name/`} labelText="lender">
+            Lender
+          </SidebarNav.Item>
+          <SidebarNav.Item href={propertyLink} labelText="Property address">
+            Property address
+          </SidebarNav.Item>
+          <SidebarNav.Item href={additionalPropertyLink} labelText="Additional property">
+            Additional property
+          </SidebarNav.Item>
         </SidebarNav.Group>
-        <SidebarNav.Item href={applicantLink}>Applicants</SidebarNav.Item>
+        <SidebarNav.Item href={applicantLink} labelText="Applicants">
+          Applicants
+        </SidebarNav.Item>
       </Fragment>
     );
   }
@@ -38,10 +46,16 @@ export const FunnelTwoSection = ({
   return (
     <Fragment>
       <SidebarNav.Group title="Property">
-        <SidebarNav.Item href={propertyLink}>Property address</SidebarNav.Item>
-        <SidebarNav.Item href={additionalPropertyLink}>Additional property</SidebarNav.Item>
+        <SidebarNav.Item href={propertyLink} labelText="Property address">
+          Property address
+        </SidebarNav.Item>
+        <SidebarNav.Item href={additionalPropertyLink} labelText="Additional address">
+          Additional property
+        </SidebarNav.Item>
       </SidebarNav.Group>
-      <SidebarNav.Item href={applicantLink}>Applicants</SidebarNav.Item>
+      <SidebarNav.Item href={applicantLink} labelText="Applicants">
+        Applicants
+      </SidebarNav.Item>
     </Fragment>
   );
 };

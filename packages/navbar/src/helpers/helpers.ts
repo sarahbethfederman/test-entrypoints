@@ -1,5 +1,8 @@
+import { ThemeMap } from '@lendi-ui/theme';
 import axios, { AxiosResponse } from 'axios';
 import { ApplicationInSF, Application, ApplicantInSF, Applicant, ApplicationStage, Broker } from '../types';
+import { WindowPosition, Category } from '@lendi/lendi-analytics-package';
+import { trackNavigation } from '@lendi-ui/utils';
 
 export const fetchApplication = (baseURL: string, token: string, sfid: string): Promise<Application | undefined> => {
   return axios
@@ -102,4 +105,9 @@ export const transformBroker = (brokerResponse: AxiosResponse<any>): Broker | un
   }
 
   return undefined;
+};
+
+export const analysticHelper = (text: string, isBroker: boolean, position: WindowPosition, theme?: ThemeMap) => {
+  // this trackNavigation is specific for navbar so, we can hardcoded it to the Category.navigation.
+  trackNavigation(text, isBroker, position, Category.navigation, theme!.logo.logoName);
 };

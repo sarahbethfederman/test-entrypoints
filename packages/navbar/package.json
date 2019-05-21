@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -15,7 +15,6 @@
     "moxios": "^0.4.0"
   },
   "dependencies": {
-    "@lendi-ui/typography": "^3.0.0",
     "@lendi-ui/breakpoint": "^2.0.0",
     "@lendi-ui/button": "^5.0.0",
     "@lendi-ui/color": "^3.0.0",
@@ -25,13 +24,15 @@
     "@lendi-ui/overlay": "^2.0.0",
     "@lendi-ui/spacing": "^4.0.0",
     "@lendi-ui/transition": "^3.0.0",
+    "@lendi-ui/typography": "^3.0.0",
+    "@lendi-ui/utils": "^2.2.0",
+    "@lendi/lendi-analytics-package": "^1.0.0",
     "@types/axios": "^0.14.0",
     "@types/react-stickynode": "^1.4.0",
     "axios": "^0.18.0",
+    "react-create-ref": "^1.0.1",
     "react-dot-fragment": "^0.2.8",
-    "react-stickynode": "^2.1.0",
-    "@lendi-ui/utils": "^2.2.0",
-    "react-create-ref": "^1.0.1"
+    "react-stickynode": "^2.1.0"
   },
   "peerDependencies": {
     "@lendi-ui/theme": "^6.1.1",

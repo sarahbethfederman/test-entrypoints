@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Header } from './index';
 import {
@@ -16,13 +16,19 @@ import {
 import { Hamburger } from '@lendi-ui/icon';
 import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK } from './../constants/links';
+import { AnalyticsContextProps } from '@lendi-ui/utils';
+import { WindowPosition } from '@lendi/lendi-analytics-package';
 
-let element;
+let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
 const onOpenLeftSidebar = jest.fn();
 const onOpenRightSidebar = jest.fn();
 
+const mockAnalyticsContext: AnalyticsContextProps = {
+  analyticsForNavigation: jest.fn(),
+};
+
 const render = (props) => {
-  element = mount(
+  wrapper = mount(
     <Theme>
       <Header
         onOpenLeftSidebar={onOpenLeftSidebar}
@@ -32,6 +38,8 @@ const render = (props) => {
       />
     </Theme>
   );
+  wrapper.find(Header).instance().context = mockAnalyticsContext;
+  wrapper.update();
 };
 
 describe('Header', () => {
@@ -39,24 +47,37 @@ describe('Header', () => {
     beforeEach(() => render({}));
 
     it('it should mount the whole Header component', () => {
-      expect(element.find(FullWidthContainer)).toHaveLength(1);
-      expect(element.find(Container)).toHaveLength(1);
+      expect(wrapper.find(FullWidthContainer)).toHaveLength(1);
+      expect(wrapper.find(Container)).toHaveLength(1);
     });
 
     it('it should mount the LeftGroup component', () => {
-      expect(element.find(LeftGroup)).toHaveLength(1);
-      expect(element.find(MenuButton)).toHaveLength(1);
-      expect(element.find(Hamburger)).toHaveLength(1);
-      expect(element.find(LogoWrapper)).toHaveLength(1);
-      expect(element.find(LogoLink)).toHaveLength(1);
-      expect(element.find(LogoLink).props().href).toEqual(HOME_PAGE_LINK);
-      expect(element.find(HeaderLogo)).toHaveLength(1);
+      expect(wrapper.find(LeftGroup)).toHaveLength(1);
+      expect(wrapper.find(MenuButton)).toHaveLength(1);
+      expect(wrapper.find(Hamburger)).toHaveLength(1);
+      expect(wrapper.find(LogoWrapper)).toHaveLength(1);
+      expect(wrapper.find(LogoLink)).toHaveLength(1);
+      expect(wrapper.find(LogoLink).props().href).toEqual(HOME_PAGE_LINK);
+      expect(wrapper.find(HeaderLogo)).toHaveLength(1);
     });
 
     it('it should mount the LeftGroup component', () => {
-      expect(element.find(RightGroup)).toHaveLength(1);
-      expect(element.find(ButtonGroup)).toHaveLength(1);
-      expect(element.find(HeaderButton)).toHaveLength(2);
+      expect(wrapper.find(RightGroup)).toHaveLength(1);
+      expect(wrapper.find(ButtonGroup)).toHaveLength(1);
+      expect(wrapper.find(HeaderButton)).toHaveLength(2);
+    });
+  });
+
+  describe('click event', () => {
+    beforeEach(() => {
+      render({});
+      wrapper.find(MenuButton).simulate('click');
+    });
+    it('should call AnalyticsContext fn', () => {
+      expect(mockAnalyticsContext.analyticsForNavigation).toBeCalledTimes(1);
+    });
+    it('should call AnalyticsContext fn with correct params', () => {
+      expect(mockAnalyticsContext.analyticsForNavigation).toHaveBeenCalledWith('icon', WindowPosition.header);
     });
   });
 });

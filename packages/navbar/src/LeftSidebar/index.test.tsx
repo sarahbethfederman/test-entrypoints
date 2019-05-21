@@ -1,9 +1,12 @@
 import * as React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Link } from '@lendi-ui/typography';
 import { LeftSidebar } from '.';
 import { Logout } from './index.style';
+import { AnalyticsContextProps } from '@lendi-ui/utils';
+import { MenuButton } from '../Header/index.style';
+import { WindowPosition } from '@lendi/lendi-analytics-package';
 
 describe('LeftSidebar', () => {
   it('should render the login and sign up links when the user is not authenticated', () => {
@@ -62,5 +65,30 @@ describe('LeftSidebar', () => {
     expect(links.contains('Log in')).toBeFalsy();
     expect(links.contains('Sign up')).toBeFalsy();
     expect(links.contains('Manage applications')).toBeFalsy();
+  });
+});
+
+describe('Left side bar - click event', () => {
+  let wrapper: ReactWrapper<any, Readonly<{}>, React.Component<{}, {}, any>>;
+  const mockAnalyticsContext: AnalyticsContextProps = {
+    analyticsForNavigation: jest.fn(),
+  };
+  beforeEach(() => {
+    wrapper = mount(
+      <Theme>
+        <LeftSidebar show={true} isAuthenticated={true} onHide={() => {}} />
+      </Theme>
+    );
+    wrapper.find(LeftSidebar).instance().context = mockAnalyticsContext;
+    wrapper.update();
+  });
+  it('should call AnalyticsContext fn', () => {
+    expect(wrapper.find(MenuButton)).toHaveLength(2);
+    wrapper
+      .find(MenuButton)
+      .at(1)
+      .simulate('click');
+    expect(mockAnalyticsContext.analyticsForNavigation).toBeCalledTimes(1);
+    expect(mockAnalyticsContext.analyticsForNavigation).toBeCalledWith('icon', WindowPosition.navigation_left);
   });
 });

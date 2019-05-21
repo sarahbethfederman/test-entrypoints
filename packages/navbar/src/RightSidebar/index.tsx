@@ -17,6 +17,8 @@ import {
   StyledLink,
 } from './index.style';
 import { Footer } from './../SidebarFooter';
+import { WindowPosition } from '@lendi/lendi-analytics-package';
+import { AnalyticsContext } from '@lendi-ui/utils';
 
 export type SidebarSectionProps = SectionProps;
 export type SidebarGroupProps = GroupProps;
@@ -40,6 +42,7 @@ export class RightSidebar extends React.Component<RightSidebarProps> {
   public static Section = SidebarNav.Section;
   public static Group = SidebarNav.Group;
   public static Item = SidebarNav.Item;
+  static contextType: any = AnalyticsContext;
 
   private renderBroker() {
     const { broker } = this.props;
@@ -80,7 +83,7 @@ export class RightSidebar extends React.Component<RightSidebarProps> {
   }
 
   public render() {
-    const { show, onHide, onChat, children } = this.props;
+    const { show, onHide, onChat = () => {}, children } = this.props;
     return (
       <Sidebar side="right" show={show} onHide={onHide}>
         <Wrapper>
@@ -92,7 +95,14 @@ export class RightSidebar extends React.Component<RightSidebarProps> {
           <Footer>
             <Body size="lg">We love feedback!</Body>
             <Body size="md" mt="xxs">
-              <StyledLink onClick={onChat}>Tell us about your experience</StyledLink>
+              <StyledLink
+                onClick={() => {
+                  this.context.analyticsForNavigation('Tell us about your experience', WindowPosition.navigation_right);
+                  onChat();
+                }}
+              >
+                Tell us about your experience
+              </StyledLink>
             </Body>
           </Footer>
         </Wrapper>

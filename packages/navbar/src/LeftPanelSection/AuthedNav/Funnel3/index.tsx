@@ -35,8 +35,12 @@ export const FunnelThreeNav = ({
 
   return (
     <SidebarNav.Group title={groupLabel}>
-      <SidebarNav.Item href={assetLink}>Assets and liabilities</SidebarNav.Item>
-      <SidebarNav.Item href={incomeLink}>Income and expenses</SidebarNav.Item>
+      <SidebarNav.Item href={assetLink} labelText="Assets and liabilities">
+        Assets and liabilities
+      </SidebarNav.Item>
+      <SidebarNav.Item href={incomeLink} labelText="Income and expenses">
+        Income and expenses
+      </SidebarNav.Item>
     </SidebarNav.Group>
   );
 };
