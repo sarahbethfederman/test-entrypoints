@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/auto-complete",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

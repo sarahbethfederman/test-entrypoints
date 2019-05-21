@@ -1,53 +1,79 @@
 import * as React from 'react';
 import createRef from 'react-create-ref';
-import {
-  Size,
-  CloseIcon,
-  AutoCompleteList,
-  AutoCompleteListItem,
-  CloseWrapper,
-  BeforeIconWrapper,
-  SpinnerWrapper,
-  AfterIconWrapper,
-  AutoCompleteWrapper,
-} from './index.style';
+import { IconProps } from '@lendi-ui/icon';
+import { Size, CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from './index.style';
 import { debounce } from 'lodash';
 import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from './keys';
 import { Input } from '@lendi-ui/text-input';
-import { IconProps } from '@lendi-ui/icon';
+import AutoCompleteMenuList from './MenuList';
+
+export interface DataSourceItem {
+  label: string;
+  value: string;
+}
 
 export interface AutoCompleteProps {
-  dataSource: ((input: string) => Promise<string[]>) | string[];
+  dataSource: ((input: string) => Promise<DataSourceItem[]>) | DataSourceItem[];
+  value?: string;
   onSelect?: (item: string) => void;
   size?: Size;
   placeholder?: string;
   isDisabled?: boolean;
-  beforeIcon?: React.ReactElement<IconProps>;
+  before?: React.ReactElement<IconProps>;
+  isError?: boolean;
+  className?: string;
+  isInverse?: boolean;
+  isRequired?: boolean;
+  isAutoFocus?: boolean;
+  isReadOnly?: boolean;
+  isFullWidth?: boolean;
 }
 
 export interface AutoCompleteState {
-  filteredDataSource: string[];
+  filteredDataSource: DataSourceItem[];
   userInput: string;
   showList: boolean;
   activeSelection: number; // currently focussed item.
   isLoading: boolean;
+  menuWidth: number;
 }
 
 export default class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState> {
-  debouncedCall: (userInput: string) => void;
+  debounceFilterDataSource: (userInput: string) => void;
+  debounceWindowResize: () => void;
   static readonly DEBOUNCE_WAIT = 300;
+  static readonly WINDOW_RESIZE_WAIT = 100;
   state: AutoCompleteState = {
     activeSelection: 0,
     filteredDataSource: [],
-    userInput: '',
+    userInput: this.props.value ? this.props.value : '',
     showList: false,
     isLoading: false,
+    menuWidth: 0,
   };
-  menuContainerRef = createRef();
+  menuContainerRef: any = createRef();
+  inputWrapper: any = createRef();
+  inputElemWidth = 0;
 
   constructor(props: AutoCompleteProps) {
     super(props);
-    this.debouncedCall = debounce(this.getFilteredData, AutoComplete.DEBOUNCE_WAIT);
+    this.debounceFilterDataSource = debounce(this.getFilteredData, AutoComplete.DEBOUNCE_WAIT);
+    this.debounceWindowResize = debounce(this.calcInputWidth, AutoComplete.WINDOW_RESIZE_WAIT);
+  }
+
+  calcInputWidth = () => {
+    this.setState({
+      menuWidth: this.inputWrapper.current.firstElementChild.offsetWidth,
+    });
+  };
+
+  componentDidMount() {
+    window.addEventListener('resize', this.debounceWindowResize);
+    this.calcInputWidth();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.debounceWindowResize);
   }
 
   render() {
@@ -55,21 +81,19 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
       dataSource: [],
       placeholder = 'Just start Typing...',
       size = 'md',
-      isDisabled = false,
-      beforeIcon,
+      onSelect = () => {},
+      ...inputProps
     } = this.props;
     return (
-      <AutoCompleteWrapper>
+      <AutoCompleteWrapper innerRef={this.inputWrapper}>
         <Input
           size={size}
           placeholder={placeholder}
           onChange={this.onChange}
           onKeyDown={this.onKeyDown}
-          isFullWidth={true}
           value={this.state.userInput}
-          before={beforeIcon && <BeforeIconWrapper>{beforeIcon}</BeforeIconWrapper>}
           after={this.state.userInput && this.renderAfterIcon()}
-          isDisabled={isDisabled}
+          {...inputProps}
         />
         {this.state.showList && this.listComponent()}
       </AutoCompleteWrapper>
@@ -91,19 +115,14 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   listComponent = () => {
     if (this.state.userInput && !this.state.isLoading && this.state.filteredDataSource.length > 0) {
       return (
-        <AutoCompleteList innerRef={this.menuContainerRef}>
-          {this.state.filteredDataSource.map((option, index) => (
-            <AutoCompleteListItem
-              key={index}
-              tabIndex={index}
-              className={index === this.state.activeSelection ? 'selectedItem' : ''}
-              isActive={index === this.state.activeSelection}
-              onClick={this.onSelect}
-            >
-              <div dangerouslySetInnerHTML={{ __html: option }} />
-            </AutoCompleteListItem>
-          ))}
-        </AutoCompleteList>
+        <AutoCompleteMenuList
+          onSelect={this.onSelect}
+          activeSelection={this.state.activeSelection}
+          filteredDataSource={this.state.filteredDataSource}
+          innerRef={this.menuContainerRef}
+          menuWidth={this.state.menuWidth}
+          debounceWindowResize={this.debounceWindowResize}
+        />
       );
     }
     return;
@@ -132,19 +151,19 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
         isLoading: true,
         filteredDataSource: [],
       },
-      () => this.debouncedCall(event.target.value)
+      () => this.debounceFilterDataSource(event.target.value)
     );
   };
 
   getFilteredData = async (userInput: string) => {
     const { dataSource } = this.props;
-    let filteredDataSource: string[] = [];
+    let filteredDataSource: DataSourceItem[] = [];
     if (userInput !== '') {
       if (!Array.isArray(dataSource)) {
         filteredDataSource = await dataSource(userInput);
       } else {
         filteredDataSource = dataSource.filter(
-          (data: string) => data.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+          (data) => data.label.toLowerCase().indexOf(userInput.toLowerCase()) > -1
         );
       }
       filteredDataSource = filteredDataSource.map((d) => this.makeInputKeyBold(d, userInput.toLowerCase()));
@@ -157,11 +176,14 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
     }
   };
 
-  makeInputKeyBold = (str: string, find: string) => {
+  makeInputKeyBold = (str: DataSourceItem, find: string): DataSourceItem => {
     var regex = new RegExp(find, 'gi');
-    const matchings: RegExpMatchArray | null = str.match(regex);
+    const matchings: RegExpMatchArray | null = str.label.match(regex);
     if (matchings) {
-      return str.replace(new RegExp(matchings[0], 'g'), '<b>' + matchings[0] + '</b>');
+      return {
+        label: str.label.replace(new RegExp(matchings[0], 'g'), '<b>' + matchings[0] + '</b>'),
+        value: str.value,
+      };
     } else {
       return str;
     }
@@ -175,7 +197,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
       case KEY_ENTER:
         this.setState({
           activeSelection: 0,
-          userInput: filteredDataSource[activeSelection].replace(/<\/?[^>]+(>|$)/g, ''),
+          userInput: filteredDataSource[activeSelection].label.replace(/<\/?[^>]+(>|$)/g, ''),
           showList: false,
         });
         return;

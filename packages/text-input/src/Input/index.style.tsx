@@ -152,6 +152,7 @@ export const BeforeWrapper = styled.span`
     margin: 0 0 0 -1px;
   }
   padding-right: 1px;
+  line-height: 0;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`

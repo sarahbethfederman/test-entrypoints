@@ -1,37 +1,41 @@
 import Spinner from '@lendi-ui/spinner';
-
+import { deriveSize, normalise } from '@lendi-ui/utils';
 import { map, BreakpointValue, BreakpointValueMap, gte } from '@lendi-ui/breakpoint';
 import styled, { css } from 'styled-components';
 import { p, px, m, py } from '@lendi-ui/spacing';
-import { bg, fg, color } from '@lendi-ui/color';
+import { bg, fg } from '@lendi-ui/color';
 import { Close } from '@lendi-ui/icon';
-import { deriveSize, normalise } from '@lendi-ui/utils';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
 
 type SizeVariant = 'lg' | 'md' | 'sm';
 export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
-interface AutoCompleteListProps {
+interface AutoCompleteListItemProps {
   isActive?: boolean;
+}
+
+interface AutoCompleteListProps {
+  customWidth: number;
 }
 
 export const AutoCompleteList = styled.ul`
   ${m('nil')};
   ${py('xxs')};
   ${px('nil')};
-  border: 1px solid ${color('shade.0')};
   border-radius: ${select('borderRadius')};
-  max-width: 280px;
   max-height: 192px;
-  width: 100%;
   position: absolute;
   ${bg('shade.0')};
   z-index: 1;
   ${depth(1)};
   overflow: auto;
   outline: none;
+  width: ${(props: AutoCompleteListProps) => (props.customWidth ? props.customWidth + 'px' : 'auto')};
 `;
+
 export const AutoCompleteListItem = styled.li`
+  width: 100%;
+  word-wrap: break-word;
   line-height: 48px;
   list-style: none;
   ${px('sm')};
@@ -46,7 +50,7 @@ export const AutoCompleteListItem = styled.li`
     font-weight: 700;
   }
 
-  ${({ isActive }: AutoCompleteListProps) =>
+  ${({ isActive }: AutoCompleteListItemProps) =>
     isActive
       ? css`
           ${bg('secondary.500')};
@@ -61,11 +65,10 @@ export const AutoCompleteListItem = styled.li`
 export const AutoCompleteWrapper = styled.div`
   ${normalise};
   min-width: 110px;
-  max-width: 280px;
 `;
 
 export const AfterIconWrapper = styled.span`
-  ${p('xxs')};
+  ${p('sm')};
 `;
 
 export const CloseWrapper = styled.span`
@@ -78,10 +81,6 @@ export const SpinnerWrapper = styled(Spinner)`
 
 export const CloseIcon = styled(Close)`
   ${({ size }: { size: Size }) => iconBySizeMixin(size)};
-`;
-
-export const BeforeIconWrapper = styled.span`
-  ${p('xxs')};
 `;
 
 const iconBySizeMixin = (size: Size) =>
