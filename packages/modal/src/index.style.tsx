@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { bg } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
-import { m, py, px, pt, pb } from '@lendi-ui/spacing';
+import { p, py, px, pt, pb } from '@lendi-ui/spacing';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
@@ -29,7 +29,6 @@ export const Wrapper = styled.div`
   position: fixed;
   z-index: 20;
   width: 600px;
-  padding: 80px;
 `;
 
 export const Footer = styled.div``;
@@ -71,7 +70,8 @@ export const Container = styled.div`
       border-radius: 0;
       ${depth(3)}
       ${gte('tablet')`
-        border-radius: ${select('borderRadius')};
+        border-bottom-left-radius: ${select('borderRadius')};
+        border-bottom-right-radius: ${select('borderRadius')};
         ${size === 'lg' && px('lg')};
       `}
     }
@@ -79,7 +79,7 @@ export const Container = styled.div`
 `;
 
 export const CloseIcon = styled(Close)<CloseProps>`
-  ${m('md')} right: 0;
+  ${p('md')} right: 0;
   width: 19px;
   height: 19px;
   position: absolute;

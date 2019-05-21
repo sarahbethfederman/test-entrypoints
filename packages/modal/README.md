@@ -13,5 +13,5 @@ yarn add @lendi-ui/modal
 ```
 import Modal from '@lendi-ui/modal';
 
-<ComponentName/>
+<Modal />
 ```

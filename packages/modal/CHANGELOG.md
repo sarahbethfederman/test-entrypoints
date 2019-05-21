@@ -1,3 +1,8 @@
+## [2.1.1] - 2019-05-21 - [HUB-129](https://creditandfinance.atlassian.net/browse/HUB-129)
+### Changed
+- fix padding bug on wrapper.
+- fix documentation and the content of the example.
+
 ## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.
