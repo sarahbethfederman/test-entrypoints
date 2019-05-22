@@ -14,7 +14,8 @@ const workspaceMetadata = require('./utils/workspaceMetadata');
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
 
-  devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'cheap-module-eval-source-map',
+  // TODO: Find IE11 safe alternative to cheap-module-eval-source-map
+  devtool: process.env.NODE_ENV === 'production' ? 'source-map' : /*'cheap-module-eval-source-map'*/ 'none',
 
   entry: './src/index.tsx',
   output: {
@@ -31,6 +32,22 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        include: [
+          require.resolve('acorn-jsx'),
+          require.resolve('buble'),
+          require.resolve('regexpu-core'),
+          require.resolve('unicode-match-property-ecmascript'),
+          require.resolve('unicode-match-property-value-ecmascript'),
+        ],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['env']],
+          },
+        },
+      },
       {
         test: /\.tsx?$/,
         use: {

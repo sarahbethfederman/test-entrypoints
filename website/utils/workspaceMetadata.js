@@ -67,6 +67,8 @@ module.exports = {
     };
   },
 
+  // DO NOT CHANGE THE FUNCTIONS TO ARROW FUNCTIONS,
+  // IE11 WILL READ THEM AS REAL CODE AND BREAK.
   stringify(metadata) {
     return `
       export default {
@@ -82,7 +84,7 @@ module.exports = {
               ${workspace.docs.map(
                 (doc) => `{
                 name: ${JSON.stringify(doc.name)},
-                load: () => import(${stringifyRequest(this, doc.file)})
+                load: function() { return import(${stringifyRequest(this, doc.file)}) }
               }`
               )}
             ],
@@ -90,7 +92,7 @@ module.exports = {
               ${workspace.examples.map(
                 (example) => `{
                 name: ${JSON.stringify(example.name)},
-                load: () => import(${stringifyRequest(this, example.file)})
+                load: function() { return import(${stringifyRequest(this, example.file)}) }
               }`
               )}
             ],

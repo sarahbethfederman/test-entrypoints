@@ -21,6 +21,10 @@ export class App extends React.Component<{}, AppState> {
     changeTheme: this.changeTheme.bind(this),
   };
 
+  changeTheme(theme: ThemeType) {
+    this.setState(() => ({ theme }));
+  }
+
   render() {
     const themeSelector =
       this.state.theme === 'Domain'
@@ -51,9 +55,5 @@ export class App extends React.Component<{}, AppState> {
         </Theme>
       </>
     );
-  }
-
-  changeTheme(theme: ThemeType) {
-    this.setState(() => ({ theme }));
   }
 }
