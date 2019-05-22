@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/navbar
 
+## [2.3.1] - 2019-05-22 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
+### Added
+- Export all defined types in './type.ts' file
+
 ## [2.3.0] - 2019-05-17 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
 ### Changed
 - Add one props `params` to accept query parameters from URL in all links in Navbar component
