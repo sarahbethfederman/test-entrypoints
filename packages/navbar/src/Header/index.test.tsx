@@ -80,4 +80,13 @@ describe('Header', () => {
       expect(mockAnalyticsContext.analyticsForNavigation).toHaveBeenCalledWith('icon', WindowPosition.header);
     });
   });
+
+  describe('Header with query parameters', () => {
+    const params = '?utm_source=google';
+    beforeEach(() => render({ params }));
+
+    it('it should mount the logo component URL with query parameters', () => {
+      expect(wrapper.find(LogoLink).props().href).toEqual(`${HOME_PAGE_LINK}?utm_source=google`);
+    });
+  });
 });

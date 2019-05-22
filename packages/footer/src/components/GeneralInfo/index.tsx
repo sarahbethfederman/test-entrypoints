@@ -14,9 +14,14 @@ import { GENERAL_PAGES } from '../../constants';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 import { AnalyticsContext } from '@lendi-ui/utils';
 
-export class GeneralInfo extends React.Component {
+export interface GeneralInfoProps {
+  params?: string;
+}
+
+export class GeneralInfo extends React.Component<GeneralInfoProps> {
   static contextType: any = AnalyticsContext;
   render() {
+    const { params = '' } = this.props;
     return (
       <div>
         <AllLinksWrapper>
@@ -24,7 +29,7 @@ export class GeneralInfo extends React.Component {
             {GENERAL_PAGES.map((page, index) => (
               <LinkWrapper key={page.label}>
                 <PageLink
-                  href={`https://www.lendi.com.au${page.url}`}
+                  href={`https://www.lendi.com.au${page.url}${params}`}
                   onClick={() => this.context.analyticsForNavigation(page.label, WindowPosition.footer)}
                 >
                   {page.label}

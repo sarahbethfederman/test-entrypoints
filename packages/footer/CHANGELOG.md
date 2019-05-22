@@ -1,4 +1,9 @@
 # Changelog - @lendi-ui/footer
+
+## [2.3.0] - 2019-05-16 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
+### Changed
+- Add one props `params` to accept query parameters from URL in all links in Footer component
+
 ## [2.2.0] - 2019-05-20 - [HUB-110] (https://creditandfinance.atlassian.net/browse/HUB-110)
 ### Added
 - Lendi Analytics support for Footer

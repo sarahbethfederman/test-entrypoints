@@ -25,6 +25,7 @@ export interface HeaderProps {
   isAuthenticated?: boolean;
   continueApplicationUrl?: string;
   isTransparent?: boolean;
+  params?: string;
 }
 
 export interface HeaderState {
@@ -46,13 +47,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   };
 
   private renderButtonVariation() {
-    const { isAuthenticated, continueApplicationUrl } = this.props;
+    const { isAuthenticated, continueApplicationUrl, params = '' } = this.props;
 
     if (!isAuthenticated) {
       return (
         <HeaderButton
           variant="secondary"
-          href={SIGN_UP_LINK}
+          href={`${SIGN_UP_LINK}${params}`}
           onClick={() => {
             this.context.analyticsForNavigation('Log in / Sign up', WindowPosition.header);
           }}
@@ -66,7 +67,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
       return (
         <HeaderButton
           variant="emphasis"
-          href={LOG_IN_LINK}
+          href={`${LOG_IN_LINK}${params}`}
           onClick={() => {
             this.context.analyticsForNavigation('Start application', WindowPosition.header);
           }}
@@ -79,7 +80,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     return (
       <HeaderButton
         variant="emphasis"
-        href={continueApplicationUrl}
+        href={`${continueApplicationUrl}${params}`}
         onClick={() => {
           this.context.analyticsForNavigation('Continue application', WindowPosition.header);
         }}
@@ -105,7 +106,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   };
   static contextType: any = AnalyticsContext;
   render() {
-    const { onOpenRightSidebar = () => {}, isTransparent } = this.props;
+    const { onOpenRightSidebar = () => {}, isTransparent, params = '' } = this.props;
     const { stuck } = this.state;
     const isHeaderBgTransparent = isTransparent && !stuck;
     return (
@@ -124,7 +125,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
               </MenuButton>
               <LogoWrapper>
                 <LogoLink
-                  href={HOME_PAGE_LINK}
+                  href={`${HOME_PAGE_LINK}${params}`}
                   onClick={() => this.context.analyticsForNavigation('logo', WindowPosition.header)}
                 >
                   <HeaderLogo variant={isHeaderBgTransparent ? 'light' : 'dark'} />

@@ -1,3 +1,9 @@
+# Changelog - @lendi-ui/navbar
+
+## [2.3.0] - 2019-05-17 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
+### Changed
+- Add one props `params` to accept query parameters from URL in all links in Navbar component
+
 ## [2.2.1] - 2019-05-21 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Change build of images to point to CJS.

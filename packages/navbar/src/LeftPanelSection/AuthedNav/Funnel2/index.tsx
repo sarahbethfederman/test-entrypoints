@@ -8,6 +8,7 @@ export interface Funnel2Item {
   applicationSfid?: string;
   numberOfApplicants?: number;
   applicationNumber?: number;
+  params?: string;
 }
 
 export const FunnelTwoSection = ({
@@ -15,6 +16,7 @@ export const FunnelTwoSection = ({
   applicationSfid,
   numberOfApplicants = 0,
   applicationNumber,
+  params = '',
 }: Funnel2Item) => {
   const propertyLink = `${DASHBOARD_LINK}/${applicationSfid}/property/`;
   const additionalPropertyLink = `${DASHBOARD_LINK}/${applicationSfid}/additional-properties/`;
@@ -26,17 +28,20 @@ export const FunnelTwoSection = ({
     return (
       <Fragment>
         <SidebarNav.Group title="Property">
-          <SidebarNav.Item href={`${DASHBOARD_LINK}/${applicationSfid}/lender/lender_name/`} labelText="lender">
+          <SidebarNav.Item
+            href={`${DASHBOARD_LINK}/${applicationSfid}/lender/lender_name/${params}`}
+            labelText="lender"
+          >
             Lender
           </SidebarNav.Item>
-          <SidebarNav.Item href={propertyLink} labelText="Property address">
+          <SidebarNav.Item href={`${propertyLink}${params}`} labelText="Property address">
             Property address
           </SidebarNav.Item>
-          <SidebarNav.Item href={additionalPropertyLink} labelText="Additional property">
+          <SidebarNav.Item href={`${additionalPropertyLink}${params}`} labelText="Additional property">
             Additional property
           </SidebarNav.Item>
         </SidebarNav.Group>
-        <SidebarNav.Item href={applicantLink} labelText="Applicants">
+        <SidebarNav.Item href={`${applicantLink}${params}`} labelText="Applicants">
           Applicants
         </SidebarNav.Item>
       </Fragment>
@@ -46,14 +51,14 @@ export const FunnelTwoSection = ({
   return (
     <Fragment>
       <SidebarNav.Group title="Property">
-        <SidebarNav.Item href={propertyLink} labelText="Property address">
+        <SidebarNav.Item href={`${propertyLink}${params}`} labelText="Property address">
           Property address
         </SidebarNav.Item>
-        <SidebarNav.Item href={additionalPropertyLink} labelText="Additional address">
+        <SidebarNav.Item href={`${additionalPropertyLink}${params}`} labelText="Additional address">
           Additional property
         </SidebarNav.Item>
       </SidebarNav.Group>
-      <SidebarNav.Item href={applicantLink} labelText="Applicants">
+      <SidebarNav.Item href={`${applicantLink}${params}`} labelText="Applicants">
         Applicants
       </SidebarNav.Item>
     </Fragment>

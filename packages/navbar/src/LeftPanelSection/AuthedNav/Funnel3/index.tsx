@@ -8,6 +8,7 @@ interface Funnel3Item {
   applicationSfid?: string;
   applicants?: Applicant[];
   applicationNumber?: number;
+  params?: string;
 }
 
 interface Funnel3ItemByApplicant {
@@ -16,6 +17,7 @@ interface Funnel3ItemByApplicant {
   groupLabel?: string;
   numberOfApplicants?: number;
   applicationNumber?: number;
+  params?: string;
 }
 
 export const FunnelThreeNav = ({
@@ -24,6 +26,7 @@ export const FunnelThreeNav = ({
   groupLabel,
   numberOfApplicants = 0,
   applicationNumber,
+  params = '',
 }: Funnel3ItemByApplicant) => {
   let assetLink = `${DASHBOARD_LINK}/${applicationSfid}/vehicle/${applicantSfid}/`;
   let incomeLink = `${DASHBOARD_LINK}/${applicationSfid}/employment-type/${applicantSfid}/`;
@@ -35,17 +38,22 @@ export const FunnelThreeNav = ({
 
   return (
     <SidebarNav.Group title={groupLabel}>
-      <SidebarNav.Item href={assetLink} labelText="Assets and liabilities">
+      <SidebarNav.Item href={`${assetLink}${params}`} labelText="Assets and liabilities">
         Assets and liabilities
       </SidebarNav.Item>
-      <SidebarNav.Item href={incomeLink} labelText="Income and expenses">
+      <SidebarNav.Item href={`${incomeLink}${params}`} labelText="Income and expenses">
         Income and expenses
       </SidebarNav.Item>
     </SidebarNav.Group>
   );
 };
 
-export const FunnelThreeSection = ({ applicants = [], applicationSfid, applicationNumber }: Funnel3Item) => {
+export const FunnelThreeSection = ({
+  applicants = [],
+  applicationSfid,
+  applicationNumber,
+  params = '',
+}: Funnel3Item) => {
   if (applicants.length === 1) {
     return (
       <FunnelThreeNav
@@ -74,6 +82,7 @@ export const FunnelThreeSection = ({ applicants = [], applicationSfid, applicati
               groupLabel={groupLabel}
               numberOfApplicants={applicants.length}
               applicationNumber={applicationNumber}
+              params={params}
             />
           );
         })}

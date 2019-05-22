@@ -4,16 +4,21 @@ import { MAIN_PAGES } from '../../constants';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 import { AnalyticsContext } from '@lendi-ui/utils';
 
-export class MainPages extends React.Component {
+export interface MainPagesProps {
+  params?: string;
+}
+
+export class MainPages extends React.Component<MainPagesProps> {
   static contextType: any = AnalyticsContext;
   render() {
+    const { params = '' } = this.props;
     return (
       <Wrapper>
         {MAIN_PAGES.map((link) => {
           return (
             <MainCategory key={link.category}>
               <MainCategoryText
-                href={`https://lendi.com.au${link.categoryURL}`}
+                href={`https://lendi.com.au${link.categoryURL}${params}`}
                 onClick={() => this.context.analyticsForNavigation(link.category, WindowPosition.footer)}
               >
                 {link.category}
@@ -22,7 +27,7 @@ export class MainPages extends React.Component {
                 {link.pageList.map((subpage) => (
                   <LinkWrapper key={subpage.label}>
                     <PageLink
-                      href={`https://www.lendi.com.au${subpage.url}`}
+                      href={`https://www.lendi.com.au${subpage.url}${params}`}
                       onClick={() => this.context.analyticsForNavigation(subpage.label, WindowPosition.footer)}
                     >
                       {subpage.label}

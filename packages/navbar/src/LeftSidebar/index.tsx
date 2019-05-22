@@ -25,6 +25,7 @@ export interface SidebarProps {
     applicationNumber?: number;
     applicationStage?: string;
   };
+  params?: string;
 }
 
 export interface SidebarState {}
@@ -56,19 +57,19 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
   }
 
   private renderApplicationDetail() {
-    const { isAuthenticated, applicationDetails } = this.props;
+    const { isAuthenticated, applicationDetails, params = '' } = this.props;
     if (!isAuthenticated) {
       return (
         <Body size="sm">
           <StyledLink
-            href={LOG_IN_LINK}
+            href={`${LOG_IN_LINK}${params}`}
             onClick={() => this.context.analyticsForNavigation('Log in', WindowPosition.navigation_left)}
           >
             Log in
           </StyledLink>{' '}
           <span> or </span>
           <StyledLink
-            href={SIGN_UP_LINK}
+            href={`${SIGN_UP_LINK}${params}`}
             onClick={() => this.context.analyticsForNavigation('Sign up', WindowPosition.navigation_left)}
           >
             Sign up
@@ -83,7 +84,7 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
         <Body size="sm">
           {`Application ${applicationNumber}`} <span> | </span>
           <StyledLink
-            href={MANAGE_APPLICATION_LINK}
+            href={`${MANAGE_APPLICATION_LINK}${params}`}
             onClick={() => this.context.analyticsForNavigation('Manage Applications', WindowPosition.navigation_left)}
           >
             Manage applications

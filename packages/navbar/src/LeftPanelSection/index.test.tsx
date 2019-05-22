@@ -31,6 +31,7 @@ describe('LeftPanelSection', () => {
       transactionType: application.type,
       applicants: applicants,
       applicationNumber: application.number,
+      params: '',
     };
     const wrapper = mount(
       <Theme>
@@ -46,6 +47,6 @@ describe('LeftPanelSection', () => {
         <LeftPanelSection isAuthenticated={true} />
       </Theme>
     );
-    expect(wrapper.find(AuthedNav).props()).toEqual({});
+    expect(wrapper.find(AuthedNav).props()).toEqual({ params: '' });
   });
 });

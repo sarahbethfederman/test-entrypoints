@@ -12,6 +12,7 @@ import { ThemeMap } from '@lendi-ui/theme';
 export interface FooterProps {
   broker?: Broker;
   theme?: ThemeMap;
+  params?: string;
 }
 
 interface Broker {
@@ -22,6 +23,7 @@ interface Broker {
 }
 
 const Footer = (props: FooterProps) => {
+  const { params } = props;
   return (
     <Wrapper>
       <Container>
@@ -34,8 +36,8 @@ const Footer = (props: FooterProps) => {
               analysticHelper(text, props.broker ? true : false, position, props.theme),
           }}
         >
-          <MainPages />
-          <GeneralInfo />
+          <MainPages params={params} />
+          <GeneralInfo params={params} />
           <Social />
         </AnalyticsContextProvider>
       </Container>

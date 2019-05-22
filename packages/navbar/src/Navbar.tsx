@@ -20,6 +20,7 @@ export interface NavProps {
   onChat?: () => void;
   onLogout?: () => void;
   variant?: 'transparent' | 'white';
+  params?: string;
   theme?: ThemeMap;
 }
 interface NavState {
@@ -58,7 +59,7 @@ class Navbar extends React.Component<NavProps, NavState> {
 
   render() {
     const { isLeftSidebarVisible, isRightSidebarVisible } = this.state;
-    const { isAuthenticated, application, broker, onChat, onLogout, variant, theme } = this.props;
+    const { isAuthenticated, application, broker, onChat, onLogout, variant, theme, params = '' } = this.props;
     return (
       <Wrapper>
         <AnalyticsContextProvider
@@ -73,6 +74,7 @@ class Navbar extends React.Component<NavProps, NavState> {
             isAuthenticated={isAuthenticated}
             continueApplicationUrl={application && application.continueURL}
             isTransparent={!variant || variant !== 'white'}
+            params={params}
           />
           <LeftSidebar
             onChat={onChat}
@@ -86,6 +88,7 @@ class Navbar extends React.Component<NavProps, NavState> {
                 applicationStage: application.stage,
               }
             }
+            params={params}
           >
             <LeftPanelSection
               isAuthenticated={isAuthenticated}
@@ -109,6 +112,7 @@ class Navbar extends React.Component<NavProps, NavState> {
               onChat={onChat}
               applicationNumber={application && application.number}
               phoneNumber={broker && broker.phone}
+              params={params}
             />
           </RightSidebar>
         </AnalyticsContextProvider>

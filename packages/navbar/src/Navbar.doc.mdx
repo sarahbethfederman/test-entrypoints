@@ -20,6 +20,9 @@ render(
 ```
 
 ## Notes
+
+The Navbar component can also support query parameters currently. But it will be deprecated soon.
+
 There are two methods that can be used to fetch the required data for the nav component. They are `fetchApplication` and `fetchBroker` which have similar arguments outlined below.
 
 `fetchApplication (baseURL: string, token: string, sfid: string):` has three arguments, the base URL, the user token and the application sales force id.
@@ -52,6 +55,7 @@ const broker = await fetchBroker(baseURL, token);
   <PropTable.Entry name="isAuthenticated" type="boolean" description="Flag for whether or not a user has been authenticated."/>
   <PropTable.Entry name="onChat" type="() => void" required description="Callback function on chat button on the Right Sidebar"/>
   <PropTable.Entry name="onLogout" type="() => void" required description="Callback function on Log Out link in Left Sidebar"/>
+  <PropTable.Entry name="params" type="string" description="Accept query parameters from users. This on ewill be deprecated soon."/>
 </PropTable>
 <br/>
 
