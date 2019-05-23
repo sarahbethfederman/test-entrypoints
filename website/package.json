@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.2.0",
   "dependencies": {
-    "@babel/preset-es2015": "^7.0.0-beta.53",
     "@lendi-ui/icon": "^7.0.0",
     "@lendi-ui/theme": "^6.1.0",
     "@mdx-js/tag": "^0.15.0",
