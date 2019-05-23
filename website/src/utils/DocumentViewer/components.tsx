@@ -43,6 +43,7 @@ import TextBubble from '@lendi-ui/text-bubble';
 import TextArea from '@lendi-ui/text-area';
 import DatePicker from '@lendi-ui/date-picker';
 import AutoComplete from '@lendi-ui/auto-complete';
+import Tooltip from '@lendi-ui/tooltip';
 const scope = {
   styled,
   css,
@@ -109,6 +110,7 @@ const scope = {
   TextArea,
   DatePicker,
   AutoComplete,
+  Tooltip,
 };
 
 interface GenericProps {

@@ -1,0 +1,27 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+import {Body} from '@lendi-ui/typography';
+
+## Usage
+
+```
+import Tooltip from '@lendi-ui/tooltip';
+```
+
+```jsx
+
+<Tooltip
+  content="This is a handy tip 👌"
+  position="right"
+>
+  <Body size="sm" style={{display: 'inline'}}><Heart color="primary.500" /> Hover over me!</Body>
+</Tooltip>
+             
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="position" type="'left' | 'right' | 'top' | 'bottom'" defaultValue="top" description="Position of the Tooltip."/>
+  <PropTable.Entry name="content" type="string" description="Content of the Tooltip."/>
+  <PropTable.Entry name="className" type="string" description="External classname to override style of the component"/>
+</PropTable>
