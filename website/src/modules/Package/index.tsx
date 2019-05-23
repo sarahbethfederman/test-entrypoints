@@ -11,12 +11,25 @@ import { Content } from './index.style';
 export type PackageExampleProps = {} & RouteMatch;
 
 export class Package extends React.Component<PackageExampleProps> {
+  componentWillMount() {
+    const {
+      match: {
+        params: { pkg },
+      },
+    } = this.props;
+
+    if (!metadata.doesWorkspaceExist(pkg)) {
+      window.location.pathname = '/404';
+    }
+  }
+
   get workspace(): Workspace {
     const {
       match: {
         params: { pkg },
       },
     } = this.props;
+
     return metadata.getWorkspaceByName(pkg);
   }
 

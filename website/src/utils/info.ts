@@ -73,6 +73,10 @@ export class Workspace {
     return doc;
   }
 
+  doesExampleExist(name: string) {
+    return !!this.examples.find((example) => name === example.name);
+  }
+
   getExampleByName(name: string) {
     const example = this.examples.find((example) => name === example.name);
     if (!example) {
@@ -97,11 +101,16 @@ export class Project {
     return this.info.workspaces.map((info) => new Workspace(info));
   }
 
+  doesWorkspaceExist(name: string) {
+    return !!this.workspaces.find((workspace) => name === workspace.name);
+  }
+
   getWorkspaceByName(name: string) {
     const workspace = this.workspaces.find((workspace) => name === workspace.name);
     if (!workspace) {
       throw new Error(`Workspace "${name} was not found.`);
     }
+
     return workspace;
   }
 }

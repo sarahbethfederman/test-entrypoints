@@ -18,6 +18,18 @@ export class PackageExample extends React.Component<PackageExampleProps, Package
     background: BackgroundEnum.Light,
   };
 
+  componentWillMount() {
+    const {
+      match: {
+        params: { pkg, example },
+      },
+    } = this.props;
+
+    if (!metadata.doesWorkspaceExist(pkg) || !this.workspace.doesExampleExist(example)) {
+      window.location.pathname = '/404';
+    }
+  }
+
   get workspace(): Workspace {
     const {
       match: {
