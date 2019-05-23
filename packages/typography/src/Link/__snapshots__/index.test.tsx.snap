@@ -13,6 +13,7 @@ exports[`Link should render styles for size lg 1`] = `
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  background-color: inherit;
 }
 
 .c0:hover,
@@ -50,6 +51,7 @@ exports[`Link should render styles for size md 1`] = `
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  background-color: inherit;
 }
 
 .c0:hover,
@@ -87,6 +89,7 @@ exports[`Link should render styles for size sm 1`] = `
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  background-color: inherit;
 }
 
 .c0:hover,

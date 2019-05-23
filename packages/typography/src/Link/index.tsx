@@ -43,6 +43,7 @@ const ButtonWrapper = styled.button<LinkOptions & MarginOptions>`
   border: none;
   padding: 0;
   ${link} ${margin};
+  background-color: inherit;
 `;
 
 export interface LinkProps extends LinkOptions {

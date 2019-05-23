@@ -1,3 +1,7 @@
+## [3.1.1] - 2019-05-23 - [HUB-201](https://creditandfinance.atlassian.net/browse/HUB-201)
+### Changed
+- Updated links that are set as a button to inherit background-color from parent.
+
 ## [3.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

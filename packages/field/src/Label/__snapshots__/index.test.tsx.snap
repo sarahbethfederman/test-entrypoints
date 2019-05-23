@@ -47,6 +47,7 @@ exports[`Large Label it should render LUI "md" Link component 1`] = `
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  background-color: inherit;
 }
 
 .c0:hover,
