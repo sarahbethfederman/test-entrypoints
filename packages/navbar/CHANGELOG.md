@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/navbar
 
+## [2.3.2] - 2019-05-23 - [HUB-143](https://creditandfinance.atlassian.net/browse/HUB-143)
+### Changed
+- Updated the header styles of the buttons so they display correctly in mobile view.
+
 ## [2.3.1] - 2019-05-22 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
 ### Added
 - Export all defined types in './type.ts' file

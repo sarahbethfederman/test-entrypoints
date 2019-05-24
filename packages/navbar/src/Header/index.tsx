@@ -11,6 +11,7 @@ import {
   HeaderLogo,
   MenuButton,
   HeaderButton,
+  ApplicationStatusButton,
 } from './index.style';
 import { Hamburger } from '@lendi-ui/icon';
 import * as ZINDEX from '../constants/z-index';
@@ -65,7 +66,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
 
     if (!continueApplicationUrl) {
       return (
-        <HeaderButton
+        <ApplicationStatusButton
           variant="emphasis"
           href={`${LOG_IN_LINK}${params}`}
           onClick={() => {
@@ -73,12 +74,12 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           }}
         >
           Start application
-        </HeaderButton>
+        </ApplicationStatusButton>
       );
     }
 
     return (
-      <HeaderButton
+      <ApplicationStatusButton
         variant="emphasis"
         href={`${continueApplicationUrl}${params}`}
         onClick={() => {
@@ -86,7 +87,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
         }}
       >
         Continue application
-      </HeaderButton>
+      </ApplicationStatusButton>
     );
   }
 

@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { ml, pl, pr, pt, pb, p } from '@lendi-ui/spacing';
 import { gte, between } from '@lendi-ui/breakpoint';
+import { deriveSize } from '@lendi-ui/utils';
 import { bg, fg } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 import Logo from '@lendi-ui/logo';
@@ -110,6 +111,17 @@ export const HeaderButton = styled(ButtonGroup.Button)`
   ${between('mobile', 'tablet')`
     font-size: 0.645em;
     border: none;
-    width: 60px;
+    width: ${deriveSize(5)};
+    text-transform: none;
+  `};
+`;
+
+export const ApplicationStatusButton = styled(ButtonGroup.Button)`
+  ${between('mobile', 'tablet')`
+    font-size: 0.645em;
+    border: none;
+    width: ${deriveSize(6)};
+    padding: 0;
+    text-transform: none;
   `};
 `;
