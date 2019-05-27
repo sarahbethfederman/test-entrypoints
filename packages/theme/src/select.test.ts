@@ -56,4 +56,8 @@ describe('select()', () => {
   it(`it should render 'border-radius: 6px;' when select borderRadius from Lendi theme`, () => {
     expect(select('borderRadius')({ theme: { borderRadius: '6px' } })).toEqual('6px');
   });
+
+  it(`it should render 'LendiLogo' when selecting logo.logoName from Lendi theme`, () => {
+    expect(select('logo.logoName')({ theme: { logo: { logoName: 'LendiLogo' } } })).toEqual('LendiLogo');
+  });
 });

@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/navbar
 
+## [2.3.3] - 2019-05-24 - [HUB-147](https://creditandfinance.atlassian.net/browse/HUB-147)
+### Changed
+- Update the logo size in the Header and LeftSidebar based on the currently selected theme.
+
 ## [2.3.2] - 2019-05-23 - [HUB-143](https://creditandfinance.atlassian.net/browse/HUB-143)
 ### Changed
 - Updated the header styles of the buttons so they display correctly in mobile view.

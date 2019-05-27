@@ -69,11 +69,20 @@ export const LogoLink = styled.a`
 export const HeaderLogo = styled(Logo)`
   width: 66px;
   height: 21px;
-
-  ${gte('tablet')`
-    width: 104px;
-    height: 33px;
+  ${({ theme }) =>
+    select('logo.logoName')({ theme }) === 'LendiLogo'
+      ? css`
+          ${gte('tablet')`
+      width: 104px;
+      height: 33px;
+    `};
+        `
+      : css`
+          ${gte('tablet')`
+      width: 240px;
+      height: 33px;
   `};
+        `}
 `;
 
 export const MenuButton = styled.button`
