@@ -21,7 +21,6 @@ export const Wrapper = styled.label`
   align-items: center;
   border-radius: ${select('borderRadius')};
   min-height: 48px;
-  ${bg('shade.0')}
 
   ${({ isBoxed, checked }: WrapperProps) => {
     if (isBoxed) {

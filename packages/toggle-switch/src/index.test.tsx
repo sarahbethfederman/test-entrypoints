@@ -87,7 +87,6 @@ describe('ToggleSwitch', () => {
     render({ isBoxed: true });
 
     const testee = element.find(Wrapper);
-    expect(testee).toHaveStyleRule('background-color', theme.colors.shade['0']);
     expect(testee).toHaveStyleRule('border', `1px solid ${theme.colors.shade['200']}`);
   });
 

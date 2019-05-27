@@ -94,7 +94,6 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   align-items: center;
   border-radius: 6px;
   min-height: 48px;
-  background-color: #ffffff;
   cursor: pointer;
 }
 
