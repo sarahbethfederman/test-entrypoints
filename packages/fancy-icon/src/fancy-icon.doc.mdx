@@ -1,0 +1,25 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+import {Button} from '@lendi-ui/button';
+
+## Usage
+
+```jsx
+<>
+  <BloomSavings height="2em" width="2em" />
+  <HomeLoanRepayments height="5em" width="5em" />
+  <Relax height="3em" width="3em" />
+  <br />
+  <br />
+  <Button variant="secondary">Testing inline <PartyPopper height="1.5em" width="1.5em" /></Button>
+  <br />
+  <br />
+  <Button variant="secondary" ariaLabel="Navigate Back"><SavingsOptions height="3em" width="3em" /></Button>
+</>
+```
+
+## Properties
+<PropTable>
+  <PropTable.Entry name="className" type="string" description="External classname to override style of the component"/>
+  <PropTable.Entry name="height" defaultValue="16px" type={`string`} description="The Icon height"/>
+  <PropTable.Entry name="width" defaultValue="16px" type={`string`} description="The Icon width"/>
+</PropTable>

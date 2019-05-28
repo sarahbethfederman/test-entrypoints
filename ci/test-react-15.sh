@@ -5,5 +5,6 @@ yarn add react@^15 react-dom@^15 enzyme-adapter-react-15 react-addons-test-utils
 
 # Assets from icons need to be available for the tests
 yarn run build:icons
+yarn run build:fancy-icons
 
 yarn run test-react-15
