@@ -94,39 +94,53 @@ exports[`Dropdown it should render whole component 1`] = `
       <styled.select
         disabled={false}
         isError={false}
+        onBlur={[Function]}
         onChange={[Function]}
+        onFocus={[Function]}
         selectSize="md"
       >
         <select
           className="c1"
           disabled={false}
+          onBlur={[Function]}
           onChange={[Function]}
+          onFocus={[Function]}
         >
           <option
+            disabled={false}
+            hidden={false}
             key="1"
             value="1"
           >
             5 years
           </option>
           <option
+            disabled={false}
+            hidden={false}
             key="2"
             value="2"
           >
             10 years
           </option>
           <option
+            disabled={false}
+            hidden={false}
             key="3"
             value="3"
           >
             15 years
           </option>
           <option
+            disabled={false}
+            hidden={false}
             key="4"
             value="4"
           >
             20 years
           </option>
           <option
+            disabled={false}
+            hidden={false}
             key="5"
             value="5"
           >

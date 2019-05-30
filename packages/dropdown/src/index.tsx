@@ -4,6 +4,8 @@ import { ListSize, DropdownWrapper, Select, IconDown, SpinnerWrapper } from './i
 export interface Item {
   value: string;
   label: string;
+  isDisabled?: boolean;
+  isHidden?: boolean;
 }
 
 export interface DropdownProps {
@@ -15,6 +17,8 @@ export interface DropdownProps {
   isLoading?: boolean;
   value?: string;
   onChange?: (value: string) => void;
+  onFocus?: (value: string) => void;
+  onBlur?: (value: string) => void;
   className?: string;
   name?: string;
 }
@@ -27,7 +31,9 @@ const Dropdown = ({
   isDisabled = false,
   isLoading = false,
   value,
-  onChange,
+  onChange = () => undefined,
+  onFocus = () => undefined,
+  onBlur = () => undefined,
   className,
   name,
 }: DropdownProps) => {
@@ -42,11 +48,18 @@ const Dropdown = ({
         isError={isError}
         disabled={isDisabled}
         value={value}
-        onChange={(e) => (onChange ? onChange(e.target.value) : null)}
+        onChange={(e) => onChange(e.target.value)}
+        onFocus={(e) => onFocus(e.target.value)}
+        onBlur={(e) => onBlur(e.target.value)}
         name={name}
       >
         {items.map((item) => (
-          <option key={item.value} value={item.value}>
+          <option
+            key={item.value}
+            value={item.value}
+            disabled={item.isDisabled || false}
+            hidden={item.isHidden || false}
+          >
             {item.label}
           </option>
         ))}

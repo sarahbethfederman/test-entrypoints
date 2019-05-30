@@ -1,3 +1,10 @@
+## [2.2.0] - 2019-05-30 - [HUB-249](https://creditandfinance.atlassian.net/browse/HUB-249)
+### Added
+- Added support for onFocus and onBlur.
+- Added support for isDisabled and isHidden in the dropdown items.
+### Changed
+- Updated documentation to reflect these changes.
+
 ## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

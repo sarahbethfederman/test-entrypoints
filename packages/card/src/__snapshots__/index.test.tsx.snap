@@ -195,21 +195,29 @@ exports[`Card render card with interactive title 1`] = `
                             <styled.select
                               disabled={false}
                               isError={false}
+                              onBlur={[Function]}
                               onChange={[Function]}
+                              onFocus={[Function]}
                               selectSize="md"
                             >
                               <select
                                 className="c6"
                                 disabled={false}
+                                onBlur={[Function]}
                                 onChange={[Function]}
+                                onFocus={[Function]}
                               >
                                 <option
+                                  disabled={false}
+                                  hidden={false}
                                   key="1"
                                   value="1"
                                 >
                                   5 years
                                 </option>
                                 <option
+                                  disabled={false}
+                                  hidden={false}
                                   key="2"
                                   value="2"
                                 >
