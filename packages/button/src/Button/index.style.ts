@@ -116,14 +116,25 @@ const commonStyle = css`
     transform: scale(0.98);
   }
 
-  :disabled,
-  :disabled:hover,
-  :disabled:active {
-    cursor: not-allowed;
-    opacity: 0.4;
-    box-shadow: none;
-    transform: scale(1);
-  }
+  ${({ isDisabled }: WrapperProps) =>
+    isDisabled
+      ? css`
+          pointer-events: inherit;
+          cursor: not-allowed;
+          opacity: 0.4;
+          box-shadow: none;
+          transform: scale(1);
+          :hover,
+          :active,
+          :focus {
+            pointer-events: inherit;
+            cursor: not-allowed;
+            opacity: 0.4;
+            box-shadow: none;
+            transform: scale(1);
+          }
+        `
+      : undefined}
 `;
 
 const filledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
@@ -144,11 +155,16 @@ const filledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
       ${bg(`${colorPrefix}.600`)}
     }
 
-    :disabled:hover,
-    :disabled:active,
-    :disabled:focus {
-      ${bg(`${colorPrefix}.500`)}
-    }
+
+    ${({ isDisabled }: WrapperProps) =>
+      isDisabled
+        ? css`
+            ${bg(`${colorPrefix}.500`)}
+            :hover, :active, :focus {
+              ${bg(`${colorPrefix}.500`)}
+            }
+          `
+        : undefined}
 
   `;
 };
@@ -237,6 +253,7 @@ export interface WrapperProps {
   isInverse?: boolean;
   isFullWidth?: boolean;
   ariaLabel?: string;
+  isDisabled?: boolean;
 }
 
 export const ButtonWrapper = styled.button`

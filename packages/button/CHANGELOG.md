@@ -1,3 +1,7 @@
+## [5.2.1] - 2019-05-28 - [HUB-203](https://creditandfinance.atlassian.net/browse/HUB-203)
+### Changed
+- Fix the bug that Button does not disabled with href prop.
+
 ## [5.2.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

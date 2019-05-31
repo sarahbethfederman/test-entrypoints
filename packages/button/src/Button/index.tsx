@@ -58,11 +58,22 @@ export class Button extends React.Component<ButtonProps> {
     );
   }
 
+  handleLinkClick = (event: React.MouseEvent) => {
+    const { isDisabled, onClick } = this.props;
+    if (isDisabled) {
+      event.preventDefault();
+    } else {
+      if (onClick) {
+        onClick();
+      }
+    }
+  };
+
   render() {
     const { href, isDisabled } = this.props;
     if (href) {
       return (
-        <LinkWrapper {...this.commonProps} {...this.linkProps}>
+        <LinkWrapper {...this.commonProps} {...this.linkProps} onClick={this.handleLinkClick}>
           {this.renderContent()}
         </LinkWrapper>
       );

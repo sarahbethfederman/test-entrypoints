@@ -34,6 +34,43 @@ describe('Button', () => {
     expect(element.find('button')).toHaveLength(0);
   });
 
+  it(`it should render disabled style when button have 'href' and 'isDisabled' props`, () => {
+    const element = mount(
+      <Theme>
+        <Button variant="primary" href="https://www.lendi.com.au/" isDisabled>
+          Click me!
+        </Button>
+      </Theme>
+    );
+    expect(element.find(Button)).toHaveStyleRule('cursor', 'not-allowed');
+  });
+
+  it(`it should NOT call 'onClick' function when button have 'href' and 'isDisabled' props`, () => {
+    const mockOnClick = jest.fn();
+    const element = mount(
+      <Theme>
+        <Button variant="primary" href="https://www.lendi.com.au/" isDisabled onClick={mockOnClick}>
+          Click me!
+        </Button>
+      </Theme>
+    );
+    element.find(Button).simulate('click');
+    expect(mockOnClick).not.toBeCalled();
+  });
+
+  it(`it should NOT call 'onClick' function for disabled button`, () => {
+    const mockOnClick = jest.fn();
+    const element = mount(
+      <Theme>
+        <Button variant="primary" isDisabled onClick={mockOnClick}>
+          Click me!
+        </Button>
+      </Theme>
+    );
+    element.find(Button).simulate('click');
+    expect(mockOnClick).not.toBeCalled();
+  });
+
   it('should render a <button> when href is not specified', () => {
     const element = mount(
       <Theme>

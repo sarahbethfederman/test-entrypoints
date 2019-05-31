@@ -49,17 +49,6 @@ exports[`Button emphasis should not render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -70,12 +59,6 @@ exports[`Button emphasis should not render full width 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -184,17 +167,6 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -205,12 +177,6 @@ exports[`Button emphasis should not render inverse styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -319,17 +285,6 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -340,12 +295,6 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -454,17 +403,6 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -475,12 +413,6 @@ exports[`Button emphasis should render "md" size styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -589,17 +521,6 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -610,12 +531,6 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -724,17 +639,6 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -745,12 +649,6 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -840,7 +738,15 @@ exports[`Button emphasis should render disabled button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
+  pointer-events: inherit;
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   color: #ffffff;
+  background-color: #ff7063;
   background-color: #ff7063;
 }
 
@@ -859,9 +765,10 @@ exports[`Button emphasis should render disabled button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
+.c0:hover,
+.c0:active,
+.c0:focus {
+  pointer-events: inherit;
   cursor: not-allowed;
   opacity: 0.4;
   box-shadow: none;
@@ -882,9 +789,9 @@ exports[`Button emphasis should render disabled button 1`] = `
   background-color: #cc594f;
 }
 
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
+.c0:hover,
+.c0:active,
+.c0:focus {
   background-color: #ff7063;
 }
 
@@ -996,17 +903,6 @@ exports[`Button emphasis should render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -1017,12 +913,6 @@ exports[`Button emphasis should render full width 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -1131,17 +1021,6 @@ exports[`Button emphasis should render normal button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -1152,12 +1031,6 @@ exports[`Button emphasis should render normal button 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -1267,17 +1140,6 @@ exports[`Button emphasis should render normal styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #ff8c82;
 }
@@ -1288,12 +1150,6 @@ exports[`Button emphasis should render normal styles 1`] = `
 
 .c0:active {
   background-color: #cc594f;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #ff7063;
 }
 
 .c1 {
@@ -1402,17 +1258,6 @@ exports[`Button empty should render "lg" size styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -1549,17 +1394,6 @@ exports[`Button empty should render "md" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   border-color: #32ccb7;
 }
@@ -1692,17 +1526,6 @@ exports[`Button empty should render "sm" size styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -1839,17 +1662,6 @@ exports[`Button empty should render "xs" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   border-color: #32ccb7;
 }
@@ -1984,17 +1796,6 @@ exports[`Button empty should render inverse styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:active {
   opacity: 0.9;
 }
@@ -2109,17 +1910,6 @@ exports[`Button empty should render normal styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -2254,17 +2044,6 @@ exports[`Button primary should not render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -2275,12 +2054,6 @@ exports[`Button primary should not render full width 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -2389,17 +2162,6 @@ exports[`Button primary should render "lg" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -2410,12 +2172,6 @@ exports[`Button primary should render "lg" size styles 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -2524,17 +2280,6 @@ exports[`Button primary should render "md" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -2545,12 +2290,6 @@ exports[`Button primary should render "md" size styles 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -2659,17 +2398,6 @@ exports[`Button primary should render "sm" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -2680,12 +2408,6 @@ exports[`Button primary should render "sm" size styles 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -2794,17 +2516,6 @@ exports[`Button primary should render "xs" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -2815,12 +2526,6 @@ exports[`Button primary should render "xs" size styles 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -2910,7 +2615,15 @@ exports[`Button primary should render disabled button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
+  pointer-events: inherit;
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   color: #ffffff;
+  background-color: #00c0a5;
   background-color: #00c0a5;
 }
 
@@ -2929,9 +2642,10 @@ exports[`Button primary should render disabled button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
+.c0:hover,
+.c0:active,
+.c0:focus {
+  pointer-events: inherit;
   cursor: not-allowed;
   opacity: 0.4;
   box-shadow: none;
@@ -2952,9 +2666,9 @@ exports[`Button primary should render disabled button 1`] = `
   background-color: #009984;
 }
 
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
+.c0:hover,
+.c0:active,
+.c0:focus {
   background-color: #00c0a5;
 }
 
@@ -3066,17 +2780,6 @@ exports[`Button primary should render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -3087,12 +2790,6 @@ exports[`Button primary should render full width 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -3199,17 +2896,6 @@ exports[`Button primary should render inverse styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:active {
@@ -3322,17 +3008,6 @@ exports[`Button primary should render normal button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -3343,12 +3018,6 @@ exports[`Button primary should render normal button 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -3458,17 +3127,6 @@ exports[`Button primary should render normal styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -3479,12 +3137,6 @@ exports[`Button primary should render normal styles 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -3592,17 +3244,6 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -3734,17 +3375,6 @@ exports[`Button secondary should render "md" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   border-color: #32ccb7;
 }
@@ -3872,17 +3502,6 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -4014,17 +3633,6 @@ exports[`Button secondary should render "xs" size styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   border-color: #32ccb7;
 }
@@ -4154,17 +3762,6 @@ exports[`Button secondary should render inverse styles 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:active {
   opacity: 0.9;
 }
@@ -4274,17 +3871,6 @@ exports[`Button secondary should render normal styles 1`] = `
   -webkit-transform: scale(0.98);
   -ms-transform: scale(0.98);
   transform: scale(0.98);
-}
-
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
 }
 
 .c0:focus {
@@ -4415,17 +4001,6 @@ exports[`Button should not render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -4436,12 +4011,6 @@ exports[`Button should not render full width 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -4550,17 +4119,6 @@ exports[`Button should not render full width 2`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -4571,12 +4129,6 @@ exports[`Button should not render full width 2`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -4666,7 +4218,15 @@ exports[`Button should render disabled button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
+  pointer-events: inherit;
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   color: #ffffff;
+  background-color: #00c0a5;
   background-color: #00c0a5;
 }
 
@@ -4685,9 +4245,10 @@ exports[`Button should render disabled button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
+.c0:hover,
+.c0:active,
+.c0:focus {
+  pointer-events: inherit;
   cursor: not-allowed;
   opacity: 0.4;
   box-shadow: none;
@@ -4708,9 +4269,9 @@ exports[`Button should render disabled button 1`] = `
   background-color: #009984;
 }
 
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
+.c0:hover,
+.c0:active,
+.c0:focus {
   background-color: #00c0a5;
 }
 
@@ -4802,7 +4363,15 @@ exports[`Button should render disabled button 2`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
+  pointer-events: inherit;
+  cursor: not-allowed;
+  opacity: 0.4;
+  box-shadow: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   color: #ffffff;
+  background-color: #00c0a5;
   background-color: #00c0a5;
 }
 
@@ -4821,9 +4390,10 @@ exports[`Button should render disabled button 2`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
+.c0:hover,
+.c0:active,
+.c0:focus {
+  pointer-events: inherit;
   cursor: not-allowed;
   opacity: 0.4;
   box-shadow: none;
@@ -4844,9 +4414,9 @@ exports[`Button should render disabled button 2`] = `
   background-color: #009984;
 }
 
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
+.c0:hover,
+.c0:active,
+.c0:focus {
   background-color: #00c0a5;
 }
 
@@ -4958,17 +4528,6 @@ exports[`Button should render full width 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -4979,12 +4538,6 @@ exports[`Button should render full width 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -5094,17 +4647,6 @@ exports[`Button should render full width 2`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -5115,12 +4657,6 @@ exports[`Button should render full width 2`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -5229,17 +4765,6 @@ exports[`Button should render normal button 1`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -5250,12 +4775,6 @@ exports[`Button should render normal button 1`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
@@ -5365,17 +4884,6 @@ exports[`Button should render normal button 2`] = `
   transform: scale(0.98);
 }
 
-.c0:disabled,
-.c0:disabled:hover,
-.c0:disabled:active {
-  cursor: not-allowed;
-  opacity: 0.4;
-  box-shadow: none;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
 .c0:focus {
   background-color: #32ccb7;
 }
@@ -5386,12 +4894,6 @@ exports[`Button should render normal button 2`] = `
 
 .c0:active {
   background-color: #009984;
-}
-
-.c0:disabled:hover,
-.c0:disabled:active,
-.c0:disabled:focus {
-  background-color: #00c0a5;
 }
 
 .c1 {
