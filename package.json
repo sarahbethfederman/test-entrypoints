@@ -62,7 +62,7 @@
     "clean:node": "lerna clean && rm -rf node_modules",
     "clean:workspaces": "lerna exec 'rm -rf dist'",
     "create-component": "yo @lendi/create-lui-component && rm packages/.yo-rc.json",
-    "format:fix": "prettier --write",
+    "format:fix": "prettier --write '**/*.{json,js,jsx,ts,tsx,md}'",
     "list": "lerna ls",
     "precommit": "yarn run lint-staged",
     "prepush": "yarn run lint-staged && yarn run remove:duplicates && yarn run check && yarn run test && yarn run build --since=master",
