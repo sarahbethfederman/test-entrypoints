@@ -13,6 +13,11 @@ const Wrapper = styled.div`
 
 export class Footer extends React.Component {
   render() {
-    return <Wrapper>Copyright &copy; 2018.</Wrapper>;
+    const CurrentYear = new Date().getFullYear();
+    return (
+      <Wrapper>
+        Copyright &copy; <span className="curYear">{CurrentYear}</span>.
+      </Wrapper>
+    );
   }
 }

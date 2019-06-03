@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - [2019-06-03] - [HUB-202](https://creditandfinance.atlassian.net/browse/HUB-202)
+### Changed
+- Use Javascript to get the current year for LUI website copyright year.
+
 ## 1.2.0 - [2019-05-07] - [HUB-98](https://creditandfinance.atlassian.net/browse/HUB-98)
 ### Added
 - Added 404 page for LUI.
