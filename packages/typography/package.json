@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",

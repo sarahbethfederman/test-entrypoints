@@ -3,6 +3,6 @@ import Footer from './index';
 
 export default () => (
   <>
-    <Footer />
+    <Footer id="footerId" aria-label="myLabel" />
   </>
 );

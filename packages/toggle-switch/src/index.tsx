@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { LUIFormProps } from '@lendi-ui/utils';
 import { Toggle } from './Toggle';
 import { Size, ToggleLabel, Wrapper } from './index.style';
 
-export interface ToggleSwitchProps {
+export interface ToggleSwitchProps extends LUIFormProps {
   className?: string;
   isBoxed?: boolean;
   isChecked?: boolean;
@@ -30,8 +31,9 @@ class ToggleSwitch extends React.Component<ToggleSwitchProps, {}> {
       onChange,
       size = 'md',
       value,
+      ...otherProps
     } = this.props;
-    const toggleProps = { isChecked, isDisabled, isError, isLoading, onChange, name, size, value };
+    const toggleProps = { isChecked, isDisabled, isError, isLoading, onChange, name, size, value, ...otherProps };
     return (
       <Wrapper isBoxed={isBoxed} checked={isChecked} disabled={isDisabled} error={isError} className={className}>
         <Toggle {...toggleProps} />

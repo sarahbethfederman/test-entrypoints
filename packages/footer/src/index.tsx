@@ -5,11 +5,11 @@ import { Social } from './components/Social';
 import { GeneralInfo } from './components/GeneralInfo';
 import { MainPages } from './components/MainPages';
 import { Category, WindowPosition } from '@lendi/lendi-analytics-package';
-import { AnalyticsContextProvider, trackNavigation } from '@lendi-ui/utils';
+import { AnalyticsContextProvider, trackNavigation, LUIGlobalProps } from '@lendi-ui/utils';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
 
-export interface FooterProps {
+export interface FooterProps extends LUIGlobalProps {
   broker?: Broker;
   theme?: ThemeMap;
   params?: string;
@@ -23,9 +23,9 @@ interface Broker {
 }
 
 const Footer = (props: FooterProps) => {
-  const { params } = props;
+  const { params, ...otherProps } = props;
   return (
-    <Wrapper>
+    <Wrapper {...otherProps}>
       <Container>
         <Heading size="md" color="shade.0" mb={{ mobile: 'sm', tablet: 'sm', desktop: 'md' }}>
           Still looking?

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import Tooltip from './index';
+import Tooltip, { TooltipProps } from './index';
 import { ContentWrapper } from './index.style';
 import { Body } from '@lendi-ui/typography';
 import { Heart } from '@lendi-ui/icon';
@@ -37,5 +37,32 @@ describe('tooltip', () => {
       .at(0)
       .simulate('mouseleave');
     expect(element.find(ContentWrapper).props().isOpen).toEqual(false);
+  });
+});
+
+describe('Toolip: test native props and Standard HTML Attributes', () => {
+  let element: ReactWrapper<Tooltip>, attributes: TooltipProps;
+  beforeEach(() => {
+    element = mount(
+      <Theme>
+        <Tooltip
+          content="This is a handy tip 👌"
+          position="right"
+          aria-label="testLabel"
+          aria-describedby="info"
+          id="testId"
+          title="testTitle"
+        />
+      </Theme>
+    );
+    attributes = element.find(Tooltip).props();
+  });
+  it('should mount with Aria attributes', () => {
+    expect(attributes['aria-label']).toBe('testLabel');
+    expect(attributes['aria-describedby']).toBe('info');
+  });
+  it('should mount with native props like id, title', () => {
+    expect(attributes.id).toBe('testId');
+    expect(attributes.title).toBe('testTitle');
   });
 });

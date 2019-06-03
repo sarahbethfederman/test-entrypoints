@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { Wrapper, ContentContainer, BodyContainer } from './index.style';
 import { Heading } from '@lendi-ui/typography';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-const Legal = () => {
+const Legal = (props: LUIGlobalProps) => {
   const CurrentYear = new Date().getFullYear();
   return (
-    <Wrapper>
+    <Wrapper {...props}>
       <ContentContainer>
         <Heading size="md" color="shade.0" mt="sm">
           Important legal stuff

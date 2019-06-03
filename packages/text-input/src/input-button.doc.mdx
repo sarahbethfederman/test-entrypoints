@@ -29,14 +29,18 @@ import {InputButton} from '@lendi-ui/text-input';
 ## Properties
 
 <PropTable>
-  <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The InputButton type"/>
-  <PropTable.Entry name="size" type={`"sm" | "md" | "lg"`} defaultValue="md" description="The InputButton size. *Keep the same size with Input"/>
-  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the InputButton is inversed"/>
-  <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Whether the InputButton takes up the full width of the container"/>
-  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the InputButton responds to user input"/>
-  <PropTable.Entry name="before" type="React.ReactNode" description="Content before the InputButton label"/>
   <PropTable.Entry name="after" type="React.ReactNode" description="Content after the InputButton label"/>
-  <PropTable.Entry name="href" type="string" description="URL to link to"/>
-  <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
+  <PropTable.Entry name="before" type="React.ReactNode" description="Content before the InputButton label"/>
   <PropTable.Entry name="children" type="React.ReactNode" description="The InputButton content"/>
+  <PropTable.Entry name="href" type="string" description="URL to link to"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the InputButton responds to user input"/>
+  <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Whether the InputButton takes up the full width of the container"/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the InputButton is inversed"/>
+  <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
+  <PropTable.Entry name="size" type={`"sm" | "md" | "lg"`} defaultValue="md" description="The InputButton size. *Keep the same size with Input"/>
+  <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The InputButton type"/>
 </PropTable>
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+```

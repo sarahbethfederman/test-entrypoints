@@ -124,4 +124,32 @@ describe('Modal', () => {
       expect(onHide).not.toHaveBeenCalled();
     });
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        show: true,
+        onHide,
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const modalAttributes = element.find(Modal).props();
+      expect(modalAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(modalAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      const TEXT_ID = 'testId';
+      render({
+        show: true,
+        onHide,
+        id: TEXT_ID,
+        tabIndex: 1,
+      });
+      const modalAttributes = element.find(Modal).props();
+      expect(modalAttributes.id).toBe(TEXT_ID);
+      expect(modalAttributes.tabIndex).toBe(1);
+    });
+  });
 });

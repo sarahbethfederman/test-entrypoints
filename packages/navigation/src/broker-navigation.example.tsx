@@ -25,5 +25,7 @@ export default () => (
       employmentHistory: true,
       eConsent: true,
     }}
+    id="brokerNavId"
+    aria-label="brokerNav"
   />
 );

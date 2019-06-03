@@ -3,8 +3,9 @@ import { ArrowContainer } from 'react-tiny-popover';
 import { Position, PopoverWrapper, ContentWrapper } from './index.style';
 import { select } from '@lendi-ui/theme';
 import { withTheme } from 'styled-components';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface PopoverProps {
+export interface PopoverProps extends LUIGlobalProps {
   content?: React.ReactNode;
   target?: React.ReactNode;
   position?: Position;
@@ -28,11 +29,12 @@ class Popover extends React.Component<PopoverProps, PopoverState> {
   };
 
   render() {
-    const { content, target, position } = this.props;
+    const { content, target, position, ...otherProps } = this.props;
     const { isOpen } = this.state;
     const ArrowColor = select('colors.secondary.600')(this.props);
     return (
       <PopoverWrapper
+        {...otherProps}
         disableReposition={true}
         isOpen={isOpen}
         onClickOutside={() => this.setState({ isOpen: false })}

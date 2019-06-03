@@ -93,6 +93,27 @@ describe('Field', () => {
     render({ tooltip });
     expect(wrapper.find(LabelField).length).toEqual(1);
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({ 'aria-label': ARIA_LABEL, 'aria-describedby': ARIA_DESCRIBE_BY });
+      const fieldWrapperAttributes = wrapper.find(FieldWrapper).props();
+      expect(fieldWrapperAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(fieldWrapperAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        tabIndex: 1,
+      });
+      const fieldWrapperAttributes = wrapper.find(FieldWrapper).props();
+      expect(fieldWrapperAttributes.id).toBe(TEXT_ID);
+      expect(fieldWrapperAttributes.tabIndex).toBe(1);
+    });
+  });
 });
 
 describe('field should be a11y(accessibility) by having htmlFor', () => {

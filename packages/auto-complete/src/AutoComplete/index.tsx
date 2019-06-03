@@ -1,5 +1,6 @@
 import * as React from 'react';
 import createRef from 'react-create-ref';
+import { LUIFormProps } from '@lendi-ui/utils';
 import { IconProps } from '@lendi-ui/icon';
 import { Size, CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from './index.style';
 import { debounce } from 'lodash';
@@ -12,7 +13,7 @@ export interface DataSourceItem {
   value: string;
 }
 
-export interface AutoCompleteProps {
+export interface AutoCompleteProps extends LUIFormProps {
   dataSource: ((input: string) => Promise<DataSourceItem[]>) | DataSourceItem[];
   value?: string;
   onSelect?: (item: string) => void;

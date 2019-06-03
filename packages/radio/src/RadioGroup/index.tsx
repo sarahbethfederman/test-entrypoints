@@ -14,9 +14,10 @@ export class RadioGroup extends React.Component<RadioGroupProps> {
       className,
       direction = 'column',
       legend,
+      isDisabled,
       ...radioProps
     } = this.props;
-    const radioGroupWrapperProps = { ...radioProps, isBoxed, selectedValue };
+    const radioGroupWrapperProps = { isBoxed, selectedValue, isDisabled };
 
     return (
       <RadioContext.Provider value={radioGroupWrapperProps}>
@@ -24,7 +25,9 @@ export class RadioGroup extends React.Component<RadioGroupProps> {
           <Legend>
             <Body>{legend}</Body>
           </Legend>
-          <Wrapper direction={direction}>{children}</Wrapper>
+          <Wrapper direction={direction} {...radioProps}>
+            {children}
+          </Wrapper>
         </Fieldset>
       </RadioContext.Provider>
     );

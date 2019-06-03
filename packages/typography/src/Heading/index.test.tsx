@@ -49,4 +49,28 @@ describe('Heading', () => {
     render({ size: 'xl', m: 'md' });
     expect(wrapper.find(Heading)).toHaveStyleRule('margin', `${deriveSize(1.5)}`);
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const attributes = wrapper.find(Heading).props();
+      expect(attributes['aria-label']).toBe(ARIA_LABEL);
+      expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, itemId', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        itemID: 'itemId',
+      });
+      const attributes = wrapper.find(Heading).props();
+      expect(attributes.id).toBe(TEXT_ID);
+      expect(attributes['itemID']).toBe('itemId');
+    });
+  });
 });

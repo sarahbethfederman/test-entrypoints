@@ -146,6 +146,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
               checked={false}
               disabled={false}
               error={false}
+              isLoading={false}
               onChange={[MockFunction]}
               type="checkbox"
               value="1"

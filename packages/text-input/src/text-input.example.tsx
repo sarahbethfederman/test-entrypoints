@@ -47,6 +47,28 @@ class Example extends React.Component<{}, ExampleState> {
           onChange={this.onChange}
           placeholder="I'm really, really long and so very full-width 😳"
         />
+        <br />
+        <br />
+        Examples with native html props like disabled and AriaAttributes.
+        <br />
+        <Input
+          isFullWidth
+          value={value}
+          disabled
+          placeholder="Native props 'disabled'"
+          onChange={this.onChange}
+          aria-label="text-input"
+        />
+        <br /> <br />
+        <Input
+          isFullWidth
+          value={value}
+          disabled
+          isDisabled
+          placeholder="Both 'isDisabled' and 'disabled' - Preference is given to InputProps - 'isDisabled"
+          onChange={this.onChange}
+        />
+        <br />
       </div>
     );
   }

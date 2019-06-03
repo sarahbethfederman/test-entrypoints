@@ -12,17 +12,22 @@ import {Radio} from '@lendi-ui/radio';
 
 ```
 
-### Notes 
-Radio should only be used when there are two or more options. If there is a single option, consider using a checkbox instead. 
-
 ## Properties
-
 <PropTable>
-  <PropTable.Entry name="value" type="string" default="" description="Radio value"/>
-  <PropTable.Entry name="label" type="string" default="" description="Radio display label"/>
-  <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>) => void" default="" description="Radio onChange function"/>
-  <PropTable.Entry name="isDisabled" type="boolean" default="false" description="Whether Radio is disabled/unclickable"/>
-  <PropTable.Entry name="isChecked" type="boolean" default="false" description="Whether Radio is selected"/>
-  <PropTable.Entry name="isBoxed" type="boolean" default="false" description="Whether Radio is wrapped by a box"/>
+  <PropTable.Entry name="className" defaultValue=""type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="label" type="string" description="Radio display value."/> <PropTable.Entry name="isChecked" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isBoxed" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isDisabled" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="onChange" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="value" type="string" description="Radio value."/>
 </PropTable>
+
+
+### Notes
+Radio should only be used when there are two or more options. If there is a single option, consider using a checkbox instead. 
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+```
+
+
 

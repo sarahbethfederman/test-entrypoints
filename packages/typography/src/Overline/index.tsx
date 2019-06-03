@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
 import { select } from '@lendi-ui/theme';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, LUIGlobalProps } from '@lendi-ui/utils';
 import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
@@ -47,7 +47,7 @@ const overlineSizeMixin = (size: OverlineSize) =>
     }
   });
 
-export interface OverlineOptions {
+export interface OverlineOptions extends LUIGlobalProps {
   colorScheme?: 'light' | 'dark';
   size: OverlineSize;
   align?: OverlineAlignment;

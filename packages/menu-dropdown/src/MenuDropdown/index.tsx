@@ -3,6 +3,9 @@ import { MenuDropdownContent } from '../MenuDropdownContent';
 import { MenuDropdownTrigger } from '../MenuDropdownTrigger';
 import { Wrapper, ItemContainer, TopItemContainer } from './index.style';
 import createRef from 'react-create-ref';
+import { LUIGlobalProps } from '@lendi-ui/utils';
+
+export interface MenuDropDownProps extends LUIGlobalProps {}
 
 export interface DropdownState {
   showDropdown: boolean;
@@ -16,7 +19,7 @@ function getChildrenOf(component: React.ReactType, children: React.ReactNode) {
   return foundChildren || null;
 }
 
-export default class MenuDropdown extends React.Component<{}, DropdownState> {
+export default class MenuDropdown extends React.Component<MenuDropDownProps, DropdownState> {
   static Content = MenuDropdownContent;
   static Trigger = MenuDropdownTrigger;
 
@@ -59,10 +62,10 @@ export default class MenuDropdown extends React.Component<{}, DropdownState> {
   };
 
   render() {
-    const { children } = this.props;
+    const { children, ...otherProps } = this.props;
     const { showDropdown } = this.state;
     return (
-      <Wrapper innerRef={this.node}>
+      <Wrapper innerRef={this.node} {...otherProps}>
         <TopItemContainer>{getChildrenOf(MenuDropdownTrigger, children)}</TopItemContainer>
         <ItemContainer displayDropdown={showDropdown}>{getChildrenOf(MenuDropdownContent, children)}</ItemContainer>
       </Wrapper>

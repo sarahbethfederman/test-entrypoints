@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { CheckboxGroup } from './index';
 import { Checkbox } from '../Checkbox/index';
 import { Wrapper } from './index.style';
 
-let element;
+let element: ReactWrapper<CheckboxGroup>;
 
 const items = {
   values: ['1'],
@@ -51,5 +51,29 @@ describe('checkbox group', () => {
     render({ isDisabled });
     const checkboxs = element.find(Checkbox);
     checkboxs.forEach((checkbox) => expect(checkbox.prop('isDisabled')).toEqual(true));
+  });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const attributes = element.find(CheckboxGroup).props();
+      expect(attributes['aria-label']).toBe(ARIA_LABEL);
+      expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        tabIndex: 1,
+      });
+      const attributes = element.find(CheckboxGroup).props();
+      expect(attributes.id).toBe(TEXT_ID);
+      expect(attributes.tabIndex).toBe(1);
+    });
   });
 });

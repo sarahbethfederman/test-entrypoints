@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",

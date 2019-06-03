@@ -45,3 +45,23 @@ describe('Popover', () => {
     expect(element.find(PopoverWrapper).props().isOpen).toEqual(false);
   });
 });
+
+describe('Navigation: test native props and Standard HTML Attributes', () => {
+  let attributes;
+  beforeEach(() => {
+    element = mount(
+      <Theme>
+        <Popover aria-label="testLabel" aria-describedby="info" id="testId" title="testTitle" content={<></>} />
+      </Theme>
+    );
+    attributes = element.find(Popover).props();
+  });
+  it('should mount with Aria attributes', () => {
+    expect(attributes['aria-label']).toBe('testLabel');
+    expect(attributes['aria-describedby']).toBe('info');
+  });
+  it('should mount with native props like id, title', () => {
+    expect(attributes.id).toBe('testId');
+    expect(attributes.title).toBe('testTitle');
+  });
+});

@@ -7,13 +7,13 @@ import { RightSidebar } from './RightSidebar';
 import { RightPanelSection } from './RightPanelSection';
 import { Application, Broker } from './types';
 import { Wrapper } from './index.style';
-import { AnalyticsContextProvider } from '@lendi-ui/utils';
+import { AnalyticsContextProvider, LUIGlobalProps } from '@lendi-ui/utils';
 import { analysticHelper } from './helpers/helpers';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
 
-export interface NavProps {
+export interface NavProps extends LUIGlobalProps {
   isAuthenticated?: boolean;
   application?: Application;
   broker?: Broker;
@@ -59,9 +59,19 @@ class Navbar extends React.Component<NavProps, NavState> {
 
   render() {
     const { isLeftSidebarVisible, isRightSidebarVisible } = this.state;
-    const { isAuthenticated, application, broker, onChat, onLogout, variant, theme, params = '' } = this.props;
+    const {
+      isAuthenticated,
+      application,
+      broker,
+      onChat,
+      onLogout,
+      variant,
+      theme,
+      params = '',
+      ...otherProps
+    } = this.props;
     return (
-      <Wrapper>
+      <Wrapper {...otherProps}>
         <AnalyticsContextProvider
           value={{
             analyticsForNavigation: (text: string, position: WindowPosition) =>

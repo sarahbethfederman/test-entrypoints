@@ -12,7 +12,7 @@ import Modal from '@lendi-ui/modal';
 ```jsx
 // Note: setting the prop "show" to "true" will not open the modal here. For a working example you can go to the example page, linked above.
 
-  <Modal show={false} size="md" onHide={this.onHide}>
+  <Modal show={false} size="md" onHide={this.onHide} id="modalId">
     <Modal.Content>
       <Body>
         You already started an application on the 15th of May, 2019.
@@ -34,9 +34,9 @@ import Modal from '@lendi-ui/modal';
 ## Modal Properties
 
 <PropTable>
-  <PropTable.Entry name="show" type="boolean" defaultValue="false" description=""/>
   <PropTable.Entry name="onHide" type="() => void" description="Handle closing the modal"/>
   <PropTable.Entry name="size" type={ '"sm" | "md" | "lg"' } defaultValue="md" description=""/>
+  <PropTable.Entry name="show" type="boolean" defaultValue="false" description=""/>
 </PropTable>
 
 <br/><br/>
@@ -52,4 +52,11 @@ import Modal from '@lendi-ui/modal';
 <PropTable>
   <PropTable.Entry name="children" type="React.ReactNode" description="The footer on modal"/>
 </PropTable>
+
+
+### Notes
+
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+```
 

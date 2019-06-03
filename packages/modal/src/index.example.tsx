@@ -99,7 +99,13 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(4)}>
           Open the large one 👨🏻‍🦳
         </Button>
-        <Modal show={active && modal === 4 ? true : false} size="lg" onHide={this.onHide}>
+        <Modal
+          show={active && modal === 4 ? true : false}
+          size="lg"
+          onHide={this.onHide}
+          id="testId"
+          className="testClass"
+        >
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />

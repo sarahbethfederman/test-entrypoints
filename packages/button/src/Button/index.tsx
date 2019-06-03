@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getDataProps } from '@lendi-ui/utils';
+import { getDataProps, LUIGlobalProps } from '@lendi-ui/utils';
 import {
   ButtonVariant,
   ButtonSize,
@@ -12,7 +12,7 @@ import {
 
 export { ButtonSize, ButtonVariant };
 
-export interface ButtonProps {
+export interface ButtonProps extends LUIGlobalProps {
   ariaLabel?: string;
   variant: ButtonVariant;
   size?: ButtonSize;
@@ -70,10 +70,10 @@ export class Button extends React.Component<ButtonProps> {
   };
 
   render() {
-    const { href, isDisabled } = this.props;
+    const { href, isDisabled, ...otherProps } = this.props;
     if (href) {
       return (
-        <LinkWrapper {...this.commonProps} {...this.linkProps} onClick={this.handleLinkClick}>
+        <LinkWrapper {...otherProps} {...this.commonProps} {...this.linkProps} onClick={this.handleLinkClick}>
           {this.renderContent()}
         </LinkWrapper>
       );
@@ -92,6 +92,7 @@ export class Button extends React.Component<ButtonProps> {
           disabled={isDisabled}
           {...getDataProps(this.props)}
           {...this.commonProps}
+          {...otherProps}
         >
           {this.renderContent()}
         </ButtonWrapper>

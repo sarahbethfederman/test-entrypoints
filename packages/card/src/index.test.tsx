@@ -57,4 +57,28 @@ describe('Card', () => {
     expect(wrapper.find(Card).props().rightHeaderContent).toBeDefined();
     expect(wrapper.find(Card)).toMatchSnapshot();
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const cardAttributes = wrapper.find(Card).props();
+      expect(cardAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(cardAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        tabIndex: 1,
+      });
+      const cardAttributes = wrapper.find(Card).props();
+      expect(cardAttributes.id).toBe(TEXT_ID);
+      expect(cardAttributes.tabIndex).toBe(1);
+    });
+  });
 });

@@ -10,7 +10,7 @@ import {CheckboxGroup} from '@lendi-ui/checkbox';
 <CheckboxGroup values={[]} onChange={() => {}}>
   <CheckboxGroup.Checkbox
     label='LUI CheckboxGroup option 1'
-    value='1'
+    value='1' id="testId" aria-label="checkbox-label"
   />
   <CheckboxGroup.Checkbox
     label='LUI CheckboxGroup option 2'
@@ -42,3 +42,7 @@ import {CheckboxGroup} from '@lendi-ui/checkbox';
   <PropTable.Entry name="label" type="string" description="Checkbox display label"/>
   <PropTable.Entry name="value" required type="string" description="Checkbox value"/>
 </PropTable>
+
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

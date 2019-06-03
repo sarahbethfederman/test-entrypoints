@@ -1,4 +1,8 @@
 # Changelog - @lendi-ui/utils
+## [2.5.0] - 2019-05-27] - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
+### Added
+- LUI Whitelist props - constant defines what All LUI component can extends as prop.
+
 ## [2.4.0] - 2019-05-20] - [HUB-110](https://creditandfinance.atlassian.net/browse/HUB-110)
 ### Added
 - Lendi Analytics utility - added AnalyticsContext and Service Util to add analytics

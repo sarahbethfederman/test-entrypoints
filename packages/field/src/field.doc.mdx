@@ -8,7 +8,7 @@ import Field from '@lendi-ui/field';
 
 ```jsx
 // still need to implement Tooltip
-    <Field 
+    <Field id="fieldId"
         size={{mobile:'sm', tablet:'sm', desktop:'lg'}}
         label='This is a label'
         assistiveText='Assistive text'
@@ -42,3 +42,7 @@ import Field from '@lendi-ui/field';
   <PropTable.Entry name="tooltip" type="React.ReactNode" description="ToolTip"/>
   <PropTable.Entry name="touched" type="boolean" description="Whether the user has interacted with the field"/>
 </PropTable>
+
+### Notes
+
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

@@ -47,4 +47,8 @@ import { Navigation, Menu, MenuItem } from '@lendi-ui/navigation';
   <Menu menuTitle="Loan Progress" isOpen={false} onClick={() => {}} />
   <Menu menuTitle="Deal IQ" isOpen={false} onClick={() => {}} />
 </Navigation>;
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
 ```

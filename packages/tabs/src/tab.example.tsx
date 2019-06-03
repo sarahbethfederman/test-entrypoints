@@ -15,7 +15,14 @@ export default class TabsExample extends React.Component {
   render() {
     return (
       <Container>
-        <Tabs onChange={(activeTab) => this.setState({ activeTab })} activeTab={this.state.activeTab} isInverse>
+        <Tabs
+          id="tabId"
+          data-data="moreData"
+          aria-label="tabLabel"
+          onChangeTab={(activeTab) => this.setState({ activeTab })}
+          activeTab={this.state.activeTab}
+          isInverse
+        >
           <Tabs.Tab icon={<Lock color="secondary.500" />}>1</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>2</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>3</Tabs.Tab>
@@ -24,7 +31,7 @@ export default class TabsExample extends React.Component {
         </Tabs>
         <br />
         <br />
-        <Tabs onChange={(activeTab) => this.setState({ activeTab })} activeTab={this.state.activeTab}>
+        <Tabs onChangeTab={(activeTab) => this.setState({ activeTab })} activeTab={this.state.activeTab}>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>1</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>2</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>3</Tabs.Tab>

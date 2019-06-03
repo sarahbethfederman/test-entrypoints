@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Wrapper, CollapseBody, CollapseFooter, CollapsePanel, CollapseContent, Size } from './index.style';
 import CollapseHeaderSection from './CollapseHeader';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface CollapseProps {
+export interface CollapseProps extends LUIGlobalProps {
   title: string;
   subTitle?: string;
   isExpanded?: boolean;
@@ -35,9 +36,9 @@ export default class Collapse extends React.Component<CollapseProps, CollapseSta
   };
 
   render() {
-    const { title, subTitle = '', headerSize = 'xs', footer, children, className } = this.props;
+    const { title, subTitle = '', headerSize = 'xs', footer, children, onClick, ...otherProps } = this.props;
     return (
-      <Wrapper className={className}>
+      <Wrapper {...otherProps}>
         <CollapsePanel onClick={this.collapse} isExpanded={this.state.isExpanded} isFooterAdded={footer ? true : false}>
           <CollapseHeaderSection
             title={title}

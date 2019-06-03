@@ -1,15 +1,16 @@
 import * as React from 'react';
 import { Wrapper, StatusBadgeVariant, StatusBadgeSize, IconWrapper, ContentWrapper } from './index.style';
 import { InfoTwo, SuccessTwo, WarnTwo } from '@lendi-ui/icon';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface StatusBadgeProps {
+export interface StatusBadgeProps extends LUIGlobalProps {
   variant: StatusBadgeVariant;
   size?: StatusBadgeSize;
   hasIcon?: boolean;
   statusText?: string;
 }
 
-const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm' }: StatusBadgeProps) => {
+const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm', ...otherProps }: StatusBadgeProps) => {
   let badgeIcon;
   const withIcon = !!hasIcon;
   const iconHeight = size === 'lg' ? '1.5em' : '1em';
@@ -28,7 +29,7 @@ const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm' }: Stat
       break;
   }
   return (
-    <Wrapper variant={variant} withIcon={withIcon}>
+    <Wrapper variant={variant} withIcon={withIcon} {...otherProps}>
       {withIcon && <IconWrapper>{badgeIcon}</IconWrapper>}
       <ContentWrapper size={size}>{statusText}</ContentWrapper>
     </Wrapper>

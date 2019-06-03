@@ -8,7 +8,7 @@ import Tabs from '@lendi-ui/tabs';
 ```
 
 ```jsx
-<Tabs onChange={() => alert('changed')} activeTab={1}>
+<Tabs onChangeTab={() => alert('changed')} activeTab={1}>
     <Tabs.Tab icon={<Heart color="secondary.500"/>} href="https://lendi.com.au">
         string
     </Tabs.Tab>
@@ -57,9 +57,9 @@ import Tabs from '@lendi-ui/tabs';
 ## Tabs Properties
 
 <PropTable>
-  <PropTable.Entry name="isInverse" type="boolean" defaultValue="false" description="Whether the background is primary.500 (false) or transparent (true)."/>
-  <PropTable.Entry name="onChange" type="(key: number) => void" description="Handle the change event."/>
   <PropTable.Entry name="activeTab" type="number" description="Index of the active tab."/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue="false" description="Whether the background is primary.500 (false) or transparent (true)."/>
+  <PropTable.Entry name="onChangeTab" type="(key: number) => void" description="Handle the change event."/>
 </PropTable>
 
 <br/><br/>
@@ -67,6 +67,10 @@ import Tabs from '@lendi-ui/tabs';
 ## Tabs.Tab Properties
 
 <PropTable>
-  <PropTable.Entry name="icon" type="React.ReactNode" description="Icon on top of text."/>
   <PropTable.Entry name="href" type="string" description="URL to link to."/>
+  <PropTable.Entry name="icon" type="React.ReactNode" description="Icon on top of text."/>
 </PropTable>
+
+### Notes
+
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

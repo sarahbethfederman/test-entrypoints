@@ -4,14 +4,14 @@ import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions, my } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
-import { deriveSize } from '@lendi-ui/utils';
+import { deriveSize, LUIGlobalProps } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
 type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type HeadingSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type HeadingAlignment = AlignmentOrAlignmentMap;
 
-export interface HeadingOptions {
+export interface HeadingOptions extends LUIGlobalProps {
   size: HeadingSize;
   color?: string;
   align?: HeadingAlignment;

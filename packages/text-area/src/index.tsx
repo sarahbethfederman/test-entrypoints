@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Size, TextAreaWrapper } from './index.style';
-export interface TextAreaProps {
+import { LUIFormProps } from '@lendi-ui/utils';
+
+export interface TextAreaProps extends LUIFormProps {
   size?: Size;
   isError?: boolean;
   isInverse?: boolean;

@@ -27,12 +27,12 @@ import { RadioGroup } from '@lendi-ui/radio';
 ````
 
 <PropTable>
-  <PropTable.Entry name="value" type="string" description="Radio value."/>
-  <PropTable.Entry name="label" type="string" description="Radio display value."/> <PropTable.Entry name="isChecked" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="isDisabled" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="isBoxed" type="boolean" description="Whether the Radio is checked or not."/>
   <PropTable.Entry name="className" defaultValue=""type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="label" type="string" description="Radio display value."/> <PropTable.Entry name="isChecked" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isBoxed" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isDisabled" type="boolean" description="Whether the Radio is checked or not."/>
   <PropTable.Entry name="onChange" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="value" type="string" description="Radio value."/>
 </PropTable>
 ```
 
@@ -40,10 +40,15 @@ import { RadioGroup } from '@lendi-ui/radio';
 
 ```
 <PropTable>
-  <PropTable.Entry name="selectedValue" type="string" description="A single value set by the selected radio button."/>
   <PropTable.Entry name="direction" type='{"row" | "column"}' defaultValue={"column"} description="RadioGroup display direction."/>
   <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether all items in RadioGroup are wrapped by box."/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether all items in RadioGroup are disabled."/>
   <PropTable.Entry name="onChange*" type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Radio onChange function."/>
+  <PropTable.Entry name="selectedValue" type="string" description="A single value set by the selected radio button."/>
 </PropTable>
+
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
 ```

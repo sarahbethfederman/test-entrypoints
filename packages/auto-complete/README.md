@@ -25,7 +25,7 @@ import {auto-complete} from '@lendi-ui/auto-complete';
 
 ```
 <PropTable>
-    <PropTable.Entry name="before" type="React.ReactElement" description="Before icon for AutoComplete"/>
+  <PropTable.Entry name="before" type="React.ReactElement" description="Before icon for AutoComplete"/>
   <PropTable.Entry name="className" type="string" description="External classname to override style of the component"/>
   <PropTable.Entry name="dataSource" required type="(input) => Promise.resolve([{label, value}]) | [{label, value}]"
    description="Datasource - It could resolve to a promise of an array of {label, value} or just an array of {label, value}, where label is searchable"/>
@@ -41,4 +41,8 @@ import {auto-complete} from '@lendi-ui/auto-complete';
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>
   <PropTable.Entry name="value" type="string" description="AutoComplete value"/>
 </PropTable>
+
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

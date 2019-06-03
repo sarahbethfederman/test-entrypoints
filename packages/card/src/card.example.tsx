@@ -29,6 +29,10 @@ export default () => (
         Child card
       </Card>
       <Card interactiveTitle={<Dropdown items={items} />}>Interactive Card title - Dropdown</Card>
+      <Card title="Aria Attributes" aria-label="aria label" className="fakeClass" id="myId">
+        Support for native props like Aria label, React-specific Attributes, Standard HTML Attributes like title,
+        classname, id, role, itemProps, itemID, itemRef
+      </Card>
     </Card>
   </>
 );

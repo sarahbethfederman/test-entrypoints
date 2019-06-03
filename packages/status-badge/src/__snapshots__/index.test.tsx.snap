@@ -177,11 +177,13 @@ exports[`StatusBadge it should mount StatusBadge component without icon 1`] = `
   variant="success"
 >
   <styled.div
+    icon={false}
     variant="success"
     withIcon={true}
   >
     <div
       className="c0"
+      icon={false}
     >
       <styled.span>
         <span

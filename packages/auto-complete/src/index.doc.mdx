@@ -35,17 +35,15 @@ Without Promise
   {
     label: 'ANZ Bank2',
     value: 'anz',
-  }]} isFullWidth={true}/>
+  }]} isFullWidth={true} id="testId" aria-label="testLabel"/>
 <br/><br/>
 </>
 
 ```
 
 ## Properties
-
 <PropTable>
-  <PropTable>
-    <PropTable.Entry name="before" type="React.ReactElement" description="Before icon for AutoComplete"/>
+  <PropTable.Entry name="before" type="React.ReactElement" description="Before icon for AutoComplete"/>
   <PropTable.Entry name="className" type="string" description="External classname to override style of the component"/>
   <PropTable.Entry name="dataSource" required type="(input) => Promise.resolve([{label, value}]) | [{label, value}]"
    description="Datasource - It could resolve to a promise of an array of {label, value} or just an array of {label, value}, where label is searchable"/>
@@ -61,4 +59,8 @@ Without Promise
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>
   <PropTable.Entry name="value" type="string" description="AutoComplete value"/>
 </PropTable>
-</PropTable>
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+```

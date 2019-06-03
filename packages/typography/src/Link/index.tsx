@@ -3,10 +3,11 @@ import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { body, BodySize } from '../Body';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export type LinkSize = BodySize;
 
-export interface LinkOptions {
+export interface LinkOptions extends LUIGlobalProps {
   color?: string;
   size?: LinkSize;
 }

@@ -83,6 +83,31 @@ describe('Dropdown', () => {
     render({ isDisabled });
     expect(Wrapper.find('Dropdown__DropdownWrapper')).toMatchSnapshot();
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const selectAttributes = Wrapper.find('select').props();
+      expect(selectAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(selectAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, title', () => {
+      const TEXT_ID = 'testId';
+      const TEXT_TITLE = 'testTitle';
+      render({
+        id: TEXT_ID,
+        title: TEXT_TITLE,
+      });
+      const selectAttributes = Wrapper.find('select').props();
+      expect(selectAttributes.id).toBe(TEXT_ID);
+      expect(selectAttributes.title).toBe(TEXT_TITLE);
+    });
+  });
 });
 
 describe('Dropdown onChange', () => {

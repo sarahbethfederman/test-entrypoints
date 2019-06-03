@@ -8,7 +8,7 @@ import {Button} from '@lendi-ui/button';
 
 ```jsx
 <>
-<Button variant="primary" size='xs'>Continue</Button>
+<Button variant="primary" size='xs' id="buttonId" aria-label="buttonLabel">Continue</Button>
 <br/><br/>
 <Button variant="primary">Continue</Button>
 <br/><br/>
@@ -19,9 +19,6 @@ import {Button} from '@lendi-ui/button';
 <Button variant="primary" size={{mobile:'sm', tablet:'md', desktop:'lg'}}>Continue</Button>
 </>
 ```
-
-### Notes 
-Any properties starting with data- will be passed through to the button element.
 
 ## Properties
 
@@ -39,3 +36,10 @@ Any properties starting with data- will be passed through to the button element.
   <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The button size"/>
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
+
+
+### Notes
+Any properties starting with data- will be passed through to the button element.
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+```

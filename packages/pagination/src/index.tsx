@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Wrapper, ChevronLeftIcon, ChevronRightIcon, ButtonWrapper, IconButtonWrapper } from './index.style';
-
-export interface PaginationProps {
+import { LUIGlobalProps } from '@lendi-ui/utils';
+export interface PaginationProps extends LUIGlobalProps {
   currentPage?: number;
   totalPages: number;
   visiblePages?: number;
@@ -39,7 +39,14 @@ const pageRange = (totalPages: number, visiblePages: number, currentPage: number
   }
 };
 
-const Pagination = ({ totalPages, visiblePages = 7, currentPage = 1, handleChange, handleClick }: PaginationProps) => {
+const Pagination = ({
+  totalPages,
+  visiblePages = 7,
+  currentPage = 1,
+  handleChange,
+  handleClick,
+  ...otherProps
+}: PaginationProps) => {
   const MAX_PAGE = totalPages;
   const MIN_PAGE = 1;
   if (currentPage > MAX_PAGE) {
@@ -50,7 +57,7 @@ const Pagination = ({ totalPages, visiblePages = 7, currentPage = 1, handleChang
     currentPage = MIN_PAGE;
   }
   return (
-    <Wrapper>
+    <Wrapper {...otherProps}>
       <IconButtonWrapper
         variant="secondary"
         isDisabled={currentPage === 1}

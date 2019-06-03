@@ -9,8 +9,9 @@ import {
   YearInputWrapper,
   DatePickerSize,
 } from './index.style';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface DatePickerProps {
+export interface DatePickerProps extends LUIGlobalProps {
   size?: DatePickerSize;
   hasDayField?: boolean;
   isError?: boolean;
@@ -37,6 +38,7 @@ const DatePicker = (props: DatePickerProps) => {
     yearValue,
     yearOnChange,
     className,
+    ...otherProps
   } = props;
 
   const re = /^[0-9\b]+$/;
@@ -59,7 +61,14 @@ const DatePicker = (props: DatePickerProps) => {
   };
 
   return (
-    <Wrapper size={size} isError={isError} isDisabled={isDisabled} className={className} hasDayField={hasDayField}>
+    <Wrapper
+      size={size}
+      isError={isError}
+      isDisabled={isDisabled}
+      className={className}
+      hasDayField={hasDayField}
+      {...otherProps}
+    >
       <IconWrapper size={size}>
         <Calendar color={isDisabled ? 'shade.300' : 'primary.500'} />
       </IconWrapper>

@@ -34,11 +34,27 @@ export class Toggle extends React.Component<ToggleProps, {}> {
   };
 
   render() {
-    const { isChecked = false, isDisabled = false, isError = false, onChange, name, size = 'md', value } = this.props;
+    const {
+      isChecked = false,
+      isDisabled = false,
+      isError = false,
+      onChange,
+      name,
+      size = 'md',
+      value,
+      ...otherProps
+    } = this.props;
     const commonProps = { checked: isChecked, disabled: isDisabled, error: isError };
     return (
       <ToggleWrapper size={size}>
-        <ToggleCheckbox name={name} {...commonProps} type="checkbox" value={value} onChange={onChange} />
+        <ToggleCheckbox
+          name={name}
+          {...commonProps}
+          type="checkbox"
+          value={value}
+          onChange={onChange}
+          {...otherProps}
+        />
         <ToggleTrack {...commonProps} size={size} />
         <ToggleHandle {...commonProps} size={size}>
           {this.getHandleIcon()}

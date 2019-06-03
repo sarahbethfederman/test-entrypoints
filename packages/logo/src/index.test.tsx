@@ -4,6 +4,7 @@ import Logo from '.';
 import Theme from '@lendi-ui/theme';
 import { theme as domainTheme } from '@lendi-ui/theme-domain';
 import { LendiLogo, DomainLogo } from '@lendi-ui/icon';
+import { element } from 'prop-types';
 
 /**
  * Test case Logo
@@ -68,6 +69,25 @@ describe('Logo', () => {
     });
     it('it should render domain logo', () => {
       expect(Wrapper.find(DomainLogo).length).toEqual(1);
+    });
+  });
+  describe('test native props and Standard HTML Attributes', () => {
+    let logoAttributes;
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme kind={domainTheme}>
+          <Logo aria-label="testLabel" aria-describedby="info" id="testId" tabIndex={Number(1)} />
+        </Theme>
+      );
+      logoAttributes = Wrapper.find(Logo).props();
+    });
+    it('should mount with Aria attributes', () => {
+      expect(logoAttributes['aria-label']).toBe('testLabel');
+      expect(logoAttributes['aria-describedby']).toBe('info');
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      expect(logoAttributes.id).toBe('testId');
+      expect(logoAttributes.tabIndex).toBe(1);
     });
   });
 });

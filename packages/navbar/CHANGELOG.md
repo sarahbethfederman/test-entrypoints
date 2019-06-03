@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/navbar
 
+## [2.4.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
+### Changed
+- Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
+
 ## [2.3.3] - 2019-05-24 - [HUB-147](https://creditandfinance.atlassian.net/browse/HUB-147)
 ### Changed
 - Update the logo size in the Header and LeftSidebar based on the currently selected theme.

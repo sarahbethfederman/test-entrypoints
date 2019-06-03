@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as createReactContext from 'create-react-context';
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
+import { LUIGlobalProps } from '@lendi-ui/utils/src';
 
 // @ts-ignore
 const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
@@ -22,11 +23,12 @@ const ButtonGroupButton: React.SFC<ButtonGroupButtonProps> = (props) => (
   <ButtonContext.Consumer>{(state: ButtonGroupContext) => <Button {...props} {...state} />}</ButtonContext.Consumer>
 );
 
-export interface ButtonGroupContext {
+export interface ButtonGroupContext extends LUIGlobalProps {
   size?: ButtonSize;
   isInverse?: boolean;
   className?: string;
   isFullWidth?: boolean;
+  isDisabled?: boolean;
 }
 
 export interface ButtonGroupProps extends ButtonGroupContext {
@@ -42,11 +44,12 @@ export class ButtonGroup extends React.Component<ButtonGroupProps> {
   static Button = ButtonGroupButton;
 
   render() {
-    const { size = 'md', className, isFullWidth, children, ...btnProps } = this.props;
-    const buttonGroupWrapperProps = { ...btnProps, size, isFullWidth };
+    const { size = 'md', className, isFullWidth, children, isInverse, isDisabled, ...btnProps } = this.props;
+    const buttonGroupWrapperProps = { size, isFullWidth, isInverse, isDisabled };
+
     return (
       <ButtonContext.Provider value={buttonGroupWrapperProps}>
-        <Wrapper className={className} size={size} isFullWidth={isFullWidth}>
+        <Wrapper className={className} size={size} isFullWidth={isFullWidth} {...btnProps}>
           {children}
         </Wrapper>
       </ButtonContext.Provider>

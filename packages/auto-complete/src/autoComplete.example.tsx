@@ -41,5 +41,20 @@ export default () => (
     <AutoComplete isAutoFocus={true} dataSource={MOCK_DATA_SOURCE} isFullWidth={true} />
     <br />
     <br />
+    <strong>
+      Support for native props like Aria label, Standard HTML Attributes like title, classname, id, role, itemProps,
+      itemID, itemRef
+    </strong>
+    <AutoComplete
+      isAutoFocus={true}
+      dataSource={MOCK_DATA_SOURCE}
+      isFullWidth={true}
+      aria-label="aria label"
+      className="fakeClass"
+      id="myId"
+      title="hello alert"
+    />
+    <br />
+    <br />
   </>
 );

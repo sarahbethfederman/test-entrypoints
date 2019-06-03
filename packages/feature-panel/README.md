@@ -44,8 +44,8 @@ import { FeaturePanel } from '@lendi-ui/feature-panel';
 ```
 <PropTable>
   <PropTable.Entry name="icon" type="React.ReactNode" description="LUI icon"/>
-  <PropTable.Entry name="title" type="React.ReactNode" description="Feature panel single item title"/>
   <PropTable.Entry name="subtitle" type="React.ReactNode" description="Feature panel single item subtitle"/>
+  <PropTable.Entry name="title" type="React.ReactNode" description="Feature panel single item title"/>
 </PropTable>
 ```
 
@@ -56,3 +56,7 @@ import { FeaturePanel } from '@lendi-ui/feature-panel';
   <PropTable.Entry name="FeaturePanel.Item" type="React.ReactElement<FeatureItemProps> | React.ReactElement<FeatureItemProps>[]" description="Feature panel wrapper"/>
 </PropTable>
 ```
+
+### Notes
+
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

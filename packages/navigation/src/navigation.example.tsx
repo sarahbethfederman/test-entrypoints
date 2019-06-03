@@ -153,7 +153,7 @@ class Example extends React.Component<{}, ExampleState> {
   render() {
     const { menuState, currentProgress, productProgress } = this.state;
     return (
-      <Navigation width="376px">
+      <Navigation width="376px" id="navigationId" aria-label="navigationLabel" data-text="nav-text">
         <Menu menuTitle="Loan Profile" isOpen={menuState.loanProfile} onClick={this.onClick}>
           <MenuItem
             itemHeader="Loan structure"

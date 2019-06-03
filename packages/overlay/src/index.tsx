@@ -3,8 +3,9 @@ import ScrollLock from 'react-scrolllock';
 import { Fade } from '@lendi-ui/transition';
 import { Wrapper } from './index.style';
 import { polyfill } from 'react-lifecycles-compat';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface OverlayProps {
+export interface OverlayProps extends LUIGlobalProps {
   show: boolean;
   hideOnClick?: boolean;
   hideOnEscape?: boolean;
@@ -66,12 +67,12 @@ class Overlay extends React.Component<OverlayProps> {
   }
 
   public render() {
-    const { show, children, zIndex } = this.props;
+    const { show, children, zIndex, ...otherProps } = this.props;
     return (
       <div>
         {show && <ScrollLock />}
         <Fade active={show} appear={show} mountOnEnter={true} unmountOnExit={true}>
-          <Wrapper onClick={this.handleClick} zIndex={zIndex}>
+          <Wrapper onClick={this.handleClick} zIndex={zIndex} {...otherProps}>
             {children}
           </Wrapper>
         </Fade>

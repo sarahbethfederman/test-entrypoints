@@ -47,6 +47,17 @@ class Example extends React.Component<{}, ExampleState> {
           onChange={this.onChange}
           placeholder="I'm really, really long and so very full-width 😳"
         />
+        <br />
+        <br />
+        <TextArea
+          id="textareaId"
+          name="IAmTextArea"
+          aria-label="text-area"
+          isFullWidth
+          value={value}
+          placeholder="Native props 'disabled'"
+          onChange={this.onChange}
+        />
       </div>
     );
   }

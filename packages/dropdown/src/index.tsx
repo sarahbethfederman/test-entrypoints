@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ListSize, DropdownWrapper, Select, IconDown, SpinnerWrapper } from './index.style';
+import { LUIFormProps } from '@lendi-ui/utils';
 
 export interface Item {
   value: string;
@@ -7,8 +8,7 @@ export interface Item {
   isDisabled?: boolean;
   isHidden?: boolean;
 }
-
-export interface DropdownProps {
+export interface DropdownProps extends LUIFormProps {
   size?: ListSize;
   items: Item[];
   isFullWidth?: boolean;
@@ -36,6 +36,7 @@ const Dropdown = ({
   onBlur = () => undefined,
   className,
   name,
+  ...otherProps
 }: DropdownProps) => {
   // React requires value prop to be undefined or empty string if not provided
   value = value || undefined;
@@ -44,6 +45,7 @@ const Dropdown = ({
   return (
     <DropdownWrapper isFullWidth={isFullWidth} isDisabled={isDisabled} className={className}>
       <Select
+        {...otherProps}
         selectSize={size}
         isError={isError}
         disabled={isDisabled}

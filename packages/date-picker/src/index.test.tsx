@@ -114,4 +114,26 @@ describe('DatePicker', () => {
       });
     });
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({ 'aria-label': ARIA_LABEL, 'aria-describedby': ARIA_DESCRIBE_BY });
+      const datePickerAttributes = element.find(DatePicker).props();
+      expect(datePickerAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(datePickerAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, className', () => {
+      const TEXT_ID = 'testId';
+      const CLASS_NAME = 'testClass';
+      render({
+        id: TEXT_ID,
+        className: CLASS_NAME,
+      });
+      const datePickerAttributes = element.find(DatePicker).props();
+      expect(datePickerAttributes.id).toBe(TEXT_ID);
+      expect(datePickerAttributes.className).toBe(CLASS_NAME);
+    });
+  });
 });

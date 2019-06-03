@@ -73,4 +73,28 @@ describe('<Carousel />', () => {
     expect(nodes.first().prop('isActive')).toBeFalsy();
     expect(nodes.last().prop('isActive')).toBeTruthy();
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    beforeEach(() => {
+      wrapper = mount(
+        <Carousel aria-label="testLabel" aria-describedby="info" id="testId" title="testTitle">
+          {slides.map((slide, index) => (
+            <div key={index} className=".slide">
+              {slide}
+            </div>
+          ))}
+        </Carousel>
+      );
+    });
+    it('should mount with Aria attributes', () => {
+      const carouselAttributes = wrapper.find(Carousel).props();
+      expect(carouselAttributes['aria-label']).toBe('testLabel');
+      expect(carouselAttributes['aria-describedby']).toBe('info');
+    });
+    it('should mount with native props like id, title', () => {
+      const carouselAttributes = wrapper.find(Carousel).props();
+      expect(carouselAttributes.id).toBe('testId');
+      expect(carouselAttributes.title).toBe('testTitle');
+    });
+  });
 });

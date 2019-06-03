@@ -39,20 +39,21 @@ export const Input = ({
   inputSize,
   ...otherProps
 }: InputProp) => {
+  const disabledVal = isDisabled || !!otherProps.disabled;
   return (
-    <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={isDisabled}>
-      {before && <BeforeWrapper isDisabled={isDisabled}>{before}</BeforeWrapper>}
+    <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
+      {before && <BeforeWrapper isDisabled={disabledVal}>{before}</BeforeWrapper>}
       <InputWrapper
         {...otherProps}
         type="text"
-        readOnly={isReadOnly}
-        disabled={isDisabled}
         isError={isError}
         isInverse={isInverse}
         fontSize={size}
         size={inputSize}
-        autoFocus={isAutoFocus}
-        required={isRequired}
+        readOnly={isReadOnly || otherProps.readOnly} // in order to keep a backward compatibility, and giving preferences to provided InputProps, otherwise fall to HTML defaults.
+        disabled={disabledVal}
+        autoFocus={isAutoFocus || otherProps.autoFocus}
+        required={isRequired || otherProps.required}
       />
       {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
     </Layout>

@@ -1,11 +1,12 @@
 import * as createReactContext from 'create-react-context';
 import { Direction } from './index.style';
 import { RadioProps } from '../Radio/index';
+import { LUIFormProps } from '@lendi-ui/utils/src';
 
 // @ts-ignore
 const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
 
-export interface RadioGroupContext {
+export interface RadioGroupContext extends LUIFormProps {
   isBoxed?: boolean;
   selectedValue: string;
   className?: string;

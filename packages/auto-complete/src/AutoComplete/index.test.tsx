@@ -406,6 +406,33 @@ describe('AutoComplete', () => {
       //expect(autoCompleteInstance.debounceWindowResize).toBeCalled();
     });
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+        dataSource: () => Promise.resolve(TEST_DATA_SOURCE),
+      });
+      const inputAttributes = wrapper.find(Input).props();
+      expect(inputAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(inputAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, title', () => {
+      const TEXT_ID = 'testId';
+      const TEXT_TITLE = 'testTitle';
+      render({
+        id: TEXT_ID,
+        title: TEXT_TITLE,
+        dataSource: () => Promise.resolve(TEST_DATA_SOURCE),
+      });
+      const inputAttributes = wrapper.find(Input).props();
+      expect(inputAttributes.id).toBe(TEXT_ID);
+      expect(inputAttributes.title).toBe(TEXT_TITLE);
+    });
+  });
 });
 
 function getData(userInput: string): Promise<DataSourceItem[]> {

@@ -14,7 +14,8 @@ const Mainpage = styled.div`
 
 render(
   <Mainpage>
-    <Navbar />
+    <Navbar id="navId"
+    aria-label="labelText"/>
   </Mainpage>
 );
 ```
@@ -31,6 +32,9 @@ There are two methods that can be used to fetch the required data for the nav co
 
 `fetchApplication` returns an application object which also has the isAuthenticated property on it which can be passed straight to the Navbar component while `fetchBroker` returns the broker object to be passed straight to the Navbar.
 
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+
 Example usage:
 
 ```
@@ -42,6 +46,7 @@ const broker = await fetchBroker(baseURL, token);
     application={application}
     isAuthenticated={application.isAuth}
     broker={broker}
+    
   />
 ...
 ```
@@ -49,45 +54,44 @@ const broker = await fetchBroker(baseURL, token);
 
 ## Properties
 <PropTable>
-  <PropTable.Entry name="variant" type={'"transparent" | "white"'} defaultValue="transparent" description=""/>
   <PropTable.Entry name="application" type="object" description="Application details"/>
   <PropTable.Entry name="broker" type="object" description="Assigned broker data"/>
   <PropTable.Entry name="isAuthenticated" type="boolean" description="Flag for whether or not a user has been authenticated."/>
   <PropTable.Entry name="onChat" type="() => void" required description="Callback function on chat button on the Right Sidebar"/>
   <PropTable.Entry name="onLogout" type="() => void" required description="Callback function on Log Out link in Left Sidebar"/>
   <PropTable.Entry name="params" type="string" description="Accept query parameters from users. This one will be deprecated soon."/>
+  <PropTable.Entry name="variant" type={'"transparent" | "white"'} defaultValue="transparent" description=""/>
 </PropTable>
 <br/>
 
 ## Application Object Properties with type 'Application'
 <PropTable>
-  <PropTable.Entry name="type" type={`"Refinance" | "New Purchase"`} description="Describes the type of application."/>
-  <PropTable.Entry name="sfid" type="string" description="The sales force ID for the active application."/>
-  <PropTable.Entry name="number" type="number" description="The active application number."/>
-  <PropTable.Entry
-    name="stage"
-    type={`"started_application" | "finished_funnel2" | "finished_funnel3" | "loan_selected" | "finalised_application"`}
-    description="Label for which stage the current application is up to."
-  />
-  <PropTable.Entry name="continueURL" type="URL string" description="The url for where the application should continue from."/>
   <PropTable.Entry name="applicants" type="array of objects" description="The applicants associated with this application."/>
+  <PropTable.Entry name="continueURL" type="URL string" description="The url for where the application should continue from."/>
   <PropTable.Entry name="isAuth" type="boolean" description="Flag for whether or not the application has been authenticated."/>
+  <PropTable.Entry name="number" type="number" description="The active application number."/>
+  <PropTable.Entry name="sfid" type="string" description="The sales force ID for the active application."/>
+  <PropTable.Entry name="stage" type={`"started_application" | "finished_funnel2" | "finished_funnel3" | "loan_selected" | "finalised_application"`} description="Label for which stage the current application is up to."
+  />
+  <PropTable.Entry name="type" type={`"Refinance" | "New Purchase"`} description="Describes the type of application."/>
 </PropTable>
 <br/>
 
 ## Applicant Object Properties with type 'Applicant'
 <PropTable>
-  <PropTable.Entry name="sfid" type="string" description="The sales force ID of the applicant."/>
-  <PropTable.Entry name="uuid" type="string" description="The lendi UUID of the applicant."/>
-  <PropTable.Entry name="type" type="string" description="The applicant type, generally this would be 'primary'."/>
   <PropTable.Entry name="firstName" type="string" description="The first name of the applicant."/>
+  <PropTable.Entry name="sfid" type="string" description="The sales force ID of the applicant."/>
+  <PropTable.Entry name="type" type="string" description="The applicant type, generally this would be 'primary'."/>
+  <PropTable.Entry name="uuid" type="string" description="The lendi UUID of the applicant."/>
 </PropTable>
 <br/>
 
 ## Broker Object Properties with type 'Broker'
 <PropTable>
   <PropTable.Entry name="fullName" type="string" description="The full name of the broker."/>
-  <PropTable.Entry name="photo" type="URL string" description="The url of the photo for the broker."/>
   <PropTable.Entry name="phone" type="string" description="The phone number of the broker."/>
+  <PropTable.Entry name="photo" type="URL string" description="The url of the photo for the broker."/>
   <PropTable.Entry name="title" type="string" description="The job title of the broker."/>
 </PropTable>
+
+```

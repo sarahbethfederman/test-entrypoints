@@ -137,4 +137,25 @@ describe('Collapse', () => {
       expect(wrapper.find(Wrapper).props().className).toBeUndefined();
     });
   });
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({ title: 'testing', 'aria-label': ARIA_LABEL, 'aria-describedby': ARIA_DESCRIBE_BY });
+      const collapseAttributes = wrapper.find(Wrapper).props();
+      expect(collapseAttributes['aria-label']).toBe(ARIA_LABEL);
+      expect(collapseAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, tabIndex', () => {
+      const TEXT_ID = 'testId';
+      render({
+        title: 'testing',
+        id: TEXT_ID,
+        tabIndex: 1,
+      });
+      const collapseAttributes = wrapper.find(Wrapper).props();
+      expect(collapseAttributes.id).toBe(TEXT_ID);
+      expect(collapseAttributes.tabIndex).toBe(1);
+    });
+  });
 });

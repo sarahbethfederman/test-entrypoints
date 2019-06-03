@@ -1,3 +1,7 @@
+## [3.1.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
+### Changed
+- Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
+
 ## [3.0.0] - 2019-05-20 - [HUB-172](https://creditandfinance.atlassian.net/browse/HUB-172)
 ### Changed
 - change the datasource prop, now it can take an Object<label, value>

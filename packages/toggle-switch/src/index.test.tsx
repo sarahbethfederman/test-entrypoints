@@ -97,4 +97,27 @@ describe('ToggleSwitch', () => {
     expect(testee).toHaveStyleRule('background-color', theme.colors.primary['50']);
     expect(testee).toHaveStyleRule('border', `1px solid ${theme.colors.primary['500']}`);
   });
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const attributes = element.find('input').props();
+      expect(attributes['aria-label']).toBe(ARIA_LABEL);
+      expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, itemRef', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        itemRef: 'ref',
+      });
+      const attributes = element.find('input').props();
+      expect(attributes.id).toBe(TEXT_ID);
+      expect(attributes.itemRef).toBe('ref');
+    });
+  });
 });

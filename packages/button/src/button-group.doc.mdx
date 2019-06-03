@@ -30,6 +30,7 @@ import {ButtonGroup} from '@lendi-ui/button';
 <PropTable>
   <PropTable.Entry name="children" type="React.ReactElement<ButtonGroupButtonProps>" description="The buttons"/>
   <PropTable.Entry name="className" defaultValue="" type="string" description="External classname to override style of the component"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Disabling the ButtonGroup"/>
   <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Buttons take up the max width of parent"/>
   <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Switches the foreground and background colours"/>
   <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The buttons size"/>
@@ -48,4 +49,8 @@ import {ButtonGroup} from '@lendi-ui/button';
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
 
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+
+```
 

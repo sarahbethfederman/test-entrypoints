@@ -5,7 +5,7 @@ import { bg } from '@lendi-ui/color';
 import { Button, ButtonGroup } from '@lendi-ui/button';
 import { p } from '@lendi-ui/spacing';
 import { Heading } from '@lendi-ui/typography';
-import { Application, Broker, Applicant } from './types';
+import { Application, Broker } from './types';
 
 const Wrapper = styled.div`
   ${bg('info.300')};
@@ -101,6 +101,9 @@ class NavbarExample extends React.Component {
           isAuthenticated={isAuthenticated}
           application={application}
           variant={variant}
+          id="navbarId"
+          aria-label="asa"
+          data-access
         />
         <HeroPanel>
           <Heading size="xs" my="md">

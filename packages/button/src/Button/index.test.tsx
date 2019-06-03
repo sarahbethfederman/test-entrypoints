@@ -225,4 +225,27 @@ describe('Button', () => {
       expect(button).toMatchSnapshot();
     });
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      expect(button.props()['aria-label']).toBe(ARIA_LABEL);
+      expect(button.props()['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, title', () => {
+      const TEXT_ID = 'testId';
+      const TEXT_TITLE = 'testTitle';
+      render({
+        id: TEXT_ID,
+        title: TEXT_TITLE,
+      });
+      expect(button.props().id).toBe(TEXT_ID);
+      expect(button.props().title).toBe(TEXT_TITLE);
+    });
+  });
 });

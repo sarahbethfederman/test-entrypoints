@@ -66,6 +66,8 @@ class Example extends React.Component<{}, ExampleState> {
       <ExampleWrapper>
         <MyComponent />
         <Pagination
+          id="testId"
+          className="textClass"
           currentPage={this.state.currentPage}
           handleChange={this.handleChange}
           handleClick={this.handleClick}

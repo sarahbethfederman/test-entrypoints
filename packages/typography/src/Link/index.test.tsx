@@ -68,4 +68,28 @@ describe('Link', () => {
     render({ size: 'lg', m: 'md' });
     expect(wrapper.find(Link)).toHaveStyleRule('margin', `${deriveSize(1.5)}`);
   });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const attributes = wrapper.find(Link).props();
+      expect(attributes['aria-label']).toBe(ARIA_LABEL);
+      expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, itemRef', () => {
+      const TEXT_ID = 'testId';
+      render({
+        id: TEXT_ID,
+        itemRef: 'ref',
+      });
+      const attributes = wrapper.find(Link).props();
+      expect(attributes.id).toBe(TEXT_ID);
+      expect(attributes.itemRef).toBe('ref');
+    });
+  });
 });

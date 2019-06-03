@@ -1,3 +1,7 @@
+## [5.3.0] - 2019-03-03 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
+### Changed
+- Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
+
 ## [5.2.1] - 2019-05-28 - [HUB-203](https://creditandfinance.atlassian.net/browse/HUB-203)
 ### Changed
 - Fix the bug that Button does not disabled with href prop.

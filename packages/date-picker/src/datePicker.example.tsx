@@ -156,6 +156,20 @@ class Example extends React.Component<{}, ExampleState> {
           monthOnChange={this.monthOnChangeHandler}
           yearOnChange={this.yearOnChangeHandler}
         />
+        <p />
+        <Field touched label="Support for native props">
+          <DatePicker
+            dayValue={this.state.dayValue}
+            monthValue={this.state.monthValue}
+            yearValue={this.state.yearValue}
+            dayOnChange={this.dayOnChangeHandler}
+            monthOnChange={this.monthOnChangeHandler}
+            yearOnChange={this.yearOnChangeHandler}
+            aria-label="aria label"
+            className="fakeClass"
+            id="myId"
+          />
+        </Field>
       </div>
     );
   }

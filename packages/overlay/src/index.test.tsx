@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Wrapper } from './index.style';
 import Overlay from './index';
+import { OverlayProps } from '../dist/types';
 
 describe('Overlay', () => {
   it('should call onHide when the overlay is visible and ESC is pressed', () => {
@@ -74,5 +75,25 @@ describe('Overlay', () => {
     );
     element.find(Wrapper).simulate('click');
     expect(onHide).toHaveBeenCalled();
+  });
+});
+
+describe('Overlay: test native props and Standard HTML Attributes', () => {
+  let element: ReactWrapper<OverlayProps>, attributes;
+  beforeEach(() => {
+    element = mount(
+      <Theme>
+        <Overlay show={true} aria-label="testLabel" aria-describedby="info" id="testId" title="testTitle" />
+      </Theme>
+    );
+    attributes = element.find(Overlay).props();
+  });
+  it('should mount with Aria attributes', () => {
+    expect(attributes['aria-label']).toBe('testLabel');
+    expect(attributes['aria-describedby']).toBe('info');
+  });
+  it('should mount with native props like id, title', () => {
+    expect(attributes.id).toBe('testId');
+    expect(attributes.title).toBe('testTitle');
   });
 });

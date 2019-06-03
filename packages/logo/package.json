@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -14,7 +14,8 @@
     "@lendi-ui/theme-domain": "^2.0.0",
     "@types/react": "^15 || ^16.4",
     "react": "^15 || ^16.4",
-    "styled-components": "^3"
+    "styled-components": "^3",
+    "@lendi-ui/utils": "^2.4.0"
   },
   "dependencies": {
     "@lendi-ui/color": "^3.0.0",

@@ -3,6 +3,8 @@ import { MenuItem } from '../Item/index';
 import { Menu } from '../Menu/index';
 import { Navigation } from '../Navigation/index';
 import StatusBadge from '@lendi-ui/status-badge';
+import { LUIGlobalProps } from '@lendi-ui/utils';
+
 import { ApplicantPanel, ProductProgress, ApplicantState } from './ApplicantPanel/index';
 
 export enum MenuTitle {
@@ -43,7 +45,7 @@ export type ProcessState = {
   decisionEngine: boolean;
 };
 
-export interface BrokerNavigationProps {
+export interface BrokerNavigationProps extends LUIGlobalProps {
   width?: string;
   processState: ProcessState;
   applicantName: string;
@@ -237,9 +239,9 @@ export class BrokerNavigation extends React.Component<BrokerNavigationProps, Bro
 
   render() {
     const { menuState, currentProgress, productProgress } = this.state;
-    const { width = '376px', processState, applicantName, applicantState, className } = this.props;
+    const { width = '376px', processState, applicantName, applicantState, className, ...otherProps } = this.props;
     return (
-      <Navigation width={width} className={className}>
+      <Navigation width={width} className={className} {...otherProps}>
         <Menu menuTitle={MenuTitle.loanProfile} isOpen={menuState.loanProfile} onClick={this.onClick}>
           <MenuItem
             itemHeader={ItemHeader.loanStructure}

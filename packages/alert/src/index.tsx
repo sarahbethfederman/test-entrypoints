@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { Wrapper, AlertVariant, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
 import { Info, Success, Warn } from '@lendi-ui/icon';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface Props {
+export interface AlertProps extends LUIGlobalProps {
   variant: AlertVariant;
   heading?: string;
   children?: string;
 }
 
-const Alert = ({ variant, heading, children }: Props) => {
+const Alert = ({ variant, heading, children, ...otherProps }: AlertProps) => {
   let alertIcon;
   const withHeading = !!heading;
   switch (variant) {
@@ -27,7 +28,7 @@ const Alert = ({ variant, heading, children }: Props) => {
   }
   if (withHeading) {
     return (
-      <Wrapper variant={variant} withHeading={withHeading}>
+      <Wrapper variant={variant} withHeading={withHeading} {...otherProps}>
         <HeaderWrapper>
           <IconWrapper>{alertIcon}</IconWrapper>
           <HeadingWrapper size="sm">
@@ -41,7 +42,7 @@ const Alert = ({ variant, heading, children }: Props) => {
     );
   }
   return (
-    <Wrapper variant={variant} withHeading={withHeading}>
+    <Wrapper variant={variant} withHeading={withHeading} {...otherProps}>
       <IconWrapper>{alertIcon}</IconWrapper>
       <ContentWrapper withHeading={withHeading} size="xs">
         {children}

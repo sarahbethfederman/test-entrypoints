@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { CarouselContainer, Indicator, IndicatorContainer, Slide } from './index.style';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface CarouselProps {
+export interface CarouselProps extends LUIGlobalProps {
   children: JSX.Element[];
   width?: string;
   height?: string;
@@ -39,10 +40,10 @@ export default class Carousel extends React.Component<CarouselProps, CarouselSta
     this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
   }
   public render() {
-    const { children, height, width, speed, duration } = this.props;
+    const { children, height, width, speed, duration, ...otherProps } = this.props;
     const { currentIndex, previousIndex } = this.state;
     return (
-      <CarouselContainer height={height} width={width}>
+      <CarouselContainer height={height} width={width} {...otherProps}>
         {React.Children.map(children, (child, index) => (
           <Slide
             {...{ height, width, speed, duration }}

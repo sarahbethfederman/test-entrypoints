@@ -4,6 +4,7 @@ import * as createReactContext from 'create-react-context';
 import { Wrapper, Direction } from './index.style';
 import { Checkbox, CheckboxProps } from '../Checkbox/index';
 import { mb } from '@lendi-ui/spacing';
+import { LUIGlobalProps } from '@lendi-ui/utils/src';
 
 // @ts-ignore
 const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
@@ -27,7 +28,7 @@ const CheckboxGroupItem: React.SFC<CheckboxGroupItemProps> = (props) => (
   </CheckboxContext.Consumer>
 );
 
-export interface CheckboxGroupContext {
+export interface CheckboxGroupContext extends LUIGlobalProps {
   isBoxed?: boolean;
   values: string[]; // all the checked items
   className?: string;
@@ -49,11 +50,20 @@ const CheckboxContext = PonyfillContext<CheckboxGroupContext>({});
 export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
   static Checkbox = CheckboxGroupItem;
   render() {
-    const { children, values, isBoxed = false, className, direction = 'column', ...checkboxProps } = this.props;
-    const checkboxGroupWrapperProps = { ...checkboxProps, isBoxed, values };
+    const {
+      children,
+      values,
+      isBoxed = false,
+      className,
+      direction = 'column',
+      isDisabled,
+      ...checkboxProps
+    } = this.props;
+
+    const checkboxGroupWrapperProps = { isBoxed, values, isDisabled };
     return (
       <CheckboxContext.Provider value={checkboxGroupWrapperProps}>
-        <Wrapper direction={direction} className={className}>
+        <Wrapper direction={direction} className={className} {...checkboxProps}>
           {children}
         </Wrapper>
       </CheckboxContext.Provider>

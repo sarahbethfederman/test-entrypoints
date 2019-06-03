@@ -10,11 +10,11 @@ let wrapper;
 let menuDropdown;
 let mockOnClick;
 
-function render() {
+function render(props) {
   mockOnClick = jest.fn();
   wrapper = Enzyme.mount(
     <Theme>
-      <MenuDropdown>
+      <MenuDropdown {...props}>
         <MenuDropdown.Trigger>ad</MenuDropdown.Trigger>
         <MenuDropdown.Content>
           <MenuDropdown.Content.Item size={'sm'} onClick={mockOnClick}>
@@ -50,5 +50,29 @@ describe('MenuDropdown', () => {
       .at(0)
       .simulate('click');
     expect(mockOnClick.mock.calls.length).toBe(1);
+  });
+});
+
+describe('test native props and Standard HTML Attributes', () => {
+  it('should mount with Aria attributes', () => {
+    const ARIA_LABEL = 'testLabel';
+    const ARIA_DESCRIBE_BY = 'info';
+    render({
+      'aria-label': ARIA_LABEL,
+      'aria-describedby': ARIA_DESCRIBE_BY,
+    });
+    const cardAttributes = wrapper.find(MenuDropdown).props();
+    expect(cardAttributes['aria-label']).toBe(ARIA_LABEL);
+    expect(cardAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+  });
+  it('should mount with native props like id, tabIndex', () => {
+    const TEXT_ID = 'testId';
+    render({
+      id: TEXT_ID,
+      tabIndex: 1,
+    });
+    const cardAttributes = wrapper.find(MenuDropdown).props();
+    expect(cardAttributes.id).toBe(TEXT_ID);
+    expect(cardAttributes.tabIndex).toBe(1);
   });
 });

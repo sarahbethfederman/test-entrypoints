@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import Alert from './index';
+import Alert, { AlertProps } from './index';
 import { Wrapper, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
 import { Info, Success, Warn } from '@lendi-ui/icon';
 
-let element, variant;
+let element: ReactWrapper<AlertProps>, variant;
 
 function render(props) {
   element = mount(
@@ -69,5 +69,30 @@ describe('Alert', () => {
     render({ variant });
     expect(element.find(Warn)).toHaveLength(1);
     expect(element.find(Warn).props().color).toEqual('warn.500');
+  });
+
+  describe('test native props and Standard HTML Attributes', () => {
+    it('should mount with Aria attributes', () => {
+      const ARIA_LABEL = 'testLabel';
+      const ARIA_DESCRIBE_BY = 'info';
+      render({
+        'aria-label': ARIA_LABEL,
+        'aria-describedby': ARIA_DESCRIBE_BY,
+      });
+      const attributes = element.find(Alert).props();
+      expect(attributes['aria-label']).toBe(ARIA_LABEL);
+      expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
+    });
+    it('should mount with native props like id, title', () => {
+      const TEXT_ID = 'testId';
+      const TEXT_TITLE = 'testTitle';
+      render({
+        id: TEXT_ID,
+        title: TEXT_TITLE,
+      });
+      const attributes = element.find(Alert).props();
+      expect(attributes.id).toBe(TEXT_ID);
+      expect(attributes.title).toBe(TEXT_TITLE);
+    });
   });
 });

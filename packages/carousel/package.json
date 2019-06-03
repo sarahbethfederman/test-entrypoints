@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/carousel",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",

@@ -4,9 +4,10 @@ import { Tab, TabProps } from '../Tab';
 import { ChevronLeft, ChevronRight } from '@lendi-ui/icon';
 import createRef from 'react-create-ref';
 import TabContext from '../TabContext';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
-export interface TabsProps {
-  onChange: (key: number) => void;
+export interface TabsProps extends LUIGlobalProps {
+  onChangeTab: (key: number) => void;
   activeTab: number;
   isInverse?: boolean;
 }
@@ -21,7 +22,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   // Supressing "Cannot invoke an expression whose type lacks a call signature." error
   // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
   // @ts-ignore
-  private node = createRef();
+  private node: any = createRef();
 
   state = {
     isScrollable: false,
@@ -55,7 +56,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   };
 
   private handleClick = (index: number) => {
-    this.props.onChange(index + 1);
+    this.props.onChangeTab(index + 1);
   };
 
   private calculateTabWidth = () => {
@@ -74,7 +75,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, isInverse = false, activeTab } = this.props;
+    const { children, isInverse = false, activeTab, ...otherProps } = this.props;
     const { isScrollable } = this.state;
     return (
       <TabContext.Provider
@@ -84,7 +85,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
           selectedIndex: activeTab - 1,
         }}
       >
-        <Wrapper innerRef={this.node} isInverse={isInverse} isScrollable={isScrollable}>
+        <Wrapper {...otherProps} innerRef={this.node} isInverse={isInverse} isScrollable={isScrollable}>
           {isScrollable && (
             <LeftIconWrapper onClick={this.handleMoveScrollbarRight}>
               <ChevronLeft height="24px" width="24px" color="secondary.500" />

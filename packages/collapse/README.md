@@ -28,4 +28,8 @@ import Collapse from '@lendi-ui/collapse';
   <PropTable.Entry name="headerSize" type={`"xs" | "sm" | "md"`} defaultValue='sm' description="header size to collapse header"/>
   <PropTable.Entry name="className" defaultValue=""type="string" description="external classname to override style of the component"/>
 </PropTable>
+
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

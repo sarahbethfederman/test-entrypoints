@@ -7,7 +7,7 @@ import Collapse from '@lendi-ui/collapse';
 ```
 
 ```jsx
-<Collapse title="Collapse Title" subTitle="this is the subtitle">
+<Collapse title="Collapse Title" subTitle="this is the subtitle" id="testId" aria-label="collapse-label">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
       magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -26,3 +26,7 @@ import Collapse from '@lendi-ui/collapse';
   <PropTable.Entry name="headerSize" type={`"xs" | "sm" | "md"`} defaultValue='sm' description="header size to collapse header"/>
   <PropTable.Entry name="className" defaultValue=""type="string" description="external classname to override style of the component"/>
 </PropTable>
+
+
+### Notes
+<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

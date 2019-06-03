@@ -23,7 +23,14 @@ class Example extends React.Component<{}, ExampleState> {
     const { value, isChecked } = this.state;
     return (
       <div>
-        <ToggleSwitch value={value} label={'Default'} isChecked={isChecked} onChange={this.handleChange} />
+        <ToggleSwitch
+          value={value}
+          label={'Default'}
+          isChecked={isChecked}
+          onChange={this.handleChange}
+          id="myId"
+          aria-label="test-aria"
+        />
         <ToggleSwitch value={value} label={'Boxed'} isChecked={isChecked} onChange={this.handleChange} isBoxed />
         <ToggleSwitch value={value} label={'Disabled'} isChecked={isChecked} onChange={this.handleChange} isDisabled />
         <ToggleSwitch value={value} label={'Loading'} isChecked={isChecked} onChange={this.handleChange} isLoading />

@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { Position, TooltipWrapper, ContentWrapper } from './index.style';
 import { Body } from '@lendi-ui/typography';
+import { LUIGlobalProps } from '@lendi-ui/utils';
+
 import * as Hammer from 'hammerjs';
 import createRef from 'react-create-ref';
 
-export interface TooltipProps {
+export interface TooltipProps extends LUIGlobalProps {
   content: React.ReactNode;
   position?: Position;
   className?: string;

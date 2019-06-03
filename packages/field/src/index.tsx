@@ -5,7 +5,8 @@ import ErrorMessage from './ErrorMessage/index';
 import { LinkProps } from '@lendi-ui/typography';
 import { FieldWrapper, LabelField, ToolTip } from './index.style';
 import * as cuid from 'cuid';
-export interface FieldProps {
+import { LUIGlobalProps } from '@lendi-ui/utils';
+export interface FieldProps extends LUIGlobalProps {
   size?: LabelSize;
   label?: string;
   isOptional?: boolean;
@@ -29,6 +30,7 @@ const Field = ({
   error,
   touched,
   htmlFor,
+  ...otherProps
 }: FieldProps) => {
   const labelPropExists = label || isOptional || assistiveText || link || tooltip;
   if (!htmlFor || htmlFor === '') {
@@ -40,7 +42,7 @@ const Field = ({
       })
     : '';
   return (
-    <FieldWrapper>
+    <FieldWrapper {...otherProps}>
       {labelPropExists && (
         <LabelField htmlFor={htmlFor}>
           <Label size={size} label={label} isOptional={isOptional} assistiveText={assistiveText} link={link} />
