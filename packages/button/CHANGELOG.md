@@ -1,3 +1,7 @@
+## [5.3.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+### Changed
+- Updated utils dependency to get correct types
+
 ## [5.3.0] - 2019-03-03 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Changed
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef

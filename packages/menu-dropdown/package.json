@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/menu-dropdown",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,7 @@
     "@lendi-ui/spacing": "^4.0.0",
     "@lendi-ui/depth": "2.0.0",
     "react-create-ref": "^1.0.1",
-    "@lendi-ui/utils": "^2.2.0"
+    "@lendi-ui/utils": "^2.5.0"
   },
   "peerDependencies": {
     "@lendi-ui/theme": "^6.1.1",

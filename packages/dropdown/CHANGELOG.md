@@ -1,4 +1,4 @@
-## [2.2.0] - 2019-06-03 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
+## [2.2.1] - 2019-06-03 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Changed
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
 

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/popover",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -19,7 +19,7 @@
   "dependencies": {
     "react-tiny-popover": "3.4.2",
     "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/utils": "^2.2.0",
+    "@lendi-ui/utils": "^2.5.0",
     "@lendi-ui/spacing": "^4.0.0",
     "@lendi-ui/depth": "^2.0.0"
   },

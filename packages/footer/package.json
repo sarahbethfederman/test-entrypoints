@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/footer",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -24,7 +24,7 @@
     "@lendi-ui/logo": "^4.0.0",
     "@lendi-ui/spacing": "^4.0.0",
     "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.4.0",
+    "@lendi-ui/utils": "^2.5.0",
     "@lendi/lendi-analytics-package": "^1.0.0"
   },
   "scripts": {

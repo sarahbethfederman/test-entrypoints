@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/checkbox",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -20,7 +20,7 @@
     "@lendi-ui/color": "^3.0.2",
     "@lendi-ui/typography": "^3.0.2",
     "@lendi-ui/spacing": "^4.0.2",
-    "@lendi-ui/utils": "^2.2.2",
+    "@lendi-ui/utils": "^2.5.0",
     "create-react-context": "^0.2.3",
     "prop-types": "^15.6.2"
   },

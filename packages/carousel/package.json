@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/carousel",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -21,6 +21,6 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "dependencies": {
-    "@lendi-ui/utils": "^2.2.0"
+    "@lendi-ui/utils": "^2.5.0"
   }
 }

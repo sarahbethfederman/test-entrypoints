@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -18,7 +18,7 @@
     "@lendi-ui/breakpoint": "^2.0.0",
     "@lendi-ui/color": "^3.0.0",
     "@lendi-ui/spacing": "^4.0.0",
-    "@lendi-ui/utils": "^2.0.0"
+    "@lendi-ui/utils": "^2.5.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

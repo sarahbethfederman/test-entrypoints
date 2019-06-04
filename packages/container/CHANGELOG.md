@@ -1,4 +1,4 @@
-## [4.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+# [4.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.
 ### Deleted

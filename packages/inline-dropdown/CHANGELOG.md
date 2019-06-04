@@ -1,3 +1,7 @@
+## [1.3.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+### Changed
+- Updated utils dependency to get correct types
+
 ## [1.3.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

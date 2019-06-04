@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/overlay",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,7 @@
     "@lendi-ui/transition": "^3.0.0",
     "react-lifecycles-compat": "^3.0.4",
     "react-scrolllock": "^3.0.2",
-    "@lendi-ui/utils": "^2.4.0"
+    "@lendi-ui/utils": "^2.5.0"
   },
   "peerDependencies": {
     "@lendi-ui/theme": "^6.1.1",

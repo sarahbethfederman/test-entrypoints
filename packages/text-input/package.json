@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/text-input",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.2.0",
+    "@lendi-ui/utils": "^2.5.0",
     "@lendi-ui/breakpoint": "^2.0.0",
     "@lendi-ui/button": "^5.0.0"
   },

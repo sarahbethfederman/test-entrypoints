@@ -1,4 +1,6 @@
-# Changelog - @lendi-ui/navbar
+## [2.4.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+### Changed
+- Updated utils dependency to get correct types
 
 ## [2.4.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Changed

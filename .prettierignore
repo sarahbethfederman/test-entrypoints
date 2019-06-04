@@ -1,6 +1,7 @@
 **/node_modules/**/*
 **/dist/**/*
 **/icons-compiled/**/*
+**/fancy-icons-compiled/**/*
 **/CHANGELOG.md
 **/.vscode/**/*
 *.mdx
