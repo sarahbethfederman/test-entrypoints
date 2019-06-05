@@ -71,7 +71,7 @@ exports[`StatusBadge it should mount StatusBadge component with icon 1`] = `
         <span
           className="c1"
         >
-          <SuccessTwo
+          <Check
             color="success.500"
             height="1em"
           >
@@ -85,19 +85,21 @@ exports[`StatusBadge it should mount StatusBadge component with icon 1`] = `
                 height="1em"
               >
                 <svg
-                  fill="currentColor"
                   height="1em"
                   viewBox="0 0 24 24"
                   width="1em"
                 >
                   <path
-                    d="M18.265 6l-8.111 8.11-4.419-4.405L4 11.44l6.154 6.154L20 7.748z"
-                    fillRule="evenodd"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
                   />
                 </svg>
               </span>
             </styled.span>
-          </SuccessTwo>
+          </Check>
         </span>
       </styled.span>
       <styled.span
@@ -189,7 +191,7 @@ exports[`StatusBadge it should mount StatusBadge component without icon 1`] = `
         <span
           className="c1"
         >
-          <SuccessTwo
+          <Check
             color="success.500"
             height="1em"
           >
@@ -203,19 +205,21 @@ exports[`StatusBadge it should mount StatusBadge component without icon 1`] = `
                 height="1em"
               >
                 <svg
-                  fill="currentColor"
                   height="1em"
                   viewBox="0 0 24 24"
                   width="1em"
                 >
                   <path
-                    d="M18.265 6l-8.111 8.11-4.419-4.405L4 11.44l6.154 6.154L20 7.748z"
-                    fillRule="evenodd"
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
                   />
                 </svg>
               </span>
             </styled.span>
-          </SuccessTwo>
+          </Check>
         </span>
       </styled.span>
       <styled.span

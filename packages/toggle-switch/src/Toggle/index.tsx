@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Warn } from '@lendi-ui/icon';
+import { ErrorOutline } from '@lendi-ui/icon';
 import Spinner from '@lendi-ui/spinner';
 import { IconWrapper, ToggleCheckbox, ToggleHandle, ToggleTrack, ToggleWrapper } from './index.style';
 import { Size } from '../index.style';
@@ -20,7 +20,7 @@ export class Toggle extends React.Component<ToggleProps, {}> {
     if (this.props.isError) {
       return (
         <IconWrapper>
-          <Warn color={'shade.0'} />
+          <ErrorOutline color={'shade.0'} />
         </IconWrapper>
       );
     } else if (this.props.isLoading) {

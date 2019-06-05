@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { CollapseHeader, TitleContainer, CollapseTitle, CollapseHeadSubTitle, ChevronIcon, Size } from '../index.style';
-import { ChevronUp, ChevronDown } from '@lendi-ui/icon';
+import { ExpandLess, ExpandMore } from '@lendi-ui/icon';
 
 export interface CollapseHeaderSectionProps {
   title: string;
@@ -17,7 +17,7 @@ const CollapseHeaderSection: React.SFC<CollapseHeaderSectionProps> = (props: Col
       {props.subTitle && <CollapseHeadSubTitle>{props.subTitle}</CollapseHeadSubTitle>}
     </TitleContainer>
     <ChevronIcon>
-      {props.isOpen ? <ChevronUp color="secondary.500" /> : <ChevronDown color="secondary.500" />}
+      {props.isOpen ? <ExpandLess color="secondary.500" /> : <ExpandMore color="secondary.500" />}
     </ChevronIcon>
   </CollapseHeader>
 );

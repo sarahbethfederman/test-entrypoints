@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as Fragment from 'react-dot-fragment';
-import { ChevronDown } from '@lendi-ui/icon';
+import { ExpandMore } from '@lendi-ui/icon';
 import { ItemProps } from '../Item';
 import { MenuToggle, MenuContent, ListWrapper, ListItem } from './index.style';
 
@@ -37,7 +37,7 @@ export class Group extends React.Component<GroupProps, GroupState> {
             aria-expanded={isExpanded}
           >
             <span>{title}</span>
-            <ChevronDown color="primary.500" />
+            <ExpandMore color="primary.500" />
           </MenuToggle>
           <MenuContent isExpanded={isExpanded}>
             <ListWrapper role="menu">

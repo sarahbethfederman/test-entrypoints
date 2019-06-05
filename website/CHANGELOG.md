@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 - [2019-05-29] - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
+### Changed 
+- Update icons to be imported from the new fancy-icons package.
+
 ## 1.2.1 - [2019-06-03] - [HUB-202](https://creditandfinance.atlassian.net/browse/HUB-202)
 ### Changed
 - Use Javascript to get the current year for LUI website copyright year.

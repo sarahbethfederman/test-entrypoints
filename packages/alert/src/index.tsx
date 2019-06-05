@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Wrapper, AlertVariant, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
-import { Info, Success, Warn } from '@lendi-ui/icon';
+import { Info, CheckCircleOutline, ErrorOutline } from '@lendi-ui/icon';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface AlertProps extends LUIGlobalProps {
@@ -14,16 +14,16 @@ const Alert = ({ variant, heading, children, ...otherProps }: AlertProps) => {
   const withHeading = !!heading;
   switch (variant) {
     case 'error':
-      alertIcon = <Warn color="error.500" />;
+      alertIcon = <ErrorOutline color="error.500" />;
       break;
     case 'info':
       alertIcon = <Info color="info.500" />;
       break;
     case 'success':
-      alertIcon = <Success color="success.500" />;
+      alertIcon = <CheckCircleOutline color="success.500" />;
       break;
     case 'warn':
-      alertIcon = <Warn color="warn.500" />;
+      alertIcon = <ErrorOutline color="warn.500" />;
       break;
   }
   if (withHeading) {

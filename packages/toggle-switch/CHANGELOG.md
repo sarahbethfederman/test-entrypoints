@@ -1,3 +1,8 @@
+
+## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
+### Changed
+- Replaced Warn icon with ErrorOutline icon.
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

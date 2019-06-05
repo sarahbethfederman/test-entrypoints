@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Body } from '@lendi-ui/typography';
-import { Hamburger } from '@lendi-ui/icon';
+import { Menu } from '@lendi-ui/icon';
 import { Header, UserDetail, Logout, Wrapper, StyledLink } from './index.style';
 import { MenuButton, LogoWrapper, HeaderLogo } from '../Header/index.style';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../SidebarNav';
@@ -47,7 +47,7 @@ export class LeftSidebar extends React.Component<SidebarProps, SidebarState> {
           }}
           aria-label="hide menu"
         >
-          <Hamburger color={'primary.500'} />
+          <Menu color={'primary.500'} />
         </MenuButton>
         <LogoWrapper>
           <HeaderLogo variant="dark" />

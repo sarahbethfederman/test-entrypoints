@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { mb } from '@lendi-ui/spacing';
-import { Question } from '@lendi-ui/icon'; // replace with ToolTip later when LUI Input added to LUI
+import { QuestionOutline } from '@lendi-ui/icon'; // replace with ToolTip later when LUI Input added to LUI
 import { LabelSize } from './Label/index.style';
 import { normalise } from '@lendi-ui/utils';
 
@@ -41,6 +41,6 @@ const PaddingTopByLabelSize = (size: LabelSize) => {
   return (lineHeight - fontSize) / 2;
 };
 
-export const ToolTip = styled(Question)`
+export const ToolTip = styled(QuestionOutline)`
   padding-top: calc(${({ size }: { size: LabelSize }) => PaddingTopByLabelSize(size)} * var(--lendi-ui-size));
 `;

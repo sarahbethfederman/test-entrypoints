@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import Popover from './index';
 import { Body } from '@lendi-ui/typography';
-import { Question } from '@lendi-ui/icon';
+import { QuestionOutline } from '@lendi-ui/icon';
 import { PopoverWrapper } from './index.style';
 
 let element;
@@ -20,7 +20,7 @@ describe('Popover', () => {
             </div>
           }
           position="top"
-          target={<Question color="primary.500" />}
+          target={<QuestionOutline color="primary.500" />}
         />
       </Theme>
     );

@@ -148,11 +148,11 @@ exports[`Dropdown it should render whole component 1`] = `
           </option>
         </select>
       </styled.select>
-      <Styled(ChevronDown)
+      <Styled(ExpandMore)
         color="primary.500"
         size="md"
       >
-        <ChevronDown
+        <ExpandMore
           className="c2"
           color="primary.500"
           size="md"
@@ -168,19 +168,22 @@ exports[`Dropdown it should render whole component 1`] = `
               size="md"
             >
               <svg
-                fill="currentColor"
                 height="1em"
                 viewBox="0 0 24 24"
                 width="1em"
               >
                 <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z"
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
                 />
               </svg>
             </span>
           </styled.span>
-        </ChevronDown>
-      </Styled(ChevronDown)>
+        </ExpandMore>
+      </Styled(ExpandMore)>
     </div>
   </styled.div>
 </Dropdown>

@@ -1803,6 +1803,54 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
 </Eyes>
 `;
 
+exports[`Icon component FancyCheck should fetch icon correctly 1`] = `
+.c0 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.c0 > svg {
+  width: inherit;
+  height: inherit;
+}
+
+<FancyCheck>
+  <styled.span>
+    <span
+      className="c0"
+    >
+      <svg
+        viewBox="0 0 305 305"
+      >
+        <circle
+          cx={152.5}
+          cy={152.5}
+          fill="#edf7f5"
+          r={150}
+          stroke="#5fe1cf"
+          strokeMiterlimit={10}
+          strokeWidth={5}
+        />
+        <path
+          d="M266.254 54.728A150 150 0 0 1 27.645 235.649 150 150 0 1 0 266.254 54.728z"
+          fill="#5fe1cf"
+          opacity={0.2}
+        />
+        <path
+          d="M87.058 150.907l43.763 45.562 87.121-87.938"
+          fill="none"
+          stroke="#5fe1cf"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={5}
+        />
+      </svg>
+    </span>
+  </styled.span>
+</FancyCheck>
+`;
+
 exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
 .c0 {
   width: 1em;

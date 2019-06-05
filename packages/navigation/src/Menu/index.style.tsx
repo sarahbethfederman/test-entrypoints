@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { py, pl, pr, my } from '@lendi-ui/spacing';
 import { bg } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
-import { ChevronUp, ChevronDown } from '@lendi-ui/icon';
+import { ExpandMore, ExpandLess } from '@lendi-ui/icon';
 import { deriveSize } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 
@@ -40,12 +40,12 @@ export const MainWrapper = styled.div`
   ${bg('shade.0')} ${py('xxxs')};
 `;
 
-export const MenuChevronUp = styled(ChevronUp)`
+export const MenuChevronUp = styled(ExpandLess)`
   width: ${deriveSize(1.5)};
   height: ${deriveSize(1.5)};
 `;
 
-export const MenuChevronDown = styled(ChevronDown)`
+export const MenuChevronDown = styled(ExpandMore)`
   width: ${deriveSize(1.5)};
   height: ${deriveSize(1.5)};
 `;

@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { ml } from '@lendi-ui/spacing';
-import { ChevronDown } from '@lendi-ui/icon';
+import { ExpandMore } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
@@ -74,7 +74,7 @@ export const Select = styled.select`
   ${({ selectSize }: { selectSize: ListSize }) => dropBySizeMixin(selectSize)};
 `;
 
-export const IconDown = styled(ChevronDown)`
+export const IconDown = styled(ExpandMore)`
   position: absolute;
   right: 6px;
   pointer-events: none;

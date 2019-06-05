@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FeaturePanel from '.';
+import { FeaturePanel } from '.';
 import { Lock } from '@lendi-ui/icon';
 
 export default () => (

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Wrapper, StatusBadgeVariant, StatusBadgeSize, IconWrapper, ContentWrapper } from './index.style';
-import { InfoTwo, SuccessTwo, WarnTwo } from '@lendi-ui/icon';
+import { InfoTwo, Check, WarnTwo } from '@lendi-ui/icon';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface StatusBadgeProps extends LUIGlobalProps {
@@ -22,7 +22,7 @@ const StatusBadge = ({ variant, hasIcon = false, statusText, size = 'sm', ...oth
       badgeIcon = <InfoTwo color="info.500" height={iconHeight} />;
       break;
     case 'success':
-      badgeIcon = <SuccessTwo color="success.500" height={iconHeight} />;
+      badgeIcon = <Check color="success.500" height={iconHeight} />;
       break;
     case 'warn':
       badgeIcon = <WarnTwo color="warn.500" height={iconHeight} />;

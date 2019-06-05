@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Menu } from './index';
 import { MenuWrapper, HeadWrapper, MainWrapper } from './index.style';
-import { ChevronUp, ChevronDown } from '@lendi-ui/icon';
+import { ExpandLess, ExpandMore } from '@lendi-ui/icon';
 
 let element: any;
 const render = (props) => {
@@ -26,9 +26,9 @@ describe('Menu', () => {
     render({ onClick });
     expect(element.find(HeadWrapper)).toHaveLength(1);
     expect(element.find(MainWrapper)).toHaveLength(1);
-    expect(element.find(ChevronDown)).toHaveLength(0);
+    expect(element.find(ExpandMore)).toHaveLength(0);
     element.find(HeadWrapper).simulate('click');
     expect(onClick).toBeCalled();
-    expect(element.find(ChevronUp)).toHaveLength(1);
+    expect(element.find(ExpandLess)).toHaveLength(1);
   });
 });

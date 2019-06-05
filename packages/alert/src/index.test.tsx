@@ -3,7 +3,7 @@ import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import Alert, { AlertProps } from './index';
 import { Wrapper, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
-import { Info, Success, Warn } from '@lendi-ui/icon';
+import { Info, ErrorOutline, CheckCircleOutline } from '@lendi-ui/icon';
 
 let element: ReactWrapper<AlertProps>, variant;
 
@@ -23,8 +23,8 @@ describe('Alert', () => {
     expect(element.find(Alert)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
     expect(element.find(IconWrapper)).toHaveLength(1);
-    expect(element.find(Warn)).toHaveLength(1);
-    expect(element.find(Warn).props().color).toEqual('error.500');
+    expect(element.find(ErrorOutline)).toHaveLength(1);
+    expect(element.find(ErrorOutline).props().color).toEqual('error.500');
     expect(element.find(ContentWrapper)).toHaveLength(1);
     expect(element.find(Alert)).toMatchSnapshot();
   });
@@ -37,8 +37,8 @@ describe('Alert', () => {
     expect(element.find(HeaderWrapper)).toHaveLength(1);
     expect(element.find(HeadingWrapper)).toHaveLength(1);
     expect(element.find(IconWrapper)).toHaveLength(1);
-    expect(element.find(Warn)).toHaveLength(1);
-    expect(element.find(Warn).props().color).toEqual('error.500');
+    expect(element.find(ErrorOutline)).toHaveLength(1);
+    expect(element.find(ErrorOutline).props().color).toEqual('error.500');
     expect(element.find(ContentWrapper)).toHaveLength(1);
     expect(element.find(Alert)).toMatchSnapshot();
   });
@@ -46,8 +46,8 @@ describe('Alert', () => {
   it("it should mount Alert component with variant is 'error'", () => {
     variant = 'error';
     render({ variant });
-    expect(element.find(Warn)).toHaveLength(1);
-    expect(element.find(Warn).props().color).toEqual('error.500');
+    expect(element.find(ErrorOutline)).toHaveLength(1);
+    expect(element.find(ErrorOutline).props().color).toEqual('error.500');
   });
 
   it("it should mount Alert component with variant is 'info'", () => {
@@ -60,15 +60,15 @@ describe('Alert', () => {
   it("it should mount Alert component with variant is 'success'", () => {
     variant = 'success';
     render({ variant });
-    expect(element.find(Success)).toHaveLength(1);
-    expect(element.find(Success).props().color).toEqual('success.500');
+    expect(element.find(CheckCircleOutline)).toHaveLength(1);
+    expect(element.find(CheckCircleOutline).props().color).toEqual('success.500');
   });
 
   it("it should mount Alert component with variant is 'warn'", () => {
     variant = 'warn';
     render({ variant });
-    expect(element.find(Warn)).toHaveLength(1);
-    expect(element.find(Warn).props().color).toEqual('warn.500');
+    expect(element.find(ErrorOutline)).toHaveLength(1);
+    expect(element.find(ErrorOutline).props().color).toEqual('warn.500');
   });
 
   describe('test native props and Standard HTML Attributes', () => {

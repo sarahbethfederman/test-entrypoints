@@ -3,7 +3,7 @@ import * as Enzyme from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { FeaturePanel } from '.';
 import { FeatureItemWrapper } from './index.style';
-import { CashFlow } from '@lendi-ui/icon';
+import { Lock } from '@lendi-ui/icon';
 
 let wrapper;
 function render(props) {
@@ -13,14 +13,14 @@ function render(props) {
         <FeaturePanel.Item
           title={'Choose from 35+ lenders'}
           subtitle={'It pays to shop around. We match you with the right loan for your specific needs and preferences.'}
-          icon={<CashFlow color="primary.500" />}
+          icon={<Lock color="primary.500" />}
         />
         <FeaturePanel.Item
           title={'Choose from 35+ lenders'}
           subtitle={
             "Sit back and relax. Once you've chosen your loan, we'll submit, package and guide it all the way to settlement."
           }
-          icon={<CashFlow color="primary.500" />}
+          icon={<Lock color="primary.500" />}
         />
       </FeaturePanel>
     </Theme>

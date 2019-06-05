@@ -23,7 +23,7 @@ export const PageNotFound = ({  }: PageNotFoundProps) => (
         <HeadingWrapper size="md" color="secondary.500" mt="xs">
           Page not found
         </HeadingWrapper>
-        <PageNotFoundIcon color="primary.500" />
+        <PageNotFoundIcon />
         <BodyWrapper size={{ mobile: 'sm', tablet: 'md' }} color="shade.700" mb="xxs">
           Oops! It looks like this page has upsized, downsized, moved home or been demolished. Get back on track by
           heading straight over to our home page.

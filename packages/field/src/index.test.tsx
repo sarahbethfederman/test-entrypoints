@@ -4,7 +4,7 @@ import Field from './index';
 import Label from './Label/index';
 import ErrorMessage from './ErrorMessage/index';
 import { FieldWrapper, LabelField } from './index.style';
-import { Question } from '@lendi-ui/icon'; // replace with ToolTip later when LUI Input added to LUI
+import { QuestionOutline } from '@lendi-ui/icon'; // replace with ToolTip later when LUI Input added to LUI
 import { Link } from '@lendi-ui/typography';
 import Theme from '@lendi-ui/theme';
 
@@ -25,7 +25,7 @@ describe('Field', () => {
   const link = <Link size="sm">forgot?</Link>;
   const assistiveText = 'Assistive text';
   const error = 'error message';
-  const tooltip = <Question color="primary.500" />;
+  const tooltip = <QuestionOutline color="primary.500" />;
   const children = <input type="text" />;
   const isOptional = true;
   it('it should render wrapper component', () => {
@@ -63,7 +63,7 @@ describe('Field', () => {
 
   it('it should render ToolTip component properly', () => {
     render({ tooltip });
-    expect(wrapper.find(Question).length).toEqual(1); //  replace with ToolTip later when LUI Input added to LUI
+    expect(wrapper.find(QuestionOutline).length).toEqual(1); //  replace with ToolTip later when LUI Input added to LUI
   });
 
   it('it should render children component properly', () => {

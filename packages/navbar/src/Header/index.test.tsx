@@ -13,7 +13,7 @@ import {
   MenuButton,
   HeaderButton,
 } from './index.style';
-import { Hamburger } from '@lendi-ui/icon';
+import { Menu } from '@lendi-ui/icon';
 import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK } from './../constants/links';
 import { AnalyticsContextProps } from '@lendi-ui/utils';
@@ -54,7 +54,7 @@ describe('Header', () => {
     it('it should mount the LeftGroup component', () => {
       expect(wrapper.find(LeftGroup)).toHaveLength(1);
       expect(wrapper.find(MenuButton)).toHaveLength(1);
-      expect(wrapper.find(Hamburger)).toHaveLength(1);
+      expect(wrapper.find(Menu)).toHaveLength(1);
       expect(wrapper.find(LogoWrapper)).toHaveLength(1);
       expect(wrapper.find(LogoLink)).toHaveLength(1);
       expect(wrapper.find(LogoLink).props().href).toEqual(HOME_PAGE_LINK);

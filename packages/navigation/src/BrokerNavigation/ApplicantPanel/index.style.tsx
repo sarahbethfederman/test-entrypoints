@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link, Overline } from '@lendi-ui/typography';
-import { Success, Warn } from '@lendi-ui/icon';
+import { CheckCircleOutline, ErrorOutline } from '@lendi-ui/icon';
 import { py, pb, mr, ml, my } from '@lendi-ui/spacing';
 import { color } from '@lendi-ui/color';
 
@@ -32,11 +32,11 @@ export const LinkWrapper = styled.div`
   position: relative;
 `;
 
-export const SuccessIcon = styled(Success)`
+export const SuccessIcon = styled(CheckCircleOutline)`
   line-height: 0;
 `;
 
-export const WarnIcon = styled(Warn)`
+export const WarnIcon = styled(ErrorOutline)`
   line-height: 0;
 `;
 

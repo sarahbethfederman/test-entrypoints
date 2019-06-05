@@ -6,6 +6,11 @@
 ### Changed
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
 
+## [2.3.4] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
+### Changed
+- Updated the icon imports to be from the new fancy-icons package.
+- Update icon imports to match new icon naming.
+
 ## [2.3.3] - 2019-05-24 - [HUB-147](https://creditandfinance.atlassian.net/browse/HUB-147)
 ### Changed
 - Update the logo size in the Header and LeftSidebar based on the currently selected theme.

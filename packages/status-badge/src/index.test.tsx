@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import StatusBadge from './index';
 import { Wrapper, IconWrapper, ContentWrapper } from './index.style';
-import { InfoTwo, SuccessTwo, WarnTwo } from '@lendi-ui/icon';
+import { InfoTwo, Check, WarnTwo } from '@lendi-ui/icon';
 
 let element, variant;
 
@@ -29,8 +29,8 @@ describe('StatusBadge', () => {
     expect(element.find(StatusBadge)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
     expect(element.find(IconWrapper)).toHaveLength(1);
-    expect(element.find(SuccessTwo)).toHaveLength(1);
-    expect(element.find(SuccessTwo).props().color).toEqual('success.500');
+    expect(element.find(Check)).toHaveLength(1);
+    expect(element.find(Check).props().color).toEqual('success.500');
     expect(element.find(ContentWrapper)).toHaveLength(1);
     expect(element.find(StatusBadge)).toMatchSnapshot();
   });
@@ -52,8 +52,8 @@ describe('StatusBadge', () => {
   it("it should mount the StatusBadge component when variant is 'success'", () => {
     variant = 'success';
     render({ variant });
-    expect(element.find(SuccessTwo)).toHaveLength(1);
-    expect(element.find(SuccessTwo).props().color).toEqual('success.500');
+    expect(element.find(Check)).toHaveLength(1);
+    expect(element.find(Check).props().color).toEqual('success.500');
   });
 
   it("it should mount the StatusBadge component when variant is 'warn'", () => {

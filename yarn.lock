@@ -69,6 +69,13 @@
   resolved "https://registry.yarnpkg.com/@lendi-ui/depth/-/depth-2.0.0.tgz#5b11d6f0aeb1d9105daf53b1eb7c0af793bb280b"
   integrity sha512-g12fbDYz1ujlK3PnV4I6adlbtjPl+OHy2irkFobwtjvEC1J29SrXb//Y1dCuJ66cj8eIYt+7MoxkSsQE1w7XZA==
 
+"@lendi-ui/icon@^7.0.0", "@lendi-ui/icon@^7.0.1", "@lendi-ui/icon@^7.2.0":
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/icon/-/icon-7.2.0.tgz#1bcba458f80015340d539003dbebff0a8c3906f9"
+  integrity sha512-xFFvcYrrAc0lTJnP4JJDTRvFTtAaOHt9zW2fyYTYoX58yvQ46ts8hQEMvI1y1BKSFUD1Y0ShMHk3EKrsWrcv5g==
+  dependencies:
+    "@lendi-ui/color" "^3.0.0"
+
 "@lendi-ui/spacing@^3.0.0":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-3.1.2.tgz#6f2d5cf1fef2cb8560974aad1e851e48d3fc0a96"

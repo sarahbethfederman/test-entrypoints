@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme, { theme } from '@lendi-ui/theme';
-import { Warn } from '@lendi-ui/icon';
+import { ErrorOutline } from '@lendi-ui/icon';
 import Spinner from '@lendi-ui/spinner';
 import ToggleSwitch from './index';
 import { ToggleLabel, Wrapper } from './index.style';
@@ -80,7 +80,7 @@ describe('ToggleSwitch', () => {
     expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', theme.colors.error['500']);
 
     expect(element.find(IconWrapper)).toHaveLength(1);
-    expect(element.find(Warn)).toHaveLength(1);
+    expect(element.find(ErrorOutline)).toHaveLength(1);
   });
 
   it('should render the correct styles when boxed and off', () => {

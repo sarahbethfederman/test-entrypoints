@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import Spinner from '@lendi-ui/spinner';
-import { ChevronDown } from '@lendi-ui/icon';
+import { ExpandMore } from '@lendi-ui/icon';
 import { ml } from '@lendi-ui/spacing';
 import { depth } from '@lendi-ui/depth';
 import { deriveSize, normalise } from '@lendi-ui/utils';
@@ -119,7 +119,7 @@ export const Select = styled.select<LayoutProp>`
       : 'border: none;'};
 `;
 
-export const IconDown = styled(ChevronDown)`
+export const IconDown = styled(ExpandMore)`
   position: absolute;
   right: 6px;
   pointer-events: none;

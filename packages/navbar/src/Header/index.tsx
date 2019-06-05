@@ -13,7 +13,7 @@ import {
   HeaderButton,
   ApplicationStatusButton,
 } from './index.style';
-import { Hamburger } from '@lendi-ui/icon';
+import { Menu } from '@lendi-ui/icon';
 import * as ZINDEX from '../constants/z-index';
 import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK, LOG_IN_LINK, SIGN_UP_LINK } from './../constants/links';
@@ -122,7 +122,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 }}
                 aria-label="expand menu"
               >
-                <Hamburger color={!isHeaderBgTransparent ? 'primary.500' : 'shade.0'} />
+                <Menu color={!isHeaderBgTransparent ? 'primary.500' : 'shade.0'} />
               </MenuButton>
               <LogoWrapper>
                 <LogoLink

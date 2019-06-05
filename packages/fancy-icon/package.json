@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/fancy-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/cjs/index.js",
   "source": "src/index.tsx",
   "types": "dist/types/index.d.ts",

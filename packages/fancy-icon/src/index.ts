@@ -41,6 +41,7 @@ export { DocumentLoan } from './fancy-icons-compiled/document-loan';
 export { Document } from './fancy-icons-compiled/document';
 export { EmptyBox } from './fancy-icons-compiled/empty-box';
 export { Eyes } from './fancy-icons-compiled/eyes';
+export { FancyCheck } from './fancy-icons-compiled/fancy-check';
 export { FancyInfo } from './fancy-icons-compiled/fancy-info';
 export { FixedMortgageRates } from './fancy-icons-compiled/fixed-mortgage-rates';
 export { Flow } from './fancy-icons-compiled/flow';

@@ -6,10 +6,15 @@ import {Button} from '@lendi-ui/button';
 ```jsx
 <>
   <div>
-    <Lock color="secondary.500" />
-    <Room color="primary.500" height="2em" width="2em" />
+    <AllOut color="error.500" height="2em" width="2em" />
+    <Room color="shade.500" height="2em" width="2em" />
+    <AirlineSeatFlatAngled color="info.500" height="2em" width="2em" />
+    < AlarmAdd color="secondary.500" height="2em" width="2em" />
+    <BugReport color="error.500" height="2em" width="2em" />
+    <ColorLens color="primary.500" height="2em" width="2em" />
+
   </div>
-  <Button variant="secondary">Testing inline<Lock color="primary.500" /></Button>
+  <Button variant="secondary">transfer <TransferWithinAStation  color="primary.500" height="1em" width="1em" /></Button>{' '}
   <Button variant="secondary" ariaLabel="Navigate Back"><ChevronLeft color="primary.500" width="20px" height="20px"/></Button>
 </>
 ```
@@ -17,6 +22,6 @@ import {Button} from '@lendi-ui/button';
 ## Properties
 <PropTable>
   <PropTable.Entry required name="color" type={`string`} description="The Icon color"/>
-  <PropTable.Entry name="width" type={`string`} description="The Icon width"/>
   <PropTable.Entry name="height" type={`string`} description="The Icon height"/>
+  <PropTable.Entry name="width" type={`string`} description="The Icon width"/>
 </PropTable>

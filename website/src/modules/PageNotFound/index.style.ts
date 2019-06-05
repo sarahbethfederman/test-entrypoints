@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Logo from '@lendi-ui/logo';
 import Container from '@lendi-ui/container';
-import { Maintenance, PageNotFound } from '@lendi-ui/icon';
+import { Maintenance, PageNotFound } from '@lendi-ui/fancy-icon';
 import { Heading, Body } from '@lendi-ui/typography';
 import { bg } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
