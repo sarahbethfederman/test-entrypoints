@@ -7,13 +7,13 @@ import { Wrapper } from './index.style';
 
 let element;
 
-const items = {
+const defaultItems = {
   selectedValue: '1',
   labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
   value: ['1', '2', '3'],
 };
 
-function render(props) {
+function render(props, items = defaultItems) {
   element = mount(
     <Theme>
       <RadioGroup selectedValue={items.selectedValue} onChange={() => {}} {...props}>
@@ -26,7 +26,7 @@ function render(props) {
 }
 
 describe('radio button group', () => {
-  it('it should mount all radio buttons semantically', () => {
+  it('should mount all radio buttons semantically', () => {
     render({});
     expect(element.find(RadioGroup)).toHaveLength(1);
     expect(element.find(RadioGroup).exists('legend')).toEqual(true);
@@ -35,33 +35,52 @@ describe('radio button group', () => {
     expect(element.find(RadioGroup.Radio)).toHaveLength(3);
   });
 
-  it('it should mount all radio buttons in "row" direction when setup as "row"', () => {
+  it('should not allow multiple elements to be selected at the same time', () => {});
+
+  it('should mount all radio buttons in "row" direction when setup as "row"', () => {
     const direction = 'row';
     render({ direction });
     expect(element.find(Wrapper).prop('direction')).toEqual('row');
   });
 
-  it('it should mount all radio buttons and display as boxed when setup as "isBoxed', () => {
+  it('should mount all radio buttons and display as boxed when setup as "isBoxed', () => {
     const isBoxed = true;
     render({ isBoxed });
     const radiobuttons = element.find(Radio);
     radiobuttons.forEach((radiobutton) => expect(radiobutton.prop('isBoxed')).toEqual(true));
   });
 
-  it('it should mount all radio buttons and display as disabled when setup as "isDisabled"', () => {
+  it('should mount all radio buttons and display as disabled when setup as "isDisabled"', () => {
     const isDisabled = true;
     render({ isDisabled });
     const radiobuttons = element.find(Radio);
     radiobuttons.forEach((radiobutton) => expect(radiobutton.prop('isDisabled')).toEqual(true));
   });
 
-  it('it should only contain one selected value', () => {
+  it('should only contain one selected value', () => {
     expect(element.find(RadioGroup).prop('selectedValue')).toEqual('1');
     expect(element.find(RadioGroup).props()).toEqual(
       expect.objectContaining({
         selectedValue: expect.any(String),
       })
     );
+  });
+
+  it('should only allow one element to be selected at a time', () => {
+    const testItems = {
+      selectedValue: 'test',
+      labels: ['test option 1', 'test option 2', 'test option 3'],
+      value: ['test', 'tester', 'testerer'],
+    };
+
+    render({}, testItems);
+
+    let totalChecked = 0;
+    element.find(Radio).forEach((rad) => {
+      if (rad.props().isChecked) totalChecked += 1;
+    });
+
+    expect(totalChecked).toEqual(1);
   });
 
   describe('test native props and Standard HTML Attributes', () => {
@@ -76,6 +95,7 @@ describe('radio button group', () => {
       expect(attributes['aria-label']).toBe(ARIA_LABEL);
       expect(attributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
     });
+
     it('should mount with native props like id, tabIndex', () => {
       const TEXT_ID = 'testId';
       render({

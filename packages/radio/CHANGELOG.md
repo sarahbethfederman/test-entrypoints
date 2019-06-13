@@ -1,3 +1,7 @@
+## [2.2.2] - 2019-06-13 - [HUB-274](https://creditandfinance.atlassian.net/browse/HUB-274)
+### Changed
+- Used strict equality to ensure only one radio element in a radio group can be selected at a time.
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
