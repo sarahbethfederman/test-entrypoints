@@ -57,10 +57,11 @@ export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
       className,
       direction = 'column',
       isDisabled,
+      onChange,
       ...checkboxProps
     } = this.props;
 
-    const checkboxGroupWrapperProps = { isBoxed, values, isDisabled };
+    const checkboxGroupWrapperProps = { isBoxed, values, isDisabled, onChange };
     return (
       <CheckboxContext.Provider value={checkboxGroupWrapperProps}>
         <Wrapper direction={direction} className={className} {...checkboxProps}>

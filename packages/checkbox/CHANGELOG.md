@@ -1,3 +1,7 @@
+## [2.2.2] - 2019-06-12 - [HUB-269](https://creditandfinance.atlassian.net/browse/HUB-269)
+### Changed
+- Failed prop type warning issue when you use CheckboxGroup - just added onChange event on checkbox-group so that React won't complaint of having an form input element with checked prop.
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

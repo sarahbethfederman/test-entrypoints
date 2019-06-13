@@ -65,11 +65,11 @@ class Example extends React.Component<{}, ExampleState> {
       return;
     }
 
-    if (newValues.includes(e.currentTarget.value.toString())) {
-      const index = newValues.indexOf(e.currentTarget.value.toString());
+    if (newValues.includes(e.target.value.toString())) {
+      const index = newValues.indexOf(e.target.value.toString());
       newValues.splice(index, 1);
     } else {
-      newValues.push(e.currentTarget.value.toString());
+      newValues.push(e.target.value.toString());
     }
 
     this.setState((prevState) => {
