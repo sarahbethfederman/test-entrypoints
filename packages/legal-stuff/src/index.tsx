@@ -38,7 +38,7 @@ const Legal = (props: LUIGlobalProps) => {
         <BodyContainer>
           Lendi is a privately owned and operated Aussie business. Our mission is to provide Aussies with the right
           experience when choosing a home loan from our panel of major and non-bank lenders including Click Loans which
-          is a wholly owned subsidiary of Auscred Pty Ltd and a related body corporate of Auscred Services, your credit
+          is a wholly owned subsidiary of Auscred Limited and a related body corporate of Auscred Services, your credit
           assistance provider. Although Lendi compares over 1600 products from over 30 lenders, we don't cover the whole
           market or compare all features and there may be other features or options available to you. While Lendi is 40%
           owned by founders and employees, we have also been supported by some great minority shareholders including

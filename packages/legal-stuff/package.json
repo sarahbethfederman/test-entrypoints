@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/legal-stuff",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

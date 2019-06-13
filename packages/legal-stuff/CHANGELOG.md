@@ -1,3 +1,7 @@
+## [2.2.2] - 2019-06-13 - [HUB-266](https://creditandfinance.atlassian.net/browse/HUB-266)
+### Changed
+- Change Auscred Pty Ltd to Auscred Limited in legal stuff
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
