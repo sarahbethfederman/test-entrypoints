@@ -98,6 +98,7 @@ export const Layout = styled.div`
         background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
         border: 1px solid ${isInverse ? select('colors.shade.0') : select('colors.shade.100')};
         ${heightBySizeMixin(size)};
+        ${isFullWidth ? 'width: 100%' : widthBySizeMixin(size)};
       `;
     } else {
       return css`
@@ -105,6 +106,7 @@ export const Layout = styled.div`
         width: ${isFullWidth ? '100%' : 'auto'};
         background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
         ${heightBySizeMixin(size)};
+        ${isFullWidth ? 'width: 100%' : widthBySizeMixin(size)};
       `;
     }
   }};
@@ -114,6 +116,28 @@ export const Layout = styled.div`
   }
 `;
 
+const widthBySizeMixin = (size: InputSize) =>
+  map(size, (val) => {
+    switch (val) {
+      case 'sm':
+        return `
+          width: ${deriveSize(14.5)};
+        `;
+      case 'md':
+        return `
+          width: ${deriveSize(21.5)};
+        `;
+      case 'lg':
+        return `
+          width: ${deriveSize(24)};
+       `;
+      default:
+        return `
+          width: ${deriveSize(21.5)};
+      `;
+    }
+  });
+
 export interface InputWrapperProps {
   fontSize: InputSize;
   isInverse: boolean;
@@ -122,6 +146,7 @@ export interface InputWrapperProps {
 }
 
 export const InputWrapper = styled.input`
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -152,7 +177,8 @@ export const BeforeWrapper = styled.span`
     margin: 0 0 0 -1px;
   }
   padding-right: 1px;
-  line-height: 0;
+  flex: 1 0 auto;
+  line-height: 1px;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`
@@ -170,6 +196,8 @@ export const AfterWrapper = styled.span`
     margin: 0 -1px 0 0;
   }
   padding-left: 1px;
+  flex: 1 0 auto;
+  line-height: 1px;
   ${({ isDisabled }: { isDisabled: boolean }) => {
     if (isDisabled) {
       return css`

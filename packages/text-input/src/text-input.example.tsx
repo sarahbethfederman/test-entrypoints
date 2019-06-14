@@ -1,9 +1,21 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import { Input } from './index';
+import { Email, Lock } from '@lendi-ui/icon';
+import { pl, pr } from '@lendi-ui/spacing';
 
 export interface ExampleState {
   value: string;
 }
+
+const EmailIcon = styled(Email)`
+  ${pl('sm')}
+  ${pr('xxxs')}
+`;
+const AfterIcon = styled(Lock)`
+  ${pr('sm')}
+  ${pl('xxxs')}
+`;
 
 class Example extends React.Component<{}, ExampleState> {
   state = {
@@ -22,7 +34,14 @@ class Example extends React.Component<{}, ExampleState> {
       <div>
         <br />
         <br />
-        <Input size="sm" isAutoFocus value={value} onChange={this.onChange} placeholder="So smol 🎉" />
+        <Input
+          size={'md'}
+          placeholder="Input here ..."
+          onChange={this.onChange}
+          isFullWidth={false}
+          after={<AfterIcon color="primary.500" height="26px" />}
+          before={<EmailIcon color="primary.500" height="26px" />}
+        />
         <br />
         <br />
         <Input size="md" value={value} onChange={this.onChange} placeholder="I'm medium 🎉" />

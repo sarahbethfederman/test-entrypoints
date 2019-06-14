@@ -1,4 +1,8 @@
-## [3.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+## [3.2.2] - 2019-06-13 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+### Changed
+- Few bugs like vertical-align of after and when you dynamically add after prop, it extends the length of textbox.
+
+## [3.2.1] - 2019-06-4 - [HUB-193](https://creditandfinance.atlassian.net/browse/HUB-193)
 ### Changed
 - Updated utils dependency to get correct types
 

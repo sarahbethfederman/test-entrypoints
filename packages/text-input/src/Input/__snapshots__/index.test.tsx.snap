@@ -37,6 +37,7 @@ exports[`input it should render the whole input component and a text input 1`] =
   width: auto;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c1:hover:not(:focus) {
@@ -44,6 +45,9 @@ exports[`input it should render the whole input component and a text input 1`] =
 }
 
 .c2 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -291,6 +295,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: 100%;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: 100%;
 }
 
 .c0:hover:not(:focus) {
@@ -298,6 +303,9 @@ exports[`input variations of the text input in all given sizes lg should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -398,6 +406,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -405,6 +414,9 @@ exports[`input variations of the text input in all given sizes lg should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -504,6 +516,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: auto;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -511,6 +524,9 @@ exports[`input variations of the text input in all given sizes lg should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -610,6 +626,7 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: auto;
   background-color: transparent;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -617,6 +634,9 @@ exports[`input variations of the text input in all given sizes lg should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -716,6 +736,7 @@ exports[`input variations of the text input in all given sizes md should render 
   width: 100%;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: 100%;
 }
 
 .c0:hover:not(:focus) {
@@ -723,6 +744,9 @@ exports[`input variations of the text input in all given sizes md should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -823,6 +847,7 @@ exports[`input variations of the text input in all given sizes md should render 
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -830,6 +855,9 @@ exports[`input variations of the text input in all given sizes md should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -929,6 +957,7 @@ exports[`input variations of the text input in all given sizes md should render 
   width: auto;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -936,6 +965,9 @@ exports[`input variations of the text input in all given sizes md should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -1035,6 +1067,7 @@ exports[`input variations of the text input in all given sizes md should render 
   width: auto;
   background-color: transparent;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1042,6 +1075,9 @@ exports[`input variations of the text input in all given sizes md should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -1141,6 +1177,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: 100%;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: 100%;
 }
 
 .c0:hover:not(:focus) {
@@ -1148,6 +1185,9 @@ exports[`input variations of the text input in all given sizes sm should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -1248,6 +1288,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1255,6 +1296,9 @@ exports[`input variations of the text input in all given sizes sm should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -1354,6 +1398,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: auto;
   background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1361,6 +1406,9 @@ exports[`input variations of the text input in all given sizes sm should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
@@ -1460,6 +1508,7 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: auto;
   background-color: transparent;
   height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
 }
 
 .c0:hover:not(:focus) {
@@ -1467,6 +1516,9 @@ exports[`input variations of the text input in all given sizes sm should render 
 }
 
 .c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;

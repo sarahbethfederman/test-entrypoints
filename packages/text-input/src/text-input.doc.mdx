@@ -8,9 +8,13 @@ import Input from '@lendi-ui/text-input';
 
 ```js
 const EmailIcon = styled(Email)`
-  ${pl('sm')}
+   ${pl('sm')}
+  ${pr('xxxs')}
+ `;
+const AfterIcon = styled(Lock)`
+  ${pr('sm')}
+  ${pl('xxxs')}
 `;
-
 
 render(
 <>
@@ -21,6 +25,11 @@ render(
     isFullWidth={true}
     before={
         <EmailIcon
+          color='primary.500'
+          height='26px'
+        />}
+        after={
+        <AfterIcon
           color='primary.500'
           height='26px'
         />}

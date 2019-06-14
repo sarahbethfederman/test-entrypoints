@@ -50,6 +50,12 @@ describe('input', () => {
           expect(element.find(Layout)).toMatchSnapshot();
         });
 
+        it('should not render 100% width when fullwidth is false', () => {
+          const isFullWidth = false;
+          render({ isFullWidth });
+          expect(element.find(Layout)).not.toHaveStyleRule('width', '100%');
+        });
+
         it('should render the component in a disabled state with the isDisabled prop', () => {
           const isDisabled = true;
           render({ isDisabled });

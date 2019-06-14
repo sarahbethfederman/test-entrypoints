@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/text-input",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -17,14 +17,17 @@
     "styled-components": "^2 || ^3"
   },
   "dependencies": {
-    "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.5.0",
     "@lendi-ui/breakpoint": "^2.0.0",
-    "@lendi-ui/button": "^5.0.0"
+    "@lendi-ui/button": "^5.0.0",
+    "@lendi-ui/typography": "^3.0.0",
+    "@lendi-ui/utils": "^2.5.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:types && yarn run build:cjs"
+  },
+  "devDependencies": {
+    "@lendi-ui/icon": "^8.0.0"
   }
 }
