@@ -1,10 +1,13 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Theme from '@lendi-ui/theme';
 import { theme as domainTheme } from '@lendi-ui/theme-domain';
+
+import { RouteMatch } from '../../utils/DocumentViewer';
 import { Home } from '../Home';
-import { GettingStarted } from '../GettingStarted';
+import { Page } from '../Pages';
 import { PackageExample } from '../PackageExample';
 import { Package } from '../Package';
 import { ThemeType, AppContext } from '../Common';
@@ -45,7 +48,7 @@ export class App extends React.Component<{}, AppState> {
             <BrowserRouter>
               <Switch>
                 <Route path="/" exact={true} component={Home} />
-                <Route path="/getting-started" component={GettingStarted} />
+                <Route path="/pages/:page">{(props: RouteMatch) => <Page {...props} />}</Route>
                 <Route path="/packages/:pkg/example/:example" component={PackageExample} />
                 <Route path="/packages/:pkg" component={Package} />
                 <Route component={PageNotFound} />

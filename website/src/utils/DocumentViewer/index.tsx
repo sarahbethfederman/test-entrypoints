@@ -26,6 +26,7 @@ export interface RouteMatch {
       pkg: string;
       doc: string;
       example: string;
+      page: string;
     };
     url: string;
   };
