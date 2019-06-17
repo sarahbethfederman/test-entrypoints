@@ -107,7 +107,7 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: (str) => getData(str),
-        onSelect: (text) => console.log(text),
+        onSelect: (text) => true,
         size: 'md',
         isDisabled: false,
         before: undefined,
@@ -230,10 +230,11 @@ describe('AutoComplete', () => {
     });
     describe('on enter', () => {
       const activeSelection = 1;
+      const onSelectMock = jest.fn();
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelect: onSelectMock,
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -246,6 +247,10 @@ describe('AutoComplete', () => {
       it('should update the active selection', () => {
         wrapper.find('input').simulate('keyDown', { key: 'Enter' });
         expect(autoCompleteInstance.state.userInput).toBe(TEST_DATA_SOURCE[activeSelection].label);
+      });
+      it('should select the active selection', () => {
+        wrapper.find('input').simulate('keyDown', { key: 'Enter' });
+        expect(autoCompleteProps.onSelect).toHaveBeenCalledWith('anz');
       });
     });
     describe('on esc', () => {
@@ -325,67 +330,7 @@ describe('AutoComplete', () => {
       });
     });
   });
-  describe('test filtered data', () => {
-    describe('when data is retrieved externally(Async flow)', () => {
-      describe('matching results', () => {
-        beforeEach(() => {
-          render({
-            dataSource: (userInput: string) =>
-              Promise.resolve(
-                TEST_DATA_SOURCE.filter((d) => d.label.toLowerCase().indexOf(userInput.toLowerCase()) > -1)
-              ),
-          });
-        });
-        it('should return non-zero result set', async (done) => {
-          await autoCompleteInstance.getFilteredData('bank');
-          expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(4);
-          done();
-        });
-      });
-      describe('no matching results', () => {
-        beforeEach(() => {
-          render({
-            dataSource: (userInput: string) => Promise.resolve([]),
-          });
-        });
-        it('should return zero result set', (done) => {
-          autoCompleteInstance.getFilteredData('xyz');
-          expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(0);
-          done();
-        });
-      });
-    });
-    describe('when data is internal', () => {
-      describe('matching results', () => {
-        beforeEach(() => {
-          render({
-            dataSource: TEST_DATA_SOURCE,
-          });
-        });
-        it('should return non-zero result set', (done) => {
-          autoCompleteInstance.getFilteredData('bank');
-          autoCompleteInstance.forceUpdate();
-          expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(4);
-          done();
-        });
-      });
-      describe('no matching results', () => {
-        beforeEach(() => {
-          render({
-            dataSource: (userInput: string) => Promise.resolve([]),
-          });
-        });
-        it('should return zero result set', (done) => {
-          jest.spyOn(autoCompleteInstance, 'setState').mockImplementation((newState: AutoCompleteState) => {
-            expect(newState.filteredDataSource.length).toBe(0);
-          });
-          autoCompleteInstance.getFilteredData('xyz');
-          expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(0);
-          done();
-        });
-      });
-    });
-  });
+
   describe('window event', () => {
     let addEventListenerCalled = false;
     beforeEach(() => {
@@ -404,6 +349,23 @@ describe('AutoComplete', () => {
       window.dispatchEvent(new Event('resize'));
       // TODO - this should work, it seems resize dispatch not working.
       //expect(autoCompleteInstance.debounceWindowResize).toBeCalled();
+    });
+  });
+
+  describe('test the clear input event', () => {
+    const selectMock = jest.fn();
+    beforeEach(() => {
+      render({
+        dataSource: TEST_DATA_SOURCE,
+        onSelect: selectMock,
+      });
+      autoCompleteInstance.clearInput();
+    });
+    it('should reset the state', () => {
+      expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(0);
+    });
+    it('should call onSelect with empty string', () => {
+      expect(selectMock).toHaveBeenCalledWith('');
     });
   });
 
@@ -431,6 +393,19 @@ describe('AutoComplete', () => {
       const inputAttributes = wrapper.find(Input).props();
       expect(inputAttributes.id).toBe(TEXT_ID);
       expect(inputAttributes.title).toBe(TEXT_TITLE);
+    });
+  });
+
+  describe('when component unmounted', () => {
+    let removeEventListener = false;
+    beforeEach(() => {
+      window.removeEventListener = jest.fn().mockImplementation(() => {
+        removeEventListener = true;
+      });
+    });
+    it('should call removeEventListener', () => {
+      wrapper.unmount();
+      expect(removeEventListener).toBeTruthy();
     });
   });
 });

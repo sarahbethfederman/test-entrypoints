@@ -19,7 +19,7 @@ export default () => (
     <AutoComplete
       dataSource={MOCK_DATA_SOURCE}
       isFullWidth={false}
-      onSelect={(text: string) => alert(text)}
+      onSelect={(text) => alert(text)}
       before={<PaddedPhoneIcon color="shade.500" />}
     />
     <br />

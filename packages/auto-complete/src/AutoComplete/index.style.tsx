@@ -34,16 +34,16 @@ export const AutoCompleteList = styled.ul`
 `;
 
 export const AutoCompleteListItem = styled.li`
-  width: 100%;
+  width: auto;
   word-wrap: break-word;
-  line-height: 48px;
   list-style: none;
   ${px('sm')};
-  height: 48px;
+  ${py('xs')};
+  max-height: 48px;
   ${gte('tablet')`
-    height: 32px;
-    line-height: 32px;
+    max-height: 40px;
   `};
+  font-family: ${select('typography.body.fontFamily')};
   :hover {
     ${bg('secondary.500')};
     ${fg('shade.0')} cursor: pointer;

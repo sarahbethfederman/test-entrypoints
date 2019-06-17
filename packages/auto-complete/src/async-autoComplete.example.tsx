@@ -32,7 +32,7 @@ export default () => (
     <strong>Example with some props like onSelect, size(lg) and placeholder</strong>
     <AutoComplete
       dataSource={(userInput: string) => getData(userInput)}
-      onSelect={(text: string) => alert(text)}
+      onSelect={(text: string | number) => alert(text)}
       size={'lg'}
       placeholder={'My test'}
     />

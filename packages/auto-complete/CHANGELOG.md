@@ -1,3 +1,15 @@
+## [3.2.0] - 2019-06-05 - [HUB-204](https://creditandfinance.atlassian.net/browse/HUB-204)
+### Changed
+- changed the DataSourceItem value to take both 'string and number'
+- consumer can get value of DataSourceItem on onSelect by mouse and on enter of text-input
+- set typography on drop down items
+- on empty the text input or clicking cancel icon on the text input - should reset the onselect to empty. 
+- onChange prop
+
+## [3.1.1] - 2019-06-04 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+### Changed
+- Updated utils dependency to get correct types
+
 ## [3.1.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Changed
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef

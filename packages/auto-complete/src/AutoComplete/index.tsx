@@ -1,22 +1,27 @@
 import * as React from 'react';
 import createRef from 'react-create-ref';
+import { debounce } from 'lodash';
+
 import { LUIFormProps } from '@lendi-ui/utils';
 import { IconProps } from '@lendi-ui/icon';
-import { Size, CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from './index.style';
-import { debounce } from 'lodash';
-import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from './keys';
 import { Input } from '@lendi-ui/text-input';
+
+import { Size, CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from './index.style';
+import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from './keys';
 import AutoCompleteMenuList from './MenuList';
+import { extractData } from './Utils';
+
+export type SelectedValue = string | number;
 
 export interface DataSourceItem {
   label: string;
-  value: string;
+  value: SelectedValue;
 }
 
 export interface AutoCompleteProps extends LUIFormProps {
   dataSource: ((input: string) => Promise<DataSourceItem[]>) | DataSourceItem[];
   value?: string;
-  onSelect?: (item: string) => void;
+  onSelect?: (selectedItem: SelectedValue) => void;
   size?: Size;
   placeholder?: string;
   isDisabled?: boolean;
@@ -28,6 +33,7 @@ export interface AutoCompleteProps extends LUIFormProps {
   isAutoFocus?: boolean;
   isReadOnly?: boolean;
   isFullWidth?: boolean;
+  onChange?: (value: SelectedValue) => void;
 }
 
 export interface AutoCompleteState {
@@ -54,7 +60,6 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   };
   menuContainerRef: any = createRef();
   inputWrapper: any = createRef();
-  inputElemWidth = 0;
 
   constructor(props: AutoCompleteProps) {
     super(props);
@@ -64,22 +69,35 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
 
   calcInputWidth = () => {
     this.setState({
-      menuWidth: this.inputWrapper.current.firstElementChild.offsetWidth,
+      menuWidth: this.inputWrapper.current.firstElementChild!.offsetWidth,
     });
   };
 
   componentDidMount() {
+    window.addEventListener('click', this.onHoverOff);
     window.addEventListener('resize', this.debounceWindowResize);
     this.calcInputWidth();
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.debounceWindowResize);
+    window.removeEventListener('click', this.onHoverOff);
   }
+
+  onHoverOff = (e: Event) => {
+    // this component is uncontroller component, and showing-menu is internal to it,
+    // so just checking if consumer clicks outside `AC`, it will find out and close the menu
+    const theClickedElement = (e.target as HTMLDivElement).parentElement;
+    if (this.inputWrapper.current.firstElementChild !== theClickedElement) {
+      this.setState({
+        showList: false,
+      });
+    }
+  };
 
   render() {
     const {
-      dataSource: [],
+      dataSource = [],
       placeholder = 'Just start Typing...',
       size = 'md',
       onSelect = () => {},
@@ -88,13 +106,13 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
     return (
       <AutoCompleteWrapper innerRef={this.inputWrapper}>
         <Input
+          {...inputProps}
           size={size}
           placeholder={placeholder}
           onChange={this.onChange}
           onKeyDown={this.onKeyDown}
           value={this.state.userInput}
           after={this.state.userInput && this.renderAfterIcon()}
-          {...inputProps}
         />
         {this.state.showList && this.listComponent()}
       </AutoCompleteWrapper>
@@ -133,13 +151,13 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   onSelect = (event: React.MouseEvent<HTMLElement>) => {
     const { onSelect = () => {} } = this.props;
     const textWithoutHTMLJunk = event.currentTarget.innerText.replace(/<\/?[^>]+(>|$)/g, '');
+    onSelect(this.state.filteredDataSource[this.state.activeSelection].value);
     this.setState({
       activeSelection: 0,
       filteredDataSource: [],
       userInput: textWithoutHTMLJunk,
       showList: false,
     });
-    onSelect(textWithoutHTMLJunk);
   };
 
   // Event fired when the input value is changed
@@ -157,50 +175,35 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   };
 
   getFilteredData = async (userInput: string) => {
-    const { dataSource } = this.props;
-    let filteredDataSource: DataSourceItem[] = [];
-    if (userInput !== '') {
-      if (!Array.isArray(dataSource)) {
-        filteredDataSource = await dataSource(userInput);
-      } else {
-        filteredDataSource = dataSource.filter(
-          (data) => data.label.toLowerCase().indexOf(userInput.toLowerCase()) > -1
-        );
-      }
-      filteredDataSource = filteredDataSource.map((d) => this.makeInputKeyBold(d, userInput.toLowerCase()));
-      this.setState({
-        activeSelection: 0,
-        filteredDataSource,
-        showList: true,
-        isLoading: false,
-      });
-    }
-  };
-
-  makeInputKeyBold = (str: DataSourceItem, find: string): DataSourceItem => {
-    var regex = new RegExp(find, 'gi');
-    const matchings: RegExpMatchArray | null = str.label.match(regex);
-    if (matchings) {
-      return {
-        label: str.label.replace(new RegExp(matchings[0], 'g'), '<b>' + matchings[0] + '</b>'),
-        value: str.value,
-      };
-    } else {
-      return str;
-    }
+    const { dataSource, onChange = () => {} } = this.props;
+    onChange(userInput);
+    const filteredDataSource = await extractData(userInput, dataSource);
+    this.setState({
+      activeSelection: 0,
+      filteredDataSource,
+      showList: true,
+      isLoading: false,
+    });
   };
 
   // Event fired when the user presses a key down
   // for example when you pressed enter, tab, up/down key
   onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     const { activeSelection, filteredDataSource } = this.state;
+    const { onSelect = () => {} } = this.props;
+
     switch (event.key) {
       case KEY_ENTER:
-        this.setState({
-          activeSelection: 0,
-          userInput: filteredDataSource[activeSelection].label.replace(/<\/?[^>]+(>|$)/g, ''),
-          showList: false,
-        });
+        this.setState(
+          {
+            activeSelection: 0,
+            userInput: filteredDataSource[activeSelection].label.replace(/<\/?[^>]+(>|$)/g, ''),
+            showList: false,
+          },
+          () => {
+            onSelect(filteredDataSource[activeSelection].value);
+          }
+        );
         return;
       case KEY_UP:
         if (activeSelection === 0) {
@@ -228,21 +231,31 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   };
 
   clearInput = () => {
-    return this.setState({
-      activeSelection: 0,
-      filteredDataSource: [],
-      userInput: '',
-      showList: false,
-    });
+    const { onSelect = () => {} } = this.props;
+    return this.setState(
+      {
+        activeSelection: 0,
+        filteredDataSource: [],
+        userInput: '',
+        showList: false,
+      },
+      () => onSelect('')
+    );
   };
 
   focusItem = () => {
+    // The idea is to calculate the new scrollTop for menuContainer as you scroll up/down. Just a simple mathematics to scroll the
+    // container by selected item height. If the additon of selectedItem's offsetTop and offsetHeight cannot be accomodated inside menucontainer,
+    // which means if their addition is bigger than menuContainer's offsetHeight then we will make its difference to menuContainer's scrollTop
+    // and the addiiton of 7, is just to have extra padding to accodomate the padding we are giving at menuContainer's level - ${py('xxs')};
+    // for example - if we change the padding ${py('xxs')} to ${py('xs')}, then we need to change this factor of 7 to 12.
     if (this.menuContainerRef.current) {
-      this.menuContainerRef.current.scrollTop = 0;
+      this.menuContainerRef.current.scrollTop = 0; // just a reset and calculate again.
       this.menuContainerRef.current.scrollTop =
         this.menuContainerRef.current.querySelector('.selectedItem').offsetTop +
-        40 -
-        this.menuContainerRef.current.offsetHeight;
+        this.menuContainerRef.current.querySelector('.selectedItem').offsetHeight -
+        this.menuContainerRef.current.offsetHeight +
+        7;
     }
   };
 }
