@@ -274,8 +274,10 @@ export const Layout = styled.div`
 
 export const BeforeWrapper = styled.span`
   ${({ size }: { size: ButtonSize }) => beforeBySizeMixin(size)};
+  display: flex;
 `;
 
 export const AfterWrapper = styled.span`
   ${({ size }: { size: ButtonSize }) => afterBySizeMixin(size)};
+  display: flex;
 `;

@@ -1,3 +1,7 @@
+## [8.0.1] - 2019-06-07 - [HUB-264](https://creditandfinance.atlassian.net/browse/HUB-264)
+### Changed
+- Fix the icon alignment issue.
+
 ## [8.0.0] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
 ### Deleted
 - FileDownload, SuccessTwo, Warn, Error, Mobile (duplicate icons)

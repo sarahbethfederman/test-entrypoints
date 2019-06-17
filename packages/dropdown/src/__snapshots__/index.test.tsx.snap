@@ -9,6 +9,7 @@ exports[`Dropdown it should render whole component 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c3 > svg {

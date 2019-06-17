@@ -1,3 +1,7 @@
+## [5.3.2] - 2019-06-07 - [HUB-264](https://creditandfinance.atlassian.net/browse/HUB-264)
+### Changed
+- Corrected before and after alignment issue.
+
 ## [5.3.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

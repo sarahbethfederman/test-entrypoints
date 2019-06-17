@@ -25,6 +25,7 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c1 > svg {
@@ -98,6 +99,7 @@ exports[`ErrorMessage it should render a icon called "HighlightOff" 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -185,6 +187,7 @@ exports[`ErrorMessage it should render whole component 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c1 > svg {

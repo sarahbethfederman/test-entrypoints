@@ -15,6 +15,7 @@ export const IconWrapper = styled.span\`
   width: \${({ width }: IconProps) => width || '1em'};
   height: \${({ height }: IconProps) => height || '1em'};
   vertical-align: middle;
+  display: inline-block;
 
   & > svg {
     fill: \${({ color }: IconProps) => getColor(color)};

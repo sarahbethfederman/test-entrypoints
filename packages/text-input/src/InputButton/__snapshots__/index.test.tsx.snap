@@ -79,10 +79,18 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
 
 .c4 {
   margin-right: var(--lendi-ui-size);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c5 {
   margin-left: var(--lendi-ui-size);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1:focus {
@@ -254,10 +262,18 @@ exports[`InputButton it should render InputButton in before wrapper 1`] = `
 
 .c4 {
   margin-right: var(--lendi-ui-size);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c5 {
   margin-left: var(--lendi-ui-size);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .c1:focus {

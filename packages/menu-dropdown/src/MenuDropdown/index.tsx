@@ -1,9 +1,11 @@
 import * as React from 'react';
+import createRef from 'react-create-ref';
+
+import { LUIGlobalProps } from '@lendi-ui/utils';
+
 import { MenuDropdownContent } from '../MenuDropdownContent';
 import { MenuDropdownTrigger } from '../MenuDropdownTrigger';
 import { Wrapper, ItemContainer, TopItemContainer } from './index.style';
-import createRef from 'react-create-ref';
-import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface MenuDropDownProps extends LUIGlobalProps {}
 
@@ -23,10 +25,7 @@ export default class MenuDropdown extends React.Component<MenuDropDownProps, Dro
   static Content = MenuDropdownContent;
   static Trigger = MenuDropdownTrigger;
 
-  // Supressing "Cannot invoke an expression whose type lacks a call signature." error
-  // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-  // @ts-ignore
-  private node = createRef();
+  private node: React.RefObject<HTMLElement> = createRef();
 
   state = {
     showDropdown: false,
@@ -40,8 +39,8 @@ export default class MenuDropdown extends React.Component<MenuDropDownProps, Dro
     document.removeEventListener('mousedown', this.handleWindowClick, false);
   }
 
-  private handleWindowClick = (e: Event) => {
-    if (this.node.current.contains(e.target)) {
+  private handleWindowClick = (e: MouseEvent) => {
+    if (this.node.current!.contains(e.target as Node)) {
       // on dropdown.
       if (e.target instanceof HTMLDivElement) {
         e.target.click();

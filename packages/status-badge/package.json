@@ -17,7 +17,7 @@
     "styled-components": "^3"
   },
   "dependencies": {
-    "@lendi-ui/icon": "^7.0.0",
+    "@lendi-ui/icon": "^8.0.1",
     "@lendi-ui/color": "^3.0.0",
     "@lendi-ui/typography": "^3.0.0",
     "@lendi-ui/spacing": "^4.0.0",

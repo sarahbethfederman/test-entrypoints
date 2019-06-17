@@ -76,6 +76,7 @@ exports[`Alert it should mount Alert component with heading 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c3 > svg {
@@ -222,6 +223,7 @@ exports[`Alert it should mount Alert component without heading 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {

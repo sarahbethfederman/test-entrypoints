@@ -5,6 +5,7 @@ exports[`InlineDropdown render BoxArrow component 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c1 > svg {
@@ -63,6 +64,7 @@ exports[`InlineDropdown render SelectedBox component and has size property "md" 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c3 > svg {
@@ -268,6 +270,7 @@ exports[`InlineDropdown render whole component 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c3 > svg {

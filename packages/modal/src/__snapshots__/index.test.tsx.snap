@@ -6,6 +6,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -132,6 +133,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -257,6 +259,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -374,6 +377,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -490,6 +494,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -607,6 +612,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -723,6 +729,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -838,6 +845,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -953,6 +961,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -1079,6 +1088,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -1204,6 +1214,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -1321,6 +1332,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -1437,6 +1449,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -1554,6 +1567,7 @@ Array [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {

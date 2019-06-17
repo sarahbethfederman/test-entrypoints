@@ -47,6 +47,7 @@ exports[`StatusBadge it should mount StatusBadge component with icon 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {
@@ -164,6 +165,7 @@ exports[`StatusBadge it should mount StatusBadge component without icon 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c2 > svg {

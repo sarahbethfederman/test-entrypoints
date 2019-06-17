@@ -20,17 +20,17 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
   state = {
     isOpen: false,
   };
-  private myRef = createRef();
+  private myRef: React.RefObject<HTMLElement> = createRef();
 
   componentDidMount() {
-    let hammer!: HammerManager;
-    const manager = new Hammer.Manager(this.myRef.current);
+    let hammer: HammerManager;
+    const manager = new Hammer.Manager(this.myRef.current as EventTarget);
 
     const Press = new Hammer.Press({
       time: 300,
     });
     manager.add(Press);
-    manager.on('press', (e) => {
+    manager.on('press', () => {
       this.setState({ isOpen: true });
     });
 

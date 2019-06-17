@@ -5,6 +5,7 @@ exports[`Icon component Accessibility should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -46,6 +47,7 @@ exports[`Icon component Accessible should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -92,6 +94,7 @@ exports[`Icon component AccountBalance should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -133,6 +136,7 @@ exports[`Icon component AccountBalanceWallet should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -174,6 +178,7 @@ exports[`Icon component AccountBox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -215,6 +220,7 @@ exports[`Icon component AccountCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -256,6 +262,7 @@ exports[`Icon component Adb should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -297,6 +304,7 @@ exports[`Icon component Add should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -338,6 +346,7 @@ exports[`Icon component AddAPhoto should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -382,6 +391,7 @@ exports[`Icon component AddAlert should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -423,6 +433,7 @@ exports[`Icon component AddBox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -464,6 +475,7 @@ exports[`Icon component AddCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -505,6 +517,7 @@ exports[`Icon component AddCircleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -546,6 +559,7 @@ exports[`Icon component AddLocation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -587,6 +601,7 @@ exports[`Icon component AddShoppingCart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -628,6 +643,7 @@ exports[`Icon component AddToPhotos should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -669,6 +685,7 @@ exports[`Icon component Adjust should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -710,6 +727,7 @@ exports[`Icon component AirlineSeatFlat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -751,6 +769,7 @@ exports[`Icon component AirlineSeatFlatAngled should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -792,6 +811,7 @@ exports[`Icon component AirlineSeatIndividualSuite should fetch icon correctly 1
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -833,6 +853,7 @@ exports[`Icon component AirlineSeatLegroomExtra should fetch icon correctly 1`] 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -874,6 +895,7 @@ exports[`Icon component AirlineSeatLegroomNormal should fetch icon correctly 1`]
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -915,6 +937,7 @@ exports[`Icon component AirlineSeatLegroomReduced should fetch icon correctly 1`
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -956,6 +979,7 @@ exports[`Icon component AirlineSeatReclineExtra should fetch icon correctly 1`] 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -997,6 +1021,7 @@ exports[`Icon component AirlineSeatReclineNormal should fetch icon correctly 1`]
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1038,6 +1063,7 @@ exports[`Icon component Alarm should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1079,6 +1105,7 @@ exports[`Icon component AlarmAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1120,6 +1147,7 @@ exports[`Icon component AlarmOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1161,6 +1189,7 @@ exports[`Icon component AlarmOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1202,6 +1231,7 @@ exports[`Icon component AllOut should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1243,6 +1273,7 @@ exports[`Icon component Android should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1284,6 +1315,7 @@ exports[`Icon component Announcement should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1325,6 +1357,7 @@ exports[`Icon component Apps should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1366,6 +1399,7 @@ exports[`Icon component Archive should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1407,6 +1441,7 @@ exports[`Icon component ArrowBack should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1448,6 +1483,7 @@ exports[`Icon component ArrowDownward should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1489,6 +1525,7 @@ exports[`Icon component ArrowDropDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1530,6 +1567,7 @@ exports[`Icon component ArrowDropDownCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1571,6 +1609,7 @@ exports[`Icon component ArrowDropUp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1612,6 +1651,7 @@ exports[`Icon component ArrowForward should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1653,6 +1693,7 @@ exports[`Icon component ArrowUpward should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1694,6 +1735,7 @@ exports[`Icon component AspectRatio should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1735,6 +1777,7 @@ exports[`Icon component Assessment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1776,6 +1819,7 @@ exports[`Icon component Assignment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1817,6 +1861,7 @@ exports[`Icon component AssignmentInd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1858,6 +1903,7 @@ exports[`Icon component AssignmentLate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1899,6 +1945,7 @@ exports[`Icon component AssignmentReturn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1940,6 +1987,7 @@ exports[`Icon component AssignmentReturned should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -1981,6 +2029,7 @@ exports[`Icon component AssignmentTurnedIn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2022,6 +2071,7 @@ exports[`Icon component Assistant should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2063,6 +2113,7 @@ exports[`Icon component AssistantPhoto should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2104,6 +2155,7 @@ exports[`Icon component AttachFile should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2145,6 +2197,7 @@ exports[`Icon component AttachMoney should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2186,6 +2239,7 @@ exports[`Icon component Attachment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2227,6 +2281,7 @@ exports[`Icon component Audiotrack should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2268,6 +2323,7 @@ exports[`Icon component Autorenew should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2309,6 +2365,7 @@ exports[`Icon component Backspace should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2350,6 +2407,7 @@ exports[`Icon component Backup should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2391,6 +2449,7 @@ exports[`Icon component Beenhere should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2432,6 +2491,7 @@ exports[`Icon component Block should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2473,6 +2533,7 @@ exports[`Icon component BluetoothAudio should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2514,6 +2575,7 @@ exports[`Icon component BlurCircular should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2555,6 +2617,7 @@ exports[`Icon component BlurLinear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2596,6 +2659,7 @@ exports[`Icon component BlurOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2637,6 +2701,7 @@ exports[`Icon component BlurOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2678,6 +2743,7 @@ exports[`Icon component Book should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2719,6 +2785,7 @@ exports[`Icon component Bookmark should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2760,6 +2827,7 @@ exports[`Icon component BookmarkBorder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2801,6 +2869,7 @@ exports[`Icon component BorderAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2842,6 +2911,7 @@ exports[`Icon component BorderBottom should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2883,6 +2953,7 @@ exports[`Icon component BorderClear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2924,6 +2995,7 @@ exports[`Icon component BorderColor should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -2969,6 +3041,7 @@ exports[`Icon component BorderHorizontal should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3010,6 +3083,7 @@ exports[`Icon component BorderInner should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3051,6 +3125,7 @@ exports[`Icon component BorderLeft should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3092,6 +3167,7 @@ exports[`Icon component BorderOuter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3133,6 +3209,7 @@ exports[`Icon component BorderRight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3174,6 +3251,7 @@ exports[`Icon component BorderStyle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3215,6 +3293,7 @@ exports[`Icon component BorderTop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3256,6 +3335,7 @@ exports[`Icon component BorderVertical should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3297,6 +3377,7 @@ exports[`Icon component Brightness1 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3340,6 +3421,7 @@ exports[`Icon component Brightness2 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3381,6 +3463,7 @@ exports[`Icon component Brightness3 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3422,6 +3505,7 @@ exports[`Icon component Brightness4 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3463,6 +3547,7 @@ exports[`Icon component Brightness5 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3504,6 +3589,7 @@ exports[`Icon component Brightness6 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3545,6 +3631,7 @@ exports[`Icon component Brightness7 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3586,6 +3673,7 @@ exports[`Icon component BrokenImage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3631,6 +3719,7 @@ exports[`Icon component Brush should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3672,6 +3761,7 @@ exports[`Icon component BubbleChart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3725,6 +3815,7 @@ exports[`Icon component BugReport should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3766,6 +3857,7 @@ exports[`Icon component Build should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3808,6 +3900,7 @@ exports[`Icon component BurstMode should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3849,6 +3942,7 @@ exports[`Icon component Business should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3890,6 +3984,7 @@ exports[`Icon component Cached should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3931,6 +4026,7 @@ exports[`Icon component Cake should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -3972,6 +4068,7 @@ exports[`Icon component Calendar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4010,6 +4107,7 @@ exports[`Icon component Call should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4051,6 +4149,7 @@ exports[`Icon component CallEnd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4092,6 +4191,7 @@ exports[`Icon component CallMade should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4133,6 +4233,7 @@ exports[`Icon component CallMerge should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4174,6 +4275,7 @@ exports[`Icon component CallMissed should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4215,6 +4317,7 @@ exports[`Icon component CallMissedOutgoing should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4259,6 +4362,7 @@ exports[`Icon component CallReceived should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4300,6 +4404,7 @@ exports[`Icon component CallSplit should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4341,6 +4446,7 @@ exports[`Icon component Camera should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4382,6 +4488,7 @@ exports[`Icon component CameraAlt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4428,6 +4535,7 @@ exports[`Icon component CameraEnhance should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4472,6 +4580,7 @@ exports[`Icon component CameraFront should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4513,6 +4622,7 @@ exports[`Icon component CameraRear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4554,6 +4664,7 @@ exports[`Icon component CameraRoll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4595,6 +4706,7 @@ exports[`Icon component Cancel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4636,6 +4748,7 @@ exports[`Icon component CardGiftcard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4677,6 +4790,7 @@ exports[`Icon component CardMembership should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4718,6 +4832,7 @@ exports[`Icon component CardTravel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4759,6 +4874,7 @@ exports[`Icon component Cast should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4805,6 +4921,7 @@ exports[`Icon component CastConnected should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4851,6 +4968,7 @@ exports[`Icon component CenterFocusStrong should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4892,6 +5010,7 @@ exports[`Icon component CenterFocusWeak should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4933,6 +5052,7 @@ exports[`Icon component ChangeHistory should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -4974,6 +5094,7 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5015,6 +5136,7 @@ exports[`Icon component ChatBubble should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5056,6 +5178,7 @@ exports[`Icon component ChatBubbleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5097,6 +5220,7 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5138,6 +5262,7 @@ exports[`Icon component CheckBox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5179,6 +5304,7 @@ exports[`Icon component CheckBoxOutlineBlank should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5220,6 +5346,7 @@ exports[`Icon component CheckCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5261,6 +5388,7 @@ exports[`Icon component CheckCircleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5299,6 +5427,7 @@ exports[`Icon component ChevronLeft should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5340,6 +5469,7 @@ exports[`Icon component ChevronRight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5381,6 +5511,7 @@ exports[`Icon component ChromeReaderMode should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5422,6 +5553,7 @@ exports[`Icon component Class should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5463,6 +5595,7 @@ exports[`Icon component Clear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5504,6 +5637,7 @@ exports[`Icon component ClearAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5545,6 +5679,7 @@ exports[`Icon component Close should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5586,6 +5721,7 @@ exports[`Icon component Cloud should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5627,6 +5763,7 @@ exports[`Icon component CloudCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5668,6 +5805,7 @@ exports[`Icon component CloudDone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5709,6 +5847,7 @@ exports[`Icon component CloudDownload should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5750,6 +5889,7 @@ exports[`Icon component CloudOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5791,6 +5931,7 @@ exports[`Icon component CloudQueue should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5832,6 +5973,7 @@ exports[`Icon component CloudUpload should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5873,6 +6015,7 @@ exports[`Icon component Code should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5914,6 +6057,7 @@ exports[`Icon component Collections should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -5955,6 +6099,7 @@ exports[`Icon component CollectionsBookmark should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6003,6 +6148,7 @@ exports[`Icon component ColorLens should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6044,6 +6190,7 @@ exports[`Icon component Colorize should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6085,6 +6232,7 @@ exports[`Icon component Comment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6126,6 +6274,7 @@ exports[`Icon component Compare should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6167,6 +6316,7 @@ exports[`Icon component CompareArrows should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6211,6 +6361,7 @@ exports[`Icon component Computer should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6252,6 +6403,7 @@ exports[`Icon component ConfirmationNumber should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6296,6 +6448,7 @@ exports[`Icon component ContactMail should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6341,6 +6494,7 @@ exports[`Icon component ContactPhone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6382,6 +6536,7 @@ exports[`Icon component Contacts should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6423,6 +6578,7 @@ exports[`Icon component ContentCopy should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6464,6 +6620,7 @@ exports[`Icon component ContentCut should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6523,6 +6680,7 @@ exports[`Icon component ContentPaste should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6564,6 +6722,7 @@ exports[`Icon component ControlPoint should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6605,6 +6764,7 @@ exports[`Icon component ControlPointDuplicate should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6646,6 +6806,7 @@ exports[`Icon component Copyright should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6690,6 +6851,7 @@ exports[`Icon component Create should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6731,6 +6893,7 @@ exports[`Icon component CreateNewFolder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6772,6 +6935,7 @@ exports[`Icon component CreditCard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6813,6 +6977,7 @@ exports[`Icon component Crop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6854,6 +7019,7 @@ exports[`Icon component Crop32 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6895,6 +7061,7 @@ exports[`Icon component Crop54 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6936,6 +7103,7 @@ exports[`Icon component Crop75 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -6977,6 +7145,7 @@ exports[`Icon component Crop169 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7018,6 +7187,7 @@ exports[`Icon component CropDin should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7059,6 +7229,7 @@ exports[`Icon component CropFree should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7100,6 +7271,7 @@ exports[`Icon component CropLandscape should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7141,6 +7313,7 @@ exports[`Icon component CropOriginal should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7182,6 +7355,7 @@ exports[`Icon component CropPortrait should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7223,6 +7397,7 @@ exports[`Icon component CropRotate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7264,6 +7439,7 @@ exports[`Icon component CropSquare should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7305,6 +7481,7 @@ exports[`Icon component Dashboard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7346,6 +7523,7 @@ exports[`Icon component DataUsage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7387,6 +7565,7 @@ exports[`Icon component DateRange should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7428,6 +7607,7 @@ exports[`Icon component Dehaze should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7469,6 +7649,7 @@ exports[`Icon component Delete should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7510,6 +7691,7 @@ exports[`Icon component DeleteForever should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7555,6 +7737,7 @@ exports[`Icon component DeleteOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7596,6 +7779,7 @@ exports[`Icon component DeleteSweep should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7637,6 +7821,7 @@ exports[`Icon component Description should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7678,6 +7863,7 @@ exports[`Icon component DesktopMac should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7719,6 +7905,7 @@ exports[`Icon component DesktopWindows should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7760,6 +7947,7 @@ exports[`Icon component Details should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7801,6 +7989,7 @@ exports[`Icon component DeveloperBoard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7846,6 +8035,7 @@ exports[`Icon component DeviceHub should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7891,6 +8081,7 @@ exports[`Icon component DevicesOther should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7932,6 +8123,7 @@ exports[`Icon component DialerSip should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -7973,6 +8165,7 @@ exports[`Icon component Dialpad should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8014,6 +8207,7 @@ exports[`Icon component Directions should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8055,6 +8249,7 @@ exports[`Icon component DirectionsBike should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8096,6 +8291,7 @@ exports[`Icon component DirectionsBoat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8137,6 +8333,7 @@ exports[`Icon component DirectionsBus should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8178,6 +8375,7 @@ exports[`Icon component DirectionsCar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8219,6 +8417,7 @@ exports[`Icon component DirectionsRailway should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8260,6 +8459,7 @@ exports[`Icon component DirectionsRun should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8301,6 +8501,7 @@ exports[`Icon component DirectionsSubway should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8342,6 +8543,7 @@ exports[`Icon component DirectionsTransit should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8383,6 +8585,7 @@ exports[`Icon component DirectionsWalk should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8424,6 +8627,7 @@ exports[`Icon component DiscFull should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8465,6 +8669,7 @@ exports[`Icon component Dns should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8506,6 +8711,7 @@ exports[`Icon component DoNotDisturb should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8547,6 +8753,7 @@ exports[`Icon component DoNotDisturbAlt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8588,6 +8795,7 @@ exports[`Icon component DoNotDisturbOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8629,6 +8837,7 @@ exports[`Icon component DoNotDisturbOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8670,6 +8879,7 @@ exports[`Icon component Dock should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8711,6 +8921,7 @@ exports[`Icon component Dollar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8749,6 +8960,7 @@ exports[`Icon component Domain should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8790,6 +9002,7 @@ exports[`Icon component DomainLogo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8884,6 +9097,7 @@ exports[`Icon component Done should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8925,6 +9139,7 @@ exports[`Icon component DoneAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -8966,6 +9181,7 @@ exports[`Icon component DonutLarge should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9010,6 +9226,7 @@ exports[`Icon component DonutSmall should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9051,6 +9268,7 @@ exports[`Icon component Drafts should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9092,6 +9310,7 @@ exports[`Icon component DragHandle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9136,6 +9355,7 @@ exports[`Icon component DriveEta should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9177,6 +9397,7 @@ exports[`Icon component Edit should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9218,6 +9439,7 @@ exports[`Icon component EditLocation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9259,6 +9481,7 @@ exports[`Icon component Eject should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9300,6 +9523,7 @@ exports[`Icon component Email should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9341,6 +9565,7 @@ exports[`Icon component EnhancedEncryption should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9386,6 +9611,7 @@ exports[`Icon component Error should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9427,6 +9653,7 @@ exports[`Icon component ErrorOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9468,6 +9695,7 @@ exports[`Icon component EuroSymbol should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9509,6 +9737,7 @@ exports[`Icon component EvStation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9550,6 +9779,7 @@ exports[`Icon component Event should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9591,6 +9821,7 @@ exports[`Icon component EventAvailable should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9632,6 +9863,7 @@ exports[`Icon component EventBusy should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9673,6 +9905,7 @@ exports[`Icon component EventNote should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9714,6 +9947,7 @@ exports[`Icon component EventSeat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9758,6 +9992,7 @@ exports[`Icon component ExitToApp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9799,6 +10034,7 @@ exports[`Icon component ExpandLess should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9840,6 +10076,7 @@ exports[`Icon component ExpandMore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9881,6 +10118,7 @@ exports[`Icon component Explore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9922,6 +10160,7 @@ exports[`Icon component Exposure should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -9963,6 +10202,7 @@ exports[`Icon component ExposureNeg1 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10004,6 +10244,7 @@ exports[`Icon component ExposureNeg2 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10045,6 +10286,7 @@ exports[`Icon component ExposurePlus1 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10086,6 +10328,7 @@ exports[`Icon component ExposurePlus2 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10127,6 +10370,7 @@ exports[`Icon component ExposureZero should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10168,6 +10412,7 @@ exports[`Icon component Extension should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10209,6 +10454,7 @@ exports[`Icon component Eye should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10247,6 +10493,7 @@ exports[`Icon component Face should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10288,6 +10535,7 @@ exports[`Icon component Facebook should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10326,6 +10574,7 @@ exports[`Icon component Favorite should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10367,6 +10616,7 @@ exports[`Icon component FavoriteBorder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10408,6 +10658,7 @@ exports[`Icon component Feedback should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10449,6 +10700,7 @@ exports[`Icon component FileDownload should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10490,6 +10742,7 @@ exports[`Icon component FileUpload should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10531,6 +10784,7 @@ exports[`Icon component Filter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10572,6 +10826,7 @@ exports[`Icon component Filter1 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10613,6 +10868,7 @@ exports[`Icon component Filter2 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10654,6 +10910,7 @@ exports[`Icon component Filter3 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10695,6 +10952,7 @@ exports[`Icon component Filter4 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10736,6 +10994,7 @@ exports[`Icon component Filter5 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10777,6 +11036,7 @@ exports[`Icon component Filter6 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10818,6 +11078,7 @@ exports[`Icon component Filter7 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10859,6 +11120,7 @@ exports[`Icon component Filter8 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10900,6 +11162,7 @@ exports[`Icon component Filter9 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10941,6 +11204,7 @@ exports[`Icon component Filter9Plus should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -10982,6 +11246,7 @@ exports[`Icon component FilterBAndW should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11023,6 +11288,7 @@ exports[`Icon component FilterCenterFocus should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11064,6 +11330,7 @@ exports[`Icon component FilterDrama should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11105,6 +11372,7 @@ exports[`Icon component FilterFrames should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11146,6 +11414,7 @@ exports[`Icon component FilterHdr should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11187,6 +11456,7 @@ exports[`Icon component FilterList should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11228,6 +11498,7 @@ exports[`Icon component FilterNone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11269,6 +11540,7 @@ exports[`Icon component FilterTiltShift should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11310,6 +11582,7 @@ exports[`Icon component FilterVintage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11351,6 +11624,7 @@ exports[`Icon component FindInPage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11392,6 +11666,7 @@ exports[`Icon component FindReplace should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11433,6 +11708,7 @@ exports[`Icon component Fingerprint should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11474,6 +11750,7 @@ exports[`Icon component FirstPage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11515,6 +11792,7 @@ exports[`Icon component Flag should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11556,6 +11834,7 @@ exports[`Icon component Flare should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11597,6 +11876,7 @@ exports[`Icon component FlashAuto should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11638,6 +11918,7 @@ exports[`Icon component FlashOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11679,6 +11960,7 @@ exports[`Icon component FlashOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11720,6 +12002,7 @@ exports[`Icon component Flight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11761,6 +12044,7 @@ exports[`Icon component FlightLand should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11811,6 +12095,7 @@ exports[`Icon component FlightTakeoff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11860,6 +12145,7 @@ exports[`Icon component Flip should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11901,6 +12187,7 @@ exports[`Icon component FlipToBack should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11942,6 +12229,7 @@ exports[`Icon component FlipToFront should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -11983,6 +12271,7 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12024,6 +12313,7 @@ exports[`Icon component FolderOpen should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12065,6 +12355,7 @@ exports[`Icon component FolderShared should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12106,6 +12397,7 @@ exports[`Icon component FolderSpecial should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12147,6 +12439,7 @@ exports[`Icon component FontDownload should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12189,6 +12482,7 @@ exports[`Icon component FormatAlignCenter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12230,6 +12524,7 @@ exports[`Icon component FormatAlignJustify should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12271,6 +12566,7 @@ exports[`Icon component FormatAlignLeft should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12312,6 +12608,7 @@ exports[`Icon component FormatAlignRight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12353,6 +12650,7 @@ exports[`Icon component FormatBold should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12394,6 +12692,7 @@ exports[`Icon component FormatClear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12435,6 +12734,7 @@ exports[`Icon component FormatColorFill should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12480,6 +12780,7 @@ exports[`Icon component FormatColorReset should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12521,6 +12822,7 @@ exports[`Icon component FormatColorText should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12566,6 +12868,7 @@ exports[`Icon component FormatIndentDecrease should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12607,6 +12910,7 @@ exports[`Icon component FormatIndentIncrease should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12648,6 +12952,7 @@ exports[`Icon component FormatItalic should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12689,6 +12994,7 @@ exports[`Icon component FormatLineSpacing should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12730,6 +13036,7 @@ exports[`Icon component FormatListBulleted should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12771,6 +13078,7 @@ exports[`Icon component FormatListNumbered should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12812,6 +13120,7 @@ exports[`Icon component FormatPaint should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12853,6 +13162,7 @@ exports[`Icon component FormatQuote should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12894,6 +13204,7 @@ exports[`Icon component FormatShapes should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12935,6 +13246,7 @@ exports[`Icon component FormatSize should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -12976,6 +13288,7 @@ exports[`Icon component FormatStrikethrough should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13017,6 +13330,7 @@ exports[`Icon component FormatTextdirectionLToR should fetch icon correctly 1`] 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13058,6 +13372,7 @@ exports[`Icon component FormatTextdirectionRToL should fetch icon correctly 1`] 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13099,6 +13414,7 @@ exports[`Icon component FormatUnderlined should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13140,6 +13456,7 @@ exports[`Icon component Forum should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13181,6 +13498,7 @@ exports[`Icon component Forward should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13222,6 +13540,7 @@ exports[`Icon component Fullscreen should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13263,6 +13582,7 @@ exports[`Icon component FullscreenExit should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13304,6 +13624,7 @@ exports[`Icon component Functions should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13345,6 +13666,7 @@ exports[`Icon component GTranslate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13386,6 +13708,7 @@ exports[`Icon component Gamepad should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13427,6 +13750,7 @@ exports[`Icon component Gavel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13471,6 +13795,7 @@ exports[`Icon component Gesture should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13512,6 +13837,7 @@ exports[`Icon component GetApp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13553,6 +13879,7 @@ exports[`Icon component Gif should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13597,6 +13924,7 @@ exports[`Icon component Grade should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13638,6 +13966,7 @@ exports[`Icon component Gradient should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13679,6 +14008,7 @@ exports[`Icon component Grain should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13720,6 +14050,7 @@ exports[`Icon component GridOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13761,6 +14092,7 @@ exports[`Icon component GridOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13802,6 +14134,7 @@ exports[`Icon component Group should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13843,6 +14176,7 @@ exports[`Icon component GroupAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13884,6 +14218,7 @@ exports[`Icon component GroupWork should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13925,6 +14260,7 @@ exports[`Icon component HdrOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -13962,6 +14298,7 @@ exports[`Icon component HdrOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14003,6 +14340,7 @@ exports[`Icon component HdrStrong should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14044,6 +14382,7 @@ exports[`Icon component HdrWeak should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14085,6 +14424,7 @@ exports[`Icon component Headset should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14127,6 +14467,7 @@ exports[`Icon component HeadsetMic should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14169,6 +14510,7 @@ exports[`Icon component Healing should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14210,6 +14552,7 @@ exports[`Icon component Heart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14248,6 +14591,7 @@ exports[`Icon component Help should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14289,6 +14633,7 @@ exports[`Icon component HelpOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14330,6 +14675,7 @@ exports[`Icon component Highlight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14374,6 +14720,7 @@ exports[`Icon component HighlightOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14415,6 +14762,7 @@ exports[`Icon component History should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14456,6 +14804,7 @@ exports[`Icon component Home should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14497,6 +14846,7 @@ exports[`Icon component Hotel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14538,6 +14888,7 @@ exports[`Icon component HourglassEmpty should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14579,6 +14930,7 @@ exports[`Icon component HourglassFull should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14620,6 +14972,7 @@ exports[`Icon component House should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14658,6 +15011,7 @@ exports[`Icon component HouseHome should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14695,6 +15049,7 @@ exports[`Icon component Http should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14736,6 +15091,7 @@ exports[`Icon component Https should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14777,6 +15133,7 @@ exports[`Icon component Image should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14818,6 +15175,7 @@ exports[`Icon component ImageAspectRatio should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14859,6 +15217,7 @@ exports[`Icon component ImportContacts should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14903,6 +15262,7 @@ exports[`Icon component ImportExport should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14944,6 +15304,7 @@ exports[`Icon component ImportantDevices should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -14985,6 +15346,7 @@ exports[`Icon component Inbox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15026,6 +15388,7 @@ exports[`Icon component IndeterminateCheckBox should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15070,6 +15433,7 @@ exports[`Icon component Info should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15111,6 +15475,7 @@ exports[`Icon component InfoOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15150,6 +15515,7 @@ exports[`Icon component InfoTwo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15189,6 +15555,7 @@ exports[`Icon component Input should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15230,6 +15597,7 @@ exports[`Icon component InsertChart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15271,6 +15639,7 @@ exports[`Icon component InsertComment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15312,6 +15681,7 @@ exports[`Icon component InsertDriveFile should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15353,6 +15723,7 @@ exports[`Icon component InsertEmoticon should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15394,6 +15765,7 @@ exports[`Icon component InsertInvitation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15435,6 +15807,7 @@ exports[`Icon component InsertLink should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15476,6 +15849,7 @@ exports[`Icon component InsertPhoto should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15517,6 +15891,7 @@ exports[`Icon component InvertColors should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15558,6 +15933,7 @@ exports[`Icon component InvertColorsOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15599,6 +15975,7 @@ exports[`Icon component Iso should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15640,6 +16017,7 @@ exports[`Icon component Keyboard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15681,6 +16059,7 @@ exports[`Icon component KeyboardArrowDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15722,6 +16101,7 @@ exports[`Icon component KeyboardArrowLeft should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15763,6 +16143,7 @@ exports[`Icon component KeyboardArrowRight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15804,6 +16185,7 @@ exports[`Icon component KeyboardArrowUp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15845,6 +16227,7 @@ exports[`Icon component KeyboardBackspace should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15886,6 +16269,7 @@ exports[`Icon component KeyboardCapslock should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15927,6 +16311,7 @@ exports[`Icon component KeyboardHide should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -15968,6 +16353,7 @@ exports[`Icon component KeyboardReturn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16009,6 +16395,7 @@ exports[`Icon component KeyboardTab should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16050,6 +16437,7 @@ exports[`Icon component KeyboardVoice should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16091,6 +16479,7 @@ exports[`Icon component Label should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16132,6 +16521,7 @@ exports[`Icon component LabelOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16173,6 +16563,7 @@ exports[`Icon component Landscape should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16214,6 +16605,7 @@ exports[`Icon component Language should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16255,6 +16647,7 @@ exports[`Icon component Laptop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16299,6 +16692,7 @@ exports[`Icon component LaptopChromebook should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16340,6 +16734,7 @@ exports[`Icon component LaptopMac should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16381,6 +16776,7 @@ exports[`Icon component LaptopWindows should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16422,6 +16818,7 @@ exports[`Icon component LastPage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16463,6 +16860,7 @@ exports[`Icon component Launch should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16504,6 +16902,7 @@ exports[`Icon component Layers should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16545,6 +16944,7 @@ exports[`Icon component LayersClear should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16586,6 +16986,7 @@ exports[`Icon component LeakAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16627,6 +17028,7 @@ exports[`Icon component LeakRemove should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16668,6 +17070,7 @@ exports[`Icon component LendiLogo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16714,6 +17117,7 @@ exports[`Icon component Lens should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16755,6 +17159,7 @@ exports[`Icon component LightbulbOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16799,6 +17204,7 @@ exports[`Icon component LineStyle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16843,6 +17249,7 @@ exports[`Icon component LineWeight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16887,6 +17294,7 @@ exports[`Icon component LinearScale should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16931,6 +17339,7 @@ exports[`Icon component Link should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -16972,6 +17381,7 @@ exports[`Icon component LinkedCamera should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17027,6 +17437,7 @@ exports[`Icon component Linkedin should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17071,6 +17482,7 @@ exports[`Icon component List should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17112,6 +17524,7 @@ exports[`Icon component LiveHelp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17153,6 +17566,7 @@ exports[`Icon component LiveTv should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17194,6 +17608,7 @@ exports[`Icon component LocalActivity should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17235,6 +17650,7 @@ exports[`Icon component LocalAirport should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17276,6 +17692,7 @@ exports[`Icon component LocalAtm should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17317,6 +17734,7 @@ exports[`Icon component LocalBar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17358,6 +17776,7 @@ exports[`Icon component LocalCafe should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17399,6 +17818,7 @@ exports[`Icon component LocalCarWash should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17440,6 +17860,7 @@ exports[`Icon component LocalConvenienceStore should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17481,6 +17902,7 @@ exports[`Icon component LocalDining should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17522,6 +17944,7 @@ exports[`Icon component LocalDrink should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17563,6 +17986,7 @@ exports[`Icon component LocalFlorist should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17604,6 +18028,7 @@ exports[`Icon component LocalGasStation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17645,6 +18070,7 @@ exports[`Icon component LocalGroceryStore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17686,6 +18112,7 @@ exports[`Icon component LocalHospital should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17727,6 +18154,7 @@ exports[`Icon component LocalHotel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17768,6 +18196,7 @@ exports[`Icon component LocalLaundryService should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17809,6 +18238,7 @@ exports[`Icon component LocalLibrary should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17850,6 +18280,7 @@ exports[`Icon component LocalMall should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17891,6 +18322,7 @@ exports[`Icon component LocalMovies should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17932,6 +18364,7 @@ exports[`Icon component LocalOffer should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -17973,6 +18406,7 @@ exports[`Icon component LocalParking should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18014,6 +18448,7 @@ exports[`Icon component LocalPharmacy should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18055,6 +18490,7 @@ exports[`Icon component LocalPhone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18096,6 +18532,7 @@ exports[`Icon component LocalPizza should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18137,6 +18574,7 @@ exports[`Icon component LocalPlay should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18178,6 +18616,7 @@ exports[`Icon component LocalPostOffice should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18219,6 +18658,7 @@ exports[`Icon component LocalPrintshop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18260,6 +18700,7 @@ exports[`Icon component LocalSee should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18306,6 +18747,7 @@ exports[`Icon component LocalShipping should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18347,6 +18789,7 @@ exports[`Icon component LocalTaxi should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18388,6 +18831,7 @@ exports[`Icon component LocationCity should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18429,6 +18873,7 @@ exports[`Icon component LocationOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18470,6 +18915,7 @@ exports[`Icon component LocationOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18511,6 +18957,7 @@ exports[`Icon component Lock should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18552,6 +18999,7 @@ exports[`Icon component LockOpen should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18593,6 +19041,7 @@ exports[`Icon component LockOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18637,6 +19086,7 @@ exports[`Icon component Looks should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18678,6 +19128,7 @@ exports[`Icon component Looks3 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18719,6 +19170,7 @@ exports[`Icon component Looks4 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18760,6 +19212,7 @@ exports[`Icon component Looks5 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18801,6 +19254,7 @@ exports[`Icon component Looks6 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18842,6 +19296,7 @@ exports[`Icon component LooksOne should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18883,6 +19338,7 @@ exports[`Icon component LooksTwo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18924,6 +19380,7 @@ exports[`Icon component Loupe should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -18965,6 +19422,7 @@ exports[`Icon component LowPriority should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19006,6 +19464,7 @@ exports[`Icon component Loyalty should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19047,6 +19506,7 @@ exports[`Icon component LuiLogo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19093,6 +19553,7 @@ exports[`Icon component Mail should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19134,6 +19595,7 @@ exports[`Icon component MailOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19175,6 +19637,7 @@ exports[`Icon component Map should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19216,6 +19679,7 @@ exports[`Icon component Markunread should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19257,6 +19721,7 @@ exports[`Icon component MarkunreadMailbox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19298,6 +19763,7 @@ exports[`Icon component Memory should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19339,6 +19805,7 @@ exports[`Icon component Menu should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19380,6 +19847,7 @@ exports[`Icon component MergeType should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19421,6 +19889,7 @@ exports[`Icon component Message should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19462,6 +19931,7 @@ exports[`Icon component Mms should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19503,6 +19973,7 @@ exports[`Icon component ModeComment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19544,6 +20015,7 @@ exports[`Icon component ModeEdit should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19585,6 +20057,7 @@ exports[`Icon component MonetizationOn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19626,6 +20099,7 @@ exports[`Icon component MoneyOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19667,6 +20141,7 @@ exports[`Icon component MonochromePhotos should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19712,6 +20187,7 @@ exports[`Icon component Mood should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19753,6 +20229,7 @@ exports[`Icon component MoodBad should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19794,6 +20271,7 @@ exports[`Icon component More should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19835,6 +20313,7 @@ exports[`Icon component MoreHoriz should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19876,6 +20355,7 @@ exports[`Icon component MoreVert should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19917,6 +20397,7 @@ exports[`Icon component Motorcycle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -19961,6 +20442,7 @@ exports[`Icon component Mouse should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20002,6 +20484,7 @@ exports[`Icon component MoveToInbox should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20043,6 +20526,7 @@ exports[`Icon component MovieCreation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20084,6 +20568,7 @@ exports[`Icon component MovieFilter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20125,6 +20610,7 @@ exports[`Icon component MultilineChart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20166,6 +20652,7 @@ exports[`Icon component MusicNote should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20207,6 +20694,7 @@ exports[`Icon component MyLocation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20248,6 +20736,7 @@ exports[`Icon component Nature should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20289,6 +20778,7 @@ exports[`Icon component NaturePeople should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20330,6 +20820,7 @@ exports[`Icon component NavigateBefore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20371,6 +20862,7 @@ exports[`Icon component NavigateNext should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20412,6 +20904,7 @@ exports[`Icon component Navigation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20453,6 +20946,7 @@ exports[`Icon component NearMe should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20494,6 +20988,7 @@ exports[`Icon component NetworkCheck should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20535,6 +21030,7 @@ exports[`Icon component NetworkLocked should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20576,6 +21072,7 @@ exports[`Icon component NextWeek should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20620,6 +21117,7 @@ exports[`Icon component NoEncryption should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20661,6 +21159,7 @@ exports[`Icon component NoSim should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20702,6 +21201,7 @@ exports[`Icon component NoteAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20743,6 +21243,7 @@ exports[`Icon component NotificationImportant should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20784,6 +21285,7 @@ exports[`Icon component Notifications should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20821,6 +21323,7 @@ exports[`Icon component NotificationsActive should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20862,6 +21365,7 @@ exports[`Icon component NotificationsNone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20903,6 +21407,7 @@ exports[`Icon component NotificationsOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20944,6 +21449,7 @@ exports[`Icon component NotificationsPaused should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -20985,6 +21491,7 @@ exports[`Icon component OfflinePin should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21029,6 +21536,7 @@ exports[`Icon component OndemandVideo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21070,6 +21578,7 @@ exports[`Icon component Opacity should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21111,6 +21620,7 @@ exports[`Icon component OpenInBrowser should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21152,6 +21662,7 @@ exports[`Icon component OpenInNew should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21193,6 +21704,7 @@ exports[`Icon component OpenWith should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21234,6 +21746,7 @@ exports[`Icon component Pages should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21275,6 +21788,7 @@ exports[`Icon component Pageview should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21316,6 +21830,7 @@ exports[`Icon component Palette should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21357,6 +21872,7 @@ exports[`Icon component PanTool should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21401,6 +21917,7 @@ exports[`Icon component Panorama should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21442,6 +21959,7 @@ exports[`Icon component PanoramaFishEye2 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21483,6 +22001,7 @@ exports[`Icon component PanoramaHorizontal should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21524,6 +22043,7 @@ exports[`Icon component PanoramaVertical should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21565,6 +22085,7 @@ exports[`Icon component PanoramaWideAngle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21606,6 +22127,7 @@ exports[`Icon component PartyMode should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21647,6 +22169,7 @@ exports[`Icon component Pause should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21688,6 +22211,7 @@ exports[`Icon component Payment should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21729,6 +22253,7 @@ exports[`Icon component People should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21770,6 +22295,7 @@ exports[`Icon component PeopleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21811,6 +22337,7 @@ exports[`Icon component PermCameraMic should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21852,6 +22379,7 @@ exports[`Icon component PermContactCalendar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21893,6 +22421,7 @@ exports[`Icon component PermDataSetting should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21934,6 +22463,7 @@ exports[`Icon component PermDeviceInformation should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -21975,6 +22505,7 @@ exports[`Icon component PermIdentity should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22016,6 +22547,7 @@ exports[`Icon component PermMedia should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22057,6 +22589,7 @@ exports[`Icon component PermPhoneMsg should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22098,6 +22631,7 @@ exports[`Icon component PermScanWifi should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22139,6 +22673,7 @@ exports[`Icon component Person should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22180,6 +22715,7 @@ exports[`Icon component PersonAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22221,6 +22757,7 @@ exports[`Icon component PersonOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22262,6 +22799,7 @@ exports[`Icon component PersonPin should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22303,6 +22841,7 @@ exports[`Icon component PersonPinCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22347,6 +22886,7 @@ exports[`Icon component PersonalVideo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22388,6 +22928,7 @@ exports[`Icon component Pets should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22449,6 +22990,7 @@ exports[`Icon component Phone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22490,6 +23032,7 @@ exports[`Icon component PhoneAndroid should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22531,6 +23074,7 @@ exports[`Icon component PhoneBluetoothSpeaker should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22572,6 +23116,7 @@ exports[`Icon component PhoneForwarded should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22613,6 +23158,7 @@ exports[`Icon component PhoneInTalk should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22654,6 +23200,7 @@ exports[`Icon component PhoneIphone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22695,6 +23242,7 @@ exports[`Icon component PhoneLocked should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22736,6 +23284,7 @@ exports[`Icon component PhoneMissed should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22777,6 +23326,7 @@ exports[`Icon component PhonePaused should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22818,6 +23368,7 @@ exports[`Icon component Phonelink should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22859,6 +23410,7 @@ exports[`Icon component PhonelinkErase should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22900,6 +23452,7 @@ exports[`Icon component PhonelinkLock should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22941,6 +23494,7 @@ exports[`Icon component PhonelinkOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -22982,6 +23536,7 @@ exports[`Icon component PhonelinkRing should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23023,6 +23578,7 @@ exports[`Icon component PhonelinkSetup should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23064,6 +23620,7 @@ exports[`Icon component Photo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23105,6 +23662,7 @@ exports[`Icon component PhotoAlbum should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23146,6 +23704,7 @@ exports[`Icon component PhotoCamera should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23192,6 +23751,7 @@ exports[`Icon component PhotoFilter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23233,6 +23793,7 @@ exports[`Icon component PhotoLibrary should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23274,6 +23835,7 @@ exports[`Icon component PhotoSizeSelectActual should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23315,6 +23877,7 @@ exports[`Icon component PhotoSizeSelectLarge should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23356,6 +23919,7 @@ exports[`Icon component PhotoSizeSelectSmall should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23397,6 +23961,7 @@ exports[`Icon component PictureAsPdf should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23438,6 +24003,7 @@ exports[`Icon component PictureInPicture should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23479,6 +24045,7 @@ exports[`Icon component PictureInPictureAlt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23520,6 +24087,7 @@ exports[`Icon component PieChart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23561,6 +24129,7 @@ exports[`Icon component PieChartOutlined should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23602,6 +24171,7 @@ exports[`Icon component PinDrop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23643,6 +24213,7 @@ exports[`Icon component Place should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23684,6 +24255,7 @@ exports[`Icon component PlayArrow should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23725,6 +24297,7 @@ exports[`Icon component PlayCircleFilled should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23766,6 +24339,7 @@ exports[`Icon component PlayCircleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23807,6 +24381,7 @@ exports[`Icon component PlayForWork should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23848,6 +24423,7 @@ exports[`Icon component PlaylistAdd should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23889,6 +24465,7 @@ exports[`Icon component PlaylistAddCheck should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23933,6 +24510,7 @@ exports[`Icon component PlaylistPlay should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -23974,6 +24552,7 @@ exports[`Icon component PlusOne should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24015,6 +24594,7 @@ exports[`Icon component Poll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24056,6 +24636,7 @@ exports[`Icon component Polymer should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24097,6 +24678,7 @@ exports[`Icon component PortableWifiOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24138,6 +24720,7 @@ exports[`Icon component Portrait should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24179,6 +24762,7 @@ exports[`Icon component Power should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24220,6 +24804,7 @@ exports[`Icon component PowerInput should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24261,6 +24846,7 @@ exports[`Icon component PowerSettingsNew should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24302,6 +24888,7 @@ exports[`Icon component PregnantWoman should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24346,6 +24933,7 @@ exports[`Icon component PresentToAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24387,6 +24975,7 @@ exports[`Icon component Print should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24428,6 +25017,7 @@ exports[`Icon component PriorityHigh should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24474,6 +25064,7 @@ exports[`Icon component Public should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24515,6 +25106,7 @@ exports[`Icon component Publish should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24556,6 +25148,7 @@ exports[`Icon component QueryBuilder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24600,6 +25193,7 @@ exports[`Icon component QuestionAnswer should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24641,6 +25235,7 @@ exports[`Icon component QuestionOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24679,6 +25274,7 @@ exports[`Icon component Queue should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24720,6 +25316,7 @@ exports[`Icon component QueueMusic should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24761,6 +25358,7 @@ exports[`Icon component QueuePlayNext should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24805,6 +25403,7 @@ exports[`Icon component Radio should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24846,6 +25445,7 @@ exports[`Icon component RadioButtonChecked should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24887,6 +25487,7 @@ exports[`Icon component RadioButtonUnchecked should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24928,6 +25529,7 @@ exports[`Icon component RateReview should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -24969,6 +25571,7 @@ exports[`Icon component Receipt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25010,6 +25613,7 @@ exports[`Icon component RecentActors should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25051,6 +25655,7 @@ exports[`Icon component RecordVoiceOver should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25097,6 +25702,7 @@ exports[`Icon component Redeem should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25138,6 +25744,7 @@ exports[`Icon component Redo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25179,6 +25786,7 @@ exports[`Icon component Refinance should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25220,6 +25828,7 @@ exports[`Icon component RefinanceHome should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25260,6 +25869,7 @@ exports[`Icon component Refresh should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25301,6 +25911,7 @@ exports[`Icon component Remove should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25342,6 +25953,7 @@ exports[`Icon component RemoveCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25383,6 +25995,7 @@ exports[`Icon component RemoveCircleOutline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25424,6 +26037,7 @@ exports[`Icon component RemoveFromQueue should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25468,6 +26082,7 @@ exports[`Icon component RemoveRedEye should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25509,6 +26124,7 @@ exports[`Icon component RemoveShoppingCart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25550,6 +26166,7 @@ exports[`Icon component Reorder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25591,6 +26208,7 @@ exports[`Icon component Repeat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25632,6 +26250,7 @@ exports[`Icon component RepeatOne should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25673,6 +26292,7 @@ exports[`Icon component Replay should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25714,6 +26334,7 @@ exports[`Icon component Replay5 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25758,6 +26379,7 @@ exports[`Icon component Replay10 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25802,6 +26424,7 @@ exports[`Icon component Replay30 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25846,6 +26469,7 @@ exports[`Icon component Reply should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25887,6 +26511,7 @@ exports[`Icon component ReplyAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25928,6 +26553,7 @@ exports[`Icon component Report should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -25969,6 +26595,7 @@ exports[`Icon component ReportProblem should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26010,6 +26637,7 @@ exports[`Icon component Restaurant should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26051,6 +26679,7 @@ exports[`Icon component RestaurantMenu should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26092,6 +26721,7 @@ exports[`Icon component Restore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26133,6 +26763,7 @@ exports[`Icon component RestorePage should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26174,6 +26805,7 @@ exports[`Icon component RingVolume should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26215,6 +26847,7 @@ exports[`Icon component Room should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26256,6 +26889,7 @@ exports[`Icon component Rotate90DegreesCcw should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26297,6 +26931,7 @@ exports[`Icon component RotateLeft should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26338,6 +26973,7 @@ exports[`Icon component RotateRight should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26379,6 +27015,7 @@ exports[`Icon component Rotation should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26420,6 +27057,7 @@ exports[`Icon component RoundedCorner should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26464,6 +27102,7 @@ exports[`Icon component Router should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26505,6 +27144,7 @@ exports[`Icon component Rowing should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26549,6 +27189,7 @@ exports[`Icon component RssFeed should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26595,6 +27236,7 @@ exports[`Icon component RvHookup should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26640,6 +27282,7 @@ exports[`Icon component Satellite should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26681,6 +27324,7 @@ exports[`Icon component Save should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26722,6 +27366,7 @@ exports[`Icon component Scanner should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26763,6 +27408,7 @@ exports[`Icon component Schedule should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26807,6 +27453,7 @@ exports[`Icon component School should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26848,6 +27495,7 @@ exports[`Icon component ScreenShare should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26889,6 +27537,7 @@ exports[`Icon component SdCard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26930,6 +27579,7 @@ exports[`Icon component Search should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -26971,6 +27621,7 @@ exports[`Icon component Security should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27012,6 +27663,7 @@ exports[`Icon component SelectAll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27053,6 +27705,7 @@ exports[`Icon component Send should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27094,6 +27747,7 @@ exports[`Icon component SentimentDissatisfied should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27145,6 +27799,7 @@ exports[`Icon component SentimentNeutral should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27199,6 +27854,7 @@ exports[`Icon component SentimentSatisfied should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27250,6 +27906,7 @@ exports[`Icon component SentimentSatisfiedAlt should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27315,6 +27972,7 @@ exports[`Icon component SentimentVeryDissatisfied should fetch icon correctly 1`
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27356,6 +28014,7 @@ exports[`Icon component SentimentVerySatisfied should fetch icon correctly 1`] =
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27397,6 +28056,7 @@ exports[`Icon component Settings should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27438,6 +28098,7 @@ exports[`Icon component SettingsApplications should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27479,6 +28140,7 @@ exports[`Icon component SettingsBackupRestore should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27520,6 +28182,7 @@ exports[`Icon component SettingsBluetooth should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27561,6 +28224,7 @@ exports[`Icon component SettingsBrightness should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27602,6 +28266,7 @@ exports[`Icon component SettingsCell should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27643,6 +28308,7 @@ exports[`Icon component SettingsEthernet should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27684,6 +28350,7 @@ exports[`Icon component SettingsInputAntenna should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27725,6 +28392,7 @@ exports[`Icon component SettingsInputComponent should fetch icon correctly 1`] =
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27766,6 +28434,7 @@ exports[`Icon component SettingsInputComposite should fetch icon correctly 1`] =
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27807,6 +28476,7 @@ exports[`Icon component SettingsInputHdmi should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27848,6 +28518,7 @@ exports[`Icon component SettingsInputSvideo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27889,6 +28560,7 @@ exports[`Icon component SettingsOverscan should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27930,6 +28602,7 @@ exports[`Icon component SettingsPhone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -27971,6 +28644,7 @@ exports[`Icon component SettingsPower should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28012,6 +28686,7 @@ exports[`Icon component SettingsRemote should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28053,6 +28728,7 @@ exports[`Icon component SettingsVoice should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28094,6 +28770,7 @@ exports[`Icon component Share should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28135,6 +28812,7 @@ exports[`Icon component Shop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28176,6 +28854,7 @@ exports[`Icon component ShopTwo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28217,6 +28896,7 @@ exports[`Icon component ShoppingBasket should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28258,6 +28938,7 @@ exports[`Icon component ShoppingCart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28299,6 +28980,7 @@ exports[`Icon component ShortText should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28343,6 +29025,7 @@ exports[`Icon component ShowChart should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28384,6 +29067,7 @@ exports[`Icon component Shuffle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28425,6 +29109,7 @@ exports[`Icon component SimCard should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28466,6 +29151,7 @@ exports[`Icon component SimCardAlert should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28507,6 +29193,7 @@ exports[`Icon component SkipNext should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28548,6 +29235,7 @@ exports[`Icon component SkipPrevious should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28589,6 +29277,7 @@ exports[`Icon component Slideshow should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28630,6 +29319,7 @@ exports[`Icon component SlowMotionVideo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28671,6 +29361,7 @@ exports[`Icon component Smartphone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28712,6 +29403,7 @@ exports[`Icon component Sms should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28753,6 +29445,7 @@ exports[`Icon component SmsFailed should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28794,6 +29487,7 @@ exports[`Icon component Snooze should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28835,6 +29529,7 @@ exports[`Icon component Sort should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28876,6 +29571,7 @@ exports[`Icon component SortByAlpha should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28917,6 +29613,7 @@ exports[`Icon component SpaceBar should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28958,6 +29655,7 @@ exports[`Icon component Speaker should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -28999,6 +29697,7 @@ exports[`Icon component SpeakerGroup should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29048,6 +29747,7 @@ exports[`Icon component SpeakerNotes should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29089,6 +29789,7 @@ exports[`Icon component SpeakerNotesOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29130,6 +29831,7 @@ exports[`Icon component SpeakerPhone should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29171,6 +29873,7 @@ exports[`Icon component Spellcheck should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29212,6 +29915,7 @@ exports[`Icon component Spinner should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29249,6 +29953,7 @@ exports[`Icon component Star should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29294,6 +29999,7 @@ exports[`Icon component StarBorder should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29335,6 +30041,7 @@ exports[`Icon component StarHalf should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29379,6 +30086,7 @@ exports[`Icon component StarRate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29424,6 +30132,7 @@ exports[`Icon component Stars should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29465,6 +30174,7 @@ exports[`Icon component StayCurrentLandscape should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29506,6 +30216,7 @@ exports[`Icon component StayCurrentPortrait should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29547,6 +30258,7 @@ exports[`Icon component StayPrimaryLandscape should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29588,6 +30300,7 @@ exports[`Icon component StayPrimaryPortrait should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29629,6 +30342,7 @@ exports[`Icon component Stop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29670,6 +30384,7 @@ exports[`Icon component StopScreenShare should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29711,6 +30426,7 @@ exports[`Icon component Store should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29752,6 +30468,7 @@ exports[`Icon component StoreMallDirectory should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29793,6 +30510,7 @@ exports[`Icon component Straighten should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29834,6 +30552,7 @@ exports[`Icon component Streetview should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29883,6 +30602,7 @@ exports[`Icon component StrikethroughS should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29927,6 +30647,7 @@ exports[`Icon component Style should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -29968,6 +30689,7 @@ exports[`Icon component SubdirectoryArrowLeft should fetch icon correctly 1`] = 
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30009,6 +30731,7 @@ exports[`Icon component SubdirectoryArrowRight should fetch icon correctly 1`] =
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30050,6 +30773,7 @@ exports[`Icon component Subject should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30091,6 +30815,7 @@ exports[`Icon component Subscriptions should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30132,6 +30857,7 @@ exports[`Icon component Subtitles should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30173,6 +30899,7 @@ exports[`Icon component Subway should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30227,6 +30954,7 @@ exports[`Icon component SupervisorAccount should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30268,6 +30996,7 @@ exports[`Icon component SurroundSound should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30309,6 +31038,7 @@ exports[`Icon component SwapCalls should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30350,6 +31080,7 @@ exports[`Icon component SwapHoriz should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30391,6 +31122,7 @@ exports[`Icon component SwapVert should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30432,6 +31164,7 @@ exports[`Icon component SwapVerticalCircle should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30473,6 +31206,7 @@ exports[`Icon component SwitchCamera should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30514,6 +31248,7 @@ exports[`Icon component SwitchVideo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30555,6 +31290,7 @@ exports[`Icon component Sync should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30596,6 +31332,7 @@ exports[`Icon component SyncDisabled should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30637,6 +31374,7 @@ exports[`Icon component SyncProblem should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30678,6 +31416,7 @@ exports[`Icon component SystemUpdate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30719,6 +31458,7 @@ exports[`Icon component SystemUpdateAlt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30760,6 +31500,7 @@ exports[`Icon component Tab should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30801,6 +31542,7 @@ exports[`Icon component TabUnselected should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30842,6 +31584,7 @@ exports[`Icon component Tablet should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30883,6 +31626,7 @@ exports[`Icon component TabletAndroid should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30927,6 +31671,7 @@ exports[`Icon component TabletMac should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -30964,6 +31709,7 @@ exports[`Icon component TagFaces should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31005,6 +31751,7 @@ exports[`Icon component TapAndPlay should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31046,6 +31793,7 @@ exports[`Icon component Terrain should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31087,6 +31835,7 @@ exports[`Icon component TextFields should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31131,6 +31880,7 @@ exports[`Icon component TextFormat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31172,6 +31922,7 @@ exports[`Icon component Textsms should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31213,6 +31964,7 @@ exports[`Icon component Texture should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31254,6 +32006,7 @@ exports[`Icon component Theaters should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31295,6 +32048,7 @@ exports[`Icon component ThumbDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31336,6 +32090,7 @@ exports[`Icon component ThumbUp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31377,6 +32132,7 @@ exports[`Icon component ThumbsUpDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31418,6 +32174,7 @@ exports[`Icon component TimeToLeave should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31459,6 +32216,7 @@ exports[`Icon component Timelapse should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31500,6 +32258,7 @@ exports[`Icon component Timeline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31544,6 +32303,7 @@ exports[`Icon component Timer should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31585,6 +32345,7 @@ exports[`Icon component Timer3 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31626,6 +32387,7 @@ exports[`Icon component Timer10 should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31667,6 +32429,7 @@ exports[`Icon component TimerOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31708,6 +32471,7 @@ exports[`Icon component Title should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31749,6 +32513,7 @@ exports[`Icon component Toc should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31790,6 +32555,7 @@ exports[`Icon component Today should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31831,6 +32597,7 @@ exports[`Icon component Toll should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31875,6 +32642,7 @@ exports[`Icon component Tonality should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31916,6 +32684,7 @@ exports[`Icon component TouchApp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -31960,6 +32729,7 @@ exports[`Icon component Toys should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32001,6 +32771,7 @@ exports[`Icon component TrackChanges should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32042,6 +32813,7 @@ exports[`Icon component Traffic should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32083,6 +32855,7 @@ exports[`Icon component Train should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32124,6 +32897,7 @@ exports[`Icon component Tram should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32165,6 +32939,7 @@ exports[`Icon component TransferWithinAStation should fetch icon correctly 1`] =
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32206,6 +32981,7 @@ exports[`Icon component Transform should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32247,6 +33023,7 @@ exports[`Icon component Translate should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32288,6 +33065,7 @@ exports[`Icon component TrendingDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32329,6 +33107,7 @@ exports[`Icon component TrendingFlat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32370,6 +33149,7 @@ exports[`Icon component TrendingUp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32411,6 +33191,7 @@ exports[`Icon component Tune should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32452,6 +33233,7 @@ exports[`Icon component TurnedIn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32493,6 +33275,7 @@ exports[`Icon component TurnedInNot should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32534,6 +33317,7 @@ exports[`Icon component Tv should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32575,6 +33359,7 @@ exports[`Icon component Twitter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32613,6 +33398,7 @@ exports[`Icon component Unarchive should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32657,6 +33443,7 @@ exports[`Icon component Undo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32698,6 +33485,7 @@ exports[`Icon component UnfoldLess should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32739,6 +33527,7 @@ exports[`Icon component UnfoldMore should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32780,6 +33569,7 @@ exports[`Icon component Update should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32824,6 +33614,7 @@ exports[`Icon component VerifiedUser should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32865,6 +33656,7 @@ exports[`Icon component VerticaAlignTop should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32906,6 +33698,7 @@ exports[`Icon component VerticalAlignBottom should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32947,6 +33740,7 @@ exports[`Icon component VerticalAlignCenter should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -32988,6 +33782,7 @@ exports[`Icon component Vibration should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33029,6 +33824,7 @@ exports[`Icon component VideoCall should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33070,6 +33866,7 @@ exports[`Icon component VideoLabel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33111,6 +33908,7 @@ exports[`Icon component VideoLibrary should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33152,6 +33950,7 @@ exports[`Icon component Videocam should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33193,6 +33992,7 @@ exports[`Icon component VideocamOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33234,6 +34034,7 @@ exports[`Icon component VideogameAsset should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33275,6 +34076,7 @@ exports[`Icon component ViewAgenda should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33316,6 +34118,7 @@ exports[`Icon component ViewArray should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33357,6 +34160,7 @@ exports[`Icon component ViewCarousel should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33398,6 +34202,7 @@ exports[`Icon component ViewColumn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33439,6 +34244,7 @@ exports[`Icon component ViewComfy should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33480,6 +34286,7 @@ exports[`Icon component ViewCompact should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33521,6 +34328,7 @@ exports[`Icon component ViewDay should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33562,6 +34370,7 @@ exports[`Icon component ViewHeadline should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33603,6 +34412,7 @@ exports[`Icon component ViewList should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33644,6 +34454,7 @@ exports[`Icon component ViewModule should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33685,6 +34496,7 @@ exports[`Icon component ViewQuilt should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33726,6 +34538,7 @@ exports[`Icon component ViewStream should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33767,6 +34580,7 @@ exports[`Icon component ViewWeek should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33808,6 +34622,7 @@ exports[`Icon component Vignette should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33849,6 +34664,7 @@ exports[`Icon component Visibility should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33890,6 +34706,7 @@ exports[`Icon component VisibilityOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33931,6 +34748,7 @@ exports[`Icon component VoiceChat should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -33972,6 +34790,7 @@ exports[`Icon component Voicemail should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34013,6 +34832,7 @@ exports[`Icon component VolumeDown should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34054,6 +34874,7 @@ exports[`Icon component VolumeMute should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34095,6 +34916,7 @@ exports[`Icon component VolumeOff should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34136,6 +34958,7 @@ exports[`Icon component VolumeUp should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34177,6 +35000,7 @@ exports[`Icon component VpnKey should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34218,6 +35042,7 @@ exports[`Icon component VpnLock should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34259,6 +35084,7 @@ exports[`Icon component WarnTwo should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34298,6 +35124,7 @@ exports[`Icon component Warning should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34339,6 +35166,7 @@ exports[`Icon component Watch should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34381,6 +35209,7 @@ exports[`Icon component WatchLater should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34425,6 +35254,7 @@ exports[`Icon component WbAuto should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34466,6 +35296,7 @@ exports[`Icon component WbCloudy should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34507,6 +35338,7 @@ exports[`Icon component WbIncandescent should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34548,6 +35380,7 @@ exports[`Icon component WbIridescent should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34589,6 +35422,7 @@ exports[`Icon component WbSunny should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34630,6 +35464,7 @@ exports[`Icon component Wc should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34671,6 +35506,7 @@ exports[`Icon component Web should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34712,6 +35548,7 @@ exports[`Icon component WebAsset should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34753,6 +35590,7 @@ exports[`Icon component Weekend should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34797,6 +35635,7 @@ exports[`Icon component Whatshot should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34838,6 +35677,7 @@ exports[`Icon component Wifi should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34879,6 +35719,7 @@ exports[`Icon component Work should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34920,6 +35761,7 @@ exports[`Icon component WrapText should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -34961,6 +35803,7 @@ exports[`Icon component Youtube should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -35002,6 +35845,7 @@ exports[`Icon component YoutubeSearchedFor should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -35043,6 +35887,7 @@ exports[`Icon component ZoomIn should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -35087,6 +35932,7 @@ exports[`Icon component ZoomOut should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
@@ -35128,6 +35974,7 @@ exports[`Icon component ZoomOutMap should fetch icon correctly 1`] = `
   width: 1em;
   height: 1em;
   vertical-align: middle;
+  display: inline-block;
 }
 
 .c0 > svg {
