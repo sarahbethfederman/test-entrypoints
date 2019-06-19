@@ -1,3 +1,7 @@
+## [2.2.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
+### Changed
+- Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.
+
 ## [2.2.2] - 2019-06-13 - [HUB-274](https://creditandfinance.atlassian.net/browse/HUB-274)
 ### Changed
 - Used strict equality to ensure only one radio element in a radio group can be selected at a time.

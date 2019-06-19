@@ -4,7 +4,7 @@ import * as createReactContext from 'create-react-context';
 import { Wrapper, Direction } from './index.style';
 import { Checkbox, CheckboxProps } from '../Checkbox/index';
 import { mb } from '@lendi-ui/spacing';
-import { LUIGlobalProps } from '@lendi-ui/utils/src';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
 // @ts-ignore
 const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;

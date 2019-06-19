@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as createReactContext from 'create-react-context';
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
-import { LUIGlobalProps } from '@lendi-ui/utils/src';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 
 // @ts-ignore
 const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;

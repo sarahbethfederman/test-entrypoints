@@ -1,3 +1,7 @@
+## [2.2.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
+### Changed
+- Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.
+
 ## [2.2.2] - 2019-06-12 - [HUB-269](https://creditandfinance.atlassian.net/browse/HUB-269)
 ### Changed
 - Failed prop type warning issue when you use CheckboxGroup - just added onChange event on checkbox-group so that React won't complaint of having an form input element with checked prop.

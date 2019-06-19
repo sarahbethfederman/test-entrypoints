@@ -1,3 +1,7 @@
+## [5.3.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
+### Changed
+- Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.
+
 ## [5.3.2] - 2019-06-07 - [HUB-264](https://creditandfinance.atlassian.net/browse/HUB-264)
 ### Changed
 - Corrected before and after alignment issue.
