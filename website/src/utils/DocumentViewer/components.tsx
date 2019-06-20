@@ -45,6 +45,8 @@ import DatePicker from '@lendi-ui/date-picker';
 import AutoComplete from '@lendi-ui/auto-complete';
 import Tooltip from '@lendi-ui/tooltip';
 import * as fancyIcons from '@lendi-ui/fancy-icon';
+import AuthLoader from '@lendi-ui/auth-loader';
+
 const scope = {
   styled,
   css,
@@ -113,6 +115,7 @@ const scope = {
   AutoComplete,
   Tooltip,
   ...fancyIcons,
+  AuthLoader,
 };
 
 interface GenericProps {
