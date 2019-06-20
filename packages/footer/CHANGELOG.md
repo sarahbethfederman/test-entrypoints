@@ -1,3 +1,7 @@
+## [2.5.0] - 2019-06-19 - [HUB-218](https://creditandfinance.atlassian.net/browse/HUB-218)
+### Added
+- Add ExpertAdvice component in LUI Footer
+
 ## [2.4.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

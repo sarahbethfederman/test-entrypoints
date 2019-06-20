@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/footer",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -17,13 +17,14 @@
     "styled-components": "^3"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^2.0.0",
-    "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/container": "^4.0.0",
-    "@lendi-ui/icon": "^7.0.0",
-    "@lendi-ui/logo": "^4.0.0",
-    "@lendi-ui/spacing": "^4.0.0",
-    "@lendi-ui/typography": "^3.0.0",
+    "@lendi-ui/breakpoint": "^2.1.0",
+    "@lendi-ui/color": "^3.1.0",
+    "@lendi-ui/container": "^4.1.0",
+    "@lendi-ui/icon": "^8.0.1",
+    "@lendi-ui/fancy-icon": "^1.0.1",
+    "@lendi-ui/logo": "^4.2.1",
+    "@lendi-ui/spacing": "^4.1.1",
+    "@lendi-ui/typography": "^3.2.1",
     "@lendi-ui/utils": "^2.5.0",
     "@lendi/lendi-analytics-package": "^1.0.0"
   },
