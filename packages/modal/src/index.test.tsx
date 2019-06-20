@@ -11,8 +11,8 @@ let onHide;
 
 const sizes: ModalSize[] = ['lg', 'md', 'sm'];
 
+const Header = () => <div>Header</div>;
 const Content = () => <div>Contents</div>;
-
 const Footer = () => <div>Footer</div>;
 
 const render = (props: ModalProps) => {
@@ -26,8 +26,21 @@ const render = (props: ModalProps) => {
 describe('Modal', () => {
   beforeEach(() => (onHide = jest.fn()));
 
-  describe('content', () => {
-    it('should contain content on modal', () => {
+  describe('rendering', () => {
+    it('should contain header on modal if it exists', () => {
+      const headerText = 'modal header';
+      element = mount(
+        <Theme>
+          <Modal show={true} onHide={onHide}>
+            <Modal.Header title={headerText} />
+          </Modal>
+        </Theme>
+      );
+
+      expect(element.find(Modal).text()).toContain(headerText);
+    });
+
+    it('should contain content on modal if it exists', () => {
       element = mount(
         <Theme>
           <Modal show={true} onHide={onHide}>
@@ -37,6 +50,7 @@ describe('Modal', () => {
           </Modal>
         </Theme>
       );
+
       expect(element.find(Content)).toHaveLength(1);
     });
 
@@ -50,6 +64,7 @@ describe('Modal', () => {
           </Modal>
         </Theme>
       );
+
       expect(element.find(Footer)).toHaveLength(1);
     });
   });
@@ -63,6 +78,7 @@ describe('Modal', () => {
         expect(modalContainer).toMatchSnapshot();
       });
     });
+
     sizes.forEach((size) => {
       it(`should render "${size}" size styles on tablet and desktop`, () => {
         render({ show: true, onHide, size });
@@ -73,6 +89,7 @@ describe('Modal', () => {
         expect(modalContainer).toMatchSnapshot();
       });
     });
+
     it(`should render 'md' as default if there are no size value on tablet and desktop`, () => {
       render({ show: true, onHide });
       modalContainer = element.find('.modal-container');
@@ -139,6 +156,7 @@ describe('Modal', () => {
       expect(modalAttributes['aria-label']).toBe(ARIA_LABEL);
       expect(modalAttributes['aria-describedby']).toBe(ARIA_DESCRIBE_BY);
     });
+
     it('should mount with native props like id, tabIndex', () => {
       const TEXT_ID = 'testId';
       render({

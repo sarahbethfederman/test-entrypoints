@@ -118,6 +118,98 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
             </ButtonGroup>
           </Modal.Footer>
         </Modal>
+
+        <br />
+        <br />
+        <Body>Modal with header in different configurations.</Body>
+        <br />
+        <Button variant="primary" onClick={() => this.onShow(5)}>
+          Open with a fixed header 🐴
+        </Button>
+        <Modal show={active && modal === 5 ? true : false} fixedHeader size="sm" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" headerSize="sm" />
+          <Modal.Content>
+            <Body>You already started an application on the 150th of May, 3012.</Body>
+            <br />
+            <Body>Would you like to continue?</Body>
+          </Modal.Content>
+        </Modal>
+        <br />
+        <br />
+        <Button variant="primary" onClick={() => this.onShow(6)}>
+          Open with a subtitle too! 🦄
+        </Button>
+        <Modal show={active && modal === 6 ? true : false} fixedHeader size="sm" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" headerSize="sm" subtitle="Sub-zero is already taken" />
+          <Modal.Content>
+            <Body>You already started an application on the 150th of May, 3012.</Body>
+            <br />
+            <Body>Would you like to continue?</Body>
+          </Modal.Content>
+        </Modal>
+        <br />
+        <br />
+        <Button variant="primary" onClick={() => this.onShow(7)}>
+          Open with lots of text 🙈
+        </Button>
+        <Modal show={active && modal === 7 ? true : false} fixedHeader size="lg" onHide={this.onHide}>
+          <Modal.Header
+            title="Select your champion but only champions from Mortal Kombat 1. Everyone is unlocked except for the boss characters"
+            headerSize="sm"
+            subtitle="That means that although Shang Tsung becomes a mainstay character after the original, he's unavailable for selection at this time"
+          />
+          <Modal.Content>
+            <Body>You already started an application on the 150th of May, 3012.</Body>
+            <br />
+            <Body>Would you like to continue?</Body>
+          </Modal.Content>
+        </Modal>
+        <br />
+        <br />
+        <Button variant="primary" onClick={() => this.onShow(8)}>
+          Open with all 3 sections 🙈
+        </Button>
+        <Modal show={active && modal === 8 ? true : false} fixedHeader size="lg" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" headerSize="sm" subtitle="Sub-zero is already taken" />
+          <Modal.Content>
+            <Body>You already started an application on the 150th of May, 3012.</Body>
+            <br />
+            <Body>Would you like to continue?</Body>
+            <br />
+            <Body>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </Body>
+            <br />
+            <Body>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </Body>
+            <br />
+            <Body>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </Body>
+          </Modal.Content>
+          <Modal.Footer>
+            <ButtonGroup isFullWidth size="md">
+              <ButtonGroup.Button variant="secondary">Continue application</ButtonGroup.Button>
+              <ButtonGroup.Button variant="primary">Start a new application</ButtonGroup.Button>
+            </ButtonGroup>
+          </Modal.Footer>
+        </Modal>
       </>
     );
   }

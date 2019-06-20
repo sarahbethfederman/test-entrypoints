@@ -1,15 +1,17 @@
 import styled, { css } from 'styled-components';
-import { bg } from '@lendi-ui/color';
+import { bg, color } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
-import { p, py, px, pt, pb } from '@lendi-ui/spacing';
+import { p, py, px, pl, pr, pt, pb } from '@lendi-ui/spacing';
+import { body, Heading } from '@lendi-ui/typography';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
-import { normalise } from '@lendi-ui/utils';
+import { normalise, deriveSize } from '@lendi-ui/utils';
 
 interface ContainerProps {
   show: boolean;
   size?: ModalSize;
+  fixedHeader?: boolean;
 }
 
 interface CloseProps {
@@ -17,11 +19,12 @@ interface CloseProps {
 }
 
 export type ModalSize = 'lg' | 'md' | 'sm';
+export type HeadingSize = 'xs' | 'sm' | 'md';
 
 export const widthBySize: { [size in ModalSize]: string } = {
-  lg: '600px',
-  md: '400px',
-  sm: '352px',
+  lg: deriveSize(37.5), // 600px @ desktop res
+  md: deriveSize(25), // 400px @ desktop res
+  sm: deriveSize(22), // 352px @ desktop res
 };
 
 export const Wrapper = styled.div`
@@ -31,13 +34,41 @@ export const Wrapper = styled.div`
   width: 600px;
 `;
 
-export const Footer = styled.div``;
 export const Content = styled.div``;
+export const Footer = styled.div``;
+
+export const HeaderWrapper = styled.div`
+  ${bg('shade.50')};
+  min-height: ${deriveSize(2.5)};
+  margin-bottom: -1px;
+  border-bottom: 1px solid ${color('shade.50')};
+  ${gte('tablet')`
+    border-radius: ${select('borderRadius')} ${select('borderRadius')} 0 0;
+  `}
+  ${py('xxs')};
+  ${pl('xs')};
+  ${pr('xxl')};
+  display: flex;
+  flex: 0 1 auto;
+`;
+
+export const TitlesWrapper = styled.div`
+  margin: auto 0;
+`;
+
+export const Title = styled(Heading)``;
+
+export const Subtitle = styled.p`
+  overflow-wrap: normal;
+  ${body({ size: 'xs' })};
+  margin: 0;
+  ${pb('xxxs')}
+`;
 
 export const Container = styled.div`
-  ${({ size = 'md' }: ContainerProps) => css`
-    display: ${(props: ContainerProps) => (props.show ? 'grid;' : 'none')};
-    grid-template-rows: 3fr auto;
+  ${({ size = 'md', fixedHeader }: ContainerProps) => css`
+    display: ${(props: ContainerProps) => (props.show ? 'flex;' : 'none')};
+    flex-direction: column;
     opacity: 0.97;
     z-index: 10;
     height: 100%;
@@ -52,16 +83,20 @@ export const Container = styled.div`
       width: ${widthBySize[size]};
       border-radius: ${select('borderRadius')};
       height: initial;
+      max-height: 85vh;
       opacity: 1;
     `}
 
     ${Content} {
-      ${pt('xxxl')}
+      ${pt(fixedHeader ? 'sm' : 'xxxl')}
       ${pb('xl')}
       ${px('md')}
       ${gte('tablet')`
         ${size === 'lg' && px('lg')};
       `}
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow: scroll;
     }
 
     ${Footer} {
@@ -74,14 +109,15 @@ export const Container = styled.div`
         border-bottom-right-radius: ${select('borderRadius')};
         ${size === 'lg' && px('lg')};
       `}
+      flex: 0 1 auto;
     }
   `};
 `;
 
 export const CloseIcon = styled(Close)<CloseProps>`
-  ${p('md')} right: 0;
-  width: 19px;
-  height: 19px;
+  ${p('sm')} right: 0;
+  width: 32px;
+  height: 32px;
   position: absolute;
   cursor: pointer;
 `;

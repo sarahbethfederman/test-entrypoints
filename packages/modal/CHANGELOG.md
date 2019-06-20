@@ -1,3 +1,8 @@
+## [2.3.0] - 2019-06-17 - [HUB-196](https://creditandfinance.atlassian.net/browse/HUB-196)
+### Added
+- Added the fixedHeader prop to the Modal (defaults to false).
+- Added the Modal.Header child for the fixed header.
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
