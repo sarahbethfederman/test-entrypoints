@@ -18,7 +18,7 @@ function render(props) {
 }
 
 describe('Alert', () => {
-  it('it should mount Alert component without heading', () => {
+  it('should mount Alert component without heading', () => {
     render({});
     expect(element.find(Alert)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
@@ -29,7 +29,7 @@ describe('Alert', () => {
     expect(element.find(Alert)).toMatchSnapshot();
   });
 
-  it('it should mount Alert component with heading', () => {
+  it('should mount Alert component with heading', () => {
     const heading = 'Alert label';
     render({ heading });
     expect(element.find(Alert)).toHaveLength(1);

@@ -45,16 +45,16 @@ describe('Navigation', () => {
     render({});
   });
 
-  it('it should mount the whole component', () => {
+  it('should mount the whole component', () => {
     expect(element.find(BrokerNavigation)).toHaveLength(1);
     expect(element.find(Navigation)).toHaveLength(1);
   });
 
-  it('it should mount 5 Menu component', () => {
+  it('should mount 5 Menu component', () => {
     expect(element.find(Menu)).toHaveLength(5);
   });
 
-  it('it should mount 12 MenuItem component', () => {
+  it('should mount 12 MenuItem component', () => {
     expect(element.find(MenuItem)).toHaveLength(4);
   });
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Large Label it should render LUI "md" Body assistive text component 1`] = `
+exports[`Large Label should render LUI "md" Body assistive text component 1`] = `
 .c1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -34,7 +34,7 @@ exports[`Large Label it should render LUI "md" Body assistive text component 1`]
 </Styled(styled.p)>
 `;
 
-exports[`Large Label it should render LUI "md" Link component 1`] = `
+exports[`Large Label should render LUI "md" Link component 1`] = `
 .c0 {
   font-size: 1em;
   border: none;
@@ -74,7 +74,7 @@ exports[`Large Label it should render LUI "md" Link component 1`] = `
 </Component>
 `;
 
-exports[`Large Label it should render LUI "md" heading component 1`] = `
+exports[`Large Label should render LUI "md" heading component 1`] = `
 .c1 {
   margin-top: 0;
   margin-bottom: 0;

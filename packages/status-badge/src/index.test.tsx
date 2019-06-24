@@ -16,7 +16,7 @@ function render(props) {
 }
 
 describe('StatusBadge', () => {
-  it('it should mount StatusBadge component without icon', () => {
+  it('should mount StatusBadge component without icon', () => {
     render({ icon: false });
     expect(element.find(StatusBadge)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
@@ -24,7 +24,7 @@ describe('StatusBadge', () => {
     expect(element.find(StatusBadge)).toMatchSnapshot();
   });
 
-  it('it should mount StatusBadge component with icon', () => {
+  it('should mount StatusBadge component with icon', () => {
     render({});
     expect(element.find(StatusBadge)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);

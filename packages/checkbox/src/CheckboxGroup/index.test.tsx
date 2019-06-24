@@ -26,27 +26,27 @@ function render(props) {
 }
 
 describe('checkbox group', () => {
-  it('it should mount all checkbox', () => {
+  it('should mount all checkbox', () => {
     render({});
     expect(element.find(CheckboxGroup)).toHaveLength(1);
     expect(element.find(Wrapper).prop('direction')).toEqual('column');
     expect(element.find(CheckboxGroup.Checkbox)).toHaveLength(3);
   });
 
-  it('it should mount all checkbox in "row" direction when setup "row"', () => {
+  it('should mount all checkbox in "row" direction when setup "row"', () => {
     const direction = 'row';
     render({ direction });
     expect(element.find(Wrapper).prop('direction')).toEqual('row');
   });
 
-  it('it should mount all checkbox', () => {
+  it('should mount all checkbox', () => {
     const isBoxed = true;
     render({ isBoxed });
     const checkboxs = element.find(Checkbox);
     checkboxs.forEach((checkbox) => expect(checkbox.prop('isBoxed')).toEqual(true));
   });
 
-  it('it should mount all checkbox', () => {
+  it('should mount all checkbox', () => {
     const isDisabled = true;
     render({ isDisabled });
     const checkboxs = element.find(Checkbox);

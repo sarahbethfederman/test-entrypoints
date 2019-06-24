@@ -15,7 +15,7 @@ function render(props) {
 }
 
 describe('Checkbox', () => {
-  it('it should render whole component', () => {
+  it('should render whole component', () => {
     render({});
     expect(element.find(Checkbox)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
@@ -24,13 +24,13 @@ describe('Checkbox', () => {
     expect(element.find(Checkbox)).toMatchSnapshot();
   });
 
-  it('it should render disabled style when it is setup isDisabled', () => {
+  it('should render disabled style when it is setup isDisabled', () => {
     const isDisabled = true;
     render({ isDisabled });
     expect(element.find(Checkbox)).toHaveStyleRule('cursor', 'not-allowed');
   });
 
-  it('it should render box style when it is setup isBoxed', () => {
+  it('should render box style when it is setup isBoxed', () => {
     const isBoxed = true;
     render({ isBoxed });
     expect(element.find(Checkbox)).toMatchSnapshot();

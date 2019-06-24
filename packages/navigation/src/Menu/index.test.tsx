@@ -15,13 +15,13 @@ const render = (props) => {
 };
 
 describe('Menu', () => {
-  it('it should mount the whole Menu component', () => {
+  it('should mount the whole Menu component', () => {
     render({});
     expect(element.find(Menu)).toHaveLength(1);
     expect(element.find(MenuWrapper)).toHaveLength(1);
   });
 
-  it('it should mount the whole HeadWrapper component and render MainWrapper component when clicking it', () => {
+  it('should mount the whole HeadWrapper component and render MainWrapper component when clicking it', () => {
     const onClick = jest.fn();
     render({ onClick });
     expect(element.find(HeadWrapper)).toHaveLength(1);

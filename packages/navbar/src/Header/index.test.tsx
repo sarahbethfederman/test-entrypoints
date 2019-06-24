@@ -46,12 +46,12 @@ describe('Header', () => {
   describe('it should render general components', () => {
     beforeEach(() => render({}));
 
-    it('it should mount the whole Header component', () => {
+    it('should mount the whole Header component', () => {
       expect(wrapper.find(FullWidthContainer)).toHaveLength(1);
       expect(wrapper.find(Container)).toHaveLength(1);
     });
 
-    it('it should mount the LeftGroup component', () => {
+    it('should mount the LeftGroup component', () => {
       expect(wrapper.find(LeftGroup)).toHaveLength(1);
       expect(wrapper.find(MenuButton)).toHaveLength(1);
       expect(wrapper.find(Menu)).toHaveLength(1);
@@ -61,7 +61,7 @@ describe('Header', () => {
       expect(wrapper.find(HeaderLogo)).toHaveLength(1);
     });
 
-    it('it should mount the LeftGroup component', () => {
+    it('should mount the LeftGroup component', () => {
       expect(wrapper.find(RightGroup)).toHaveLength(1);
       expect(wrapper.find(ButtonGroup)).toHaveLength(1);
       expect(wrapper.find(HeaderButton)).toHaveLength(2);
@@ -85,7 +85,7 @@ describe('Header', () => {
     const params = '?utm_source=google';
     beforeEach(() => render({ params }));
 
-    it('it should mount the logo component URL with query parameters', () => {
+    it('should mount the logo component URL with query parameters', () => {
       expect(wrapper.find(LogoLink).props().href).toEqual(`${HOME_PAGE_LINK}?utm_source=google`);
     });
   });

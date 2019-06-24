@@ -26,12 +26,12 @@ describe('Popover', () => {
     );
   });
 
-  it('it should mount Popover component', () => {
+  it('should mount Popover component', () => {
     expect(element.find(Popover)).toHaveLength(1);
     expect(element.find(PopoverWrapper)).toHaveLength(1);
   });
 
-  it('it should display when click the target component and disappear when click target again', () => {
+  it('should display when click the target component and disappear when click target again', () => {
     expect(element.find(PopoverWrapper).props().isOpen).toEqual(false);
     element
       .find('span')

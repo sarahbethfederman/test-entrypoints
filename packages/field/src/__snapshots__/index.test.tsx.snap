@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Field it should render wrapper component 1`] = `
+exports[`Field should render wrapper component 1`] = `
 .c5 {
   margin-top: 0;
   margin-bottom: 0;

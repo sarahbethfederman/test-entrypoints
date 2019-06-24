@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
+exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
 .c0 {
   width: 100%;
   display: -webkit-box;
@@ -94,7 +94,7 @@ exports[`ErrorMessage it should render a div called "Wrapper" 1`] = `
 </styled.div>
 `;
 
-exports[`ErrorMessage it should render a icon called "HighlightOff" 1`] = `
+exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
 .c0 {
   width: 1em;
   height: 1em;
@@ -136,7 +136,7 @@ exports[`ErrorMessage it should render a icon called "HighlightOff" 1`] = `
 </HighlightOff>
 `;
 
-exports[`ErrorMessage it should render a paragraph use LUI Body called "MessageBody" 1`] = `
+exports[`ErrorMessage should render a paragraph use LUI Body called "MessageBody" 1`] = `
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
@@ -162,7 +162,7 @@ exports[`ErrorMessage it should render a paragraph use LUI Body called "MessageB
 </styled.p>
 `;
 
-exports[`ErrorMessage it should render whole component 1`] = `
+exports[`ErrorMessage should render whole component 1`] = `
 .c0 {
   width: 100%;
   display: -webkit-box;

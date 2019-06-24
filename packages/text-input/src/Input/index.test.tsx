@@ -18,7 +18,7 @@ function render(props) {
 }
 
 describe('input', () => {
-  it('it should render the whole input component and a text input', () => {
+  it('should render the whole input component and a text input', () => {
     render({});
     expect(element.find(Layout).length).toEqual(1);
     expect(element.find(Layout)).not.toHaveStyleRule('width', '100%');
@@ -28,13 +28,13 @@ describe('input', () => {
     expect(element).toMatchSnapshot();
   });
 
-  it('it should render the before component when there is a before element', () => {
+  it('should render the before component when there is a before element', () => {
     const before = <span style={{ width: '24px', height: '24px' }}>x</span>;
     render({ before });
     expect(element.find(BeforeWrapper).length).toEqual(1);
   });
 
-  it('it should render the after component when there is a after element', () => {
+  it('should render the after component when there is a after element', () => {
     const after = <span style={{ width: '24px', height: '24px' }}>x</span>;
     render({ after });
     expect(element.find(AfterWrapper).length).toEqual(1);

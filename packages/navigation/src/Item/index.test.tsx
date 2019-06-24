@@ -21,13 +21,13 @@ const render = (props) => {
 };
 
 describe('MenuItem', () => {
-  it('it should mount the whole MenuItem component', () => {
+  it('should mount the whole MenuItem component', () => {
     render({});
     expect(element.find(MenuItem)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
   });
 
-  it('it should mount the Wrapper component and render Slider component when clicking it', () => {
+  it('should mount the Wrapper component and render Slider component when clicking it', () => {
     const handleClick = jest.fn();
     render({ handleClick });
     element.find(HeadWrapper).simulate('click');
@@ -35,17 +35,17 @@ describe('MenuItem', () => {
     expect(element.find(Slider)).toHaveLength(1);
   });
 
-  it('it should mount the ItemWrapper component', () => {
+  it('should mount the ItemWrapper component', () => {
     render({});
     expect(element.find(ItemWrapper)).toHaveLength(1);
   });
 
-  it('it should mount the HeadWrapper component', () => {
+  it('should mount the HeadWrapper component', () => {
     render({});
     expect(element.find(HeadWrapper)).toHaveLength(1);
   });
 
-  it('it should mount the Heading component', () => {
+  it('should mount the Heading component', () => {
     render({});
     expect(element.find(Heading)).toHaveLength(1);
     expect(element.find(Heading).props().size).toEqual('xs');

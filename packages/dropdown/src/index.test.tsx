@@ -38,47 +38,47 @@ const render = (props: any) => {
 };
 
 describe('Dropdown', () => {
-  it('it should render whole component', () => {
+  it('should render whole component', () => {
     render({});
     expect(Wrapper.find('Dropdown').length).toEqual(1);
     expect(Wrapper.find('Dropdown')).toMatchSnapshot();
   });
 
-  it('it should render DropdownWrapper', () => {
+  it('should render DropdownWrapper', () => {
     render({});
     expect(Wrapper.find(DropdownWrapper).length).toEqual(1);
   });
 
-  it('it should render Dropdown component and has size property "md"', () => {
+  it('should render Dropdown component and has size property "md"', () => {
     render({});
     expect(Wrapper.find(Select).length).toEqual(1);
     expect(Wrapper.find(Select).prop('selectSize')).toEqual('md');
   });
 
-  it('it should render SelectedItem component', () => {
+  it('should render SelectedItem component', () => {
     render({});
     expect(Wrapper.find('option').length).toEqual(5);
   });
 
-  it('it should render BoxArrow component', () => {
+  it('should render BoxArrow component', () => {
     render({});
     expect(Wrapper.find(IconDown).length).toEqual(1);
   });
 
-  it('it should render Spinner component when isLoading = true ', () => {
+  it('should render Spinner component when isLoading = true ', () => {
     const isLoading = true;
     render({ isLoading });
     expect(Wrapper.find(IconDown).length).toEqual(0);
     expect(Wrapper.find(SpinnerWrapper).length).toEqual(1);
   });
 
-  it('it should render error when isError = true ', () => {
+  it('should render error when isError = true ', () => {
     const isError = true;
     render({ isError });
     expect(Wrapper.find('Dropdown__Select')).toMatchSnapshot();
   });
 
-  it('it should render disable when isDisabled = true ', () => {
+  it('should render disable when isDisabled = true ', () => {
     const isDisabled = true;
     render({ isDisabled });
     expect(Wrapper.find('Dropdown__DropdownWrapper')).toMatchSnapshot();

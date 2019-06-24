@@ -18,7 +18,7 @@ function render(props) {
 }
 
 describe('radioButton', () => {
-  it('it should render whole component', () => {
+  it('should render whole component', () => {
     render({});
     expect(element.find(Radio)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
@@ -40,14 +40,14 @@ describe('radioButton', () => {
     expect(element.find(RadioWrapper).props().disabled).toBeTruthy();
   });
 
-  it('it should render correct styles when boxed', () => {
+  it('should render correct styles when boxed', () => {
     render({ isBoxed: true });
 
     const testEl = element.find(Wrapper);
     expect(testEl).toHaveStyleRule(defaultBorder);
   });
 
-  it('it should render correct styles when disabled', () => {
+  it('should render correct styles when disabled', () => {
     render({ isDisabled: true });
 
     const testEl = element.find(Radio);

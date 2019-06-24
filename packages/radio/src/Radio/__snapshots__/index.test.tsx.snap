@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`radioButton it should render correct styles when disabled 1`] = `
+exports[`radioButton should render correct styles when disabled 1`] = `
 .c3 {
   margin-top: 0;
   margin-bottom: 0;

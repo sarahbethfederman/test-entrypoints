@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputButton it should render InputButton in after wrapper 1`] = `
+exports[`InputButton should render InputButton in after wrapper 1`] = `
 .c2 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -183,7 +183,7 @@ exports[`InputButton it should render InputButton in after wrapper 1`] = `
 </Styled(InputWithButton)>
 `;
 
-exports[`InputButton it should render InputButton in before wrapper 1`] = `
+exports[`InputButton should render InputButton in before wrapper 1`] = `
 .c2 {
   box-sizing: border-box;
   line-height: 1.333;

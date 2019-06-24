@@ -13,7 +13,7 @@ describe('Footer', () => {
       </Theme>
     );
   });
-  it('it should mount Footer component', () => {
+  it('should mount Footer component', () => {
     expect(element.find(Footer)).toHaveLength(1);
     expect(element.find(Footer)).toMatchSnapshot();
   });

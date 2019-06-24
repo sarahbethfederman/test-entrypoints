@@ -92,21 +92,21 @@ describe('DatePicker', () => {
   describe('it should match all styles in different size of the DatePicker component', () => {
     sizes.forEach((size) => {
       describe(`${size}`, () => {
-        it('it should render with the day field in the DatePicker component', () => {
+        it('should render with the day field in the DatePicker component', () => {
           render({ hasDayField: true });
 
           expect(element.find(DayInputWrapper)).toHaveLength(1);
           expect(element.find(InputWrapper)).toHaveLength(3);
         });
 
-        it('it should render readonly style of the DatePicker component', () => {
+        it('should render readonly style of the DatePicker component', () => {
           render({ isDisabled: true });
           element.find(InputWrapper).forEach((inputWrapper) => {
             expect(inputWrapper.prop('readOnly')).toEqual(true);
           });
         });
 
-        it('it should render error style of the DatePicker component', () => {
+        it('should render error style of the DatePicker component', () => {
           render({ isError: true });
 
           expect(element.find(Wrapper).prop('isError')).toEqual(true);

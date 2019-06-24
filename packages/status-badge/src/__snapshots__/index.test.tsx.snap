@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StatusBadge it should mount StatusBadge component with icon 1`] = `
+exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -118,7 +118,7 @@ exports[`StatusBadge it should mount StatusBadge component with icon 1`] = `
 </StatusBadge>
 `;
 
-exports[`StatusBadge it should mount StatusBadge component without icon 1`] = `
+exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;

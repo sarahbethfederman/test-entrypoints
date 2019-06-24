@@ -17,21 +17,21 @@ describe('AuthLoader', () => {
     );
   });
 
-  it('it should render the whole AuthLoader component', () => {
+  it('should render the whole AuthLoader component', () => {
     expect(element.find(AuthLoader)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
   });
 
-  it('it should render the component that wrap svg and content', () => {
+  it('should render the component that wrap svg and content', () => {
     expect(element.find(Main)).toHaveLength(1);
   });
 
-  it('it should render the svg and path component', () => {
+  it('should render the svg and path component', () => {
     expect(element.find(LendiLogoSvgWrapper)).toHaveLength(1);
     expect(element.find(LendiLogoPathWrapper)).toHaveLength(1);
   });
 
-  it('it should render the Body component', () => {
+  it('should render the Body component', () => {
     expect(element.find(Body)).toHaveLength(1);
   });
 });

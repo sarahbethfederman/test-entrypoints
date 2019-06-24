@@ -15,7 +15,7 @@ function render(props) {
 }
 
 describe('InputButton', () => {
-  it('it should render InputButton in before wrapper', () => {
+  it('should render InputButton in before wrapper', () => {
     const before = (
       <InputButton variant="primary" size="md">
         search
@@ -25,7 +25,7 @@ describe('InputButton', () => {
     expect(element.find(InputButton)).toMatchSnapshot();
   });
 
-  it('it should render InputButton in after wrapper', () => {
+  it('should render InputButton in after wrapper', () => {
     const after = (
       <InputButton variant="primary" size="md">
         search

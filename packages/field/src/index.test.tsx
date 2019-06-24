@@ -28,7 +28,7 @@ describe('Field', () => {
   const tooltip = <QuestionOutline color="primary.500" />;
   const children = <input type="text" />;
   const isOptional = true;
-  it('it should render wrapper component', () => {
+  it('should render wrapper component', () => {
     render({ label });
     expect(wrapper.find(ErrorMessage).length).toEqual(0);
     expect(wrapper.find(FieldWrapper).length).toEqual(1);
@@ -36,7 +36,7 @@ describe('Field', () => {
     expect(wrapper.find(LabelField).length).toEqual(1);
   });
 
-  it('it should render Label component properly', () => {
+  it('should render Label component properly', () => {
     render({ label, size, link, assistiveText });
     expect(wrapper.find(Label).length).toEqual(1);
     expect(wrapper.find(Label).prop('label')).toEqual('First name');
@@ -45,43 +45,43 @@ describe('Field', () => {
     expect(wrapper.find(Label).prop('assistiveText')).toEqual('Assistive text');
   });
 
-  it('it should render the error message when error is defined and the user has interacted with the component', () => {
+  it('should render the error message when error is defined and the user has interacted with the component', () => {
     render({ error, touched: true });
     expect(wrapper.find(ErrorMessage)).toHaveLength(1);
     expect(wrapper.find(ErrorMessage).prop('error')).toEqual('error message');
   });
 
-  it('it should not render the error message when error is undefiend and the user has interacted with the component', () => {
+  it('should not render the error message when error is undefiend and the user has interacted with the component', () => {
     render({ touched: true });
     expect(wrapper.find(ErrorMessage)).toHaveLength(0);
   });
 
-  it('it should not render the error message when error is defined and the user has not interacted with the component', () => {
+  it('should not render the error message when error is defined and the user has not interacted with the component', () => {
     render({ error });
     expect(wrapper.find(ErrorMessage)).toHaveLength(0);
   });
 
-  it('it should render ToolTip component properly', () => {
+  it('should render ToolTip component properly', () => {
     render({ tooltip });
     expect(wrapper.find(QuestionOutline).length).toEqual(1); //  replace with ToolTip later when LUI Input added to LUI
   });
 
-  it('it should render children component properly', () => {
+  it('should render children component properly', () => {
     render({ children });
     expect(wrapper.find('input').length).toEqual(1); //  replace with Input later when LUI Input added to LUI
   });
 
-  it('it should render Label component with Optional properly', () => {
+  it('should render Label component with Optional properly', () => {
     render({ label, isOptional });
     expect(wrapper.find('Label').prop('isOptional')).toEqual(true);
   });
 
-  it('it should not render Label component if no related props are passed', () => {
+  it('should not render Label component if no related props are passed', () => {
     render({});
     expect(wrapper.find(LabelField).length).toEqual(0);
   });
 
-  it('it should render Label component if at least one related prop is passed', () => {
+  it('should render Label component if at least one related prop is passed', () => {
     render({ label });
     expect(wrapper.find(LabelField).length).toEqual(1);
     render({ isOptional });

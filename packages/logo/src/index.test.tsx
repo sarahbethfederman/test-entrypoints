@@ -67,7 +67,7 @@ describe('Logo', () => {
         </Theme>
       );
     });
-    it('it should render domain logo', () => {
+    it('should render domain logo', () => {
       expect(Wrapper.find(DomainLogo).length).toEqual(1);
     });
   });

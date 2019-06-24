@@ -25,17 +25,17 @@ describe('ExpertAdvice', () => {
     );
   });
 
-  it('it should render the whole ExpertAdvice component', () => {
+  it('should render the whole ExpertAdvice component', () => {
     expect(element.find(ExpertAdvice)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
   });
 
-  it('it should render the HeadingWrapper component', () => {
+  it('should render the HeadingWrapper component', () => {
     expect(element.find(HeadingWrapper)).toHaveLength(1);
     expect(element.find(HeadingWrapper).text()).toEqual('Contact us for free expert home loan advice');
   });
 
-  it('it should render 2 LinkGroup component and each LinkGroup includes one LinkWrapperOne and one LinkWrapperTwo component', () => {
+  it('should render 2 LinkGroup component and each LinkGroup includes one LinkWrapperOne and one LinkWrapperTwo component', () => {
     expect(element.find(LinkGroup)).toHaveLength(2);
 
     const linkGroupOne = element.find(LinkGroup).at(0);

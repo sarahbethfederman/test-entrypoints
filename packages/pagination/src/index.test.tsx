@@ -17,14 +17,14 @@ const render = (props: any) => {
 };
 
 describe('pagination', () => {
-  it('it should render the whole Pagination component', () => {
+  it('should render the whole Pagination component', () => {
     const currentPage = 1;
     render({ currentPage, handleChange, handleClick });
     expect(element.find(Pagination)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
   });
 
-  it('it should render ChevronLeftIcon and ChevronRightIcon', () => {
+  it('should render ChevronLeftIcon and ChevronRightIcon', () => {
     const currentPage = 1;
     render({ currentPage, handleChange, handleClick });
     expect(element.find(IconButtonWrapper)).toHaveLength(2);
@@ -32,34 +32,34 @@ describe('pagination', () => {
     expect(element.find(ChevronRightIcon)).toHaveLength(1);
   });
 
-  it('it should render ChevronLeftIcon and ChevronRightIcon', () => {
+  it('should render ChevronLeftIcon and ChevronRightIcon', () => {
     const currentPage = 1;
     render({ currentPage, handleChange, handleClick });
     expect(element.find(ButtonWrapper)).toHaveLength(7);
   });
 
-  it('it should send console.warn message if currentPage is greater than totalPages', () => {
+  it('should send console.warn message if currentPage is greater than totalPages', () => {
     const currentPage = 11;
     console.warn = jest.fn();
     render({ currentPage, handleChange, handleClick });
     expect(console.warn).toBeCalled();
   });
 
-  it('it should send console.warn message if currentPage is less than 1', () => {
+  it('should send console.warn message if currentPage is less than 1', () => {
     const currentPage = 0;
     console.warn = jest.fn();
     render({ currentPage, handleChange, handleClick });
     expect(console.warn).toBeCalled();
   });
 
-  it('it should call handleChange function when clicking IconButtonWrapper', () => {
+  it('should call handleChange function when clicking IconButtonWrapper', () => {
     const currentPage = 1;
     render({ currentPage, handleChange, handleClick });
     element.find(IconButtonWrapper).forEach((SingleIconButtonWrapper) => SingleIconButtonWrapper.simulate('click'));
     expect(handleChange).toBeCalled();
   });
 
-  it('it should call handleChange function when clicking ButtonWrapper', () => {
+  it('should call handleChange function when clicking ButtonWrapper', () => {
     const currentPage = 1;
     render({ currentPage, handleChange, handleClick });
     element

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Checkbox it should render box style when it is setup isBoxed 1`] = `
+exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
 .c3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -129,7 +129,7 @@ exports[`Checkbox it should render box style when it is setup isBoxed 1`] = `
 </Component>
 `;
 
-exports[`Checkbox it should render whole component 1`] = `
+exports[`Checkbox should render whole component 1`] = `
 .c3 {
   margin-top: 0;
   margin-bottom: 0;
