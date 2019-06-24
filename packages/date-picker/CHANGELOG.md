@@ -1,3 +1,7 @@
+## [2.2.2] - 2019-06-4 - [HUB-288](https://creditandfinance.atlassian.net/browse/HUB-288)
+### Changed
+- Gave the entire date-picker a white background.
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

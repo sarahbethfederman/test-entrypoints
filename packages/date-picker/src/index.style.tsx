@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { SpacingName } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
-import { color } from '@lendi-ui/color';
+import { color, bg } from '@lendi-ui/color';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 
 export type Size = 'lg' | 'md' | 'sm';
@@ -77,6 +77,7 @@ const iconWrapperBySizeMixin = (size: DatePickerSize): SpacingName =>
 
 export const Wrapper = styled.div<WrapperProps>`
   ${normalise};
+  ${bg('shade.0')}
   ${({ size, hasDayField }: { size: DatePickerSize; hasDayField: boolean }) =>
     css`
       ${size && wrapperBySizeMixin(size, hasDayField)};

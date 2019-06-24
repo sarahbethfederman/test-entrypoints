@@ -25,6 +25,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
+  background-color: #ffffff;
   height: calc(3 * var(--lendi-ui-size));
   font-size: calc(1.125 * var(--lendi-ui-size));
   min-width: calc(11.75 * var(--lendi-ui-size));
