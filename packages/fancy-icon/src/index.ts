@@ -18,6 +18,7 @@ export interface FancyIconProps {
   className?: string;
 }
 
+export { ArrowRight } from './fancy-icons-compiled/arrow-right';
 export { BloomSavings } from './fancy-icons-compiled/bloom-savings';
 export { BookAppointment } from './fancy-icons-compiled/book-appointment';
 export { Briefcase } from './fancy-icons-compiled/briefcase';

@@ -1,5 +1,76 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icon component ArrowRight should fetch icon correctly 1`] = `
+.c0 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+.c0 > svg {
+  width: inherit;
+  height: inherit;
+}
+
+<ArrowRight>
+  <styled.span>
+    <span
+      className="c0"
+    >
+      <svg
+        viewBox="0 0 80 80"
+      >
+        <g
+          fill="none"
+          fillRule="evenodd"
+        >
+          <path
+            d="M37.032 49.19h1v1h-1z"
+            fill="#E426E6"
+            fillRule="nonzero"
+          />
+          <g
+            transform="translate(10 10)"
+          >
+            <circle
+              cx={31}
+              cy={31}
+              fill="#EDF7F5"
+              r={31}
+            />
+            <path
+              d="M31 62.517C13.594 62.517-.517 48.407-.517 31-.517 13.594 13.593-.517 31-.517c17.406 0 31.517 14.11 31.517 31.517 0 17.406-14.11 31.517-31.517 31.517zm0-1.034c16.835 0 30.483-13.648 30.483-30.483S47.835.517 31 .517.517 14.165.517 31 14.165 61.483 31 61.483z"
+              fill="#00C0A5"
+              fillRule="nonzero"
+            />
+            <path
+              d="M54.51 10.794c9.088 13.637 5.992 31.992-7.067 41.894-13.059 9.901-31.568 7.928-42.246-4.504a31 31 0 1 0 49.312-37.39z"
+              fill="#5FE1CF"
+              opacity={0.2}
+            />
+            <path
+              d="M13.436 31.7a.517.517 0 0 1-.005-1.033l34.51-.158a.517.517 0 1 1 .005 1.034l-34.51.157z"
+              fill="#00C0A5"
+              fillRule="nonzero"
+            />
+            <path
+              d="M35.657 44.487a.517.517 0 1 1-.726-.735l13.273-13.095a.517.517 0 0 1 .726.736L35.657 44.487z"
+              fill="#00C0A5"
+              fillRule="nonzero"
+            />
+            <path
+              d="M34.931 18.248a.517.517 0 1 1 .726-.735L48.93 30.607a.517.517 0 0 1-.726.736L34.93 18.248z"
+              fill="#00C0A5"
+              fillRule="nonzero"
+            />
+          </g>
+        </g>
+      </svg>
+    </span>
+  </styled.span>
+</ArrowRight>
+`;
+
 exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
 .c0 {
   width: 1em;
