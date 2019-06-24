@@ -1,6 +1,7 @@
 const path = require('path');
 const marked = require('marked');
 const renderer = marked.Renderer();
+const webpack = require('webpack');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -102,6 +103,13 @@ module.exports = {
   },
 
   plugins: [
+    new webpack.DefinePlugin({
+      // mimic process.env environment variables.
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+    }),
+
     // delegate type-checking to a separate process for improved compile speed
     new ForkTsCheckerWebpackPlugin(),
 
