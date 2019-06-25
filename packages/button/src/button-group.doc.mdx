@@ -1,4 +1,5 @@
 import {PropTable} from '@lendi-ui/doc-utils';
+import { Lock } from '@lendi-ui/icon'
 
 ## Usage
 
@@ -22,17 +23,23 @@ import {ButtonGroup} from '@lendi-ui/button';
   <ButtonGroup.Button variant="secondary">&lt;</ButtonGroup.Button>
   <ButtonGroup.Button variant="primary">Continue</ButtonGroup.Button>
 </ButtonGroup>
+<br /><br />
+<ButtonGroup size={'sm'}>
+  <ButtonGroup.IconButton icon={Lock} />
+  <ButtonGroup.IconButton icon={Lock} />
+</ButtonGroup>
 </>
 ```
 
 ## ButtonGroup Properties
 
 <PropTable>
-  <PropTable.Entry name="children" type="React.ReactElement<ButtonGroupButtonProps>" description="The buttons"/>
+  <PropTable.Entry name="children" type="React.ReactElement<ButtonGroupButtonProps> | React.ReactElement<ButtonGroupIconButtonProps>" description="The buttons"/>
   <PropTable.Entry name="className" defaultValue="" type="string" description="External classname to override style of the component"/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Disabling the ButtonGroup"/>
-  <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Buttons take up the max width of parent"/>
-  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Switches the foreground and background colours"/>
+  <PropTable.Entry name="isFullWidth" type="boolean" defaultValue={false} description="Buttons take up the max width of parent (Doesn't work with IconButtons)"/>
+  <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Switches the foreground and background colours (Doesn't work with IconButtons)"/>
+  <PropTable.Entry name="isLoading" type="boolean" defaultValue={false} description="Replaces the selected Icons with spinners (Doesn't work with Buttons)"/>
   <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The buttons size"/>
 </PropTable>
 
@@ -48,6 +55,20 @@ import {ButtonGroup} from '@lendi-ui/button';
   <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
+
+
+## ButtonGroup.IconButton Properties
+
+<PropTable>
+  <PropTable.Entry name="color" type="string" description="Color value for the chosen Icon."/>
+  <PropTable.Entry name="href" type="string" description="URL to link to"/>
+  <PropTable.Entry name="icon" type="Icon" description="The export from @lendi-ui/icon to be shown on the IconButton"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the IconButton responds to user input"/>
+  <PropTable.Entry name="isLoading" type="boolean" defaultValue={false} description="Replaces the selected Icons with spinners"/>
+  <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
+  <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} description="The size of the IconButton"/>
+</PropTable>
+
 
 ### Notes
 <b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

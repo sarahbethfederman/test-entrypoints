@@ -1,3 +1,7 @@
+## [5.4.0] - 2019-06-14 - [HUB-148](https://creditandfinance.atlassian.net/browse/HUB-148)
+### Added
+- Added icon-button to the package.
+
 ## [5.3.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
 ### Changed
 - Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.
@@ -6,7 +10,7 @@
 ### Changed
 - Corrected before and after alignment issue.
 
-## [5.3.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+## [5.3.1] - 2019-06-04 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
 

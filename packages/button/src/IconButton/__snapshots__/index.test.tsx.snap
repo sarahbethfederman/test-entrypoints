@@ -1,0 +1,401 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton should render the "lg" size correctly 1`] = `
+.c1 {
+  width: calc(2 * var(--lendi-ui-size));
+  height: calc(2 * var(--lendi-ui-size));
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background: inherit;
+  padding: var(--lendi-ui-size);
+  background: inherit;
+}
+
+.c0:focus {
+  background: none;
+}
+
+.c0:hover {
+  background: inherit;
+  background: rgba(74,74,74,0.15);
+}
+
+.c0:active {
+  background: inherit;
+  background: rgba(74,74,74,0.2);
+}
+
+<IconButton
+  icon={[Function]}
+  size="lg"
+>
+  <styled.button
+    disabled={false}
+    size="lg"
+  >
+    <button
+      className="c0"
+      disabled={false}
+      size="lg"
+    >
+      <Lock
+        color="primary.500"
+        height="calc(2 * var(--lendi-ui-size))"
+        width="calc(2 * var(--lendi-ui-size))"
+      >
+        <styled.span
+          color="primary.500"
+          height="calc(2 * var(--lendi-ui-size))"
+          width="calc(2 * var(--lendi-ui-size))"
+        >
+          <span
+            className="c1"
+            color="primary.500"
+            height="calc(2 * var(--lendi-ui-size))"
+            width="calc(2 * var(--lendi-ui-size))"
+          >
+            <svg
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Lock>
+    </button>
+  </styled.button>
+</IconButton>
+`;
+
+exports[`IconButton should render the "md" size correctly 1`] = `
+.c1 {
+  width: calc(1.5 * var(--lendi-ui-size));
+  height: calc(1.5 * var(--lendi-ui-size));
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background: inherit;
+  padding: calc(0.75 * var(--lendi-ui-size));
+  background: inherit;
+}
+
+.c0:focus {
+  background: none;
+}
+
+.c0:hover {
+  background: inherit;
+  background: rgba(74,74,74,0.15);
+}
+
+.c0:active {
+  background: inherit;
+  background: rgba(74,74,74,0.2);
+}
+
+<IconButton
+  icon={[Function]}
+  size="md"
+>
+  <styled.button
+    disabled={false}
+    size="md"
+  >
+    <button
+      className="c0"
+      disabled={false}
+      size="md"
+    >
+      <Lock
+        color="primary.500"
+        height="calc(1.5 * var(--lendi-ui-size))"
+        width="calc(1.5 * var(--lendi-ui-size))"
+      >
+        <styled.span
+          color="primary.500"
+          height="calc(1.5 * var(--lendi-ui-size))"
+          width="calc(1.5 * var(--lendi-ui-size))"
+        >
+          <span
+            className="c1"
+            color="primary.500"
+            height="calc(1.5 * var(--lendi-ui-size))"
+            width="calc(1.5 * var(--lendi-ui-size))"
+          >
+            <svg
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Lock>
+    </button>
+  </styled.button>
+</IconButton>
+`;
+
+exports[`IconButton should render the "sm" size correctly 1`] = `
+.c1 {
+  width: calc(1.25 * var(--lendi-ui-size));
+  height: calc(1.25 * var(--lendi-ui-size));
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background: inherit;
+  padding: calc(0.625 * var(--lendi-ui-size));
+  background: inherit;
+}
+
+.c0:focus {
+  background: none;
+}
+
+.c0:hover {
+  background: inherit;
+  background: rgba(74,74,74,0.15);
+}
+
+.c0:active {
+  background: inherit;
+  background: rgba(74,74,74,0.2);
+}
+
+<IconButton
+  icon={[Function]}
+  size="sm"
+>
+  <styled.button
+    disabled={false}
+    size="sm"
+  >
+    <button
+      className="c0"
+      disabled={false}
+      size="sm"
+    >
+      <Lock
+        color="primary.500"
+        height="calc(1.25 * var(--lendi-ui-size))"
+        width="calc(1.25 * var(--lendi-ui-size))"
+      >
+        <styled.span
+          color="primary.500"
+          height="calc(1.25 * var(--lendi-ui-size))"
+          width="calc(1.25 * var(--lendi-ui-size))"
+        >
+          <span
+            className="c1"
+            color="primary.500"
+            height="calc(1.25 * var(--lendi-ui-size))"
+            width="calc(1.25 * var(--lendi-ui-size))"
+          >
+            <svg
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Lock>
+    </button>
+  </styled.button>
+</IconButton>
+`;
+
+exports[`IconButton should render the "xs" size correctly 1`] = `
+.c1 {
+  width: var(--lendi-ui-size);
+  height: var(--lendi-ui-size);
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c1 > svg {
+  fill: #00c0a5;
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background: inherit;
+  padding: calc(0.375 * var(--lendi-ui-size));
+  background: inherit;
+}
+
+.c0:focus {
+  background: none;
+}
+
+.c0:hover {
+  background: inherit;
+  background: rgba(74,74,74,0.15);
+}
+
+.c0:active {
+  background: inherit;
+  background: rgba(74,74,74,0.2);
+}
+
+<IconButton
+  icon={[Function]}
+  size="xs"
+>
+  <styled.button
+    disabled={false}
+    size="xs"
+  >
+    <button
+      className="c0"
+      disabled={false}
+      size="xs"
+    >
+      <Lock
+        color="primary.500"
+        height="var(--lendi-ui-size)"
+        width="var(--lendi-ui-size)"
+      >
+        <styled.span
+          color="primary.500"
+          height="var(--lendi-ui-size)"
+          width="var(--lendi-ui-size)"
+        >
+          <span
+            className="c1"
+            color="primary.500"
+            height="var(--lendi-ui-size)"
+            width="var(--lendi-ui-size)"
+          >
+            <svg
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+              />
+            </svg>
+          </span>
+        </styled.span>
+      </Lock>
+    </button>
+  </styled.button>
+</IconButton>
+`;

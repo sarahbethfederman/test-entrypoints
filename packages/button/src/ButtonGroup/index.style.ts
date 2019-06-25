@@ -3,6 +3,7 @@ import { Spacing, SpacingName } from '@lendi-ui/spacing';
 import { ButtonWrapper, LinkWrapper, ButtonSize, Size } from '../Button/index.style';
 import { map } from '@lendi-ui/breakpoint';
 import { deriveSize, normalise } from '@lendi-ui/utils';
+import { IconButtonWrapper } from '../IconButton/index.style';
 
 const spacingTopBySizeMixin = (size: ButtonSize): SpacingName =>
   map(size, (val) => {
@@ -84,7 +85,7 @@ export const Wrapper = styled.div`
     css`
       ${spacingRightBySizeMixin(size)};
     `}
-  ${ButtonWrapper}, ${LinkWrapper} {
+  ${ButtonWrapper}, ${LinkWrapper}, ${IconButtonWrapper} {
     ${({ size }: WrapperProps) => css`
       ${wrapperBySizeMixin(size)};
     `};

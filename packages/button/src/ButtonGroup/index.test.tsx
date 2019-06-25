@@ -2,13 +2,19 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
+import { Lock } from '@lendi-ui/icon';
 import { Button } from '../Button';
 import { ButtonGroup, ButtonGroupButtonProps } from '.';
+import { IconButton } from '../IconButton';
 
 let element: ReactWrapper<ButtonGroupButtonProps>;
 
 const CustomButton = styled(ButtonGroup.Button)`
   border: 1px solid black;
+`;
+
+const CustomIconButton = styled(ButtonGroup.IconButton)`
+  border: 1px solid red;
 `;
 
 function render(props = {}) {
@@ -17,6 +23,17 @@ function render(props = {}) {
       <ButtonGroup {...props}>
         <ButtonGroup.Button variant="secondary">Previous</ButtonGroup.Button>
         <ButtonGroup.Button variant="primary">Next</ButtonGroup.Button>
+      </ButtonGroup>
+    </Theme>
+  );
+}
+
+function renderWithIconButtons(props = {}) {
+  element = mount(
+    <Theme>
+      <ButtonGroup {...props}>
+        <ButtonGroup.IconButton icon={Lock} />
+        <ButtonGroup.IconButton icon={Lock} />
       </ButtonGroup>
     </Theme>
   );
@@ -33,8 +50,19 @@ function renderCustomChildren(props = {}) {
   );
 }
 
+function renderCustomIconButtonChildren(props = {}) {
+  element = mount(
+    <Theme>
+      <ButtonGroup {...props}>
+        <CustomIconButton icon={Lock} />
+        <ButtonGroup.IconButton icon={Lock} />
+      </ButtonGroup>
+    </Theme>
+  );
+}
+
 describe('ButtonGroup', () => {
-  describe('with plain children', () => {
+  describe('with ButtonGroup.Button children', () => {
     beforeEach(() => render());
 
     it('should render buttons with children', () => {
@@ -90,7 +118,39 @@ describe('ButtonGroup', () => {
     });
   });
 
-  describe('with custom children', () => {
+  describe('with ButtonGroup.IconButton children', () => {
+    beforeEach(() => renderWithIconButtons());
+
+    it('should render IconButtons with children', () => {
+      const iconButtons = element.find(IconButton);
+      expect(iconButtons).toHaveLength(2);
+    });
+
+    it('should render IconButtons with size', () => {
+      renderWithIconButtons({ size: 'lg' });
+      const iconButtons = element.find(IconButton);
+      expect(iconButtons).toHaveLength(2);
+      iconButtons.forEach((iconButton) => expect(iconButton.prop('size')).toEqual('lg'));
+    });
+
+    it('should render IconButtons with isDisabled', () => {
+      renderWithIconButtons({ isDisabled: true });
+      const iconButtons = element.find(IconButton);
+      expect(iconButtons).toHaveLength(2);
+      iconButtons.forEach((iconButton) => {
+        expect(iconButton.prop('isDisabled')).toBeTruthy();
+      });
+    });
+
+    it('should render IconButtons with isLoading', () => {
+      renderWithIconButtons({ isLoading: true });
+      const iconButtons = element.find(IconButton);
+      expect(iconButtons).toHaveLength(2);
+      iconButtons.forEach((iconButton) => expect(iconButton.prop('isLoading')).toBeTruthy());
+    });
+  });
+
+  describe('with custom Button children', () => {
     beforeEach(() =>
       renderCustomChildren({
         isFullWidth: true,
@@ -106,6 +166,25 @@ describe('ButtonGroup', () => {
       const customButton = element.find(CustomButton);
       expect(customButton).toHaveLength(1);
       expect(customButton).toHaveStyleRule('border', '1px solid black');
+    });
+  });
+
+  describe('with custom IconButton children', () => {
+    beforeEach(() =>
+      renderCustomIconButtonChildren({
+        isLoading: true,
+      })
+    );
+
+    it('should render IconButtons with children', () => {
+      const iconButtons = element.find(IconButton);
+      expect(iconButtons).toHaveLength(2);
+    });
+
+    it('should apply the custom styles to the custom child IconButton', () => {
+      const customIconButton = element.find(CustomIconButton);
+      expect(customIconButton).toHaveLength(1);
+      expect(customIconButton).toHaveStyleRule('border', '1px solid red');
     });
   });
 });

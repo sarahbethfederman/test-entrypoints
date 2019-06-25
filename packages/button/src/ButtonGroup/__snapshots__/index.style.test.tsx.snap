@@ -23,7 +23,8 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
 }
 
 .c0 .c1,
-.c0 .sc-bxivhb {
+.c0 .sc-bxivhb,
+.c0 .sc-gzVnrw {
   margin-top: calc(1.5 * var(--lendi-ui-size));
   margin-right: calc(1.5 * var(--lendi-ui-size));
 }
@@ -61,7 +62,8 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
 }
 
 .c0 .c1,
-.c0 .sc-bxivhb {
+.c0 .sc-bxivhb,
+.c0 .sc-gzVnrw {
   margin-top: var(--lendi-ui-size);
   margin-right: var(--lendi-ui-size);
 }
@@ -99,7 +101,8 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
 }
 
 .c0 .c1,
-.c0 .sc-bxivhb {
+.c0 .sc-bxivhb,
+.c0 .sc-gzVnrw {
   margin-top: calc(0.75 * var(--lendi-ui-size));
   margin-right: calc(0.75 * var(--lendi-ui-size));
 }
@@ -137,7 +140,8 @@ exports[`Wrapper should have spacing at size "xs" 1`] = `
 }
 
 .c0 .c1,
-.c0 .sc-bxivhb {
+.c0 .sc-bxivhb,
+.c0 .sc-gzVnrw {
   margin-top: calc(0.5 * var(--lendi-ui-size));
   margin-right: calc(0.5 * var(--lendi-ui-size));
 }
