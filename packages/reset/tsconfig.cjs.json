@@ -4,5 +4,5 @@
     "outDir": "./dist/cjs"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.doc.ts", "src/**/*.doc.tsx"]
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.doc.ts", "src/**/*.doc.tsx", "src/**/*.example.tsx"]
 }
