@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Telephone, PickATime, LiveChat, HereToHelp } from '@lendi-ui/fancy-icon';
+import { LUIGlobalProps } from '@lendi-ui/utils';
 import {
   Wrapper,
   HeadingWrapper,
@@ -10,7 +11,7 @@ import {
   LinkWrapperTwo,
 } from './index.style';
 
-export interface ExpertAdviceProps {
+export interface ExpertAdviceProps extends LUIGlobalProps {
   onChat?: () => void;
 }
 

@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
     ${px('xl')}
     ${py('xxl')}
     ${gte('tablet')`
-        ${p('xxxl')};
+      ${p('xxxl')};
     `}
 `;
 
