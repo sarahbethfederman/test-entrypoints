@@ -1,4 +1,3 @@
-// TODO - probably we should keep at some common location.
 export const KEY_UP = 'ArrowUp';
 export const KEY_DOWN = 'ArrowDown';
 export const KEY_SPACE = ' ';

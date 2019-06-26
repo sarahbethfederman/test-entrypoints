@@ -1,5 +1,5 @@
-import { extractData } from './';
-import { TEST_DATA_SOURCE } from '../index.test';
+import { extractData } from '.';
+import { TEST_DATA_SOURCE } from '../AutoComplete/index.test';
 
 describe('test filtered data', () => {
   describe('when data is retrieved externally(Async flow)', () => {

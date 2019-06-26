@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
-import AutoComplete from '..';
+import { AutoComplete } from '..';
 import Theme from '@lendi-ui/theme';
 
-import { AutoCompleteProps, AutoCompleteState, DataSourceItem } from '.';
-import { AutoCompleteList, AutoCompleteListItem, CloseWrapper } from './index.style';
 import { Input } from '@lendi-ui/text-input';
 import Spinner from '@lendi-ui/spinner';
+import { AutoCompleteStatefulProps, DataSourceItem } from '../types';
+import { AutoCompleteList, AutoCompleteListItem, CloseWrapper } from '../styled/index.style';
 
 jest.useFakeTimers();
 export const TEST_DATA_SOURCE = [
@@ -44,9 +44,9 @@ export const TEST_DATA_SOURCE = [
   },
 ];
 describe('AutoComplete', () => {
-  let wrapper: ReactWrapper<AutoComplete>, autoCompleteProps: AutoCompleteProps;
+  let wrapper: ReactWrapper<AutoComplete>, autoCompleteProps: AutoCompleteStatefulProps;
   let autoCompleteInstance: AutoComplete;
-  function render(props: AutoCompleteProps) {
+  function render(props: AutoCompleteStatefulProps) {
     wrapper = mount(
       <Theme>
         <AutoComplete {...props} />

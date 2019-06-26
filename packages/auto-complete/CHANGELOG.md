@@ -1,3 +1,10 @@
+## [4.0.0] - 2019-06-19 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
+### Changed
+- Added AutoComplete Stateless component
+- AutoCompleteStateless(Controller) and AutoComplete(UnControlled) exposed as named exports.
+- OnChange consistent with both stateless and stateful component.
+- Fixed a small bug for AutoCompleteStateful - when you push enter before the results come up you get an error in the console and same when there is not result come up and push enter
+
 ## [3.2.0] - 2019-06-05 - [HUB-204](https://creditandfinance.atlassian.net/browse/HUB-204)
 ### Changed
 - changed the DataSourceItem value to take both 'string and number'

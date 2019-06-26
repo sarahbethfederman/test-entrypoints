@@ -2,50 +2,24 @@ import * as React from 'react';
 import createRef from 'react-create-ref';
 import { debounce } from 'lodash';
 
-import { LUIFormProps } from '@lendi-ui/utils';
-import { IconProps } from '@lendi-ui/icon';
 import { Input } from '@lendi-ui/text-input';
 
-import { Size, CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from './index.style';
-import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from './keys';
+import { CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from '../styled/index.style';
+import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from '../util/keys';
 import AutoCompleteMenuList from './MenuList';
-import { extractData } from './Utils';
-
-export type SelectedValue = string | number;
-
-export interface DataSourceItem {
-  label: string;
-  value: SelectedValue;
-}
-
-export interface AutoCompleteProps extends LUIFormProps {
-  dataSource: ((input: string) => Promise<DataSourceItem[]>) | DataSourceItem[];
-  value?: string;
-  onSelect?: (selectedItem: SelectedValue) => void;
-  size?: Size;
-  placeholder?: string;
-  isDisabled?: boolean;
-  before?: React.ReactElement<IconProps>;
-  isError?: boolean;
-  className?: string;
-  isInverse?: boolean;
-  isRequired?: boolean;
-  isAutoFocus?: boolean;
-  isReadOnly?: boolean;
-  isFullWidth?: boolean;
-  onChange?: (value: SelectedValue) => void;
-}
+import { extractData, getOffsetScrollTop } from '../util';
+import { DataSourceItem, AutoCompleteStatefulProps, AutoCompleteValue } from '../types';
 
 export interface AutoCompleteState {
   filteredDataSource: DataSourceItem[];
-  userInput: string;
+  userInput: AutoCompleteValue;
   showList: boolean;
   activeSelection: number; // currently focussed item.
   isLoading: boolean;
   menuWidth: number;
 }
 
-export default class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState> {
+export class AutoComplete extends React.Component<AutoCompleteStatefulProps, AutoCompleteState> {
   debounceFilterDataSource: (userInput: string) => void;
   debounceWindowResize: () => void;
   static readonly DEBOUNCE_WAIT = 300;
@@ -58,10 +32,10 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
     isLoading: false,
     menuWidth: 0,
   };
-  menuContainerRef: any = createRef();
-  inputWrapper: any = createRef();
+  menuContainerRef: React.RefObject<HTMLUListElement> = createRef();
+  inputWrapper: React.RefObject<HTMLDivElement> = createRef();
 
-  constructor(props: AutoCompleteProps) {
+  constructor(props: AutoCompleteStatefulProps) {
     super(props);
     this.debounceFilterDataSource = debounce(this.getFilteredData, AutoComplete.DEBOUNCE_WAIT);
     this.debounceWindowResize = debounce(this.calcInputWidth, AutoComplete.WINDOW_RESIZE_WAIT);
@@ -69,7 +43,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
 
   calcInputWidth = () => {
     this.setState({
-      menuWidth: this.inputWrapper.current.firstElementChild!.offsetWidth,
+      menuWidth: (this.inputWrapper.current!.firstElementChild as HTMLUListElement).offsetWidth,
     });
   };
 
@@ -88,7 +62,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
     // this component is uncontroller component, and showing-menu is internal to it,
     // so just checking if consumer clicks outside `AC`, it will find out and close the menu
     const theClickedElement = (e.target as HTMLDivElement).parentElement;
-    if (this.inputWrapper.current.firstElementChild !== theClickedElement) {
+    if ((this.inputWrapper.current!.firstElementChild as HTMLUListElement) !== theClickedElement) {
       this.setState({
         showList: false,
       });
@@ -96,22 +70,17 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   };
 
   render() {
-    const {
-      dataSource = [],
-      placeholder = 'Just start Typing...',
-      size = 'md',
-      onSelect = () => {},
-      ...inputProps
-    } = this.props;
+    const { dataSource = [], placeholder = '', size = 'md', onSelect = () => {}, ...inputProps } = this.props;
     return (
       <AutoCompleteWrapper innerRef={this.inputWrapper}>
         <Input
           {...inputProps}
           size={size}
+          autoComplete="off" // The attribute specifies whether or not an input field should have autocomplete enabled
           placeholder={placeholder}
           onChange={this.onChange}
           onKeyDown={this.onKeyDown}
-          value={this.state.userInput}
+          value={String(this.state.userInput)}
           after={this.state.userInput && this.renderAfterIcon()}
         />
         {this.state.showList && this.listComponent()}
@@ -163,6 +132,8 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   // Event fired when the input value is changed
   onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.persist();
+    const { onChange = () => {} } = this.props;
+    onChange(event);
     const userInput = event.currentTarget.value;
     this.setState(
       {
@@ -175,8 +146,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
   };
 
   getFilteredData = async (userInput: string) => {
-    const { dataSource, onChange = () => {} } = this.props;
-    onChange(userInput);
+    const { dataSource } = this.props;
     const filteredDataSource = await extractData(userInput, dataSource);
     this.setState({
       activeSelection: 0,
@@ -194,6 +164,7 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
 
     switch (event.key) {
       case KEY_ENTER:
+        if (!filteredDataSource.length) return;
         this.setState(
           {
             activeSelection: 0,
@@ -243,19 +214,8 @@ export default class AutoComplete extends React.Component<AutoCompleteProps, Aut
     );
   };
 
-  focusItem = () => {
-    // The idea is to calculate the new scrollTop for menuContainer as you scroll up/down. Just a simple mathematics to scroll the
-    // container by selected item height. If the additon of selectedItem's offsetTop and offsetHeight cannot be accomodated inside menucontainer,
-    // which means if their addition is bigger than menuContainer's offsetHeight then we will make its difference to menuContainer's scrollTop
-    // and the addiiton of 7, is just to have extra padding to accodomate the padding we are giving at menuContainer's level - ${py('xxs')};
-    // for example - if we change the padding ${py('xxs')} to ${py('xs')}, then we need to change this factor of 7 to 12.
-    if (this.menuContainerRef.current) {
-      this.menuContainerRef.current.scrollTop = 0; // just a reset and calculate again.
-      this.menuContainerRef.current.scrollTop =
-        this.menuContainerRef.current.querySelector('.selectedItem').offsetTop +
-        this.menuContainerRef.current.querySelector('.selectedItem').offsetHeight -
-        this.menuContainerRef.current.offsetHeight +
-        7;
-    }
-  };
+  private focusItem() {
+    if (this.menuContainerRef.current)
+      this.menuContainerRef.current.scrollTop = getOffsetScrollTop(this.menuContainerRef);
+  }
 }

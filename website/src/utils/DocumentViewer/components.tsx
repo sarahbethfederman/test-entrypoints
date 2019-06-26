@@ -42,7 +42,7 @@ import Collapse from '@lendi-ui/collapse';
 import TextBubble from '@lendi-ui/text-bubble';
 import TextArea from '@lendi-ui/text-area';
 import DatePicker from '@lendi-ui/date-picker';
-import AutoComplete from '@lendi-ui/auto-complete';
+import { AutoComplete, AutoCompleteStateless } from '@lendi-ui/auto-complete';
 import Tooltip from '@lendi-ui/tooltip';
 import * as fancyIcons from '@lendi-ui/fancy-icon';
 import AuthLoader from '@lendi-ui/auth-loader';
@@ -114,6 +114,7 @@ const scope = {
   TextArea,
   DatePicker,
   AutoComplete,
+  AutoCompleteStateless,
   Tooltip,
   ...fancyIcons,
   AuthLoader,

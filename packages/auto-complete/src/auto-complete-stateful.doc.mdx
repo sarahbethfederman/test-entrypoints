@@ -4,14 +4,12 @@ import {PropTable} from '@lendi-ui/doc-utils';
 ## Usage
 
 ```
-import AutoComplete from '@lendi-ui/auto-complete';
+import { AutoComplete  } from '@lendi-ui/auto-complete';
 ```
 // Please see the working examples. There are some positioning issues with dropdown on this playground page. 
 // Search keyword like - 'Bank' 
 ```jsx
 <>
- 
-With Promise
 <AutoComplete dataSource={(userInput) => {
 return new Promise(function(res, rej){
             const filteredDataSource = [{
@@ -25,22 +23,12 @@ return new Promise(function(res, rej){
                 return res(filteredDataSource);
     })
 }} isFullWidth={true}/>
-Search keyword like - 'Bank'
-<br/>
-Without Promise
-<AutoComplete dataSource={[{
-    label: 'AMP Bank',
-    value: 'AMP',
-  },
-  {
-    label: 'ANZ Bank2',
-    value: 'anz',
-  }]} isFullWidth={true} id="testId" aria-label="testLabel"/>
-<br/><br/>
+
 </>
 
 ```
 
+## AutoCompleteStateful Properties
 ## Properties
 <PropTable>
   <PropTable.Entry name="before" type="React.ReactElement" description="Before icon for AutoComplete"/>
@@ -54,6 +42,9 @@ Without Promise
   <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the InputButton is inversed"/>
   <PropTable.Entry name="isReadOnly" type="boolean" defaultValue={false} description="Whether the Input is read-only."/>
   <PropTable.Entry name="isRequired" type="boolean" defaultValue={false} description="Whether the Input is required."/>
+  <PropTable.Entry name="onBlur" type="(event: React.FocusEvent<HTMLInputElement>)=> void" description="Blur handler"/>
+  <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>)=> void" description="Change handler"/>
+  <PropTable.Entry name="onFocus" type="(event: React.FocusEvent<HTMLInputElement>) => void" description="Focus handler"/>
   <PropTable.Entry name="onSelect" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
   <PropTable.Entry name="placeholder" type="string" description="Placeholder for AutoComplete"/>
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>

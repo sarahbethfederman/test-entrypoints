@@ -1,4 +1,4 @@
-import { DataSourceItem } from './index';
+import { DataSourceItem } from './types';
 
 export const MOCK_DATA_SOURCE: DataSourceItem[] = [
   {
@@ -286,3 +286,29 @@ export const MOCK_DATA_SOURCE: DataSourceItem[] = [
     value: 'other',
   },
 ];
+
+export function getAsyncData(userInput: string): Promise<DataSourceItem[]> {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      const filteredDataSource = MOCK_DATA_SOURCE.filter(
+        (data) => data.label.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+      );
+      return res(filteredDataSource);
+    }, 400);
+  });
+}
+
+export function getFailedAsyncData(userInput: string): Promise<DataSourceItem[]> {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      return rej('Sorry - Async failed');
+    }, 400);
+  });
+}
+
+export function getStaticData(value: string) {
+  const filteredDataSource = MOCK_DATA_SOURCE.filter(
+    (data) => data.label.toLowerCase().indexOf(value.toLowerCase()) > -1
+  );
+  return filteredDataSource;
+}

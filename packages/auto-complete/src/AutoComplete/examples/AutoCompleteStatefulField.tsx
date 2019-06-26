@@ -1,10 +1,11 @@
 import * as React from 'react';
-import AutoComplete, { SelectedValue } from './AutoComplete';
-import { MOCK_DATA_SOURCE } from './AutoComplete/data-source.mock';
+import { AutoComplete } from '../index';
 import styled from 'styled-components';
 import Field from '@lendi-ui/field';
 import { Button } from '@lendi-ui/button';
 import { Heading } from '@lendi-ui/typography';
+import { MOCK_DATA_SOURCE } from '../../data-source.mock';
+import { AutoCompleteValue } from '../../types';
 
 interface MyState {
   errorMessage: string;
@@ -16,8 +17,8 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-export default class Example extends React.Component<{}, MyState> {
-  selectedAddress: SelectedValue = '';
+export class AutoCompleteStatefullFieldExample extends React.Component<{}, MyState> {
+  selectedAddress: AutoCompleteValue = '';
   transformedSuggestions = [];
   constructor(props: {}) {
     super(props);
@@ -63,30 +64,28 @@ export default class Example extends React.Component<{}, MyState> {
   render() {
     return (
       <>
-        <Heading size="sm">This is Autocomlpete example with Field wrapper and validation</Heading>
+        <Heading size="xs">This is Autocomplete example with Field wrapper and validation</Heading>
         <Wrapper>
           <Field error={this.state.errorMessage} touched={!!this.state.errorMessage}>
             <AutoComplete
               isFullWidth
               isError={!!this.state.errorMessage}
               dataSource={(t) => this.fetchResult(t)}
-              onSelect={(t: SelectedValue) => {
+              onSelect={(t: AutoCompleteValue) => {
                 this.selectedAddress = t;
                 this.setState({
                   inputChanged: false,
                   errorMessage: '',
                 });
               }}
-              onChange={(val: SelectedValue) => {
+              onChange={(e) => {
                 this.setState({ inputChanged: true });
               }}
             />
           </Field>
-          <br />
           <Button variant="primary" onClick={this.onClick}>
             GET PROPERTY VALUE
           </Button>
-          {/* {JSON.stringify(this.state, undefined, 2)} */}
         </Wrapper>
       </>
     );

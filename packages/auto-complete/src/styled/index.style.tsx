@@ -1,15 +1,14 @@
 import Spinner from '@lendi-ui/spinner';
 import { deriveSize, normalise } from '@lendi-ui/utils';
-import { map, BreakpointValue, BreakpointValueMap, gte } from '@lendi-ui/breakpoint';
+import { map, gte } from '@lendi-ui/breakpoint';
 import styled, { css } from 'styled-components';
 import { p, px, m, py } from '@lendi-ui/spacing';
 import { bg, fg } from '@lendi-ui/color';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
+import { Size } from '../types';
 
-type SizeVariant = 'lg' | 'md' | 'sm';
-export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
 interface AutoCompleteListItemProps {
   isActive?: boolean;
 }

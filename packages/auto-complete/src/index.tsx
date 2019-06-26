@@ -1,2 +1,2 @@
 export * from './AutoComplete';
-export { default } from './AutoComplete';
+export * from './AutoCompleteStateless';

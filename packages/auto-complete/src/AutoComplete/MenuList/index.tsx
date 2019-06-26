@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { AutoCompleteListItem, AutoCompleteList } from '../index.style';
-import { DataSourceItem } from '..';
+import { AutoCompleteListItem, AutoCompleteList } from '../../styled/index.style';
+import { DataSourceItem } from '../../types';
 
 export interface AutoCompleteMenuListProps {
   onSelect: (event: React.MouseEvent<HTMLElement>) => void;
