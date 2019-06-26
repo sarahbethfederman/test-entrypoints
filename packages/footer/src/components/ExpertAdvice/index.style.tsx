@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
     ${gte('tablet')`
       ${p('xxxl')};
     `}
+
+    ${gte('desktop')`
+      display: inline-block;
+      width: 50vw;
+    `};
 `;
 
 export const HeadingWrapper = styled(Heading)`

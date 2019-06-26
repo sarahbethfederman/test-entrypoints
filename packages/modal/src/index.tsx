@@ -7,7 +7,6 @@ import {
   Container,
   HeaderWrapper,
   TitlesWrapper,
-  Title,
   Subtitle,
   Content,
   Footer,
@@ -15,6 +14,7 @@ import {
   CloseIcon,
 } from './index.style';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+import { Heading } from '@lendi-ui/typography';
 
 export interface ModalProps extends LUIGlobalProps {
   size?: ModalSize;
@@ -36,7 +36,7 @@ export const Header = (props: ModalHeaderProps) => {
   return (
     <HeaderWrapper>
       <TitlesWrapper>
-        {props.title && <Title size={size}>{props.title}</Title>}
+        {props.title && <Heading size={size}>{props.title}</Heading>}
         {props.subtitle && <Subtitle>{props.subtitle}</Subtitle>}
       </TitlesWrapper>
     </HeaderWrapper>

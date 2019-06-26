@@ -1,3 +1,8 @@
+
+## [2.7.0] - 2019-06-19 - [HUB-215](https://creditandfinance.atlassian.net/browse/HUB-215)
+### Added
+- Add CallToAction component in LUI Footer
+
 ## [2.6.0] - 2019-06-24 - [HUB-217](https://creditandfinance.atlassian.net/browse/HUB-217)
 ### Added
 - Add SocialPanel component in LUI Footer

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { bg, color } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
 import { p, py, px, pl, pr, pt, pb } from '@lendi-ui/spacing';
-import { body, Heading } from '@lendi-ui/typography';
+import { body } from '@lendi-ui/typography';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
@@ -55,8 +55,6 @@ export const HeaderWrapper = styled.div`
 export const TitlesWrapper = styled.div`
   margin: auto 0;
 `;
-
-export const Title = styled(Heading)``;
 
 export const Subtitle = styled.p`
   overflow-wrap: normal;
