@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import { Input } from './index';
+import { Input, supportedTypes } from './index';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 import { color } from '@lendi-ui/color';
 
 const sizes: InputSize[] = ['lg', 'md', 'sm'];
-
 let element;
 
 function render(props) {
@@ -136,6 +135,24 @@ describe('input', () => {
     expect(InputElement.props().size).toBe(inputSize);
     expect(InputElement.props().fontSize).toBe(size);
     expect(LayoutElement.props().size).toBe(size);
+  });
+
+  describe('should render as different input types', () => {
+    supportedTypes.forEach((type: string) => {
+      it(`should render as ${type}`, () => {
+        render({ type: `${type}` });
+        expect(element.find('input').props().type).toEqual(`${type}`);
+      });
+    });
+  });
+
+  describe('should fall back to `text` type if provide type is not supported', () => {
+    ['asdasdasd', 'password', 'radio', 'checkbox', ''].forEach((type: string) => {
+      it(`should render as ${type}`, () => {
+        render({ type: `${type}` });
+        expect(element.find('input').props().type).toEqual('text');
+      });
+    });
   });
 
   describe('test native props and Standard HTML Attributes', () => {

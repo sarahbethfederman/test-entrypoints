@@ -1,3 +1,7 @@
+## [3.3.0] - 2019-06-27 - [HUB-257](https://creditandfinance.atlassian.net/browse/HUB-257)
+### Changed
+- Allow more types to input like email, tel, number. 'text' is default.
+
 ## [3.2.2] - 2019-06-13 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Few bugs like vertical-align of after and when you dynamically add after prop, it extends the length of textbox.

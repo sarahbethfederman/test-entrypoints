@@ -2,6 +2,9 @@ import * as React from 'react';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 
 type ReactInputProps = React.InputHTMLAttributes<HTMLInputElement>;
+
+export const supportedTypes = ['text', 'email', 'number', 'tel'];
+
 export type InputProp = Pick<
   ReactInputProps,
   Exclude<keyof ReactInputProps, 'size' | 'placeholder' | 'value' | 'readonly'>
@@ -23,6 +26,7 @@ export type InputProp = Pick<
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
+  type?: string;
 };
 
 export const Input = ({
@@ -37,15 +41,17 @@ export const Input = ({
   isAutoFocus = false,
   isRequired = false,
   inputSize,
+  type = 'text',
   ...otherProps
 }: InputProp) => {
   const disabledVal = isDisabled || !!otherProps.disabled;
+
   return (
     <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
       {before && <BeforeWrapper isDisabled={disabledVal}>{before}</BeforeWrapper>}
       <InputWrapper
         {...otherProps}
-        type="text"
+        type={supportedTypes.includes(`${type}`) ? `${type}` : 'text'}
         isError={isError}
         isInverse={isInverse}
         fontSize={size}

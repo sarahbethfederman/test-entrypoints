@@ -87,7 +87,10 @@ class Example extends React.Component<{}, ExampleState> {
           placeholder="Both 'isDisabled' and 'disabled' - Preference is given to InputProps - 'isDisabled"
           onChange={this.onChange}
         />
-        <br />
+        <Input value={value} type={'number'} placeholder="Number type" onChange={this.onChange} />
+        <br /> <br />
+        <Input value={value} type={'email'} placeholder="Email type" onChange={this.onChange} />
+        <br /> <br />
       </div>
     );
   }
