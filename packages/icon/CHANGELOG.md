@@ -1,3 +1,7 @@
+## [8.1.0] - 2019-06-07 - [HUB-302](https://creditandfinance.atlassian.net/browse/HUB-302)
+### Changed
+- Added the vertical-split icon
+
 ## [8.0.1] - 2019-06-07 - [HUB-264](https://creditandfinance.atlassian.net/browse/HUB-264)
 ### Changed
 - Fix the icon alignment issue.
