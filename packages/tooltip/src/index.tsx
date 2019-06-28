@@ -20,9 +20,11 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
   state = {
     isOpen: false,
   };
+  private _isMounted: boolean = false;
   private myRef: React.RefObject<HTMLElement> = createRef();
 
   componentDidMount() {
+    this._isMounted = true;
     let hammer: HammerManager;
     const manager = new Hammer.Manager(this.myRef.current as EventTarget);
 
@@ -42,18 +44,24 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
     });
   }
 
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
+
+  changeOpenStatus = (bool: boolean) => {
+    if (this._isMounted) {
+      this.setState({ isOpen: bool });
+    }
+  };
+
   render() {
     const { content, position = 'right', children } = this.props;
     const { isOpen } = this.state;
     return (
       <TooltipWrapper
         innerRef={this.myRef}
-        onMouseOver={(e) => {
-          this.setState({ isOpen: true });
-        }}
-        onMouseLeave={() => {
-          this.setState({ isOpen: false });
-        }}
+        onMouseOver={() => this.changeOpenStatus(true)}
+        onMouseLeave={() => this.changeOpenStatus(false)}
       >
         {children}
         <ContentWrapper {...{ isOpen, position }}>

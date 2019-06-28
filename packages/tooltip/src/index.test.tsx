@@ -57,10 +57,12 @@ describe('Toolip: test native props and Standard HTML Attributes', () => {
     );
     attributes = element.find(Tooltip).props();
   });
+
   it('should mount with Aria attributes', () => {
     expect(attributes['aria-label']).toBe('testLabel');
     expect(attributes['aria-describedby']).toBe('info');
   });
+
   it('should mount with native props like id, title', () => {
     expect(attributes.id).toBe('testId');
     expect(attributes.title).toBe('testTitle');

@@ -1,4 +1,8 @@
-## [1.1.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+## [1.1.2] - 2019-06-28 - [HUB-295](https://creditandfinance.atlassian.net/browse/HUB-295)
+### Changed
+- Ensure that component state is only updated when the component is mounted.
+
+## [1.1.1] - 2019-06-04 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
 
