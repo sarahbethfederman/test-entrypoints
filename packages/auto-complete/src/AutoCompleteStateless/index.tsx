@@ -149,7 +149,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
     const { highlightedIndex } = this.state;
     if (highlightedIndex !== null) {
       const items = this.getFilteredItems(this.props);
-      const item = items[highlightedIndex];
+      const item = items[highlightedIndex!];
       selectCallback = () => this.props.onSelect!(item.label.replace(/<\/?[^>]+(>|$)/g, ''));
     }
     this.setState(
@@ -192,7 +192,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
         if (!items.length) return;
         index = highlightedIndex === null ? -1 : highlightedIndex;
 
-        const p = (index + 1) % items.length;
+        const p = (index! + 1) % items.length;
         index = p;
         if (index! > -1 && index !== highlightedIndex) {
           this.setState(
@@ -208,7 +208,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
       case KEY_UP:
         if (!items.length) return;
         index = highlightedIndex === null ? items.length : highlightedIndex;
-        index = (index - 1 + items.length) % items.length;
+        index = (index! - 1 + items.length) % items.length;
 
         if (index !== items.length) {
           this.setState(

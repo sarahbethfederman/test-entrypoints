@@ -1,3 +1,6 @@
+## [4.0.1] - 2019-06-28 - [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
+- hotfix for TypeScript to ignore nullibility check on index type.
+ 
 ## [4.0.0] - 2019-06-19 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
 ### Changed
 - Added AutoComplete Stateless component
