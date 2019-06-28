@@ -207,9 +207,11 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
 
       case KEY_UP:
         if (!items.length) return;
+        // @ts-ignore
         index = highlightedIndex === null ? items.length : highlightedIndex;
         index = (index! - 1 + items.length) % items.length;
 
+        // @ts-ignore
         if (index !== items.length) {
           this.setState(
             {

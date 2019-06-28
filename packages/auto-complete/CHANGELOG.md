@@ -1,3 +1,4 @@
+
 ## [4.0.1] - 2019-06-28 - [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
 - hotfix for TypeScript to ignore nullibility check on index type.
  

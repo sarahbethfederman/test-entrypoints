@@ -1,5 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
+
+import AddressPicker from '@lendi-ui/address-picker';
 import * as breakpoints from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '@lendi-ui/color';
 import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
@@ -48,6 +50,7 @@ import * as fancyIcons from '@lendi-ui/fancy-icon';
 import AuthLoader from '@lendi-ui/auth-loader';
 
 const scope = {
+  AddressPicker,
   styled,
   css,
   color,

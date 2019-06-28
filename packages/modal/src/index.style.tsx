@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components';
+import { body } from '@lendi-ui/typography';
 import { bg, color } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
 import { p, py, px, pl, pr, pt, pb } from '@lendi-ui/spacing';
-import { body } from '@lendi-ui/typography';
 import { Close } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';

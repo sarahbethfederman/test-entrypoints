@@ -71,12 +71,8 @@ describe('Funnel3Nav', () => {
       </Theme>
     );
     const navItems = wrapper.find(SidebarNav.Item);
-    const newFunnelAssetLink = `${DASHBOARD_LINK}/${navItemProps.applicationSfid}/vehicle/${
-      navItemProps.applicantSfid
-    }/`;
-    const newFunnelIncomeLink = `${DASHBOARD_LINK}/${navItemProps.applicationSfid}/employment-type/${
-      navItemProps.applicantSfid
-    }/`;
+    const newFunnelAssetLink = `${DASHBOARD_LINK}/${navItemProps.applicationSfid}/vehicle/${navItemProps.applicantSfid}/`;
+    const newFunnelIncomeLink = `${DASHBOARD_LINK}/${navItemProps.applicationSfid}/employment-type/${navItemProps.applicantSfid}/`;
     expect(navItems.get(0).props.href.includes(newFunnelAssetLink));
     expect(navItems.get(1).props.href.includes(newFunnelIncomeLink));
   });
