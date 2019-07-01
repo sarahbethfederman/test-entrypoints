@@ -19,5 +19,6 @@
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:types && yarn run build:cjs"
-  }
+  },
+  "deprecated": "reset has been deprecated. This functionality can now be found in theme"
 }

@@ -1,3 +1,7 @@
 {
-  "extends": "@lendi/tslint-config/sources"
+  "extends": "@lendi/tslint-config/sources",
+  "rules": {
+    "no-unnecessary-type-assertion": [false, "dev"],
+    "no-unnecessary-qualifier": [false]
+  }
 }
