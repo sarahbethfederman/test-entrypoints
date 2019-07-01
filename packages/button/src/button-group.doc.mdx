@@ -52,7 +52,7 @@ import {ButtonGroup} from '@lendi-ui/button';
   <PropTable.Entry name="children" type="React.ReactNode" description="The button content"/>
   <PropTable.Entry name="href" type="string" description="URL to link to"/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the button responds to user input"/>
-  <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
+  <PropTable.Entry name="onClick" type="(event:React.SyntheticEvent) => void" description="Handle the click event"/>
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
 
@@ -65,7 +65,7 @@ import {ButtonGroup} from '@lendi-ui/button';
   <PropTable.Entry name="icon" type="Icon" description="The export from @lendi-ui/icon to be shown on the IconButton"/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the IconButton responds to user input"/>
   <PropTable.Entry name="isLoading" type="boolean" defaultValue={false} description="Replaces the selected Icons with spinners"/>
-  <PropTable.Entry name="onClick" type="() => void" description="Handle the click event"/>
+  <PropTable.Entry name="onClick" type="(event:React.SyntheticEvent) => void" description="Handle the click event"/>
   <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} description="The size of the IconButton"/>
 </PropTable>
 

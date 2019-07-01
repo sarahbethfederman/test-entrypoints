@@ -78,6 +78,14 @@ describe('IconButton', () => {
     expect(button.props()[fakeKey]).toEqual(undefined);
   });
 
+  it("should send back the onClick function with 'SyntheticEvent' event", () => {
+    let myEvent = undefined;
+    const onClick = (e) => (myEvent = e);
+    render({ onClick });
+    button.simulate('click');
+    expect(myEvent.constructor.name === 'SyntheticEvent').toBeTruthy();
+  });
+
   describe('test native props and Standard HTML Attributes', () => {
     it('should mount with Aria attributes', () => {
       const ARIA_LABEL = 'testLabel';

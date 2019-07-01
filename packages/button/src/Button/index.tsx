@@ -22,7 +22,7 @@ export interface ButtonProps extends LUIGlobalProps {
   before?: React.ReactNode;
   after?: React.ReactNode;
   href?: string;
-  onClick?: () => void;
+  onClick?: (event: React.SyntheticEvent) => void;
   className?: string;
   children?: React.ReactNode;
 }
@@ -58,13 +58,13 @@ export class Button extends React.Component<ButtonProps> {
     );
   }
 
-  handleLinkClick = (event: React.MouseEvent) => {
+  handleLinkClick = (event: React.SyntheticEvent) => {
     const { isDisabled, onClick } = this.props;
     if (isDisabled) {
       event.preventDefault();
     } else {
       if (onClick) {
-        onClick();
+        onClick(event);
       }
     }
   };

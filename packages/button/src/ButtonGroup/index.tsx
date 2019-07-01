@@ -16,7 +16,7 @@ export interface ButtonGroupButtonProps {
   before?: React.ReactNode;
   after?: React.ReactNode;
   href?: string;
-  onClick?: () => void;
+  onClick?: (event: React.SyntheticEvent) => void;
   className?: string;
   children?: React.ReactNode;
 }
@@ -26,7 +26,7 @@ export interface ButtonGroupIconButtonProps {
   href?: string;
   isDisabled?: boolean;
   isLoading?: boolean;
-  onClick?: () => void;
+  onClick?: (event: React.SyntheticEvent) => void;
   size?: IconButtonSize;
   icon: React.FunctionComponent<IconProps>;
 }

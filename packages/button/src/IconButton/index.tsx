@@ -16,20 +16,20 @@ export interface IconButtonProps extends LUIGlobalProps {
   color?: string;
   href?: string;
   isDisabled?: boolean;
-  onClick?: () => void;
+  onClick?: (event: React.SyntheticEvent) => void;
   size?: IconButtonSize;
   icon: React.FunctionComponent<IconProps>;
   isLoading?: boolean;
 }
 
 export class IconButton extends React.Component<IconButtonProps> {
-  handleLinkClick = (event: React.MouseEvent) => {
+  handleLinkClick = (event: React.SyntheticEvent) => {
     const { isDisabled, onClick } = this.props;
     if (isDisabled) {
       event.preventDefault();
     } else {
       if (onClick) {
-        onClick();
+        onClick(event);
       }
     }
   };

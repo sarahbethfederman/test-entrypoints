@@ -1,3 +1,7 @@
+## [6.0.0] - 2019-07-01 - [HUB-306](https://creditandfinance.atlassian.net/browse/HUB-306)
+### Changed
+- Send back MouseEvent for Button onClick function.
+
 ## [5.4.0] - 2019-06-14 - [HUB-148](https://creditandfinance.atlassian.net/browse/HUB-148)
 ### Added
 - Added icon-button to the package.

@@ -120,6 +120,14 @@ describe('Button', () => {
     expect(button.props()[fakeKey]).toEqual(undefined);
   });
 
+  it("should send back the onClick function with 'SyntheticEvent' event", () => {
+    let myEvent = undefined;
+    const onClick = (e) => (myEvent = e);
+    render({ onClick });
+    button.simulate('click');
+    expect(myEvent.constructor.name === 'SyntheticEvent').toBeTruthy();
+  });
+
   allVariants.forEach((variant) => {
     describe(`${variant}`, () => {
       sizes.forEach((size) => {
