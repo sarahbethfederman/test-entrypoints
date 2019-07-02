@@ -147,6 +147,19 @@
   resolved "https://registry.yarnpkg.com/@lendi-ui/breakpoint/-/breakpoint-1.0.1.tgz#3acba0d6dc37a78693034598ca102cf398deabb5"
   integrity sha512-a1KQDUAGQkPa2v3shyTSGB0UaHStCIT+TAeVc2L5vn5N5qDQGDfw4hmVYdxzaTFRICn5oa1uQZPWlZCI3GMxrg==
 
+"@lendi-ui/button@^5.0.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/button/-/button-5.4.0.tgz#ddaef8be301d7f00d55d92663e046940f510db4c"
+  integrity sha512-3a/Ya5bOrnk0/gK2CPJkFYU6h3jRJ055ZUERC4Iicr29ocHv8FvNxU+DKJMwa/iur42Fxf1LGDp9ATTgKp/wxg==
+  dependencies:
+    "@lendi-ui/breakpoint" "^2.0.0"
+    "@lendi-ui/color" "^3.0.0"
+    "@lendi-ui/depth" "^2.0.0"
+    "@lendi-ui/spacing" "^4.0.0"
+    "@lendi-ui/utils" "^2.5.0"
+    create-react-context "^0.2.3"
+    prop-types "^15.6.2"
+
 "@lendi-ui/depth@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/depth/-/depth-2.0.0.tgz#5b11d6f0aeb1d9105daf53b1eb7c0af793bb280b"
