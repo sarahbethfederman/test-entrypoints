@@ -2,7 +2,7 @@ import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Input } from '@lendi-ui/text-input';
-import { AutoCompleteStatelessProps, AutoCompleteValue } from '../types';
+import { AutoCompleteStatelessProps, AutoCompleteValue, DataSourceItem } from '../types';
 import { getStaticData } from '../data-source.mock';
 import { AutoCompleteStateless } from '.';
 import { CloseWrapper } from '../styled/index.style';
@@ -37,7 +37,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: getStaticData('Adelaide'),
-          onSelect: (text: string) => alert(text),
+          onSelect: (item: DataSourceItem) => alert(item),
           size: 'lg',
           placeholder: 'My test',
           isError: true,
@@ -167,7 +167,10 @@ describe('AutoComplete', () => {
         });
         it('should select the active selection', () => {
           wrapper.find('input').simulate('keyDown', { key: 'Enter' });
-          expect(onSelectMock).toHaveBeenCalledWith('AMP Bank');
+          expect(onSelectMock).toHaveBeenCalledWith({
+            label: 'AMP Bank',
+            value: 'AMP',
+          });
         });
         it('should do nothing if the menu is closed', () => {
           autoCompleteWrapper.setState({ isOpen: false });
@@ -196,7 +199,7 @@ describe('AutoComplete', () => {
             keyCode: 13,
             which: 13,
           });
-          expect(onSelectMock).toHaveBeenCalledWith('AMP Bank');
+          expect(onSelectMock).toHaveBeenCalledWith({ label: 'AMP Bank', value: 'AMP' });
           expect(autoCompleteWrapper.state.isOpen).toBe(false);
         });
       });

@@ -43,7 +43,7 @@ export default class AutoCompleteStatelessManagedViewVisibilityExample extends R
           onChange={(e) => {
             this.setState({ value: e.target.value, dataSource: getStaticData(e.target.value) });
           }}
-          onSelect={(value) => this.setState({ value })}
+          onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
           isFullWidth={false}
           before={<PaddedSearchIcon color="shade.500" />}
           onMenuVisibilityChange={(isOpen) => this.setState({ isOpen })}

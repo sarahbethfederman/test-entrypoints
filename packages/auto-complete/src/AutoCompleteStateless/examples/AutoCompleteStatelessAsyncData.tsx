@@ -52,7 +52,7 @@ export default class AutoCompleteStatelessAsyncDataExample extends React.Compone
               });
             }
           }}
-          onSelect={(value) => this.setState({ value })}
+          onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
           isLoading={this.state.isLoading}
           before={<PaddedSearchIcon color="shade.500" />}
         />

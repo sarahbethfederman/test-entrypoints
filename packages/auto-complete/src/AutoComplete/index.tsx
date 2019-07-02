@@ -7,7 +7,7 @@ import { Input } from '@lendi-ui/text-input';
 import { CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from '../styled/index.style';
 import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from '../util/keys';
 import AutoCompleteMenuList from './MenuList';
-import { extractData, getOffsetScrollTop } from '../util';
+import { extractData, getOffsetScrollTop, transformedItem } from '../util';
 import { DataSourceItem, AutoCompleteStatefulProps, AutoCompleteValue } from '../types';
 
 export interface AutoCompleteState {
@@ -110,6 +110,7 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
           innerRef={this.menuContainerRef}
           menuWidth={this.state.menuWidth}
           debounceWindowResize={this.debounceWindowResize}
+          onMouseEnter={(index) => this.highlightItemFromMouse(index)}
         />
       );
     }
@@ -117,10 +118,10 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
   };
 
   // on select an item from a source
-  onSelect = (event: React.MouseEvent<HTMLElement>) => {
+  onSelect = (item: DataSourceItem) => {
     const { onSelect = () => {} } = this.props;
-    const textWithoutHTMLJunk = event.currentTarget.innerText.replace(/<\/?[^>]+(>|$)/g, '');
-    onSelect(this.state.filteredDataSource[this.state.activeSelection].value);
+    const textWithoutHTMLJunk = transformedItem(item).label;
+    onSelect(transformedItem(item));
     this.setState({
       activeSelection: 0,
       filteredDataSource: [],
@@ -128,6 +129,10 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
       showList: false,
     });
   };
+
+  highlightItemFromMouse(index: number) {
+    this.setState({ activeSelection: index });
+  }
 
   // Event fired when the input value is changed
   onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -172,7 +177,7 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
             showList: false,
           },
           () => {
-            onSelect(filteredDataSource[activeSelection].value);
+            onSelect(transformedItem(filteredDataSource[activeSelection]));
           }
         );
         return;
@@ -210,7 +215,7 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
         userInput: '',
         showList: false,
       },
-      () => onSelect('')
+      () => onSelect({ label: '', value: '' })
     );
   };
 

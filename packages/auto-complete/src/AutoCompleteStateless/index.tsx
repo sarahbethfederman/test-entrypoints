@@ -14,7 +14,7 @@ import {
   CloseWrapper,
   CloseIcon,
 } from '../styled/index.style';
-import { makeInputKeyBold, getOffsetScrollTop } from '../util';
+import { makeInputKeyBold, getOffsetScrollTop, transformedItem } from '../util';
 
 interface MenuListItemProps {
   onClick: () => void;
@@ -150,7 +150,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
     if (highlightedIndex !== null) {
       const items = this.getFilteredItems(this.props);
       const item = items[highlightedIndex!];
-      selectCallback = () => this.props.onSelect!(item.label.replace(/<\/?[^>]+(>|$)/g, ''));
+      selectCallback = () => this.props.onSelect!(transformedItem(item));
     }
     this.setState(
       {
@@ -172,7 +172,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
         highlightedIndex: null,
       },
       () => {
-        this.props.onSelect!(item.label.replace(/<\/?[^>]+(>|$)/g, ''));
+        this.props.onSelect!(transformedItem(item));
       }
     );
   };
@@ -207,6 +207,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
 
       case KEY_UP:
         if (!items.length) return;
+
         // @ts-ignore
         index = highlightedIndex === null ? items.length : highlightedIndex;
         index = (index! - 1 + items.length) % items.length;
@@ -242,7 +243,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
               highlightedIndex: null,
             },
             () => {
-              this.props.onSelect!(item.label.replace(/<\/?[^>]+(>|$)/g, ''));
+              this.props.onSelect!(transformedItem(item));
             }
           );
         }

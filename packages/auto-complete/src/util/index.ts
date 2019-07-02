@@ -52,3 +52,11 @@ export const getOffsetScrollTop = (menuContainer: any) => {
   }
   return newScrollTop;
 };
+// makeInputKeyBold makes you item label to contain html <b> tag to make your selection
+// bold, this function remove that, before we send the item to consumer.
+export function transformedItem(item: DataSourceItem) {
+  return {
+    label: item.label.replace(/<\/?[^>]+(>|$)/g, ''), // remove html tag like <b>
+    value: item.value,
+  };
+}

@@ -55,7 +55,7 @@ export default class AutoCompleteStatelessAsyncFailedExample extends React.Compo
                 });
               }
             }}
-            onSelect={(value) => this.setState({ value })}
+            onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
             isLoading={this.state.isLoading}
             before={<PaddedSearchIcon color="shade.500" />}
             isError={this.state.isError}

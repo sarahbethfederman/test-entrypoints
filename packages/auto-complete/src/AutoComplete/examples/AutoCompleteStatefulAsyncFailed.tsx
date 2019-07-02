@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Field from '@lendi-ui/field';
 import { Heading } from '@lendi-ui/typography';
 import { getFailedAsyncData } from '../../data-source.mock';
-import { AutoCompleteValue } from '../../types';
+import { AutoCompleteValue, DataSourceItem } from '../../types';
 
 interface MyState {
   errorMessage: string;
@@ -47,8 +47,8 @@ export class AutoCompleteStatefullAsyncFailedExample extends React.Component<{},
             <AutoComplete
               isError={!!this.state.errorMessage}
               dataSource={(t) => this.fetchResult(t)}
-              onSelect={(t: AutoCompleteValue) => {
-                this.selectedAddress = t;
+              onSelect={(item: DataSourceItem) => {
+                this.selectedAddress = item.value;
                 this.setState({
                   errorMessage: '',
                 });

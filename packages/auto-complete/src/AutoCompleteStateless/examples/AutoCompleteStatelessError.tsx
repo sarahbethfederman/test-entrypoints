@@ -41,7 +41,7 @@ export default class AutoCompleteStatelessErrorExample extends React.Component<{
                 });
               }, 800);
             }}
-            onSelect={(value) => this.setState({ value })}
+            onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
             isLoading={this.state.isLoading}
             isError={this.state.isError}
           />

@@ -20,6 +20,7 @@ export class AutoCompleteStatefullAsyncDataExample extends React.Component {
           dataSource={(userInput: string) => getAsyncData(userInput)}
           isFullWidth={true}
           placeholder={'Testing'}
+          onSelect={(item) => console.log(item)}
         />
       </>
     );

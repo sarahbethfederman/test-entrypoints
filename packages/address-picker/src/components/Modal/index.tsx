@@ -3,7 +3,7 @@ import { Input } from '@lendi-ui/text-input';
 import { Button } from '@lendi-ui/button';
 import Modal from '@lendi-ui/modal';
 import Grid from '@lendi-ui/grid';
-import { AutoCompleteStateless, DataSourceItem, AutoCompleteValue } from '@lendi-ui/auto-complete';
+import { AutoCompleteStateless, DataSourceItem } from '@lendi-ui/auto-complete';
 import { UnitWrapper, Label, StyledDropdown } from './index.style';
 import { AUSTRALIA_STATES, STREET_TYPE } from './constants';
 
@@ -70,9 +70,9 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
     this.setState({ isCompleted });
   };
 
-  handleOnSelect = (selectedItem: AutoCompleteValue) => {
+  handleOnSelect = (selectedItem: DataSourceItem) => {
     const { address } = this.state;
-    address.streetType = String(selectedItem);
+    address.streetType = String(selectedItem.value);
     this.setState({ address }, this.checkFormIsCompleted);
   };
 
@@ -206,7 +206,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
                     streets: this.getStreetData(e.target.value),
                   });
                 }}
-                onSelect={(value) => this.handleOnSelect(value)}
+                onSelect={(value: DataSourceItem) => this.handleOnSelect(value)}
                 isFullWidth={true}
               />
             </UnitWrapper>

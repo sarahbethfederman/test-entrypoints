@@ -1,3 +1,8 @@
+## [4.0.2] - 2019-07-01 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
+### Changed
+- Bug on Stateful comp like onselect - Consumer was getting first element only by mouse click - `fixed`. No issue with keyboard selection.
+- Small enhancement - onSelect will give the DataSourceItem `{label, value}`
+
 
 ## [4.0.1] - 2019-06-28 - [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
 - hotfix for TypeScript to ignore nullibility check on index type.
@@ -27,7 +32,7 @@
 
 ## [3.0.0] - 2019-05-20 - [HUB-172](https://creditandfinance.atlassian.net/browse/HUB-172)
 ### Changed
-- change the datasource prop, now it can take an Object<label, value>
+- change the datasource prop, now it can take an Object `{label, value}`
 - Full width support
 - can take value as props
 - added few more props like isError, className, isInverse, isRequired, isReadOnly, isAutoFocus

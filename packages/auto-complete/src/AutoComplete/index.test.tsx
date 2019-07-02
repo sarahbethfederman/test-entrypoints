@@ -72,7 +72,7 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: () => Promise.resolve(TEST_DATA_SOURCE),
-        onSelect: (text: string) => alert(text),
+        onSelect: (item: DataSourceItem) => alert(item),
         size: 'lg',
         placeholder: 'My test',
         isError: true,
@@ -107,7 +107,7 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: (str) => getData(str),
-        onSelect: (text) => true,
+        onSelect: (item: DataSourceItem) => true,
         size: 'md',
         isDisabled: false,
         before: undefined,
@@ -250,7 +250,14 @@ describe('AutoComplete', () => {
       });
       it('should select the active selection', () => {
         wrapper.find('input').simulate('keyDown', { key: 'Enter' });
-        expect(autoCompleteProps.onSelect).toHaveBeenCalledWith('anz');
+        expect(autoCompleteProps.onSelect).toHaveBeenCalledWith({
+          label: 'ANZ',
+          value: 'anz',
+        });
+      });
+      it('should set the selectedItem `label` to text input value', () => {
+        wrapper.find('input').simulate('keyDown', { key: 'Enter' });
+        expect(wrapper.find(Input).props().value).toEqual('ANZ');
       });
     });
     describe('on esc', () => {
@@ -290,6 +297,50 @@ describe('AutoComplete', () => {
       it('should close the menu', () => {
         wrapper.find('input').simulate('keyDown', { key: '' });
         expect(autoCompleteInstance.state.showList).toBeTruthy();
+      });
+    });
+    describe('on others key down', () => {
+      beforeEach(() => {
+        render({
+          dataSource: (str) => getData(str),
+          onSelect: (text) => jest.fn(),
+        });
+        autoCompleteInstance.setState({
+          showList: true,
+          userInput: 'a',
+          filteredDataSource: TEST_DATA_SOURCE,
+          activeSelection: 1,
+        });
+        wrapper.update();
+      });
+      it('should close the menu', () => {
+        wrapper.find('input').simulate('keyDown', { key: '' });
+        expect(autoCompleteInstance.state.showList).toBeTruthy();
+      });
+    });
+    describe('on mouse hover', () => {
+      beforeEach(() => {
+        render({
+          dataSource: (str) => getData(str),
+        });
+        autoCompleteInstance.setState({
+          showList: true,
+          userInput: 'a',
+          filteredDataSource: TEST_DATA_SOURCE,
+          activeSelection: 1,
+        });
+        wrapper.update();
+      });
+      it('should mouse hover to update selection', () => {
+        // activeSelection is 1, so simulate keyDown twice to make selection to 3.
+        wrapper.find('input').simulate('keyDown', { key: 'ArrowDown' });
+        wrapper.find('input').simulate('keyDown', { key: 'ArrowDown' });
+        // simulate mouseover on first element.
+        wrapper
+          .find(AutoCompleteListItem)
+          .at(0)
+          .simulate('mouseEnter');
+        expect(autoCompleteInstance.state.activeSelection).toEqual(0);
       });
     });
   });
@@ -365,7 +416,7 @@ describe('AutoComplete', () => {
       expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(0);
     });
     it('should call onSelect with empty string', () => {
-      expect(selectMock).toHaveBeenCalledWith('');
+      expect(selectMock).toHaveBeenCalledWith({ label: '', value: '' });
     });
   });
 

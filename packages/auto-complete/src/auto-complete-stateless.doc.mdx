@@ -25,7 +25,7 @@ class PlaygoundComponent extends React.Component{
           onChange={(e) => {
             this.setState({ value: e.target.value, dataSource: this.getStaticData(e.target.value) });
           }}
-          onSelect={(value) => this.setState({ value })}
+          onSelect={(item) => this.setState({ value: item.label })}
           isFullWidth={false}
           onReset={() => {
             this.setState({

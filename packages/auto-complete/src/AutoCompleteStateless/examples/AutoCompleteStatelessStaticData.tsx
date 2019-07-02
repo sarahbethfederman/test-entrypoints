@@ -40,7 +40,10 @@ export default class AutoCompleteStatelessStaticDataExample extends React.Compon
           onChange={(e) => {
             this.setState({ value: e.target.value, dataSource: getStaticData(e.target.value) });
           }}
-          onSelect={(value) => this.setState({ value })}
+          onSelect={(item: DataSourceItem) => {
+            console.log(item);
+            this.setState({ value: item.label });
+          }}
           isFullWidth={false}
           before={<PaddedSearchIcon color="shade.500" />}
         />

@@ -3,6 +3,7 @@ import { ReactWrapper, mount } from 'enzyme';
 import AutoCompleteMenuList, { AutoCompleteMenuListProps } from '.';
 import Theme from '@lendi-ui/theme';
 import { TEST_DATA_SOURCE } from '../index.test';
+import { AutoCompleteListItem } from '../../styled/index.style';
 
 describe('AutoCompleteMenuList', () => {
   let wrapper: ReactWrapper<AutoCompleteMenuList>, autoCompleteMenuListProps: AutoCompleteMenuListProps;
@@ -24,6 +25,7 @@ describe('AutoCompleteMenuList', () => {
       innerRef: {},
       menuWidth: 100,
       debounceWindowResize: jest.fn(),
+      onMouseEnter: jest.fn(),
     });
     expect(wrapper).toBeDefined();
   });
@@ -38,9 +40,12 @@ describe('AutoCompleteMenuList', () => {
       expect(activeSelection).toBeDefined();
       expect(activeSelection).toEqual(0);
     });
-    it('should be able to onSelect', () => {
+    it('should be able to call onSelect', () => {
       const { onSelect } = autoCompleteMenuListProps;
-      onSelect({} as React.MouseEvent<HTMLInputElement>);
+      wrapper
+        .find(AutoCompleteListItem)
+        .at(0)
+        .simulate('click');
       expect(onSelect).toHaveBeenCalled();
     });
     it('should render with innerRef', () => {
@@ -56,6 +61,14 @@ describe('AutoCompleteMenuList', () => {
       debounceWindowResize();
       expect(debounceWindowResize).toBeDefined();
       expect(debounceWindowResize).toHaveBeenCalled();
+    });
+    it('should be able to call onMouseEnter', () => {
+      const { onMouseEnter } = autoCompleteMenuListProps;
+      wrapper
+        .find(AutoCompleteListItem)
+        .at(0)
+        .simulate('mouseEnter');
+      expect(onMouseEnter).toHaveBeenCalledWith(0);
     });
   });
 });

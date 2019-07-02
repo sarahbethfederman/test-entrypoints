@@ -1,4 +1,4 @@
-import { extractData } from '.';
+import { extractData, transformedItem } from '.';
 import { TEST_DATA_SOURCE } from '../AutoComplete/index.test';
 
 describe('test filtered data', () => {
@@ -56,6 +56,12 @@ describe('test filtered data', () => {
           const substr = f.label.substr(first + 3, last - 3);
           expect(substr).toEqual('Adelaide');
         });
+      });
+    });
+    describe('transformedItem test', () => {
+      it('to remove html junk', () => {
+        const item = transformedItem({ label: '<b>test</b>', value: 'test' });
+        expect(item.label).toEqual('test');
       });
     });
   });

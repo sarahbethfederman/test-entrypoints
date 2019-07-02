@@ -26,7 +26,7 @@ export interface AutoCompleteBaseProps extends LUIFormProps {
   onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
-  onSelect?: (selectedItem: AutoCompleteValue) => void;
+  onSelect?: (selectedItem: DataSourceItem) => void;
   placeholder?: string;
   size?: Size;
   value?: AutoCompleteValue;

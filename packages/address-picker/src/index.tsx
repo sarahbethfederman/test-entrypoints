@@ -2,7 +2,7 @@ import * as React from 'react';
 import { isEmpty, debounce } from 'lodash';
 
 import { Body, Link } from '@lendi-ui/typography';
-import { AutoCompleteStateless } from '@lendi-ui/auto-complete';
+import { AutoCompleteStateless, DataSourceItem } from '@lendi-ui/auto-complete';
 import AddressModal, { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
@@ -104,9 +104,9 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
    * Get the geometry (lat/long) from the users selection using
    * the places service
    */
-  onSelectPrediction = (selectedItem: string | number = ''): void => {
+  onSelectPrediction = (selectedItem: DataSourceItem): void => {
     const foundSuggestion = this.state.suggestions.filter(
-      ({ description = '' }: google.maps.places.AutocompletePrediction) => description === selectedItem
+      ({ description = '' }: google.maps.places.AutocompletePrediction) => description === String(selectedItem.value)
     );
 
     const { place_id = '' } = foundSuggestion[0];

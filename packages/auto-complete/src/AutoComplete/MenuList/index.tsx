@@ -3,12 +3,13 @@ import { AutoCompleteListItem, AutoCompleteList } from '../../styled/index.style
 import { DataSourceItem } from '../../types';
 
 export interface AutoCompleteMenuListProps {
-  onSelect: (event: React.MouseEvent<HTMLElement>) => void;
+  onSelect: (item: DataSourceItem) => void;
   filteredDataSource: DataSourceItem[];
   activeSelection: number;
   innerRef: any;
   menuWidth: number;
   debounceWindowResize: () => void;
+  onMouseEnter: (index: number) => void;
 }
 
 export default class AutoCompleteMenuList extends React.Component<AutoCompleteMenuListProps, {}> {
@@ -17,17 +18,26 @@ export default class AutoCompleteMenuList extends React.Component<AutoCompleteMe
   }
 
   render() {
-    const { filteredDataSource, onSelect = () => {}, activeSelection = 0, menuWidth, innerRef } = this.props;
+    const {
+      filteredDataSource,
+      onSelect = () => {},
+      activeSelection = 0,
+      menuWidth,
+      innerRef,
+      onMouseEnter = () => {},
+    } = this.props;
 
     return (
       <AutoCompleteList customWidth={menuWidth} innerRef={innerRef}>
-        {filteredDataSource.map((option, index) => (
+        {filteredDataSource.map((option: DataSourceItem, index) => (
           <AutoCompleteListItem
             key={index}
             tabIndex={index}
             className={index === activeSelection ? 'selectedItem' : ''}
             isActive={index === activeSelection}
-            onClick={onSelect}
+            onClick={() => onSelect(option)}
+            value={option.value}
+            onMouseEnter={() => onMouseEnter(index)}
           >
             <div dangerouslySetInnerHTML={{ __html: option.label }} />
           </AutoCompleteListItem>
