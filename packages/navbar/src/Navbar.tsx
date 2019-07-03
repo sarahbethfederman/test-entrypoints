@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import { Header } from './Header';
-import { LeftSidebar } from './LeftSidebar';
-import { LeftPanelSection } from './LeftPanelSection';
-import { RightSidebar } from './RightSidebar';
-import { RightPanelSection } from './RightPanelSection';
+import { Header } from './OldNav/Header';
+import { LeftSidebar } from './OldNav/LeftSidebar';
+import { LeftPanelSection } from './OldNav/LeftPanelSection';
+import { RightSidebar } from './common/RightSidebar';
+import { RightPanelSection } from './OldNav/RightPanelSection';
 import { Application, Broker } from './types';
 import { Wrapper } from './index.style';
 import { AnalyticsContextProvider, LUIGlobalProps } from '@lendi-ui/utils';
