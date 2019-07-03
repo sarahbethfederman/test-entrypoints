@@ -1,7 +1,11 @@
 {
   "extends": "../../tsconfig.types.json",
   "compilerOptions": {
-    "outDir": "./dist/types"
+    "outDir": "./dist/types",
+    "baseUrl": "../..",
+    "paths": {
+      "@lendi-ui/spinner": ["node_modules/@lendi-ui/spinner"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.example.tsx"]
