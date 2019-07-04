@@ -3,7 +3,7 @@ import { Input } from '@lendi-ui/text-input';
 import { Button } from '@lendi-ui/button';
 import Modal from '@lendi-ui/modal';
 import Grid from '@lendi-ui/grid';
-import { AutoCompleteStateless, DataSourceItem } from '@lendi-ui/auto-complete';
+import { AutoComplete, DataSourceItem } from '@lendi-ui/auto-complete';
 import { UnitWrapper, Label, StyledDropdown } from './index.style';
 import { AUSTRALIA_STATES, STREET_TYPE } from './constants';
 
@@ -24,12 +24,12 @@ export interface AddressObject {
   suburb?: string;
   postcode?: string;
   state?: string;
+  country?: string;
 }
 
 export interface AddressModalState {
   address: AddressObject;
   isCompleted: boolean;
-  streets: DataSourceItem[];
 }
 
 export default class AddressModal extends React.Component<AddressModalProps, AddressModalState> {
@@ -45,8 +45,8 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       suburb: '',
       postcode: '',
       state: '',
+      country: 'Australia',
     },
-    streets: STREET_TYPE,
     isCompleted: false,
   };
 
@@ -57,6 +57,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
     if (address.lotSection || address.streetNumber) {
       lotOrStreetNumber = true;
     }
+
     if (
       lotOrStreetNumber &&
       address.streetName &&
@@ -70,9 +71,9 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
     this.setState({ isCompleted });
   };
 
-  handleOnSelect = (selectedItem: DataSourceItem) => {
+  handleOnSelect = ({ value = '' }: DataSourceItem) => {
     const { address } = this.state;
-    address.streetType = String(selectedItem.value);
+    address.streetType = value as string;
     this.setState({ address }, this.checkFormIsCompleted);
   };
 
@@ -103,6 +104,9 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       case 'Postcode':
         address.postcode = e.target.value;
         break;
+      case 'Country':
+        address.country = e.target.value;
+        break;
       default:
         undefined;
     }
@@ -122,7 +126,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
 
   render() {
     const { show, onHide = () => {}, onSave } = this.props;
-    const { address, isCompleted, streets } = this.state;
+    const { address, isCompleted } = this.state;
     const {
       unit,
       lotSection,
@@ -134,7 +138,9 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       suburb,
       postcode,
       state,
+      country,
     } = this.state.address;
+
     return (
       <Modal show={!!show} size="lg" onHide={onHide}>
         <Modal.Header title="Enter address" />
@@ -196,17 +202,14 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
             </UnitWrapper>
             <UnitWrapper size={{ mobile: 1 / 2, tablet: 1 / 4 }}>
               <Label>Street type</Label>
-              <AutoCompleteStateless
+              <AutoComplete
                 size="sm"
-                dataSource={streets}
                 value={streetType}
-                onChange={(e) => {
-                  this.setState({
-                    address: { streetType: e.target.value },
-                    streets: this.getStreetData(e.target.value),
-                  });
+                dataSource={STREET_TYPE}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  this.handleInputOnChange('Street type', e);
                 }}
-                onSelect={(value: DataSourceItem) => this.handleOnSelect(value)}
+                onSelect={this.handleOnSelect}
                 isFullWidth={true}
               />
             </UnitWrapper>
@@ -239,7 +242,12 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
             </UnitWrapper>
             <UnitWrapper size={{ mobile: 1, tablet: 1 / 4 }}>
               <Label>Country</Label>
-              <Input value="Australia" isDisabled isFullWidth onChange={() => {}} size="sm" />
+              <Input
+                value={country}
+                isFullWidth
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.handleInputOnChange('Country', e)}
+                size="sm"
+              />
             </UnitWrapper>
           </Grid>
         </Modal.Content>

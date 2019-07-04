@@ -5,7 +5,6 @@ import { Input } from '@lendi-ui/text-input';
 import { Button } from '@lendi-ui/button';
 import Modal from '@lendi-ui/modal';
 import Grid from '@lendi-ui/grid';
-import { AutoCompleteStateless } from '@lendi-ui/auto-complete';
 import { UnitWrapper, Label, StyledDropdown } from './index.style';
 import AddressModal, { AddressModalProps } from './index';
 
@@ -28,8 +27,8 @@ describe('AddressModal', () => {
 
   it("should render 1 Modal.Header component with text 'Enter address'", () => {
     expect(element.find(Modal.Header)).toHaveLength(1);
-    const modaleHeader = element.find(Modal.Header);
-    expect(modaleHeader.props().title).toEqual('Enter address');
+    const modalHeader = element.find(Modal.Header);
+    expect(modalHeader.props().title).toEqual('Enter address');
   });
 
   it('should render 1 Modal.Content component', () => {
@@ -48,179 +47,42 @@ describe('AddressModal', () => {
         expect(grid.find(UnitWrapper)).toHaveLength(11);
       });
 
-      describe('the first UnitWrapper', () => {
-        const firstUnit = grid.find(UnitWrapper).at(0);
-        it('should render 1 Label component in the first UnitWrapper', () => {
-          expect(firstUnit.find(Label)).toHaveLength(1);
-          const firstLabel = firstUnit.find(Label);
-          expect(firstLabel.text()).toEqual('Unit No.');
+      describe('form', () => {
+        const unitWrapperList = grid.find(UnitWrapper);
+        const expectedUnitWrapperLabels = [
+          'Unit No.',
+          'Lot No.',
+          'Level',
+          'Building name',
+          'Street No.',
+          'Street name',
+          'Street type',
+          'Suburb',
+          'Postcode',
+          'State',
+          'Country',
+        ];
+
+        describe('labels', () => {
+          unitWrapperList.forEach((currentUnitWrapper, i) => {
+            it(`should display label ${expectedUnitWrapperLabels[i]}`, () => {
+              expect(currentUnitWrapper.find(Label).text()).toEqual(expectedUnitWrapperLabels[i]);
+            });
+          });
         });
 
-        it('should render 1 Input component in the first UnitWrapper', () => {
-          expect(firstUnit.find(Input)).toHaveLength(1);
-          const firstInput = firstUnit.find(Input);
-          expect(firstInput.props().isFullWidth).toEqual(true);
-          expect(firstInput.props().size).toEqual('sm');
-        });
-      });
+        describe('inputs', () => {
+          const inputList = grid.find(Input);
+          it('should contain 10 inputs', () => {
+            expect(inputList).toHaveLength(10);
+          });
 
-      describe('the second UnitWrapper', () => {
-        const secondUnit = grid.find(UnitWrapper).at(1);
-        it('should render 1 Label component in the second UnitWrapper', () => {
-          expect(secondUnit.find(Label)).toHaveLength(1);
-          const secondLabel = secondUnit.find(Label);
-          expect(secondLabel.text()).toEqual('Lot No.');
-        });
-
-        it('should render 1 Input component in the second UnitWrapper', () => {
-          expect(secondUnit.find(Input)).toHaveLength(1);
-          const secondInput = secondUnit.find(Input);
-          expect(secondInput.props().isFullWidth).toEqual(true);
-          expect(secondInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the third UnitWrapper', () => {
-        const thirdUnit = grid.find(UnitWrapper).at(2);
-        it('should render 1 Label component in the third UnitWrapper', () => {
-          expect(thirdUnit.find(Label)).toHaveLength(1);
-          const thirdLabel = thirdUnit.find(Label);
-          expect(thirdLabel.text()).toEqual('Level');
-        });
-
-        it('should render 1 Input component in the third UnitWrapper', () => {
-          expect(thirdUnit.find(Input)).toHaveLength(1);
-          const thirdInput = thirdUnit.find(Input);
-          expect(thirdInput.props().isFullWidth).toEqual(true);
-          expect(thirdInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the fourth UnitWrapper', () => {
-        const fourthUnit = grid.find(UnitWrapper).at(3);
-        it('should render 1 Label component in the fourth UnitWrapper', () => {
-          expect(fourthUnit.find(Label)).toHaveLength(1);
-          const fourthLabel = fourthUnit.find(Label);
-          expect(fourthLabel.text()).toEqual('Building name');
-        });
-
-        it('should render 1 Input component in the fourth UnitWrapper', () => {
-          expect(fourthUnit.find(Input)).toHaveLength(1);
-          const fourthInput = fourthUnit.find(Input);
-          expect(fourthInput.props().isFullWidth).toEqual(true);
-          expect(fourthInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the fifth UnitWrapper', () => {
-        const fifthUnit = grid.find(UnitWrapper).at(4);
-        it('should render 1 Label component in the fifth UnitWrapper', () => {
-          expect(fifthUnit.find(Label)).toHaveLength(1);
-          const fifthLabel = fifthUnit.find(Label);
-          expect(fifthLabel.text()).toEqual('Street No.');
-        });
-
-        it('should render 1 Input component in the fifth UnitWrapper', () => {
-          expect(fifthUnit.find(Input)).toHaveLength(1);
-          const fifthInput = fifthUnit.find(Input);
-          expect(fifthInput.props().isFullWidth).toEqual(true);
-          expect(fifthInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the sixth UnitWrapper', () => {
-        const sixthUnit = grid.find(UnitWrapper).at(5);
-        it('should render 1 Label component in the sixth UnitWrapper', () => {
-          expect(sixthUnit.find(Label)).toHaveLength(1);
-          const sixthLabel = sixthUnit.find(Label);
-          expect(sixthLabel.text()).toEqual('Street name');
-        });
-
-        it('should render 1 Input component in the sixth UnitWrapper', () => {
-          expect(sixthUnit.find(Input)).toHaveLength(1);
-          const sixthInput = sixthUnit.find(Input);
-          expect(sixthInput.props().isFullWidth).toEqual(true);
-          expect(sixthInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the seventh UnitWrapper', () => {
-        const seventhUnit = grid.find(UnitWrapper).at(6);
-        it('should render 1 Label component in the seventh UnitWrapper', () => {
-          expect(seventhUnit.find(Label)).toHaveLength(1);
-          const seventhLabel = seventhUnit.find(Label);
-          expect(seventhLabel.text()).toEqual('Street type');
-        });
-
-        it('should render 1 AutoCompleteStateless component in the seventh UnitWrapper', () => {
-          expect(seventhUnit.find(AutoCompleteStateless)).toHaveLength(1);
-          const seventhAutoComplete = seventhUnit.find(Input);
-          expect(seventhAutoComplete.props().isFullWidth).toEqual(true);
-          expect(seventhAutoComplete.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the eighth UnitWrapper', () => {
-        const eighthUnit = grid.find(UnitWrapper).at(7);
-        it('should render 1 Label component in the eighth UnitWrapper', () => {
-          expect(eighthUnit.find(Label)).toHaveLength(1);
-          const eighthLabel = eighthUnit.find(Label);
-          expect(eighthLabel.text()).toEqual('Suburb');
-        });
-
-        it('should render 1 Input component in the eighth UnitWrapper', () => {
-          expect(eighthUnit.find(Input)).toHaveLength(1);
-          const eighthInput = eighthUnit.find(Input);
-          expect(eighthInput.props().isFullWidth).toEqual(true);
-          expect(eighthInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the ninth UnitWrapper', () => {
-        const ninthUnit = grid.find(UnitWrapper).at(8);
-        it('should render 1 Label component in the ninth UnitWrapper', () => {
-          expect(ninthUnit.find(Label)).toHaveLength(1);
-          const ninthLabel = ninthUnit.find(Label);
-          expect(ninthLabel.text()).toEqual('Postcode');
-        });
-
-        it('should render 1 Input component in the ninth UnitWrapper', () => {
-          expect(ninthUnit.find(Input)).toHaveLength(1);
-          const ninthInput = ninthUnit.find(Input);
-          expect(ninthInput.props().isFullWidth).toEqual(true);
-          expect(ninthInput.props().size).toEqual('sm');
-        });
-      });
-
-      describe('the tenth UnitWrapper', () => {
-        const tenthUnit = grid.find(UnitWrapper).at(9);
-        it('should render 1 Label component in the tenth UnitWrapper', () => {
-          expect(tenthUnit.find(Label)).toHaveLength(1);
-          const tenthLabel = tenthUnit.find(Label);
-          expect(tenthLabel.text()).toEqual('State');
-        });
-
-        it('should render 1 StyledDropdown component in the tenth UnitWrapper', () => {
-          expect(tenthUnit.find(StyledDropdown)).toHaveLength(1);
-          const tenthDropdown = tenthUnit.find(StyledDropdown);
-          expect(tenthDropdown.props().isFullWidth).toEqual(true);
-        });
-      });
-
-      describe('the eleventh UnitWrapper', () => {
-        const eleventhUnit = grid.find(UnitWrapper).at(10);
-        it('should render 1 Label component in the eleventh UnitWrapper', () => {
-          expect(eleventhUnit.find(Label)).toHaveLength(1);
-          const eleventhLabel = eleventhUnit.find(Label);
-          expect(eleventhLabel.text()).toEqual('Country');
-        });
-
-        it('should render 1 Input component in the eleventh UnitWrapper', () => {
-          expect(eleventhUnit.find(Input)).toHaveLength(1);
-          const eleventhInput = eleventhUnit.find(Input);
-          expect(eleventhInput.props().isFullWidth).toEqual(true);
-          expect(eleventhInput.props().isDisabled).toEqual(true);
-          expect(eleventhInput.props().size).toEqual('sm');
+          inputList.forEach((currentInput) => {
+            it(`should be a full size input with the correct size for ${currentInput.parent().text()}`, () => {
+              expect(currentInput.props().isFullWidth).toEqual(true);
+              expect(currentInput.props().size).toEqual('sm');
+            });
+          });
         });
       });
     });

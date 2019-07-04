@@ -1,18 +1,28 @@
 import * as React from 'react';
 import { isEmpty, debounce } from 'lodash';
 
+import { LUIGlobalProps } from '@lendi-ui/utils';
 import { Body, Link } from '@lendi-ui/typography';
 import { AutoCompleteStateless, DataSourceItem } from '@lendi-ui/auto-complete';
+import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+
 import AddressModal, { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
+import { transformGoogleResponse } from './util';
 
-export interface AddressPickerProps {
-  className?: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onSelect: (selection: AddressObject) => void;
-  showMap?: boolean;
+type SizeVariant = 'lg' | 'md' | 'sm';
+export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
+
+export interface AddressPickerProps extends LUIGlobalProps {
   country?: string;
+  isDisabled?: boolean;
+  onChange: (e: React.SyntheticEvent) => void;
+  onSelect: (selection: AddressObject) => void;
+  onReset?: () => void; // @TODO - HUB-305
+  showMap?: boolean;
+  size?: Size;
+  value?: AddressObject; // @TODO - HUB-305
 }
 
 export interface AddressPickerState {
@@ -76,15 +86,18 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
 
     this.setState({ isLoading: true });
     (this.autocompleteService as google.maps.places.AutocompleteService).getPlacePredictions(
-      { input, sessionToken: this.sessionToken, componentRestrictions: { country: this.props.country || 'au' } },
+      {
+        input,
+        sessionToken: this.sessionToken,
+        componentRestrictions: { country: this.props.country || 'au' },
+      },
       (suggestions: google.maps.places.AutocompletePrediction[], status: google.maps.places.PlacesServiceStatus) => {
         if (status === google.maps.places.PlacesServiceStatus.OK && suggestions !== null) {
           this.setState({
             suggestions,
             failedAddressSearch: false,
           });
-        }
-        if (suggestions === null) {
+        } else if (suggestions === null) {
           this.setState({
             suggestions: [],
             failedAddressSearch: true,
@@ -96,6 +109,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   }
 
   onSave = (address: AddressObject) => {
+    // @TODO - HUB-305 display this data in the input
     this.setState({ showModal: false });
     this.props.onSelect(address);
   };
@@ -104,43 +118,74 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
    * Get the geometry (lat/long) from the users selection using
    * the places service
    */
-  onSelectPrediction = (selectedItem: DataSourceItem): void => {
-    const foundSuggestion = this.state.suggestions.filter(
-      ({ description = '' }: google.maps.places.AutocompletePrediction) => description === String(selectedItem.value)
-    );
-
-    const { place_id = '' } = foundSuggestion[0];
-
+  onSelectPrediction = ({ label = '', value = '' }: DataSourceItem): void => {
     this.placesService!.getDetails(
       {
-        placeId: place_id,
+        placeId: value as string,
         sessionToken: this.sessionToken,
       },
-      ({ geometry }: google.maps.places.PlaceResult, status: google.maps.places.PlacesServiceStatus) => {
+      (
+        { geometry, address_components }: google.maps.places.PlaceResult,
+        status: google.maps.places.PlacesServiceStatus
+      ) => {
         const newState = {
-          addressInput: String(selectedItem),
+          addressInput: label,
           selectedPlace: {} as google.maps.places.PlaceGeometry,
         };
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           newState.selectedPlace = geometry as google.maps.places.PlaceGeometry;
+          this.props.onSelect(
+            transformGoogleResponse(label, address_components as google.maps.GeocoderAddressComponent[])
+          );
         }
         this.setState(newState);
       }
     );
   };
 
+  renderManualInput = () => {
+    return (
+      <Alert>
+        <Body color="warn.500" size="xs">
+          <InfoWrapper color="warn.500" />
+          No matches found.
+          <Link
+            color="warn.500"
+            onClick={() => {
+              this.setState({ showModal: true });
+            }}
+          >
+            Enter address manually
+          </Link>
+        </Body>
+      </Alert>
+    );
+  };
+
   render() {
     const { suggestions = [], addressInput = '', selectedPlace, failedAddressSearch, isOpen, isLoading } = this.state;
-    const { showMap, className } = this.props;
+    const {
+      showMap = true,
+      isDisabled,
+      onChange,
+      size,
+      onSelect,
+      country,
+      onReset,
+      value,
+      ...globalProps
+    } = this.props;
     const suggestionsToDataSource = suggestions.map(({ description, place_id }) => ({
       label: description,
       value: place_id,
     }));
 
     return (
-      <Wrapper className={className}>
+      <Wrapper {...globalProps}>
         <AddressMap onMount={this.onMountMap} place={this.state.selectedPlace} showMap={Boolean(showMap)} />
         <AutoCompleteStateless
+          size={size || 'md'}
+          isDisabled={Boolean(isDisabled)}
           onReset={() => {
             this.setState({ addressInput: '', selectedPlace: {} });
           }}
@@ -150,29 +195,17 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
           isLoading={isLoading}
           dataSource={suggestionsToDataSource}
           onChange={(e) => {
-            this.setState({ addressInput: e.target.value });
+            this.setState({
+              addressInput: e.target.value,
+              selectedPlace: {} as google.maps.places.PlaceGeometry,
+            });
             this.fetchSuggestion(e.target.value);
-            this.props.onChange(e); // just incase the consumer requires it
+            onChange(e);
           }}
           onSelect={this.onSelectPrediction}
           onMenuVisibilityChange={(isOpen) => this.setState({ isOpen })}
         />
-        {failedAddressSearch && (
-          <Alert>
-            <Body color="warn.500" size="xs">
-              <InfoWrapper color="warn.500" />
-              No matches found.
-              <Link
-                color="warn.500"
-                onClick={() => {
-                  this.setState({ showModal: true });
-                }}
-              >
-                Enter address manually
-              </Link>
-            </Body>
-          </Alert>
-        )}
+        {failedAddressSearch && this.renderManualInput()}
         <AddressModal
           show={this.state.showModal}
           onSave={this.onSave}
