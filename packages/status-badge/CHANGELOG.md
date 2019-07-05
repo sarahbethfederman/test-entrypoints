@@ -1,3 +1,7 @@
+## [2.2.3] - 2019-06-02 - [HUB-295](https://creditandfinance.atlassian.net/browse/HUB-295)
+### Changed
+- Fixed bug - The status badge text's vertically alignment issue wrt icon.
+
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUb-144)
 ### Changed
 - Replaced SuccessTwo icon with Check icon.

@@ -3,7 +3,7 @@ import { body } from '@lendi-ui/typography';
 import { color, fg, bg } from '@lendi-ui/color';
 import { pl, pr } from '@lendi-ui/spacing';
 import { normalise } from '@lendi-ui/utils';
-
+import { select } from '@lendi-ui/theme';
 export type StatusBadgeVariant = 'error' | 'info' | 'success' | 'warn';
 export type StatusBadgeSize = 'sm' | 'lg';
 
@@ -11,7 +11,8 @@ interface WrapperProps {
   variant: StatusBadgeVariant;
   withIcon: boolean;
 }
-interface ContentProps {
+
+export interface SizeOption {
   size: StatusBadgeSize;
 }
 
@@ -27,7 +28,7 @@ export const Wrapper = styled.div`
         ${!withIcon && pl('xxxs')};
       `;
     }}
-    ${pr('xxxs')}
+    ${pr('xxs')}
     ${({ variant }: WrapperProps) => {
       switch (variant) {
         case 'error':
@@ -56,21 +57,30 @@ export const Wrapper = styled.div`
     }}
 `;
 
+/**
+ * Domain font `larsseit` does not center aligned by default, so doing a margin-bottom to
+ * some value to accomodate the alignment issue wrt icon. - HUB-295
+ */
+export const contentSizeMixin = (option: SizeOption) => {
+  const { size } = option;
+  switch (size) {
+    case 'sm':
+      return css`
+        ${body({ size: 'xs' })};
+        margin-bottom: ${({ theme }) => (select('logo.logoName')({ theme }) === 'DomainLogo' ? '-3px' : 0)};
+      `;
+    case 'lg':
+      return css`
+        ${body({ size: 'lg' })};
+        margin-bottom: ${({ theme }) => (select('logo.logoName')({ theme }) === 'DomainLogo' ? '-5px' : 0)};
+      `;
+  }
+};
+
 export const IconWrapper = styled.span`
   line-height: 0;
 `;
 
 export const ContentWrapper = styled.span`
-  ${({ size }: ContentProps) => {
-    switch (size) {
-      case 'sm':
-        return css`
-          ${body({ size: 'xs' })};
-        `;
-      case 'lg':
-        return css`
-          ${body({ size: 'lg' })};
-        `;
-    }
-  }};
+  ${contentSizeMixin};
 `;

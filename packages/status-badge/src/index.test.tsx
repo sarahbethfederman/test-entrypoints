@@ -4,12 +4,20 @@ import Theme from '@lendi-ui/theme';
 import StatusBadge from './index';
 import { Wrapper, IconWrapper, ContentWrapper } from './index.style';
 import { InfoTwo, Check, WarnTwo } from '@lendi-ui/icon';
-
+import { theme as domainTheme } from '@lendi-ui/theme-domain';
 let element, variant;
 
 function render(props) {
   element = mount(
     <Theme>
+      <StatusBadge variant="success" hasIcon={true} statusText="COMPLETED" {...props} />
+    </Theme>
+  );
+}
+
+function renderWithDomainTheme(props) {
+  element = mount(
+    <Theme kind={domainTheme}>
       <StatusBadge variant="success" hasIcon={true} statusText="COMPLETED" {...props} />
     </Theme>
   );
@@ -84,6 +92,35 @@ describe('StatusBadge', () => {
       const attributes = element.find(StatusBadge).props();
       expect(attributes.id).toBe(TEXT_ID);
       expect(attributes.tabIndex).toBe(1);
+    });
+  });
+
+  describe('test size variants', () => {
+    ['sm', 'lg'].forEach((size: string) => {
+      describe(`render ContentWrapper when sizeVariant = ${size}`, () => {
+        render({
+          size: `${size}`,
+        });
+        it(`should style with line-height and font-size`, () => {
+          expect(element.find(ContentWrapper).at(0)).toHaveStyleRule('font-size', 'calc(0.75 * var(--lendi-ui-size))');
+          expect(element.find(ContentWrapper).at(0)).toHaveStyleRule('line-height', 'calc(16 / 12)');
+        });
+      });
+    });
+  });
+
+  describe('test with domain theme', () => {
+    it(`should style with -3px of margin-bottom when size sm`, () => {
+      renderWithDomainTheme({
+        size: 'sm',
+      });
+      expect(element.find(ContentWrapper).at(0)).toHaveStyleRule('margin-bottom', '-3px');
+    });
+    it(`should style with -5px of margin-bottom when size lg`, () => {
+      renderWithDomainTheme({
+        size: 'lg',
+      });
+      expect(element.find(ContentWrapper).at(0)).toHaveStyleRule('margin-bottom', '-5px');
     });
   });
 });
