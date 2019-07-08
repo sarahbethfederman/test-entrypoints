@@ -41,7 +41,3 @@ import { Link } from '@lendi-ui/typography';
 import { Overline } from '@lendi-ui/typography';
 <Overline>quick brown fox</Overline>;
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

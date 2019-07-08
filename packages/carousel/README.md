@@ -30,7 +30,4 @@ import Carousel from '@lendi-ui/carousel';
   <PropTable.Entry name="width" type="string" defaultValue="100%" description="The carousel width"/>
 </PropTable>
 
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
 ```

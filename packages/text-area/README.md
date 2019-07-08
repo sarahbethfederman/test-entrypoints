@@ -33,11 +33,3 @@ import TextArea from '@lendi-ui/text-area';
   <PropTable.Entry name="value" type="string" description="The input content"/>
 </PropTable>
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
-```
-
-```

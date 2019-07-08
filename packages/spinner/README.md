@@ -17,13 +17,7 @@ import Spinner from '@lendi-ui/spinner';
 
 ## Properties
 
-```jsx
 <PropTable>
   <PropTable.Entry name="variant" type={'"light" | "dark"'} defaultValue="dark" description="" />
   <PropTable.Entry name="className" defaultValue=""type="string" description="The custom style for Spinner" />
 </PropTable>
-
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
-```

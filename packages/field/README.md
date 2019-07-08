@@ -46,7 +46,3 @@ import Field from '@lendi-ui/field';
   <PropTable.Entry name="touched" type="boolean" description="Whether the user has interacted with the field"/>
 </PropTable>
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

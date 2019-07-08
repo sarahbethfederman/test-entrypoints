@@ -30,8 +30,4 @@ import ToggleSwitch from '@lendi-ui/toggle-switch';
   <PropTable.Entry name="size" type={`"sm" | "md"`} description="ToggleSwitch size variants"/>
   <PropTable.Entry name="value" type="string" description="ToggleSwitch value"/>
 </PropTable>
-
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
 ```

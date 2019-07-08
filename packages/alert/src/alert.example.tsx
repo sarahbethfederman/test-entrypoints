@@ -19,17 +19,5 @@ export default () => (
       Alert Warn content
     </Alert>
     <br />
-
-    <Alert
-      variant="success"
-      heading="Alert label"
-      aria-label="aria label"
-      className="fakeClass"
-      id="myId"
-      title="hello alert"
-    >
-      Support for native props like Aria label, Standard HTML Attributes like title, classname, id, role, itemProps,
-      itemID, itemRef
-    </Alert>
   </>
 );

@@ -73,11 +73,3 @@ import { AutoComplete, AutoCompleteStateless } from '@lendi-ui/auto-complete';
   <PropTable.Entry name="value" type="string" description="AutoComplete value"/>
 </PropTable>
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
-```
-
-```

@@ -23,8 +23,4 @@ import StatusBadge from '@lendi-ui/status-badge';
   <PropTable.Entry name='statusText' type='string' description='The text inside the badge'/>
   <PropTable.Entry name='variant' required type="'error' | 'info' | 'success' | 'warn'" description='Badge type'/>
 </PropTable>
-
-
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

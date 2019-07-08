@@ -3,8 +3,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { Heading } from '@lendi-ui/typography';
-import { body } from '@lendi-ui/typography';
+import { Heading, body, Body, Link as LuiLink } from '@lendi-ui/typography';
 import Alert from '@lendi-ui/alert';
 import { color } from '@lendi-ui/color';
 import { mb } from '@lendi-ui/spacing';
@@ -12,6 +11,7 @@ import { Button } from '@lendi-ui/button';
 import Modal from '@lendi-ui/modal';
 import { Workspace } from '../../../utils/info';
 import { DocumentViewer } from '../../../utils/DocumentViewer';
+import { foundations } from '../../../utils/constants';
 
 const Description = styled.p`
   ${body({ size: 'lg' })};
@@ -89,7 +89,9 @@ export class Overview extends React.Component<OverviewProps> {
     const {
       workspace: { org, name, description, deprecated, examples },
     } = this.props;
+    const { workspace } = this.props;
     const CHANGELOG = require(`@lendi-ui/${name}/CHANGELOG.md`);
+    const isFoundation = foundations.some((foundation) => workspace.name.includes(foundation));
 
     return (
       <>
@@ -113,7 +115,7 @@ export class Overview extends React.Component<OverviewProps> {
               {examples.map((example) => (
                 <li key={example.slug}>
                   <Link to={`/packages/${name}/example/${example.slug}`} target="_blank">
-                    {example.name}
+                    <LuiLink>{example.name}</LuiLink>
                   </Link>
                 </li>
               ))}
@@ -143,6 +145,13 @@ export class Overview extends React.Component<OverviewProps> {
         </Modal>
 
         {this.indexDoc && <DocumentViewer loader={this.indexDoc.load} />}
+
+        {!isFoundation && (
+          <Body mt="md">
+            This component has support for some native attributes, read{' '}
+            <LuiLink href="/pages/whitelist">the whitelist</LuiLink> to find out more.
+          </Body>
+        )}
       </>
     );
   }

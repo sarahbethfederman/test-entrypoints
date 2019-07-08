@@ -1,0 +1,25 @@
+# Whitelist
+
+All LUI components accept some props in addition to those that are listed within the prop tables on Lendi.design. 
+These are aria attributes [extended from this interface](https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/react/index.d.ts#L1449-L1634)
+and the following HTML attributes:
+
+    id
+    className
+    itemProp
+    itemScope
+    itemType
+    itemID
+    itemRef
+    tabIndex
+    title
+    role
+
+## Usage
+
+Simply pass the attributes to the component as you would any other prop:
+```jsx
+<Button id="lui-id" data-test-id="lui-button" size="md" variant="primary">
+  Example!
+</Button>
+```

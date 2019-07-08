@@ -56,7 +56,3 @@ import { FeaturePanel } from '@lendi-ui/feature-panel';
   <PropTable.Entry name="FeaturePanel.Item" type="React.ReactElement<FeatureItemProps> | React.ReactElement<FeatureItemProps>[]" description="Feature panel wrapper"/>
 </PropTable>
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

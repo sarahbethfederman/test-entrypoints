@@ -14,7 +14,4 @@ yarn add @lendi-ui/legal-stuff
 import legal-stuff from '@lendi-ui/legal-stuff';
 
 <Legal />
-
-## Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

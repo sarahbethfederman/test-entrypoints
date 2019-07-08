@@ -35,6 +35,4 @@ import Card from '@lendi-ui/card';
   <PropTable.Entry name="title" type="string" description="Title of card"/>
 </PropTable>
 
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

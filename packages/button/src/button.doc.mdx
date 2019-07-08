@@ -1,4 +1,4 @@
-import {PropTable} from '@lendi-ui/doc-utils';
+import { PropTable } from '@lendi-ui/doc-utils';
 
 ## Usage
 
@@ -37,9 +37,28 @@ import {Button} from '@lendi-ui/button';
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
 
+## Variants 
+### Primary
+For important, mandatory or positive actions. 
+```jsx
+<Button variant="primary" size='sm'>Continue</Button>
+```
 
-### Notes
-Any properties starting with data- will be passed through to the button element.
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
+### Secondary
+For actions that are not mandatory or as important or as positive as the primary funtion. 
+May also be used in conjuction with a primary button to help a user make the best choice.
+```jsx
+<Button variant="secondary" size='sm'>Continue</Button>
+```
 
+### Emphasis
+Used in rare circumstances where an action is critical to the success of the users goals.
+```jsx
+<Button variant="emphasis" size='sm'>Continue</Button>
+```
+
+### Empty
+Used when adding a UI element. Most often used with an icon, but not exclusively.
+```jsx
+<Button variant="empty" size='sm'>Continue</Button>
 ```

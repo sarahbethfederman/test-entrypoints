@@ -28,7 +28,3 @@ import DatePicker from '@lendi-ui/date-picker';
   <PropTable.Entry name="yearOnChange" type="() => void" description="Year input change handler" />
   <PropTable.Entry name="yearValue" type="number" description="Value of the year input field"/>
 </PropTable>
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

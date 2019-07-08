@@ -27,10 +27,4 @@ import {Popover} from '@lendi-ui/popover';
   <PropTable.Entry name="position" type="{'top' | 'bottom' | 'left' | 'right'}" defaultValue="top" description="Popover content display position comparing with target component"/>
   <PropTable.Entry name="target" type="React.ReactNode" description="Target component that trigger Popover by clicking it"/>
 </PropTable>
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
-
 ```

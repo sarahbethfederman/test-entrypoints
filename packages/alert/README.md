@@ -14,16 +14,13 @@ yarn add @lendi-ui/alert
 import Alert from '@lendi-ui/alert';
 ```
 
-```
 ## Properties
 
+```
 <PropTable>
   <PropTable.Entry name='children' type='string' description='Alert content'/>
   <PropTable.Entry name='heading' type='string' description='Alert with heading'/>
   <PropTable.Entry name='variant' required type="{ 'error' | 'info' | 'success' | 'warn' }" description='Alert type'/>
 </PropTable>
-
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 
 ```

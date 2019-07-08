@@ -26,8 +26,4 @@ import { Checkbox, CheckboxGroup } from '@lendi-ui/checkbox';
   <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>) => void" description="Checkbox onChange function"/>
   <PropTable.Entry name="value" type="string" description="Checkbox value"/>
 </PropTable>
-
-### Notes
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
 ```

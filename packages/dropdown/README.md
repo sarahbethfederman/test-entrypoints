@@ -52,7 +52,3 @@ import Dropdown from '@lendi-ui/inline-dropdown';
   <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="The inline-dropdown size"/>
 </PropTable>
 ```
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>

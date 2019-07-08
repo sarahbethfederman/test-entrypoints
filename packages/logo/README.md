@@ -25,9 +25,4 @@ import Logo from '@lendi-ui/logo';
   <PropTable.Entry name="variant" type={ '"light" | "dark"' } defaultValue="dark" description=""/>
   <PropTable.Entry name="width" type={'string'} defaultValue="160px" description="The width of our logo"/>
 </PropTable>
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
 ```

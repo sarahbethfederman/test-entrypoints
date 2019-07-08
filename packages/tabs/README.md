@@ -31,7 +31,4 @@ import Tabs from '@lendi-ui/tabs';
   <PropTable.Entry name="href" type="string" description="URL to link to."/>
   <PropTable.Entry name="icon" type="React.ReactNode" description="Icon on top of text."/>
 </PropTable>
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```

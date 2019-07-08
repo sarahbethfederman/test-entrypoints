@@ -25,9 +25,4 @@ import MenuDropdown from '@lendi-ui/menu-dropdown';
   <PropTable.Entry name="onClick" type="MenuDropdown.Content.Item" defaultValue="none" description="Callback you pass down to be called when item is clicked"/>
   <PropTable.Entry name="icon" type="MenuDropdown.Content.Item" defaultValue="none" description="Icon for the content item"/>
 </PropTable>
-
-### Notes
-
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
-
 ```

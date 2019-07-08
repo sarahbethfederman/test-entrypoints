@@ -10,10 +10,8 @@ import { color } from '@lendi-ui/color';
 
 import { ThemeType, AppContext } from '../../Common';
 import metadata, { Doc } from '../../../utils/info';
+import { foundations } from '../../../utils/constants';
 import { Wrapper, LogoWrapper, NavGroup, SubNav } from './index.style';
-
-const foundations = ['color', 'typography', 'breakpoint', 'spacing', 'grid', 'theme'];
-const deprecatedPackages = ['reset'];
 
 const themeItems: { value: ThemeType; label: string }[] = [
   { value: 'Lendi', label: 'Lendi' },
@@ -23,6 +21,7 @@ const themeItems: { value: ThemeType; label: string }[] = [
 const ignoreIndexDoc = (doc: Doc) => doc.name !== 'index';
 
 const SidebarLink = styled(Link)`
+  display: block;
   ${link} text-decoration: none;
 `;
 
@@ -37,7 +36,9 @@ const SidebarGroup = styled.div`
         border-left: 4px solid ${color('secondary.500')};
       `;
     }
-    return `border-left: 4px solid transparent;`;
+    return css`
+      border-left: 4px solid transparent;
+    `;
   }};
 `;
 
@@ -53,9 +54,7 @@ export class Sidebar extends React.Component<SidebarProps> {
 
   get components() {
     const { workspaces } = metadata;
-    return workspaces.filter(
-      (workspace) => !foundations.includes(workspace.name) && !deprecatedPackages.includes(workspace.name)
-    );
+    return workspaces.filter((workspace) => !foundations.includes(workspace.name));
   }
 
   render() {
@@ -71,7 +70,8 @@ export class Sidebar extends React.Component<SidebarProps> {
 
         <NavGroup>
           <Heading size="sm">Getting Started</Heading>
-          <SidebarLink to={`/pages/getting-started`}>Setup</SidebarLink>
+          <SidebarLink to="/pages/getting-started">Setup</SidebarLink>
+          <SidebarLink to="/pages/whitelist">Whitelist</SidebarLink>
         </NavGroup>
 
         <NavGroup>

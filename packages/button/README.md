@@ -75,7 +75,4 @@ import { ButtonGroup } from '@lendi-ui/button';
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
 
-### Notes
-Any properties starting with data- will be passed through to the button element.
-<b>Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef</b>
 ```
