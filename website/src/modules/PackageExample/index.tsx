@@ -6,6 +6,7 @@ import ToggleSwitch from '@lendi-ui/toggle-switch';
 import metadata, { Workspace } from '../../utils/info';
 import { DocumentViewer, RouteMatch } from '../../utils/DocumentViewer';
 import { Content, DevToolbar, BackgroundEnum } from './index.style';
+import { AppContext, ThemeType } from '../Common';
 
 export interface PackageExampleState {
   background: BackgroundEnum;
@@ -59,28 +60,44 @@ export class PackageExample extends React.Component<PackageExampleProps, Package
       <>
         <Helmet>
           <title>{`${this.example.name} / ${this.workspace.name}`}</title>
+          <link></link>
         </Helmet>
-        <Content background={background}>
-          <DocumentViewer loader={this.example.load} />
-        </Content>
-        <DevToolbar>
-          <Button
-            href={transformPathToCode(this.props.match.url)}
-            variant="secondary"
-            after={<Build color="primary.500" />}
-          >
-            View Source Code
-          </Button>
-          <ToggleSwitch
-            isChecked={Boolean(background === 'light')}
-            label={background}
-            onChange={() => {
-              this.setState((prevState) => ({
-                background: prevState.background === BackgroundEnum.Light ? BackgroundEnum.Dark : BackgroundEnum.Light,
-              }));
-            }}
-          />
-        </DevToolbar>
+        <AppContext.Consumer>
+          {({ theme, changeTheme }) => (
+            <>
+              <Content background={background}>
+                <DocumentViewer loader={this.example.load} />
+              </Content>
+              <DevToolbar>
+                <Button
+                  variant="primary"
+                  onClick={() =>
+                    theme === 'Lendi' ? changeTheme('Domain' as ThemeType) : changeTheme('Lendi' as ThemeType)
+                  }
+                >
+                  {theme} Theme
+                </Button>
+                <Button
+                  href={transformPathToCode(this.props.match.url)}
+                  variant="secondary"
+                  after={<Build color="primary.500" />}
+                >
+                  View Source Code
+                </Button>
+                <ToggleSwitch
+                  isChecked={Boolean(background === 'light')}
+                  label={background}
+                  onChange={() => {
+                    this.setState((prevState) => ({
+                      background:
+                        prevState.background === BackgroundEnum.Light ? BackgroundEnum.Dark : BackgroundEnum.Light,
+                    }));
+                  }}
+                />
+              </DevToolbar>
+            </>
+          )}
+        </AppContext.Consumer>
       </>
     );
   }
