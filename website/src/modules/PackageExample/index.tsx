@@ -60,6 +60,7 @@ export class PackageExample extends React.Component<PackageExampleProps, Package
       <>
         <Helmet>
           <title>{`${this.example.name} / ${this.workspace.name}`}</title>
+          <link></link>
         </Helmet>
         <AppContext.Consumer>
           {({ theme, changeTheme }) => (
