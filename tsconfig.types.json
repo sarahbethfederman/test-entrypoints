@@ -3,6 +3,10 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "declaration": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lendi-ui/*": ["packages/@lendi-ui/*/src"]
+    }
   }
 }
