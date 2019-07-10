@@ -12,6 +12,7 @@ import {
 } from '../../common/LeftSidebar/index.style';
 import { HeaderLogo } from '../../common/Header/index.style';
 import { SidebarNav } from '../../common/SidebarNav';
+import { LeftSidebarItems } from '../../common/LeftSidebarItems';
 
 const defaultProps = {
   show: true,
@@ -69,6 +70,10 @@ describe('Authed LeftSidebar', () => {
 
     it('should render a SidebarNav', () => {
       expect(element.find(SidebarNav).length).toEqual(1);
+    });
+
+    it('should render a LeftSidebarItems', () => {
+      expect(element.find(LeftSidebarItems).length).toEqual(1);
     });
   });
 

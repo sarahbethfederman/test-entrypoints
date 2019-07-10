@@ -10,6 +10,8 @@ import { depth } from '@lendi-ui/depth';
 import { ButtonGroup } from '@lendi-ui/button';
 // @ts-ignore
 import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
+// @ts-ignore
+import * as DomainLogo from '../assets/domain-logo.svg';
 
 /**
  * OldHeaderLogo & OldMenuButton can be removed
@@ -18,6 +20,10 @@ import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
 
 interface HeaderWrapperProps {
   isAtTopOfPage: boolean;
+}
+
+interface CallToActionWrapperProps {
+  isAuth: boolean;
 }
 
 export const HeaderWrapper = styled.div`
@@ -126,22 +132,24 @@ export const OldHeaderLogo = styled(Logo)`
         `}
 `;
 
-export const HeaderLogo = styled.img.attrs({ src: NewLogo })`
+export const HeaderLogo = styled(Logo)`
   width: 98px;
   height: 30px;
   ${({ theme }) =>
     select('logo.logoName')({ theme }) === 'LendiLogo'
       ? css`
+          content: url(${NewLogo});
           ${gte('tablet')`
-      width: 104px;
-      height: 33px;
-    `};
+          width: 104px;
+          height: 33px;
+        `};
         `
       : css`
+          content: url(${DomainLogo});
           ${gte('tablet')`
-      width: 240px;
-      height: 33px;
-  `};
+          width: 240px;
+          height: 33px;
+        `};
         `}
 `;
 
@@ -172,18 +180,27 @@ export const CallToActionWrapper = styled.div`
   display: flex;
   height: auto;
 
+  ${({ isAuth }: CallToActionWrapperProps) =>
+    css`
+      a {
+        ${between('mobile', 'tablet')`
+          min-width: ${deriveSize(isAuth ? 6.7 : 6.1)};
+        `};
+      }
+    `};
+
   button {
     width: ${deriveSize(10)};
 
     ${between('mobile', 'tablet')`
-    background: none;
-    font-size: 0.645em;
-    border: none;
-    width: 100%;
-    text-transform: none;
-    min-width: ${deriveSize(6.8)};
-    ${mr('nil')};
-    ${px('nil')};
+      background: none;
+      font-size: 0.645em;
+      border: none;
+      width: 100%;
+      min-width: ${deriveSize(5)};
+      text-transform: uppercase;
+      ${mr('nil')};
+      ${px('nil')};
     `};
 
     ${gte('tablet')`
@@ -193,7 +210,6 @@ export const CallToActionWrapper = styled.div`
 
   a {
     ${between('mobile', 'tablet')`
-      min-width: ${deriveSize(7)};
       ${px('nil')}
     `}
   }

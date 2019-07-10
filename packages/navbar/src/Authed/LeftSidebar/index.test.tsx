@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { ExitToApp } from '@lendi-ui/icon';
 
-import { LeftSidebar } from '.';
+import { LeftSidebar, DASHBOARD_URL, PROPERTY_REPORTS_URL } from '.';
 import {
   Wrapper,
   Header,
@@ -14,10 +14,15 @@ import {
   CTAWrapper,
   ContactWrapper,
   ContactButton,
+  AuthedItemsWrapper,
+  AuthedItem,
+  AuthedItemLabel,
+  ChevronIcon,
 } from '../../common/LeftSidebar/index.style';
 import { HeaderLogo } from '../../common/Header/index.style';
 import { SidebarNav } from '../../common/SidebarNav';
 import { Application } from '../../types';
+import { LeftSidebarItems } from '../../common/LeftSidebarItems';
 
 const defaultProps = {
   show: true,
@@ -78,6 +83,26 @@ describe('Authed LeftSidebar', () => {
       expect(element.find(SidebarNav).length).toEqual(1);
     });
 
+    it('should render an AuthedItemsWrapper', () => {
+      expect(element.find(AuthedItemsWrapper).length).toEqual(1);
+    });
+
+    it('should render 2 AuthedItems', () => {
+      expect(element.find(AuthedItem).length).toEqual(2);
+    });
+
+    it('should render 2 AuthedItemLabels', () => {
+      expect(element.find(AuthedItemLabel).length).toEqual(2);
+    });
+
+    it('should render 2 ChevronIcons', () => {
+      expect(element.find(ChevronIcon).length).toEqual(2);
+    });
+
+    it('should render a LeftSidebarItems', () => {
+      expect(element.find(LeftSidebarItems).length).toEqual(1);
+    });
+
     it('should render a CTAWrapper', () => {
       expect(element.find(CTAWrapper).length).toEqual(1);
     });
@@ -106,6 +131,26 @@ describe('Authed LeftSidebar', () => {
 
       element.find(ContactButton).simulate('click');
       expect(mock).toBeCalled();
+    });
+  });
+
+  describe('AuthedItems', () => {
+    beforeEach(() => {
+      render();
+    });
+
+    describe('My dashboard', () => {
+      it('should link to the dashboard page', () => {
+        const dashboardButton = element.find(AuthedItem).at(0);
+        expect(dashboardButton.props().href).toEqual(DASHBOARD_URL);
+      });
+    });
+
+    describe('My property reports', () => {
+      it('should link to the property reports page', () => {
+        const propertyReportsButton = element.find(AuthedItem).at(1);
+        expect(propertyReportsButton.props().href).toEqual(PROPERTY_REPORTS_URL);
+      });
     });
   });
 

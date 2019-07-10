@@ -76,9 +76,9 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           <HeaderLogo />
         </LogoLink>
         <NavigationButtons />
-        <CallToActionWrapper>
+        <CallToActionWrapper isAuth={false}>
           <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>
-            CONTACT US
+            Contact Us
           </Button>
           <Button variant="primary" size="sm" href={SIGN_UP_LINK}>
             Sign up/ Continue

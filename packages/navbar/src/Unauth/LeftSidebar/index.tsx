@@ -11,6 +11,7 @@ import {
 import { HeaderLogo } from '../../common/Header/index.style';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../../common/SidebarNav';
 import Sidebar from '../../common/Sidebar';
+import { LeftSidebarItems } from '../../common/LeftSidebarItems';
 
 export type SidebarSectionProps = SectionProps;
 export type SidebarGroupProps = GroupProps;
@@ -20,7 +21,6 @@ export interface SidebarProps {
   show: boolean;
   onOpenRightSidebar: () => void;
   onHide: () => void;
-  children?: React.ReactElement<SidebarSectionProps> | React.ReactElement<SidebarSectionProps>[];
 }
 
 export class LeftSidebar extends React.Component<SidebarProps, {}> {
@@ -29,7 +29,7 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
   public static Item = SidebarNav.Item;
 
   public render() {
-    const { show, onHide = () => {}, onOpenRightSidebar = () => {}, children } = this.props;
+    const { show, onHide = () => {}, onOpenRightSidebar = () => {} } = this.props;
     return (
       <Sidebar side="left" show={show} onHide={onHide} includeClose={false}>
         <Wrapper>
@@ -54,7 +54,9 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
               </ContactButton>
             </ContactWrapper>
           </Header>
-          <SidebarNav labelText="Main Navigation">{children}</SidebarNav>
+          <SidebarNav labelText="Main Navigation">
+            <LeftSidebarItems />
+          </SidebarNav>
         </Wrapper>
       </Sidebar>
     );

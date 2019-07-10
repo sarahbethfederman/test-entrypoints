@@ -11,12 +11,20 @@ import {
   CTAButton,
   ContactButton,
   ContactWrapper,
+  AuthedItemsWrapper,
+  AuthedItem,
+  ChevronIcon,
+  AuthedItemLabel,
 } from '../../common/LeftSidebar/index.style';
 import { HeaderLogo } from '../../common/Header/index.style';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../../common/SidebarNav';
 import Sidebar from '../../common/Sidebar';
 import { Application } from '../../types';
 import { HOME_PAGE_LINK } from '../../constants/links';
+import { LeftSidebarItems } from '../../common/LeftSidebarItems';
+
+export const DASHBOARD_URL = '/dashboard';
+export const PROPERTY_REPORTS_URL = '/dashboard/my-property-report';
 
 export type SidebarSectionProps = SectionProps;
 export type SidebarGroupProps = GroupProps;
@@ -28,7 +36,6 @@ export interface SidebarProps {
   onOpenRightSidebar: () => void;
   onHide: () => void;
   onLogout: () => void;
-  children?: React.ReactElement<SidebarSectionProps> | React.ReactElement<SidebarSectionProps>[];
   params?: string;
 }
 
@@ -38,14 +45,7 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
   public static Item = SidebarNav.Item;
 
   public render() {
-    const {
-      application,
-      show,
-      onHide = () => {},
-      onOpenRightSidebar = () => {},
-      children,
-      onLogout = () => {},
-    } = this.props;
+    const { application, show, onHide = () => {}, onOpenRightSidebar = () => {}, onLogout = () => {} } = this.props;
     return (
       <Sidebar side="left" show={show} onHide={onHide} includeClose={false}>
         <Wrapper>
@@ -70,7 +70,19 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
               </ContactButton>
             </ContactWrapper>
           </Header>
-          <SidebarNav labelText="Main Navigation">{children}</SidebarNav>
+          <AuthedItemsWrapper>
+            <AuthedItem href={DASHBOARD_URL}>
+              <AuthedItemLabel>My dashboard</AuthedItemLabel>
+              <ChevronIcon />
+            </AuthedItem>
+            <AuthedItem href={PROPERTY_REPORTS_URL}>
+              <AuthedItemLabel>My property reports</AuthedItemLabel>
+              <ChevronIcon />
+            </AuthedItem>
+          </AuthedItemsWrapper>
+          <SidebarNav labelText="Main Navigation">
+            <LeftSidebarItems />
+          </SidebarNav>
           <CTAWrapper>
             <CTAButton variant="emphasis" href={application.continueURL || HOME_PAGE_LINK}>
               Continue Application

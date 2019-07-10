@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { bg } from '@lendi-ui/color';
+import { bg, color } from '@lendi-ui/color';
 import { px, py, mb, mr } from '@lendi-ui/spacing';
-import { link, Link } from '@lendi-ui/typography';
-import { Close } from '@lendi-ui/icon';
+import { link, Link, heading } from '@lendi-ui/typography';
+import { Close, ChevronRight } from '@lendi-ui/icon';
 import { gte } from '@lendi-ui/breakpoint';
 import { deriveSize } from '@lendi-ui/utils';
 import { Button } from '@lendi-ui/button';
@@ -80,3 +80,36 @@ export const ContactButton = styled(Button).attrs({
   size: 'xs',
   variant: 'secondary',
 })``;
+
+export const AuthedItemsWrapper = styled.div`
+  ${py('lg')};
+  ${px('md')};
+  ${heading({ size: 'sm' })};
+`;
+
+export const AuthedItem = styled.a`
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  ${mb('md')};
+  color: ${color('secondary.500')};
+
+  :last-of-type {
+    ${mb('nil')};
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+`;
+
+export const AuthedItemLabel = styled.span`
+  flex-grow: 1;
+`;
+
+export const ChevronIcon = styled(ChevronRight).attrs({
+  color: 'secondary.500',
+})`
+  height: 24px;
+  width: 24px;
+`;

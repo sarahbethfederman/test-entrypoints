@@ -11,11 +11,14 @@ export interface WrapperProps {
   transition: State;
 }
 
+const MINIMUM_GUTTER_WIDTH = '3rem';
+
 export const Wrapper = styled.div`
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 22.5rem;
+  width: calc(100% - ${MINIMUM_GUTTER_WIDTH});
+  max-width: 22.5rem;
   overflow: hidden;
   transition: transform 0.25s;
   ${bg('shade.0')} ${depth(1)}
