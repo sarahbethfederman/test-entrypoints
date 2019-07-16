@@ -32,6 +32,9 @@ export const HeaderWrapper = styled.div`
   ${py('md')};
   ${px('sm')};
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   position: fixed;
   top: 0;
@@ -135,6 +138,7 @@ export const OldHeaderLogo = styled(Logo)`
 export const HeaderLogo = styled(Logo)`
   width: 98px;
   height: 30px;
+  padding-bottom: 4px;
   ${({ theme }) =>
     select('logo.logoName')({ theme }) === 'LendiLogo'
       ? css`

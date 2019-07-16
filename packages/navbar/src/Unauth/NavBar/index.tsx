@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
+import { Application } from '../../types';
 import { Header } from '../Header';
 import { RightSidebar } from '../../common/RightSidebar';
 import { LeftSidebar } from '../LeftSidebar';
@@ -9,8 +10,9 @@ import { LeftSidebar } from '../LeftSidebar';
 export interface UnauthedNavProps extends LUIGlobalProps {
   // onChat?: () => void;
   // variant?: 'transparent' | 'white';
-  // params?: string;
-  // theme?: ThemeMap;
+  isAuthenticated?: boolean;
+  application?: Application;
+  params?: string;
 }
 
 interface UnauthedNavState {
@@ -49,16 +51,23 @@ export class UnauthedNavbar extends React.Component<UnauthedNavProps, UnauthedNa
   };
 
   render() {
+    const { isAuthenticated, application, params } = this.props;
     return (
-      <div>
-        <Header onOpenLeftSidebar={this.onOpenLeftSidebar} onOpenRightSidebar={this.onOpenRightSidebar} />
+      <nav>
+        <Header
+          onOpenLeftSidebar={this.onOpenLeftSidebar}
+          onOpenRightSidebar={this.onOpenRightSidebar}
+          isAuthenticated={isAuthenticated}
+          continueApplicationUrl={application && application.continueURL}
+          params={params}
+        />
         <LeftSidebar
           show={this.state.isLeftSidebarVisible}
           onHide={this.onCloseLeftSidebar}
           onOpenRightSidebar={this.onOpenRightSidebar}
         />
         <RightSidebar show={this.state.isRightSidebarVisible} onHide={this.onCloseRightSidebar} />
-      </div>
+      </nav>
     );
   }
 }

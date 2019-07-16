@@ -7,15 +7,19 @@ import {
   HeaderWrapper,
   HeaderLogo,
   LogoLink,
-  NavigationButtons,
   CallToActionWrapper,
   MenuButton,
   MenuButtonWrapper,
 } from '../../common/Header/index.style';
 import { browserSupportsPassiveListeners } from '../../utils';
+import { Application } from '../../types';
+import { NavigationButtons } from '../NavigationButtons/index';
 
 interface HeaderProps {
   params?: string;
+  application?: Application;
+  isAuthenticated?: boolean;
+  continueApplicationUrl?: string;
   onOpenRightSidebar: () => void;
   onOpenLeftSidebar: () => void;
 }
@@ -64,7 +68,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   };
 
   render() {
-    const { params = '', onOpenRightSidebar, onOpenLeftSidebar } = this.props;
+    const { params = '', onOpenRightSidebar, onOpenLeftSidebar, isAuthenticated, continueApplicationUrl } = this.props;
     const { isAtTopOfPage } = this.state;
 
     return (
@@ -75,7 +79,11 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
         <LogoLink href={`${HOME_PAGE_LINK}${params}`}>
           <HeaderLogo />
         </LogoLink>
-        <NavigationButtons />
+        <NavigationButtons
+          isAuthenticated={isAuthenticated}
+          params={params}
+          continueApplicationUrl={continueApplicationUrl}
+        />
         <CallToActionWrapper isAuth={false}>
           <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>
             Contact Us

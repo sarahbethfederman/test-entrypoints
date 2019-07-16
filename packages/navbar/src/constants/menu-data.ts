@@ -9,7 +9,7 @@ export interface MenuSubItem {
   link: string | undefined;
 }
 
-export const defaultMenu = [
+export const defaultMenu: MenuItem[] = [
   {
     label: 'About Us',
     link: undefined,

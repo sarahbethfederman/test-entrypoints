@@ -58,10 +58,6 @@ describe('Authed Navbar', () => {
       expect(element.find(HeaderLogo).length).toEqual(1);
     });
 
-    it('should render a <NavigationButtons>', () => {
-      expect(element.find(NavigationButtons).length).toEqual(1);
-    });
-
     it('should render a <CallToActionWrapper>', () => {
       expect(element.find(CallToActionWrapper).length).toEqual(1);
     });

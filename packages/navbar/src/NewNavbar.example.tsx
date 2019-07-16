@@ -39,9 +39,15 @@ class NewNavBarExample extends React.Component {
     return (
       <Wrapper>
         {this.state.isAuthenticated ? (
-          <AuthedNavbar application={{ continueURL: 'https://www.lendi.design' } as Application} />
+          <AuthedNavbar
+            isAuthenticated={this.state.isAuthenticated}
+            application={{ continueURL: 'https://www.lendi.design' } as Application}
+          />
         ) : (
-          <UnauthedNavbar />
+          <UnauthedNavbar
+            isAuthenticated={this.state.isAuthenticated}
+            application={{ continueURL: 'https://www.lendi.design' } as Application}
+          />
         )}
         <FillerOne>
           <ButtonWrapper

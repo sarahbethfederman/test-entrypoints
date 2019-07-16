@@ -12,6 +12,7 @@ export interface AuthedNavProps extends LUIGlobalProps {
   broker?: Broker;
   params?: string;
   onLogout?: () => void;
+  isAuthenticated?: boolean;
 }
 
 interface AuthedNavState {
@@ -50,14 +51,15 @@ export class AuthedNavbar extends React.Component<AuthedNavProps, AuthedNavState
   };
 
   render() {
-    const { onLogout = () => {}, application, broker } = this.props;
+    const { onLogout = () => {}, application, broker, isAuthenticated } = this.props;
 
     return (
-      <div>
+      <nav>
         <Header
           application={application}
           onOpenLeftSidebar={this.onOpenLeftSidebar}
           onOpenRightSidebar={this.onOpenRightSidebar}
+          isAuthenticated={isAuthenticated}
         />
         <LeftSidebar
           show={this.state.isLeftSidebarVisible}
@@ -77,7 +79,7 @@ export class AuthedNavbar extends React.Component<AuthedNavProps, AuthedNavState
             }
           }
         />
-      </div>
+      </nav>
     );
   }
 }
