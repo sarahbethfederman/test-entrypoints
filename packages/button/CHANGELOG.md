@@ -1,3 +1,7 @@
+## [6.0.1] - 2019-07-15 - [HUB-258](https://creditandfinance.atlassian.net/browse/HUB-258)
+### Changed
+- Change button font weight from 600 to 700.
+
 ## [6.0.0] - 2019-07-01 - [HUB-306](https://creditandfinance.atlassian.net/browse/HUB-306)
 ### Changed
 - Send back MouseEvent for Button onClick function.

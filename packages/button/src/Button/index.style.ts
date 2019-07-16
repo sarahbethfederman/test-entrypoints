@@ -87,7 +87,7 @@ const commonStyle = css`
   box-sizing: border-box;
   border: none;
   border-radius: ${select('borderRadius')};
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   text-align: center;
   transition: all 0.1s;
