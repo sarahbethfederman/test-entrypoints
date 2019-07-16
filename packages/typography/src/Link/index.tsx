@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
-import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { body, BodySize } from '../Body';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+import { color as getColor } from '@lendi-ui/color';
 
 export type LinkSize = BodySize;
 
@@ -15,22 +15,21 @@ export interface LinkOptions extends LUIGlobalProps {
 /**
  * Link mixin
  */
-export function link(options: LinkOptions = {}) {
-  const { color = 'primary.500', size } = options;
 
+export const link = ({ color, size }: LinkOptions = {}) => {
   return css`
-    ${body({ size, color })} font-weight: bold;
+    ${body({ size })} font-weight: bold;
     cursor: pointer;
     text-decoration: underline;
+    color: ${color ? getColor(color) : 'currentColor'};
 
     &:hover,
     &:focus,
     &:active {
       text-decoration: underline;
-      ${fg('primary.700')};
     }
   `;
-}
+};
 
 /**
  * Link component

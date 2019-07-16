@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { color as getColor } from '@lendi-ui/color';
 
 export interface IconProps {
-  color: string;
+  color?: string;
   width?: string;
   height?: string;
   className?: string;
@@ -18,7 +18,7 @@ export const IconWrapper = styled.span\`
   display: inline-block;
 
   & > svg {
-    fill: \${({ color }: IconProps) => getColor(color)};
+    fill: \${({ color }: IconProps) => color ? getColor(color) : 'currentColor'};
     width: inherit;
     height: inherit;
   }

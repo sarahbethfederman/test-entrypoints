@@ -1,3 +1,7 @@
+## [3.3.0] - 2019-07-16 - [HUB-330](https://creditandfinance.atlassian.net/browse/HUB-330)
+### Changed
+- Change link default color to 'currentColor'
+
 ## [3.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

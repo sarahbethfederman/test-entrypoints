@@ -1,3 +1,7 @@
+## [8.2.0] - 2019-07-16 - [HUB-330](https://creditandfinance.atlassian.net/browse/HUB-330)
+### Changed
+- Change icon default color to 'currentColor'
+
 ## [8.1.0] - 2019-06-07 - [HUB-302](https://creditandfinance.atlassian.net/browse/HUB-302)
 ### Changed
 - Added the vertical-split icon

@@ -22,7 +22,7 @@ const ignoreIndexDoc = (doc: Doc) => doc.name !== 'index';
 
 const SidebarLink = styled(Link)`
   display: block;
-  ${link} text-decoration: none;
+  ${link({ color: 'primary.500' })} text-decoration: none;
 `;
 
 const SidebarHeader = styled(SidebarLink)`

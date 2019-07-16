@@ -45,8 +45,13 @@ describe('Link', () => {
     expect(wrapper.find(Link)).toHaveStyleRule('font-size', '1em');
   });
 
-  it('should render default styles for color when no color is specified', () => {
-    render({ size: 'lg' });
+  it('should render parent color styles for color when no color is specified', () => {
+    render({});
+    expect(wrapper.find(Link)).toHaveStyleRule('color', 'currentColor');
+  });
+
+  it('should render color styles when color is specified', () => {
+    render({ size: 'lg', color: 'primary.500' });
     expect(wrapper.find(Link)).toHaveStyleRule('color', getColor('primary.500')({ theme }));
   });
 

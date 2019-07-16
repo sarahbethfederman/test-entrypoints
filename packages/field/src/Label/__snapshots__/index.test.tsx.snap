@@ -39,7 +39,6 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
   font-size: 1em;
   border: none;
   padding: 0;
-  color: #00c0a5;
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -47,6 +46,7 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
   cursor: pointer;
   -webkit-text-decoration: underline;
   text-decoration: underline;
+  color: currentColor;
   background-color: inherit;
 }
 
@@ -55,7 +55,6 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
 .c0:active {
   -webkit-text-decoration: underline;
   text-decoration: underline;
-  color: #007363;
 }
 
 <Component

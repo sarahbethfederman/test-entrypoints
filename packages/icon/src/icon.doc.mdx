@@ -12,7 +12,10 @@ import {Button} from '@lendi-ui/button';
     < AlarmAdd color="secondary.500" height="2em" width="2em" />
     <BugReport color="error.500" height="2em" width="2em" />
     <ColorLens color="primary.500" height="2em" width="2em" />
-
+    <br />
+    <br />
+    <Body color='primary.500'>This icon <DirectionsRun height="2em" width="2em" /> color depends on it's parent element.</Body>
+    <br />
   </div>
   <Button variant="secondary" after={<TransferWithinAStation color="primary.500" height="1em" width="1em" />}>transfer</Button>{' '}
   <Button variant="secondary" ariaLabel="Navigate Back"><ChevronLeft color="primary.500" width="20px" height="20px"/></Button>
@@ -21,7 +24,7 @@ import {Button} from '@lendi-ui/button';
 
 ## Properties
 <PropTable>
-  <PropTable.Entry required name="color" type={`string`} description="The Icon color"/>
+  <PropTable.Entry name="color" type={`string`} defaultValue='the parent element font color' description="The Icon color"/>
   <PropTable.Entry name="height" type={`string`} description="The Icon height"/>
   <PropTable.Entry name="width" type={`string`} description="The Icon width"/>
 </PropTable>

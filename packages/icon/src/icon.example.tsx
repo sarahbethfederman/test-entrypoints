@@ -6,7 +6,7 @@ import { Body } from '@lendi-ui/typography';
 import { p, mt } from '@lendi-ui/spacing';
 
 export interface IconProps {
-  color: string;
+  color?: string;
   width?: string;
   height?: string;
   className?: string;
