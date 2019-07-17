@@ -1,3 +1,7 @@
+## [2.3.1] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
+### updated
+- Bump patch version to reflect the relative path issue fix
+
 ## [2.3.0] - 2019-06-17 - [HUB-196](https://creditandfinance.atlassian.net/browse/HUB-196)
 ### Added
 - Added the fixedHeader prop to the Modal (defaults to false).

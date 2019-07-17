@@ -1,3 +1,7 @@
+## [4.0.3] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
+### updated
+- Bump patch version to reflect the relative path issue fix
+
 ## [4.0.2] - 2019-07-01 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
 ### Changed
 - Bug on Stateful comp like onselect - Consumer was getting first element only by mouse click - `fixed`. No issue with keyboard selection.

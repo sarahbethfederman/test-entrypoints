@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/toggle-switch",
-  "version": "2.2.1",
+  "version": "2.2.3",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

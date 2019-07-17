@@ -1,3 +1,7 @@
+## [2.4.2] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
+### updated
+- Bump patch version to reflect the relative path issue fix
+
 ## [2.4.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
