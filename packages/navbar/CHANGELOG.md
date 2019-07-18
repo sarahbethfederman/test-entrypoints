@@ -1,3 +1,7 @@
+## [2.4.3] - 2019-07-18 - [HUB-navbar-svg](https://creditandfinance.atlassian.net/browse/HUB-navbar-svg)
+### Changed
+- Add one more svg.d.ts module in typings
+
 ## [2.4.2] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
 ### updated
 - Bump patch version to reflect the relative path issue fix
