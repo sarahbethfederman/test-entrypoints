@@ -3,11 +3,11 @@ import Sidebar from '../Sidebar';
 import { Body } from '@lendi-ui/typography';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../SidebarNav';
 // @ts-ignore
-import * as facesAt1x from './images/faces.jpg';
+import * as facesAt1x from '../assets/faces.jpg';
 // @ts-ignore
-import * as facesAt2x from './images/faces2x.jpg';
+import * as facesAt2x from '../assets/faces2x.jpg';
 // @ts-ignore
-import * as facesAt4x from './images/faces4x.jpg';
+import * as facesAt4x from '../assets/faces4x.jpg';
 import {
   Wrapper,
   Header,

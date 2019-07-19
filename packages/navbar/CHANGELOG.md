@@ -1,3 +1,7 @@
+## [2.4.4] - 2019-07-19 - [HUB-navbar-hotfix](https://creditandfinance.atlassian.net/browse/HUB-navbar-hotfix)
+### Changed
+- change assets build script and folder structre
+
 ## [2.4.3] - 2019-07-18 - [HUB-navbar-svg](https://creditandfinance.atlassian.net/browse/HUB-navbar-svg)
 ### Changed
 - Add one more svg.d.ts module in typings
