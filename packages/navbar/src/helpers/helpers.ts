@@ -1,6 +1,6 @@
 import { ThemeMap } from '@lendi-ui/theme';
 import axios, { AxiosResponse } from 'axios';
-import { ApplicationInSF, Application, ApplicantInSF, Applicant, ApplicationStage, Broker } from '../types';
+import { ApplicationInSF, Application, ApplicantInSF, Applicant, ApplicationStage, Broker } from '../common/types';
 import { WindowPosition, Category } from '@lendi/lendi-analytics-package';
 import { trackNavigation } from '@lendi-ui/utils';
 
