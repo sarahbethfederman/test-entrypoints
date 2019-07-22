@@ -1,5 +1,9 @@
+## [2.3.2] - 2019-07-22 - [HUB-342](https://creditandfinance.atlassian.net/browse/HUB-342)
+### Changed
+- Update the Modal.Content section to use `overflow: auto` instead of `overflow: scroll`.
+
 ## [2.3.1] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
-### updated
+### Changed
 - Bump patch version to reflect the relative path issue fix
 
 ## [2.3.0] - 2019-06-17 - [HUB-196](https://creditandfinance.atlassian.net/browse/HUB-196)

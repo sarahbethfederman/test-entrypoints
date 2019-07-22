@@ -94,7 +94,7 @@ export const Container = styled.div`
       `}
       flex: 1 1 auto;
       min-height: 0;
-      overflow: scroll;
+      overflow: auto;
     }
 
     ${Footer} {
