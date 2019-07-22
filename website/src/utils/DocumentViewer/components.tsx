@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 import AddressPicker from '@lendi-ui/address-picker';
 import * as breakpoints from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '@lendi-ui/color';
-import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
 import Container, { container } from '@lendi-ui/container';
 import * as spacing from '@lendi-ui/spacing';
 import Grid, { grid, unit } from '@lendi-ui/grid';
@@ -48,7 +47,11 @@ import Tooltip from '@lendi-ui/tooltip';
 import * as fancyIcons from '@lendi-ui/fancy-icon';
 import AuthLoader from '@lendi-ui/auth-loader';
 import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
+import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
 
+// If there are any conflicts between names, the order of this
+// object will determine the preference. (this is the case with
+// icon.Link and typography.Link)
 const scope = {
   AddressPicker,
   styled,
@@ -66,10 +69,6 @@ const scope = {
   ...utils,
   heading,
   body,
-  link,
-  Heading,
-  Body,
-  Link,
   overline,
   Overline,
   Logo,
@@ -122,6 +121,10 @@ const scope = {
   AuthLoader,
   AccordionGroup,
   Accordion,
+  link,
+  Heading,
+  Body,
+  Link,
 };
 
 interface GenericProps {

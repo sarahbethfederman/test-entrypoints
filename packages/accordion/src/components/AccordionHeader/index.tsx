@@ -24,7 +24,7 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
             }}
           >
             <HeaderIconContentWrapper>
-              <ArrowIcon isRotate={context.isOpen} isDisabled={context.isDisabled}></ArrowIcon>
+              <ArrowIcon isRotate={context.isOpen} isDisabled={context.isDisabled} />
               <HeaderContent>{children}</HeaderContent>
             </HeaderIconContentWrapper>
             {after && <>{after}</>}

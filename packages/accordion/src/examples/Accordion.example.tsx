@@ -6,7 +6,7 @@ import WhiteListProps from './WhiteListPropsExample';
 
 export default () => (
   <>
-    <Grid></Grid>
+    <Grid />
     <hr />
     <Grid>
       <Grid.Unit size={{ mobile: 1, desktop: 1 / 3 }} style={{ padding: '10px', border: '1px solid' }}>

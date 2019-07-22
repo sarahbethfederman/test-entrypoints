@@ -64,7 +64,7 @@ describe('Accordion', () => {
             <Accordion.Header onClick={mockClickFn}>About</Accordion.Header>
             <Accordion.Content>Item 1</Accordion.Content>
           </Accordion>
-          <Accordion isOpen={false}></Accordion>
+          <Accordion isOpen={false} />
           <Accordion isDisabled={true} isOpen={false}>
             <Accordion.Header onClick={mockClickFn}>About</Accordion.Header>
             <Accordion.Content>Item 1</Accordion.Content>
