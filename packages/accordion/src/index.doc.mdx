@@ -1,0 +1,104 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+import styled from 'styled-components';
+import { pl, pt } from '@lendi-ui/spacing';
+
+## Usage
+
+```
+import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
+```
+
+```js
+
+const ContentWrapper = styled(Body)`
+  ${pl('xl')};
+  ${pt('xxs')};
+`;
+class PlaygoundComponent extends React.Component{
+  constructor() {
+    this.state = {
+      first: false,
+      second: false,
+    };
+  }
+  onClickHandler(event, whichOne) {
+    switch (whichOne) {
+      case 'first':
+        this.whichClicked = 'first;';
+        this.setState({ first: !this.state.first });
+        return;
+      case 'second':
+        this.whichClicked = 'second';
+        this.setState({ second: !this.state.second });
+        return;
+      default:
+        this.setState({ first: !this.state.first });
+        return;
+    }
+  }
+  render() {
+    return (
+      <>
+        <Body size="md">Consumer will manage the opening and closing of the Accordion</Body>
+        <AccordionGroup>
+          <Accordion isOpen={this.state.first} data-id="first">
+            <Accordion.Header after={<Lock color="primary.500" />} onClick={(event) => this.onClickHandler(event, 'first')}>
+              About
+            </Accordion.Header>
+            <Accordion.Content>
+              <ContentWrapper size="xs">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+              </ContentWrapper>
+            </Accordion.Content>
+          </Accordion>
+          <Accordion isOpen={this.state.second} data-id="second">
+            <Accordion.Header after={<Lock color="primary.500" />} onClick={(event) => this.onClickHandler(event, 'second')}>
+              Lorem Ipsum is simply dummy text of the printing
+            </Accordion.Header>
+            <Accordion.Content>Item 1</Accordion.Content>
+            <Accordion.Content>Item 2</Accordion.Content>
+            <Accordion.Content>Item 3</Accordion.Content>
+          </Accordion>
+          
+        </AccordionGroup>
+      </>
+    );
+  }
+  
+}
+
+render(<PlaygoundComponent/>)
+            
+```
+
+#### AccordionGroup Properties
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The AccordionGroup content"/>
+  <PropTable.Entry name="isOpen" type="boolean" defaultValue="false" description="To control opening and closing of Accordion Group"/>
+</PropTable>
+
+
+#### Accordion Properties
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The Accordion content"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue="false" description="To disable accordion"/>
+  <PropTable.Entry name="isOpen" type="boolean" defaultValue="false" description="To control opening and closing of accordion"/>
+</PropTable>
+
+
+#### Accordion.Header Properties
+<PropTable>
+  <PropTable.Entry name="after" type="React.ReactNode" description="The after icon on Accordion header"/>
+  <PropTable.Entry name="onClick" type="(event:React.SyntheticEvent) => void" description="Handle the click event"/>
+</PropTable>
+
+
+#### Accordion.Content Properties
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The Accordion content"/>
+</PropTable>

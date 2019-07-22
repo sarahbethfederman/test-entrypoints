@@ -47,6 +47,7 @@ import { AutoComplete, AutoCompleteStateless } from '@lendi-ui/auto-complete';
 import Tooltip from '@lendi-ui/tooltip';
 import * as fancyIcons from '@lendi-ui/fancy-icon';
 import AuthLoader from '@lendi-ui/auth-loader';
+import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
 
 const scope = {
   AddressPicker,
@@ -119,6 +120,8 @@ const scope = {
   Tooltip,
   ...fancyIcons,
   AuthLoader,
+  AccordionGroup,
+  Accordion,
 };
 
 interface GenericProps {

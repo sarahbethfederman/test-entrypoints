@@ -1,0 +1,35 @@
+{
+  "name": "@lendi-ui/accordion",
+  "version": "1.0.0",
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "main": "dist/cjs/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Lendi Devs",
+  "peerDependencies": {
+    "@lendi-ui/theme": "^6.0.0",
+    "@types/react": "^15 || ^16.4",
+    "react": "^15 || ^16.4",
+    "styled-components": "^3"
+  },
+  "scripts": {
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "build": "yarn run build:types && yarn run build:cjs"
+  },
+  "devDependencies": {
+    "@lendi-ui/typography": "^3.3.0"
+  },
+  "dependencies": {
+    "@lendi-ui/color": "^3.1.0",
+    "@lendi-ui/icon": "^8.2.0",
+    "@lendi-ui/spacing": "^4.1.1",
+    "@lendi-ui/typography": "^3.3.0",
+    "@lendi-ui/utils": "^2.5.0",
+    "create-react-context": "^0.3.0"
+  }
+}
