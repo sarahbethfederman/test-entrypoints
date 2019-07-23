@@ -42,9 +42,11 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
   }
 
   calcInputWidth = () => {
-    this.setState({
-      menuWidth: (this.inputWrapper.current!.firstElementChild as HTMLUListElement).offsetWidth,
-    });
+    if (this.inputWrapper.current) {
+      this.setState({
+        menuWidth: (this.inputWrapper.current.firstElementChild as HTMLUListElement).offsetWidth,
+      });
+    }
   };
 
   componentDidMount() {

@@ -1,3 +1,7 @@
+## [4.0.4] - 2019-07-23 - [HUB-345](https://creditandfinance.atlassian.net/browse/HUB-346)
+### updated
+- Added check to calcInputWidth to ensure component is mounted before executing setState
+
 ## [4.0.3] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
 ### updated
 - Bump patch version to reflect the relative path issue fix
@@ -10,7 +14,7 @@
 
 ## [4.0.1] - 2019-06-28 - [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
 - hotfix for TypeScript to ignore nullibility check on index type.
- 
+
 ## [4.0.0] - 2019-06-19 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
 ### Changed
 - Added AutoComplete Stateless component
@@ -23,7 +27,7 @@
 - changed the DataSourceItem value to take both 'string and number'
 - consumer can get value of DataSourceItem on onSelect by mouse and on enter of text-input
 - set typography on drop down items
-- on empty the text input or clicking cancel icon on the text input - should reset the onselect to empty. 
+- on empty the text input or clicking cancel icon on the text input - should reset the onselect to empty.
 - onChange prop
 
 ## [3.1.1] - 2019-06-04 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
@@ -62,7 +66,7 @@ relative path issue in distribution(dist) style definiton file.
 - replace `border-radius: 6px` with select function in theme
 
 ## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+
 ### Changed
 - Change module main entry point to esm in package.json
 
@@ -72,7 +76,7 @@ relative path issue in distribution(dist) style definiton file.
 ### Updated
 - Updated utils dependency to ^2.0.1.
 
-## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54) 
+## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Deleted
 - Remove the CJS bundles.
 
