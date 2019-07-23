@@ -4,6 +4,7 @@ import { normalise } from '@lendi-ui/utils';
 
 export const Legend = styled.legend`
   ${my('xs')};
+  font-weight: 700;
 `;
 
 export type Direction = 'row' | 'column';

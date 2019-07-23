@@ -13,7 +13,7 @@ export interface RadioGroupContext extends LUIFormProps {
 }
 
 export interface RadioGroupProps extends RadioGroupContext {
-  legend: string;
+  legend?: string;
   direction?: Direction;
   isDisabled?: boolean;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;

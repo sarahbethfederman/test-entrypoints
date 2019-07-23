@@ -1,3 +1,7 @@
+## [2.2.4] - 2019-07-22 - [HUB-310](https://creditandfinance.atlassian.net/browse/HUB-310)
+### Changed
+- Legend label text in Radio Group does not have responsive font size, default it to 'md'
+
 ## [2.2.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
 ### Changed
 - Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.

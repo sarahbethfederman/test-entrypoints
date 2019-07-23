@@ -23,7 +23,7 @@ export class RadioGroup extends React.Component<RadioGroupProps> {
       <RadioContext.Provider value={radioGroupWrapperProps}>
         <Fieldset className={className}>
           <Legend>
-            <Body>{legend}</Body>
+            <Body size="md">{legend}</Body>
           </Legend>
           <Wrapper direction={direction} {...radioProps}>
             {children}
