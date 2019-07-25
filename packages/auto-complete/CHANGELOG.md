@@ -1,9 +1,9 @@
 ## [4.0.4] - 2019-07-23 - [HUB-345](https://creditandfinance.atlassian.net/browse/HUB-346)
-### updated
+### Updated
 - Added check to calcInputWidth to ensure component is mounted before executing setState
 
 ## [4.0.3] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
-### updated
+### Updated
 - Bump patch version to reflect the relative path issue fix
 
 ## [4.0.2] - 2019-07-01 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)
@@ -13,6 +13,7 @@
 
 
 ## [4.0.1] - 2019-06-28 - [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
+### Changed
 - hotfix for TypeScript to ignore nullibility check on index type.
 
 ## [4.0.0] - 2019-06-19 - [HUB-254](https://creditandfinance.atlassian.net/browse/HUB-254)

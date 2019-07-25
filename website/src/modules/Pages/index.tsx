@@ -9,14 +9,23 @@ import { RouteMatch } from '../../utils/DocumentViewer';
 export type PageProps = {} & RouteMatch;
 
 export const Page = ({ match }: PageProps) => {
+  const pageName = match.params.page;
+  const Doc = React.lazy(() =>
+    import(`./${pageName}`).catch(() => ({
+      default: () => <DocumentViewer loader={() => import(`./${pageName}.mdx`)} />,
+    }))
+  );
+
   return (
     <>
       <Helmet>
-        <title>{match.params.page}</title>
+        <title>{pageName}</title>
       </Helmet>
       <Layout>
         <ContentWrapper>
-          <DocumentViewer loader={() => import(`./${match.params.page}.mdx`)} />
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <Doc />
+          </React.Suspense>
         </ContentWrapper>
       </Layout>
     </>

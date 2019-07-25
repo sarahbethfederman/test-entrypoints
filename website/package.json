@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.2.2",
   "dependencies": {
-    "@lendi-ui/icon": "^8.0.1",
     "@lendi-ui/fancy-icon": "^1.0.1",
+    "@lendi-ui/icon": "^8.0.1",
     "@lendi-ui/theme": "^6.1.0",
     "@mdx-js/tag": "^0.15.0",
     "@sentry/browser": "^5.4.0",
@@ -12,6 +12,7 @@
     "@types/react-helmet": "^5.0.7",
     "@types/react-router-dom": "^4.3.0",
     "core-js": "^3.1.0",
+    "dayjs": "^1.8.15",
     "html-loader": "^0.5.5",
     "markdown-loader": "^5.0.0",
     "marked": "^0.6.2",

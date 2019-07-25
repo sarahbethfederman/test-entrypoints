@@ -72,6 +72,7 @@ export class Sidebar extends React.Component<SidebarProps> {
           <Heading size="sm">Getting Started</Heading>
           <SidebarLink to="/pages/getting-started">Setup</SidebarLink>
           <SidebarLink to="/pages/whitelist">Whitelist</SidebarLink>
+          <SidebarLink to="/pages/changes">Recent Changes</SidebarLink>
         </NavGroup>
 
         <NavGroup>
