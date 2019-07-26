@@ -13,34 +13,42 @@ import {
   BarWrapper,
   Bar,
   ExpandMoreWrapper,
-  DisplayPanel,
-  HeadingWrapper,
-  HeadingLink,
-  PanelButton,
-  LinksGroup,
-  LinkItem,
-  PanelLink,
   ProfileWrapper,
+  DisplayPanel,
+  PanelLink,
   ProfileList,
   ProfileListItem,
   InputIcon,
   Line,
+  HeadingLink,
+} from '../../../Marketing/components/NavigationButtons/index.style';
+import {
+  SEMDisplayPanel,
+  UnitWrapper,
+  MenuWrapper,
+  SEMLinksGroup,
+  SEMPanelButton,
+  SEMLinkItem,
+  SEMPanelLink,
 } from './index.style';
-import { defaultMenu, MenuSubItem } from '../../../constants/menu-data';
-import { HOME_PAGE_LINK, SIGN_UP_LINK, DASHBOARD_LINK, PROPERTY_REPORT_LINK } from '../../../constants/links';
+import { SIGN_UP_LINK, DASHBOARD_LINK, PROPERTY_REPORT_LINK } from '../../../constants/links';
+import { defaultMenu, MenuSubItem, MenuItem } from '../../../constants/menu-data';
 
-export interface NavigationButtonsProps {
+export interface SEMNavigationButtonsProps {
   isAuthenticated?: boolean;
   continueApplicationUrl?: string;
   onLogout?: () => void;
   params?: string;
+  isOpenNavigationPanel?: boolean;
+  handleClick?: () => void;
+  CloseSEMDisplayPanel?: () => void;
 }
 
-export interface NavigationButtonsState {
+export interface SEMNavigationButtonsState {
   currentSelected: string;
 }
 
-export class NavigationButtons extends React.Component<NavigationButtonsProps, NavigationButtonsState> {
+export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsProps, SEMNavigationButtonsState> {
   private displayPanel: React.RefObject<HTMLElement> = createRef();
   private prevSelected: string = '';
   state = {
@@ -48,6 +56,8 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
   };
 
   onClick = (label: string) => {
+    const { CloseSEMDisplayPanel = () => {} } = this.props;
+    CloseSEMDisplayPanel();
     if (this.prevSelected === label) {
       this.setState({ currentSelected: '' });
     } else {
@@ -87,42 +97,6 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
     );
   };
 
-  renderDisplayPanel = () => {
-    const { isAuthenticated, params, continueApplicationUrl } = this.props;
-    const { currentSelected } = this.state;
-    const selectedItem = defaultMenu.find((menuItem) => menuItem.label === currentSelected)!;
-    return (
-      <DisplayPanel innerRef={this.displayPanel}>
-        <HeadingWrapper>
-          <HeadingLink href={`${selectedItem.link || ''}${params}`}>
-            <Heading size="md" color="secondary.500" mr="xxs">
-              {currentSelected}
-            </Heading>
-            <KeyboardArrowRight color="secondary.500" />
-          </HeadingLink>
-          {currentSelected === 'Home loans' && (
-            <PanelButton
-              size="xs"
-              variant={isAuthenticated ? 'emphasis' : 'primary'}
-              href={isAuthenticated ? continueApplicationUrl : SIGN_UP_LINK}
-            >
-              {isAuthenticated ? 'CONTINUE APPLICATION' : 'SIGN UP / CONTINUE'}
-            </PanelButton>
-          )}
-        </HeadingWrapper>
-        <LinksGroup>
-          {(selectedItem.children as MenuSubItem[]).map((child) => (
-            <LinkItem key={child.label}>
-              <PanelLink size="sm" color="shade.700" href={`${child.link}${params}`}>
-                {child.label}
-              </PanelLink>
-            </LinkItem>
-          ))}
-        </LinksGroup>
-      </DisplayPanel>
-    );
-  };
-
   renderProfilePanel = (onLogout: () => void) => (
     <DisplayPanel innerRef={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
       <ProfileList>
@@ -138,7 +112,7 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
         </ProfileListItem>
         <Line />
         <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" onClick={() => onLogout()}>
+          <PanelLink size="sm" color="shade.700" onClick={onLogout}>
             <InputIcon color="primary.500" />
             Log out
           </PanelLink>
@@ -147,27 +121,73 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
     </DisplayPanel>
   );
 
+  renderMenu = (menu: MenuItem) => {
+    const { isAuthenticated, params, continueApplicationUrl } = this.props;
+    return (
+      <MenuWrapper>
+        <div>
+          <HeadingLink href={`${menu.link || ''}${params}`}>
+            <Heading size="md" color="secondary.500" mr="xxs">
+              {menu.label}
+            </Heading>
+            <KeyboardArrowRight color="secondary.500" />
+          </HeadingLink>
+          {menu.label === 'Home loans' && (
+            <SEMPanelButton
+              size="xs"
+              variant={isAuthenticated ? 'emphasis' : 'primary'}
+              href={isAuthenticated ? continueApplicationUrl : SIGN_UP_LINK}
+            >
+              {isAuthenticated ? 'CONTINUE APPLICATION' : 'SIGN UP / CONTINUE'}
+            </SEMPanelButton>
+          )}
+        </div>
+        <SEMLinksGroup>
+          {(menu.children as MenuSubItem[]).map((child) => (
+            <SEMLinkItem key={child.label}>
+              <SEMPanelLink size="sm" color="shade.700" href={`${child.link}${params}`}>
+                {child.label}
+              </SEMPanelLink>
+            </SEMLinkItem>
+          ))}
+        </SEMLinksGroup>
+      </MenuWrapper>
+    );
+  };
+
   render() {
-    const { isAuthenticated, params, onLogout = () => {} } = this.props;
+    const { isAuthenticated, onLogout = () => {}, isOpenNavigationPanel = false, handleClick = () => {} } = this.props;
     const { currentSelected } = this.state;
+    const gridSize = defaultMenu.length;
     return (
       <Wrapper>
         <NavigationPanel>
-          <NavigationItem key="home">
-            <NavigationButton href={`${HOME_PAGE_LINK}${params}`}>
-              <BodyWrapper size="xs" color="secondary.500" style={{ paddingBottom: '2px' }}>
-                HOME
-              </BodyWrapper>
+          <NavigationItem key="more">
+            <NavigationButton onClick={handleClick}>
+              <BarWrapper>
+                <BodyWrapper size="xs" color="secondary.500">
+                  more
+                </BodyWrapper>
+                <ExpandMoreWrapper color="secondary.500" isSelected={isOpenNavigationPanel} />
+              </BarWrapper>
+              <Bar isSelected={isOpenNavigationPanel} />
             </NavigationButton>
           </NavigationItem>
-          {defaultMenu.map((menuItem) => this.renderNavigationLink(menuItem.label))}
-          {currentSelected && currentSelected !== 'profile' && this.renderDisplayPanel()}
         </NavigationPanel>
         {isAuthenticated && (
           <ProfileWrapper>
             {this.renderNavigationLink('profile')}
-            {currentSelected && currentSelected === 'profile' && this.renderProfilePanel(onLogout)}
+            {currentSelected === 'profile' && this.renderProfilePanel(onLogout)}
           </ProfileWrapper>
+        )}
+        {isOpenNavigationPanel && (
+          <SEMDisplayPanel>
+            {defaultMenu.map((menu) => (
+              <UnitWrapper size={1 / gridSize} key={menu.label}>
+                {this.renderMenu(menu)}
+              </UnitWrapper>
+            ))}
+          </SEMDisplayPanel>
         )}
       </Wrapper>
     );

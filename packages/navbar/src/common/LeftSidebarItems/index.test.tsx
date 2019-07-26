@@ -32,12 +32,12 @@ describe('LeftSidebarItems', () => {
       expect(element.find(Item).length).toEqual(5);
     });
 
-    it('should render four RightArrows', () => {
-      expect(element.find(RightArrow).length).toEqual(4);
+    it('should render five RightArrows', () => {
+      expect(element.find(RightArrow).length).toEqual(5);
     });
 
-    it('should render four Accordions', () => {
-      expect(element.find(Accordion).length).toEqual(4);
+    it('should render five Accordions', () => {
+      expect(element.find(Accordion).length).toEqual(5);
     });
 
     it('should render twenty-five SubItems', () => {

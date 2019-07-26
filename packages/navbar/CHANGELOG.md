@@ -1,3 +1,7 @@
+## [2.5.0] - 2019-07-23 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
+### Added
+- add SEMNavbar into navbar package
+
 ## [2.4.4] - 2019-07-19 - [HUB-navbar-hotfix](https://creditandfinance.atlassian.net/browse/HUB-navbar-hotfix)
 ### Changed
 - change assets build script and folder structre

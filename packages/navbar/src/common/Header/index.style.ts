@@ -39,6 +39,7 @@ export const HeaderWrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  height: 94px;
 
   ${({ isAtTopOfPage }: HeaderWrapperProps) => css`
     ${isAtTopOfPage
@@ -220,7 +221,7 @@ export const CallToActionWrapper = styled.div`
 `;
 
 export const MenuButtonWrapper = styled.a`
-  ${gte('tablet')`
+  ${gte('desktop')`
     display: none;
   `};
 
@@ -253,12 +254,16 @@ export const OldMenuButton = styled.button`
 `;
 
 export const MenuButton = styled(Menu)`
-  ${gte('tablet')`
+  ${gte('desktop')`
     display: none;
   `}
 
   position: absolute;
-  top: ${deriveSize(0.5)};
   height: ${deriveSize(1.6)};
   width: ${deriveSize(1.6)};
+`;
+
+export const HamburgerLogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
 `;

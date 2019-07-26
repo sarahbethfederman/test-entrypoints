@@ -14,22 +14,25 @@ import {
 } from '../../../common/Header/index.style';
 import { Application } from '../../../common/types';
 import { browserSupportsPassiveListeners } from '../../../utils';
-import { NavigationButtons } from '../NavigationButtons/index';
+import { SEMNavigationButtons } from '../SEMNavigationButtons/index';
 
-export interface HeaderProps {
+export interface SEMHeaderProps {
   application: Application;
   isAuthenticated?: boolean;
   params?: string;
   onOpenRightSidebar: () => void;
   onOpenLeftSidebar: () => void;
+  isOpenNavigationPanel?: boolean;
+  handleClick?: () => void;
+  CloseSEMDisplayPanel?: () => void;
 }
 
-interface HeaderState {
+interface SEMHeaderState {
   isAtTopOfPage: boolean;
 }
 
-export class Header extends React.Component<HeaderProps, HeaderState> {
-  constructor(props: HeaderProps) {
+export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
+  constructor(props: SEMHeaderProps) {
     super(props);
 
     this.supportsPassive = false;
@@ -60,12 +63,24 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   };
 
   render() {
-    const { params = '', onOpenRightSidebar, onOpenLeftSidebar, application, isAuthenticated = false } = this.props;
+    const {
+      params = '',
+      onOpenRightSidebar,
+      onOpenLeftSidebar,
+      application,
+      isAuthenticated = false,
+      isOpenNavigationPanel = false,
+      handleClick,
+      CloseSEMDisplayPanel = () => {},
+    } = this.props;
     const { isAtTopOfPage } = this.state;
     const continueApplicationUrl = application.continueURL;
 
     return (
-      <HeaderWrapper isAtTopOfPage={isAtTopOfPage}>
+      <HeaderWrapper
+        isAtTopOfPage={isOpenNavigationPanel ? false : isAtTopOfPage}
+        style={{ zIndex: isOpenNavigationPanel ? 6 : undefined }}
+      >
         <HamburgerLogoWrapper>
           <MenuButtonWrapper onClick={onOpenLeftSidebar}>
             <MenuButton color="primary.500" />
@@ -74,10 +89,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             <HeaderLogo />
           </LogoLink>
         </HamburgerLogoWrapper>
-        <NavigationButtons
+        <SEMNavigationButtons
           isAuthenticated={isAuthenticated}
           params={params}
           continueApplicationUrl={continueApplicationUrl}
+          isOpenNavigationPanel={isOpenNavigationPanel}
+          handleClick={handleClick}
+          CloseSEMDisplayPanel={CloseSEMDisplayPanel}
         />
         <CallToActionWrapper isAuth={isAuthenticated}>
           <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>

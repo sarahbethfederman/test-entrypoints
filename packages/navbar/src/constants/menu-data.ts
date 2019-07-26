@@ -12,7 +12,7 @@ export interface MenuSubItem {
 export const defaultMenu: MenuItem[] = [
   {
     label: 'About Us',
-    link: undefined,
+    link: '/about-us/',
     children: [
       {
         label: 'Your best interest',
@@ -22,39 +22,35 @@ export const defaultMenu: MenuItem[] = [
         label: 'Contact us',
         link: '/contactus/',
       },
-      {
-        label: 'Get inspired',
-        link: '/inspire/',
-      },
     ],
   },
   {
     label: 'Home loans',
-    link: undefined,
+    link: '/home-loans/',
     children: [
       {
         label: 'How to get a home loan',
         link: '/guides/',
       },
       {
+        label: 'Buy a home',
+        link: '/buying-property/purchase-property/',
+      },
+      {
         label: 'Refinance',
         link: '/owning-property/refinance/',
       },
       {
-        label: 'Lenders',
-        link: '/home-loans/lenders/',
+        label: 'Invest in property',
+        link: '/home-loans/property-investment/',
       },
       {
         label: 'Stamp duty',
         link: '/home-loans/stamp-duty/',
       },
       {
-        label: 'Buy a home',
-        link: '/buying-property/purchase-property/',
-      },
-      {
-        label: 'Invest in property',
-        link: '/home-loans/property-investment/',
+        label: 'Lenders',
+        link: '/home-loans/lenders/',
       },
       {
         label: 'FAQ',
@@ -64,15 +60,19 @@ export const defaultMenu: MenuItem[] = [
   },
   {
     label: 'Calculators',
-    link: undefined,
+    link: '/calculators/',
     children: [
       {
         label: 'Property report',
         link: '/property-report/',
       },
       {
-        label: 'Equity calculator',
-        link: '/calculators/home-loans/equity-calculator/',
+        label: 'Borrowing power calculator',
+        link: '/home-loans/calculators/borrowing-power-calculator/',
+      },
+      {
+        label: 'Repayment calculator',
+        link: '/calculators/home-loans/home-loan-repayment-calculator/',
       },
       {
         label: 'Stamp duty calculator',
@@ -83,26 +83,32 @@ export const defaultMenu: MenuItem[] = [
         link: '/calculators/home-loans/offset-calculator/',
       },
       {
-        label: 'Repayment calculator',
-        link: '/calculators/home-loans/home-loan-repayment-calculator/',
-      },
-      {
-        label: 'Debt consolidation calculator',
-        link: '/calculators/home-loans/debt-consolidation-calculator/',
-      },
-      {
-        label: 'Borrowing power calculator',
-        link: '/home-loans/calculators/borrowing-power-calculator/',
+        label: 'Equity calculator',
+        link: '/calculators/home-loans/equity-calculator/',
       },
       {
         label: 'LMI Calculator',
         link: '/calculators/home-loans/lmi-calculator/',
       },
+      {
+        label: 'Debt consolidation calculator',
+        link: '/calculators/home-loans/debt-consolidation-calculator/',
+      },
+    ],
+  },
+  {
+    label: 'Guides',
+    link: '/guides/',
+    children: [
+      {
+        label: 'Home loan terms',
+        link: '/glossary/',
+      },
     ],
   },
   {
     label: 'Blog',
-    link: undefined,
+    link: '/inspire/',
     children: [
       {
         label: 'Insights',
@@ -133,10 +139,5 @@ export const defaultMenu: MenuItem[] = [
         link: '/inspire/category/life-at-lendi/',
       },
     ],
-  },
-  {
-    label: 'Guides',
-    link: '/guides/',
-    children: [],
   },
 ];

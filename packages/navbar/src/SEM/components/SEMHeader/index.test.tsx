@@ -5,7 +5,8 @@ import Theme from '@lendi-ui/theme';
 import { Button } from '@lendi-ui/button';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 
-import { Header, HeaderProps } from './';
+import { SEMHeader, SEMHeaderProps } from './index';
+import { SEMNavigationButtons } from '../SEMNavigationButtons/index';
 import {
   MenuButtonWrapper,
   HamburgerLogoWrapper,
@@ -17,15 +18,15 @@ import {
 import { HOME_PAGE_LINK, SIGN_UP_LINK } from '../../../constants/links';
 import { Application } from '../../../common/types';
 
-let element: ReactWrapper<HeaderProps>;
+let element: ReactWrapper<SEMHeaderProps>;
 const onOpenLeftSidebar = () => {};
 const onOpenRightSidebar = () => {};
 const application = {} as Application;
 
-const render = (props: HeaderProps) => {
+const render = (props: SEMHeaderProps) => {
   element = mount(
     <Theme>
-      <Header {...props} />
+      <SEMHeader {...props} />
     </Theme>
   );
 };
@@ -36,12 +37,12 @@ describe('Authed Navbar', () => {
       render({ onOpenLeftSidebar, onOpenRightSidebar, application, isAuthenticated: true });
     });
 
-    it('should renderAuthed the <Header>', () => {
-      expect(element.find(Header).length).toEqual(1);
+    it('should renderAuthed the <SEMHeader>', () => {
+      expect(element.find(SEMHeader).length).toEqual(1);
     });
 
-    it('should renderAuthed a <MenuButtonWrapper>', () => {
-      expect(element.find(MenuButtonWrapper).length).toEqual(1);
+    it('should renderAuthed a <SEMNavigationButtons>', () => {
+      expect(element.find(SEMNavigationButtons).length).toEqual(1);
     });
 
     it('should renderAuthed a <HamburgerLogoWrapper>', () => {
@@ -119,6 +120,7 @@ describe('Authed Navbar', () => {
       beforeEach(() => {
         render({ onOpenLeftSidebar, onOpenRightSidebar: mock, application, isAuthenticated: true });
       });
+
       it('should open the onOpenRightSidebar method on click', () => {
         element
           .find(Button)

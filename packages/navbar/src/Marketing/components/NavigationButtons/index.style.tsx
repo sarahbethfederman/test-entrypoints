@@ -37,9 +37,7 @@ export const NavigationItem = styled.li`
 
 export const NavigationButton = styled(Link)`
   display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   overflow: hidden;
   ${p('xs')}
   text-decoration: none;
@@ -59,17 +57,21 @@ export const BodyWrapper = styled(Body)`
 
 export const BarWrapper = styled.div`
   display: inline-flex;
-  flex-direction: column;
+  align-items: center;
 `;
 
 export const Bar = styled.div`
   height: 2px;
-  width: ${({ isSelected }: { isSelected: boolean }) => (isSelected ? '100%' : '0')};
+  width: ${({ isSelected }: { isSelected: boolean }) => (isSelected ? 'calc(100% - 16px)' : '0')};
   ${bg('secondary.500')};
   transition: width ease-in-out 300ms;
 `;
 
 export const ExpandMoreWrapper = styled(ExpandMore)`
+  & svg {
+    display: block;
+  }
+
   font-weight: bold;
   transform: ${({ isSelected }: { isSelected: boolean }) => (isSelected ? 'rotate(180deg)' : undefined)};
   transition: transform ease-in-out 300ms;

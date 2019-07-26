@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ApplicationNavbar from './Application/index';
 import { MarketingNavbar } from './Marketing/index';
+import { SEMNavbar } from './SEM/index';
 import { Application, Broker } from './common/types';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
@@ -42,6 +43,16 @@ const Navbar = ({
     case 'Marketing':
       return (
         <MarketingNavbar
+          onChat={onChat}
+          onLogout={onLogout}
+          isAuthenticated={isAuthenticated}
+          application={application}
+          params={params}
+        />
+      );
+    case 'SEM':
+      return (
+        <SEMNavbar
           onChat={onChat}
           onLogout={onLogout}
           isAuthenticated={isAuthenticated}
