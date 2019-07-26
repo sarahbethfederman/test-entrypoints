@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

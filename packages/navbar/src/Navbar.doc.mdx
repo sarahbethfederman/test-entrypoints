@@ -60,7 +60,7 @@ const broker = await fetchBroker(baseURL, token);
   <PropTable.Entry name="onChat" type="() => void" required description="Callback function on chat button on the Right Sidebar"/>
   <PropTable.Entry name="onLogout" type="() => void" required description="Callback function on Log Out link in Left Sidebar"/>
   <PropTable.Entry name="params" type="string" description="Accept query parameters from users. This one will be deprecated soon."/>
-  <PropTable.Entry required name="type" type="{ 'SEM' | 'Application' | 'Marketing' }" description="Identify which kind of navbar."/>
+  <PropTable.Entry name="type" type="{ 'SEM' | 'Application' | 'Marketing' }" defaultValue="Application" description="Identify which kind of navbar."/>
   <PropTable.Entry name="variant" type={'"transparent" | "white"'} defaultValue="transparent" description=""/>
 </PropTable>
 <br/>

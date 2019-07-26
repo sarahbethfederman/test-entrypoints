@@ -7,7 +7,7 @@ import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export type NavbarType = 'SEM' | 'Application' | 'Marketing';
 export interface ApplicationNavbarProps extends LUIGlobalProps {
-  type: NavbarType;
+  type?: NavbarType;
   isAuthenticated?: boolean;
   application?: Application;
   broker?: Broker;
@@ -18,7 +18,7 @@ export interface ApplicationNavbarProps extends LUIGlobalProps {
 }
 
 const Navbar = ({
-  type,
+  type = 'Application',
   isAuthenticated,
   application = {},
   broker,

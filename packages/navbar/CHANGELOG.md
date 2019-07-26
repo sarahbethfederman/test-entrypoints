@@ -1,3 +1,7 @@
+## [2.5.1] - 2019-07-26 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
+### Changed
+- change `type` default to 'application'
+
 ## [2.5.0] - 2019-07-23 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
 ### Added
 - add SEMNavbar into navbar package
