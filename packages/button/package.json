@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -17,6 +17,7 @@
     "@lendi-ui/color": "^3.0.0",
     "@lendi-ui/depth": "^2.0.0",
     "@lendi-ui/spacing": "^4.0.0",
+    "@lendi-ui/spinner": "^2.2.1",
     "@lendi-ui/utils": "^2.5.0",
     "create-react-context": "^0.2.3",
     "prop-types": "^15.6.2",

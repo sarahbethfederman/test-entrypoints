@@ -1,3 +1,7 @@
+## [6.0.2] - 2019-07-29 - [HUB-371](https://creditandfinance.atlassian.net/browse/HUB-371)
+### Changed
+- Add in dependency for lendi-ui/spinner.
+
 ## [6.0.1] - 2019-07-15 - [HUB-258](https://creditandfinance.atlassian.net/browse/HUB-258)
 ### Changed
 - Change button font weight from 600 to 700.
