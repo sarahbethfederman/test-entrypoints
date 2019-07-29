@@ -7,7 +7,7 @@ import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { deriveSize, LUIGlobalProps } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
-type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+type Size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type HeadingSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type HeadingAlignment = AlignmentOrAlignmentMap;
 
@@ -20,34 +20,40 @@ export interface HeadingOptions extends LUIGlobalProps {
 const headingSizeMixin = (size: HeadingSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xxs':
+        return `
+        font-size: ${deriveSize(0.875)};
+        font-weight: 400;
+        line-height: calc(20 / 14);
+      `;
       case 'xs':
         return `
         font-size: ${deriveSize(1.125)};
-        font-weight: 500;
+        font-weight: 400;
         line-height: calc(24 / 18);
       `;
       case 'sm':
         return `
         font-size: ${deriveSize(1.375)};
-        font-weight: 500;
+        font-weight: 400;
         line-height: calc(28 / 22);
       `;
       case 'md':
         return `
         font-size: ${deriveSize(1.75)};
-        font-weight: 500;
+        font-weight: 400;
         line-height: calc(32 / 28);
       `;
       case 'lg':
         return `
         font-size: ${deriveSize(2.3125)};
-        font-weight: 500;
+        font-weight: 400;
         line-height: calc(40 / 37);
       `;
       case 'xl':
         return `
         font-size: ${deriveSize(2.875)};
-        font-weight: bold;
+        font-weight: 700;
         line-height: calc(50 / 46);
       `;
       default:
@@ -68,6 +74,8 @@ export const heading = (options: HeadingOptions) => {
 const componentBySize = (size: HeadingSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xxs':
+        return 'h6';
       case 'xs':
         return 'h5';
       case 'sm':

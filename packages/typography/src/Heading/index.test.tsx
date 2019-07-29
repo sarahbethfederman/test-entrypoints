@@ -5,7 +5,7 @@ import { color as getColor } from '@lendi-ui/color';
 import { Heading, HeadingSize, HeadingAlignment } from '../index';
 import { deriveSize } from '@lendi-ui/utils';
 
-const sizes: HeadingSize[] = ['xl', 'lg', 'md', 'sm', 'xs'];
+const sizes: HeadingSize[] = ['xl', 'lg', 'md', 'sm', 'xs', 'xxs'];
 const colors = ['primary.500', 'shade.0', 'shade.1000'];
 const alignments: HeadingAlignment[] = ['left', 'center', 'right', 'justify'];
 

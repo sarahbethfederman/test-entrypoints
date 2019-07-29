@@ -16,7 +16,7 @@ const render = (props) => {
 };
 
 describe('Body', () => {
-  const sizes: BodySize[] = [undefined, 'lg', 'md', 'sm'];
+  const sizes: BodySize[] = [undefined, 'lg', 'md', 'sm', 'xs', 'xxs'];
   const colors = [undefined, 'primary.500', 'shade.0', 'shade.1000'];
   const alignments: BodyAlign[] = [undefined, 'left', 'center', 'right', { mobile: 'left', desktop: 'right' }];
 

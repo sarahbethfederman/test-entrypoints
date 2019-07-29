@@ -78,7 +78,7 @@ exports[`Large Label should render LUI "md" heading component 1`] = `
   margin-top: 0;
   margin-bottom: 0;
   font-size: calc(2.3125 * var(--lendi-ui-size));
-  font-weight: 500;
+  font-weight: 400;
   line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
 }

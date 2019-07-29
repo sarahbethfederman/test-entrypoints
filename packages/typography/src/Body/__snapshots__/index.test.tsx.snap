@@ -70,3 +70,41 @@ exports[`Body should render styles for size undefined 1`] = `
   />
 </styled.p>
 `;
+
+exports[`Body should render styles for size xs 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: calc(0.75 * var(--lendi-ui-size));
+  line-height: calc(16 / 12);
+  font-family: 'Open Sans',sans-serif;
+}
+
+<styled.p
+  size="xs"
+>
+  <p
+    className="c0"
+    size="xs"
+  />
+</styled.p>
+`;
+
+exports[`Body should render styles for size xxs 1`] = `
+.c0 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  line-height: calc(14 / 10);
+  font-family: 'Open Sans',sans-serif;
+}
+
+<styled.p
+  size="xxs"
+>
+  <p
+    className="c0"
+    size="xxs"
+  />
+</styled.p>
+`;

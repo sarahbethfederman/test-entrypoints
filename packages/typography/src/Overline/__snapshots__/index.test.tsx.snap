@@ -5,8 +5,8 @@ exports[`Overline should render styles for size "lg" 1`] = `
   display: block;
   font-family: 'Cabin',sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: calc(0.875 * var(--lendi-ui-size));
-  font-weight: 600;
   line-height: calc(0.875 * var(--lendi-ui-size));
   -webkit-letter-spacing: calc(calc(0.875 * var(--lendi-ui-size))/10);
   -moz-letter-spacing: calc(calc(0.875 * var(--lendi-ui-size))/10);
@@ -38,8 +38,8 @@ exports[`Overline should render styles for size "md" 1`] = `
   display: block;
   font-family: 'Cabin',sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: calc(0.75 * var(--lendi-ui-size));
-  font-weight: 600;
   line-height: calc(0.75 * var(--lendi-ui-size));
   -webkit-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   -moz-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
@@ -71,8 +71,8 @@ exports[`Overline should render styles for size "sm" 1`] = `
   display: block;
   font-family: 'Cabin',sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: calc(0.625 * var(--lendi-ui-size));
-  font-weight: 600;
   line-height: calc(0.625 * var(--lendi-ui-size));
   -webkit-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
@@ -104,8 +104,8 @@ exports[`Overline should render styles for size "xl" 1`] = `
   display: block;
   font-family: 'Cabin',sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: var(--lendi-ui-size);
-  font-weight: 600;
   line-height: var(--lendi-ui-size);
   -webkit-letter-spacing: calc(var(--lendi-ui-size)/10);
   -moz-letter-spacing: calc(var(--lendi-ui-size)/10);
@@ -127,6 +127,72 @@ exports[`Overline should render styles for size "xl" 1`] = `
     <span
       className="c0"
       size="xl"
+    />
+  </styled.span>
+</Component>
+`;
+
+exports[`Overline should render styles for size "xs" 1`] = `
+.c0 {
+  display: block;
+  font-family: 'Cabin',sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  line-height: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  -ms-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  color: #929292;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<Component
+  size="xs"
+>
+  <styled.span
+    size="xs"
+  >
+    <span
+      className="c0"
+      size="xs"
+    />
+  </styled.span>
+</Component>
+`;
+
+exports[`Overline should render styles for size "xxs" 1`] = `
+.c0 {
+  display: block;
+  font-family: 'Cabin',sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: calc(0.625 * var(--lendi-ui-size));
+  line-height: calc(0.625 * var(--lendi-ui-size));
+  -webkit-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  -ms-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
+  color: #929292;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<Component
+  size="xxs"
+>
+  <styled.span
+    size="xxs"
+  >
+    <span
+      className="c0"
+      size="xxs"
     />
   </styled.span>
 </Component>

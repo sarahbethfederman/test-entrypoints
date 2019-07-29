@@ -6,7 +6,7 @@ exports[`Legal should mount 1`] = `
   margin-bottom: 0;
   color: #ffffff;
   font-size: calc(1.75 * var(--lendi-ui-size));
-  font-weight: 500;
+  font-weight: 400;
   line-height: calc(32 / 28);
   font-family: 'Cabin',sans-serif;
   margin-top: var(--lendi-ui-size);

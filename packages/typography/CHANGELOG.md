@@ -1,3 +1,7 @@
+## [3.4.0] - 2019-07-29 - [HUB-338](https://creditandfinance.atlassian.net/browse/HUB-338)
+### Added
+- Add 'xxs' type of Body, Heading, Link and Overline.
+
 ## [3.3.0] - 2019-07-16 - [HUB-330](https://creditandfinance.atlassian.net/browse/HUB-330)
 ### Changed
 - Change link default color to 'currentColor'

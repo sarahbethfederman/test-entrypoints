@@ -20,8 +20,8 @@ exports[`TextBubble should mount 1`] = `
   display: block;
   font-family: 'Cabin',sans-serif;
   text-transform: uppercase;
+  font-weight: 400;
   font-size: calc(0.75 * var(--lendi-ui-size));
-  font-weight: 600;
   line-height: calc(0.75 * var(--lendi-ui-size));
   -webkit-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   -moz-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);

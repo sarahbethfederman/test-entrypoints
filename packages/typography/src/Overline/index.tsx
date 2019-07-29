@@ -7,38 +7,36 @@ import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
-type Size = 'sm' | 'md' | 'lg' | 'xl';
+type Size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type OverlineSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type OverlineAlignment = AlignmentOrAlignmentMap;
 
 const overlineSizeMixin = (size: OverlineSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xxs':
+      case 'xs':
       case 'sm':
         return `
         font-size: ${deriveSize(0.625)};
-        font-weight: 600;
         line-height: ${deriveSize(0.625)};
         letter-spacing: calc(${deriveSize(0.625)}/10);
       `;
       case 'md':
         return `
         font-size: ${deriveSize(0.75)};
-        font-weight: 600;
         line-height: ${deriveSize(0.75)};
         letter-spacing: calc(${deriveSize(0.75)}/10);
       `;
       case 'lg':
         return `
         font-size: ${deriveSize(0.875)};
-        font-weight: 600;
         line-height: ${deriveSize(0.875)};
         letter-spacing: calc(${deriveSize(0.875)}/10);
       `;
       case 'xl':
         return `
         font-size: ${deriveSize(1)};
-        font-weight: 600;
         line-height: ${deriveSize(1)};
         letter-spacing: calc(${deriveSize(1)}/10);
       `;
@@ -71,6 +69,7 @@ export const overline = (options: OverlineOptions) => {
     display: block;
     font-family: ${select('typography.heading.fontFamily')};
     text-transform: uppercase;
+    font-weight: 400;
     ${overlineSizeMixin(size)}
     ${align && alignMixin(align)}
     ${color && fg(color)}
