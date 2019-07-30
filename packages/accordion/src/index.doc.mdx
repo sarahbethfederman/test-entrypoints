@@ -10,10 +10,7 @@ import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
 
 ```js
 
-const ContentWrapper = styled(Body)`
-  ${pl('xl')};
-  ${pt('xxs')};
-`;
+
 class PlaygoundComponent extends React.Component{
   constructor() {
     this.state = {
@@ -43,22 +40,22 @@ class PlaygoundComponent extends React.Component{
         <AccordionGroup>
           <Accordion isOpen={this.state.first} data-id="first">
             <Accordion.Header after={<Lock color="primary.500" />} onClick={(event) => this.onClickHandler(event, 'first')}>
-              About
+              <>About</>
             </Accordion.Header>
             <Accordion.Content>
-              <ContentWrapper size="xs">
+             
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                 release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum.
-              </ContentWrapper>
+             
             </Accordion.Content>
           </Accordion>
           <Accordion isOpen={this.state.second} data-id="second">
             <Accordion.Header after={<Lock color="primary.500" />} onClick={(event) => this.onClickHandler(event, 'second')}>
-              Lorem Ipsum is simply dummy text of the printing
+              <>Lorem Ipsum is simply dummy text of the printing</>
             </Accordion.Header>
             <Accordion.Content>Item 1</Accordion.Content>
             <Accordion.Content>Item 2</Accordion.Content>

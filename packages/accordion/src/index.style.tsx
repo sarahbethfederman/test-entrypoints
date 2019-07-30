@@ -18,7 +18,7 @@ export const AccordionWrapper = styled.div`
 `;
 
 export const HeaderContent = styled.span`
-  ${pl('xxs')};
+  ${px('xxxs')};
   word-wrap: break-word;
 `;
 
@@ -26,12 +26,12 @@ export const HeaderIconContentWrapper = styled.div`
   ${pr('xs')}
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 `;
 
 export const HeaderWrapper = styled.button`
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
   border: none;
   text-align: left;
@@ -72,7 +72,7 @@ interface ArrowIconProps {
   isRotate: boolean;
 }
 export const ArrowIcon = styled(ArrowDropDown).attrs({
-  color: 'primary.500',
+  color: 'secondary.500',
 })`
   height: 20px;
   width: 20px;
@@ -96,6 +96,10 @@ export const ArrowIcon = styled(ArrowDropDown).attrs({
 
 export const HeaderContentWrapper = styled.div`
   ${pl('xs')};
+`;
+
+export const PaddedItem = styled.div`
+  ${px('xxxs')};
 `;
 
 export const AccordionItemWrapper = styled.div`

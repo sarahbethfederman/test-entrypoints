@@ -6,9 +6,6 @@ import { Check, Lock } from '@lendi-ui/icon';
 import styled from 'styled-components';
 import { pl } from '@lendi-ui/spacing';
 
-const ContentWrapper = styled(Body)`
-  ${pl('xl')};
-`;
 export default class SimpleAccordionExample extends React.Component {
   whichClicked: string = '';
   state = {
@@ -58,14 +55,12 @@ export default class SimpleAccordionExample extends React.Component {
               About
             </Accordion.Header>
             <Accordion.Content>
-              <ContentWrapper size="xs">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-              </ContentWrapper>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
             </Accordion.Content>
           </Accordion>
           <Accordion isOpen={this.state.second} data-id="second">

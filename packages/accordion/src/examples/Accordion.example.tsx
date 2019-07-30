@@ -3,6 +3,7 @@ import Grid from '@lendi-ui/grid';
 import SimpleAccordionExample from './SimpleExample';
 import AccordionGroupExample from './AccordionGroupExample';
 import WhiteListProps from './WhiteListPropsExample';
+import SizeAndAlignment from './SizeAndAlignmentExample';
 
 export default () => (
   <>
@@ -17,6 +18,7 @@ export default () => (
       </Grid.Unit>
       <Grid.Unit size={{ mobile: 1, desktop: 1 / 3 }} style={{ padding: '10px', border: '1px solid' }}>
         <WhiteListProps />
+        <SizeAndAlignment />
       </Grid.Unit>
     </Grid>
   </>
