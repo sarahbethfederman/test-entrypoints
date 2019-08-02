@@ -41,8 +41,28 @@ exports[`Text area should render the text area component 1`] = `
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <TextArea
@@ -112,8 +132,28 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -179,10 +219,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
 <styled.textarea
   className=""
   disabled={true}
@@ -245,8 +281,28 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -311,8 +367,28 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -377,8 +453,28 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -444,10 +540,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
 <styled.textarea
   className=""
   disabled={true}
@@ -510,8 +602,28 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -576,8 +688,28 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -642,8 +774,28 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -709,10 +861,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
-}
-
 <styled.textarea
   className=""
   disabled={true}
@@ -775,8 +923,28 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea
@@ -841,8 +1009,28 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: #adadad;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: hoverColor;
+  -moz-var: hoverColor;
+  -ms-var: hoverColor;
+  var: hoverColor;
+  return: hoverColor;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  hoverColor: = color_1.color('shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  hoverColor: = color_1.color('shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  hoverColor: = color_1.color('error.500');
 }
 
 <styled.textarea

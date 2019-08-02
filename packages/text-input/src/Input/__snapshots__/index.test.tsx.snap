@@ -31,8 +31,8 @@ exports[`input should render the whole input component and a text input 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #c8c8c8;
   width: auto;
   background-color: #ffffff;
@@ -40,8 +40,28 @@ exports[`input should render the whole input component and a text input 1`] = `
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c1:hover:not(:focus) {
-  border: 1px solid #929292;
+.c1:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c1:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c1:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c1:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c2 {
@@ -52,12 +72,12 @@ exports[`input should render the whole input component and a text input 1`] = `
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c2::-webkit-input-placeholder {
@@ -289,8 +309,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #c8c8c8;
   width: 100%;
   background-color: #ffffff;
@@ -298,8 +318,28 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -310,12 +350,12 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -399,18 +439,14 @@ exports[`input variations of the text input in all given sizes lg should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   cursor: not-allowed;
   width: auto;
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
   width: calc(21.5 * var(--lendi-ui-size));
-}
-
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
 }
 
 .c1 {
@@ -421,12 +457,12 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -510,8 +546,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #ff1c4a;
   width: auto;
   background-color: #ffffff;
@@ -519,8 +555,28 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -531,12 +587,12 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -620,8 +676,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #f8f8f8;
   width: auto;
   background-color: transparent;
@@ -629,8 +685,28 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -641,12 +717,12 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   background-color: transparent;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -730,8 +806,8 @@ exports[`input variations of the text input in all given sizes md should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #c8c8c8;
   width: 100%;
   background-color: #ffffff;
@@ -739,8 +815,28 @@ exports[`input variations of the text input in all given sizes md should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -751,12 +847,12 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -840,18 +936,14 @@ exports[`input variations of the text input in all given sizes md should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   cursor: not-allowed;
   width: auto;
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
   width: calc(21.5 * var(--lendi-ui-size));
-}
-
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
 }
 
 .c1 {
@@ -862,12 +954,12 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -951,8 +1043,8 @@ exports[`input variations of the text input in all given sizes md should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #ff1c4a;
   width: auto;
   background-color: #ffffff;
@@ -960,8 +1052,28 @@ exports[`input variations of the text input in all given sizes md should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -972,12 +1084,12 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1061,8 +1173,8 @@ exports[`input variations of the text input in all given sizes md should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #f8f8f8;
   width: auto;
   background-color: transparent;
@@ -1070,8 +1182,28 @@ exports[`input variations of the text input in all given sizes md should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -1082,12 +1214,12 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   background-color: transparent;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1171,8 +1303,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #c8c8c8;
   width: 100%;
   background-color: #ffffff;
@@ -1180,8 +1312,28 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -1192,12 +1344,12 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1281,18 +1433,14 @@ exports[`input variations of the text input in all given sizes sm should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   cursor: not-allowed;
   width: auto;
   background-color: #f8f8f8;
   border: 1px solid #e3e3e3;
   height: calc(3 * var(--lendi-ui-size));
   width: calc(21.5 * var(--lendi-ui-size));
-}
-
-.c0:hover:not(:focus) {
-  border: 1px solid #929292;
 }
 
 .c1 {
@@ -1303,12 +1451,12 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1392,8 +1540,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #ff1c4a;
   width: auto;
   background-color: #ffffff;
@@ -1401,8 +1549,28 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ff1c4a;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -1413,12 +1581,12 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #474747;
   background-color: #ffffff;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {
@@ -1502,8 +1670,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border-radius: 6px;
   box-sizing: border-box;
+  border-radius: 6px;
   border: 1px solid #f8f8f8;
   width: auto;
   background-color: transparent;
@@ -1511,8 +1679,28 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) {
-  border: 1px solid #ffffff;
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
 }
 
 .c1 {
@@ -1523,12 +1711,509 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
+  font-size: var(--lendi-ui-size);
   border-radius: 6px;
-  font-size: calc(1.125 * var(--lendi-ui-size));
   color: #ffffff;
   background-color: transparent;
   font-family: 'Open Sans',sans-serif;
-  padding: 0 calc(0.75 * var(--lendi-ui-size));
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={false}
+  isInverse={true}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      disabled={false}
+      fontSize="md"
+      isError={false}
+      isInverse={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      type="text"
+    >
+      <input
+        className="c1"
+        disabled={false}
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes xs should render 100% width of with isFullWidth prop 1`] = `
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
+  width: 100%;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={false}
+  isFullWidth={true}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      disabled={false}
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      type="text"
+    >
+      <input
+        className="c1"
+        disabled={false}
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes xs should render the component in a disabled state with the isDisabled prop 1`] = `
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  cursor: not-allowed;
+  width: auto;
+  background-color: #f8f8f8;
+  border: 1px solid #e3e3e3;
+  height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={true}
+  isError={false}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      disabled={true}
+      fontSize="md"
+      isError={false}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      type="text"
+    >
+      <input
+        className="c1"
+        disabled={true}
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes xs should render the component with a red border if the isError state is true 1`] = `
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #ff1c4a;
+  width: auto;
+  background-color: #ffffff;
+  height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c1::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c1::-moz-placeholder {
+  color: #adadad;
+}
+
+.c1:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c1::placeholder {
+  color: #adadad;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<styled.div
+  isDisabled={false}
+  isError={true}
+  isFullWidth={false}
+  isInverse={false}
+  size="md"
+>
+  <div
+    className="c0"
+    size="md"
+  >
+    <styled.input
+      disabled={false}
+      fontSize="md"
+      isError={true}
+      isInverse={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      type="text"
+    >
+      <input
+        className="c1"
+        disabled={false}
+        fontSize="md"
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        type="text"
+      />
+    </styled.input>
+  </div>
+</styled.div>
+`;
+
+exports[`input variations of the text input in all given sizes xs should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #f8f8f8;
+  width: auto;
+  background-color: transparent;
+  height: calc(3 * var(--lendi-ui-size));
+  width: calc(21.5 * var(--lendi-ui-size));
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) {
+  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
+  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
+  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
+  var: isInverse = _a.isInverse, isError = _a.isError;
+  -webkit-var: color;
+  -moz-var: color;
+  -ms-var: color;
+  var: color;
+  return: color;
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
+  color: = theme_1.select('colors.shade.400');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
+  color: = theme_1.select('colors.shade.0');
+}
+
+.c0:hover:not(:focus) border:1px solid function (_a) else {
+  color: = theme_1.select('colors.error.500');
+}
+
+.c1 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
 }
 
 .c1::-webkit-input-placeholder {

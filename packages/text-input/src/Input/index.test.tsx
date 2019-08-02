@@ -5,7 +5,7 @@ import { Input, supportedTypes } from './index';
 import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 import { color } from '@lendi-ui/color';
 
-const sizes: InputSize[] = ['lg', 'md', 'sm'];
+const sizes: InputSize[] = ['lg', 'md', 'sm', 'xs'];
 let element;
 
 function render(props) {

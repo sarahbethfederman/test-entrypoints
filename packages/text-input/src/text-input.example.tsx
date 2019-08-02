@@ -1,13 +1,15 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Input } from './index';
-import { Email, Lock } from '@lendi-ui/icon';
+import { Email, Lock, Search } from '@lendi-ui/icon';
 import { pl, pr } from '@lendi-ui/spacing';
 
 export interface ExampleState {
   value: string;
 }
-
+const SearchIcon = styled(Search)`
+  margin-left: 10px;
+`;
 const EmailIcon = styled(Email)`
   ${pl('sm')}
   ${pr('xxxs')}
@@ -32,6 +34,15 @@ class Example extends React.Component<{}, ExampleState> {
     const { value } = this.state;
     return (
       <div>
+        <br />
+        <br />
+        <Input
+          size="xs"
+          placeholder="Input here ..."
+          onChange={this.onChange}
+          isFullWidth={false}
+          before={<SearchIcon color="primary.500" width="12px" height="12px" />}
+        />
         <br />
         <br />
         <Input
@@ -87,6 +98,7 @@ class Example extends React.Component<{}, ExampleState> {
           placeholder="Both 'isDisabled' and 'disabled' - Preference is given to InputProps - 'isDisabled"
           onChange={this.onChange}
         />
+        <br /> <br />
         <Input value={value} type={'number'} placeholder="Number type" onChange={this.onChange} />
         <br /> <br />
         <Input value={value} type={'email'} placeholder="Email type" onChange={this.onChange} />

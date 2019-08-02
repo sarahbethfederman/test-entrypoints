@@ -3,13 +3,21 @@ import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { InputButton } from '../InputButton/index';
+import { gte } from '@lendi-ui/breakpoint';
 
-type Size = 'sm' | 'md' | 'lg';
+type Size = 'xs' | 'sm' | 'md' | 'lg';
 export type InputSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 
 const heightBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          height: ${deriveSize(1.57)};
+          ${gte('desktop')`
+            height: ${deriveSize(1.625)};
+          `}
+      `;
       case 'sm':
         return `
           height: ${deriveSize(2.5)};
@@ -30,18 +38,25 @@ const heightBySizeMixin = (size: InputSize) =>
 const fontBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          font-size: ${deriveSize(0.7857)};
+          ${gte('desktop')`
+            font-size: ${deriveSize(0.75)};
+          `}
+      `;
       case 'sm':
         return `
-        font-size: ${deriveSize(1)};
-    `;
+        font-size: ${deriveSize(0.875)};
+      `;
       case 'md':
         return `
-        font-size: ${deriveSize(1.125)};
-    `;
+        font-size: ${deriveSize(1)};
+      `;
       case 'lg':
         return `
-        font-size: ${deriveSize(1.375)};
-    `;
+        font-size: ${deriveSize(1.125)};
+      `;
       default:
         return undefined;
     }
@@ -88,11 +103,11 @@ export const Layout = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   ${({ isFullWidth, size, isInverse, isDisabled }: LayoutProp) => {
     if (isDisabled) {
       return css`
+        border-radius: ${size === 'xs' ? '12px' : select('borderRadius')};
         cursor: not-allowed;
         width: ${isFullWidth ? '100%' : 'auto'};
         background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
@@ -102,6 +117,7 @@ export const Layout = styled.div`
       `;
     } else {
       return css`
+        border-radius: ${size === 'xs' ? '21px' : select('borderRadius')};
         border: 1px solid ${InputBorderColor};
         width: ${isFullWidth ? '100%' : 'auto'};
         background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
@@ -112,13 +128,16 @@ export const Layout = styled.div`
   }};
 
   :hover:not(:focus) {
-    border: 1px solid ${InputBorderHoverColor};
-  }
+    ${({ isDisabled }: LayoutProp) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
 `;
 
 const widthBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          width: ${deriveSize(12.5)};
+        `;
       case 'sm':
         return `
           width: ${deriveSize(14.5)};
@@ -151,13 +170,13 @@ export const InputWrapper = styled.input`
   min-width: 0;
   width: 100%;
   border: 0px;
-  border-radius: ${select('borderRadius')};
   ${({ fontSize, isInverse }: InputWrapperProps) => css`
     ${fontBySizeMixin(fontSize)}
+    border-radius: ${fontSize === 'xs' ? '21px' : select('borderRadius')};
     color: ${isInverse ? select('colors.shade.0') : select('colors.shade.700')};
     background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
     font-family: ${select('typography.body.fontFamily')};
-    padding: 0 ${deriveSize(0.75)};
+    padding: ${fontSize === 'xs' ? `0 ${deriveSize(0.25)}` : `0 ${deriveSize(1)}`};
   `} ::placeholder {
     color: ${select('colors.shade.300')};
   }

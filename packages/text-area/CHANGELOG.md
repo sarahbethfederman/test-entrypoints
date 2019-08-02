@@ -1,3 +1,7 @@
+## [2.3.0] - 2019-07-30 - [HUB-297](https://creditandfinance.atlassian.net/browse/HUB-297)
+### Added
+- Add 'xs' size to text-area.
+- Fixed disabled state still get hover bug.
 
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed

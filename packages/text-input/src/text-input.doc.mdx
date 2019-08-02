@@ -18,23 +18,39 @@ const AfterIcon = styled(Lock)`
 
 render(
 <>
- <Input
-    size={'md'}
+  'xs' size Input
+  <br/>
+   <Input
+    size='xs'
+      placeholder="Input here ..."
+      onFocus={() =>{}}
+      isFullWidth={true}
+      before={
+        <Search
+          color='primary.500'
+          width='12px'
+          height='12px'
+          style={{ marginLeft : '10px' }}
+        />}
+    />
+  <br/><br/>
+  <Input
+    size='md'
     placeholder="Input here ..."
     onChange={() =>{}}
     isFullWidth={true}
     before={
-        <EmailIcon
-          color='primary.500'
-          height='26px'
-        />}
-        after={
-        <AfterIcon
-          color='primary.500'
-          height='26px'
-        />}
-  />
-  <br/> 
+      <EmailIcon
+        color='primary.500'
+        height='26px'
+      />}
+    after={
+      <AfterIcon
+        color='primary.500'
+        height='26px'
+      />}
+    />
+  <br/><br/>
   Input with native props support like disabled
   <br/> 
    <Input
@@ -43,8 +59,6 @@ render(
     isFullWidth={true}
     disabled
   />
-
-
   <br/>
 
 </>)
@@ -91,7 +105,7 @@ const Wrapper = styled(IconName)`
   <PropTable.Entry name="onChange" required={true} type='() => void' description="Change handler."/>
   <PropTable.Entry name="onFocus" type='() => void' description="Focus handler."/>
   <PropTable.Entry name="placeholder" type='string' description="The input placeholder."/>
-  <PropTable.Entry name="size" type="{ 'sm' | 'md' | 'lg' }" defaultValue="md" description="The input size."/>
+  <PropTable.Entry name="size" type="{ 'xs' | 'sm' | 'md' | 'lg' }" defaultValue="md" description="The input size."/>
   <PropTable.Entry name="type" type="{ 'text' | 'email' | 'tel' | 'number' }" defaultValue="text" description="The input type."/>
   <PropTable.Entry name="value" type="string" description="The input content."/>
 </PropTable>

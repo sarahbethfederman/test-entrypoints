@@ -22,6 +22,9 @@ class Example extends React.Component<{}, ExampleState> {
       <div>
         <br />
         <br />
+        <TextArea size="xs" value={value} onChange={this.onChange} placeholder="I'm extra small 🎉" />
+        <br />
+        <br />
         <TextArea size="sm" value={value} onChange={this.onChange} placeholder="I'm so small 🎉" />
         <br />
         <br />

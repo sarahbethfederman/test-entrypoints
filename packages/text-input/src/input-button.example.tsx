@@ -21,6 +21,21 @@ class Example extends React.Component<{}, ExampleState> {
     return (
       <div style={{ width: '600px' }}>
         <Input
+          size="xs"
+          value={this.state.value}
+          placeholder="input here ..."
+          onChange={this.onChange}
+          isFullWidth={false}
+          isAutoFocus
+          after={
+            <InputButton variant="primary" size="xs" onClick={() => alert(this.state.value)}>
+              search
+            </InputButton>
+          }
+        />
+        <br />
+        <br />
+        <Input
           size="md"
           value={this.state.value}
           placeholder="input here ..."

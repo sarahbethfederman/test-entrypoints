@@ -2,12 +2,18 @@ import styled, { css } from 'styled-components';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 import { map } from '@lendi-ui/breakpoint';
 import { select } from '@lendi-ui/theme';
-export type Size = 'sm' | 'md' | 'lg';
+export type Size = 'xs' | 'sm' | 'md' | 'lg';
 import { color } from '@lendi-ui/color';
 
 const stylesBySizeMixin = (size: Size) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          height: ${deriveSize(4.5)};
+          padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
+          font-size: ${deriveSize(0.875)};
+        `;
       case 'sm':
         return `
           height: ${deriveSize(4.5)};
@@ -38,6 +44,10 @@ const stylesBySizeMixin = (size: Size) =>
 const widthBySizeMixin = (size: Size) =>
   map(size, (val) => {
     switch (val) {
+      case 'xs':
+        return `
+          width: ${deriveSize(12.5)};
+        `;
       case 'sm':
         return `
           width: ${deriveSize(14.5)};
@@ -121,6 +131,6 @@ export const TextAreaWrapper = styled.textarea`
     color: ${color('shade.300')};
   }
   :hover:not(:focus) {
-    border: 1px solid ${InputBorderHoverColor};
+    ${({ isDisabled }: TextAreaProps) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
   }
 `;

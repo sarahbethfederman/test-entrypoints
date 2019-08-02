@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { InputButton } from './index';
 import { Input } from '../Input/index';
 
-let element;
+let element: ReactWrapper;
 
 function render(props) {
   element = mount(
