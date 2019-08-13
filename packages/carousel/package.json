@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/carousel",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -11,8 +11,9 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
+    "@lendi-ui/theme": "^6.2.0",
+    "@types/react": "^16.4",
+    "react": "^16.4",
     "styled-components": "^3"
   },
   "scripts": {
@@ -21,6 +22,11 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "dependencies": {
-    "@lendi-ui/utils": "^2.5.0"
+    "@lendi-ui/breakpoint": "^2.1.0",
+    "@lendi-ui/color": "^3.1.0",
+    "@lendi-ui/icon": "^8.2.0",
+    "@lendi-ui/utils": "^2.5.0",
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.15"
   }
 }

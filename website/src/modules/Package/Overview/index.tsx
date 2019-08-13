@@ -31,7 +31,7 @@ const ChangelogButton = styled(Button)`
 `;
 
 const Changelog = styled.div`
-  font-family: "Open-sans", sans-serif;
+  font-family: 'Open-sans', sans-serif;
   max-height: 70vh;
   max-width: 500px;
   overflow: scroll;
@@ -41,12 +41,12 @@ const Changelog = styled.div`
   }
 
   h3 {
-    color: color: ${color('secondary.500')};
+    color: ${color('secondary.500')};
   }
 
   a {
-    color: ${color('primary.500')};;
-    font-family: 'Open Sans',sans-serif;
+    color: ${color('primary.500')};
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     cursor: pointer;
     -webkit-text-decoration: none;

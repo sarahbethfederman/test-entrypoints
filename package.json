@@ -74,6 +74,7 @@
     "test-react-15": "yarn run build:icons && jest --config=./react-15-jest.config.js"
   },
   "devDependencies": {
+    "@testing-library/react": "^8.0.8",
     "danger": "^7.1.4",
     "fast-glob": "^2.2.6",
     "yarn": "^1.13.0",

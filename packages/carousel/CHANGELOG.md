@@ -1,4 +1,14 @@
-## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
+## [3.0.0] - 2019-08-10 - [HUB-319](https://creditandfinance.atlassian.net/browse/HUB-319)
+### Changed
+- Complete rewrite
+- Property `defaultIndex` changed to `initialIndex`
+- Can now display multiple slides at once
+- Not infinite by default
+- Not autoplay by default
+- New customisation options
+- Added arrows
+
+## [2.2.1] - 2019-06-04 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types
 
@@ -25,7 +35,7 @@
 ### Deleted
 - Remove the CJS bundles.
 
-## [1.0.1] 
+## [1.0.1]
 ### Added
 - Added CHANGELOG.md
 

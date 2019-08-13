@@ -1,0 +1,127 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Compound Carousel
+
+The compound carousel allows you to significantly modify the look and feel of your carousel by customising the children, arrows, and dots.
+
+### Usage
+
+```
+import Carousel, { useCarouselContext } from '@lendi/carousel';
+```
+
+```js
+const CustomComponent = () => {
+  const { currentIndex } = useCarouselContext();
+
+  return (
+    <div style={{ border: '1px solid black', padding: '10px' }}>
+      <span>Current index is: {currentIndex}</span>
+    </div>
+  )
+}
+
+const PlaygroundCarousel = () => (
+  <Carousel height="200px">
+    <Carousel.PreviousArrow>
+      {(disabled) => (
+        <span style={{
+          float: 'left',
+          paddingLeft: '40px',
+          cursor: disabled ? 'inherit' : 'pointer',
+        }}>
+          {disabled ? "✋" : "👈"}
+        </span>
+      )}
+    </Carousel.PreviousArrow>
+
+    <Carousel.NextArrow>
+      {(disabled) => (
+        <span style={{
+          float: 'right',
+          paddingRight: '40px',
+          cursor: disabled ? 'inherit' : 'pointer',
+        }}>
+          {disabled ? "✋" : "👉"}
+        </span>
+      )}
+    </Carousel.NextArrow>
+
+    <Carousel.Slides>
+      <div style={{width: '40%', background: '#f00', textAlign: 'center', padding: '20px'}}> #1 </div>
+      <div style={{width: '40%', background: '#0f0', textAlign: 'center', padding: '20px'}}> #2 </div>
+      <div style={{width: '40%', background: '#00f', textAlign: 'center', padding: '20px'}}> #3 </div>
+      <div style={{width: '40%', background: '#ff0', textAlign: 'center', padding: '20px'}}> #4 </div>
+      <div style={{width: '40%', background: '#0ff', textAlign: 'center', padding: '20px'}}> #5 </div>
+      <div style={{width: '40%', background: '#f0f', textAlign: 'center', padding: '20px'}}> #6 </div>
+      <div style={{width: '40%', background: '#f90', textAlign: 'center', padding: '20px'}}> #7 </div>
+    </Carousel.Slides>
+
+    <CustomComponent />
+
+    <Carousel.Dots style={{ display: 'flex' }}>
+      {(isActive) => (
+        <div style={{
+          flexGrow: 1,
+          padding: '16px',
+          cursor: 'pointer',
+          textAlign: 'center'
+        }}>
+          {isActive ? "🌝" : "🌚"}
+        </div>
+      )}
+    </Carousel.Dots>
+  </Carousel>
+);
+
+render(<PlaygroundCarousel />);
+
+```
+
+<br />
+
+## Compound Components
+
+<PropTable>
+  <PropTable.Entry name="Slides" type="CarouselSlides" description="Container to hold slides when adding custom components to the Carousel"/>
+  <PropTable.Entry name="PreviousArrow" type="CarouselPreviousArrow" description="Create a custom Previous Arrow"/>
+  <PropTable.Entry name="Arrows" type="CarouselNextArrow" description="Create a custom Next Arrow"/>
+  <PropTable.Entry name="Dots" type="CarouselDots" description="Create custom Dots"/>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Any other components you wish to have access to the `CarouselContext`"/>
+</PropTable>
+
+<br />
+
+### Carousel.PreviousArrow & Carousel.NextArrow Properties
+
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The custom arrow you have created"/>
+  <PropTable.Entry name="width" type="number" defaultValue={40} description="Change the width of the default arrow"/>
+</PropTable>
+
+<br />
+
+### Carousel.Dots Properties
+
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The custom dot you have created"/>
+  <PropTable.Entry name="style" type="CSSProperties" description="Override the default styles of the Dots"/>
+</PropTable>
+
+<br />
+
+### CarouselContext
+
+You can access the CarouselContext from your custom component by running the function `useCarouselContext()`.
+
+<PropTable>
+  <PropTable.Entry name="isPreviousDisabled" type="boolean" description="If not infinite, whether one can go to the previous increment"/>
+  <PropTable.Entry name="isNextDisabled" type="boolean" description="If not infinite, whether one can go to the next increment"/>
+  <PropTable.Entry name="previousSlide" type="() => void" description="Move back one increment"/>
+  <PropTable.Entry name="nextSlide" type="() => void" description="Move forward one increment"/>
+  <PropTable.Entry name="slides" type="number" description="The count of all slides"/>
+  <PropTable.Entry name="currentIndex" type="number" description="The current slide index"/>
+  <PropTable.Entry name="increment" type="number" description="How many slides to jump per scroll"/>
+  <PropTable.Entry name="infinite" type="boolean" description="Whether the slides are circular or linear"/>
+  <PropTable.Entry name="containerBox" type="ClientRect | DOMRect" description="The bounding box of the CarouselContainer, useful for calculating arrow locations"/>
+</PropTable>

@@ -3,7 +3,7 @@ import {PropTable} from '@lendi-ui/doc-utils';
 ## Usage
 
 ```
-import DatePicker from '@lendi-ui/DatePicker';
+import DatePicker from '@lendi-ui/date-picker';
 
 // This is a controlled component, fields are limited to numerical
 // characters only when working with proper changeHandlers and values.
@@ -27,7 +27,7 @@ import DatePicker from '@lendi-ui/DatePicker';
   <PropTable.Entry name="dayValue" type="number" description="Value of the day input field"/>
   <PropTable.Entry name="hasDayField" type="boolean" defaultValue={false} description="Flag to indicate whether or not the DD field should be included"/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Flag to indicate whether or not the component should show in readonly"/>
-  <PropTable.Entry name="isError" type="boolean" defaultValue={false} description="Flag to indicate whether or not a red outline should show around the component" /> 
+  <PropTable.Entry name="isError" type="boolean" defaultValue={false} description="Flag to indicate whether or not a red outline should show around the component" />
   <PropTable.Entry name="monthOnChange" type="() => void" description="Month input change handler"/>
   <PropTable.Entry name="monthValue" type="number" description="Value of the month input field"/>
   <PropTable.Entry name="size" type={`"sm" | "md" | "lg"`} defaultValue="md" description="The date-picker size"/>

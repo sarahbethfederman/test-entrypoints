@@ -1,0 +1,41 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Simple Carousel
+
+The simple carousel allows you to get up and running with minimal configuration using our default arrows and default dots.
+
+### Usage
+
+```
+import Carousel from '@lendi-ui/carousel';
+```
+
+```jsx
+<Carousel initialIndex={1} increment={2} height="200px" withDots withArrows infinite>
+  <div style={{width: '50%'}}> #1 </div>
+  <div style={{width: '50%'}}> #2 </div>
+  <div style={{width: '50%'}}> #3 </div>
+  <div style={{width: '50%'}}> #4 </div>
+  <div style={{width: '50%'}}> #5 </div>
+  <div style={{width: '50%'}}> #6 </div>
+  <div style={{width: '50%'}}> #7 </div>
+</Carousel>
+```
+
+### Properties
+
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The slides"/>
+  <PropTable.Entry name="increment" type="number" defaultValue={1} description="How many slides to jump per scroll"/>
+  <PropTable.Entry name="initialIndex" type="number" defaultValue={0} description="The index of inital slide shown by the carousel"/>
+  <PropTable.Entry name="height" type="string" defaultValue="500px" description="The carousel height"/>
+  <PropTable.Entry name="width" type="string" defaultValue="100%" description="The carousel width"/>
+  <PropTable.Entry name="withArrows" type="boolean" defaultValue={false} description="Whether to display the default arrows"/>
+  <PropTable.Entry name="withDots" type="boolean" defaultValue={false} description="Whether to display the default dots"/>
+  <PropTable.Entry name="swipe" type="boolean" defaultValue={true} description="Whether to allow moving between slides using swipe gestures"/>
+  <PropTable.Entry name="infinite" type="boolean" defaultValue={false} description="Whether the slides are circular or linear"/>
+  <PropTable.Entry name="autoplay" type="boolean" defaultValue={false} description="Whether slides automatically scroll on an interval"/>
+  <PropTable.Entry name="duration" type="number" defaultValue={5000} description="If autoplaying, how long is the interval between automatic slides"/>
+  <PropTable.Entry name="speed" type="number" defaultValue={300} description="How fast the scroll animation is"/>
+</PropTable>
+
