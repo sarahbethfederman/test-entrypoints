@@ -14,12 +14,12 @@ import {Radio} from '@lendi-ui/radio';
 
 ## Properties
 <PropTable>
-  <PropTable.Entry name="className" defaultValue=""type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="label" type="string" description="Radio display value."/>
-  <PropTable.Entry name="isBoxed" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="isChecked" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="isDisabled" type="boolean" description="Whether the Radio is checked or not."/>
-  <PropTable.Entry name="onChange" type="boolean" description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isBoxed" type="boolean" defaultValue={false} description="Whether the Radio is boxed or not."/>
+  <PropTable.Entry name="isChecked" type="boolean" defaultValue={false} description="Whether the Radio is checked or not."/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the Radio is disabled or not."/>
+  <PropTable.Entry name="label" type="string" defaultValue="" description="Radio display value."/>
+  <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>) => void;" description=""/>
+  <PropTable.Entry name="size" type="'xs' | 'sm' | 'md' | 'lg'"  defaultValue="md" description="Size of the radio"/>
   <PropTable.Entry name="value" type="string" description="Radio value."/>
 </PropTable>
 

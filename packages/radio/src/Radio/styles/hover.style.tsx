@@ -15,14 +15,14 @@ export const boxedBorder = css`
 
 export const hoverState = css`
   :hover:before {
-    border: 1px solid ${hoverColours.border};
+    border: 2px solid ${hoverColours.border};
   }
 `;
 
 export const hoverCheckedState = css`
   :hover {
     :before {
-      border: 1px solid ${hoverColours.default};
+      border: 2px solid ${hoverColours.default};
     }
     :after {
       ${hoverColours.bg};

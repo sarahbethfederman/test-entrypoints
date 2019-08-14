@@ -2,20 +2,54 @@ import styled, { css } from 'styled-components';
 import { Body } from '@lendi-ui/typography';
 import { deriveSize } from '@lendi-ui/utils';
 import { color } from '@lendi-ui/color';
-import { ml } from '@lendi-ui/spacing';
+import { mx } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
+import { Size } from '.';
 
 interface WrapperProps {
   isBoxed: boolean;
   checked: boolean;
   disabled: boolean;
+  size: Size;
 }
 
-export const Wrapper = styled.label`
+const borderRadiusMixin = (size: Size) => {
+  if (size === 'xs') {
+    return css`
+      border-radius: 20px;
+    `;
+  }
+  return css`
+    border-radius: ${select('borderRadius')};
+  `;
+};
+
+export const Wrapper = styled.label<WrapperProps>`
   width: 100%;
   display: flex;
   align-items: center;
-  border-radius: ${select('borderRadius')};
+  ${({ size }) => borderRadiusMixin(size)}
+  ${({ size }) => {
+    switch (size) {
+      case 'xs':
+        return css`
+          height: ${deriveSize(24 / 16)};
+        `;
+      case 'sm':
+        return css`
+          height: ${deriveSize(38 / 16)};
+        `;
+      case 'lg':
+        return css`
+          height: ${deriveSize(62 / 16)};
+        `;
+      case 'md':
+      default:
+        return css`
+          height: ${deriveSize(46 / 16)};
+        `;
+    }
+  }}
   ${({ isBoxed, checked }: WrapperProps) => {
     if (isBoxed) {
       if (checked) {
@@ -31,17 +65,16 @@ export const Wrapper = styled.label`
     }
     return null;
   }} ${({ disabled }: WrapperProps) => {
-    if (disabled) {
-      return css`
-        cursor: not-allowed;
-        opacity: 0.4;
-      `;
-    }
+  if (disabled) {
     return css`
-      cursor: pointer;
+      cursor: not-allowed;
+      opacity: 0.4;
     `;
-  }};
-
+  }
+  return css`
+    cursor: pointer;
+  `;
+}};
   :hover {
     ${({ isBoxed, checked, disabled }: WrapperProps) => {
       if (isBoxed && !disabled) {
@@ -63,26 +96,30 @@ export const Wrapper = styled.label`
 
 export const CheckboxLabel = styled(Body)`
   display: inline-block;
-  ${ml('xs')};
 `;
 
 interface CheckboxWrapperProps {
   checked: boolean;
   disabled: boolean;
+  inputSize: Size;
 }
 
-export const CheckboxWrapper = styled.input`
+const tickMixin = (base: number) => css`
+  width: ${deriveSize(0.2 * base)};
+  height: ${deriveSize(0.6 * base)};
+  top: ${base}px;
+`;
+
+export const CheckboxWrapper = styled.input<CheckboxWrapperProps>`
   flex-shrink: 0;
   cursor: pointer;
   position: relative;
   display: inline-block;
   appearance: none;
-  width: ${deriveSize(2)};
-  height: ${deriveSize(2)};
-  border-radius: ${select('borderRadius')};
+  border-radius: 3px;
   box-sizing: border-box;
-  ${ml('xxs')};
-  ${({ checked, disabled }: CheckboxWrapperProps) => {
+  ${mx('xxs')}
+  ${({ checked, disabled }) => {
     if (!disabled) {
       if (checked) {
         return css`
@@ -91,7 +128,7 @@ export const CheckboxWrapper = styled.input`
         `;
       }
       return css`
-        border: 1px solid ${color('shade.200')};
+        border: 2px solid ${color('shade.200')};
         background-color: ${color('shade.0')};
       `;
     } else {
@@ -109,11 +146,37 @@ export const CheckboxWrapper = styled.input`
         pointer-events: none;
         opacity: 0.4;
         background-color: ${color('shade.0')};
-        border: 1px solid ${color('shade.200')};
+        border: 2px solid ${color('shade.200')};
       `;
     }
-  }}} :hover {
-    ${({ checked, disabled }: CheckboxWrapperProps) => {
+  }}}
+  ${({ inputSize }) => {
+    switch (inputSize) {
+      case 'xs':
+        return css`
+          width: ${deriveSize(18 / 16)};
+          height: ${deriveSize(18 / 16)};
+        `;
+      case 'sm':
+        return css`
+          height: ${deriveSize(20 / 16)};
+          width: ${deriveSize(20 / 16)};
+        `;
+      case 'lg':
+        return css`
+          width: ${deriveSize(38 / 16)};
+          height: ${deriveSize(38 / 16)};
+        `;
+      case 'md':
+      default:
+        return css`
+          height: ${deriveSize(32 / 16)};
+          width: ${deriveSize(32 / 16)};
+        `;
+    }
+  }}
+  :hover {
+    ${({ checked, disabled }) => {
       if (!disabled) {
         if (checked) {
           return css`
@@ -121,34 +184,25 @@ export const CheckboxWrapper = styled.input`
           `;
         }
         return css`
-          border: 1px solid ${color('primary.500')};
+          border: 2px solid ${color('primary.500')};
         `;
       }
       return null;
     }};
   }
-
   :focus {
-    ${({ disabled }: CheckboxWrapperProps) => {
-      if (disabled) {
-        return css`
-          outline: none;
-        `;
-      }
-      return null;
-    }};
+    ${({ disabled }) =>
+      disabled &&
+      css`
+        outline: none;
+      `}
   }
-
   :disabled {
     cursor: not-allowed;
     pointer-events: none;
   }
-
   :checked::after {
     content: '';
-    width: ${deriveSize(0.4)};
-    height: ${deriveSize(0.8)};
-    top: ${deriveSize(0.45)};
     left: 0;
     right: 0;
     margin: auto;
@@ -156,5 +210,17 @@ export const CheckboxWrapper = styled.input`
     border: solid ${color('shade.0')};
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
-  }
+    ${({ inputSize }) => {
+      switch (inputSize) {
+        case 'xs':
+          return tickMixin(1);
+        case 'sm':
+          return tickMixin(20 / 16);
+        case 'lg':
+          return tickMixin(38 / 16);
+        case 'md':
+        default:
+          return tickMixin(32 / 16);
+      }
+    }}
 `;

@@ -17,6 +17,7 @@ interface ExampleStateElement {
   values: string[];
   labels: string[];
   value: string[];
+  size?: string;
 }
 
 interface ExampleState {
@@ -26,31 +27,92 @@ interface ExampleState {
 const INITIAL_STATE: ExampleState = {
   groups: [
     {
-      description: 'Column CheckboxGroup:',
+      description: 'Column CheckboxGroup (xs):',
       values: ['1'],
       labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
       value: ['1', '2', '3'],
+      size: 'xs',
     },
     {
-      description: 'Column CheckboxGroup boxed:',
+      description: 'Column CheckboxGroup disabled (xs):',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'xs',
+    },
+    {
+      description: 'Column CheckboxGroup boxed (xs):',
       isBoxed: true,
       values: ['1'],
       labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
       value: ['1', '2', '3'],
+      size: 'xs',
     },
     {
-      description: 'Column CheckboxGroup disabled:',
-      isDisabled: true,
+      description: 'Column CheckboxGroup (xs):',
       values: ['1'],
       labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
       value: ['1', '2', '3'],
+      size: 'sm',
     },
     {
-      direction: 'row',
-      description: 'Row CheckboxGroup:',
+      description: 'Column CheckboxGroup disabled (sm):',
       values: ['1'],
-      labels: ['Yes', 'No', 'Maybe'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
       value: ['1', '2', '3'],
+      size: 'sm',
+    },
+    {
+      description: 'Column CheckboxGroup boxed (sm):',
+      isBoxed: true,
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'sm',
+    },
+    {
+      description: 'Column CheckboxGroup (md):',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'md',
+    },
+    {
+      description: 'Column CheckboxGroup disabled (md):',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'md',
+    },
+    {
+      description: 'Column CheckboxGroup boxed (md):',
+      isBoxed: true,
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'md',
+    },
+    {
+      description: 'Column CheckboxGroup (lg):',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'lg',
+    },
+    {
+      description: 'Column CheckboxGroup disabled (lg):',
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'lg',
+    },
+    {
+      description: 'Column CheckboxGroup boxed (lg):',
+      isBoxed: true,
+      values: ['1'],
+      labels: ['LUI CheckboxGroup option 1', 'LUI CheckboxGroup option 2', 'LUI CheckboxGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'lg',
     },
   ],
 };
@@ -100,6 +162,7 @@ class Example extends React.Component<{}, ExampleState> {
           direction={group.direction}
           isDisabled={group.isDisabled}
           isBoxed={group.isBoxed}
+          size={group.size}
         >
           {group.labels.map((label, subIndex) => (
             <CheckboxGroup.Checkbox

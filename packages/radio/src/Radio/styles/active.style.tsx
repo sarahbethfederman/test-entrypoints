@@ -2,18 +2,20 @@ import { css } from 'styled-components';
 import { bg, color } from '@lendi-ui/color';
 
 export const activeBorder = css`
-  border: 1px solid ${color('primary.600')};
+  border: 2px solid ${color('primary.500')};
 `;
-export const activeBg = bg('primary.600');
+export const activeBg = bg('primary.500');
 
 export const activeState = css`
-  :active::before {
+  :active::before,
+  :hover:before {
     ${activeBorder};
   }
 `;
 
 export const activeCheckedState = css`
-  :active::after {
+  :active::before,
+  :hover::before {
     ${activeBg};
   }
 `;

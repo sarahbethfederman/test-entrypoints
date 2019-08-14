@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Body } from '@lendi-ui/typography';
 import { Checkbox } from './Checkbox/index';
 
 interface ExampleState {
@@ -10,8 +11,6 @@ interface ExampleState {
 class Example extends React.Component<{}, ExampleState> {
   state = {
     value: '1',
-    label:
-      'LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox LUI single Checkbox  LUI single Checkbox LUI single Checkbox LUI single Checkbox ',
     isChecked: true,
   };
 
@@ -22,12 +21,30 @@ class Example extends React.Component<{}, ExampleState> {
   };
 
   render() {
-    const { value, label, isChecked } = this.state;
+    const { value, isChecked } = this.state;
+    const label = 'checkbox example';
     return (
       <div style={{ width: '600px' }}>
-        <Checkbox value={value} label={label} isChecked={isChecked} onChange={this.handleChange} />
-        <Checkbox value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isBoxed />
-        <Checkbox value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isDisabled />
+        <Body>xs checkboxes</Body>
+        <Checkbox size="xs" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} />
+        <Checkbox size="xs" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isBoxed />
+        <Checkbox size="xs" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isDisabled />
+        <hr />
+        <Body>sm checkboxes</Body>
+        <Checkbox size="sm" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} />
+        <Checkbox size="sm" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isBoxed />
+        <Checkbox size="sm" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isDisabled />
+        <hr />
+        <Body>md checkboxes</Body>
+        <Checkbox size="md" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} />
+        <Checkbox size="md" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isBoxed />
+        <Checkbox size="md" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isDisabled />
+        <hr />
+        <Body>lg checkboxes</Body>
+        <Checkbox size="lg" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} />
+        <Checkbox size="lg" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isBoxed />
+        <Checkbox size="lg" value={value} label={label} isChecked={isChecked} onChange={this.handleChange} isDisabled />
+        <hr />
       </div>
     );
   }

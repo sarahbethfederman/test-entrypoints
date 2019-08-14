@@ -1,3 +1,10 @@
+## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
+### Added
+- Added xs, xm, lg size variants
+
+### Fixed
+- Custom radio override was not displaying in Firefox
+
 ## [2.2.4] - 2019-07-22 - [HUB-310](https://creditandfinance.atlassian.net/browse/HUB-310)
 ### Changed
 - Legend label text in Radio Group does not have responsive font size, default it to 'md'

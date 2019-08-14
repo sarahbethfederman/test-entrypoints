@@ -6,8 +6,31 @@ import {PropTable} from '@lendi-ui/doc-utils';
 import {Checkbox} from '@lendi-ui/checkbox';
 ```
 
-```jsx
-  <Checkbox value='1' label='LUI single Checkbox' onChange={() => {}} id="testId" aria-label="checkbox-label"/>
+```js
+class PlaygroundComponent extends React.Component {
+  constructor() {
+    this.state = {
+      isChecked: 1
+    }
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange() {
+    this.setState((prevState) => ({isChecked: !prevState.isChecked}));
+  }
+
+  render() {
+    return (
+      <Checkbox 
+        value='1' 
+        isChecked={this.state.isChecked} 
+        label='LUI single Checkbox' 
+        onChange={this.onChange} />
+    );
+  }
+}
+
+render(<PlaygroundComponent/>)
 ```
 
 ## Properties

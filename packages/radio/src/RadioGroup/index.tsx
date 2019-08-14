@@ -15,9 +15,10 @@ export class RadioGroup extends React.Component<RadioGroupProps> {
       direction = 'column',
       legend,
       isDisabled,
+      size = 'md',
       ...radioProps
     } = this.props;
-    const radioGroupWrapperProps = { isBoxed, selectedValue, isDisabled };
+    const radioGroupWrapperProps = { isBoxed, selectedValue, isDisabled, size };
 
     return (
       <RadioContext.Provider value={radioGroupWrapperProps}>

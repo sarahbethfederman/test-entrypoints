@@ -1,3 +1,7 @@
+## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
+### Added
+- Added xs, xm, lg size variants
+
 ## [2.2.3] - 2019-06-19 - [HUB-278](https://creditandfinance.atlassian.net/browse/HUB-278)
 ### Changed
 - Incorrect reference to @lendi-ui/utils/src - it should be `@lendi-ui/utils`.

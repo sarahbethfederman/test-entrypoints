@@ -16,6 +16,7 @@ export interface RadioGroupProps extends RadioGroupContext {
   legend?: string;
   direction?: Direction;
   isDisabled?: boolean;
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   children?: React.ReactElement<RadioProps> | React.ReactElement<RadioProps>[] | null;
 }

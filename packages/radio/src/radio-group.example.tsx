@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { RadioGroup } from './RadioGroup/index';
 import { container } from '@lendi-ui/container';
+import { RadioGroup } from './RadioGroup/index';
 import { Direction } from './RadioGroup/index.style';
 
 const ColumnContainer = styled.div`
@@ -16,6 +16,7 @@ interface ExampleStateElement {
   selectedValue: string;
   labels: string[];
   value: string[];
+  size?: 'xs' | 'sm' | 'md' | 'lg';
 }
 
 interface ExampleState {
@@ -25,30 +26,98 @@ interface ExampleState {
 const INITIAL_STATE: ExampleState = {
   groups: [
     {
-      description: 'Column RadioGroup:',
+      description: 'Column RadioGroup Boxed(xs):',
       selectedValue: '1',
       labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
       value: ['1', '2', '3'],
+      size: 'xs',
+      isBoxed: true,
     },
     {
-      description: 'Column RadioGroup boxed:',
-      isBoxed: true,
-      selectedValue: '2',
+      description: 'Column RadioGroup (xs):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'xs',
+      isBoxed: false,
+    },
+    {
+      description: 'Column RadioGroup disabled (xs):',
+      isDisabled: true,
+      selectedValue: '3',
+      size: 'xs',
       labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
       value: ['1', '2', '3'],
     },
     {
-      description: 'Column RadioGroup disabled:',
+      description: 'Column RadioGroup Boxed(sm):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'sm',
+      isBoxed: true,
+    },
+    {
+      description: 'Column RadioGroup (sm):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'sm',
+      isBoxed: false,
+    },
+    {
+      description: 'Column RadioGroup disabled (xs):',
       isDisabled: true,
       selectedValue: '3',
+      size: 'sm',
       labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
       value: ['1', '2', '3'],
     },
     {
-      description: 'Column RadioGroup disabled:',
-      isDisabled: true,
+      description: 'Column RadioGroup Boxed(md):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'md',
       isBoxed: true,
+    },
+    {
+      description: 'Column RadioGroup (md):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'md',
+      isBoxed: false,
+    },
+    {
+      description: 'Column RadioGroup disabled (md):',
+      isDisabled: true,
       selectedValue: '3',
+      size: 'md',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+    },
+    {
+      description: 'Column RadioGroup Boxed(lg):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'lg',
+      isBoxed: true,
+    },
+    {
+      description: 'Column RadioGroup (lg):',
+      selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+      size: 'lg',
+      isBoxed: false,
+    },
+    {
+      description: 'Column RadioGroup disabled (lg):',
+      isDisabled: true,
+      selectedValue: '3',
+      size: 'lg',
       labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
       value: ['1', '2', '3'],
     },
@@ -56,6 +125,14 @@ const INITIAL_STATE: ExampleState = {
       direction: 'row',
       description: 'Row RadioGroup:',
       selectedValue: '1',
+      labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
+      value: ['1', '2', '3'],
+    },
+    {
+      direction: 'row',
+      description: 'Row RadioGroup Boxed:',
+      selectedValue: '1',
+      isBoxed: true,
       labels: ['LUI RadioGroup option 1', 'LUI RadioGroup option 2', 'LUI RadioGroup option 3'],
       value: ['1', '2', '3'],
     },
@@ -87,21 +164,17 @@ class Example extends React.Component<{}, ExampleState> {
   };
 
   render() {
-    return this.state.groups.map((group, index) => (
+    return this.state.groups.map(({ labels, value, ...props }, index) => (
       <ColumnContainer key={`RadioGroup-col-${index}`}>
         <RadioGroup
-          legend={group.description}
           key={`RadioGroup-${index}`}
-          selectedValue={group.selectedValue}
           onChange={(e) => {
             this.onChange(e, index);
           }}
-          direction={group.direction}
-          isDisabled={group.isDisabled}
-          isBoxed={group.isBoxed}
+          {...props}
         >
-          {group.labels.map((label, subIndex) => (
-            <RadioGroup.Radio key={`RadioGroup-${index}-${subIndex}`} label={label} value={group.value[subIndex]} />
+          {labels.map((label, subIndex) => (
+            <RadioGroup.Radio key={`RadioGroup-${index}-${subIndex}`} label={label} value={value[subIndex]} />
           ))}
         </RadioGroup>
       </ColumnContainer>

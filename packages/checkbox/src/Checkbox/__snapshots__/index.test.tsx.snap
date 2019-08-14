@@ -20,6 +20,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 6px;
+  height: calc(2.875 * var(--lendi-ui-size));
   border: 1px solid #c8c8c8;
   cursor: pointer;
 }
@@ -30,7 +31,6 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
 
 .c2 {
   display: inline-block;
-  margin-left: calc(0.75 * var(--lendi-ui-size));
 }
 
 .c1 {
@@ -43,17 +43,18 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: calc(2 * var(--lendi-ui-size));
-  height: calc(2 * var(--lendi-ui-size));
-  border-radius: 6px;
+  border-radius: 3px;
   box-sizing: border-box;
   margin-left: calc(0.5 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+  border: 2px solid #c8c8c8;
   background-color: #ffffff;
+  height: calc(2 * var(--lendi-ui-size));
+  width: calc(2 * var(--lendi-ui-size));
 }
 
 .c1:hover {
-  border: 1px solid #00c0a5;
+  border: 2px solid #00c0a5;
 }
 
 .c1:disabled {
@@ -63,9 +64,6 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
 
 .c1:checked::after {
   content: '';
-  width: calc(0.4 * var(--lendi-ui-size));
-  height: calc(0.8 * var(--lendi-ui-size));
-  top: calc(0.45 * var(--lendi-ui-size));
   left: 0;
   right: 0;
   margin: auto;
@@ -75,6 +73,9 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  width: calc(0.4 * var(--lendi-ui-size));
+  height: calc(1.2 * var(--lendi-ui-size));
+  top: 2px;
 }
 
 <Component
@@ -87,15 +88,18 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
     checked={false}
     disabled={false}
     isBoxed={true}
+    size="md"
   >
     <label
       checked={false}
       className="c0"
       disabled={false}
+      size="md"
     >
       <styled.input
         checked={false}
         disabled={false}
+        inputSize="md"
         onChange={[Function]}
         type="checkbox"
         value="1"
@@ -149,12 +153,12 @@ exports[`Checkbox should render whole component 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 6px;
+  height: calc(2.875 * var(--lendi-ui-size));
   cursor: pointer;
 }
 
 .c2 {
   display: inline-block;
-  margin-left: calc(0.75 * var(--lendi-ui-size));
 }
 
 .c1 {
@@ -167,17 +171,18 @@ exports[`Checkbox should render whole component 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: calc(2 * var(--lendi-ui-size));
-  height: calc(2 * var(--lendi-ui-size));
-  border-radius: 6px;
+  border-radius: 3px;
   box-sizing: border-box;
   margin-left: calc(0.5 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
+  margin-right: calc(0.5 * var(--lendi-ui-size));
+  border: 2px solid #c8c8c8;
   background-color: #ffffff;
+  height: calc(2 * var(--lendi-ui-size));
+  width: calc(2 * var(--lendi-ui-size));
 }
 
 .c1:hover {
-  border: 1px solid #00c0a5;
+  border: 2px solid #00c0a5;
 }
 
 .c1:disabled {
@@ -187,9 +192,6 @@ exports[`Checkbox should render whole component 1`] = `
 
 .c1:checked::after {
   content: '';
-  width: calc(0.4 * var(--lendi-ui-size));
-  height: calc(0.8 * var(--lendi-ui-size));
-  top: calc(0.45 * var(--lendi-ui-size));
   left: 0;
   right: 0;
   margin: auto;
@@ -199,6 +201,9 @@ exports[`Checkbox should render whole component 1`] = `
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+  width: calc(0.4 * var(--lendi-ui-size));
+  height: calc(1.2 * var(--lendi-ui-size));
+  top: 2px;
 }
 
 <Component
@@ -210,15 +215,18 @@ exports[`Checkbox should render whole component 1`] = `
     checked={false}
     disabled={false}
     isBoxed={false}
+    size="md"
   >
     <label
       checked={false}
       className="c0"
       disabled={false}
+      size="md"
     >
       <styled.input
         checked={false}
         disabled={false}
+        inputSize="md"
         onChange={[Function]}
         type="checkbox"
         value="1"

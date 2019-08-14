@@ -6,22 +6,48 @@ import {PropTable} from '@lendi-ui/doc-utils';
 import {CheckboxGroup} from '@lendi-ui/checkbox';
 ```
 
-```jsx
-<CheckboxGroup values={[]} onChange={() => {}}>
-  <CheckboxGroup.Checkbox
-    label='LUI CheckboxGroup option 1'
-    value='1' id="testId" aria-label="checkbox-label"
-  />
-  <CheckboxGroup.Checkbox
-    label='LUI CheckboxGroup option 2'
-    value='2'
-  />
-  <CheckboxGroup.Checkbox
-    label='LUI CheckboxGroup option 3'
-    value='3'
-  />
-  </CheckboxGroup>      
+```js
+class PlaygroundComponent extends React.Component {
+  constructor() {
+    this.state = {
+      values: ['1']
+    }
+    this.onChange = this.onChange.bind(this);
+  }
+
+  onChange(e) {
+    let newValues = Array.from(this.state.values);
+    if (!newValues.includes(e.target.value)) {
+      newValues.push(e.target.value);
+    } else {
+      newValues = newValues.filter((val) => val !== e.target.value.toString());
+    }
+    this.setState({values: newValues});
+  }
+
+  render() {
+    return (
+      <CheckboxGroup values={this.state.values} onChange={this.onChange}>
+        <CheckboxGroup.Checkbox
+          label='LUI CheckboxGroup option 1'
+          value='1'
+        />
+        <CheckboxGroup.Checkbox
+          label='LUI CheckboxGroup option 2'
+          value='2'
+        />
+        <CheckboxGroup.Checkbox
+          label='LUI CheckboxGroup option 3'
+          value='3'
+        />
+      </CheckboxGroup>  
+    );
+  }
+}
+
+render(<PlaygroundComponent/>)
 ```
+
 
 ## CheckboxGroup Properties
 

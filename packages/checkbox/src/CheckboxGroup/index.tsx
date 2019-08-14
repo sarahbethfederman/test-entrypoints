@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import * as createReactContext from 'create-react-context';
 import { Wrapper, Direction } from './index.style';
-import { Checkbox, CheckboxProps } from '../Checkbox/index';
+import { Checkbox, CheckboxProps, Size } from '../Checkbox/index';
 import { mb } from '@lendi-ui/spacing';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
@@ -32,6 +32,7 @@ export interface CheckboxGroupContext extends LUIGlobalProps {
   isBoxed?: boolean;
   values: string[]; // all the checked items
   className?: string;
+  size?: Size;
 }
 
 export interface CheckboxGroupProps extends CheckboxGroupContext {
@@ -58,10 +59,11 @@ export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
       direction = 'column',
       isDisabled,
       onChange,
+      size = 'md',
       ...checkboxProps
     } = this.props;
 
-    const checkboxGroupWrapperProps = { isBoxed, values, isDisabled, onChange };
+    const checkboxGroupWrapperProps = { isBoxed, values, isDisabled, onChange, size };
     return (
       <CheckboxContext.Provider value={checkboxGroupWrapperProps}>
         <Wrapper direction={direction} className={className} {...checkboxProps}>
