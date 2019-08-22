@@ -5,13 +5,13 @@ A <Dropdown> component.
 ## Installation
 
 ```
-yarn add @lendi-ui/inline-dropdown
+yarn add @lendi-ui/dropdown
 ```
 
 ## Usage
 
 ```jsx
-import Dropdown from '@lendi-ui/inline-dropdown';
+import { NativeSelect, Select } from '@lendi-ui/dropdown';
 (items = [
   {
     value: '1',
@@ -34,7 +34,21 @@ import Dropdown from '@lendi-ui/inline-dropdown';
     label: '25 years',
   },
 ]),
-  <Dropdown size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }} items={items} isFullWidth={true} />;
+      <NativeSelect
+        size={{mobile:'sm', tablet:'md', desktop:'lg'}}
+        items={this.state.items}
+        isFullWidth={true}
+        value={this.state.value}
+        onChange={(value) => {this.setState({value})
+          }}
+      />
+      <Select
+          size="sm"
+          options={items}
+          placeholder="Size SM"
+          hideSelectedOptions={false}
+          isAutoFocus
+        />
 ```
 
 \*\*\*Dropdown also support default select props like autoFocus, disabled, onFocus, onChange, name and all AriaAttributes.

@@ -58,7 +58,7 @@ exports[`Dropdown should render whole component 1`] = `
   height: calc(1.25 * var(--lendi-ui-size));
 }
 
-<Dropdown
+<Component
   items={
     Array [
       Object {
@@ -187,5 +187,5 @@ exports[`Dropdown should render whole component 1`] = `
       </Styled(ExpandMore)>
     </div>
   </styled.div>
-</Dropdown>
+</Component>
 `;

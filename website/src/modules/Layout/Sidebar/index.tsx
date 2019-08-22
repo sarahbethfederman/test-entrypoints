@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 import Logo from '@lendi-ui/logo';
-import Dropdown from '@lendi-ui/dropdown';
+import { NativeSelect } from '@lendi-ui/dropdown';
 import { Heading, overline, link } from '@lendi-ui/typography';
 import { pl } from '@lendi-ui/spacing';
 import { color } from '@lendi-ui/color';
@@ -79,7 +79,7 @@ export class Sidebar extends React.Component<SidebarProps> {
           <Heading size="sm">Select theme</Heading>
           <AppContext.Consumer>
             {({ theme, changeTheme }) => (
-              <Dropdown
+              <NativeSelect
                 size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }}
                 items={themeItems}
                 isFullWidth

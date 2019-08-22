@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { body } from '@lendi-ui/typography';
 import { mb, ml, pr } from '@lendi-ui/spacing';
-import Dropdown from '@lendi-ui/dropdown';
+import { NativeSelect } from '@lendi-ui/dropdown';
 import { between } from '@lendi-ui/breakpoint';
 import Grid from '@lendi-ui/grid';
 import { color, bg } from '@lendi-ui/color';
@@ -19,7 +19,7 @@ export const Label = styled.label`
   ${mb('xxxs')};
 `;
 
-export const StyledDropdown = styled(Dropdown)`
+export const StyledDropdown = styled(NativeSelect)`
   border-radius: ${select('borderRadius')};
   border: 1px solid ${color('shade.200')};
   ${ml('nil')};

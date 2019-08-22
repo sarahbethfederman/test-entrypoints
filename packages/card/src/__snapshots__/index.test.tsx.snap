@@ -127,7 +127,7 @@ exports[`Card render card with interactive title 1`] = `
 
 <Card
   interactiveTitle={
-    <Dropdown
+    <Unknown
       items={
         Array [
           Object {
@@ -170,7 +170,7 @@ exports[`Card render card with interactive title 1`] = `
                       className="c3 c4"
                       size="sm"
                     >
-                      <Dropdown
+                      <Component
                         items={
                           Array [
                             Object {
@@ -262,7 +262,7 @@ exports[`Card render card with interactive title 1`] = `
                             </Styled(ExpandMore)>
                           </div>
                         </styled.div>
-                      </Dropdown>
+                      </Component>
                     </h4>
                   </HeadingTag>
                 </Styled(HeadingTag)>

@@ -238,7 +238,7 @@ describe.each([SimpleCarousel, CompoundCarousel])('%p', (TestCarousel) => {
     });
   });
 
-  describe('Autoplay functionality', () => {
+  describe.skip('Autoplay functionality', () => {
     it('should not change slides if autoplay not specified', () => {
       render(<TestCarousel />);
 

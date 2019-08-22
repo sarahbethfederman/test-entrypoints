@@ -1,3 +1,8 @@
+## [3.0.0] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### Changed
+- Old dropdown has be named as NativeSelect and exported NativeSelect as named export.
+- New fancy icon is Select - exported as Named export.
+
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
 ### Changed
 - Update icon imports to new names.

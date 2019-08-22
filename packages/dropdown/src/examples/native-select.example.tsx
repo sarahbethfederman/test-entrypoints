@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Dropdown from './index';
+import { Heading } from '@lendi-ui/typography';
+import { NativeSelect } from '..';
 const items = [
   {
     value: '1',
@@ -24,7 +25,7 @@ const items = [
 ];
 export default () => (
   <>
-    <Dropdown
+    <NativeSelect
       id="dropdownId"
       aria-label="myLabel"
       size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }}
@@ -34,16 +35,16 @@ export default () => (
 
     <br />
     <br />
-    <b>HTML default Autofocus</b>
-    <Dropdown size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }} items={items} isFullWidth={true} autoFocus />
+    <Heading size="xs">HTML default Autofocus</Heading>
+    <NativeSelect size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }} items={items} isFullWidth={true} autoFocus />
     <br />
     <br />
-    <b>HTML default disabled</b>
-    <Dropdown size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }} items={items} isFullWidth={true} />
+    <Heading size="xs">HTML default disabled</Heading>
+    <NativeSelect size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }} items={items} isFullWidth={true} />
     <br />
     <br />
-    <b>HTML default id, name</b>
-    <Dropdown
+    <Heading size="xs">HTML default id, name</Heading>
+    <NativeSelect
       size={{ mobile: 'sm', tablet: 'md', desktop: 'lg' }}
       items={items}
       isFullWidth={true}

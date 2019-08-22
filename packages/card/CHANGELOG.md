@@ -1,3 +1,7 @@
+## [3.2.3] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### updated
+- bump the version so that it could use latest dropdown version.
+
 ## [3.2.2] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
 ### updated
 - Bump patch version to reflect the relative path issue fix

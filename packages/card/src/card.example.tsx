@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '.';
-import Dropdown, { Item } from '@lendi-ui/dropdown';
+import { NativeSelect, Item } from '@lendi-ui/dropdown';
 import { Info } from '@lendi-ui/icon';
 const items: Item[] = [
   {
@@ -28,7 +28,7 @@ export default () => (
       <Card headerSize="xs" title="Inner Card with Subtitle with headerSize 'xs'" subTitle="Here we go">
         Child card
       </Card>
-      <Card interactiveTitle={<Dropdown items={items} />}>Interactive Card title - Dropdown</Card>
+      <Card interactiveTitle={<NativeSelect items={items} />}>Interactive Card title - Dropdown</Card>
       <Card headerSize="xs" title="Aria Attributes" aria-label="aria label" className="fakeClass" id="myId">
         Support for native props like Aria label, React-specific Attributes, Standard HTML Attributes like title,
         classname, id, role, itemProps, itemID, itemRef

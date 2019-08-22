@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import Dropdown from './index';
+import { NativeSelect } from '../index';
 import { DropdownWrapper, Select, IconDown, SpinnerWrapper } from './index.style';
 
 let Wrapper: any;
@@ -32,7 +32,7 @@ const items = [
 const render = (props: any) => {
   Wrapper = mount(
     <Theme>
-      <Dropdown size="md" items={items} {...props} />
+      <NativeSelect size="md" items={items} {...props} />
     </Theme>
   );
 };
@@ -40,8 +40,8 @@ const render = (props: any) => {
 describe('Dropdown', () => {
   it('should render whole component', () => {
     render({});
-    expect(Wrapper.find('Dropdown').length).toEqual(1);
-    expect(Wrapper.find('Dropdown')).toMatchSnapshot();
+    expect(Wrapper.find(NativeSelect).length).toEqual(1);
+    expect(Wrapper.find(NativeSelect)).toMatchSnapshot();
   });
 
   it('should render DropdownWrapper', () => {
@@ -115,7 +115,7 @@ describe('Dropdown onChange', () => {
 
   const wrapper = mount(
     <Theme>
-      <Dropdown size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onChange={onChange} />
+      <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onChange={onChange} />
     </Theme>
   );
 
@@ -131,7 +131,7 @@ describe('Dropdown onFocus', () => {
 
   const wrapper = mount(
     <Theme>
-      <Dropdown size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onFocus={onFocus} />
+      <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onFocus={onFocus} />
     </Theme>
   );
 
@@ -147,7 +147,7 @@ describe('Dropdown onBlur', () => {
 
   const wrapper = mount(
     <Theme>
-      <Dropdown size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onBlur={onBlur} />
+      <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onBlur={onBlur} />
     </Theme>
   );
 
@@ -162,7 +162,7 @@ describe('Dropdown items properties', () => {
   it('should disable an item if isDisabled is passed through on the item', () => {
     const wrapper = mount(
       <Theme>
-        <Dropdown size="md" items={[{ value: '1', label: '1', isDisabled: true }]} />
+        <NativeSelect size="md" items={[{ value: '1', label: '1', isDisabled: true }]} />
       </Theme>
     );
 
@@ -173,7 +173,7 @@ describe('Dropdown items properties', () => {
   it('should hide an item if isHidden is passed through on the item', () => {
     const wrapper = mount(
       <Theme>
-        <Dropdown size="md" items={[{ value: '1', label: '1', isHidden: true }]} />
+        <NativeSelect size="md" items={[{ value: '1', label: '1', isHidden: true }]} />
       </Theme>
     );
 

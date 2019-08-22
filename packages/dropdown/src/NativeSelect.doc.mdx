@@ -1,0 +1,90 @@
+import {PropTable} from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import { NativeSelect } from '@lendi-ui/dropdown';
+
+```
+
+```js
+
+const items= [
+    {
+      value: '1',
+      label: '5 years'
+    },
+    {
+      value: '2',
+      label: '10 years'
+    },
+    {
+      value: '3',
+      label: '15 years'
+    },
+    {
+      value: '4',
+      label: '20 years'
+    },
+    {
+      value: '5',
+      label: '25 years'
+    }
+];
+
+
+class PlaygoundComponent extends React.Component{
+  constructor() {
+    this.state = {
+      value: '2',
+      items: items,
+    };
+  }
+
+  render() {
+    return (
+      <>
+       <NativeSelect
+        size={{mobile:'sm', tablet:'md', desktop:'lg'}}
+        items={this.state.items}
+        isFullWidth={true}
+        value={this.state.value}
+        onChange={(value) => {this.setState({value})
+          }}
+      />
+
+      </>
+    );
+  }
+
+}
+
+render(<PlaygoundComponent/>)
+
+```
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="className" defaultValue=""type="string" description="The custom style for NativeSelect."/>
+  <PropTable.Entry name="items" required type="Properties.Items" description="See the below table for items definition."/>
+  <PropTable.Entry name="isDisabled" type={'"true | false"'} defaultValue="false" description="Whether the native select is disabled."/>
+  <PropTable.Entry name="isError" type={'"true | false"'} defaultValue="false" description="Whether the native select is not selected."/>
+  <PropTable.Entry name="isFullWidth" type={'"true | false"'} defaultValue="true" description="the native select is intended to use the full width of the container"/>
+  <PropTable.Entry name="isLoading" type={'"true | false"'} defaultValue="false" description="Whether the native select icon is Spinner or ChevronDown."/>
+  <PropTable.Entry name="isMultiple" type={'"true | false"'} defaultValue="false" description="multiple select flag"/>
+  <PropTable.Entry name="onBlur" type='(event.target.value) => void' description="Blur event handler."/>
+  <PropTable.Entry name="onChange" type='(event.target.value) => void' description="Change event handler."/>
+  <PropTable.Entry name="onFocus" type='(event.target.value) => void' description="Focus event handler."/>
+  <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="the inline-native select size"/>
+</PropTable>
+
+<br />
+
+## Properties.Items
+
+<PropTable>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue="false" description="Whether or not the item should be disabled." />
+  <PropTable.Entry name="isHidden" type="boolean" defaultValue="false" description="Whether or not the item should be hidden in the list." />
+  <PropTable.Entry name="label" required type="string" description="The user-facing label for the native select item." />
+  <PropTable.Entry name="value" required type="string" description="The value of the selected item when read by JavaScript." />
+</PropTable>

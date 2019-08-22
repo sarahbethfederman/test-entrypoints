@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Card, { CardProps } from '.';
 import Theme from '@lendi-ui/theme';
 import { CardHead, CardBody, MoreContainer, CardTitleIcon } from './index.style';
-import Dropdown, { Item } from '@lendi-ui/dropdown';
+import { NativeSelect, Item } from '@lendi-ui/dropdown';
 import { Lock, Info } from '@lendi-ui/icon';
 import { deriveSize } from '@lendi-ui/utils';
 
@@ -36,8 +36,8 @@ describe('Card', () => {
         label: '10 years',
       },
     ];
-    render({ interactiveTitle: <Dropdown items={items} /> });
-    expect(wrapper.find(Dropdown)).toBeDefined();
+    render({ interactiveTitle: <NativeSelect items={items} /> });
+    expect(wrapper.find(NativeSelect)).toBeDefined();
     expect(wrapper.find(Card)).toMatchSnapshot();
   });
 

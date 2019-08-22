@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [1.1.1] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### updated
+- bump the version so that it could use latest dropdown version.
+
 ## [1.1.0] 2019-6-27 [HUB-66](https://creditandfinance.atlassian.net/browse/HUB-66)
 ### Created
 - Added country to the addressObject

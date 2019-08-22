@@ -1,0 +1,109 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import { Select } from '@lendi-ui/dropdown';
+
+```
+
+```js
+
+const items = [{
+                label: 'AMP Bank',
+                value: 'AMP',
+              },
+              {
+                label: 'ANZ',
+                value: 'anz',
+              },
+              {
+                label: 'Adelaide Bank',
+                value: 'ADE',
+              },
+              {
+                label: 'Adelaide Bank (Commercial) - a very very very long name',
+                value: 'ADEC',
+              }]
+
+
+class PlaygoundComponent extends React.Component{
+
+  constructor() {
+    this.state = {
+      values: [
+        {
+          label: 'Adelaide Bank',
+          value: 'ADE',
+        },
+      ],
+      inputValue: '',
+    }
+  }
+  
+  render() {
+    return (
+        <Select
+          size="sm"
+          isClearable={true}
+          options={items}
+          isFullWidth={true}
+          placeholder="Multi-Select"
+          onChangeItem={(values) => this.setState({values})}
+          value={this.state.values}
+          isClearableByBackspace={true}
+          onFocus={() => console.log('onFocus')}
+          onBlur={() => console.log('onBlur')}
+          hideSelectedOptions={false}
+          isError={false}
+          isMultiple
+          inputValue={this.state.inputValue}
+          onInputChange={(inputValue) => {
+            this.setState({
+              inputValue,
+            });
+          }}
+        />
+    );
+  }
+
+  
+}
+
+render(<PlaygoundComponent/>)
+
+
+```
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="className" defaultValue=""type="string" description="The custom style for Select."/>
+  <PropTable.Entry name="formatOptionLabel" type="(option: OptionType, { context }: { context: FormatOptionLabelContext }) => React.ReactNode" description="Formats option labels in the menu and control as React components so that consumer can show menu-items with before and after icon or whatever way he wants to
+   use it - see examples - `select-before-icon-example` and `select-with-description-example`"/>
+  <PropTable.Entry name="hideSelectedOptions" type={'"true | false"'} defaultValue="false" description="Hide the selected option from the menu otherwise you will see the highlighted selected option in the menu"/>
+  <PropTable.Entry name="inputValue" type={'"true | false"'} defaultValue="" description="The value of the search input"/>
+  <PropTable.Entry name="isAutoFocus" type={'"true | false"'} defaultValue="false" description="Autofocus select"/>
+  <PropTable.Entry name="isClearable" type={'"true | false"'} defaultValue="false" description="Is the select value clearable"/>
+  <PropTable.Entry name="isClearableByBackspace" type={'"true | false"'} defaultValue="false" description="Remove the currently focused option when the user presses backspace"/>
+  <PropTable.Entry name="isDisabled" type="boolean" defaultValue={false} description="Whether the select disabled"/>
+  <PropTable.Entry name="isError" type={'"true | false"'} defaultValue="false" description="Whether the select is not selected."/>
+  <PropTable.Entry name="isFullWidth" type={'"true | false"'} defaultValue="true" description="the select is intended to use the full width of the container"/>
+  <PropTable.Entry name="isInverse" type={'"true | false"'} defaultValue="false" description="Whether the select icon is inversed"/>
+  <PropTable.Entry name="isMenuOpen" type={'"true | false"'} defaultValue="false" description="Whether the select menu is open"/>
+  <PropTable.Entry name="isMultiple" type={'"true | false"'} defaultValue="false" description="Multiple select flag"/>
+  <PropTable.Entry name="isSearchable" type={'"true | false"'} defaultValue="true" description="is select searable - by disabling this consumer can use it as a native select which takes no input - just a form select "/>
+  <PropTable.Entry name="onBlur" type='(event) => void' description="Blur event handler."/>
+  <PropTable.Entry name="onChangeItem" type='(value: ValueType<OptionType>) => void' description="on Change item handler."/>
+  <PropTable.Entry name="onFocus" type='(event) => void' description="Focus event handler."/>
+  <PropTable.Entry name="onKeyDown" type='(event) => void' description="Keydown event handler."/>
+  <PropTable.Entry name="onInputChange" type='(val: string) => void' description="on change value to input text. This is exception to the rest of the API onchange event."/>
+  <PropTable.Entry name="onMenuOpen" type='() => void' description="onMenuOpen handler."/>
+  <PropTable.Entry name="onMenuClose" type='() => void' description="onMenuClose handler."/>
+  <PropTable.Entry name="name" type='() => void' description="name of the select"/>
+  <PropTable.Entry name="options" required type={'OptionsType<OptionType>'} defaultValue="" description="Array of options that populate the select menu"/>
+  <PropTable.Entry name="placeholder" required type={'string'} defaultValue="" description="The placeholder to appear inside select"/>
+  <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="the select size"/>
+  <PropTable.Entry name="value" required type={'ValueType<OptionType>'} defaultValue="" description="The value to the Select"/>
+</PropTable>
+
+
