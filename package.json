@@ -48,9 +48,10 @@
   },
   "scripts": {
     "build": "lerna run build --ignore @lendi-ui/theme --ignore @lendi-ui/reset --ignore @lendi-ui/inline-dropdown",
-    "build:assets": "yarn build:icons && yarn build:fancy-icons",
+    "build:assets": "yarn build:icons && yarn build:fancy-icons && yarn build:lender-logos",
     "build:icons": "node packages/icon/build/index.js",
     "build:fancy-icons": "node packages/fancy-icon/build/index.js",
+    "build:lender-logos": "node packages/lender-logos/build/index.js",
     "build:theme": "cd packages/theme/ && yarn build",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
     "check:danger": "danger local --base master",

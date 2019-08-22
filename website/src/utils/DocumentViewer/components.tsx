@@ -48,6 +48,7 @@ import * as fancyIcons from '@lendi-ui/fancy-icon';
 import AuthLoader from '@lendi-ui/auth-loader';
 import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
 import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
+import LenderLogos from '@lendi-ui/lender-logos';
 
 // If there are any conflicts between names, the order of this
 // object will determine the preference. (this is the case with
@@ -126,6 +127,7 @@ const scope = {
   Heading,
   Body,
   Link,
+  LenderLogos,
 };
 
 interface GenericProps {
