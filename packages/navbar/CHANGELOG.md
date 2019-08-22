@@ -1,3 +1,7 @@
+## [3.0.0] - 2019-08-22 - [HUB-417-navbar](https://creditandfinance.atlassian.net/browse/HUB-417-navbar)
+### Changed
+- change sign-in link to new auth stuff.
+
 ## [2.5.1] - 2019-07-26 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
 ### Changed
 - change `type` default to 'application'

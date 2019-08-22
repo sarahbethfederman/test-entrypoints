@@ -22,7 +22,7 @@
     "@lendi-ui/typography": "^3.2.1"
   },
   "devDependencies": {
-    "@lendi-ui/navbar": "^2.4.1"
+    "@lendi-ui/navbar": "^3.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
