@@ -1,3 +1,7 @@
+## [3.0.1] - 2019-08-26 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### Changed
+- something is wrong with publishing - so bumping the patch version 
+
 ## [3.0.0] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
 ### Changed
 - Old dropdown has be named as NativeSelect and exported NativeSelect as named export.

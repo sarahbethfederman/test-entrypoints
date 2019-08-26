@@ -1,4 +1,4 @@
-# @lendi-ui/inline-dropdown
+# @lendi-ui/dropdown
 
 A <Dropdown> component.
 
