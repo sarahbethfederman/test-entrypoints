@@ -1,3 +1,7 @@
+## [2.2.3] - 2019-08-28
+### Changed
+- Locked down versions of LUI dependencies as we resolve major changes.
+
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
 ### Changed
 - Replaced Error icon with HighlightOff icon.
