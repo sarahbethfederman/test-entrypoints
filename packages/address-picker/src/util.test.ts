@@ -1,8 +1,9 @@
-import { transformGoogleResponse } from './util';
+import { transformGoogleResponse, getFormatedString } from './util';
 
 const MOCK_DATA = [
   {
     userInput: '18A kangaroo road, Collaroy Plateau, NSW 2097',
+    formatString: '18a Kangaroo Road, CollaroyPlateau, NSW 2097, Australia',
     googleSuggestion: [
       { long_name: '18', short_name: '18', types: ['street_number'] },
       { long_name: 'Kangaroo Road', short_name: 'Kangaroo Rd', types: ['route'] },
@@ -32,6 +33,7 @@ const MOCK_DATA = [
   },
   {
     userInput: '108-120 Old Pittwater Road, Brookvale NSW, Australia',
+    formatString: '108-120 OldPittwater Road, Brookvale, NSW 2100, Australia',
     googleSuggestion: [
       { long_name: '108-120', short_name: '108-120', types: ['street_number'] },
       { long_name: 'Old Pittwater Road', short_name: 'Old Pittwater Rd', types: ['route'] },
@@ -61,6 +63,7 @@ const MOCK_DATA = [
   },
   {
     userInput: '3/10 Bank Street, Meadowbank NSW, Australia',
+    formatString: '3/10 Bank Street, Meadowbank, NSW 2114, Australia',
     googleSuggestion: [
       { long_name: '10', short_name: '10', types: ['street_number'] },
       { long_name: 'Bank Street', short_name: 'Bank St', types: ['route'] },
@@ -86,6 +89,7 @@ const MOCK_DATA = [
   },
   {
     userInput: '17 The Quarterdeck, Willetton WA, Australia',
+    formatString: '17 TheQuarterdeck, Willetton, WA 6155, Australia',
     googleSuggestion: [
       { long_name: '17', short_name: '17', types: ['street_number'] },
       { long_name: 'The Quarterdeck', short_name: 'The Quarterdeck', types: ['route'] },
@@ -111,6 +115,7 @@ const MOCK_DATA = [
   },
   {
     userInput: '68 Village Rd, Jervis Bay JBT 2540, Australia',
+    formatString: '68 Village Road, JervisBay, ACT 2540, Australia',
     googleSuggestion: [
       { long_name: '68', short_name: '68', types: ['street_number'] },
       { long_name: 'Village Road', short_name: 'Village Rd', types: ['route'] },
@@ -143,6 +148,18 @@ describe('transformGoogleResponse', () => {
   MOCK_DATA.forEach(({ userInput, googleSuggestion, addressObject }) => {
     it(`Generates correct response for: ${userInput}`, () => {
       expect(transformGoogleResponse(userInput, googleSuggestion)).toEqual(addressObject);
+    });
+  });
+});
+
+describe('getFormatedString', () => {
+  it('is a function', () => {
+    expect(getFormatedString).toBeDefined();
+  });
+
+  MOCK_DATA.forEach(({ formatString, addressObject }) => {
+    it(`Generates correct response for: ${formatString}`, () => {
+      expect(getFormatedString(addressObject)).toEqual(formatString);
     });
   });
 });

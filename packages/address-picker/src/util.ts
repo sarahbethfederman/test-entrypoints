@@ -1,5 +1,6 @@
 import { AddressObject } from './components/Modal';
 import { STREET_TYPE } from './components/Modal/constants';
+import * as to from 'to-case';
 
 /**
  * Where possible this function takes the users input and
@@ -61,4 +62,19 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
     state,
     country: country.toLowerCase(),
   };
+};
+
+export const getFormatedString = (address: AddressObject) => {
+  let formatString = address.unit ? ''.concat(address.unit, '/') : '';
+  formatString = address.lotSection ? formatString.concat('Lot. ', address.lotSection) : formatString;
+  formatString = address.level ? formatString.concat(' level ', address.level) : formatString;
+  formatString = address.buildingName ? formatString.concat(' ', to.pascal(address.buildingName), ' ') : formatString;
+  formatString = address.streetNumber ? formatString.concat(address.streetNumber) : formatString;
+  formatString = address.streetName ? formatString.concat(' ', to.pascal(address.streetName)) : formatString;
+  formatString = address.streetType ? formatString.concat(' ', to.pascal(address.streetType)) : formatString;
+  formatString = address.suburb ? formatString.concat(', ', to.pascal(address.suburb)) : formatString;
+  formatString = address.state ? formatString.concat(', ', to.upper(address.state)) : formatString;
+  formatString = address.postcode ? formatString.concat(' ', address.postcode) : formatString;
+  formatString = address.country ? formatString.concat(', ', to.pascal(address.country)) : formatString;
+  return formatString;
 };

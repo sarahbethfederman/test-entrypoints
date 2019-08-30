@@ -1,5 +1,12 @@
 # Changelog - @lendi-ui/address-picker
 
+## [1.2.0] - 2019-08-27 - [HUB-438](https://creditandfinance.atlassian.net/browse/HUB-260)
+### Changed
+- let users get format_string of address in onSelect function
+- allow users to set default value in Input
+- improve documentation for googlemap api script link
+- fix some UI bugs
+
 ## [1.1.1] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
 ### updated
 - bump the version so that it could use latest dropdown version.

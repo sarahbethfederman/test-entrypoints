@@ -9,7 +9,7 @@ import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import AddressModal, { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
-import { transformGoogleResponse } from './util';
+import { transformGoogleResponse, getFormatedString } from './util';
 
 type SizeVariant = 'lg' | 'md' | 'sm';
 export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
@@ -18,11 +18,11 @@ export interface AddressPickerProps extends LUIGlobalProps {
   country?: string;
   isDisabled?: boolean;
   onChange: (e: React.SyntheticEvent) => void;
-  onSelect: (selection: AddressObject) => void;
+  onSelect: (selection: AddressObject, formatString?: string) => void;
   onReset?: () => void; // @TODO - HUB-305
   showMap?: boolean;
   size?: Size;
-  value?: AddressObject; // @TODO - HUB-305
+  value?: string; // @TODO - HUB-305
 }
 
 export interface AddressPickerState {
@@ -45,7 +45,8 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     | {} = {} as google.maps.places.AutocompleteSessionToken;
 
   state = {
-    addressInput: '',
+    addressInput: this.props.value ? this.props.value : '',
+    rawInput: '',
     failedAddressSearch: false,
     isOpen: false,
     isLoading: false,
@@ -111,7 +112,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   onSave = (address: AddressObject) => {
     // @TODO - HUB-305 display this data in the input
     this.setState({ showModal: false });
-    this.props.onSelect(address);
+    this.props.onSelect(address, getFormatedString(address));
   };
 
   /**
@@ -134,9 +135,8 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
         };
         if (status === google.maps.places.PlacesServiceStatus.OK) {
           newState.selectedPlace = geometry as google.maps.places.PlaceGeometry;
-          this.props.onSelect(
-            transformGoogleResponse(label, address_components as google.maps.GeocoderAddressComponent[])
-          );
+          const address = transformGoogleResponse(label, address_components as google.maps.GeocoderAddressComponent[]);
+          this.props.onSelect(address, getFormatedString(address));
         }
         this.setState(newState);
       }
@@ -147,8 +147,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     return (
       <Alert>
         <Body color="warn.500" size="xs">
-          <InfoWrapper color="warn.500" />
-          No matches found.
+          <InfoWrapper color="warn.500" /> No matches found.
           <Link
             color="warn.500"
             onClick={() => {
@@ -163,7 +162,6 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   };
 
   render() {
-    const { suggestions = [], addressInput = '', selectedPlace, failedAddressSearch, isOpen, isLoading } = this.state;
     const {
       showMap = true,
       isDisabled,
@@ -175,6 +173,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
       value,
       ...globalProps
     } = this.props;
+    const { suggestions = [], addressInput = '', selectedPlace, failedAddressSearch, isOpen, isLoading } = this.state;
     const suggestionsToDataSource = suggestions.map(({ description, place_id }) => ({
       label: description,
       value: place_id,
@@ -187,8 +186,9 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
           size={size || 'md'}
           isDisabled={Boolean(isDisabled)}
           onReset={() => {
-            this.setState({ addressInput: '', selectedPlace: {} });
+            this.setState({ addressInput: '', selectedPlace: {} }, () => (onReset ? onReset() : undefined));
           }}
+          placeholder="Just start typing..."
           value={addressInput}
           open={isOpen && isEmpty(selectedPlace) && suggestions.length > 0}
           isFullWidth
@@ -217,3 +217,5 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     );
   }
 }
+
+export { AddressObject } from './components/Modal';
