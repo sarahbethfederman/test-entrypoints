@@ -1,18 +1,22 @@
+## [3.0.1] - 2019-09-04 - [HUB-490](https://creditandfinance.atlassian.net/browse/HUB-490)
+### Changed
+- Corrected the link of continue application - now pointed to /home-loans/search.
+
 ## [3.0.0] - 2019-08-22 - [HUB-417-navbar](https://creditandfinance.atlassian.net/browse/HUB-417-navbar)
 ### Changed
-- change sign-in link to new auth stuff.
+- Change sign-in link to new auth stuff.
 
 ## [2.5.1] - 2019-07-26 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
 ### Changed
-- change `type` default to 'application'
+- Change `type` default to 'application'
 
 ## [2.5.0] - 2019-07-23 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
 ### Added
-- add SEMNavbar into navbar package
+- Add SEMNavbar into navbar package
 
 ## [2.4.4] - 2019-07-19 - [HUB-navbar-hotfix](https://creditandfinance.atlassian.net/browse/HUB-navbar-hotfix)
 ### Changed
-- change assets build script and folder structre
+- Change assets build script and folder structre
 
 ## [2.4.3] - 2019-07-18 - [HUB-navbar-svg](https://creditandfinance.atlassian.net/browse/HUB-navbar-svg)
 ### Changed

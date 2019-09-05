@@ -16,7 +16,7 @@ import {
 import { Menu } from '@lendi-ui/icon';
 import * as ZINDEX from '../../../constants/z-index';
 import { ButtonGroup } from '@lendi-ui/button';
-import { HOME_PAGE_LINK, LOG_IN_LINK, SIGN_UP_LINK } from '../../../constants/links';
+import { HOME_PAGE_LINK, SIGN_UP_LINK, SEARCH_LOAN_LINK } from '../../../constants/links';
 import { AnalyticsContext } from '@lendi-ui/utils';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 
@@ -68,7 +68,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
       return (
         <ApplicationStatusButton
           variant="emphasis"
-          href={`${LOG_IN_LINK}${params}`}
+          href={`${SEARCH_LOAN_LINK}${params}`}
           onClick={() => {
             this.context.analyticsForNavigation('Start application', WindowPosition.header);
           }}
