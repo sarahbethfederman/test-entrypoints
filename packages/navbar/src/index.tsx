@@ -4,6 +4,7 @@ import { MarketingNavbar } from './Marketing/index';
 import { SEMNavbar } from './SEM/index';
 import { Application, Broker } from './common/types';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+import { useSession } from '@lendi/lala-react';
 
 export type NavbarType = 'SEM' | 'Application' | 'Marketing';
 export interface ApplicationNavbarProps extends LUIGlobalProps {
@@ -27,13 +28,23 @@ const Navbar = ({
   variant,
   params,
 }: ApplicationNavbarProps) => {
+  const { logout } = useSession();
+
+  const NavbarLogout = () => {
+    if (!onLogout) {
+      logout(); // this is default logout from lala-react.
+    } else {
+      onLogout();
+    }
+  };
+
   switch (type) {
     case 'Application':
       return (
         <ApplicationNavbar
           onChat={onChat}
           broker={broker}
-          onLogout={onLogout}
+          onLogout={NavbarLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           variant={variant}
@@ -44,7 +55,7 @@ const Navbar = ({
       return (
         <MarketingNavbar
           onChat={onChat}
-          onLogout={onLogout}
+          onLogout={NavbarLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}
@@ -54,7 +65,7 @@ const Navbar = ({
       return (
         <SEMNavbar
           onChat={onChat}
-          onLogout={onLogout}
+          onLogout={NavbarLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}
@@ -64,7 +75,7 @@ const Navbar = ({
       return (
         <MarketingNavbar
           onChat={onChat}
-          onLogout={onLogout}
+          onLogout={NavbarLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}

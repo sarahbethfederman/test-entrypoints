@@ -1,3 +1,7 @@
+## [3.0.2] - 2019-09-04 - [HUB-493](https://creditandfinance.atlassian.net/browse/HUB-493)
+### Changed
+- add default logout function to navbar
+
 ## [3.0.1] - 2019-09-04 - [HUB-490](https://creditandfinance.atlassian.net/browse/HUB-490)
 ### Changed
 - Corrected the link of continue application - now pointed to /home-loans/search.

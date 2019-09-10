@@ -9,6 +9,7 @@ var newConfig = {
     '/packages/dropdown/',
     '/packages/card/',
     '/packages/accordion/',
+    '/packages/navbar/',
   ],
 };
 
