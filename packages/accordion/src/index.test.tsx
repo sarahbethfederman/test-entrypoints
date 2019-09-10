@@ -1,11 +1,13 @@
 import * as React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { AccordionGroup } from './components/AccordionGroup';
 import { AccordionHeader } from './components/AccordionHeader';
 import { AccordionItem } from './components/AccordionItem';
 import { Accordion } from './components/Accordion/index';
 import { Check } from '@lendi-ui/icon';
+import { HeaderButtonWrapper, AccordionItemWrapper } from './index.style';
+import { AccordionContext } from './components/AccordionContext';
 
 let element;
 const mockClickFn = jest.fn();
@@ -52,8 +54,6 @@ describe('AccordionGroup', () => {
     });
   });
 });
-
-// Accordion test cases
 
 describe('Accordion', () => {
   beforeEach(() => {
@@ -102,7 +102,44 @@ describe('Accordion', () => {
   });
 });
 
-// AccordionHeader test cases
+describe('Accordion accesibility', () => {
+  beforeEach(() => {
+    element = mount(
+      <Theme>
+        <AccordionContext.Provider value={{ isOpen: true, isDisabled: false, ariaId: 'test-id' }}>
+          <Accordion>
+            <Accordion.Header onClick={mockClickFn}>About</Accordion.Header>
+            <Accordion.Content>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et pulvinar leo, sed laoreet augue. Quisque
+              blandit, odio vitae mattis gue, nisl arcu scelerisque eros, fringilla bibendum nisl libero eget nisi.
+              Fusce malesuada at erat nec dictum. Donec placerat suscipit vulputate. Nullam ullamcorper libero mi, eu
+              vulputate orci scelerisque vel. Phasellus non pretium ante, nec vestibulum justo. Ut et interdum nibh,
+              quis scelerisque turpis. Praesent hendrerit urna eu lorem dignissim, nec sagittis nulla iaculis.
+            </Accordion.Content>
+          </Accordion>
+        </AccordionContext.Provider>
+      </Theme>
+    );
+  });
+
+  it('should match aria-labelledby to the id of the button', () => {
+    const accordion = element.find(Accordion);
+
+    const ariaLabel = accordion.find(AccordionItemWrapper).prop('aria-labelledby');
+    const buttonId = accordion.find(HeaderButtonWrapper).prop('id');
+
+    expect(buttonId).toBe(ariaLabel);
+  });
+
+  it('should contain the correct role', () => {
+    const HeaderButtonWrapper = element.find(AccordionItemWrapper);
+    expect(HeaderButtonWrapper.prop('role')).toEqual('region');
+  });
+
+  it('should contain aria visibility tags', () => {
+    expect(element.find(AccordionItemWrapper).prop('aria-hidden')).toEqual(true);
+  });
+});
 
 describe('AccordionHeader', () => {
   beforeEach(() => {
@@ -130,8 +167,6 @@ describe('AccordionHeader', () => {
       expect(mockClickFn).toHaveBeenCalled();
     });
   });
-
-  // Accordionitem test cases
 
   describe('AccordionItem', () => {
     beforeEach(() => {

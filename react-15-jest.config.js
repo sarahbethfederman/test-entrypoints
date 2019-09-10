@@ -8,6 +8,7 @@ var newConfig = {
     '/packages/address-picker/',
     '/packages/dropdown/',
     '/packages/card/',
+    '/packages/accordion/',
   ],
 };
 

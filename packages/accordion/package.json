@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/accordion",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -30,6 +30,7 @@
     "@lendi-ui/spacing": "^4.1.1",
     "@lendi-ui/typography": "^3.3.0",
     "@lendi-ui/utils": "^2.5.0",
-    "create-react-context": "^0.3.0"
+    "create-react-context": "^0.3.0",
+    "cuid": "^2.1.6"
   }
 }

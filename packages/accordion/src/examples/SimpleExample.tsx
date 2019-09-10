@@ -1,10 +1,9 @@
 import * as React from 'react';
-import { Body } from '@lendi-ui/typography';
+import { Body, Link } from '@lendi-ui/typography';
+import { Check, Lock } from '@lendi-ui/icon';
+import { Button } from '@lendi-ui/button';
 import { AccordionGroup } from '../components/AccordionGroup';
 import { Accordion } from '../components/Accordion';
-import { Check, Lock } from '@lendi-ui/icon';
-import styled from 'styled-components';
-import { pl } from '@lendi-ui/spacing';
 
 export default class SimpleAccordionExample extends React.Component {
   whichClicked: string = '';
@@ -57,10 +56,11 @@ export default class SimpleAccordionExample extends React.Component {
             <Accordion.Content>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
-              like Aldus PageMaker including versions of Lorem Ipsum.
+              scrambled it to make a type specimen book.{' '}
+              <Link href="#">Here's some clickable content within the accordion content</Link>. It has survived not only
+              five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+              recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </Accordion.Content>
           </Accordion>
           <Accordion isOpen={this.state.second} data-id="second">
@@ -85,6 +85,9 @@ export default class SimpleAccordionExample extends React.Component {
             <Accordion.Content>Item 1</Accordion.Content>
             <Accordion.Content>Item 2</Accordion.Content>
             <Accordion.Content>Item 3</Accordion.Content>
+            <Accordion.Content>
+              <Button variant="primary">Test button</Button>
+            </Accordion.Content>
           </Accordion>
         </AccordionGroup>
         <br />

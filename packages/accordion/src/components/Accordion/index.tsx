@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as cuid from 'cuid';
 import { AccordionProps } from '../../typings';
 import { AccordionItem } from '../AccordionItem';
 import { AccordionHeader } from '../AccordionHeader';
@@ -15,8 +16,10 @@ export class Accordion extends React.Component<AccordionProps> {
     const { isOpen = false, isDisabled = false, children, ...otherAccordionProps } = this.props;
     // check isOpen on Accordion group and preference to be given to it otherwise take the indicidual accordions.
     const isOpenValue = this.context.isOpen ? this.context.isOpen : isOpen;
+    const ariaId = cuid();
+
     return (
-      <AccordionContext.Provider value={{ isOpen: isOpenValue, isDisabled }}>
+      <AccordionContext.Provider value={{ isOpen: isOpenValue, isDisabled, ariaId }}>
         <AccordionWrapper isSelected={isOpenValue} {...otherAccordionProps}>
           <>{getChildrenOf(Accordion.Header, children)}</>
           <>{getChildrenOf(Accordion.Content, children)}</>

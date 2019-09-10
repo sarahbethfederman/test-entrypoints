@@ -6,9 +6,11 @@ const PonyfillContext = typeof createReactContext === 'object' ? createReactCont
 export interface AccordionContextState {
   isOpen: boolean;
   isDisabled: boolean;
+  ariaId: string;
 }
 
 export const AccordionContext = PonyfillContext<AccordionContextState>({
   isOpen: false,
   isDisabled: false,
+  ariaId: '',
 });

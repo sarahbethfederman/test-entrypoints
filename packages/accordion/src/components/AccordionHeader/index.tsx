@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AccordionHeaderProps } from '../../typings';
-import { ArrowIcon, HeaderWrapper, HeaderContent, HeaderIconContentWrapper } from '../../index.style';
+import { ArrowIcon, HeaderButtonWrapper, HeaderContent, HeaderIconContentWrapper } from '../../index.style';
 import { AccordionContext } from '../AccordionContext';
 
 export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
@@ -11,24 +11,26 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
 }) => {
   return (
     <AccordionContext.Consumer>
-      {(context) => {
+      {({ isOpen, isDisabled, ariaId }) => {
         return (
-          <HeaderWrapper
+          <HeaderButtonWrapper
+            id={ariaId}
+            aria-expanded={isOpen}
             {...otherHeaderProps}
-            disabled={context.isDisabled}
+            disabled={isDisabled}
             onClick={(e: React.SyntheticEvent) => {
-              if (context.isDisabled) {
+              if (isDisabled) {
                 return;
               }
               onClick(e);
             }}
           >
             <HeaderIconContentWrapper>
-              <ArrowIcon isRotate={context.isOpen} isDisabled={context.isDisabled} />
+              <ArrowIcon isRotate={isOpen} isDisabled={isDisabled} />
               <HeaderContent>{children}</HeaderContent>
             </HeaderIconContentWrapper>
             {after && <>{after}</>}
-          </HeaderWrapper>
+          </HeaderButtonWrapper>
         );
       }}
     </AccordionContext.Consumer>

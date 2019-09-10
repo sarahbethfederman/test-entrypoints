@@ -29,7 +29,7 @@ export const HeaderIconContentWrapper = styled.div`
   align-items: center;
 `;
 
-export const HeaderWrapper = styled.button`
+export const HeaderButtonWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: space-between;
