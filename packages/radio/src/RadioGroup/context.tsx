@@ -1,6 +1,4 @@
 import * as createReactContext from 'create-react-context';
-import { Direction } from './index.style';
-import { RadioProps } from '../Radio/index';
 import { LUIFormProps } from '@lendi-ui/utils';
 
 // @ts-ignore
@@ -10,15 +8,6 @@ export interface RadioGroupContext extends LUIFormProps {
   isBoxed?: boolean;
   selectedValue: string;
   className?: string;
-}
-
-export interface RadioGroupProps extends RadioGroupContext {
-  legend?: string;
-  direction?: Direction;
-  isDisabled?: boolean;
-  size?: 'xs' | 'sm' | 'md' | 'lg';
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  children?: React.ReactElement<RadioProps> | React.ReactElement<RadioProps>[] | null;
 }
 
 // Supressing "Cannot invoke an expression whose type lacks a call signature." error

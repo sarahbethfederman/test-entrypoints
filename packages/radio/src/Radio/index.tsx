@@ -10,7 +10,7 @@ export interface RadioProps extends LUIFormProps {
   isDisabled?: boolean;
   isBoxed?: boolean;
   className?: string;
-  size?: 'xs' | 'sm' | 'md' | 'lg';
+  size?: Size;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 

@@ -9,8 +9,8 @@ import { hoverState, hoverCheckedState, boxedHoverState, boxedHoverCheckedState 
 import { focusState, boxedFocusCheckedState, boxedFocusState } from './styles/focus.style';
 import { disabledState, boxedDisabledState, boxedDisabledCheckedState } from './styles/disabled.style';
 import { checkedState, boxedCheckedState } from './styles/checked.style';
+import { Size } from './index';
 
-type Size = 'xs' | 'sm' | 'md' | 'lg';
 interface WrapperProps {
   isBoxed: boolean;
   checked: boolean;

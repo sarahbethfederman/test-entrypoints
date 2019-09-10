@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 import { my } from '@lendi-ui/spacing';
 import { normalise } from '@lendi-ui/utils';
+import { Direction } from './index';
 
 export const Legend = styled.legend`
   ${my('xs')};
   font-weight: 700;
 `;
-
-export type Direction = 'row' | 'column';
 
 export const Fieldset = styled.fieldset`
   width: 100%;

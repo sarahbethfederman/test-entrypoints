@@ -1,3 +1,7 @@
+## [2.3.1] - 2019-09-10 - [HUB-radio-hotfix](https://creditandfinance.atlassian.net/browse/HUB-radio-hotfix)
+### Updated
+- Export RadioGroupProps interface
+
 ## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
 ### Added
 - Added xs, xm, lg size variants

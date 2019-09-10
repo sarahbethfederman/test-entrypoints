@@ -1,8 +1,20 @@
 import * as React from 'react';
 import { Legend, Fieldset, Wrapper } from './index.style';
+import { RadioProps, Size } from '../Radio/index';
 import { Body } from '@lendi-ui/typography';
 import { RadioGroupItem } from './custom';
-import { RadioContext, RadioGroupProps } from './context';
+import { RadioContext, RadioGroupContext } from './context';
+
+export type Direction = 'row' | 'column';
+
+export interface RadioGroupProps extends RadioGroupContext {
+  legend?: string;
+  direction?: Direction;
+  isDisabled?: boolean;
+  size?: Size;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  children?: React.ReactElement<RadioProps> | React.ReactElement<RadioProps>[] | null;
+}
 
 export class RadioGroup extends React.Component<RadioGroupProps> {
   static Radio = RadioGroupItem;
