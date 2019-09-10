@@ -1,3 +1,7 @@
+## [3.1.1] - 2019-09-10 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB-375)
+### Changed
+- added additional state check for condition where an unmounted components can be both not-appear and not-active bypassing the exit transition this resolves a "flash" caused when the component first mounts creating a brief black flash on the overlay component
+
 ## [3.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.
