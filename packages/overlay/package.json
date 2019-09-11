@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/overlay",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@lendi-ui/button": "^5.0.0",
     "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/transition": "^3.0.0",
+    "@lendi-ui/transition": "^3.1.1",
     "react-lifecycles-compat": "^3.0.4",
     "react-scrolllock": "^3.0.2",
     "@lendi-ui/utils": "^2.5.0"

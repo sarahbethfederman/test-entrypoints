@@ -1,3 +1,7 @@
+## [3.0.3] - 2019-09-11 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB/375)
+### Changed
+- bumped transition and overlay versions
+
 ## [3.0.2] - 2019-09-04 - [HUB-493](https://creditandfinance.atlassian.net/browse/HUB-493)
 ### Changed
 - add default logout function to navbar
@@ -96,7 +100,7 @@
 - Bump theme and Logo version
 
 ## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
- 
+
 ### Deleted
 - Remove the CJS bundles.
 

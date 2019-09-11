@@ -1,3 +1,7 @@
+## [2.2.2] - 2019-06-4 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB-375)
+### Changed
+- Bumped version for transition to 3.1.1 (this affects other projects that depend on this component)
+
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

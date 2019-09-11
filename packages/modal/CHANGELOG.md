@@ -1,3 +1,7 @@
+## [2.3.3] - 2019-07-22 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB-375)
+### Changed
+- Bumped Overlay Version to 2.2.2 this is explicitly for dependant projects
+
 ## [2.3.2] - 2019-07-22 - [HUB-342](https://creditandfinance.atlassian.net/browse/HUB-342)
 ### Changed
 - Update the Modal.Content section to use `overflow: auto` instead of `overflow: scroll`.
@@ -38,7 +42,7 @@
 ### Changed
 - Updated CHANGELOG to match required parsing format.
 
-## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54) 
+## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 
