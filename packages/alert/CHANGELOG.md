@@ -1,3 +1,7 @@
+## [2.3.0] - 2019-09-11 - [HUB-488-alert](https://creditandfinance.atlassian.net/browse/HUB-488-alert)
+### Changed
+- Change Alert children type to React.ReactNode instead of string. 
+
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
 ### Changed
 - Replaced Warn icon with ErrorOutline icon.

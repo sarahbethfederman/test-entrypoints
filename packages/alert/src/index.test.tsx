@@ -4,6 +4,7 @@ import Theme from '@lendi-ui/theme';
 import Alert, { AlertProps } from './index';
 import { Wrapper, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
 import { Info, ErrorOutline, CheckCircleOutline } from '@lendi-ui/icon';
+import { Link } from '@lendi-ui/typography';
 
 let element: ReactWrapper<AlertProps>, variant;
 
@@ -12,6 +13,16 @@ function render(props) {
     <Theme>
       <Alert variant="error" {...props}>
         Error description
+      </Alert>
+    </Theme>
+  );
+}
+
+function renderWithComponent(props) {
+  element = mount(
+    <Theme>
+      <Alert variant="error" {...props}>
+        Sorry, you may be blocked from logging in. Please <Link href="#">contact us</Link>.
       </Alert>
     </Theme>
   );
@@ -94,5 +105,13 @@ describe('Alert', () => {
       expect(attributes.id).toBe(TEXT_ID);
       expect(attributes.title).toBe(TEXT_TITLE);
     });
+  });
+});
+
+describe('Alert with rendering Link in children', () => {
+  beforeEach(() => renderWithComponent({}));
+
+  it('should render Link component', () => {
+    expect(element.find(Link)).toHaveLength(1);
   });
 });

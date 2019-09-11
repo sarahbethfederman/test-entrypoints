@@ -4,8 +4,7 @@ import { color, fg, bg } from '@lendi-ui/color';
 import { p, ml, mt } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
 import { normalise } from '@lendi-ui/utils';
-
-export type AlertVariant = 'error' | 'info' | 'success' | 'warn';
+import { AlertVariant } from './index';
 
 interface WrapperProps {
   variant: AlertVariant;

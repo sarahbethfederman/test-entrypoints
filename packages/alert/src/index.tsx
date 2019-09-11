@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { Wrapper, AlertVariant, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
+import { Wrapper, IconWrapper, HeaderWrapper, HeadingWrapper, ContentWrapper } from './index.style';
 import { Info, CheckCircleOutline, ErrorOutline } from '@lendi-ui/icon';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+
+export type AlertVariant = 'error' | 'info' | 'success' | 'warn';
 
 export interface AlertProps extends LUIGlobalProps {
   variant: AlertVariant;
   heading?: string;
-  children?: string;
+  children?: React.ReactNode;
 }
 
 const Alert = ({ variant, heading, children, ...otherProps }: AlertProps) => {
