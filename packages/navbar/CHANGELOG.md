@@ -1,3 +1,7 @@
+## [3.0.4] - 2019-09-12 - [HUB-539](https://creditandfinance.atlassian.net/browse/HUB/539)
+### Changed
+- Revert setup default logout function in Navbar
+
 ## [3.0.3] - 2019-09-11 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB/375)
 ### Changed
 - bumped transition and overlay versions

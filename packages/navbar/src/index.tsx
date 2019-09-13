@@ -4,7 +4,6 @@ import { MarketingNavbar } from './Marketing/index';
 import { SEMNavbar } from './SEM/index';
 import { Application, Broker } from './common/types';
 import { LUIGlobalProps } from '@lendi-ui/utils';
-import { useSession } from '@lendi/lala-react';
 
 export type NavbarType = 'SEM' | 'Application' | 'Marketing';
 export interface ApplicationNavbarProps extends LUIGlobalProps {
@@ -28,15 +27,11 @@ const Navbar = ({
   variant,
   params,
 }: ApplicationNavbarProps) => {
-  const { logout } = useSession();
-
-  const NavbarLogout = () => {
-    if (!onLogout) {
-      logout(); // this is default logout from lala-react.
-    } else {
-      onLogout();
-    }
-  };
+  if (!onLogout) {
+    console.warn(
+      'LUI will update Navbar component in the next major version with onLogout function must be provided. It is recommended to provide onLogout function when you using LUI Navabr.'
+    );
+  }
 
   switch (type) {
     case 'Application':
@@ -44,7 +39,7 @@ const Navbar = ({
         <ApplicationNavbar
           onChat={onChat}
           broker={broker}
-          onLogout={NavbarLogout}
+          onLogout={onLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           variant={variant}
@@ -55,7 +50,7 @@ const Navbar = ({
       return (
         <MarketingNavbar
           onChat={onChat}
-          onLogout={NavbarLogout}
+          onLogout={onLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}
@@ -65,7 +60,7 @@ const Navbar = ({
       return (
         <SEMNavbar
           onChat={onChat}
-          onLogout={NavbarLogout}
+          onLogout={onLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}
@@ -75,7 +70,7 @@ const Navbar = ({
       return (
         <MarketingNavbar
           onChat={onChat}
-          onLogout={NavbarLogout}
+          onLogout={onLogout}
           isAuthenticated={isAuthenticated}
           application={application}
           params={params}
