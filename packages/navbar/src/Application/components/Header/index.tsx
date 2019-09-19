@@ -11,12 +11,12 @@ import {
   OldHeaderLogo,
   OldMenuButton,
   HeaderButton,
-  ApplicationStatusButton,
 } from '../../../common/Header/index.style';
+import { ButtonVariation } from '../../../common/Header/index';
 import { Menu } from '@lendi-ui/icon';
 import * as ZINDEX from '../../../constants/z-index';
 import { ButtonGroup } from '@lendi-ui/button';
-import { HOME_PAGE_LINK, SIGN_UP_LINK, SEARCH_LOAN_LINK } from '../../../constants/links';
+import { HOME_PAGE_LINK } from '../../../constants/links';
 import { AnalyticsContext } from '@lendi-ui/utils';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 
@@ -47,50 +47,6 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     }
   };
 
-  private renderButtonVariation() {
-    const { isAuthenticated, continueApplicationUrl, params = '' } = this.props;
-
-    if (!isAuthenticated) {
-      return (
-        <HeaderButton
-          variant="secondary"
-          href={`${SIGN_UP_LINK}${params}`}
-          onClick={() => {
-            this.context.analyticsForNavigation('Log in / Sign up', WindowPosition.header);
-          }}
-        >
-          Log in / Sign up
-        </HeaderButton>
-      );
-    }
-
-    if (!continueApplicationUrl) {
-      return (
-        <ApplicationStatusButton
-          variant="emphasis"
-          href={`${SEARCH_LOAN_LINK}${params}`}
-          onClick={() => {
-            this.context.analyticsForNavigation('Start application', WindowPosition.header);
-          }}
-        >
-          Start application
-        </ApplicationStatusButton>
-      );
-    }
-
-    return (
-      <ApplicationStatusButton
-        variant="emphasis"
-        href={`${continueApplicationUrl}${params}`}
-        onClick={() => {
-          this.context.analyticsForNavigation('Continue application', WindowPosition.header);
-        }}
-      >
-        Continue application
-      </ApplicationStatusButton>
-    );
-  }
-
   private handleMenuButtonClick = () => {
     const { onOpenLeftSidebar } = this.props;
 
@@ -107,7 +63,13 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   };
   static contextType: any = AnalyticsContext;
   render() {
-    const { onOpenRightSidebar = () => {}, isTransparent, params = '' } = this.props;
+    const {
+      isAuthenticated = false,
+      continueApplicationUrl = '',
+      onOpenRightSidebar = () => {},
+      isTransparent,
+      params = '',
+    } = this.props;
     const { stuck } = this.state;
     const isHeaderBgTransparent = isTransparent && !stuck;
     return (
@@ -136,8 +98,9 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             <RightGroup>
               {/* TODO: ButtonGroup needs to accept nullable children
                 //@ts-ignore */}
-              <ButtonGroup isInverse={isHeaderBgTransparent} size="sm">
+              <ButtonGroup isInverse={isHeaderBgTransparent}>
                 <HeaderButton
+                  size="sm"
                   variant="secondary"
                   onClick={() => {
                     this.context.analyticsForNavigation('Talk to an expert', WindowPosition.header);
@@ -146,7 +109,12 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                 >
                   Talk to an expert
                 </HeaderButton>
-                {this.renderButtonVariation()}
+                <ButtonVariation
+                  isAuthenticated={isAuthenticated}
+                  continueApplicationUrl={continueApplicationUrl}
+                  params={params}
+                  context={this.context}
+                />
               </ButtonGroup>
             </RightGroup>
           </Container>

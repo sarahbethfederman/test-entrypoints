@@ -1,8 +1,9 @@
 import * as React from 'react';
 
 import { Button } from '@lendi-ui/button';
+import { AnalyticsContext } from '@lendi-ui/utils';
 
-import { HOME_PAGE_LINK, SIGN_UP_LINK } from '../../../constants/links';
+import { HOME_PAGE_LINK } from '../../../constants/links';
 import {
   HeaderWrapper,
   HamburgerLogoWrapper,
@@ -12,12 +13,13 @@ import {
   MenuButton,
   MenuButtonWrapper,
 } from '../../../common/Header/index.style';
+import { ButtonVariation } from '../../../common/Header/index';
 import { Application } from '../../../common/types';
 import { browserSupportsPassiveListeners } from '../../../utils';
 import { NavigationButtons } from '../NavigationButtons/index';
 
 export interface HeaderProps {
-  application: Application;
+  application?: Application;
   isAuthenticated?: boolean;
   params?: string;
   onOpenRightSidebar: () => void;
@@ -29,6 +31,7 @@ interface HeaderState {
 }
 
 export class Header extends React.Component<HeaderProps, HeaderState> {
+  static contextType: any = AnalyticsContext;
   constructor(props: HeaderProps) {
     super(props);
 
@@ -62,7 +65,7 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
   render() {
     const { params = '', onOpenRightSidebar, onOpenLeftSidebar, application, isAuthenticated = false } = this.props;
     const { isAtTopOfPage } = this.state;
-    const continueApplicationUrl = application.continueURL;
+    const continueApplicationUrl = application ? application.continueURL : undefined;
 
     return (
       <HeaderWrapper isAtTopOfPage={isAtTopOfPage}>
@@ -83,15 +86,12 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
           <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>
             Contact Us
           </Button>
-          {isAuthenticated ? (
-            <Button variant="emphasis" size="sm" href={application.continueURL || HOME_PAGE_LINK}>
-              Continue application
-            </Button>
-          ) : (
-            <Button variant="primary" size="sm" href={SIGN_UP_LINK}>
-              Sign up/ Continue
-            </Button>
-          )}
+          <ButtonVariation
+            isAuthenticated={isAuthenticated}
+            continueApplicationUrl={continueApplicationUrl}
+            params={params}
+            context={this.context}
+          />
         </CallToActionWrapper>
       </HeaderWrapper>
     );

@@ -4,7 +4,15 @@ import styled from 'styled-components';
 import { SEMNavbar } from './index';
 import { Button } from '@lendi-ui/button';
 import { mx, ml } from '@lendi-ui/spacing';
-import { Application } from '../common/types';
+
+const STARTED_APPLICATION = {
+  type: 'Refinance',
+  sfid: '123',
+  number: 6,
+  stage: 'started_application',
+  continueURL: '/dashboard/123',
+  applicants: [],
+};
 
 const Wrapper = styled.div`
   position: absolute;
@@ -33,6 +41,7 @@ const FillerTwo = styled.div`
 class NewNavBarExample extends React.Component {
   state = {
     isAuthenticated: false,
+    application: undefined,
   };
 
   onChat = () => {
@@ -44,7 +53,7 @@ class NewNavBarExample extends React.Component {
       <Wrapper>
         <SEMNavbar
           isAuthenticated={this.state.isAuthenticated}
-          application={{ continueURL: 'https://www.lendi.design' } as Application}
+          application={this.state.application}
           onChat={this.onChat}
         />
         <FillerOne>
@@ -53,6 +62,12 @@ class NewNavBarExample extends React.Component {
             onClick={() => this.setState({ isAuthenticated: !this.state.isAuthenticated })}
           >
             Toggle isAuthenticated
+          </ButtonWrapper>
+          <ButtonWrapper
+            variant="primary"
+            onClick={() => this.setState({ application: this.state.application ? undefined : STARTED_APPLICATION })}
+          >
+            Toggle with Application
           </ButtonWrapper>
         </FillerOne>
         <FillerTwo />

@@ -10,7 +10,7 @@ import { Broker, Application } from '../common/types';
 import { SEMOverlay } from './index.style';
 
 export interface SEMNavbarProps extends LUIGlobalProps {
-  application: Application;
+  application?: Application;
   broker?: Broker;
   params?: string;
   onLogout?: () => void;

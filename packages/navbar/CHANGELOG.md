@@ -1,3 +1,7 @@
+## [3.0.5] - 2019-09-18 - [HUB-566](https://creditandfinance.atlassian.net/browse/HUB/566)
+### Fixed
+- Fixed a bug for MarketingNavbar and SEMNavabr header button should perform the same with ApplicationNavbar whether application exist or not.
+
 ## [3.0.4] - 2019-09-12 - [HUB-539](https://creditandfinance.atlassian.net/browse/HUB/539)
 ### Changed
 - Revert setup default logout function in Navbar

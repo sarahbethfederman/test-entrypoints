@@ -1,8 +1,9 @@
 import * as React from 'react';
 
 import { Button } from '@lendi-ui/button';
+import { AnalyticsContext } from '@lendi-ui/utils';
 
-import { HOME_PAGE_LINK, SIGN_UP_LINK } from '../../../constants/links';
+import { HOME_PAGE_LINK } from '../../../constants/links';
 import {
   HeaderWrapper,
   HamburgerLogoWrapper,
@@ -12,12 +13,13 @@ import {
   MenuButton,
   MenuButtonWrapper,
 } from '../../../common/Header/index.style';
+import { ButtonVariation } from '../../../common/Header/index';
 import { Application } from '../../../common/types';
 import { browserSupportsPassiveListeners } from '../../../utils';
 import { SEMNavigationButtons } from '../SEMNavigationButtons/index';
 
 export interface SEMHeaderProps {
-  application: Application;
+  application?: Application;
   isAuthenticated?: boolean;
   params?: string;
   onOpenRightSidebar: () => void;
@@ -32,6 +34,7 @@ interface SEMHeaderState {
 }
 
 export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
+  static contextType: any = AnalyticsContext;
   constructor(props: SEMHeaderProps) {
     super(props);
 
@@ -74,7 +77,7 @@ export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
       CloseSEMDisplayPanel = () => {},
     } = this.props;
     const { isAtTopOfPage } = this.state;
-    const continueApplicationUrl = application.continueURL;
+    const continueApplicationUrl = application ? application.continueURL : undefined;
 
     return (
       <HeaderWrapper
@@ -101,15 +104,12 @@ export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
           <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>
             Contact Us
           </Button>
-          {isAuthenticated ? (
-            <Button variant="emphasis" size="sm" href={application.continueURL || HOME_PAGE_LINK}>
-              Continue application
-            </Button>
-          ) : (
-            <Button variant="primary" size="sm" href={SIGN_UP_LINK}>
-              Sign up/ Continue
-            </Button>
-          )}
+          <ButtonVariation
+            isAuthenticated={isAuthenticated}
+            continueApplicationUrl={continueApplicationUrl}
+            params={params}
+            context={this.context}
+          />
         </CallToActionWrapper>
       </HeaderWrapper>
     );

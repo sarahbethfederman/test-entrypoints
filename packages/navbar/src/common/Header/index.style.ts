@@ -7,7 +7,7 @@ import { select } from '@lendi-ui/theme';
 import { bg, fg } from '@lendi-ui/color';
 import { Menu } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
-import { ButtonGroup } from '@lendi-ui/button';
+import { Button } from '@lendi-ui/button';
 // @ts-ignore
 import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
 // @ts-ignore
@@ -158,7 +158,7 @@ export const HeaderLogo = styled(Logo)`
         `}
 `;
 
-export const HeaderButton = styled(ButtonGroup.Button)`
+export const HeaderButton = styled(Button)`
   ${between('mobile', 'tablet')`
     font-size: 0.645em;
     border: none;
@@ -167,7 +167,7 @@ export const HeaderButton = styled(ButtonGroup.Button)`
   `};
 `;
 
-export const ApplicationStatusButton = styled(ButtonGroup.Button)`
+export const ApplicationStatusButton = styled(Button)`
   ${between('mobile', 'tablet')`
     font-size: 0.645em;
     border: none;

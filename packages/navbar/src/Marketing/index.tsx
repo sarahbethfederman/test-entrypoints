@@ -9,7 +9,7 @@ import { RightPanelSection } from '../common/RightPanelSection';
 import { Broker, Application } from '../common/types';
 
 export interface MarketingNavbarProps extends LUIGlobalProps {
-  application: Application;
+  application?: Application;
   broker?: Broker;
   params?: string;
   onLogout?: () => void;

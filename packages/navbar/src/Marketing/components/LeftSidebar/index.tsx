@@ -20,7 +20,7 @@ import { HeaderLogo } from '../../../common/Header/index.style';
 import { SidebarNav, SectionProps, GroupProps, ItemProps } from '../../../common/SidebarNav';
 import Sidebar from '../../../common/Sidebar';
 import { Application } from '../../../common/types';
-import { HOME_PAGE_LINK } from '../../../constants/links';
+import { SEARCH_LOAN_LINK } from '../../../constants/links';
 import { LeftSidebarItems } from '../../../common/LeftSidebarItems';
 
 export const DASHBOARD_URL = '/dashboard';
@@ -32,7 +32,7 @@ export type SidebarItemProps = ItemProps;
 
 export interface SidebarProps {
   show: boolean;
-  application: Application;
+  application?: Application;
   isAuthenticated?: Boolean;
   onOpenRightSidebar: () => void;
   onHide: () => void;
@@ -95,8 +95,8 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
           </SidebarNav>
           {isAuthenticated ? (
             <CTAWrapper>
-              <CTAButton variant="emphasis" href={application.continueURL || HOME_PAGE_LINK}>
-                Continue Application
+              <CTAButton variant="emphasis" href={application ? application.continueURL : SEARCH_LOAN_LINK}>
+                {application ? 'Continue Application' : 'Start Application'}
               </CTAButton>
               <CTAButton variant="empty" onClick={onLogout}>
                 <ExitToApp color="primary.500" /> Log out
