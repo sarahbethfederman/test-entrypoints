@@ -13,13 +13,13 @@ interface CollapseBodyProps {
   isExpanded?: boolean;
   isFooterAdded?: boolean;
 }
-export const CollapsePanel = styled.div`
+export const CollapsePanel = styled.div<CollapseBodyProps>`
   cursor: pointer;
   border: 1px solid ${color('shade.100')};
   ${bg('shade.50')};
   min-height: 40px;
 
-  ${({ isExpanded, isFooterAdded }: CollapseBodyProps) =>
+  ${({ isExpanded, isFooterAdded }) =>
     !isExpanded && !isFooterAdded
       ? css`
           border-radius: ${select('borderRadius')};

@@ -1,3 +1,8 @@
+## [7.0.0] 2019-9-23 - [HUB-412](https://creditandfinance.atlassian.net/browse/HUB-412)
+### Changed
+- Uses Theme v7
+- Update typescript to version 3.5.2 and react to version 16.8.4 [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+
 ## [6.0.2] - 2019-07-29 - [HUB-371](https://creditandfinance.atlassian.net/browse/HUB-371)
 ### Changed
 - Add in dependency for lendi-ui/spinner.

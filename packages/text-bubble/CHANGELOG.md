@@ -1,3 +1,7 @@
+## [3.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.2.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Changed
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef

@@ -1,15 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`radioButton should render correct styles when disabled 1`] = `
-.c3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #c8c8c8;
-  font-size: var(--lendi-ui-size);
-  line-height: calc(24 / 16);
-  font-family: 'Open Sans',sans-serif;
-}
-
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -50,8 +41,8 @@ exports[`radioButton should render correct styles when disabled 1`] = `
   top: 7px;
   left: 8px;
   margin: auto;
-  background-color: #ffffff;
-  border: 2px solid #c8c8c8;
+  background-color: rgba(255,255,255,1);
+  border: 2px solid rgba(200,200,200,1);
   border-radius: 20px;
   box-sizing: border-box;
   width: 32px;
@@ -60,11 +51,11 @@ exports[`radioButton should render correct styles when disabled 1`] = `
 
 .c0:active::before,
 .c0:hover:before {
-  border: 2px solid #00c0a5;
+  border: 2px solid rgba(0,192,165,1);
 }
 
 .c0:focus:before {
-  border: 2px solid #66d9c9;
+  border: 2px solid rgba(102,217,201,1);
 }
 
 .c0:disabled {
@@ -74,6 +65,10 @@ exports[`radioButton should render correct styles when disabled 1`] = `
 }
 
 .c2 {
+  color: rgba(200,200,200,1);
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
   display: inline-block;
 }
 
@@ -99,48 +94,212 @@ exports[`radioButton should render correct styles when disabled 1`] = `
     isBoxed={false}
     size="md"
   >
-    <label
+    <StyledComponent
       checked={false}
-      className="c0"
       disabled={true}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gzVnrw",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  ",
+              [Function],
+              "
+  position: relative;
+  ",
+              [Function],
+              " ",
+              [Function],
+              ";
+  ",
+              [Function],
+              "
+  ",
+              "
+  :active::before,
+  :hover:before {
+    ",
+              "
+  border: 2px solid ",
+              [Function],
+              ";
+",
+              ";
+  }
+",
+              ";
+  ",
+              "
+  :focus {
+    :before {
+      border: 2px solid ",
+              [Function],
+              ";
+    }
+  }
+",
+              ";
+  ",
+              "
+  :disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gzVnrw",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isBoxed={false}
       size="md"
     >
-      <styled.input
+      <label
         checked={false}
+        className="c0"
         disabled={true}
-        inputSize="md"
-        onChange={[MockFunction]}
-        type="radio"
-        value="1"
+        size="md"
       >
-        <input
+        <styled.input
           checked={false}
-          className="c1"
           disabled={true}
+          inputSize="md"
           onChange={[MockFunction]}
           type="radio"
           value="1"
-        />
-      </styled.input>
-      <Styled(styled.p)
-        color="shade.200"
-        size="md"
-      >
+        >
+          <StyledComponent
+            checked={false}
+            disabled={true}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  position: absolute;
+  opacity: 0;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inputSize="md"
+            onChange={[MockFunction]}
+            type="radio"
+            value="1"
+          >
+            <input
+              checked={false}
+              className="c1"
+              disabled={true}
+              onChange={[MockFunction]}
+              type="radio"
+              value="1"
+            />
+          </StyledComponent>
+        </styled.input>
         <styled.p
-          className="c2"
           color="shade.200"
           size="md"
         >
-          <p
-            className="c2 c3"
+          <StyledComponent
             color="shade.200"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+  display: inline-block;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="md"
           >
-            LUI single Radio Button
-          </p>
+            <p
+              className="c2"
+              color="shade.200"
+              size="md"
+            >
+              LUI single Radio Button
+            </p>
+          </StyledComponent>
         </styled.p>
-      </Styled(styled.p)>
-    </label>
+      </label>
+    </StyledComponent>
   </styled.label>
 </Component>
 `;

@@ -1,11 +1,10 @@
 import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
-import { Input } from '@lendi-ui/text-input';
-import { AutoCompleteStatelessProps, AutoCompleteValue, DataSourceItem } from '../types';
+import { AutoCompleteStatelessProps, AutoCompleteValue, DataSourceItem } from '../typings';
 import { getStaticData } from '../data-source.mock';
 import { AutoCompleteStateless } from '.';
-import { CloseWrapper } from '../styled/index.style';
+import { CloseWrapper } from '../common/index.style';
 import { TEST_DATA_SOURCE } from '../AutoComplete/index.test';
 
 describe('AutoComplete', () => {
@@ -37,7 +36,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: getStaticData('Adelaide'),
-          onSelect: (item: DataSourceItem) => alert(item),
+          onSelectItem: (item: DataSourceItem) => alert(item),
           size: 'lg',
           placeholder: 'My test',
           isError: true,
@@ -45,9 +44,9 @@ describe('AutoComplete', () => {
           className: 'testclass',
         });
       });
-      it('should render onSelect', () => {
-        const { onSelect } = autoCompleteProps;
-        expect(onSelect).toBeDefined();
+      it('should render onSelectItem', () => {
+        const { onSelectItem } = autoCompleteProps;
+        expect(onSelectItem).toBeDefined();
       });
       it('should render size', () => {
         const { size } = autoCompleteProps;
@@ -152,7 +151,7 @@ describe('AutoComplete', () => {
           render({
             dataSource,
             onChange: jest.fn(),
-            onSelect: onSelectMock,
+            onSelectItem: onSelectMock,
           });
           autoCompleteWrapper.setState({
             highlightedIndex: 0,
@@ -189,7 +188,7 @@ describe('AutoComplete', () => {
           expect(value).toEqual('');
           expect(autoCompleteWrapper.state.isOpen).toBe(false);
         });
-        it('should invoke `onSelect` with the selected menu item and close the menu', () => {
+        it('should invoke `onSelectItem` with the selected menu item and close the menu', () => {
           wrapper.find('input').simulate('focus');
           // simulate keydown to hover first item
           wrapper.find('input').simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
@@ -259,7 +258,7 @@ describe('AutoComplete', () => {
         render({
           dataSource,
           onChange: jest.fn(),
-          onSelect: onSelectMock,
+          onSelectItem: onSelectMock,
         });
         autoCompleteWrapper.setState({
           highlightedIndex: 0,

@@ -1,12 +1,11 @@
 import * as React from 'react';
 import { mount, ReactWrapper } from 'enzyme';
-import { AutoComplete } from '..';
 import Theme from '@lendi-ui/theme';
-
 import { Input } from '@lendi-ui/text-input';
 import Spinner from '@lendi-ui/spinner';
-import { AutoCompleteStatefulProps, DataSourceItem } from '../types';
-import { AutoCompleteList, AutoCompleteListItem, CloseWrapper } from '../styled/index.style';
+import { AutoComplete } from '..';
+import { AutoCompleteStatefulProps, DataSourceItem } from '../typings';
+import { AutoCompleteList, AutoCompleteListItem, CloseWrapper } from '../common/index.style';
 
 jest.useFakeTimers();
 export const TEST_DATA_SOURCE = [
@@ -62,9 +61,9 @@ describe('AutoComplete', () => {
     });
     it('should render dataSource only', () => {
       expect(wrapper).toBeDefined();
-      const { dataSource, onSelect } = autoCompleteProps;
+      const { dataSource, onSelectItem } = autoCompleteProps;
       expect(dataSource).toBeDefined();
-      expect(onSelect).toBeUndefined();
+      expect(onSelectItem).toBeUndefined();
     });
   });
 
@@ -72,7 +71,7 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: () => Promise.resolve(TEST_DATA_SOURCE),
-        onSelect: (item: DataSourceItem) => alert(item),
+        onSelectItem: (item: DataSourceItem) => alert(item),
         size: 'lg',
         placeholder: 'My test',
         isError: true,
@@ -80,9 +79,9 @@ describe('AutoComplete', () => {
         className: 'testclass',
       });
     });
-    it('should render onSelect', () => {
-      const { onSelect } = autoCompleteProps;
-      expect(onSelect).toBeDefined();
+    it('should render onSelectItem', () => {
+      const { onSelectItem } = autoCompleteProps;
+      expect(onSelectItem).toBeDefined();
     });
     it('should render size', () => {
       const { size } = autoCompleteProps;
@@ -107,19 +106,19 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: (str) => getData(str),
-        onSelect: (item: DataSourceItem) => true,
+        onSelectItem: (item: DataSourceItem) => true,
         size: 'md',
         isDisabled: false,
         before: undefined,
       });
-      autoCompleteInstance.debounceFilterDataSource = jest.fn();
+      autoCompleteInstance.getFilteredData = jest.fn();
     });
     it('should call change hander', () => {
       expect(wrapper.find(Input)).toHaveLength(1);
       expect(autoCompleteInstance.state.isLoading).toBeFalsy();
       wrapper.find('input').simulate('change', { target: { value: 'a' } });
       expect(autoCompleteInstance.state.isLoading).toBeTruthy();
-      expect(autoCompleteInstance.debounceFilterDataSource).toHaveBeenCalled();
+      expect(autoCompleteInstance.getFilteredData).toHaveBeenCalled();
     });
   });
 
@@ -128,7 +127,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (item) => jest.fn(),
+          onSelectItem: (item) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -150,7 +149,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (item) => jest.fn(),
+          onSelectItem: (item) => jest.fn(),
         });
         autoCompleteInstance.setState({
           userInput: '',
@@ -170,7 +169,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -201,7 +200,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -234,7 +233,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: onSelectMock,
+          onSelectItem: onSelectMock,
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -250,7 +249,7 @@ describe('AutoComplete', () => {
       });
       it('should select the active selection', () => {
         wrapper.find('input').simulate('keyDown', { key: 'Enter' });
-        expect(autoCompleteProps.onSelect).toHaveBeenCalledWith({
+        expect(autoCompleteProps.onSelectItem).toHaveBeenCalledWith({
           label: 'ANZ',
           value: 'anz',
         });
@@ -264,7 +263,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -284,7 +283,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -303,7 +302,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           showList: true,
@@ -350,7 +349,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           isLoading: true,
@@ -367,7 +366,7 @@ describe('AutoComplete', () => {
       beforeEach(() => {
         render({
           dataSource: (str) => getData(str),
-          onSelect: (text) => jest.fn(),
+          onSelectItem: (text) => jest.fn(),
         });
         autoCompleteInstance.setState({
           isLoading: false,
@@ -391,7 +390,7 @@ describe('AutoComplete', () => {
       render({
         dataSource: (str) => getData(str),
       });
-      autoCompleteInstance.debounceWindowResize = jest.fn();
+      autoCompleteInstance.calcInputWidth = jest.fn();
     });
     it('should fire addEventListener on mounting', () => {
       expect(addEventListenerCalled).toBeTruthy();
@@ -399,7 +398,7 @@ describe('AutoComplete', () => {
     it('should call resize callback', () => {
       window.dispatchEvent(new Event('resize'));
       // TODO - this should work, it seems resize dispatch not working.
-      //expect(autoCompleteInstance.debounceWindowResize).toBeCalled();
+      // expect(autoCompleteInstance.calcInputWidth).toBeCalled();
     });
   });
 
@@ -408,14 +407,14 @@ describe('AutoComplete', () => {
     beforeEach(() => {
       render({
         dataSource: TEST_DATA_SOURCE,
-        onSelect: selectMock,
+        onSelectItem: selectMock,
       });
       autoCompleteInstance.clearInput();
     });
     it('should reset the state', () => {
       expect(autoCompleteInstance.state.filteredDataSource.length).toEqual(0);
     });
-    it('should call onSelect with empty string', () => {
+    it('should call onSelectItem with empty string', () => {
       expect(selectMock).toHaveBeenCalledWith({ label: '', value: '' });
     });
   });

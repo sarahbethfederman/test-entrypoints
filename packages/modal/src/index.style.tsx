@@ -1,17 +1,17 @@
 import styled, { css } from 'styled-components';
-import { body } from '@lendi-ui/typography';
 import { bg, color } from '@lendi-ui/color';
 import { gte } from '@lendi-ui/breakpoint';
 import { p, py, px, pl, pr, pt, pb } from '@lendi-ui/spacing';
 import { Close } from '@lendi-ui/icon';
+import { body } from '@lendi-ui/typography';
 import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
 import { normalise, deriveSize } from '@lendi-ui/utils';
 
 interface ContainerProps {
-  show: boolean;
+  isVisible: boolean;
   size?: ModalSize;
-  fixedHeader?: boolean;
+  isHeaderFixed?: boolean;
 }
 
 interface CloseProps {
@@ -64,8 +64,8 @@ export const Subtitle = styled.p`
 `;
 
 export const Container = styled.div`
-  ${({ size = 'md', fixedHeader }: ContainerProps) => css`
-    display: ${(props: ContainerProps) => (props.show ? 'flex;' : 'none')};
+  ${({ size = 'md', isHeaderFixed }: ContainerProps) => css`
+    display: ${(props: ContainerProps) => (props.isVisible ? 'flex;' : 'none')};
     flex-direction: column;
     opacity: 0.97;
     z-index: 10;
@@ -86,7 +86,7 @@ export const Container = styled.div`
     `}
 
     ${Content} {
-      ${pt(fixedHeader ? 'sm' : 'xxxl')}
+      ${pt(isHeaderFixed ? 'sm' : 'xxxl')}
       ${pb('xl')}
       ${px('md')}
       ${gte('tablet')`

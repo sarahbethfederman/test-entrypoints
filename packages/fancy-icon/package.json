@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/fancy-icon",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "main": "dist/cjs/index.js",
   "source": "src/index.tsx",
   "types": "dist/types/index.d.ts",
@@ -11,17 +11,19 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3"
+    "@lendi-ui/theme": "^7.0.0",
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "devDependencies": {
     "@svgr/core": "^2.2.0",
-    "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/spacing": "^4.0.0"
+    "@lendi-ui/typography": "^4.0.0",
+    "@lendi-ui/spacing": "^5.0.0"
   },
   "dependencies": {
-    "@lendi-ui/color": "^3.0.0"
+    "@lendi-ui/color": "^4.0.0"
   },
   "scripts": {
     "build:svg": "node ./build/index.js",

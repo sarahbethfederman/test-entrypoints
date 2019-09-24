@@ -8,7 +8,7 @@ import AddressPicker from '@lendi-ui/address-picker';
 
 ```jsx
 
-<AddressPicker onSelect={alert} onChange={alert}/>
+<AddressPicker onSelectAddress={alert} onChange={alert}/>
              
 ```
 
@@ -23,7 +23,7 @@ When using this component, googlemap api script link is needed. Please ask <stro
   <PropTable.Entry name="country" type="string" defaultValue="au" description="A two letter code corresponding to a country. Refer to ISO 3166-1"/>
   <PropTable.Entry name="isDisabled" type="boolean" defaultValue="false" description="Disable the Autocomplete input"/>
   <PropTable.Entry name="onChange" required type="(event: React.ChangeEvent<HTMLInputElement>) => void" defaultValue="" description="On change from autosuggest only"/>
-  <PropTable.Entry name="onSelect" required type="(selection: AddressObject, formatString?: string) => void" defaultValue="" description="When user selects the address - either from 'save' on manual entry or by selecting a suggestion from autosuggest"/>
+  <PropTable.Entry name="onSelectAddress" required type="(selection: AddressObject) => void" defaultValue="" description="When user selects the address - either from 'save' on manual entry or by selecting a suggestion from autosuggest"/>
   <PropTable.Entry name="onReset" type="() => void" defaultValue="" description="When us"/>
   <PropTable.Entry name="showMap" type="boolean" defaultValue="false" description="Whether to show the map"/>
   <PropTable.Entry name="size" type="Size" defaultValue="md" description="Size of input"/>

@@ -1,31 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Field should render wrapper component 1`] = `
-.c5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #929292;
-  font-size: calc(0.875 * var(--lendi-ui-size));
-  line-height: calc(20 / 14);
-  font-family: 'Open Sans',sans-serif;
-}
-
-.c3 {
+.c2 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: calc(1.375 * var(--lendi-ui-size));
   font-weight: 400;
   line-height: calc(28 / 22);
   font-family: 'Cabin',sans-serif;
-}
-
-.c2 {
   font-size: var(--lendi-ui-size);
   margin-right: calc(0.5 * var(--lendi-ui-size));
   display: inline-block;
 }
 
-.c4 {
+.c3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(146,146,146,1);
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
   font-size: calc(0.75 * var(--lendi-ui-size));
 }
 
@@ -72,62 +66,281 @@ exports[`Field should render wrapper component 1`] = `
 }
 
 <styled.div>
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gZMcBi",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-gZMcBi",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
   >
-    <styled.label
-      htmlFor={123456789}
+    <div
+      className="c0"
     >
-      <label
-        className="c1"
+      <styled.label
         htmlFor={123456789}
       >
-        <Label
-          isOptional={false}
-          label="First name"
-          size="sm"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-gqjmRU",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  ",
+                  "
+    margin-bottom: ",
+                  "calc(0.25 * var(--lendi-ui-size))",
+                  ";
+  ",
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.label",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-gqjmRU",
+              "target": "label",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          htmlFor={123456789}
         >
-          <div>
-            <Styled(Styled(HeadingTag))
+          <label
+            className="c1"
+            htmlFor={123456789}
+          >
+            <Label
+              isRequired={true}
+              label="First name"
               size="sm"
             >
-              <Styled(HeadingTag)
-                className="c2"
-                size="sm"
-              >
-                <HeadingTag
-                  className="c2 c3"
+              <div>
+                <Styled(Styled(HeadingTag))
                   size="sm"
                 >
-                  <h4
-                    className="c2 c3"
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gzVnrw",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  ",
+                            "
+    margin-top: ",
+                            "0",
+                            ";
+    margin-bottom: ",
+                            "0",
+                            ";
+  ",
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+",
+                            ";
+",
+                            "
+  ",
+                            [Function],
+                            " display: inline-block;
+",
+                          ],
+                        },
+                        "displayName": "Styled(Styled(HeadingTag))",
+                        "foldedComponentIds": Array [
+                          "sc-htpNat",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-gzVnrw",
+                        "target": [Function],
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                        Symbol(Symbol.hasInstance): [Function],
+                      }
+                    }
+                    forwardedRef={null}
                     size="sm"
                   >
-                    First name
-                  </h4>
-                </HeadingTag>
-              </Styled(HeadingTag)>
-            </Styled(Styled(HeadingTag))>
-            <Styled(styled.p)
-              color="shade.400"
-              size="sm"
-            >
-              <styled.p
-                className="c4"
-                color="shade.400"
-                size="sm"
-              >
-                <p
-                  className="c4 c5"
+                    <HeadingTag
+                      className="c2"
+                      size="sm"
+                    >
+                      <h4
+                        className="c2"
+                        size="sm"
+                      >
+                        First name
+                      </h4>
+                    </HeadingTag>
+                  </StyledComponent>
+                </Styled(Styled(HeadingTag))>
+                <Styled(styled.p)
                   color="shade.400"
                   size="sm"
-                />
-              </styled.p>
-            </Styled(styled.p)>
-          </div>
-        </Label>
-      </label>
-    </styled.label>
-  </div>
+                >
+                  <StyledComponent
+                    color="shade.400"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-htoDjs",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  ",
+                            "
+    margin-top: ",
+                            "0",
+                            ";
+    margin-bottom: ",
+                            "0",
+                            ";
+  ",
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+  ",
+                            [Function],
+                            "
+",
+                            ";
+",
+                            "
+  ",
+                            [Function],
+                            ";
+",
+                          ],
+                        },
+                        "displayName": "Styled(styled.p)",
+                        "foldedComponentIds": Array [
+                          "sc-bwzfXH",
+                        ],
+                        "render": [Function],
+                        "styledComponentId": "sc-htoDjs",
+                        "target": "p",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    size="sm"
+                  >
+                    <p
+                      className="c3"
+                      color="shade.400"
+                      size="sm"
+                    />
+                  </StyledComponent>
+                </Styled(styled.p)>
+              </div>
+            </Label>
+          </label>
+        </StyledComponent>
+      </styled.label>
+    </div>
+  </StyledComponent>
 </styled.div>
 `;

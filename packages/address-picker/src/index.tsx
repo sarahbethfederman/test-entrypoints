@@ -9,7 +9,8 @@ import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import AddressModal, { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
-import { transformGoogleResponse, getFormatedString } from './util';
+import MapService from './utils/map-service';
+import { transformGoogleResponse, getFormatedString } from './utils/util';
 
 type SizeVariant = 'lg' | 'md' | 'sm';
 export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
@@ -18,7 +19,7 @@ export interface AddressPickerProps extends LUIGlobalProps {
   country?: string;
   isDisabled?: boolean;
   onChange: (e: React.SyntheticEvent) => void;
-  onSelect: (selection: AddressObject, formatString?: string) => void;
+  onSelectAddress: (selection: AddressObject, formatString?: string) => void;
   onReset?: () => void; // @TODO - HUB-305
   showMap?: boolean;
   size?: Size;
@@ -36,13 +37,7 @@ export interface AddressPickerState {
 }
 
 export default class AddressPicker extends React.Component<AddressPickerProps, AddressPickerState> {
-  private placesService: google.maps.places.PlacesService = {} as google.maps.places.PlacesService;
-  private autocompleteService:
-    | google.maps.places.AutocompleteService
-    | {} = {} as google.maps.places.AutocompleteService;
-  private sessionToken:
-    | google.maps.places.AutocompleteSessionToken
-    | {} = {} as google.maps.places.AutocompleteSessionToken;
+  private mapService: MapService = {} as MapService;
 
   state = {
     addressInput: this.props.value ? this.props.value : '',
@@ -68,51 +63,47 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
       this.setState({ showModal: true });
       return;
     }
-    this.autocompleteService = new google.maps.places.AutocompleteService();
-    this.sessionToken = new google.maps.places.AutocompleteSessionToken();
   }
 
   // Once the map has been mounted, setup the required services
   onMountMap(map: google.maps.Map): void {
-    this.placesService = new google.maps.places.PlacesService(map);
+    this.mapService = new MapService(map);
   }
 
   fetchSuggestion(input: string): void {
     if (input.length < 3) return; // quietly exit when input is too short
-    if (!google.maps.places || isEmpty(this.autocompleteService)) {
+    if (!google.maps.places) {
       // tslint:disable-next-line
       console.error('LUI: Cannot fetch suggestions on unloaded API');
       return;
     }
 
     this.setState({ isLoading: true });
-    (this.autocompleteService as google.maps.places.AutocompleteService).getPlacePredictions(
-      {
-        input,
-        sessionToken: this.sessionToken,
-        componentRestrictions: { country: this.props.country || 'au' },
-      },
-      (suggestions: google.maps.places.AutocompletePrediction[], status: google.maps.places.PlacesServiceStatus) => {
-        if (status === google.maps.places.PlacesServiceStatus.OK && suggestions !== null) {
-          this.setState({
-            suggestions,
-            failedAddressSearch: false,
-          });
-        } else if (suggestions === null) {
-          this.setState({
-            suggestions: [],
-            failedAddressSearch: true,
-          });
-        }
+    const { country = 'au' } = this.props;
+
+    this.mapService
+      .placePredictions(input, { country })
+      .then((suggestions: google.maps.places.AutocompletePrediction[]) => {
+        this.setState({
+          suggestions,
+          failedAddressSearch: false,
+        });
+      })
+      .catch(() => {
+        this.setState({
+          suggestions: [],
+          failedAddressSearch: true,
+        });
+      })
+      .finally(() => {
         this.setState({ isLoading: false });
-      }
-    );
+      });
   }
 
   onSave = (address: AddressObject) => {
     // @TODO - HUB-305 display this data in the input
     this.setState({ showModal: false });
-    this.props.onSelect(address, getFormatedString(address));
+    this.props.onSelectAddress(address, getFormatedString(address));
   };
 
   /**
@@ -120,27 +111,21 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
    * the places service
    */
   onSelectPrediction = ({ label = '', value = '' }: DataSourceItem): void => {
-    this.placesService!.getDetails(
-      {
-        placeId: value as string,
-        sessionToken: this.sessionToken,
-      },
-      (
-        { geometry, address_components }: google.maps.places.PlaceResult,
-        status: google.maps.places.PlacesServiceStatus
-      ) => {
-        const newState = {
+    this.mapService
+      .placeDetails(String(value))
+      .then(({ geometry, addressComponents }) => {
+        this.setState({
           addressInput: label,
-          selectedPlace: {} as google.maps.places.PlaceGeometry,
-        };
-        if (status === google.maps.places.PlacesServiceStatus.OK) {
-          newState.selectedPlace = geometry as google.maps.places.PlaceGeometry;
-          const address = transformGoogleResponse(label, address_components as google.maps.GeocoderAddressComponent[]);
-          this.props.onSelect(address, getFormatedString(address));
-        }
-        this.setState(newState);
-      }
-    );
+          selectedPlace: geometry,
+        });
+        this.props.onSelectAddress(transformGoogleResponse(label, addressComponents));
+      })
+      .catch(() => {
+        this.setState({
+          suggestions: [],
+          failedAddressSearch: true,
+        });
+      });
   };
 
   renderManualInput = () => {
@@ -166,8 +151,8 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
       showMap = true,
       isDisabled,
       onChange,
-      size,
-      onSelect,
+      size = 'md',
+      onSelectAddress,
       country,
       onReset,
       value,
@@ -183,7 +168,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
       <Wrapper {...globalProps}>
         <AddressMap onMount={this.onMountMap} place={this.state.selectedPlace} showMap={Boolean(showMap)} />
         <AutoCompleteStateless
-          size={size || 'md'}
+          size={size}
           isDisabled={Boolean(isDisabled)}
           onReset={() => {
             this.setState({ addressInput: '', selectedPlace: {} }, () => (onReset ? onReset() : undefined));
@@ -202,7 +187,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
             this.fetchSuggestion(e.target.value);
             onChange(e);
           }}
-          onSelect={this.onSelectPrediction}
+          onSelectItem={this.onSelectPrediction}
           onMenuVisibilityChange={(isOpen) => this.setState({ isOpen })}
         />
         {failedAddressSearch && this.renderManualInput()}

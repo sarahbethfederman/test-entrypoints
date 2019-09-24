@@ -1,3 +1,16 @@
+## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
+## [3.0.1] - 2019-08-26 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### Changed
+- something is wrong with publishing - so bumping the patch version 
+
+## [3.0.0] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
+### Changed
+- Old dropdown has be named as NativeSelect and exported NativeSelect as named export.
+- New fancy icon is Select - exported as Named export.
+
 ## [3.0.1] - 2019-08-26 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
 ### Changed
 - something is wrong with publishing - so bumping the patch version 

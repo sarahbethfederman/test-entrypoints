@@ -1,0 +1,997 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover position based tests should be set correctly in the bottom position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="bottom"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the bottom-end position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="bottom-end"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the bottom-start position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="bottom-start"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the left position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="left"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the left-end position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="left-end"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the left-start position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="left-start"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the right position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="right"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the right-end position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="right-end"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the right-start position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="right-start"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the top position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="top"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the top-end position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="top-end"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;
+
+exports[`Popover position based tests should be set correctly in the top-start position 1`] = `
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: rgba(10,72,87,1);
+  color: rgba(255,255,255,1);
+  text-align: left;
+  border-radius: 5px;
+  padding: var(--lendi-ui-size);
+}
+
+.c0 .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.c0 .tooltip-arrow[data-placement*='bottom'] {
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(10,72,87,1) transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='top'] {
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(10,72,87,1) transparent transparent transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='right'] {
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(10,72,87,1) transparent transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.c0 .tooltip-arrow[data-placement*='left'] {
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(10,72,87,1);
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+<div
+  class="tooltip-container"
+  style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
+>
+  <div
+    class="c0"
+  >
+    <div
+      class="tooltip-arrow"
+      data-placement="top-start"
+    />
+  </div>
+  <div
+    class="c1"
+  >
+    This is the content!
+  </div>
+</div>
+`;

@@ -30,8 +30,8 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c2:focus {
@@ -50,15 +50,15 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
 }
 
 .c2:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c2:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c2:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c3 {
@@ -124,62 +124,264 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
   size="md"
   variant="primary"
 >
-  <InputWithButton
-    className="c0 c1"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "c0",
+          "isStatic": true,
+          "lastClassName": "c1",
+          "rules": Array [
+            "
+  :focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    opacity: 1;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  :active {
+    transform: scale(1);
+  }
+",
+          ],
+        },
+        "displayName": "Styled(InputWithButton)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "c0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="md"
     variant="primary"
   >
-    <Styled(Button)
+    <InputWithButton
       className="c0 c1"
       size="md"
       variant="primary"
     >
-      <Button
-        className="c0 c1 "
+      <Styled(Button)
+        className="c0 c1"
         size="md"
         variant="primary"
       >
-        <styled.button
-          aria-label="search"
-          className="c0 c1 "
+        <StyledComponent
+          className="c0 c1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-chPdSV",
+                "isStatic": false,
+                "lastClassName": "fctdxF",
+                "rules": Array [
+                  "
+    ",
+                  [Function],
+                  ";
+  ",
+                ],
+              },
+              "displayName": "Styled(Button)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-chPdSV",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
           size="md"
           variant="primary"
         >
-          <button
-            aria-label="search"
-            className="c0 c1 c2"
+          <Button
+            className="c0 c1 "
             size="md"
+            variant="primary"
           >
-            <styled.div>
-              <div
-                className="c3"
+            <styled.button
+              aria-label="search"
+              className="c0 c1 "
+              size="md"
+              variant="primary"
+            >
+              <StyledComponent
+                aria-label="search"
+                className="c0 c1 "
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bwzfXH",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.button",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bwzfXH",
+                    "target": "button",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                size="md"
+                variant="primary"
               >
-                <styled.span
+                <button
+                  aria-label="search"
+                  className="c0 c1 c2"
                   size="md"
                 >
-                  <span
-                    className="c4"
-                    size="md"
-                  />
-                </styled.span>
-                <span>
-                  search
-                </span>
-                <styled.span
-                  size="md"
-                >
-                  <span
-                    className="c5"
-                    size="md"
-                  />
-                </styled.span>
-              </div>
-            </styled.div>
-          </button>
-        </styled.button>
-      </Button>
-    </Styled(Button)>
-  </InputWithButton>
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": true,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c3"
+                      >
+                        <styled.span
+                          size="md"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-EHOje",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    "
+  ",
+                                    [Function],
+                                    ";
+  display: flex;
+",
+                                  ],
+                                },
+                                "displayName": "styled.span",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-EHOje",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            size="md"
+                          >
+                            <span
+                              className="c4"
+                              size="md"
+                            />
+                          </StyledComponent>
+                        </styled.span>
+                        <span>
+                          search
+                        </span>
+                        <styled.span
+                          size="md"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bZQynM",
+                                  "isStatic": false,
+                                  "lastClassName": "c5",
+                                  "rules": Array [
+                                    "
+  ",
+                                    [Function],
+                                    ";
+  display: flex;
+",
+                                  ],
+                                },
+                                "displayName": "styled.span",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bZQynM",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            size="md"
+                          >
+                            <span
+                              className="c5"
+                              size="md"
+                            />
+                          </StyledComponent>
+                        </styled.span>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </button>
+              </StyledComponent>
+            </styled.button>
+          </Button>
+        </StyledComponent>
+      </Styled(Button)>
+    </InputWithButton>
+  </StyledComponent>
 </Styled(InputWithButton)>
 `;
 
@@ -213,8 +415,8 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c2:focus {
@@ -233,15 +435,15 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
 }
 
 .c2:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c2:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c2:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c3 {
@@ -301,61 +503,263 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
   size="md"
   variant="primary"
 >
-  <InputWithButton
-    className="c0 c1"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "c0",
+          "isStatic": true,
+          "lastClassName": "c1",
+          "rules": Array [
+            "
+  :focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    opacity: 1;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  :active {
+    transform: scale(1);
+  }
+",
+          ],
+        },
+        "displayName": "Styled(InputWithButton)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "c0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="md"
     variant="primary"
   >
-    <Styled(Button)
+    <InputWithButton
       className="c0 c1"
       size="md"
       variant="primary"
     >
-      <Button
-        className="c0 c1 "
+      <Styled(Button)
+        className="c0 c1"
         size="md"
         variant="primary"
       >
-        <styled.button
-          aria-label="search"
-          className="c0 c1 "
+        <StyledComponent
+          className="c0 c1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-kAzzGY",
+                "isStatic": false,
+                "lastClassName": "cXbMyc",
+                "rules": Array [
+                  "
+    ",
+                  [Function],
+                  ";
+  ",
+                ],
+              },
+              "displayName": "Styled(Button)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-kAzzGY",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
           size="md"
           variant="primary"
         >
-          <button
-            aria-label="search"
-            className="c0 c1 c2"
+          <Button
+            className="c0 c1 "
             size="md"
+            variant="primary"
           >
-            <styled.div>
-              <div
-                className="c3"
+            <styled.button
+              aria-label="search"
+              className="c0 c1 "
+              size="md"
+              variant="primary"
+            >
+              <StyledComponent
+                aria-label="search"
+                className="c0 c1 "
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bwzfXH",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  ",
+                        [Function],
+                        ";
+",
+                      ],
+                    },
+                    "displayName": "styled.button",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bwzfXH",
+                    "target": "button",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                size="md"
+                variant="primary"
               >
-                <styled.span
+                <button
+                  aria-label="search"
+                  className="c0 c1 c2"
                   size="md"
                 >
-                  <span
-                    className="c4"
-                    size="md"
-                  />
-                </styled.span>
-                <span>
-                  search
-                </span>
-                <styled.span
-                  size="md"
-                >
-                  <span
-                    className="c5"
-                    size="md"
-                  />
-                </styled.span>
-              </div>
-            </styled.div>
-          </button>
-        </styled.button>
-      </Button>
-    </Styled(Button)>
-  </InputWithButton>
+                  <styled.div>
+                    <StyledComponent
+                      forwardedComponent={
+                        Object {
+                          "$$typeof": Symbol(react.forward_ref),
+                          "attrs": Array [],
+                          "componentStyle": ComponentStyle {
+                            "componentId": "sc-ifAKCX",
+                            "isStatic": true,
+                            "lastClassName": "c3",
+                            "rules": Array [
+                              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+                            ],
+                          },
+                          "displayName": "styled.div",
+                          "foldedComponentIds": Array [],
+                          "render": [Function],
+                          "styledComponentId": "sc-ifAKCX",
+                          "target": "div",
+                          "toString": [Function],
+                          "warnTooManyClasses": [Function],
+                          "withComponent": [Function],
+                        }
+                      }
+                      forwardedRef={null}
+                    >
+                      <div
+                        className="c3"
+                      >
+                        <styled.span
+                          size="md"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-EHOje",
+                                  "isStatic": false,
+                                  "lastClassName": "c4",
+                                  "rules": Array [
+                                    "
+  ",
+                                    [Function],
+                                    ";
+  display: flex;
+",
+                                  ],
+                                },
+                                "displayName": "styled.span",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-EHOje",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            size="md"
+                          >
+                            <span
+                              className="c4"
+                              size="md"
+                            />
+                          </StyledComponent>
+                        </styled.span>
+                        <span>
+                          search
+                        </span>
+                        <styled.span
+                          size="md"
+                        >
+                          <StyledComponent
+                            forwardedComponent={
+                              Object {
+                                "$$typeof": Symbol(react.forward_ref),
+                                "attrs": Array [],
+                                "componentStyle": ComponentStyle {
+                                  "componentId": "sc-bZQynM",
+                                  "isStatic": false,
+                                  "lastClassName": "c5",
+                                  "rules": Array [
+                                    "
+  ",
+                                    [Function],
+                                    ";
+  display: flex;
+",
+                                  ],
+                                },
+                                "displayName": "styled.span",
+                                "foldedComponentIds": Array [],
+                                "render": [Function],
+                                "styledComponentId": "sc-bZQynM",
+                                "target": "span",
+                                "toString": [Function],
+                                "warnTooManyClasses": [Function],
+                                "withComponent": [Function],
+                              }
+                            }
+                            forwardedRef={null}
+                            size="md"
+                          >
+                            <span
+                              className="c5"
+                              size="md"
+                            />
+                          </StyledComponent>
+                        </styled.span>
+                      </div>
+                    </StyledComponent>
+                  </styled.div>
+                </button>
+              </StyledComponent>
+            </styled.button>
+          </Button>
+        </StyledComponent>
+      </Styled(Button)>
+    </InputWithButton>
+  </StyledComponent>
 </Styled(InputWithButton)>
 `;

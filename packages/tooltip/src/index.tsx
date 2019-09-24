@@ -4,7 +4,6 @@ import { Body } from '@lendi-ui/typography';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 import * as Hammer from 'hammerjs';
-import createRef from 'react-create-ref';
 
 export interface TooltipProps extends LUIGlobalProps {
   content: React.ReactNode;
@@ -21,7 +20,7 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
     isOpen: false,
   };
   private _isMounted: boolean = false;
-  private myRef: React.RefObject<HTMLElement> = createRef();
+  private myRef: React.RefObject<HTMLElement> = React.createRef();
 
   componentDidMount() {
     this._isMounted = true;
@@ -59,7 +58,7 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
     const { isOpen } = this.state;
     return (
       <TooltipWrapper
-        innerRef={this.myRef}
+        ref={this.myRef}
         onMouseOver={() => this.changeOpenStatus(true)}
         onMouseLeave={() => this.changeOpenStatus(false)}
       >

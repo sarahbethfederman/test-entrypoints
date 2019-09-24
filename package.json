@@ -9,22 +9,21 @@
   ],
   "dependencies": {
     "@lendi-ui/doc-utils": "^1.0.0",
-    "@lendi/editor-config": "^1.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0",
     "@lendi/prettier-config": "^1.0.0",
     "@lendi/tslint-config": "^1.0.0",
-    "@lendi/typescript-config": "^1.0.0",
+    "@lendi/typescript-config": "^2.0.0",
     "@types/enzyme": "^3.1.10",
     "@types/jest": "^23.1.0",
     "@types/react": "^16.4.8",
     "@types/react-dom": "^16.0.6",
+    "@types/styled-components": "^4.1.18",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
     "babel-runtime": "^6.26.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
-    "husky": "^0.14.3",
     "jest": "^23.1.0",
     "jest-styled-components": "^6.0.1",
     "lerna": "^3.0.4",
@@ -34,27 +33,28 @@
     "prettier": "^1.18.2",
     "prettier-check": "^2.0.0",
     "publish-if-not-published": "^1.0.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "styled-components": "^3.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4",
     "ts-jest": "23.1.3",
     "tslint": "^5.10.0",
     "tslint-microsoft-contrib": "^5.0.3",
-    "tslint-react": "^3.6.0",
-    "typescript": "^3.0.1"
+    "tslint-react": "^3.6.0"
   },
   "engines": {
     "node": "^10"
   },
   "scripts": {
-    "build": "lerna run build --ignore @lendi-ui/theme --ignore @lendi-ui/reset --ignore @lendi-ui/inline-dropdown",
+    "build": "lerna run build",
     "build:assets": "yarn build:icons && yarn build:fancy-icons && yarn build:lender-logos",
     "build:icons": "node packages/icon/build/index.js",
     "build:fancy-icons": "node packages/fancy-icon/build/index.js",
     "build:lender-logos": "node packages/lender-logos/build/index.js",
     "build:theme": "cd packages/theme/ && yarn build",
     "check": "yarn run check:lint-source && yarn run check:lint-doc-and-test && yarn run check:format",
-    "check:danger": "danger local --base master",
+    "check:danger": "yarn run check:danger:master",
+    "check:danger:master": "danger local --base master --dangerfile './dangerfile.master.ts'",
+    "check:danger:staging": "danger local --base staging --dangerfile './dangerfile.staging.ts'",
     "check:duplicates": "yarn-deduplicate --list --fail",
     "check:format": "prettier-check '**/*.{json,js,jsx,ts,tsx,md}'",
     "check:lint-doc-and-test": "tslint -c ./tslint.stories-and-tests.json --format stylish '+(packages|utils)/*/src/*.+(doc|example|test).+(ts|tsx)' '+website/src/**/*.+(doc|example|test).+(ts|tsx)'",
@@ -66,7 +66,7 @@
     "format:fix": "prettier --write '**/*.{json,js,jsx,ts,tsx,md}' --loglevel silent",
     "list": "lerna ls",
     "prebuild": "yarn build:assets && yarn build:theme",
-    "precommit": "yarn run format:fix && yarn test -o",
+    "precommit": "yarn run format:fix && yarn run test -o",
     "prepush": "yarn run precommit && yarn run remove:duplicates && yarn run check",
     "remove:duplicates": "yarn-deduplicate",
     "start": "cd website && yarn start",
@@ -83,6 +83,6 @@
     "yarn-deduplicate": "^1.1.0"
   },
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.1.0"
+    "@lendi-ui/theme": "^7.0.0"
   }
 }

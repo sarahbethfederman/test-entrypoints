@@ -1,13 +1,9 @@
 import * as React from 'react';
-import * as createReactContext from 'create-react-context';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
 import { IconButton, IconButtonSize, IconProps } from '../IconButton';
-
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
 
 export interface ButtonGroupButtonProps {
   variant: ButtonVariant;
@@ -56,10 +52,7 @@ export interface ButtonGroupProps extends ButtonGroupContext {
     | React.ReactElement<ButtonGroupIconButtonProps>[];
 }
 
-// Supressing "Cannot invoke an expression whose type lacks a call signature." error
-// More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-// @ts-ignore
-const ButtonContext = PonyfillContext<ButtonGroupContext>({});
+const ButtonContext = React.createContext<ButtonGroupContext>({});
 
 export class ButtonGroup extends React.Component<ButtonGroupProps> {
   static Button = ButtonGroupButton;

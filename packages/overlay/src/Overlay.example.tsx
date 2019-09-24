@@ -34,7 +34,7 @@ class OverlayExample extends React.Component<{}, OverlayExampleState> {
     const { isOverlayActive } = this.state;
     return (
       <Theme>
-        <Overlay show={isOverlayActive} zIndex={5} onHide={this.onHide} />
+        <Overlay isVisible={isOverlayActive} zIndex={5} onHide={this.onHide} />
         <Wrapper>
           <Button variant="primary" onClick={this.onShow}>
             Activate overlay

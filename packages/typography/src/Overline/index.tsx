@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
-import { select } from '@lendi-ui/theme';
+import { select, Colors } from '@lendi-ui/theme';
 import { deriveSize, LUIGlobalProps } from '@lendi-ui/utils';
 import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
@@ -57,7 +57,7 @@ export interface OverlineOptions extends LUIGlobalProps {
  */
 export const overline = (options: OverlineOptions) => {
   const { colorScheme, size, align } = options;
-  let color: string;
+  let color: Colors;
 
   if (colorScheme === 'dark') {
     color = 'shade.0';
@@ -84,8 +84,8 @@ export const overline = (options: OverlineOptions) => {
  */
 export const overlineLink = (options: OverlineOptions) => {
   const { colorScheme } = options;
-  let linkColor: string;
-  let stateColor: string;
+  let linkColor: Colors;
+  let stateColor: Colors;
 
   if (colorScheme === 'dark') {
     linkColor = 'primary.200';
@@ -122,7 +122,8 @@ const LinkWrapper = styled.a<OverlineOptions & MarginOptions>`
 `;
 
 const TextWrapper = styled.span<OverlineOptions & MarginOptions>`
-  ${overline} ${margin};
+  ${overline};
+  ${margin};
 `;
 
 export interface OverlineProps extends OverlineOptions {

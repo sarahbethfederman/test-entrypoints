@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Body, Link } from '@lendi-ui/typography';
-import { Check, Lock } from '@lendi-ui/icon';
 import { Button } from '@lendi-ui/button';
 import { AccordionGroup } from '../components/AccordionGroup';
 import { Accordion } from '../components/Accordion';
+import { Check, Lock } from '@lendi-ui/icon';
 
 export default class SimpleAccordionExample extends React.Component {
   whichClicked: string = '';

@@ -12,10 +12,10 @@ const STYLES: StyleOptions = {
 };
 
 export interface FadeProps {
-  active: boolean;
-  appear?: boolean;
-  mountOnEnter?: boolean;
-  unmountOnExit?: boolean;
+  isActive: boolean;
+  isVisible?: boolean;
+  shouldMountOnEnter?: boolean;
+  shouldUnmountOnExit?: boolean;
   children?: React.ReactNode;
   timeout?: number;
 }

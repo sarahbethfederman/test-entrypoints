@@ -1,3 +1,7 @@
+## [3.0.0] 2019-9-23 - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.2.2] - 2019-06-4 - [HUB-288](https://creditandfinance.atlassian.net/browse/HUB-288)
 ### Changed
 - Gave the entire date-picker a white background.

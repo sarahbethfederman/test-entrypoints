@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
-import Theme from '@lendi-ui/theme';
+import Theme, { theme } from '@lendi-ui/theme';
+import { color } from '@lendi-ui/color';
 import Collapse, { CollapseProps } from '.';
 import { CollapseBody, CollapseFooter, CollapsePanel, Wrapper } from './index.style';
 
@@ -113,7 +114,7 @@ describe('Collapse', () => {
         expect(wrapper.find(CollapseBody)).toHaveStyleRule('height', 'auto');
       });
       it('border of the collapse body should have some style', () => {
-        expect(wrapper.find(CollapseBody)).toHaveStyleRule('border', '1px solid #e3e3e3');
+        expect(wrapper.find(CollapseBody)).toHaveStyleRule('border', `1px solid ${color('shade.100')({ theme })}`);
       });
     });
   });

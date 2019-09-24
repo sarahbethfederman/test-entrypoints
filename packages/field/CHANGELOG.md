@@ -1,3 +1,12 @@
+## [3.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4.
+- Updated isOptional to isRequired [HUB-112](https://creditandfinance.atlassian.net/browse/HUB-112)
+
+## [2.2.3] - 2019-08-28
+### Changed
+- Locked down versions of LUI dependencies as we resolve major changes.
+
 ## [2.2.3] - 2019-08-28
 ### Changed
 - Locked down versions of LUI dependencies as we resolve major changes.

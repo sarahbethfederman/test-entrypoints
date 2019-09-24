@@ -13,15 +13,82 @@ exports[`Heading should render styles for size "lg" 1`] = `
 <Styled(HeadingTag)
   size="lg"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="lg"
   >
-    <h2
+    <HeadingTag
       className="c0"
       size="lg"
-    />
-  </HeadingTag>
+    >
+      <h2
+        className="c0"
+        size="lg"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;
 
@@ -38,15 +105,82 @@ exports[`Heading should render styles for size "md" 1`] = `
 <Styled(HeadingTag)
   size="md"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="md"
   >
-    <h3
+    <HeadingTag
       className="c0"
       size="md"
-    />
-  </HeadingTag>
+    >
+      <h3
+        className="c0"
+        size="md"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;
 
@@ -63,15 +197,82 @@ exports[`Heading should render styles for size "sm" 1`] = `
 <Styled(HeadingTag)
   size="sm"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="sm"
   >
-    <h4
+    <HeadingTag
       className="c0"
       size="sm"
-    />
-  </HeadingTag>
+    >
+      <h4
+        className="c0"
+        size="sm"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;
 
@@ -88,15 +289,82 @@ exports[`Heading should render styles for size "xl" 1`] = `
 <Styled(HeadingTag)
   size="xl"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="xl"
   >
-    <h1
+    <HeadingTag
       className="c0"
       size="xl"
-    />
-  </HeadingTag>
+    >
+      <h1
+        className="c0"
+        size="xl"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;
 
@@ -113,15 +381,82 @@ exports[`Heading should render styles for size "xs" 1`] = `
 <Styled(HeadingTag)
   size="xs"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="xs"
   >
-    <h5
+    <HeadingTag
       className="c0"
       size="xs"
-    />
-  </HeadingTag>
+    >
+      <h5
+        className="c0"
+        size="xs"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;
 
@@ -138,14 +473,81 @@ exports[`Heading should render styles for size "xxs" 1`] = `
 <Styled(HeadingTag)
   size="xxs"
 >
-  <HeadingTag
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(HeadingTag)",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="xxs"
   >
-    <h6
+    <HeadingTag
       className="c0"
       size="xxs"
-    />
-  </HeadingTag>
+    >
+      <h6
+        className="c0"
+        size="xxs"
+      />
+    </HeadingTag>
+  </StyledComponent>
 </Styled(HeadingTag)>
 `;

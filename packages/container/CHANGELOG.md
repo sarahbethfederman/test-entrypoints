@@ -1,4 +1,8 @@
-# [4.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
+## [5.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
+## [4.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.
 ### Deleted

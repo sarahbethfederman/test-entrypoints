@@ -7,7 +7,11 @@ export interface TriggerProps {
   iconAfter?: React.ReactElement<IconProps>;
 }
 
-export const MenuDropdownTrigger: React.SFC<TriggerProps> = ({ iconBefore = '', iconAfter = '', children }) => {
+export const MenuDropdownTrigger: React.FunctionComponent<TriggerProps> = ({
+  iconBefore = '',
+  iconAfter = '',
+  children,
+}) => {
   return (
     <TriggerWrapper>
       {iconBefore && <IconWrapper>{iconBefore}</IconWrapper>}

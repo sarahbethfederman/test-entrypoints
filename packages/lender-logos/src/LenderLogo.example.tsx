@@ -25,7 +25,7 @@ export default () => (
       >;
       return (
         <Wrapper key={i}>
-          <MyComponent width="200px" height="200px" />
+          <MyComponent width="50px" height="50px" />
           <NameWrapper size="sm">{component}</NameWrapper>
         </Wrapper>
       );

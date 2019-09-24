@@ -6,7 +6,6 @@ import '@testing-library/jest-dom/extend-expect';
 import '@testing-library/react/cleanup-after-each';
 import { MOCK_DATA_SOURCE } from '../examples/data-source.mock';
 import { LUISelectProps } from '../types';
-import { mount } from 'enzyme';
 const singleValueTestProps: LUISelectProps = {
   options: MOCK_DATA_SOURCE,
   placeholder: 'single select',

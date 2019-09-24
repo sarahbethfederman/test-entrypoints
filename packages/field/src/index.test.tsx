@@ -27,7 +27,7 @@ describe('Field', () => {
   const error = 'error message';
   const tooltip = <QuestionOutline color="primary.500" />;
   const children = <input type="text" />;
-  const isOptional = true;
+  const isRequired = false;
   it('should render wrapper component', () => {
     render({ label });
     expect(wrapper.find(ErrorMessage).length).toEqual(0);
@@ -72,8 +72,8 @@ describe('Field', () => {
   });
 
   it('should render Label component with Optional properly', () => {
-    render({ label, isOptional });
-    expect(wrapper.find('Label').prop('isOptional')).toEqual(true);
+    render({ label, isRequired });
+    expect(wrapper.find('Label').prop('isRequired')).toEqual(false);
   });
 
   it('should not render Label component if no related props are passed', () => {
@@ -84,7 +84,7 @@ describe('Field', () => {
   it('should render Label component if at least one related prop is passed', () => {
     render({ label });
     expect(wrapper.find(LabelField).length).toEqual(1);
-    render({ isOptional });
+    render({ isRequired });
     expect(wrapper.find(LabelField).length).toEqual(1);
     render({ assistiveText });
     expect(wrapper.find(LabelField).length).toEqual(1);

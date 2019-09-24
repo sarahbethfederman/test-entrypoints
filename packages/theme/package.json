@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme",
-  "version": "6.2.0",
+  "version": "7.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -11,9 +11,10 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3"
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

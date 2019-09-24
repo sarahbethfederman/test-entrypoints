@@ -148,12 +148,12 @@ describe('CallToAction footer component', () => {
       describe('the Continue application button', () => {
         it('should open a Modal', () => {
           render({ isAuth: true, continueApplicationUrl: '/', applicationDate: '6 February 2019' });
-          expect(element.find(Modal).props().show).toEqual(false);
+          expect(element.find(Modal).props().isVisible).toEqual(false);
           element
             .find(Button)
             .at(0)
             .simulate('click');
-          expect(element.find(Modal).props().show).toEqual(true);
+          expect(element.find(Modal).props().isVisible).toEqual(true);
         });
       });
 

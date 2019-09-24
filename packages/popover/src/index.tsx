@@ -1,60 +1,101 @@
 import * as React from 'react';
-import { ArrowContainer } from 'react-tiny-popover';
-import { Position, PopoverWrapper, ContentWrapper } from './index.style';
-import { select } from '@lendi-ui/theme';
-import { withTheme } from 'styled-components';
+import { TooltipWrapper, Position, ContentWrapper, ArrowWrapper } from './index.style';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+import * as TooltipTrigger from './react-popper-tooltip';
+
+const TooltipTriggerComponent = typeof TooltipTrigger === 'object' ? TooltipTrigger.default : TooltipTrigger;
 
 export interface PopoverProps extends LUIGlobalProps {
-  content?: React.ReactNode;
-  target?: React.ReactNode;
+  children: React.ReactNode;
   position?: Position;
-  className?: string;
-  theme?: any;
 }
 
-export interface PopoverState {
-  isOpen: boolean;
-}
+function getChildrenOf(component: React.ReactType, children: React.ReactNode) {
+  const foundChildren = React.Children.toArray(children).filter(
+    (child) => React.isValidElement(child) && child.type === component && child
+  );
 
-class Popover extends React.Component<PopoverProps, PopoverState> {
-  state = {
-    isOpen: false,
-  };
-
-  handleClick = () => {
-    this.setState((prevState) => ({
-      isOpen: !prevState.isOpen,
-    }));
-  };
-
-  render() {
-    const { content, target, position, ...otherProps } = this.props;
-    const { isOpen } = this.state;
-    const ArrowColor = select('colors.secondary.600')(this.props);
-    return (
-      <PopoverWrapper
-        {...otherProps}
-        disableReposition={true}
-        isOpen={isOpen}
-        onClickOutside={() => this.setState({ isOpen: false })}
-        position={position}
-        content={({ position, targetRect, popoverRect }) => (
-          <ArrowContainer
-            position={position}
-            targetRect={targetRect}
-            popoverRect={popoverRect}
-            arrowColor={ArrowColor}
-            arrowSize={8}
-          >
-            <ContentWrapper>{content}</ContentWrapper>
-          </ArrowContainer>
-        )}
-      >
-        <span onClick={this.handleClick}>{target}</span>
-      </PopoverWrapper>
-    );
+  if (foundChildren.length !== 1) {
+    throw new Error(`You must have one ${component.toString} inside your Popover`);
   }
+
+  const child = React.Children.only(foundChildren[0]);
+  if (typeof child === 'string') return <>{child}</>;
+  return child;
 }
 
-export default withTheme(Popover);
+const Target: React.FunctionComponent = ({ children }) => <>{children}</>;
+
+interface TooltipProps {
+  position?: Position;
+  arrowRef?: any;
+  tooltipRef?: any;
+  getArrowProps?: any;
+  getTooltipProps?: any;
+}
+
+const Tooltip: React.FunctionComponent<TooltipProps> = ({
+  children,
+  position,
+  arrowRef,
+  tooltipRef,
+  getArrowProps,
+  getTooltipProps,
+}) => {
+  const isContentString = typeof children === 'string';
+
+  return (
+    <TooltipWrapper>
+      <div
+        {...getTooltipProps({
+          ref: tooltipRef,
+          className: 'tooltip-container',
+        })}
+      >
+        <ArrowWrapper>
+          <div
+            {...getArrowProps({
+              ref: arrowRef,
+              className: `tooltip-arrow`,
+              'data-placement': position,
+            })}
+          />
+        </ArrowWrapper>
+
+        <ContentWrapper isContentString={isContentString}>{children}</ContentWrapper>
+      </div>
+    </TooltipWrapper>
+  );
+};
+
+function Popover({ position, children, ...props }: PopoverProps) {
+  const InternalTooltip = getChildrenOf(Popover.Content, children);
+  const InternalTarget = getChildrenOf(Popover.Target, children);
+
+  return (
+    <TooltipTriggerComponent
+      {...props}
+      placement={position}
+      trigger="click"
+      tooltip={(props) => React.cloneElement(InternalTooltip as React.ReactElement, { position, ...props })}
+    >
+      {({ getTriggerProps, triggerRef }) => (
+        <span
+          {...getTriggerProps({
+            ref: triggerRef,
+            className: 'trigger',
+            trigger: 'click',
+            ...props,
+          })}
+        >
+          {InternalTarget}
+        </span>
+      )}
+    </TooltipTriggerComponent>
+  );
+}
+
+Popover.Target = Target;
+Popover.Content = Tooltip;
+
+export default Popover;

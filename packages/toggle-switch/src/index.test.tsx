@@ -3,6 +3,7 @@ import { mount } from 'enzyme';
 import Theme, { theme } from '@lendi-ui/theme';
 import { ErrorOutline } from '@lendi-ui/icon';
 import Spinner from '@lendi-ui/spinner';
+import { color } from '@lendi-ui/color';
 import ToggleSwitch from './index';
 import { ToggleLabel, Wrapper } from './index.style';
 import { IconWrapper, ToggleCheckbox, ToggleHandle, ToggleTrack, ToggleWrapper } from './Toggle/index.style';
@@ -46,15 +47,15 @@ describe('ToggleSwitch', () => {
   it('should render correct default styles when off', () => {
     render({});
 
-    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', theme.colors.shade['300']);
-    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', theme.colors.shade['25']);
+    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', color('shade.300')({ theme }));
+    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', color('shade.25')({ theme }));
   });
 
   it('should render correct default styles when on', () => {
     render({ isChecked: true });
 
-    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', theme.colors.primary['300']);
-    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', theme.colors.primary['500']);
+    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', color('primary.300')({ theme }));
+    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', color('primary.500')({ theme }));
   });
 
   it('should render correct styles when disabled', () => {
@@ -76,8 +77,8 @@ describe('ToggleSwitch', () => {
   it('should render the correct colours and icon when error', () => {
     render({ isError: true });
 
-    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', theme.colors.error['200']);
-    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', theme.colors.error['500']);
+    expect(element.find(ToggleTrack)).toHaveStyleRule('background-color', color('error.200')({ theme }));
+    expect(element.find(ToggleHandle)).toHaveStyleRule('background-color', color('error.500')({ theme }));
 
     expect(element.find(IconWrapper)).toHaveLength(1);
     expect(element.find(ErrorOutline)).toHaveLength(1);
@@ -87,15 +88,15 @@ describe('ToggleSwitch', () => {
     render({ isBoxed: true });
 
     const testee = element.find(Wrapper);
-    expect(testee).toHaveStyleRule('border', `1px solid ${theme.colors.shade['200']}`);
+    expect(testee).toHaveStyleRule('border', `1px solid ${color('shade.200')({ theme })}`);
   });
 
   it('should render the correct styles when boxed and on', () => {
     render({ isBoxed: true, isChecked: true });
 
     const testee = element.find(Wrapper);
-    expect(testee).toHaveStyleRule('background-color', theme.colors.primary['50']);
-    expect(testee).toHaveStyleRule('border', `1px solid ${theme.colors.primary['500']}`);
+    expect(testee).toHaveStyleRule('background-color', color('primary.50')({ theme }));
+    expect(testee).toHaveStyleRule('border', `1px solid ${color('primary.500')({ theme })}`);
   });
   describe('test native props and Standard HTML Attributes', () => {
     it('should mount with Aria attributes', () => {

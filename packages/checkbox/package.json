@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/checkbox",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -11,21 +11,21 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.1.1",
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3"
+    "@lendi-ui/theme": "^7.0.0",
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/color": "^3.0.2",
-    "@lendi-ui/typography": "^3.0.2",
-    "@lendi-ui/spacing": "^4.0.2",
-    "@lendi-ui/utils": "^2.5.0",
-    "create-react-context": "^0.2.3",
+    "@lendi-ui/color": "^4.0.0",
+    "@lendi-ui/typography": "^4.0.0",
+    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/utils": "^3.0.0",
     "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "@lendi-ui/container": "^4.0.0"
+    "@lendi-ui/container": "^5.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

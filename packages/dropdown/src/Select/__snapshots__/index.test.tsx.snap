@@ -13,7 +13,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
 }
 
 .c3 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -62,7 +62,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
               event testing
             </div>
             <div
-              class="css-5glczb"
+              class="css-goycbu-Input"
             >
               <div
                 class=""
@@ -87,7 +87,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
             </div>
           </div>
           <div
-            class=" css-1wy0on6"
+            class=" css-1g48xl4-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"
@@ -138,7 +138,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
 }
 
 .c3 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -187,7 +187,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
               multiple select
             </div>
             <div
-              class="css-5glczb"
+              class="css-goycbu-Input"
             >
               <div
                 class=""
@@ -212,7 +212,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
             </div>
           </div>
           <div
-            class=" css-1wy0on6"
+            class=" css-1g48xl4-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"
@@ -263,7 +263,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
 }
 
 .c3 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -312,7 +312,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
               single select
             </div>
             <div
-              class="css-5glczb"
+              class="css-goycbu-Input"
             >
               <div
                 class=""
@@ -337,7 +337,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
             </div>
           </div>
           <div
-            class=" css-1wy0on6"
+            class=" css-1g48xl4-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"

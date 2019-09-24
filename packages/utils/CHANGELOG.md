@@ -1,4 +1,9 @@
 # Changelog - @lendi-ui/utils
+
+## [3.0.0] 2019-9-23 - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.5.0] - 2019-05-27] - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
 ### Added
 - LUI Whitelist props - constant defines what All LUI component can extends as prop.

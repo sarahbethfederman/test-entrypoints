@@ -1,37 +1,52 @@
-import {PropTable} from '@lendi-ui/doc-utils';
+import { PropTable } from '@lendi-ui/doc-utils';
 
 ## Usage
 
 ```
-import Card from '@lendi-ui/card';
+import { Card } from '@lendi-ui/card';
 ```
 
 ```jsx
-<>
-<Card 
-  title="Card title"
-  headerSize="sm"
-  subTitle="I'm a sub-title"
-  rightHeaderContent=<Lock color="secondary.500" onClick={() => alert('clicked!')}
-  id="testId" aria-label="testLabel"/>
->
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-  type specimen book.
+<Card>
+  <Card.Header>Ex fastidii perseque</Card.Header>
+  <Card.Content>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus lacus ut urna entum sodales.
+    In cursus lacus ut urna entum sodales. In cursus lacus ut urna entum sodales.
+  </Card.Content>
+  <Card.Footer align="right">
+    <ModeEdit color="primary.500" width="1.5em" height="1.5em" />
+    <Delete color="primary.500" width="1.5em" height="1.5em" />
+  </Card.Footer>
 </Card>
-</>
 ```
 
 ## Properties
-
+### Card
 <PropTable>
-  <PropTable.Entry name="cardTitleIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along title"/>
+  <PropTable.Entry name="bg" type="string" description="Background colour"/>
   <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
-  <PropTable.Entry name="interactiveTitle" type="React.ReactElement<DropdownProps>" description="Interactive title - a dropdown to switch between content"/>
-  <PropTable.Entry name="moreIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along Cancel button"/>
-  <PropTable.Entry name="rightHeaderContent" type="React.ReactNode" description="The content of the RHS of the header. This will commonly be a button (eg. 'Cancel', 'Edit' etc), or an icon, or both"/>
-  <PropTable.Entry name="subtitle" type="string" description="SubTitle of card"/>
-  <PropTable.Entry name="title" type="string" description="Title of card"/>
+  <PropTable.Entry name="depth" type="number" description="Depth of the card"/>
+  <PropTable.Entry name="fg" type="string" description="Foreground colour"/>
+  <PropTable.Entry name="size" type="string" description="Size of card"/>
+</PropTable>
+
+
+### Card.Heading
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+</PropTable>
+
+
+### Card.Content
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+</PropTable>
+
+
+### Card.Footer
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+  <PropTable.Entry name="align" type="left | center | right" description="Content of the card"/>
 </PropTable>
 
 ## RHS button content

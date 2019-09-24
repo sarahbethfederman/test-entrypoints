@@ -12,10 +12,76 @@ exports[`Body should render styles for size lg 1`] = `
 <styled.p
   size="lg"
 >
-  <p
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="lg"
-  />
+  >
+    <p
+      className="c0"
+      size="lg"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -31,10 +97,76 @@ exports[`Body should render styles for size md 1`] = `
 <styled.p
   size="md"
 >
-  <p
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="md"
-  />
+  >
+    <p
+      className="c0"
+      size="md"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -50,10 +182,76 @@ exports[`Body should render styles for size sm 1`] = `
 <styled.p
   size="sm"
 >
-  <p
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="sm"
-  />
+  >
+    <p
+      className="c0"
+      size="sm"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -65,9 +263,74 @@ exports[`Body should render styles for size undefined 1`] = `
 }
 
 <styled.p>
-  <p
-    className="c0"
-  />
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <p
+      className="c0"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -83,10 +346,76 @@ exports[`Body should render styles for size xs 1`] = `
 <styled.p
   size="xs"
 >
-  <p
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="xs"
-  />
+  >
+    <p
+      className="c0"
+      size="xs"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -102,9 +431,75 @@ exports[`Body should render styles for size xxs 1`] = `
 <styled.p
   size="xxs"
 >
-  <p
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="xxs"
-  />
+  >
+    <p
+      className="c0"
+      size="xxs"
+    />
+  </StyledComponent>
 </styled.p>
 `;

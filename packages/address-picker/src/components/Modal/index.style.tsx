@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { body } from '@lendi-ui/typography';
 import { mb, ml, pr } from '@lendi-ui/spacing';
 import { NativeSelect } from '@lendi-ui/dropdown';
 import { between } from '@lendi-ui/breakpoint';
 import Grid from '@lendi-ui/grid';
 import { color, bg } from '@lendi-ui/color';
 import { select } from '@lendi-ui/theme';
+import { body } from '@lendi-ui/typography';
 
 export const UnitWrapper = styled(Grid.Unit)`
   display: flex;

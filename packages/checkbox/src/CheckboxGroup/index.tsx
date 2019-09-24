@@ -1,13 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import * as createReactContext from 'create-react-context';
 import { Wrapper, Direction } from './index.style';
 import { Checkbox, CheckboxProps, Size } from '../Checkbox/index';
 import { mb } from '@lendi-ui/spacing';
 import { LUIGlobalProps } from '@lendi-ui/utils';
-
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
 
 export interface CheckboxGroupItemProps {
   value: string;
@@ -20,7 +16,7 @@ const CustomCheckbox = styled(Checkbox)`
   ${mb('xxs')};
 `;
 
-const CheckboxGroupItem: React.SFC<CheckboxGroupItemProps> = (props) => (
+const CheckboxGroupItem: React.FunctionComponent<CheckboxGroupItemProps> = (props) => (
   <CheckboxContext.Consumer>
     {(state: CheckboxGroupContext) => (
       <CustomCheckbox {...props} {...state} isChecked={state.values.includes(props.value)} />
@@ -42,11 +38,9 @@ export interface CheckboxGroupProps extends CheckboxGroupContext {
   children?: React.ReactElement<CheckboxProps> | React.ReactElement<CheckboxProps>[] | null;
 }
 
-// Supressing "Cannot invoke an expression whose type lacks a call signature." error
-// More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-// @ts-ignore
-
-const CheckboxContext = PonyfillContext<CheckboxGroupContext>({});
+const CheckboxContext = React.createContext<CheckboxGroupContext>({
+  values: [],
+});
 
 export class CheckboxGroup extends React.Component<CheckboxGroupProps> {
   static Checkbox = CheckboxGroupItem;

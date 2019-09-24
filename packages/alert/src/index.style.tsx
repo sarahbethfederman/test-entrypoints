@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Body } from '@lendi-ui/typography';
+import { BodyOptions, body } from '@lendi-ui/typography';
 import { color, fg, bg } from '@lendi-ui/color';
 import { p, ml, mt } from '@lendi-ui/spacing';
 import { select } from '@lendi-ui/theme';
@@ -65,10 +65,16 @@ export const IconWrapper = styled.span`
   line-height: 0;
 `;
 
-export const HeadingWrapper = styled(Body)`
+export const HeadingWrapper = styled.p`
+  ${(props: BodyOptions) => body(props)}
   ${ml('xs')};
 `;
 
-export const ContentWrapper = styled(Body)`
+interface ContentWrapperProps extends BodyOptions {
+  withHeading: boolean;
+}
+
+export const ContentWrapper = styled.p<ContentWrapperProps>`
+  ${(props: ContentWrapperProps) => body(props)}
   ${({ withHeading }: { withHeading: boolean }) => (withHeading ? mt('xxxs') : ml('xs'))};
 `;

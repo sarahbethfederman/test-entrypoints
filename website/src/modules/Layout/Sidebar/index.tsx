@@ -84,7 +84,7 @@ export class Sidebar extends React.Component<SidebarProps> {
                 items={themeItems}
                 isFullWidth
                 value={theme}
-                onChange={(value) => changeTheme(value as ThemeType)}
+                onChange={(value: string) => changeTheme(value as ThemeType)}
               />
             )}
           </AppContext.Consumer>

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/tabs",
-  "version": "3.2.1",
+  "version": "4.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -11,21 +11,20 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.1.1",
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3"
+    "@lendi-ui/theme": "^7.0.0",
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^2.0.0",
-    "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/grid": "^2.0.0",
-    "@lendi-ui/icon": "^7.0.0",
-    "@lendi-ui/typography": "^3.0.0",
-    "create-react-context": "^0.2.3",
+    "@lendi-ui/breakpoint": "^3.0.0",
+    "@lendi-ui/color": "^4.0.0",
+    "@lendi-ui/grid": "3.0.0",
+    "@lendi-ui/icon": "9.0.0",
+    "@lendi-ui/typography": "^4.0.0",
     "prop-types": "^15.6.2",
-    "react-create-ref": "^1.0.1",
-    "@lendi-ui/utils": "^2.5.0"
+    "@lendi-ui/utils": "^3.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

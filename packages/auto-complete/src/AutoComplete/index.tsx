@@ -1,94 +1,91 @@
 import * as React from 'react';
-import createRef from 'react-create-ref';
 import { debounce } from 'lodash';
-
 import { Input } from '@lendi-ui/text-input';
-
-import { CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from '../styled/index.style';
+import { CloseIcon, CloseWrapper, SpinnerWrapper, AfterIconWrapper, AutoCompleteWrapper } from '../common/index.style';
 import { KEY_ENTER, KEY_UP, KEY_DOWN, KEY_ESCAPE, KEY_TAB } from '../util/keys';
-import AutoCompleteMenuList from './MenuList';
+import AutoCompleteMenuList from './components';
 import { extractData, getOffsetScrollTop, transformedItem } from '../util';
-import { DataSourceItem, AutoCompleteStatefulProps, AutoCompleteValue } from '../types';
+import { DataSourceItem, AutoCompleteStatefulProps, AutoCompleteValue } from '../typings';
 
 export interface AutoCompleteState {
   filteredDataSource: DataSourceItem[];
   userInput: AutoCompleteValue;
   showList: boolean;
-  activeSelection: number; // currently focussed item.
+  activeSelection: number; // currently focused item
   isLoading: boolean;
   menuWidth: number;
 }
 
+const DEBOUNCE_WAIT = 300;
+const WINDOW_RESIZE_WAIT = 100;
+
 export class AutoComplete extends React.Component<AutoCompleteStatefulProps, AutoCompleteState> {
-  debounceFilterDataSource: (userInput: string) => void;
-  debounceWindowResize: () => void;
-  static readonly DEBOUNCE_WAIT = 300;
-  static readonly WINDOW_RESIZE_WAIT = 100;
   state: AutoCompleteState = {
     activeSelection: 0,
     filteredDataSource: [],
-    userInput: this.props.value ? this.props.value : '',
+    userInput: this.props.initialValue || '',
     showList: false,
     isLoading: false,
     menuWidth: 0,
   };
-  menuContainerRef: React.RefObject<HTMLUListElement> = createRef();
-  inputWrapper: React.RefObject<HTMLDivElement> = createRef();
+  menuContainerRef: React.RefObject<HTMLUListElement> = React.createRef();
+  inputWrapper: React.RefObject<HTMLDivElement> = React.createRef();
 
   constructor(props: AutoCompleteStatefulProps) {
     super(props);
-    this.debounceFilterDataSource = debounce(this.getFilteredData, AutoComplete.DEBOUNCE_WAIT);
-    this.debounceWindowResize = debounce(this.calcInputWidth, AutoComplete.WINDOW_RESIZE_WAIT);
+    this.getFilteredData = debounce(this.getFilteredData, DEBOUNCE_WAIT);
+    this.calcInputWidth = debounce(this.calcInputWidth, WINDOW_RESIZE_WAIT);
   }
-
-  calcInputWidth = () => {
-    if (this.inputWrapper.current) {
-      this.setState({
-        menuWidth: (this.inputWrapper.current.firstElementChild as HTMLUListElement).offsetWidth,
-      });
-    }
-  };
 
   componentDidMount() {
     window.addEventListener('click', this.onHoverOff);
-    window.addEventListener('resize', this.debounceWindowResize);
+    window.addEventListener('resize', this.calcInputWidth);
     this.calcInputWidth();
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.debounceWindowResize);
+    window.removeEventListener('resize', this.calcInputWidth);
     window.removeEventListener('click', this.onHoverOff);
   }
 
+  calcInputWidth = () => {
+    // @TODO - Future enhancement, ref forwarding https://creditandfinance.atlassian.net/browse/HUB-510
+    if (this.inputWrapper && this.inputWrapper.current) {
+      const inputChild = this.inputWrapper.current!.firstElementChild;
+
+      if (inputChild !== null) {
+        this.setState({
+          menuWidth: (inputChild as HTMLUListElement).offsetWidth,
+        });
+      }
+    }
+  };
+
+  getFilteredData = async (userInput: string) => {
+    const { dataSource } = this.props;
+    const filteredDataSource = await extractData(userInput, dataSource);
+    this.setState({
+      activeSelection: 0,
+      filteredDataSource,
+      showList: true,
+      isLoading: false,
+    });
+  };
+
   onHoverOff = (e: Event) => {
-    // this component is uncontroller component, and showing-menu is internal to it,
+    // this component is uncontrolled component, and showing-menu is internal to it,
     // so just checking if consumer clicks outside `AC`, it will find out and close the menu
     const theClickedElement = (e.target as HTMLDivElement).parentElement;
-    if ((this.inputWrapper.current!.firstElementChild as HTMLUListElement) !== theClickedElement) {
+
+    // @TODO - Future enhancement, ref forwarding https://creditandfinance.atlassian.net/browse/HUB-510
+    const inputChild = this.inputWrapper.current!.firstElementChild;
+
+    if ((inputChild as HTMLUListElement) !== theClickedElement) {
       this.setState({
         showList: false,
       });
     }
   };
-
-  render() {
-    const { dataSource = [], placeholder = '', size = 'md', onSelect = () => {}, ...inputProps } = this.props;
-    return (
-      <AutoCompleteWrapper innerRef={this.inputWrapper}>
-        <Input
-          {...inputProps}
-          size={size}
-          autoComplete="off" // The attribute specifies whether or not an input field should have autocomplete enabled
-          placeholder={placeholder}
-          onChange={this.onChange}
-          onKeyDown={this.onKeyDown}
-          value={String(this.state.userInput)}
-          after={this.state.userInput && this.renderAfterIcon()}
-        />
-        {this.state.showList && this.listComponent()}
-      </AutoCompleteWrapper>
-    );
-  }
 
   renderAfterIcon = () => (
     <AfterIconWrapper>
@@ -106,12 +103,12 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
     if (this.state.userInput && !this.state.isLoading && this.state.filteredDataSource.length > 0) {
       return (
         <AutoCompleteMenuList
-          onSelect={this.onSelect}
+          onSelectItem={this.onSelectItem}
           activeSelection={this.state.activeSelection}
           filteredDataSource={this.state.filteredDataSource}
           innerRef={this.menuContainerRef}
           menuWidth={this.state.menuWidth}
-          debounceWindowResize={this.debounceWindowResize}
+          debounceWindowResize={this.calcInputWidth}
           onMouseEnter={(index) => this.highlightItemFromMouse(index)}
         />
       );
@@ -120,10 +117,10 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
   };
 
   // on select an item from a source
-  onSelect = (item: DataSourceItem) => {
-    const { onSelect = () => {} } = this.props;
+  onSelectItem = (item: DataSourceItem) => {
+    const { onSelectItem = () => {} } = this.props;
     const textWithoutHTMLJunk = transformedItem(item).label;
-    onSelect(transformedItem(item));
+    onSelectItem(transformedItem(item));
     this.setState({
       activeSelection: 0,
       filteredDataSource: [],
@@ -148,26 +145,15 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
         isLoading: true,
         filteredDataSource: [],
       },
-      () => this.debounceFilterDataSource(event.target.value)
+      () => this.getFilteredData(event.target.value)
     );
-  };
-
-  getFilteredData = async (userInput: string) => {
-    const { dataSource } = this.props;
-    const filteredDataSource = await extractData(userInput, dataSource);
-    this.setState({
-      activeSelection: 0,
-      filteredDataSource,
-      showList: true,
-      isLoading: false,
-    });
   };
 
   // Event fired when the user presses a key down
   // for example when you pressed enter, tab, up/down key
   onKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
     const { activeSelection, filteredDataSource } = this.state;
-    const { onSelect = () => {} } = this.props;
+    const { onSelectItem = () => {} } = this.props;
 
     switch (event.key) {
       case KEY_ENTER:
@@ -179,7 +165,7 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
             showList: false,
           },
           () => {
-            onSelect(transformedItem(filteredDataSource[activeSelection]));
+            onSelectItem(transformedItem(filteredDataSource[activeSelection]));
           }
         );
         return;
@@ -209,7 +195,7 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
   };
 
   clearInput = () => {
-    const { onSelect = () => {} } = this.props;
+    const { onSelectItem = () => {} } = this.props;
     return this.setState(
       {
         activeSelection: 0,
@@ -217,12 +203,32 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
         userInput: '',
         showList: false,
       },
-      () => onSelect({ label: '', value: '' })
+      () => onSelectItem({ label: '', value: '' })
     );
   };
 
   private focusItem() {
-    if (this.menuContainerRef.current)
+    if (this.menuContainerRef.current) {
       this.menuContainerRef.current.scrollTop = getOffsetScrollTop(this.menuContainerRef);
+    }
+  }
+
+  render() {
+    const { dataSource = [], placeholder = '', size = 'md', onSelectItem = () => {}, ...inputProps } = this.props;
+    return (
+      <AutoCompleteWrapper ref={this.inputWrapper}>
+        <Input
+          {...inputProps}
+          size={size}
+          autoComplete="off" // The attribute specifies whether or not an input field should have autocomplete enabled
+          placeholder={placeholder}
+          onChange={this.onChange}
+          onKeyDown={this.onKeyDown}
+          value={String(this.state.userInput)}
+          after={this.state.userInput && this.renderAfterIcon()}
+        />
+        {this.state.showList && this.listComponent()}
+      </AutoCompleteWrapper>
+    );
   }
 }

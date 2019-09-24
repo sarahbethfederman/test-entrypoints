@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 import { Spacing, m, p, mx, my, ml, mb, mr, mt, pl, pb, pr, pt, py, px, SpacingNameOrSpacingNameMap, margin } from '.';
 
@@ -13,7 +13,7 @@ function createTests(n: string, fn: (size: SpacingNameOrSpacingNameMap) => any, 
         const Component = styled.div`
           ${fn(name)};
         `;
-        const element = shallow(<Component />);
+        const element = mount(<Component />);
         rules.forEach((rule) => {
           expect(element).toHaveStyleRule(rule, Spacing[name]);
         });
@@ -24,7 +24,7 @@ function createTests(n: string, fn: (size: SpacingNameOrSpacingNameMap) => any, 
       const Component = styled.div`
         ${fn({ mobile: 'xxs', tablet: 'md', desktop: 'xxl' })};
       `;
-      const element = shallow(<Component />);
+      const element = mount(<Component />);
       rules.forEach((rule1) => {
         expect(element).toHaveStyleRule(rule1, Spacing.xxs, {
           media: `(min-width:${Breakpoint.mobile})`,
@@ -67,33 +67,33 @@ describe('margin', () => {
 
   keys(Spacing).forEach((name) => {
     it(`should use the correct spacing for m=${name}`, () => {
-      const element = shallow(<Component m={name} />);
+      const element = mount(<Component m={name} />);
       expect(element).toHaveStyleRule('margin', Spacing[name]);
     });
     it(`should use the correct spacing for mx=${name}`, () => {
-      const element = shallow(<Component mx={name} />);
+      const element = mount(<Component mx={name} />);
       expect(element).toHaveStyleRule(`margin-left`, Spacing[name]);
       expect(element).toHaveStyleRule(`margin-right`, Spacing[name]);
     });
     it(`should use the correct spacing for my=${name}`, () => {
-      const element = shallow(<Component my={name} />);
+      const element = mount(<Component my={name} />);
       expect(element).toHaveStyleRule(`margin-top`, Spacing[name]);
       expect(element).toHaveStyleRule(`margin-bottom`, Spacing[name]);
     });
     it(`should use the correct spacing for mt=${name}`, () => {
-      const element = shallow(<Component mt={name} />);
+      const element = mount(<Component mt={name} />);
       expect(element).toHaveStyleRule(`margin-top`, Spacing[name]);
     });
     it(`should use the correct spacing for mr=${name}`, () => {
-      const element = shallow(<Component mr={name} />);
+      const element = mount(<Component mr={name} />);
       expect(element).toHaveStyleRule(`margin-right`, Spacing[name]);
     });
     it(`should use the correct spacing for mb=${name}`, () => {
-      const element = shallow(<Component mb={name} />);
+      const element = mount(<Component mb={name} />);
       expect(element).toHaveStyleRule(`margin-bottom`, Spacing[name]);
     });
     it(`should use the correct spacing for ml=${name}`, () => {
-      const element = shallow(<Component ml={name} />);
+      const element = mount(<Component ml={name} />);
       expect(element).toHaveStyleRule(`margin-left`, Spacing[name]);
     });
   });

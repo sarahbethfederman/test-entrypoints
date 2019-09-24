@@ -75,18 +75,18 @@ export interface WrapperProps {
   isFullWidth?: boolean;
 }
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<WrapperProps>`
   ${normalise};
   display: inline-flex;
   flex-wrap: wrap;
-  ${({ size }: { size: ButtonSize }) => spacingTopBySizeMixin(size)};
-  ${({ size, isFullWidth }: WrapperProps) =>
+  ${({ size }) => spacingTopBySizeMixin(size)};
+  ${({ size, isFullWidth }) =>
     isFullWidth &&
     css`
       ${spacingRightBySizeMixin(size)};
     `}
   ${ButtonWrapper}, ${LinkWrapper}, ${IconButtonWrapper} {
-    ${({ size }: WrapperProps) => css`
+    ${({ size }) => css`
       ${wrapperBySizeMixin(size)};
     `};
   }

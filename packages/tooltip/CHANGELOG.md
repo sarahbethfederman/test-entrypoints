@@ -1,3 +1,7 @@
+## [2.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [1.1.2] - 2019-06-28 - [HUB-295](https://creditandfinance.atlassian.net/browse/HUB-295)
 ### Changed
 - Ensure that component state is only updated when the component is mounted.

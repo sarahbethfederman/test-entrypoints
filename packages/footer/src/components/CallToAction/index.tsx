@@ -56,7 +56,7 @@ export class CallToAction extends React.Component<CallToActionProps, CallToActio
                   <Button variant="primary" onClick={this.setIsModalOpen}>
                     {continueLabel}
                   </Button>
-                  <Modal show={this.state.isModalOpen} size="lg" onHide={this.setIsModalOpen}>
+                  <Modal isVisible={this.state.isModalOpen} size="lg" onHide={this.setIsModalOpen}>
                     <Modal.Header title={'Continue Application'} />
                     <Modal.Content>
                       <ModalContentWrapper>

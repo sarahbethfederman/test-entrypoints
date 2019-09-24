@@ -10,7 +10,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -34,7 +34,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -98,51 +98,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="lg"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="lg"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="lg"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -152,7 +273,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -176,7 +297,263 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(37.5 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="lg"
+  >
+    <div
+      className="modal-container c0"
+      size="lg"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -246,37 +623,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -292,7 +756,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -316,7 +780,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -371,51 +835,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="md"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="md"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="md"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -425,7 +1010,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -449,7 +1034,254 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(25 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="md"
+  >
+    <div
+      className="modal-container c0"
+      size="md"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -510,37 +1342,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -556,7 +1475,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -580,7 +1499,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -635,51 +1554,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="sm"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="sm"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="sm"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -689,7 +1729,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -713,7 +1753,254 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(22 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="sm"
+  >
+    <div
+      className="modal-container c0"
+      size="sm"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -774,37 +2061,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -820,7 +2194,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -844,7 +2218,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -899,49 +2273,169 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -951,7 +2445,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -975,7 +2469,252 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(25 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+  >
+    <div
+      className="modal-container c0"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1035,37 +2774,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -1081,7 +2907,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1105,7 +2931,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1169,51 +2995,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="lg"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="lg"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="lg"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -1223,7 +3170,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1247,7 +3194,263 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(37.5 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c3 {
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-left: calc(2 * var(--lendi-ui-size));
+    padding-right: calc(2 * var(--lendi-ui-size));
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="lg"
+  >
+    <div
+      className="modal-container c0"
+      size="lg"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1317,37 +3520,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -1363,7 +3653,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1387,7 +3677,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1442,51 +3732,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="md"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="md"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="md"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -1496,7 +3907,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1520,7 +3931,254 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(25 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="md"
+  >
+    <div
+      className="modal-container c0"
+      size="md"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1581,37 +4239,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]
@@ -1627,7 +4372,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1651,7 +4396,7 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1706,51 +4451,172 @@ Array [
 
 <styled.div
     className="modal-container"
-    fixedHeader={false}
-    show={true}
+    isHeaderFixed={false}
+    isVisible={true}
     size="sm"
   >
-    <div
-      className="modal-container c0"
+    <StyledComponent
+      className="modal-container"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-fjdhpX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-fjdhpX",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isHeaderFixed={false}
+      isVisible={true}
       size="sm"
     >
-      <Styled(Close)
-        color="shade.300"
-        onClick={[MockFunction]}
+      <div
+        className="modal-container c0"
+        size="sm"
       >
-        <Close
-          className="c1"
+        <Styled(Close)
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <styled.span
-            className="c1"
+          <StyledComponent
             color="shade.300"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-jzJRlG",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    padding: ",
+                    "var(--lendi-ui-size)",
+                    ";
+  ",
+                    " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                  ],
+                },
+                "displayName": "Styled(Close)",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-jzJRlG",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <span
-              className="c1 c2"
+            <Close
+              className="c1"
               color="shade.300"
               onClick={[MockFunction]}
             >
-              <svg
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
+              <styled.span
+                className="c1"
+                color="shade.300"
+                onClick={[MockFunction]}
               >
-                <path
-                  d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-                />
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-              </svg>
-            </span>
-          </styled.span>
-        </Close>
-      </Styled(Close)>
-    </div>
+                <StyledComponent
+                  className="c1"
+                  color="shade.300"
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htoDjs",
+                        "isStatic": false,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  width: ",
+                          [Function],
+                          ";
+  height: ",
+                          [Function],
+                          ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                          [Function],
+                          ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htoDjs",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  onClick={[MockFunction]}
+                >
+                  <span
+                    className="c1 c2"
+                    color="shade.300"
+                    onClick={[MockFunction]}
+                  >
+                    <svg
+                      height="1em"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                      />
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                    </svg>
+                  </span>
+                </StyledComponent>
+              </styled.span>
+            </Close>
+          </StyledComponent>
+        </Styled(Close)>
+      </div>
+    </StyledComponent>
   </styled.div>,
   .c2 {
   width: 1em;
@@ -1760,7 +4626,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1784,7 +4650,254 @@ Array [
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   border-radius: 0;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
+}
+
+.c0 .c3 {
+  padding-top: calc(5 * var(--lendi-ui-size));
+  padding-bottom: calc(2.5 * var(--lendi-ui-size));
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.c0 .c4 {
+  padding-top: var(--lendi-ui-size);
+  padding-bottom: var(--lendi-ui-size);
+  padding-left: calc(1.5 * var(--lendi-ui-size));
+  padding-right: calc(1.5 * var(--lendi-ui-size));
+  border-radius: 0;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px 0 rgba(0,0,0,0.14);
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+.c1 {
+  padding: var(--lendi-ui-size);
+  right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (min-width:36.0625em) {
+  .c0 {
+    width: calc(22 * var(--lendi-ui-size));
+    border-radius: 6px;
+    height: initial;
+    max-height: 85vh;
+    opacity: 1;
+  }
+}
+
+@media (min-width:36.0625em) {
+  .c0 .c4 {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+<StyledComponent
+    className="modal-container"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-fjdhpX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-fjdhpX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isHeaderFixed={false}
+    isVisible={true}
+    size="sm"
+  >
+    <div
+      className="modal-container c0"
+      size="sm"
+    >
+      <Styled(Close)
+        color="shade.300"
+        onClick={[MockFunction]}
+      >
+        <StyledComponent
+          color="shade.300"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-jzJRlG",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "
+  ",
+                  "
+    padding: ",
+                  "var(--lendi-ui-size)",
+                  ";
+  ",
+                  " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+                ],
+              },
+              "displayName": "Styled(Close)",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-jzJRlG",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+              Symbol(Symbol.hasInstance): [Function],
+            }
+          }
+          forwardedRef={null}
+          onClick={[MockFunction]}
+        >
+          <Close
+            className="c1"
+            color="shade.300"
+            onClick={[MockFunction]}
+          >
+            <styled.span
+              className="c1"
+              color="shade.300"
+              onClick={[MockFunction]}
+            >
+              <StyledComponent
+                className="c1"
+                color="shade.300"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-htoDjs",
+                      "isStatic": false,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "
+  width: ",
+                        [Function],
+                        ";
+  height: ",
+                        [Function],
+                        ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                        [Function],
+                        ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                      ],
+                    },
+                    "displayName": "styled.span",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-htoDjs",
+                    "target": "span",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[MockFunction]}
+              >
+                <span
+                  className="c1 c2"
+                  color="shade.300"
+                  onClick={[MockFunction]}
+                >
+                  <svg
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    width="1em"
+                  >
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                    />
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                  </svg>
+                </span>
+              </StyledComponent>
+            </styled.span>
+          </Close>
+        </StyledComponent>
+      </Styled(Close)>
+    </div>
+  </StyledComponent>,
+  .c2 {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.c2 > svg {
+  fill: rgba(173,173,173,1);
+  width: inherit;
+  height: inherit;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  opacity: 0.97;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  background-color: rgba(248,248,248,1);
 }
 
 .c0 .c3 {
@@ -1845,37 +4958,124 @@ Array [
       color="shade.300"
       onClick={[MockFunction]}
     >
-      <Close
-        className="c1"
+      <StyledComponent
         color="shade.300"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-jzJRlG",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+    padding: ",
+                "var(--lendi-ui-size)",
+                ";
+  ",
+                " right: 0;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+",
+              ],
+            },
+            "displayName": "Styled(Close)",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-jzJRlG",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          }
+        }
+        forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <styled.span
+        <Close
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
         >
-          <span
-            className="c1 c2"
+          <styled.span
+            className="c1"
             color="shade.300"
             onClick={[MockFunction]}
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              className="c1"
+              color="shade.300"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htoDjs",
+                    "isStatic": false,
+                    "lastClassName": "c2",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htoDjs",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              onClick={[MockFunction]}
             >
-              <path
-                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-              />
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Close>
+              <span
+                className="c1 c2"
+                color="shade.300"
+                onClick={[MockFunction]}
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  />
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Close>
+      </StyledComponent>
     </Styled(Close)>
   </div>,
 ]

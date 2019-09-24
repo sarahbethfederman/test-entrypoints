@@ -1,12 +1,11 @@
-import * as createReactContext from 'create-react-context';
-
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+import { createContext } from 'react';
 
 export interface AccordionGroupContextState {
   isOpen: boolean;
 }
 
-export const AccordionGroupContext = PonyfillContext<AccordionGroupContextState>({
+export const AccordionGroupContext = createContext<AccordionGroupContextState>({
   isOpen: false,
 });
+
+export default AccordionGroupContext;

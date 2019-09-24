@@ -1,7 +1,4 @@
-import * as createReactContext from 'create-react-context';
-
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+import { createContext } from 'react';
 
 export interface AccordionContextState {
   isOpen: boolean;
@@ -9,7 +6,7 @@ export interface AccordionContextState {
   ariaId: string;
 }
 
-export const AccordionContext = PonyfillContext<AccordionContextState>({
+export const AccordionContext = createContext<AccordionContextState>({
   isOpen: false,
   isDisabled: false,
   ariaId: '',

@@ -32,8 +32,34 @@ exports[`map() reponsiveness with different order of screen size 1`] = `
     }
   }
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+    ",
+            [Function],
+            ";
+  ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size={
       Object {
         "desktop": "100%",
@@ -41,7 +67,18 @@ exports[`map() reponsiveness with different order of screen size 1`] = `
         "tablet": "50%",
       }
     }
-  />
+  >
+    <div
+      className="c0"
+      size={
+        Object {
+          "desktop": "100%",
+          "mobile": "25%",
+          "tablet": "50%",
+        }
+      }
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -77,8 +114,34 @@ exports[`map() reponsiveness with different order of screen size 2`] = `
     }
   }
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+    ",
+            [Function],
+            ";
+  ",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size={
       Object {
         "desktop": "100%",
@@ -86,6 +149,17 @@ exports[`map() reponsiveness with different order of screen size 2`] = `
         "tablet": "50%",
       }
     }
-  />
+  >
+    <div
+      className="c0"
+      size={
+        Object {
+          "desktop": "100%",
+          "mobile": "25%",
+          "tablet": "50%",
+        }
+      }
+    />
+  </StyledComponent>
 </styled.div>
 `;

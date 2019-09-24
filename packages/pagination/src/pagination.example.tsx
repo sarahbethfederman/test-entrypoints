@@ -31,10 +31,6 @@ class Example extends React.Component<{}, ExampleState> {
     this.setState({ currentPage: nextPage });
   };
 
-  handleClick = (nextPage: number) => {
-    this.setState({ currentPage: nextPage });
-  };
-
   render() {
     const MyComponent = () => {
       switch (this.state.currentPage) {
@@ -69,8 +65,7 @@ class Example extends React.Component<{}, ExampleState> {
           id="testId"
           className="textClass"
           currentPage={this.state.currentPage}
-          handleChange={this.handleChange}
-          handleClick={this.handleClick}
+          onChangePage={this.handleChange}
           totalPages={10}
           visiblePages={7}
         />

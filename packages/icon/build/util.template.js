@@ -3,9 +3,10 @@ const disclaimer = require('./disclaimer.template');
 let utils = `${disclaimer}
 import styled from 'styled-components';
 import { color as getColor } from '@lendi-ui/color';
+import { Colors } from '@lendi-ui/theme';
 
 export interface IconProps {
-  color?: string;
+  color?: Colors;
   width?: string;
   height?: string;
   className?: string;

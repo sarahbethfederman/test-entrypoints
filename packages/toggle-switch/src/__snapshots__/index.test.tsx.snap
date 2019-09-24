@@ -9,7 +9,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
 }
 
 .c2:focus ~ span {
-  border: 2px solid #66d9c9;
+  border: 2px solid rgba(102,217,201,1);
   box-shadow: 0 0 3px 0 rgba(0,192,165,0.8);
 }
 
@@ -39,7 +39,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   margin-left: calc(var(--handle-width) * 0.3);
   margin-right: calc(var(--handle-width) * 0.3);
   box-sizing: border-box;
-  background-color: #adadad;
+  background-color: rgba(173,173,173,1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -56,20 +56,12 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   height: var(--height);
   top: calc(50% - var(--height)/2);
   border: 1px solid transparent;
-  background-color: #f8f8f8;
+  background-color: rgba(248,248,248,1);
   border-radius: 50%;
   box-sizing: border-box;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   text-align: center;
-}
-
-.c6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: var(--lendi-ui-size);
-  line-height: calc(24 / 16);
-  font-family: 'Open Sans',sans-serif;
 }
 
 .c0 {
@@ -98,14 +90,19 @@ exports[`ToggleSwitch should render the whole component 1`] = `
 }
 
 .c0:hover > span > div {
-  border-color: #00c0a5;
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:active > span > div {
-  background-color: #777777;
+  background-color: rgba(119,119,119,1);
 }
 
 .c5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--lendi-ui-size);
+  line-height: calc(24 / 16);
+  font-family: 'Open Sans',sans-serif;
   display: inline-block;
   margin-left: calc(0.75 * var(--lendi-ui-size));
 }
@@ -121,90 +118,484 @@ exports[`ToggleSwitch should render the whole component 1`] = `
     error={false}
     isBoxed={false}
   >
-    <label
+    <StyledComponent
       checked={false}
-      className="c0"
       disabled={false}
+      error={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-jTzLTM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              "
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: ",
+              [Function],
+              ";
+  min-height: 48px;
+
+  ",
+              [Function],
+              "
+  
+  /* Disabled styles */
+  ",
+              [Function],
+              ";
+
+  /* Hover Styles */
+  :hover {
+    ",
+              [Function],
+              ";
+  }
+
+  /* Active Styles */
+  :active {
+    ",
+              [Function],
+              ";
+  }
+
+  /* Hover effects for child div (Toggle Handle) */
+  :hover > span > div {
+    ",
+              [Function],
+              ";
+  }
+
+  /* Active style for child div (Toggle Handle) */
+  :active > span > div {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-jTzLTM",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isBoxed={false}
     >
-      <Toggle
-        isChecked={false}
-        isDisabled={false}
-        isError={false}
-        isLoading={false}
-        onChange={[MockFunction]}
-        size="md"
-        value="1"
+      <label
+        checked={false}
+        className="c0"
+        disabled={false}
       >
-        <styled.span
+        <Toggle
+          isChecked={false}
+          isDisabled={false}
+          isError={false}
+          isLoading={false}
+          onChange={[MockFunction]}
           size="md"
+          value="1"
         >
-          <span
-            className="c1"
+          <styled.span
             size="md"
           >
-            <styled.input
-              checked={false}
-              disabled={false}
-              error={false}
-              isLoading={false}
-              onChange={[MockFunction]}
-              type="checkbox"
-              value="1"
-            >
-              <input
-                checked={false}
-                className="c2"
-                disabled={false}
-                onChange={[MockFunction]}
-                type="checkbox"
-                value="1"
-              />
-            </styled.input>
-            <styled.span
-              checked={false}
-              disabled={false}
-              error={false}
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  ",
+                      [Function],
+                      " position: relative;
+  display: inline-block;
+  appearance: none;
+  border-radius: ",
+                      [Function],
+                      ";
+  box-sizing: border-box;
+  ",
+                      "
+    margin-left: ",
+                      "calc(0.5 * var(--lendi-ui-size))",
+                      ";
+  ",
+                      ";
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
               size="md"
             >
               <span
-                checked={false}
-                className="c3"
-                disabled={false}
+                className="c1"
                 size="md"
-              />
-            </styled.span>
-            <styled.div
-              checked={false}
-              disabled={false}
-              error={false}
-              size="md"
-            >
-              <div
-                checked={false}
-                className="c4"
-                disabled={false}
-                size="md"
-              />
-            </styled.div>
-          </span>
-        </styled.span>
-      </Toggle>
-      <Styled(styled.p)
-        size="md"
-      >
-        <styled.p
-          className="c5"
+              >
+                <styled.input
+                  checked={false}
+                  disabled={false}
+                  error={false}
+                  isLoading={false}
+                  onChange={[MockFunction]}
+                  type="checkbox"
+                  value="1"
+                >
+                  <StyledComponent
+                    checked={false}
+                    disabled={false}
+                    error={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+
+  /* Focus styles for sibling span (Toggle Track) */
+  :focus ~ span {
+  ",
+                            [Function],
+                            ";
+
+  /* Focus styles for sibling div (Toggle Handle) */
+  :focus ~ div {
+  ",
+                            [Function],
+                            ";
+",
+                          ],
+                        },
+                        "displayName": "styled.input",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "input",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    isLoading={false}
+                    onChange={[MockFunction]}
+                    type="checkbox"
+                    value="1"
+                  >
+                    <input
+                      checked={false}
+                      className="c2"
+                      disabled={false}
+                      onChange={[MockFunction]}
+                      type="checkbox"
+                      value="1"
+                    />
+                  </StyledComponent>
+                </styled.input>
+                <styled.span
+                  checked={false}
+                  disabled={false}
+                  error={false}
+                  size="md"
+                >
+                  <StyledComponent
+                    checked={false}
+                    disabled={false}
+                    error={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-EHOje",
+                          "isStatic": false,
+                          "lastClassName": "c3",
+                          "rules": Array [
+                            "
+  ",
+                            [Function],
+                            "
+  position: absolute;
+  content: '';
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height)/2);
+  border-radius: ",
+                            [Function],
+                            ";
+  margin-left: calc(var(--handle-width) * 0.3);
+  margin-right: calc(var(--handle-width) * 0.3);
+  box-sizing: border-box;
+  ",
+                            "
+          background-color: ",
+                            [Function],
+                            ";
+        ",
+                            "
+  transition: 0.4s;
+
+  /* Default Checked */
+  ",
+                            [Function],
+                            "
+
+  /* Disabled styles */
+  ",
+                            [Function],
+                            "
+
+  /* Error styles */
+  ",
+                            [Function],
+                            "
+",
+                          ],
+                        },
+                        "displayName": "styled.span",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-EHOje",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    size="md"
+                  >
+                    <span
+                      checked={false}
+                      className="c3"
+                      disabled={false}
+                      size="md"
+                    />
+                  </StyledComponent>
+                </styled.span>
+                <styled.div
+                  checked={false}
+                  disabled={false}
+                  error={false}
+                  size="md"
+                >
+                  <StyledComponent
+                    checked={false}
+                    disabled={false}
+                    error={false}
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bZQynM",
+                          "isStatic": false,
+                          "lastClassName": "c4",
+                          "rules": Array [
+                            "
+  ",
+                            [Function],
+                            "
+  --height: var(--width);
+  --track-margin: var(--width) * 0.3;
+
+  ",
+                            "box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1),
+        0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 3px 0 rgba(0, 0, 0, 0.14);",
+                            " position: absolute;
+  content: '';
+  width: var(--width);
+  height: var(--height);
+  top: calc(50% - var(--height)/2);
+  border: 1px solid transparent;
+  ",
+                            "
+          background-color: ",
+                            [Function],
+                            ";
+        ",
+                            "
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: 0.4s;
+  text-align: center;
+
+  /* Default Checked */
+  ",
+                            [Function],
+                            "
+
+  /* Disabled styles */
+  ",
+                            [Function],
+                            "
+
+  /* Error styles */
+  ",
+                            [Function],
+                            "
+",
+                          ],
+                        },
+                        "displayName": "styled.div",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bZQynM",
+                        "target": "div",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                    size="md"
+                  >
+                    <div
+                      checked={false}
+                      className="c4"
+                      disabled={false}
+                      size="md"
+                    />
+                  </StyledComponent>
+                </styled.div>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Toggle>
+        <Styled(styled.p)
           size="md"
         >
-          <p
-            className="c5 c6"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-fjdhpX",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    margin-top: ",
+                    "0",
+                    ";
+    margin-bottom: ",
+                    "0",
+                    ";
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                    ";
+",
+                    "
+  display: inline-block;
+  ",
+                    "
+    margin-left: ",
+                    "calc(0.75 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    ";
+",
+                  ],
+                },
+                "displayName": "Styled(styled.p)",
+                "foldedComponentIds": Array [
+                  "sc-htoDjs",
+                ],
+                "render": [Function],
+                "styledComponentId": "sc-fjdhpX",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="md"
           >
-            Test Toggle Switch
-          </p>
-        </styled.p>
-      </Styled(styled.p)>
-    </label>
+            <p
+              className="c5"
+              size="md"
+            >
+              Test Toggle Switch
+            </p>
+          </StyledComponent>
+        </Styled(styled.p)>
+      </label>
+    </StyledComponent>
   </styled.label>
 </ToggleSwitch>
 `;

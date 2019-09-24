@@ -17,5 +17,24 @@ const Circle = styled.div`
   border: 1em solid ${color('primary.500')}
 `;
 
-render(<Circle/>);
+const TransparentCircle = styled.div`
+  width: 0;
+  border-radius: 1em;
+  border: 1em solid ${color('primary.500', 0.6)}
+`;
+
+render(
+  <>
+    <Circle />
+    <br />
+    <TransparentCircle />
+  </>);
+```
+
+### Note
+
+The <strong>color</strong> function accept two parameters. The first one is [LUI color](https://lendi.design/packages/color). The second one is transparency value. It should be one of the value below and <strong>default value is 1</strong>:
+
+```
+0 | 0.05 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 0.95 | 1
 ```

@@ -9,7 +9,12 @@ export interface ItemProps {
   size: Size;
 }
 
-export const MenuDropdownItem: React.SFC<ItemProps> = ({ size = 'md', icon = '', onClick = () => {}, children }) => {
+export const MenuDropdownItem: React.FunctionComponent<ItemProps> = ({
+  size = 'md',
+  icon = '',
+  onClick = () => {},
+  children,
+}) => {
   return (
     <ItemWrapper size={size} onClick={onClick}>
       {icon && <IconWrapper>{icon}</IconWrapper>}

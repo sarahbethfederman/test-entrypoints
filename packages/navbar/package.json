@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "3.0.5",
+  "version": "4.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -18,20 +18,19 @@
     "react-dom": "^16.9.0"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^2.0.0",
-    "@lendi-ui/button": "^5.0.0",
-    "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/depth": "^2.1.0",
-    "@lendi-ui/fancy-icon": "^1.0.1",
-    "@lendi-ui/grid": "^2.1.0",
-    "@lendi-ui/icon": "^8.0.0",
-    "@lendi-ui/logo": "^4.0.0",
-    "@lendi-ui/overlay": "^2.2.2",
-    "@lendi-ui/spacing": "^4.0.0",
-    "@lendi-ui/transition": "^3.1.1",
-    "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.5.0",
-    "@lendi/lala-react": "^6.3.5",
+    "@lendi-ui/breakpoint": "^3.0.0",
+    "@lendi-ui/button": "^7.0.0",
+    "@lendi-ui/color": "^4.0.0",
+    "@lendi-ui/depth": "^3.0.0",
+    "@lendi-ui/fancy-icon": "2.0.0",
+    "@lendi-ui/icon": "9.0.0",
+    "@lendi-ui/logo": "5.0.0",
+    "@lendi-ui/overlay": "3.0.0",
+    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/transition": "4.0.0",
+    "@lendi-ui/typography": "^4.0.0",
+    "@lendi-ui/utils": "^3.0.0",
+    "@lendi-ui/grid": "3.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0",
     "@types/axios": "^0.14.0",
     "@types/react-stickynode": "^1.4.0",
@@ -41,15 +40,16 @@
     "react-stickynode": "^2.1.0"
   },
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.1.1",
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3.4.5"
+    "@lendi-ui/theme": "^7.0.0",
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build:assets": "cpx 'src/common/assets/*.*' 'dist/cjs/common/assets'",
-    "build": "yarn run build:assets && yarn run build:types && yarn run build:cjs"
+    "build": "tsc --version && yarn run build:assets && yarn run build:types && yarn run build:cjs"
   }
 }

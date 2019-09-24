@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/container",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -9,10 +9,11 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "styled-components": "^3"
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/spacing": "^4.0.0"
+    "@lendi-ui/spacing": "^5.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

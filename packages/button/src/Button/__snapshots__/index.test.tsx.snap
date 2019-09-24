@@ -30,8 +30,8 @@ exports[`Button emphasis should not render full width 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -50,15 +50,15 @@ exports[`Button emphasis should not render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -99,29 +99,124 @@ exports[`Button emphasis should not render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -156,8 +251,8 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -176,15 +271,15 @@ exports[`Button emphasis should not render inverse styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -225,29 +320,124 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -282,8 +472,8 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   -ms-letter-spacing: calc(0.075 * var(--lendi-ui-size));
   letter-spacing: calc(0.075 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -302,15 +492,15 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -351,29 +541,124 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   size="lg"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="lg"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="lg"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c2"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c3"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -408,8 +693,8 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -428,15 +713,15 @@ exports[`Button emphasis should render "md" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -477,29 +762,124 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -534,8 +914,8 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   -ms-letter-spacing: calc(0.05 * var(--lendi-ui-size));
   letter-spacing: calc(0.05 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -554,15 +934,15 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -603,29 +983,124 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   size="sm"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="sm"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="sm"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c2"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c3"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -660,8 +1135,8 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -680,15 +1155,15 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -729,29 +1204,124 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
   size="xs"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="xs"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="xs"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c2"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c3"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -793,9 +1363,9 @@ exports[`Button emphasis should render disabled button 1`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  color: #ffffff;
-  background-color: #ff7063;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -826,21 +1396,21 @@ exports[`Button emphasis should render disabled button 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c0:hover,
 .c0:active,
 .c0:focus {
-  background-color: #ff7063;
+  background-color: rgba(255,112,99,1);
 }
 
 .c1 {
@@ -882,29 +1452,124 @@ exports[`Button emphasis should render disabled button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -940,8 +1605,8 @@ exports[`Button emphasis should render full width 1`] = `
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
   width: 100%;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -960,15 +1625,15 @@ exports[`Button emphasis should render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -1009,29 +1674,124 @@ exports[`Button emphasis should render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1066,8 +1826,8 @@ exports[`Button emphasis should render normal button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -1086,15 +1846,15 @@ exports[`Button emphasis should render normal button 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -1136,29 +1896,124 @@ exports[`Button emphasis should render normal button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1193,8 +2048,8 @@ exports[`Button emphasis should render normal styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #ff7063;
+  color: rgba(255,255,255,1);
+  background-color: rgba(255,112,99,1);
 }
 
 .c0:focus {
@@ -1213,15 +2068,15 @@ exports[`Button emphasis should render normal styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:hover {
-  background-color: #ff8c82;
+  background-color: rgba(255,140,130,1);
 }
 
 .c0:active {
-  background-color: #cc594f;
+  background-color: rgba(204,89,79,1);
 }
 
 .c1 {
@@ -1262,29 +2117,124 @@ exports[`Button emphasis should render normal styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1319,9 +2269,9 @@ exports[`Button empty should render "lg" size styles 1`] = `
   -ms-letter-spacing: calc(0.075 * var(--lendi-ui-size));
   letter-spacing: calc(0.075 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
   border-style: dashed;
 }
 
@@ -1341,25 +2291,25 @@ exports[`Button empty should render "lg" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -1404,29 +2354,124 @@ exports[`Button empty should render "lg" size styles 1`] = `
   size="lg"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="lg"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="lg"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c2"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c3"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1461,9 +2506,9 @@ exports[`Button empty should render "md" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
   border-style: dashed;
 }
 
@@ -1483,25 +2528,25 @@ exports[`Button empty should render "md" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -1546,29 +2591,124 @@ exports[`Button empty should render "md" size styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1603,9 +2743,9 @@ exports[`Button empty should render "sm" size styles 1`] = `
   -ms-letter-spacing: calc(0.05 * var(--lendi-ui-size));
   letter-spacing: calc(0.05 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
   border-style: dashed;
 }
 
@@ -1625,25 +2765,25 @@ exports[`Button empty should render "sm" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -1688,29 +2828,124 @@ exports[`Button empty should render "sm" size styles 1`] = `
   size="sm"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="sm"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="sm"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c2"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c3"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1745,9 +2980,9 @@ exports[`Button empty should render "xs" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
   border-style: dashed;
 }
 
@@ -1767,25 +3002,25 @@ exports[`Button empty should render "xs" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -1830,29 +3065,124 @@ exports[`Button empty should render "xs" size styles 1`] = `
   size="xs"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="xs"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="xs"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c2"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c3"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -1887,9 +3217,9 @@ exports[`Button empty should render inverse styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255,255,255,1);
   border-style: dashed;
 }
 
@@ -1954,29 +3284,124 @@ exports[`Button empty should render inverse styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2011,9 +3436,9 @@ exports[`Button empty should render normal styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
   border-style: dashed;
 }
 
@@ -2033,25 +3458,25 @@ exports[`Button empty should render normal styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2096,29 +3521,124 @@ exports[`Button empty should render normal styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2153,8 +3673,8 @@ exports[`Button primary should not render full width 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2173,15 +3693,15 @@ exports[`Button primary should not render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -2222,29 +3742,124 @@ exports[`Button primary should not render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2279,8 +3894,8 @@ exports[`Button primary should render "lg" size styles 1`] = `
   -ms-letter-spacing: calc(0.075 * var(--lendi-ui-size));
   letter-spacing: calc(0.075 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2299,15 +3914,15 @@ exports[`Button primary should render "lg" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -2348,29 +3963,124 @@ exports[`Button primary should render "lg" size styles 1`] = `
   size="lg"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="lg"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="lg"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c2"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c3"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2405,8 +4115,8 @@ exports[`Button primary should render "md" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2425,15 +4135,15 @@ exports[`Button primary should render "md" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -2474,29 +4184,124 @@ exports[`Button primary should render "md" size styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2531,8 +4336,8 @@ exports[`Button primary should render "sm" size styles 1`] = `
   -ms-letter-spacing: calc(0.05 * var(--lendi-ui-size));
   letter-spacing: calc(0.05 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2551,15 +4356,15 @@ exports[`Button primary should render "sm" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -2600,29 +4405,124 @@ exports[`Button primary should render "sm" size styles 1`] = `
   size="sm"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="sm"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="sm"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c2"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c3"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2657,8 +4557,8 @@ exports[`Button primary should render "xs" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2677,15 +4577,15 @@ exports[`Button primary should render "xs" size styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -2726,29 +4626,124 @@ exports[`Button primary should render "xs" size styles 1`] = `
   size="xs"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="xs"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="xs"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c2"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c3"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2790,9 +4785,9 @@ exports[`Button primary should render disabled button 1`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  color: #ffffff;
-  background-color: #00c0a5;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2823,21 +4818,21 @@ exports[`Button primary should render disabled button 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c0:hover,
 .c0:active,
 .c0:focus {
-  background-color: #00c0a5;
+  background-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -2879,29 +4874,124 @@ exports[`Button primary should render disabled button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -2937,8 +5027,8 @@ exports[`Button primary should render full width 1`] = `
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
   width: 100%;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -2957,15 +5047,15 @@ exports[`Button primary should render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -3006,29 +5096,124 @@ exports[`Button primary should render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3063,8 +5248,8 @@ exports[`Button primary should render inverse styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0:focus {
@@ -3124,29 +5309,124 @@ exports[`Button primary should render inverse styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3181,8 +5461,8 @@ exports[`Button primary should render normal button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3201,15 +5481,15 @@ exports[`Button primary should render normal button 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -3251,29 +5531,124 @@ exports[`Button primary should render normal button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3308,8 +5683,8 @@ exports[`Button primary should render normal styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3328,15 +5703,15 @@ exports[`Button primary should render normal styles 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -3377,29 +5752,124 @@ exports[`Button primary should render normal styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3434,9 +5904,9 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   -ms-letter-spacing: calc(0.075 * var(--lendi-ui-size));
   letter-spacing: calc(0.075 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3455,25 +5925,25 @@ exports[`Button secondary should render "lg" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -3514,29 +5984,124 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   size="lg"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="lg"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="lg"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c2"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="lg"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="lg"
+          >
+            <span
+              className="c3"
+              size="lg"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3571,9 +6136,9 @@ exports[`Button secondary should render "md" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3592,25 +6157,25 @@ exports[`Button secondary should render "md" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -3651,29 +6216,124 @@ exports[`Button secondary should render "md" size styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3708,9 +6368,9 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   -ms-letter-spacing: calc(0.05 * var(--lendi-ui-size));
   letter-spacing: calc(0.05 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3729,25 +6389,25 @@ exports[`Button secondary should render "sm" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -3788,29 +6448,124 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   size="sm"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="sm"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="sm"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c2"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="sm"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="sm"
+          >
+            <span
+              className="c3"
+              size="sm"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3845,9 +6600,9 @@ exports[`Button secondary should render "xs" size styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -3866,25 +6621,25 @@ exports[`Button secondary should render "xs" size styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -3925,29 +6680,124 @@ exports[`Button secondary should render "xs" size styles 1`] = `
   size="xs"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="xs"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="xs"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c2"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="xs"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="xs"
+          >
+            <span
+              className="c3"
+              size="xs"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -3982,9 +6832,9 @@ exports[`Button secondary should render inverse styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255,255,255,1);
 }
 
 .c0:focus {
@@ -4044,29 +6894,124 @@ exports[`Button secondary should render inverse styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4101,9 +7046,9 @@ exports[`Button secondary should render normal styles 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #00c0a5;
-  background-color: #ffffff;
-  border: 1px solid #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border: 1px solid rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4122,25 +7067,25 @@ exports[`Button secondary should render normal styles 1`] = `
 }
 
 .c0:focus {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  border-color: #32ccb7;
+  border-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  color: #009984;
-  background-color: #e5f8f6;
-  border-color: #009984;
+  color: rgba(0,153,132,1);
+  background-color: rgba(229,248,246,1);
+  border-color: rgba(0,153,132,1);
 }
 
 .c0:disabled:hover,
 .c0:disabled:active,
 .c0:disabled:focus {
-  color: #00c0a5;
-  background-color: #ffffff;
-  border-color: #00c0a5;
+  color: rgba(0,192,165,1);
+  background-color: rgba(255,255,255,1);
+  border-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -4181,29 +7126,124 @@ exports[`Button secondary should render normal styles 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4238,8 +7278,8 @@ exports[`Button should not render full width 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4258,15 +7298,15 @@ exports[`Button should not render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -4307,29 +7347,124 @@ exports[`Button should not render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4364,8 +7499,8 @@ exports[`Button should not render full width 2`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4384,15 +7519,15 @@ exports[`Button should not render full width 2`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -4433,29 +7568,124 @@ exports[`Button should not render full width 2`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4497,9 +7727,9 @@ exports[`Button should render disabled button 1`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  color: #ffffff;
-  background-color: #00c0a5;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4530,21 +7760,21 @@ exports[`Button should render disabled button 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c0:hover,
 .c0:active,
 .c0:focus {
-  background-color: #00c0a5;
+  background-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -4586,29 +7816,124 @@ exports[`Button should render disabled button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4650,9 +7975,9 @@ exports[`Button should render disabled button 2`] = `
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  color: #ffffff;
-  background-color: #00c0a5;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4683,21 +8008,21 @@ exports[`Button should render disabled button 2`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c0:hover,
 .c0:active,
 .c0:focus {
-  background-color: #00c0a5;
+  background-color: rgba(0,192,165,1);
 }
 
 .c1 {
@@ -4739,29 +8064,124 @@ exports[`Button should render disabled button 2`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4797,8 +8217,8 @@ exports[`Button should render full width 1`] = `
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
   width: 100%;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4817,15 +8237,15 @@ exports[`Button should render full width 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -4866,29 +8286,124 @@ exports[`Button should render full width 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -4924,8 +8439,8 @@ exports[`Button should render full width 2`] = `
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
   width: 100%;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -4944,15 +8459,15 @@ exports[`Button should render full width 2`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -4993,29 +8508,124 @@ exports[`Button should render full width 2`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -5050,8 +8660,8 @@ exports[`Button should render normal button 1`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -5070,15 +8680,15 @@ exports[`Button should render normal button 1`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -5120,29 +8730,124 @@ exports[`Button should render normal button 1`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;
@@ -5177,8 +8882,8 @@ exports[`Button should render normal button 2`] = `
   -ms-letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   letter-spacing: calc(0.0625 * var(--lendi-ui-size));
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:focus {
@@ -5197,15 +8902,15 @@ exports[`Button should render normal button 2`] = `
 }
 
 .c0:focus {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:hover {
-  background-color: #32ccb7;
+  background-color: rgba(50,204,183,1);
 }
 
 .c0:active {
-  background-color: #009984;
+  background-color: rgba(0,153,132,1);
 }
 
 .c1 {
@@ -5247,29 +8952,124 @@ exports[`Button should render normal button 2`] = `
   size="md"
 >
   <styled.div>
-    <div
-      className="c1"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": true,
+            "lastClassName": "c1",
+            "rules": Array [
+              "
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.span
-        size="md"
+      <div
+        className="c1"
       >
-        <span
-          className="c2"
+        <styled.span
           size="md"
-        />
-      </styled.span>
-      <span>
-        Click me!
-      </span>
-      <styled.span
-        size="md"
-      >
-        <span
-          className="c3"
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bZQynM",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bZQynM",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c2"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+        <span>
+          Click me!
+        </span>
+        <styled.span
           size="md"
-        />
-      </styled.span>
-    </div>
+        >
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    ";
+  display: flex;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            size="md"
+          >
+            <span
+              className="c3"
+              size="md"
+            />
+          </StyledComponent>
+        </styled.span>
+      </div>
+    </StyledComponent>
   </styled.div>
 </button>
 `;

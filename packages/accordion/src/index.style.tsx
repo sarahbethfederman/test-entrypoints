@@ -9,9 +9,13 @@ export const Wrapper = styled.div`
   ${normalise};
 `;
 
-export const AccordionWrapper = styled.div`
+interface AccordionWrapperProps {
+  isSelected: boolean;
+}
+
+export const AccordionWrapper = styled.div<AccordionWrapperProps>`
   border-top: 1px solid ${color('shade.100')};
-  background-color: ${({ isSelected }: { isSelected: boolean }) => (isSelected ? color('shade.25') : color('shade.0'))};
+  background-color: ${({ isSelected }) => (isSelected ? color('shade.25') : color('shade.0'))};
   :last-child {
     border-bottom: 1px solid ${color('shade.100')};
   }
@@ -117,5 +121,5 @@ export const AccordionItemWrapper = styled.div`
           opacity: 1;
           visibility: visible;
         `};
-  ${body};
+  ${body()};
 `;

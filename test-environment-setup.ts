@@ -8,7 +8,14 @@ global.requestAnimationFrame = function(callback) {
 global.google = {
   maps: {
     places: {
-      Autocomplete: class {},
+      PlacesService: class {},
+      Autocomplete: new (class {})(),
+      AutocompleteSessionToken: class {},
+      AutocompleteService: class {
+        getPlacePredictions(req, callback) {
+          callback([], 'OK');
+        }
+      },
     },
     Map: class {},
   },

@@ -1,4 +1,4 @@
-import { DataSourceItem } from './types';
+import { DataSourceItem } from './typings';
 
 export const MOCK_DATA_SOURCE: DataSourceItem[] = [
   {

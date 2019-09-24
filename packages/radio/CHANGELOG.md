@@ -1,6 +1,15 @@
-## [2.3.1] - 2019-09-10 - [HUB-radio-hotfix](https://creditandfinance.atlassian.net/browse/HUB-radio-hotfix)
-### Updated
-- Export RadioGroupProps interface
+## [3.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+## Unreleased
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
+## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
+### Added
+- Added xs, xm, lg size variants
+
+## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
+### Added
+- Added xs, xm, lg size variants
+
 
 ## [2.3.0] - 2019-07-22 - [HUB-256](https://creditandfinance.atlassian.net/browse/HUB-256)
 ### Added
@@ -47,7 +56,7 @@
 ### Changed
 - Updated CHANGELOG to match required parsing format.
 
-## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54) 
+## [2.0.2] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 ### Changed
 - Change module main entry point to esm in package.json
 

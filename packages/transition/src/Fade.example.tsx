@@ -21,7 +21,7 @@ class Example extends React.Component<{}, ExampleState> {
     const { isActive } = this.state;
     return (
       <>
-        <Fade active={isActive} timeout={500}>
+        <Fade isActive={isActive} timeout={500}>
           <div>This will be the component that fades in and out</div>
         </Fade>
         <ToggleSwitch isChecked={isActive} label="Fade in / Fade out" onChange={this.onChange} />

@@ -1,13 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
-
+import { Heading } from '@lendi-ui/typography';
+import Field from '@lendi-ui/field';
 import { pl } from '@lendi-ui/spacing';
 import { Search } from '@lendi-ui/icon';
 import { AutoCompleteStateless } from '..';
-import { DataSourceItem, AutoCompleteValue } from '../../types';
+import { DataSourceItem, AutoCompleteValue } from '../../typings';
 import { getFailedAsyncData } from '../../data-source.mock';
-import { Heading } from '@lendi-ui/typography';
-import Field from '@lendi-ui/field';
 
 interface ExampleState {
   value: AutoCompleteValue;
@@ -40,7 +39,7 @@ export default class AutoCompleteStatelessAsyncFailedExample extends React.Compo
         <Field error={this.state.errorMessage} touched={!!this.state.errorMessage}>
           <AutoCompleteStateless
             dataSource={this.state.dataSource}
-            value={this.state.value}
+            value={String(this.state.value)}
             isFullWidth
             onChange={async (e) => {
               this.setState({ isLoading: true, value: e.target.value });
@@ -55,7 +54,7 @@ export default class AutoCompleteStatelessAsyncFailedExample extends React.Compo
                 });
               }
             }}
-            onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
+            onSelectItem={(item: DataSourceItem) => this.setState({ value: item.label })}
             isLoading={this.state.isLoading}
             before={<PaddedSearchIcon color="shade.500" />}
             isError={this.state.isError}

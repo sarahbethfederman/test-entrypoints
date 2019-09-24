@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { select } from '@lendi-ui/theme';
+import { select, Colors, ColorPrefixes } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 import { deriveSize, normalise } from '@lendi-ui/utils';
@@ -137,31 +137,31 @@ const commonStyle = css`
       : undefined}
 `;
 
-const filledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
+const filledStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
   return css`
     ${commonStyle}
     ${fg('shade.0')}
-    ${bg(`${colorPrefix}.500`)};
+    ${bg(`${colorPrefix}.500` as Colors)};
 
     :focus {
-      ${bg(`${colorPrefix}.400`)}
+      ${bg(`${colorPrefix}.400` as Colors)}
     }
 
     :hover {
-      ${bg(`${colorPrefix}.400`)}
+      ${bg(`${colorPrefix}.400` as Colors)}
     }
 
     :active {
-      ${bg(`${colorPrefix}.600`)}
+      ${bg(`${colorPrefix}.600` as Colors)}
     }
 
 
     ${({ isDisabled }: WrapperProps) =>
       isDisabled
         ? css`
-            ${bg(`${colorPrefix}.500`)}
+            ${bg(`${colorPrefix}.500` as Colors)}
             :hover, :active, :focus {
-              ${bg(`${colorPrefix}.500`)}
+              ${bg(`${colorPrefix}.500` as Colors)}
             }
           `
         : undefined}
@@ -169,9 +169,10 @@ const filledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
   `;
 };
 
-const inversedFilledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
+const inversedFilledStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
   return css`
-    ${commonStyle} ${fg(`${colorPrefix}.500`)};
+    ${commonStyle}
+    ${fg(`${colorPrefix}.500` as Colors)};
     ${bg('shade.0')};
 
     :active {
@@ -180,41 +181,42 @@ const inversedFilledStyle = ({ colorPrefix }: { colorPrefix: string }) => {
   `;
 };
 
-const outlineStyle = ({ colorPrefix }: { colorPrefix: string }) => {
+const outlineStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
   return css`
     ${commonStyle}
-    ${fg(`${colorPrefix}.500`)}
+    ${fg(`${colorPrefix}.500` as Colors)}
     ${bg('shade.0')}
-    border: 1px solid ${color(`${colorPrefix}.500`)};
+    border: 1px solid ${color(`${colorPrefix}.500` as Colors)};
 
     :focus {
-      border-color: ${color(`${colorPrefix}.400`)};
+      border-color: ${color(`${colorPrefix}.400` as Colors)};
     }
 
     :hover {
-      border-color: ${color(`${colorPrefix}.400`)};
+      border-color: ${color(`${colorPrefix}.400` as Colors)};
     }
 
     :active {
-      ${fg(`${colorPrefix}.600`)};
-      ${bg(`${colorPrefix}.50`)};
-      border-color: ${color(`${colorPrefix}.600`)};
+      ${fg(`${colorPrefix}.600` as Colors)};
+      ${bg(`${colorPrefix}.50` as Colors)};
+      border-color: ${color(`${colorPrefix}.600` as Colors)};
     }
 
     :disabled:hover,
     :disabled:active,
     :disabled:focus {
-      ${fg(`${colorPrefix}.500`)}
+      ${fg(`${colorPrefix}.500` as Colors)}
       ${bg('shade.0')}
-      border-color: ${color(`${colorPrefix}.500`)};
+      border-color: ${color(`${colorPrefix}.500` as Colors)};
     }
 
   `;
 };
 
-const inversedOutlineStyle = ({ colorPrefix }: { colorPrefix: string }) => {
+const inversedOutlineStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
   return css`
-    ${commonStyle} ${fg('shade.0')}
+    ${commonStyle}
+    ${fg('shade.0')}
     background-color: transparent;
     border: 1px solid ${color('shade.0')};
 

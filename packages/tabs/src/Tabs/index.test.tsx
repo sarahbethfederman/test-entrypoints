@@ -15,7 +15,7 @@ function render(props) {
   mockOnChange = jest.fn();
   wrapper = Enzyme.mount(
     <Theme>
-      <Tabs {...props} onChangeTab={mockOnChange}>
+      <Tabs {...props} onChangeTabIndex={mockOnChange}>
         <Tabs.Tab icon={<Lock color="secondary.500" />}>anmol</Tabs.Tab>
         <Tabs.Tab icon={<Lock color="secondary.500" />}>1</Tabs.Tab>
         <Tabs.Tab icon={<Lock color="secondary.500" />}>2</Tabs.Tab>
@@ -41,22 +41,22 @@ function render(props) {
 
 describe('Tabs', () => {
   it('renders isInverse state with transparent background', () => {
-    render({ isInverse: false, activeTab: 1 });
+    render({ isInverse: false, activeTabIndex: 1 });
     expect(tabs).toBeTruthy();
   });
 
   it('renders when isInverse is false', () => {
-    render({ isInverse: true, activeTab: 1 });
+    render({ isInverse: true, activeTabIndex: 1 });
     expect(tabs).toBeTruthy();
   });
 
   it('render a element if href props was provided', () => {
-    render({ isInverse: false, activeTab: 1, href: 'https://lendi.com.au' });
+    render({ isInverse: false, activeTabIndex: 1, href: 'https://lendi.com.au' });
     expect(tabs.find(TabWrapperA)).toBeTruthy();
   });
 
   it('should show right and left arrows for desktop where scroll is needed', () => {
-    render({ isInverse: false, activeTab: 1 });
+    render({ isInverse: false, activeTabIndex: 1 });
     Object.defineProperty(tabs.getDOMNode(), 'scrollWidth', {
       value: 1920,
     });
@@ -68,9 +68,9 @@ describe('Tabs', () => {
     expect(tabs.update().find(LeftIconWrapper)).toBeTruthy();
   });
 
-  it('should select the tab specified by activeTab', () => {
-    let activeTab = 1;
-    render({ isInverse: false, activeTab });
+  it('should select the tab specified by activeTabIndex', () => {
+    let activeTabIndex = 0;
+    render({ isInverse: false, activeTabIndex });
     expect(
       tabs
         .find(Tab)
@@ -79,8 +79,8 @@ describe('Tabs', () => {
         .props()['isSelected']
     ).toBe(true);
 
-    activeTab = 2;
-    render({ isInverse: false, activeTab });
+    activeTabIndex = 1;
+    render({ isInverse: false, activeTabIndex });
     expect(
       tabs
         .find(Tab)
@@ -97,7 +97,7 @@ describe('Tabs', () => {
       .at(2)
       .simulate('click');
     expect(mockOnChange.mock.calls.length).toBe(1);
-    expect(mockOnChange.mock.calls[0][0]).toBe(3);
+    expect(mockOnChange.mock.calls[0][0]).toBe(2);
   });
 
   describe('test native props and Standard HTML Attributes', () => {

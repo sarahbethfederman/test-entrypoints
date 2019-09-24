@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -8,12 +8,12 @@
     "dist"
   ],
   "peerDependencies": {
-    "styled-components": "^3"
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^2.0.0",
+    "@lendi-ui/breakpoint": "^3.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0",
-    "create-react-context": "^0.2.3",
     "prop-types": "^15.7.2"
   },
   "license": "ISC",

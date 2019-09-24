@@ -16,29 +16,29 @@ exports[`Text area should render the text area component 1`] = `
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 1px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -80,13 +80,83 @@ exports[`Text area should render the text area component 1`] = `
     placeholder="input here ..."
     size="md"
   >
-    <textarea
-      className="c0"
+    <StyledComponent
+      className=""
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  resize: none;
+  border-radius: ",
+              [Function],
+              ";
+  box-sizing: border-box;
+  font-family: ",
+              [Function],
+              ";
+  ",
+              [Function],
+              " ",
+              [Function],
+              ";
+  ::placeholder {
+    color: ",
+              [Function],
+              ";
+  }
+  :hover:not(:focus) {
+    ",
+              [Function],
+              "
+  }
+",
+            ],
+          },
+          "displayName": "styled.textarea",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "textarea",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isDisabled={false}
+      isError={false}
+      isFullWidth={false}
+      isInverse={false}
       onChange={[MockFunction]}
       placeholder="input here ..."
       size="md"
-    />
+    >
+      <textarea
+        className="c0"
+        disabled={false}
+        onChange={[MockFunction]}
+        placeholder="input here ..."
+        size="md"
+      />
+    </StyledComponent>
   </styled.textarea>
 </TextArea>
 `;
@@ -107,29 +177,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 1px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -167,13 +237,83 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={true}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -193,30 +333,30 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
+  border: 1px solid rgba(227,227,227,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 <styled.textarea
@@ -230,13 +370,83 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={true}
+    isError={false}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -256,29 +466,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #ff1c4a;
-  background-color: #ffffff;
+  border: 1px solid rgba(255,28,74,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -316,13 +526,83 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={true}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -342,29 +622,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #f8f8f8;
+  border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -402,13 +682,83 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={false}
+    isInverse={true}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -428,29 +778,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 1px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -488,13 +838,83 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={true}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -514,30 +934,30 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
+  border: 1px solid rgba(227,227,227,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 <styled.textarea
@@ -551,13 +971,83 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={true}
+    isError={false}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -577,29 +1067,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #ff1c4a;
-  background-color: #ffffff;
+  border: 1px solid rgba(255,28,74,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -637,13 +1127,83 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={true}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -663,29 +1223,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #f8f8f8;
+  border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -723,13 +1283,83 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={false}
+    isInverse={true}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -749,29 +1379,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 1px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -809,13 +1439,83 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={true}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -835,30 +1535,30 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid #e3e3e3;
+  border: 1px solid rgba(227,227,227,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 <styled.textarea
@@ -872,13 +1572,83 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={true}
+    isError={false}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={true}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -898,29 +1668,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #474747;
+  color: rgba(71,71,71,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #ff1c4a;
-  background-color: #ffffff;
+  border: 1px solid rgba(255,28,74,1);
+  background-color: rgba(255,255,255,1);
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -958,13 +1728,83 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={true}
+    isFullWidth={false}
+    isInverse={false}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;
 
@@ -984,29 +1824,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: #ffffff;
+  color: rgba(255,255,255,1);
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid #f8f8f8;
+  border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::-moz-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:-ms-input-placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0::placeholder {
-  color: #adadad;
+  color: rgba(173,173,173,1);
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1044,12 +1884,82 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   size="md"
 >
-  <textarea
-    className="c0"
+  <StyledComponent
+    className=""
     disabled={false}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  resize: none;
+  border-radius: ",
+            [Function],
+            ";
+  box-sizing: border-box;
+  font-family: ",
+            [Function],
+            ";
+  ",
+            [Function],
+            " ",
+            [Function],
+            ";
+  ::placeholder {
+    color: ",
+            [Function],
+            ";
+  }
+  :hover:not(:focus) {
+    ",
+            [Function],
+            "
+  }
+",
+          ],
+        },
+        "displayName": "styled.textarea",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "textarea",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isDisabled={false}
+    isError={false}
+    isFullWidth={false}
+    isInverse={true}
     onChange={[MockFunction]}
     placeholder="input here ..."
     size="md"
-  />
+  >
+    <textarea
+      className="c0"
+      disabled={false}
+      onChange={[MockFunction]}
+      placeholder="input here ..."
+      size="md"
+    />
+  </StyledComponent>
 </styled.textarea>
 `;

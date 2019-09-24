@@ -1,26 +1,18 @@
-## [3.0.5] - 2019-09-18 - [HUB-566](https://creditandfinance.atlassian.net/browse/HUB/566)
+## [4.0.0-alpha.2] 2019-09-05 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
 ### Fixed
-- Fixed a bug for MarketingNavbar and SEMNavabr header button should perform the same with ApplicationNavbar whether application exist or not.
+- Use correct logo variant for the white Application navbar
 
-## [3.0.4] - 2019-09-12 - [HUB-539](https://creditandfinance.atlassian.net/browse/HUB/539)
-### Changed
-- Revert setup default logout function in Navbar
+## [4.0.0-alpha.1] 2019-09-05 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
+### Fixed
+- Added logo back to the Application navbar variant
 
-## [3.0.3] - 2019-09-11 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB/375)
-### Changed
-- bumped transition and overlay versions
-
-## [3.0.2] - 2019-09-04 - [HUB-493](https://creditandfinance.atlassian.net/browse/HUB-493)
-### Changed
-- add default logout function to navbar
-
-## [3.0.1] - 2019-09-04 - [HUB-490](https://creditandfinance.atlassian.net/browse/HUB-490)
-### Changed
-- Corrected the link of continue application - now pointed to /home-loans/search.
+## [4.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
 
 ## [3.0.0] - 2019-08-22 - [HUB-417-navbar](https://creditandfinance.atlassian.net/browse/HUB-417-navbar)
 ### Changed
-- Change sign-in link to new auth stuff.
+- change sign-in link to new auth stuff.
 
 ## [2.5.1] - 2019-07-26 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
 ### Changed

@@ -2,8 +2,8 @@ import styled, { css } from 'styled-components';
 import { gte, between } from '@lendi-ui/breakpoint';
 import { normalise, deriveSize } from '@lendi-ui/utils';
 import { px, py, mr, p, pr, pl, ml, pt, pb } from '@lendi-ui/spacing';
-import Logo from '@lendi-ui/logo';
-import { select } from '@lendi-ui/theme';
+import { Logo, LogoProps } from '@lendi-ui/logo';
+import { select, ThemeMap } from '@lendi-ui/theme';
 import { bg, fg } from '@lendi-ui/color';
 import { Menu } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
@@ -117,30 +117,28 @@ export const LogoLink = styled.a`
   cursor: pointer;
 `;
 
-export const OldHeaderLogo = styled(Logo)`
+export const OldHeaderLogo = styled(Logo)<LogoProps>`
   width: 66px;
   height: 21px;
-  ${({ theme }) =>
-    select('logo.logoName')({ theme }) === 'LendiLogo'
-      ? css`
-          ${gte('tablet')`
-      width: 104px;
-      height: 33px;
-    `};
-        `
-      : css`
-          ${gte('tablet')`
+  ${({ theme }: { theme?: ThemeMap }) => {
+    if (!theme || select('logo.logoName')({ theme })) {
+      return gte('tablet')`
+        width: 104px;
+        height: 33px;
+      `;
+    }
+    return gte('tablet')`
       width: 240px;
       height: 33px;
-  `};
-        `}
+    `;
+  }}
 `;
 
-export const HeaderLogo = styled(Logo)`
+export const HeaderLogo = styled(Logo)<LogoProps>`
   width: 98px;
   height: 30px;
   padding-bottom: 4px;
-  ${({ theme }) =>
+  ${({ theme }: { theme: ThemeMap }) =>
     select('logo.logoName')({ theme }) === 'LendiLogo'
       ? css`
           content: url(${NewLogo});
@@ -242,6 +240,7 @@ export const OldMenuButton = styled.button`
   font-size: 1.3em;
   background: transparent;
   border: none;
+  display: flex;
 
   &:focus {
     outline: none;

@@ -1,3 +1,11 @@
+## [5.0.0] 2019-9-23 - 2019-08-19 - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+### Updated
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
+## [4.3.0] - 2019-08-15 - [HUB-412](https://creditandfinance.atlassian.net/browse/HUB-412)
+### Changed
+- Uses Theme v7
+
 ## [4.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

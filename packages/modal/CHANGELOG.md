@@ -1,6 +1,11 @@
-## [2.3.3] - 2019-07-22 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB-375)
+## [3.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ### Changed
-- Bumped Overlay Version to 2.2.2 this is explicitly for dependant projects
+Model prop - `fixedHeader` changed to `isHeaderFixed`
+Model prop - `show` changed to `isVisible`
+ModalHeaderProps prop - `headerSize` changed to `size`
 
 ## [2.3.2] - 2019-07-22 - [HUB-342](https://creditandfinance.atlassian.net/browse/HUB-342)
 ### Changed

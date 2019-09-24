@@ -5,7 +5,7 @@ import { Input } from '@lendi-ui/text-input';
 import { Button } from '@lendi-ui/button';
 import Modal from '@lendi-ui/modal';
 import Grid from '@lendi-ui/grid';
-import { UnitWrapper, Label, StyledDropdown } from './index.style';
+import { UnitWrapper, Label } from './index.style';
 import AddressModal, { AddressModalProps } from './index';
 
 const onSave = jest.fn();

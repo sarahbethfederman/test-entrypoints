@@ -9,6 +9,6 @@
     "src/**/*.test.tsx",
     "src/**/*.example.tsx",
     "src/**/examples/**.tsx",
-    "src/**/**.mock.ts"
+    "src/**/*.mock.ts"
   ]
 }

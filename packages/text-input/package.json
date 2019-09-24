@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/text-input",
-  "version": "3.4.0",
+  "version": "4.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -11,16 +11,17 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "@lendi-ui/theme": "^6.1.1",
-    "styled-components": "^2 || ^3"
+    "@types/react": "^16.8",
+    "react": "^16.8",
+    "@lendi-ui/theme": "^7.0.0",
+    "styled-components": "^4",
+    "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^2.0.0",
-    "@lendi-ui/button": "^5.0.0",
-    "@lendi-ui/typography": "^3.0.0",
-    "@lendi-ui/utils": "^2.5.0"
+    "@lendi-ui/breakpoint": "^3.0.0",
+    "@lendi-ui/button": "7.0.0",
+    "@lendi-ui/typography": "^4.0.0",
+    "@lendi-ui/utils": "^3.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
@@ -28,6 +29,6 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "devDependencies": {
-    "@lendi-ui/icon": "^8.0.0"
+    "@lendi-ui/icon": "9.0.0"
   }
 }

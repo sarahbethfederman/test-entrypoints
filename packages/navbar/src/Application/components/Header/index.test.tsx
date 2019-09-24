@@ -14,6 +14,7 @@ import {
   HeaderButton,
 } from '../../../common/Header/index.style';
 import { Menu } from '@lendi-ui/icon';
+import { Logo } from '@lendi-ui/logo';
 import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK } from '../../../constants/links';
 import { AnalyticsContextProps } from '@lendi-ui/utils';
@@ -49,6 +50,18 @@ describe('Header', () => {
     it('should mount the whole Header component', () => {
       expect(wrapper.find(FullWidthContainer)).toHaveLength(1);
       expect(wrapper.find(Container)).toHaveLength(1);
+      expect(wrapper.find(OldHeaderLogo)).toHaveLength(1);
+    });
+
+    describe('it should use the correct logo variants', () => {
+      it('defaults to dark logo for non-transparent headers', () => {
+        expect(wrapper.find(Logo).props().variant).toEqual('dark');
+      });
+
+      it('uses the dark logo for transparent headers', () => {
+        render({ isTransparent: true });
+        expect(wrapper.find(Logo).props().variant).toEqual('light');
+      });
     });
 
     it('should mount the LeftGroup component', () => {
@@ -58,7 +71,6 @@ describe('Header', () => {
       expect(wrapper.find(LogoWrapper)).toHaveLength(1);
       expect(wrapper.find(LogoLink)).toHaveLength(1);
       expect(wrapper.find(LogoLink).props().href).toEqual(HOME_PAGE_LINK);
-      expect(wrapper.find(OldHeaderLogo)).toHaveLength(1);
     });
 
     it('should mount the RightGroup component', () => {

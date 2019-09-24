@@ -1,3 +1,8 @@
+
+## [3.0.0] 2019-9-23 - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.2.2] - 2019-06-13 - [HUB-266](https://creditandfinance.atlassian.net/browse/HUB-266)
 ### Changed
 - Change Auscred Pty Ltd to Auscred Limited in legal stuff

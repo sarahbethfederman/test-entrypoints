@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Body } from '@lendi-ui/typography';
+import { body, BodyOptions } from '@lendi-ui/typography';
 import { deriveSize } from '@lendi-ui/utils';
 import { color } from '@lendi-ui/color';
 import { mx } from '@lendi-ui/spacing';
@@ -12,6 +12,11 @@ interface WrapperProps {
   disabled: boolean;
   size: Size;
 }
+
+export const CheckboxLabel = styled.p`
+  ${(props: BodyOptions) => body(props)}
+  display: inline-block;
+`;
 
 const borderRadiusMixin = (size: Size) => {
   if (size === 'xs') {
@@ -92,10 +97,6 @@ export const Wrapper = styled.label<WrapperProps>`
       return null;
     }};
   }
-`;
-
-export const CheckboxLabel = styled(Body)`
-  display: inline-block;
 `;
 
 interface CheckboxWrapperProps {

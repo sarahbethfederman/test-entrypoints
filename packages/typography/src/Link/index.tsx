@@ -4,11 +4,12 @@ import { margin, MarginOptions } from '@lendi-ui/spacing';
 import { body, BodySize } from '../Body';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 import { color as getColor } from '@lendi-ui/color';
+import { Colors } from '@lendi-ui/theme';
 
 export type LinkSize = BodySize;
 
 export interface LinkOptions extends LUIGlobalProps {
-  color?: string;
+  color?: Colors;
   size?: LinkSize;
 }
 

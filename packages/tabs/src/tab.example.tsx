@@ -9,7 +9,7 @@ const Container = styled.div`
 
 export default class TabsExample extends React.Component {
   state = {
-    activeTab: 1,
+    activeTabIndex: 0,
   };
 
   render() {
@@ -19,8 +19,8 @@ export default class TabsExample extends React.Component {
           id="tabId"
           data-data="moreData"
           aria-label="tabLabel"
-          onChangeTab={(activeTab) => this.setState({ activeTab })}
-          activeTab={this.state.activeTab}
+          onChangeTabIndex={(activeTabIndex) => this.setState({ activeTabIndex })}
+          activeTabIndex={this.state.activeTabIndex}
           isInverse
         >
           <Tabs.Tab icon={<Lock color="secondary.500" />}>1</Tabs.Tab>
@@ -31,7 +31,10 @@ export default class TabsExample extends React.Component {
         </Tabs>
         <br />
         <br />
-        <Tabs onChangeTab={(activeTab) => this.setState({ activeTab })} activeTab={this.state.activeTab}>
+        <Tabs
+          onChangeTabIndex={(activeTabIndex) => this.setState({ activeTabIndex })}
+          activeTabIndex={this.state.activeTabIndex}
+        >
           <Tabs.Tab icon={<Lock color="secondary.500" />}>1</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>2</Tabs.Tab>
           <Tabs.Tab icon={<Lock color="secondary.500" />}>3</Tabs.Tab>

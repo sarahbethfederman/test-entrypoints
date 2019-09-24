@@ -1,56 +1,87 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 import { color, fg, bg } from '.';
+import { theme as lendiTheme, ColorsMap, ThemeMap } from '@lendi-ui/theme';
 
-// tslint:disable-next-line
-const colors = {
-  a: 'green',
-  b: {
-    primary: {
-      700: 'red',
-      500: 'orange',
-    },
-  },
-  c: ['tomato', 'tangerine'],
+// hex color value to rgb
+// #008000 : rgb(0,128,0)
+// #006400 : rgb(0,100,0)
+// #556B2F : rgb(85,107,47)
+// #20B2AA : rgb(32,178,170)
+
+const colors: Partial<ColorsMap> = {
+  'primary.500': '#008000',
+  'primary.700': '#006400',
+  'secondary.25': '#556B2F',
+  'shade.0': '#20B2AA',
 };
 
-const theme = {
-  colors,
+const theme: Partial<ThemeMap> = {
+  colors: {
+    ...lendiTheme.colors,
+    ...colors,
+  },
 };
 
 describe('color()', () => {
   it('should extract the color value from the theme by name', () => {
-    expect(color('a')({ theme })).toEqual('green');
-    expect(color('b.primary.700')({ theme })).toEqual('red');
-    expect(color('b.primary.500')({ theme })).toEqual('orange');
-    expect(color('c.0')({ theme })).toEqual('tomato');
-    expect(color('c.1')({ theme })).toEqual('tangerine');
+    expect(color('primary.500')({ theme })).toEqual('rgba(0,128,0,1)');
+  });
+
+  it('should extract the color value from the theme by name and transparency value', () => {
+    expect(color('primary.500', 0.6)({ theme })).toEqual('rgba(0,128,0,0.6)');
   });
 });
 
 describe('fg()', () => {
   it('should use the color value from the theme by name', () => {
     const Component = styled.div`
-      ${fg('b.primary.700')};
+      ${fg('primary.500')};
     `;
-    const element = shallow(<Component theme={theme} />);
-    expect(element).toHaveStyleRule('color', colors.b.primary[700]);
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('color', 'rgba(0,128,0,1)');
   });
 
   it('should use the color value from the theme by name at each breakpoint', () => {
     const Component = styled.div`
-      ${fg({ mobile: 'b.primary.700', tablet: 'c.0', desktop: 'a' })};
+      ${fg({ mobile: 'primary.700', tablet: 'shade.0', desktop: 'secondary.25' })};
     `;
-    const element = shallow(<Component theme={theme} />);
-    expect(element).toHaveStyleRule('color', colors.b.primary[700], {
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('color', 'rgba(0,100,0,1)', {
       media: `(min-width:${Breakpoint.mobile})`,
     });
-    expect(element).toHaveStyleRule('color', colors.c[0], {
+    expect(element).toHaveStyleRule('color', 'rgba(32,178,170,1)', {
       media: `(min-width:${Breakpoint.tablet})`,
     });
-    expect(element).toHaveStyleRule('color', colors.a, {
+    expect(element).toHaveStyleRule('color', 'rgba(85,107,47,1)', {
+      media: `(min-width:${Breakpoint.desktop})`,
+    });
+  });
+});
+
+describe('fg() with transparency', () => {
+  it('should use the color value from the theme by name and transparency', () => {
+    const Component = styled.div`
+      ${fg('primary.500', 0.6)};
+    `;
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('color', 'rgba(0,128,0,0.6)');
+  });
+
+  it('should use the color value from the theme by name at each breakpoint', () => {
+    const Component = styled.div`
+      ${fg({ mobile: 'primary.700', tablet: 'shade.0', desktop: 'secondary.25' }, 0.6)};
+    `;
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('color', 'rgba(0,100,0,0.6)', {
+      media: `(min-width:${Breakpoint.mobile})`,
+    });
+    expect(element).toHaveStyleRule('color', 'rgba(32,178,170,0.6)', {
+      media: `(min-width:${Breakpoint.tablet})`,
+    });
+    expect(element).toHaveStyleRule('color', 'rgba(85,107,47,0.6)', {
       media: `(min-width:${Breakpoint.desktop})`,
     });
   });
@@ -59,24 +90,50 @@ describe('fg()', () => {
 describe('bg()', () => {
   it('should use the color value from the theme by name', () => {
     const Component = styled.div`
-      ${bg('b.primary.500')};
+      ${bg('primary.500')};
     `;
-    const element = shallow(<Component theme={theme} />);
-    expect(element).toHaveStyleRule('background-color', colors.b.primary[500]);
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('background-color', 'rgba(0,128,0,1)');
   });
 
   it('should use the color value from the theme by name at each breakpoint', () => {
     const Component = styled.div`
-      ${bg({ mobile: 'b.primary.500', tablet: 'c.0', desktop: 'a' })};
+      ${bg({ mobile: 'primary.700', tablet: 'shade.0', desktop: 'secondary.25' })};
     `;
-    const element = shallow(<Component theme={theme} />);
-    expect(element).toHaveStyleRule('background-color', colors.b.primary[500], {
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('background-color', 'rgba(0,100,0,1)', {
       media: `(min-width:${Breakpoint.mobile})`,
     });
-    expect(element).toHaveStyleRule('background-color', colors.c[0], {
+    expect(element).toHaveStyleRule('background-color', 'rgba(32,178,170,1)', {
       media: `(min-width:${Breakpoint.tablet})`,
     });
-    expect(element).toHaveStyleRule('background-color', colors.a, {
+    expect(element).toHaveStyleRule('background-color', 'rgba(85,107,47,1)', {
+      media: `(min-width:${Breakpoint.desktop})`,
+    });
+  });
+});
+
+describe('bg() with transparency', () => {
+  it('should use the color value from the theme by name', () => {
+    const Component = styled.div`
+      ${bg('primary.500', 0.6)};
+    `;
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('background-color', 'rgba(0,128,0,0.6)');
+  });
+
+  it('should use the color value from the theme by name at each breakpoint', () => {
+    const Component = styled.div`
+      ${bg({ mobile: 'primary.700', tablet: 'shade.0', desktop: 'secondary.25' }, 0.6)};
+    `;
+    const element = mount(<Component theme={theme} />);
+    expect(element).toHaveStyleRule('background-color', 'rgba(0,100,0,0.6)', {
+      media: `(min-width:${Breakpoint.mobile})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'rgba(32,178,170,0.6)', {
+      media: `(min-width:${Breakpoint.tablet})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'rgba(85,107,47,0.6)', {
       media: `(min-width:${Breakpoint.desktop})`,
     });
   });

@@ -1,5 +1,10 @@
+## [3.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Changed
+- Uses Theme v7
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.2.3] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
-### updated
+### Updated
 - Bump patch version to reflect the relative path issue fix
 
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)

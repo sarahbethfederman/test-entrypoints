@@ -6,9 +6,9 @@ import { polyfill } from 'react-lifecycles-compat';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface OverlayProps extends LUIGlobalProps {
-  show: boolean;
-  hideOnClick?: boolean;
-  hideOnEscape?: boolean;
+  isVisible: boolean;
+  onClickHide?: boolean;
+  onClickEscape?: boolean;
   onHide?: () => void;
   children?: React.ReactNode;
   zIndex?: number;
@@ -24,8 +24,8 @@ class Overlay extends React.Component<OverlayProps> {
   }
 
   private handleClick = () => {
-    const { hideOnClick = true, onHide } = this.props;
-    if (hideOnClick && onHide) {
+    const { onClickHide = true, onHide } = this.props;
+    if (onClickHide && onHide) {
       onHide();
     }
   };
@@ -34,22 +34,22 @@ class Overlay extends React.Component<OverlayProps> {
     if (event.key !== 'Escape') {
       return;
     }
-    const { hideOnEscape = true, onHide } = this.props;
-    if (hideOnEscape && onHide) {
+    const { onClickEscape = true, onHide } = this.props;
+    if (onClickEscape && onHide) {
       onHide();
     }
   };
 
   public componentDidMount() {
-    const { show } = this.props;
-    if (show) {
+    const { isVisible } = this.props;
+    if (isVisible) {
       this.activate();
     }
   }
 
   public componentDidUpdate(prevProps: OverlayProps) {
-    const { show: prevShow } = prevProps;
-    const { show: currShow } = this.props;
+    const { isVisible: prevShow } = prevProps;
+    const { isVisible: currShow } = this.props;
     if (currShow !== prevShow) {
       if (currShow) {
         this.activate();
@@ -60,18 +60,18 @@ class Overlay extends React.Component<OverlayProps> {
   }
 
   public componentWillUnmount() {
-    const { show } = this.props;
-    if (show) {
+    const { isVisible } = this.props;
+    if (isVisible) {
       this.deactivate();
     }
   }
 
   public render() {
-    const { show, children, zIndex, ...otherProps } = this.props;
+    const { isVisible, children, zIndex, ...otherProps } = this.props;
     return (
       <div>
-        {show && <ScrollLock />}
-        <Fade active={show} appear={show} mountOnEnter={true} unmountOnExit={true}>
+        {isVisible && <ScrollLock />}
+        <Fade isActive={isVisible} isVisible={isVisible} shouldMountOnEnter={true} shouldUnmountOnExit={true}>
           <Wrapper onClick={this.handleClick} zIndex={zIndex} {...otherProps}>
             {children}
           </Wrapper>

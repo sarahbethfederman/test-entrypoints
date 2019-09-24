@@ -1,12 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
-
+import { Heading } from '@lendi-ui/typography';
 import { pl } from '@lendi-ui/spacing';
 import { Search } from '@lendi-ui/icon';
 import { AutoCompleteStateless } from '..';
-import { DataSourceItem, AutoCompleteValue } from '../../types';
+import { DataSourceItem, AutoCompleteValue } from '../../typings';
 import { getAsyncData } from '../../data-source.mock';
-import { Heading } from '@lendi-ui/typography';
 
 interface ExampleState {
   value: AutoCompleteValue;
@@ -37,7 +36,7 @@ export default class AutoCompleteStatelessAsyncDataExample extends React.Compone
         </Heading>
         <AutoCompleteStateless
           dataSource={this.state.dataSource}
-          value={this.state.value}
+          value={String(this.state.value)}
           isFullWidth
           onChange={async (e) => {
             this.setState({ isLoading: true, value: e.target.value });
@@ -52,7 +51,7 @@ export default class AutoCompleteStatelessAsyncDataExample extends React.Compone
               });
             }
           }}
-          onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
+          onSelectItem={(item: DataSourceItem) => this.setState({ value: item.label })}
           isLoading={this.state.isLoading}
           before={<PaddedSearchIcon color="shade.500" />}
         />

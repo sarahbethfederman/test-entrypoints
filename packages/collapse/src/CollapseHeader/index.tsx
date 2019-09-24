@@ -10,7 +10,9 @@ export interface CollapseHeaderSectionProps {
   headerSize: Size;
 }
 
-const CollapseHeaderSection: React.SFC<CollapseHeaderSectionProps> = (props: CollapseHeaderSectionProps) => (
+const CollapseHeaderSection: React.FunctionComponent<CollapseHeaderSectionProps> = (
+  props: CollapseHeaderSectionProps
+) => (
   <CollapseHeader size={props.headerSize}>
     <TitleContainer>
       <CollapseTitle>{props.title}</CollapseTitle>

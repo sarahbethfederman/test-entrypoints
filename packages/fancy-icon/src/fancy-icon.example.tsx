@@ -26,7 +26,9 @@ const NameWrapper = styled(Body)`
 export default () => (
   <Theme>
     {Object.keys(Icon).map((component, i) => {
-      const MyComponent: React.SFC<FancyIconProps> = (Icon as any)[component] as React.SFC<FancyIconProps>;
+      const MyComponent: React.FunctionComponent<FancyIconProps> = (Icon as any)[component] as React.FunctionComponent<
+        FancyIconProps
+      >;
       return (
         <Wrapper key={i}>
           <MyComponent width="50px" height="50px" />

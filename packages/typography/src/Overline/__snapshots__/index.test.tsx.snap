@@ -12,7 +12,7 @@ exports[`Overline should render styles for size "lg" 1`] = `
   -moz-letter-spacing: calc(calc(0.875 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.875 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.875 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -25,10 +25,66 @@ exports[`Overline should render styles for size "lg" 1`] = `
   <styled.span
     size="lg"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="lg"
-    />
+    >
+      <span
+        className="c0"
+        size="lg"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;
@@ -45,7 +101,7 @@ exports[`Overline should render styles for size "md" 1`] = `
   -moz-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -58,10 +114,66 @@ exports[`Overline should render styles for size "md" 1`] = `
   <styled.span
     size="md"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="md"
-    />
+    >
+      <span
+        className="c0"
+        size="md"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;
@@ -78,7 +190,7 @@ exports[`Overline should render styles for size "sm" 1`] = `
   -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -91,10 +203,66 @@ exports[`Overline should render styles for size "sm" 1`] = `
   <styled.span
     size="sm"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="sm"
-    />
+    >
+      <span
+        className="c0"
+        size="sm"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;
@@ -111,7 +279,7 @@ exports[`Overline should render styles for size "xl" 1`] = `
   -moz-letter-spacing: calc(var(--lendi-ui-size)/10);
   -ms-letter-spacing: calc(var(--lendi-ui-size)/10);
   letter-spacing: calc(var(--lendi-ui-size)/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -124,10 +292,66 @@ exports[`Overline should render styles for size "xl" 1`] = `
   <styled.span
     size="xl"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="xl"
-    />
+    >
+      <span
+        className="c0"
+        size="xl"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;
@@ -144,7 +368,7 @@ exports[`Overline should render styles for size "xs" 1`] = `
   -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -157,10 +381,66 @@ exports[`Overline should render styles for size "xs" 1`] = `
   <styled.span
     size="xs"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="xs"
-    />
+    >
+      <span
+        className="c0"
+        size="xs"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;
@@ -177,7 +457,7 @@ exports[`Overline should render styles for size "xxs" 1`] = `
   -moz-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.625 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -190,10 +470,66 @@ exports[`Overline should render styles for size "xxs" 1`] = `
   <styled.span
     size="xxs"
   >
-    <span
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bZQynM",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              [Function],
+              ";
+  ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bZQynM",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="xxs"
-    />
+    >
+      <span
+        className="c0"
+        size="xxs"
+      />
+    </StyledComponent>
   </styled.span>
 </Component>
 `;

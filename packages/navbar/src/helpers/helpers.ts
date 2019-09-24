@@ -107,7 +107,7 @@ export const transformBroker = (brokerResponse: AxiosResponse<any>): Broker | un
   return undefined;
 };
 
-export const analysticHelper = (text: string, isBroker: boolean, position: WindowPosition, theme?: ThemeMap) => {
+export const analyticsHelper = (text: string, isBroker: boolean, position: WindowPosition, theme?: ThemeMap) => {
   // this trackNavigation is specific for navbar so, we can hardcoded it to the Category.navigation.
   trackNavigation(text, isBroker, position, Category.navigation, theme!.logo.logoName);
 };

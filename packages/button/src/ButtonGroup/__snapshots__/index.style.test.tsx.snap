@@ -32,10 +32,68 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
 <styled.div
   size="lg"
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  display: inline-flex;
+  flex-wrap: wrap;
+  ",
+            [Function],
+            ";
+  ",
+            [Function],
+            "
+  ",
+            ".c1",
+            ", ",
+            ".sc-bxivhb",
+            ", ",
+            ".sc-gzVnrw",
+            " {
+    ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="lg"
-  />
+  >
+    <div
+      className="c0"
+      size="lg"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -71,10 +129,68 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
 <styled.div
   size="md"
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  display: inline-flex;
+  flex-wrap: wrap;
+  ",
+            [Function],
+            ";
+  ",
+            [Function],
+            "
+  ",
+            ".c1",
+            ", ",
+            ".sc-bxivhb",
+            ", ",
+            ".sc-gzVnrw",
+            " {
+    ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="md"
-  />
+  >
+    <div
+      className="c0"
+      size="md"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -110,10 +226,68 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
 <styled.div
   size="sm"
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  display: inline-flex;
+  flex-wrap: wrap;
+  ",
+            [Function],
+            ";
+  ",
+            [Function],
+            "
+  ",
+            ".c1",
+            ", ",
+            ".sc-bxivhb",
+            ", ",
+            ".sc-gzVnrw",
+            " {
+    ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="sm"
-  />
+  >
+    <div
+      className="c0"
+      size="sm"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -149,9 +323,67 @@ exports[`Wrapper should have spacing at size "xs" 1`] = `
 <styled.div
   size="xs"
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-iwsKbI",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+            ";
+  display: inline-flex;
+  flex-wrap: wrap;
+  ",
+            [Function],
+            ";
+  ",
+            [Function],
+            "
+  ",
+            ".c1",
+            ", ",
+            ".sc-bxivhb",
+            ", ",
+            ".sc-gzVnrw",
+            " {
+    ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-iwsKbI",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="xs"
-  />
+  >
+    <div
+      className="c0"
+      size="xs"
+    />
+  </StyledComponent>
 </styled.div>
 `;

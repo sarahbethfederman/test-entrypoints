@@ -1,16 +1,15 @@
-import * as createReactContext from 'create-react-context';
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
+import * as React from 'react';
 
 export interface TabContextState {
   tabCount: number;
-  onClick(key: number): void;
+  onClick: (key: number) => void;
   selectedIndex: number;
 }
 
-// Supressing "Cannot invoke an expression whose type lacks a call signature." error
-// More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-// @ts-ignore
-const TabContext = PonyfillContext<TabContextState>({});
+const TabContext = React.createContext<TabContextState>({
+  tabCount: 0,
+  onClick: () => true,
+  selectedIndex: 0,
+});
 
 export default TabContext;

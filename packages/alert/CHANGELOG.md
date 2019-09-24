@@ -1,3 +1,8 @@
+
+## [3.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.3.0] - 2019-09-11 - [HUB-488-alert](https://creditandfinance.atlassian.net/browse/HUB-488-alert)
 ### Changed
 - Change Alert children type to React.ReactNode instead of string. 

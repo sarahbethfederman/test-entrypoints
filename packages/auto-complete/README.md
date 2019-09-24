@@ -38,7 +38,7 @@ import { AutoComplete, AutoCompleteStateless } from '@lendi-ui/auto-complete';
   <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the InputButton is inversed"/>
   <PropTable.Entry name="isReadOnly" type="boolean" defaultValue={false} description="Whether the Input is read-only."/>
   <PropTable.Entry name="isRequired" type="boolean" defaultValue={false} description="Whether the Input is required."/>
-  <PropTable.Entry name="onSelect" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
+  <PropTable.Entry name="onSelectItem" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
   <PropTable.Entry name="placeholder" type="string" description="Placeholder for AutoComplete"/>
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>
   <PropTable.Entry name="value" type="string" description="AutoComplete value"/>

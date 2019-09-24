@@ -40,6 +40,7 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
       <Header>
         <OldMenuButton
           onClick={() => {
+            console.log('click OldMenuButton');
             this.context.analyticsForNavigation('icon', WindowPosition.navigation_left);
             onHide();
           }}

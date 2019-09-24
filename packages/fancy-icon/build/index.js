@@ -62,7 +62,7 @@ fs.readdir(SOURCE_PATH, async (err, files) => {
           const match = code.match(/const ([\w])*/)[0];
 
           return {
-            code: code.replace(match, `${match}: React.SFC<FancyIconProps>`),
+            code: code.replace(match, `${match}: React.FunctionComponent<FancyIconProps>`),
             fileName,
           };
         })

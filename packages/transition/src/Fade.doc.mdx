@@ -7,7 +7,7 @@ import { Fade } from '@lendi-ui/transition';
 ```
 
 ```jsx
-<Fade active={true} timeout={340}>
+<Fade isActive={true} timeout={340}>
   <div>This will be the child component</div>
 </Fade>
 ```
@@ -15,6 +15,9 @@ import { Fade } from '@lendi-ui/transition';
 ## Fade Properties
 
 <PropTable>
-  <PropTable.Entry name="active" type={ 'boolean' } defaultValue="false" description=""/>
-  <PropTable.Entry name="timeout" type={ 'number' } defaultValue={250} description="Time to animate fading transition (in milliseconds)"/>
+  <PropTable.Entry required name="isActive" type={ 'boolean' } defaultValue="false" description="" />
+  <PropTable.Entry name="isVisible" type={ 'boolean' } defaultValue="false" description="" />
+  <PropTable.Entry name="shouldMountOnEnter" type={ 'boolean' } defaultValue="false" description="" />
+  <PropTable.Entry name="shouldUnmountOnExit" type={ 'boolean' } defaultValue="false" description="" />
+  <PropTable.Entry required name="timeout" type={ 'number' } defaultValue={250} description="Time to animate fading transition (in milliseconds)"/>
 </PropTable>

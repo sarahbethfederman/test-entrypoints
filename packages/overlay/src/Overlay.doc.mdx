@@ -7,7 +7,7 @@ import Overlay from '@lendi-ui/overlay';
 ```
 
 ```jsx
-  <Overlay show={false} onHide={() => { alert('onHide action')}} aria-label="testlabel">
+  <Overlay isVisible={false} onHide={() => { alert('onHide action')}} aria-label="testlabel">
     <div>This is a demo</div>
   </Overlay>
 ```
@@ -15,9 +15,9 @@ import Overlay from '@lendi-ui/overlay';
 ## Overlay Properties
 
 <PropTable>
-  <PropTable.Entry name="hideOnClick" type="boolean" defaultValue={true} />
-  <PropTable.Entry name="hideOnEscape" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="isVisible" type="boolean" defaultValue={false} description="Show the overlay"/>
+  <PropTable.Entry name="onClickEscape" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="onClickHide" type="boolean" defaultValue={true} />
   <PropTable.Entry name="onHide" type="function" description="Callback when overlay is hidden"/>
-  <PropTable.Entry name="show" type="boolean" defaultValue={false} description="Show the overlay"/>
   <PropTable.Entry name="zIndex" type="number" defaultValue={2} />
 </PropTable>

@@ -2,11 +2,10 @@ import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
 import { LendiLogo, LuiLogo, DomainLogo } from '@lendi-ui/icon';
-import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export type Variant = 'dark' | 'light';
 
-export interface LogoProps extends LUIGlobalProps {
+export interface LogoProps {
   variant?: Variant;
   width?: string;
   height?: string;
@@ -14,11 +13,14 @@ export interface LogoProps extends LUIGlobalProps {
   className?: string;
 }
 
-class Logo extends React.Component<LogoProps> {
+export class Logo extends React.Component<LogoProps> {
   render() {
     const { variant = 'dark', width = '160px', height = '100px', className, theme, ...otherProps } = this.props;
 
-    const logoName = theme!.logo.logoName;
+    let logoName = 'LendiLogo';
+    if (theme) {
+      logoName = theme!.logo.logoName;
+    }
     const color = variant === 'dark' ? 'secondary.900' : 'shade.0';
 
     switch (logoName) {

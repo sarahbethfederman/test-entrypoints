@@ -1,9 +1,8 @@
 import * as React from 'react';
-import createRef from 'react-create-ref';
 import { debounce } from 'lodash';
 import { Input } from '@lendi-ui/text-input';
 
-import { DataSourceItem, AutoCompleteStatelessProps } from '../types';
+import { DataSourceItem, AutoCompleteStatelessProps } from '../typings';
 import { KEY_DOWN, KEY_UP, KEY_ENTER, KEY_TAB, KEY_ESCAPE } from '../util/keys';
 import {
   AutoCompleteWrapper,
@@ -13,7 +12,7 @@ import {
   SpinnerWrapper,
   CloseWrapper,
   CloseIcon,
-} from '../styled/index.style';
+} from '../common/index.style';
 import { makeInputKeyBold, getOffsetScrollTop, transformedItem } from '../util';
 
 interface MenuListItemProps {
@@ -28,9 +27,8 @@ export interface AutoCompleteStatelessState {
 }
 
 export class AutoCompleteStateless extends React.Component<AutoCompleteStatelessProps, AutoCompleteStatelessState> {
-  inputWrapper: React.RefObject<HTMLDivElement> = createRef();
-  menuContainerRef: React.RefObject<HTMLUListElement> = createRef();
-  debounceWindowResize: () => void;
+  inputWrapper: React.RefObject<HTMLDivElement> = React.createRef();
+  menuContainerRef: React.RefObject<HTMLUListElement> = React.createRef();
   static readonly WINDOW_RESIZE_WAIT = 100;
 
   state = {
@@ -41,15 +39,15 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
 
   constructor(props: AutoCompleteStatelessProps) {
     super(props);
-    this.debounceWindowResize = debounce(this.calcInputWidth, AutoCompleteStateless.WINDOW_RESIZE_WAIT);
+    this.calcInputWidth = debounce(this.calcInputWidth, AutoCompleteStateless.WINDOW_RESIZE_WAIT);
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.debounceWindowResize);
+    window.addEventListener('resize', this.calcInputWidth);
     this.calcInputWidth();
   }
 
-  componentDidUpdate(prevProps: AutoCompleteStatelessProps, prevState: AutoCompleteStatelessState) {
+  componentDidUpdate(_prevProps: AutoCompleteStatelessProps, prevState: AutoCompleteStatelessState) {
     const { onMenuVisibilityChange = () => {} } = this.props;
     if (prevState.isOpen !== this.state.isOpen) {
       onMenuVisibilityChange(this.state.isOpen);
@@ -57,7 +55,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.debounceWindowResize);
+    window.removeEventListener('resize', this.calcInputWidth);
   }
 
   calcInputWidth = () => {
@@ -65,35 +63,6 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
       menuWidth: (this.inputWrapper.current!.firstElementChild as HTMLUListElement).offsetWidth,
     });
   };
-
-  render() {
-    const open = this.isOpen();
-    const {
-      dataSource,
-      value = '',
-      onChange = () => {},
-      placeholder = '',
-      size = 'md',
-      onSelect = () => {},
-      ...inputProps
-    } = this.props;
-    return (
-      <AutoCompleteWrapper innerRef={this.inputWrapper}>
-        <Input
-          {...inputProps}
-          size={size}
-          placeholder={placeholder}
-          autoComplete="off" // The attribute specifies whether or not an input field should have autocomplete enabled
-          onChange={this.handleChange}
-          onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => this.handleKeyDown(event)}
-          value={String(this.props.value)}
-          after={(this.props.isLoading || this.props.value) && this.renderAfterIcon()}
-          onBlur={this.handleInputBlur}
-        />
-        {open && dataSource.length > 0 && this.renderMenu()}
-      </AutoCompleteWrapper>
-    );
-  }
 
   renderMenu() {
     const children = this.getFilteredItems(this.props).map((item: DataSourceItem, index: number) => {
@@ -109,7 +78,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
 
   renderComposeMenu = (children: React.ReactNode) => {
     return (
-      <AutoCompleteList customWidth={this.state.menuWidth} innerRef={this.menuContainerRef}>
+      <AutoCompleteList customWidth={this.state.menuWidth} ref={this.menuContainerRef}>
         {children}
       </AutoCompleteList>
     );
@@ -150,7 +119,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
     if (highlightedIndex !== null) {
       const items = this.getFilteredItems(this.props);
       const item = items[highlightedIndex!];
-      selectCallback = () => this.props.onSelect!(transformedItem(item));
+      selectCallback = () => this.props.onSelectItem!(transformedItem(item));
     }
     this.setState(
       {
@@ -172,7 +141,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
         highlightedIndex: null,
       },
       () => {
-        this.props.onSelect!(transformedItem(item));
+        this.props.onSelectItem!(transformedItem(item));
       }
     );
   };
@@ -207,12 +176,8 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
 
       case KEY_UP:
         if (!items.length) return;
-
-        // @ts-ignore
         index = highlightedIndex === null ? items.length : highlightedIndex;
         index = (index! - 1 + items.length) % items.length;
-
-        // @ts-ignore
         if (index !== items.length) {
           this.setState(
             {
@@ -243,7 +208,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
               highlightedIndex: null,
             },
             () => {
-              this.props.onSelect!(transformedItem(item));
+              this.props.onSelectItem!(transformedItem(item));
             }
           );
         }
@@ -295,5 +260,34 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
   private focusItem() {
     if (this.menuContainerRef.current)
       this.menuContainerRef.current.scrollTop = getOffsetScrollTop(this.menuContainerRef);
+  }
+
+  render() {
+    const open = this.isOpen();
+    const {
+      dataSource,
+      value = '',
+      onChange = () => {},
+      placeholder = '',
+      size = 'md',
+      onSelectItem = () => {},
+      ...inputProps
+    } = this.props;
+    return (
+      <AutoCompleteWrapper ref={this.inputWrapper}>
+        <Input
+          {...inputProps}
+          size={size}
+          placeholder={placeholder}
+          autoComplete="off" // The attribute specifies whether or not an input field should have autocomplete enabled
+          onChange={this.handleChange}
+          onKeyDown={(event: React.KeyboardEvent<HTMLInputElement>) => this.handleKeyDown(event)}
+          value={String(this.props.value)}
+          after={(this.props.isLoading || this.props.value) && this.renderAfterIcon()}
+          onBlur={this.handleInputBlur}
+        />
+        {open && dataSource.length > 0 && this.renderMenu()}
+      </AutoCompleteWrapper>
+    );
   }
 }

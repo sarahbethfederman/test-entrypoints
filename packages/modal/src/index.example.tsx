@@ -42,7 +42,7 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(1)}>
           Open the first modal 🐈
         </Button>
-        <Modal show={active && modal === 1 ? true : false} size="lg" onHide={this.onHide}>
+        <Modal isVisible={active && modal === 1 ? true : false} size="lg" onHide={this.onHide}>
           <Modal.Content>
             <Body>What is Lorem Ipsum?</Body>
             <br />
@@ -63,7 +63,7 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(2)}>
           Open the smol one 👶🏻
         </Button>
-        <Modal show={active && modal === 2 ? true : false} size="sm" onHide={this.onHide}>
+        <Modal isVisible={active && modal === 2 ? true : false} size="sm" onHide={this.onHide}>
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />
@@ -81,7 +81,7 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(3)}>
           Open the medium one 👨🏻
         </Button>
-        <Modal show={active && modal === 3 ? true : false} size="md" onHide={this.onHide}>
+        <Modal isVisible={active && modal === 3 ? true : false} size="md" onHide={this.onHide}>
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />
@@ -100,7 +100,7 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
           Open the large one 👨🏻‍🦳
         </Button>
         <Modal
-          show={active && modal === 4 ? true : false}
+          isVisible={active && modal === 4 ? true : false}
           size="lg"
           onHide={this.onHide}
           id="testId"
@@ -126,8 +126,8 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(5)}>
           Open with a fixed header 🐴
         </Button>
-        <Modal show={active && modal === 5 ? true : false} fixedHeader size="sm" onHide={this.onHide}>
-          <Modal.Header title="Select your champion" headerSize="sm" />
+        <Modal isVisible={active && modal === 5 ? true : false} isHeaderFixed size="sm" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" size="sm" />
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />
@@ -139,8 +139,8 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(6)}>
           Open with a subtitle too! 🦄
         </Button>
-        <Modal show={active && modal === 6 ? true : false} fixedHeader size="sm" onHide={this.onHide}>
-          <Modal.Header title="Select your champion" headerSize="sm" subtitle="Sub-zero is already taken" />
+        <Modal isVisible={active && modal === 6 ? true : false} isHeaderFixed size="sm" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" size="sm" subtitle="Sub-zero is already taken" />
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />
@@ -152,10 +152,10 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(7)}>
           Open with lots of text 🙈
         </Button>
-        <Modal show={active && modal === 7 ? true : false} fixedHeader size="lg" onHide={this.onHide}>
+        <Modal isVisible={active && modal === 7 ? true : false} isHeaderFixed size="lg" onHide={this.onHide}>
           <Modal.Header
             title="Select your champion but only champions from Mortal Kombat 1. Everyone is unlocked except for the boss characters"
-            headerSize="sm"
+            size="sm"
             subtitle="That means that although Shang Tsung becomes a mainstay character after the original, he's unavailable for selection at this time"
           />
           <Modal.Content>
@@ -169,8 +169,8 @@ class ModalExample extends React.Component<{}, ModalExampleState> {
         <Button variant="primary" onClick={() => this.onShow(8)}>
           Open with all 3 sections 🙈
         </Button>
-        <Modal show={active && modal === 8 ? true : false} fixedHeader size="lg" onHide={this.onHide}>
-          <Modal.Header title="Select your champion" headerSize="sm" subtitle="Sub-zero is already taken" />
+        <Modal isVisible={active && modal === 8 ? true : false} isHeaderFixed size="lg" onHide={this.onHide}>
+          <Modal.Header title="Select your champion" size="sm" subtitle="Sub-zero is already taken" />
           <Modal.Content>
             <Body>You already started an application on the 150th of May, 3012.</Body>
             <br />

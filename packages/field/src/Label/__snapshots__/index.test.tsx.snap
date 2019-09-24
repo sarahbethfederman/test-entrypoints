@@ -1,16 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Large Label should render LUI "md" Body assistive text component 1`] = `
-.c1 {
+.c0 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #929292;
+  color: rgba(146,146,146,1);
   font-size: calc(1.125 * var(--lendi-ui-size));
   line-height: calc(24 / 18);
   font-family: 'Open Sans',sans-serif;
-}
-
-.c0 {
   font-size: var(--lendi-ui-size);
 }
 
@@ -18,19 +15,87 @@ exports[`Large Label should render LUI "md" Body assistive text component 1`] = 
   color="shade.400"
   size="lg"
 >
-  <styled.p
-    className="c0"
+  <StyledComponent
     color="shade.400"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htoDjs",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+            "
+  ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "Styled(styled.p)",
+        "foldedComponentIds": Array [
+          "sc-bwzfXH",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-htoDjs",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
     size="lg"
   >
     <p
-      className="c0 c1"
+      className="c0"
       color="shade.400"
       size="lg"
     >
       Assistive text
     </p>
-  </styled.p>
+  </StyledComponent>
 </Styled(styled.p)>
 `;
 
@@ -63,27 +128,83 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
   <styled.button
     size="md"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  ",
+              [Function],
+              " ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background-color: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="md"
     >
-      forgot?
-    </button>
+      <button
+        className="c0"
+        size="md"
+      >
+        forgot?
+      </button>
+    </StyledComponent>
   </styled.button>
 </Component>
 `;
 
 exports[`Large Label should render LUI "md" heading component 1`] = `
-.c1 {
+.c0 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: calc(2.3125 * var(--lendi-ui-size));
   font-weight: 400;
   line-height: calc(40 / 37);
   font-family: 'Cabin',sans-serif;
-}
-
-.c0 {
   font-size: calc(1.75 * var(--lendi-ui-size));
   margin-right: var(--lendi-ui-size);
   display: inline-block;
@@ -92,21 +213,91 @@ exports[`Large Label should render LUI "md" heading component 1`] = `
 <Styled(Styled(HeadingTag))
   size="lg"
 >
-  <Styled(HeadingTag)
-    className="c0"
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-gzVnrw",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+            "
+  ",
+            [Function],
+            " display: inline-block;
+",
+          ],
+        },
+        "displayName": "Styled(Styled(HeadingTag))",
+        "foldedComponentIds": Array [
+          "sc-htpNat",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-gzVnrw",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+        Symbol(Symbol.hasInstance): [Function],
+      }
+    }
+    forwardedRef={null}
     size="lg"
   >
     <HeadingTag
-      className="c0 c1"
+      className="c0"
       size="lg"
     >
       <h2
-        className="c0 c1"
+        className="c0"
         size="lg"
       >
         First name
+         (Optional)
       </h2>
     </HeadingTag>
-  </Styled(HeadingTag)>
+  </StyledComponent>
 </Styled(Styled(HeadingTag))>
 `;

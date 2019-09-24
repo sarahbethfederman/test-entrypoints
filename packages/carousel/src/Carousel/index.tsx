@@ -62,7 +62,7 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
 
   React.useEffect(() => setIncrement(getIncrement(increment, getBreakpoint())), [windowWidth]);
 
-  const container = React.useRef<HTMLElement>(null);
+  const container = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
     if (swipe && container.current) setHammer(new Hammer(container.current));
@@ -155,7 +155,7 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
   };
 
   return (
-    <CarouselContainer innerRef={container} width={width} {...luiProps}>
+    <CarouselContainer ref={container} width={width} {...luiProps}>
       <CarouselContext.Provider value={carouselValues}>
         <SlidesContext.Provider value={slidesValues}>
           {hasSlidesIfHasCustomDotsOrArrows &&

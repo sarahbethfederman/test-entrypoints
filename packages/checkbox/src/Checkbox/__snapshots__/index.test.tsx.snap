@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
-.c3 {
-  margin-top: 0;
-  margin-bottom: 0;
+.c2 {
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
+  display: inline-block;
 }
 
 .c0 {
@@ -21,16 +20,12 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   align-items: center;
   border-radius: 6px;
   height: calc(2.875 * var(--lendi-ui-size));
-  border: 1px solid #c8c8c8;
+  border: 1px solid rgba(200,200,200,1);
   cursor: pointer;
 }
 
 .c0:hover {
-  border: 1px solid #929292;
-}
-
-.c2 {
-  display: inline-block;
+  border: 1px solid rgba(146,146,146,1);
 }
 
 .c1 {
@@ -47,14 +42,14 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   box-sizing: border-box;
   margin-left: calc(0.5 * var(--lendi-ui-size));
   margin-right: calc(0.5 * var(--lendi-ui-size));
-  border: 2px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 2px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
   height: calc(2 * var(--lendi-ui-size));
   width: calc(2 * var(--lendi-ui-size));
 }
 
 .c1:hover {
-  border: 2px solid #00c0a5;
+  border: 2px solid rgba(0,192,165,1);
 }
 
 .c1:disabled {
@@ -68,7 +63,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   right: 0;
   margin: auto;
   position: absolute;
-  border: solid #ffffff;
+  border: solid rgba(255,255,255,1);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -90,56 +85,216 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
     isBoxed={true}
     size="md"
   >
-    <label
+    <StyledComponent
       checked={false}
-      className="c0"
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htoDjs",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 100%;
+  display: flex;
+  align-items: center;
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              " ",
+              [Function],
+              ";
+  :hover {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htoDjs",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isBoxed={true}
       size="md"
     >
-      <styled.input
+      <label
         checked={false}
+        className="c0"
         disabled={false}
-        inputSize="md"
-        onChange={[Function]}
-        type="checkbox"
-        value="1"
+        size="md"
       >
-        <input
+        <styled.input
           checked={false}
-          className="c1"
           disabled={false}
+          inputSize="md"
           onChange={[Function]}
           type="checkbox"
           value="1"
-        />
-      </styled.input>
-      <Styled(styled.p)
-        size="md"
-      >
+        >
+          <StyledComponent
+            checked={false}
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  appearance: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  ",
+                    "
+    margin-left: ",
+                    "calc(0.5 * var(--lendi-ui-size))",
+                    ";
+    margin-right: ",
+                    "calc(0.5 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    "
+  ",
+                    [Function],
+                    "}
+  ",
+                    [Function],
+                    "
+  :hover {
+    ",
+                    [Function],
+                    ";
+  }
+  :focus {
+    ",
+                    [Function],
+                    "
+  }
+  :disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  :checked::after {
+    content: '';
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border: solid ",
+                    [Function],
+                    ";
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inputSize="md"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          >
+            <input
+              checked={false}
+              className="c1"
+              disabled={false}
+              onChange={[Function]}
+              type="checkbox"
+              value="1"
+            />
+          </StyledComponent>
+        </styled.input>
         <styled.p
-          className="c2"
           size="md"
         >
-          <p
-            className="c2 c3"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+  display: inline-block;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="md"
           >
-            LUI single Checkbox
-          </p>
+            <p
+              className="c2"
+              size="md"
+            >
+              LUI single Checkbox
+            </p>
+          </StyledComponent>
         </styled.p>
-      </Styled(styled.p)>
-    </label>
+      </label>
+    </StyledComponent>
   </styled.label>
 </Component>
 `;
 
 exports[`Checkbox should render whole component 1`] = `
-.c3 {
-  margin-top: 0;
-  margin-bottom: 0;
+.c2 {
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
+  display: inline-block;
 }
 
 .c0 {
@@ -157,10 +312,6 @@ exports[`Checkbox should render whole component 1`] = `
   cursor: pointer;
 }
 
-.c2 {
-  display: inline-block;
-}
-
 .c1 {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -175,14 +326,14 @@ exports[`Checkbox should render whole component 1`] = `
   box-sizing: border-box;
   margin-left: calc(0.5 * var(--lendi-ui-size));
   margin-right: calc(0.5 * var(--lendi-ui-size));
-  border: 2px solid #c8c8c8;
-  background-color: #ffffff;
+  border: 2px solid rgba(200,200,200,1);
+  background-color: rgba(255,255,255,1);
   height: calc(2 * var(--lendi-ui-size));
   width: calc(2 * var(--lendi-ui-size));
 }
 
 .c1:hover {
-  border: 2px solid #00c0a5;
+  border: 2px solid rgba(0,192,165,1);
 }
 
 .c1:disabled {
@@ -196,7 +347,7 @@ exports[`Checkbox should render whole component 1`] = `
   right: 0;
   margin: auto;
   position: absolute;
-  border: solid #ffffff;
+  border: solid rgba(255,255,255,1);
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -217,45 +368,206 @@ exports[`Checkbox should render whole component 1`] = `
     isBoxed={false}
     size="md"
   >
-    <label
+    <StyledComponent
       checked={false}
-      className="c0"
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htoDjs",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 100%;
+  display: flex;
+  align-items: center;
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              " ",
+              [Function],
+              ";
+  :hover {
+    ",
+              [Function],
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.label",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htoDjs",
+          "target": "label",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isBoxed={false}
       size="md"
     >
-      <styled.input
+      <label
         checked={false}
+        className="c0"
         disabled={false}
-        inputSize="md"
-        onChange={[Function]}
-        type="checkbox"
-        value="1"
+        size="md"
       >
-        <input
+        <styled.input
           checked={false}
-          className="c1"
           disabled={false}
+          inputSize="md"
           onChange={[Function]}
           type="checkbox"
           value="1"
-        />
-      </styled.input>
-      <Styled(styled.p)
-        size="md"
-      >
+        >
+          <StyledComponent
+            checked={false}
+            disabled={false}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  appearance: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  ",
+                    "
+    margin-left: ",
+                    "calc(0.5 * var(--lendi-ui-size))",
+                    ";
+    margin-right: ",
+                    "calc(0.5 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    "
+  ",
+                    [Function],
+                    "}
+  ",
+                    [Function],
+                    "
+  :hover {
+    ",
+                    [Function],
+                    ";
+  }
+  :focus {
+    ",
+                    [Function],
+                    "
+  }
+  :disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  :checked::after {
+    content: '';
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    border: solid ",
+                    [Function],
+                    ";
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "styled.input",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "input",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            inputSize="md"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          >
+            <input
+              checked={false}
+              className="c1"
+              disabled={false}
+              onChange={[Function]}
+              type="checkbox"
+              value="1"
+            />
+          </StyledComponent>
+        </styled.input>
         <styled.p
-          className="c2"
           size="md"
         >
-          <p
-            className="c2 c3"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+  display: inline-block;
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="md"
           >
-            LUI single Checkbox
-          </p>
+            <p
+              className="c2"
+              size="md"
+            >
+              LUI single Checkbox
+            </p>
+          </StyledComponent>
         </styled.p>
-      </Styled(styled.p)>
-    </label>
+      </label>
+    </StyledComponent>
   </styled.label>
 </Component>
 `;

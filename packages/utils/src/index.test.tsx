@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { display, getDataProps } from '.';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 
@@ -9,7 +9,7 @@ describe('display()', () => {
     const Component = styled.div`
       ${display('inline-flex')};
     `;
-    const element = shallow(<Component />);
+    const element = mount(<Component />);
     expect(element).toHaveStyleRule('display', 'inline-flex');
   });
 
@@ -17,7 +17,7 @@ describe('display()', () => {
     const Component = styled.div`
       ${display({ mobile: 'inline-flex', tablet: 'block', desktop: 'none' })};
     `;
-    const element = shallow(<Component />);
+    const element = mount(<Component />);
     expect(element).toHaveStyleRule('display', 'inline-flex', {
       media: `(min-width:${Breakpoint.mobile})`,
     });
@@ -33,7 +33,7 @@ describe('display()', () => {
     const Component = styled.div`
       ${display({ mobile: 'inline-flex', desktop: 'none' })};
     `;
-    const element = shallow(<Component />);
+    const element = mount(<Component />);
     expect(element).not.toHaveStyleRule('display', 'undefined');
     expect(element).not.toHaveStyleRule('display', 'undefined', {
       media: `(min-width:${Breakpoint.tablet})`,

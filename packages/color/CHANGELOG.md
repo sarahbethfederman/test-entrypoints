@@ -1,3 +1,9 @@
+## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated
+- Update typescript to version 3.5.2 and react to version 16.8.4
+- Uses Theme v7 and defined Color type.
+- Add transparency as a new optional functionality for color(), fg() and bg().
+
 ## [3.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
 ### Changed
 - Module format reverted back to CJS.

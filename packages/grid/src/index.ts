@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 export * from './grid';
 export * from './unit';
-import { grid } from './grid';
-import { unit } from './unit';
+import { grid, GridOptions } from './grid';
+import { unit, UnitOptions } from './unit';
 
-const Unit = styled.div`
+const Unit = styled.div<UnitOptions>`
   ${unit};
 `;
 
-const Grid = styled.div`
+const Grid = styled.div<GridOptions>`
   ${grid};
 `;
 

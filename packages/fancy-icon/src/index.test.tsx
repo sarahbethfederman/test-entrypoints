@@ -16,13 +16,17 @@ describe('Icon component', () => {
   Object.keys(FancyIcon).map((component) => {
     describe(component, () => {
       it('should fetch icon correctly', () => {
-        const Component: React.SFC<FancyIconProps> = (FancyIcon as any)[component] as React.SFC<FancyIconProps>;
+        const Component: React.FunctionComponent<FancyIconProps> = (FancyIcon as any)[
+          component
+        ] as React.FunctionComponent<FancyIconProps>;
         const element = render({ Component });
         expect(element.find(Component)).toMatchSnapshot();
       });
 
       it('should accept a className', () => {
-        const Component: React.SFC<FancyIconProps> = (FancyIcon as any)[component] as React.SFC<FancyIconProps>;
+        const Component: React.FunctionComponent<FancyIconProps> = (FancyIcon as any)[
+          component
+        ] as React.FunctionComponent<FancyIconProps>;
         const wrapper = render({ Component, className: 'some-class' });
         expect(wrapper.find(Component).hasClass('some-class')).toBe(true);
       });

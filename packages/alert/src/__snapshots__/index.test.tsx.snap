@@ -1,22 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Alert should mount Alert component with heading 1`] = `
-.c7 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-}
-
-.c5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(0.875 * var(--lendi-ui-size));
-  line-height: calc(20 / 14);
-  font-family: 'Open Sans',sans-serif;
-}
-
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -41,9 +25,9 @@ exports[`Alert should mount Alert component with heading 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid #ff1c4a;
-  color: #ff1c4a;
-  background-color: #fff3f5;
+  border: 1px solid rgba(255,28,74,1);
+  color: rgba(255,28,74,1);
+  background-color: rgba(255,243,245,1);
 }
 
 .c1 {
@@ -65,10 +49,16 @@ exports[`Alert should mount Alert component with heading 1`] = `
 }
 
 .c4 {
+  font-size: calc(0.875 * var(--lendi-ui-size));
+  line-height: calc(20 / 14);
+  font-family: 'Open Sans',sans-serif;
   margin-left: calc(0.75 * var(--lendi-ui-size));
 }
 
-.c6 {
+.c5 {
+  font-size: calc(0.75 * var(--lendi-ui-size));
+  line-height: calc(16 / 12);
+  font-family: 'Open Sans',sans-serif;
   margin-top: calc(0.25 * var(--lendi-ui-size));
 }
 
@@ -80,7 +70,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
 }
 
 .c3 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -93,95 +83,309 @@ exports[`Alert should mount Alert component with heading 1`] = `
     variant="error"
     withHeading={true}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gzVnrw",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+    ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+    display: flex;
+    align-items: flex-start;
+    border-radius: ",
+              [Function],
+              ";
+    ",
+              "
+    padding: ",
+              "var(--lendi-ui-size)",
+              ";
+  ",
+              "
+    ",
+              [Function],
+              "
+    ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gzVnrw",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      variant="error"
+      withHeading={true}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          <styled.span>
-            <span
-              className="c2"
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
             >
-              <ErrorOutline
-                color="error.500"
-              >
-                <styled.span
-                  color="error.500"
+              <styled.span>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-dnqmqq",
+                        "isStatic": true,
+                        "lastClassName": "c2",
+                        "rules": Array [
+                          "
+  line-height: 0;
+",
+                        ],
+                      },
+                      "displayName": "styled.span",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-dnqmqq",
+                      "target": "span",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
                 >
                   <span
-                    className="c3"
-                    color="error.500"
+                    className="c2"
                   >
-                    <svg
-                      height="1em"
-                      viewBox="0 0 24 24"
-                      width="1em"
+                    <ErrorOutline
+                      color="error.500"
                     >
-                      <path
-                        d="M0 0h24v24H0V0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      />
-                    </svg>
+                      <styled.span
+                        color="error.500"
+                      >
+                        <StyledComponent
+                          color="error.500"
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-gqjmRU",
+                                "isStatic": false,
+                                "lastClassName": "c3",
+                                "rules": Array [
+                                  "
+  width: ",
+                                  [Function],
+                                  ";
+  height: ",
+                                  [Function],
+                                  ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                                  [Function],
+                                  ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.span",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-gqjmRU",
+                              "target": "span",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                        >
+                          <span
+                            className="c3"
+                            color="error.500"
+                          >
+                            <svg
+                              height="1em"
+                              viewBox="0 0 24 24"
+                              width="1em"
+                            >
+                              <path
+                                d="M0 0h24v24H0V0z"
+                                fill="none"
+                              />
+                              <path
+                                d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                              />
+                            </svg>
+                          </span>
+                        </StyledComponent>
+                      </styled.span>
+                    </ErrorOutline>
                   </span>
-                </styled.span>
-              </ErrorOutline>
-            </span>
-          </styled.span>
-          <Styled(styled.p)
-            size="sm"
-          >
-            <styled.p
-              className="c4"
-              size="sm"
-            >
-              <p
-                className="c4 c5"
+                </StyledComponent>
+              </styled.span>
+              <styled.p
                 size="sm"
               >
-                <strong>
-                  Alert label
-                </strong>
-              </p>
-            </styled.p>
-          </Styled(styled.p)>
-        </div>
-      </styled.div>
-      <Styled(styled.p)
-        size="xs"
-        withHeading={true}
-      >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-iwsKbI",
+                        "isStatic": false,
+                        "lastClassName": "c4",
+                        "rules": Array [
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          "
+    margin-left: ",
+                          "calc(0.75 * var(--lendi-ui-size))",
+                          ";
+  ",
+                          ";
+",
+                        ],
+                      },
+                      "displayName": "styled.p",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-iwsKbI",
+                      "target": "p",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  size="sm"
+                >
+                  <p
+                    className="c4"
+                    size="sm"
+                  >
+                    <strong>
+                      Alert label
+                    </strong>
+                  </p>
+                </StyledComponent>
+              </styled.p>
+            </div>
+          </StyledComponent>
+        </styled.div>
         <styled.p
-          className="c6"
           size="xs"
           withHeading={true}
         >
-          <p
-            className="c6 c7"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gZMcBi",
+                  "isStatic": false,
+                  "lastClassName": "c5",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gZMcBi",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="xs"
+            withHeading={true}
           >
-            Error description
-          </p>
+            <p
+              className="c5"
+              size="xs"
+            >
+              Error description
+            </p>
+          </StyledComponent>
         </styled.p>
-      </Styled(styled.p)>
-    </div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </Alert>
 `;
 
 exports[`Alert should mount Alert component without heading 1`] = `
-.c4 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-}
-
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -206,9 +410,9 @@ exports[`Alert should mount Alert component without heading 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  border: 1px solid #ff1c4a;
-  color: #ff1c4a;
-  background-color: #fff3f5;
+  border: 1px solid rgba(255,28,74,1);
+  color: rgba(255,28,74,1);
+  background-color: rgba(255,243,245,1);
 }
 
 .c1 {
@@ -216,6 +420,9 @@ exports[`Alert should mount Alert component without heading 1`] = `
 }
 
 .c3 {
+  font-size: calc(0.75 * var(--lendi-ui-size));
+  line-height: calc(16 / 12);
+  font-family: 'Open Sans',sans-serif;
   margin-left: calc(0.75 * var(--lendi-ui-size));
 }
 
@@ -227,7 +434,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
 }
 
 .c2 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -239,59 +446,218 @@ exports[`Alert should mount Alert component without heading 1`] = `
     variant="error"
     withHeading={false}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gzVnrw",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+    ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+    display: flex;
+    align-items: flex-start;
+    border-radius: ",
+              [Function],
+              ";
+    ",
+              "
+    padding: ",
+              "var(--lendi-ui-size)",
+              ";
+  ",
+              "
+    ",
+              [Function],
+              "
+    ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gzVnrw",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      variant="error"
+      withHeading={false}
     >
-      <styled.span>
-        <span
-          className="c1"
-        >
-          <ErrorOutline
-            color="error.500"
+      <div
+        className="c0"
+      >
+        <styled.span>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": true,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  line-height: 0;
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <styled.span
-              color="error.500"
+            <span
+              className="c1"
             >
-              <span
-                className="c2"
+              <ErrorOutline
                 color="error.500"
               >
-                <svg
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
+                <styled.span
+                  color="error.500"
                 >
-                  <path
-                    d="M0 0h24v24H0V0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                  />
-                </svg>
-              </span>
-            </styled.span>
-          </ErrorOutline>
-        </span>
-      </styled.span>
-      <Styled(styled.p)
-        size="xs"
-        withHeading={false}
-      >
+                  <StyledComponent
+                    color="error.500"
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-gqjmRU",
+                          "isStatic": false,
+                          "lastClassName": "c2",
+                          "rules": Array [
+                            "
+  width: ",
+                            [Function],
+                            ";
+  height: ",
+                            [Function],
+                            ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                            [Function],
+                            ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                          ],
+                        },
+                        "displayName": "styled.span",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-gqjmRU",
+                        "target": "span",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <span
+                      className="c2"
+                      color="error.500"
+                    >
+                      <svg
+                        height="1em"
+                        viewBox="0 0 24 24"
+                        width="1em"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                        />
+                      </svg>
+                    </span>
+                  </StyledComponent>
+                </styled.span>
+              </ErrorOutline>
+            </span>
+          </StyledComponent>
+        </styled.span>
         <styled.p
-          className="c3"
           size="xs"
           withHeading={false}
         >
-          <p
-            className="c3 c4"
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gZMcBi",
+                  "isStatic": false,
+                  "lastClassName": "c3",
+                  "rules": Array [
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gZMcBi",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
             size="xs"
+            withHeading={false}
           >
-            Error description
-          </p>
+            <p
+              className="c3"
+              size="xs"
+            >
+              Error description
+            </p>
+          </StyledComponent>
         </styled.p>
-      </Styled(styled.p)>
-    </div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </Alert>
 `;

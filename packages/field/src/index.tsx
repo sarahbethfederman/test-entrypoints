@@ -9,7 +9,7 @@ import { LUIGlobalProps } from '@lendi-ui/utils';
 export interface FieldProps extends LUIGlobalProps {
   size?: LabelSize;
   label?: string;
-  isOptional?: boolean;
+  isRequired?: boolean;
   assistiveText?: string;
   link?: React.ReactElement<LinkProps>;
   tooltip?: React.ReactNode; // replace with ToolTip later when LUI Input added to LUI
@@ -22,7 +22,7 @@ export interface FieldProps extends LUIGlobalProps {
 const Field = ({
   size = 'sm',
   label,
-  isOptional = false,
+  isRequired = true,
   assistiveText,
   link,
   tooltip,
@@ -32,7 +32,7 @@ const Field = ({
   htmlFor,
   ...otherProps
 }: FieldProps) => {
-  const labelPropExists = label || isOptional || assistiveText || link || tooltip;
+  const hasCustomLabelProps = label || !isRequired || assistiveText || link || tooltip;
   if (!htmlFor || htmlFor === '') {
     htmlFor = cuid();
   }
@@ -43,10 +43,9 @@ const Field = ({
     : '';
   return (
     <FieldWrapper {...otherProps}>
-      {labelPropExists && (
+      {hasCustomLabelProps && (
         <LabelField htmlFor={htmlFor}>
-          <Label size={size} label={label} isOptional={isOptional} assistiveText={assistiveText} link={link} />
-          {/* replace with ToolTip later when LUI Input added to LUI */}
+          <Label size={size} label={label} isRequired={isRequired} assistiveText={assistiveText} link={link} />
           {tooltip && <ToolTip size={size} color="secondary.600" />}
         </LabelField>
       )}

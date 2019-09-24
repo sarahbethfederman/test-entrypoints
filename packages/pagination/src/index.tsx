@@ -5,8 +5,7 @@ export interface PaginationProps extends LUIGlobalProps {
   currentPage?: number;
   totalPages: number;
   visiblePages?: number;
-  handleChange: (nextPage: number) => void;
-  handleClick: (pageLabel: number) => void;
+  onChangePage: (nextPage: number) => void;
 }
 
 const pageRange = (totalPages: number, visiblePages: number, currentPage: number) => {
@@ -43,8 +42,7 @@ const Pagination = ({
   totalPages,
   visiblePages = 7,
   currentPage = 1,
-  handleChange,
-  handleClick,
+  onChangePage,
   ...otherProps
 }: PaginationProps) => {
   const MAX_PAGE = totalPages;
@@ -62,7 +60,7 @@ const Pagination = ({
         variant="secondary"
         isDisabled={currentPage === 1}
         ariaLabel="chevronLeft"
-        onClick={() => handleChange(currentPage - 1)}
+        onClick={() => onChangePage(currentPage - 1)}
       >
         <ChevronLeftIcon color="primary.500" />
       </IconButtonWrapper>
@@ -70,7 +68,7 @@ const Pagination = ({
         <ButtonWrapper
           key={page}
           variant={page === currentPage ? 'primary' : 'secondary'}
-          onClick={() => handleClick(page)}
+          onClick={() => onChangePage(page)}
         >
           {page}
         </ButtonWrapper>
@@ -79,7 +77,7 @@ const Pagination = ({
         variant="secondary"
         isDisabled={currentPage === totalPages}
         ariaLabel="chevronRight"
-        onClick={() => handleChange(currentPage + 1)}
+        onClick={() => onChangePage(currentPage + 1)}
       >
         <ChevronRightIcon color="primary.500" />
       </IconButtonWrapper>

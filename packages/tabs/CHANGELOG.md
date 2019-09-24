@@ -1,3 +1,11 @@
+## [4.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated
+- Update typescript to version 3.5.2 and react to version 16.8.4
+### Changed
+Prop `onChangeTab` to `onChangeTabIndex`
+Prop `activeTab` to `activeTabIndex`
+Changed the tabs to be zero-indexed.
+
 ## [3.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed
 - Updated utils dependency to get correct types

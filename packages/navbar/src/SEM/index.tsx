@@ -74,7 +74,7 @@ export class SEMNavbar extends React.Component<SEMNavbarProps, SEMNavbarState> {
     return (
       <nav>
         <SEMOverlay
-          show={isOpenNavigationPanel}
+          isVisible={isOpenNavigationPanel}
           zIndex={5}
           onHide={() => this.setState({ isOpenNavigationPanel: false })}
         />

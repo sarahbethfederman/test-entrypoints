@@ -138,7 +138,7 @@ export class Overview extends React.Component<OverviewProps> {
           )}
         </Section>
 
-        <Modal show={this.state.active} size="lg" onHide={this.onHide}>
+        <Modal isVisible={this.state.active} size="lg" onHide={this.onHide}>
           <Modal.Content>
             <Changelog dangerouslySetInnerHTML={{ __html: CHANGELOG }} />
           </Modal.Content>

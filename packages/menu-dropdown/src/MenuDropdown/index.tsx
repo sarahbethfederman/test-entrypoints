@@ -1,5 +1,4 @@
 import * as React from 'react';
-import createRef from 'react-create-ref';
 
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
@@ -25,7 +24,7 @@ export default class MenuDropdown extends React.Component<MenuDropDownProps, Dro
   static Content = MenuDropdownContent;
   static Trigger = MenuDropdownTrigger;
 
-  private node: React.RefObject<HTMLElement> = createRef();
+  private node: React.RefObject<HTMLDivElement> = React.createRef();
 
   state = {
     showDropdown: false,
@@ -64,7 +63,7 @@ export default class MenuDropdown extends React.Component<MenuDropDownProps, Dro
     const { children, ...otherProps } = this.props;
     const { showDropdown } = this.state;
     return (
-      <Wrapper innerRef={this.node} {...otherProps}>
+      <Wrapper ref={this.node} {...otherProps}>
         <TopItemContainer>{getChildrenOf(MenuDropdownTrigger, children)}</TopItemContainer>
         <ItemContainer displayDropdown={showDropdown}>{getChildrenOf(MenuDropdownContent, children)}</ItemContainer>
       </Wrapper>

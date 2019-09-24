@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
+import { Breakpoint } from '@lendi-ui/breakpoint';
 import Modal, { ModalProps } from './index';
 import { widthBySize, ModalSize } from './index.style';
-import { Breakpoint } from '@lendi-ui/breakpoint';
 
 let element;
 let modalContainer;
@@ -31,7 +31,7 @@ describe('Modal', () => {
       const headerText = 'modal header';
       element = mount(
         <Theme>
-          <Modal show={true} onHide={onHide}>
+          <Modal isVisible={true} onHide={onHide}>
             <Modal.Header title={headerText} />
           </Modal>
         </Theme>
@@ -43,7 +43,7 @@ describe('Modal', () => {
     it('should contain content on modal if it exists', () => {
       element = mount(
         <Theme>
-          <Modal show={true} onHide={onHide}>
+          <Modal isVisible={true} onHide={onHide}>
             <Modal.Content>
               <Content />
             </Modal.Content>
@@ -57,7 +57,7 @@ describe('Modal', () => {
     it('should contain footer on modal if it exsits', () => {
       element = mount(
         <Theme>
-          <Modal show={true} onHide={onHide}>
+          <Modal isVisible={true} onHide={onHide}>
             <Modal.Footer>
               <Footer />
             </Modal.Footer>
@@ -72,7 +72,7 @@ describe('Modal', () => {
   describe('size', () => {
     sizes.forEach((size) => {
       it(`should render with full width no matter what "${size}" is on mobile`, () => {
-        render({ show: true, onHide, size });
+        render({ isVisible: true, onHide, size });
         modalContainer = element.find('.modal-container');
         expect(modalContainer).toHaveStyleRule('width', '100%');
         expect(modalContainer).toMatchSnapshot();
@@ -81,7 +81,7 @@ describe('Modal', () => {
 
     sizes.forEach((size) => {
       it(`should render "${size}" size styles on tablet and desktop`, () => {
-        render({ show: true, onHide, size });
+        render({ isVisible: true, onHide, size });
         modalContainer = element.find('.modal-container');
         expect(modalContainer).toHaveStyleRule('width', widthBySize[size], {
           media: `(min-width:${Breakpoint.tablet})`,
@@ -91,7 +91,7 @@ describe('Modal', () => {
     });
 
     it(`should render 'md' as default if there are no size value on tablet and desktop`, () => {
-      render({ show: true, onHide });
+      render({ isVisible: true, onHide });
       modalContainer = element.find('.modal-container');
       expect(modalContainer).toHaveStyleRule('width', widthBySize.md, {
         media: `(min-width:${Breakpoint.tablet})`,
@@ -102,7 +102,7 @@ describe('Modal', () => {
 
   describe('onHide function', () => {
     it('should call onHide when the modal is visible and ESC is pressed', () => {
-      render({ show: true, onHide });
+      render({ isVisible: true, onHide });
       window.dispatchEvent(
         new KeyboardEvent('keydown', {
           key: 'Escape',
@@ -112,7 +112,7 @@ describe('Modal', () => {
     });
 
     it('should not call onHide when the modal is hidden and ESC is pressed', () => {
-      render({ show: false, onHide });
+      render({ isVisible: false, onHide });
       window.dispatchEvent(
         new KeyboardEvent('keydown', {
           key: 'Escape',
@@ -122,7 +122,7 @@ describe('Modal', () => {
     });
 
     it('should not call onHide when the modal is visible and any other key is pressed', () => {
-      render({ show: true, onHide });
+      render({ isVisible: true, onHide });
       window.dispatchEvent(
         new KeyboardEvent('keydown', {
           key: 'ArrowUp',
@@ -132,7 +132,7 @@ describe('Modal', () => {
     });
 
     it('should not call onHide when the modal is hidden and any other key is pressed', () => {
-      render({ show: false, onHide });
+      render({ isVisible: false, onHide });
       window.dispatchEvent(
         new KeyboardEvent('keydown', {
           key: 'ArrowUp',
@@ -147,7 +147,7 @@ describe('Modal', () => {
       const ARIA_LABEL = 'testLabel';
       const ARIA_DESCRIBE_BY = 'info';
       render({
-        show: true,
+        isVisible: true,
         onHide,
         'aria-label': ARIA_LABEL,
         'aria-describedby': ARIA_DESCRIBE_BY,
@@ -160,7 +160,7 @@ describe('Modal', () => {
     it('should mount with native props like id, tabIndex', () => {
       const TEXT_ID = 'testId';
       render({
-        show: true,
+        isVisible: true,
         onHide,
         id: TEXT_ID,
         tabIndex: 1,

@@ -10,7 +10,7 @@ describe('Overlay', () => {
     const onHide = jest.fn();
     mount(
       <Theme>
-        <Overlay show={true} onHide={onHide} />
+        <Overlay isVisible={true} onHide={onHide} />
       </Theme>
     );
     window.dispatchEvent(
@@ -25,7 +25,7 @@ describe('Overlay', () => {
     const onHide = jest.fn();
     mount(
       <Theme>
-        <Overlay show={false} onHide={onHide} />
+        <Overlay isVisible={false} onHide={onHide} />
       </Theme>
     );
     window.dispatchEvent(
@@ -40,7 +40,7 @@ describe('Overlay', () => {
     const onHide = jest.fn();
     mount(
       <Theme>
-        <Overlay show={true} onHide={onHide} />
+        <Overlay isVisible={true} onHide={onHide} />
       </Theme>
     );
     window.dispatchEvent(
@@ -55,7 +55,7 @@ describe('Overlay', () => {
     const onHide = jest.fn();
     mount(
       <Theme>
-        <Overlay show={false} onHide={onHide} />
+        <Overlay isVisible={false} onHide={onHide} />
       </Theme>
     );
     window.dispatchEvent(
@@ -70,7 +70,7 @@ describe('Overlay', () => {
     const onHide = jest.fn();
     const element = mount(
       <Theme>
-        <Overlay show={true} onHide={onHide} />
+        <Overlay isVisible={true} onHide={onHide} />
       </Theme>
     );
     element.find(Wrapper).simulate('click');
@@ -83,7 +83,7 @@ describe('Overlay: test native props and Standard HTML Attributes', () => {
   beforeEach(() => {
     element = mount(
       <Theme>
-        <Overlay show={true} aria-label="testLabel" aria-describedby="info" id="testId" title="testTitle" />
+        <Overlay isVisible={true} aria-label="testLabel" aria-describedby="info" id="testId" title="testTitle" />
       </Theme>
     );
     attributes = element.find(Overlay).props();

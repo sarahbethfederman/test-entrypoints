@@ -84,10 +84,10 @@ describe('Left side bar - click event', () => {
   });
 
   it('should call AnalyticsContext fn', () => {
-    expect(wrapper.find(OldMenuButton)).toHaveLength(2);
+    expect(wrapper.find(OldMenuButton)).toHaveLength(1);
     wrapper
       .find(OldMenuButton)
-      .at(1)
+      .at(0)
       .simulate('click');
     wrapper.update();
 

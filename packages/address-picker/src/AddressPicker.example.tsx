@@ -11,7 +11,7 @@ export default class AddressPickerExample extends React.Component {
       <>
         <AddressPicker
           onChange={() => undefined}
-          onSelect={(address, formatString) => {
+          onSelectAddress={(address, formatString) => {
             this.setState({ address, formatString });
           }}
           showMap

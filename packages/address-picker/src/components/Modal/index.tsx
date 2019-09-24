@@ -142,7 +142,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
     } = this.state.address;
 
     return (
-      <Modal show={!!show} size="lg" onHide={onHide}>
+      <Modal isVisible={!!show} size="lg" onHide={onHide}>
         <Modal.Header title="Enter address" />
         <Modal.Content>
           <Grid>
@@ -204,12 +204,12 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
               <Label>Street type</Label>
               <AutoComplete
                 size="sm"
-                value={streetType}
+                initialValue={streetType}
                 dataSource={STREET_TYPE}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   this.handleInputOnChange('Street type', e);
                 }}
-                onSelect={this.handleOnSelect}
+                onSelectItem={this.handleOnSelect}
                 isFullWidth={true}
               />
             </UnitWrapper>

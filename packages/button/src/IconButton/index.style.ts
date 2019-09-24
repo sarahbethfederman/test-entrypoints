@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
-// import { fg, bg, color } from '@lendi-ui/color';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { color } from '@lendi-ui/color';
@@ -13,7 +12,7 @@ export interface WrapperProps {
   disabled?: boolean;
 }
 
-const commonStyle = css`
+const commonStyle = css<WrapperProps>`
   ${normalise};
   cursor: pointer;
   border: none;
@@ -33,7 +32,7 @@ const commonStyle = css`
     background: inherit; /* IE11 fallback */
     background: rgba(74, 74, 74, 0.2);
   }
-  ${({ size }: WrapperProps) => {
+  ${({ size }) => {
     switch (size) {
       case 'xs':
         return css`
@@ -77,12 +76,12 @@ const commonStyle = css`
       : undefined}
 `;
 
-export const IconButtonWrapper = styled.button`
+export const IconButtonWrapper = styled.button<WrapperProps>`
   ${commonStyle};
   background: inherit;
 `;
 
-export const LinkWrapper = styled(IconButtonWrapper.withComponent('a'))`
+export const LinkWrapper = styled(IconButtonWrapper.withComponent('a'))<WrapperProps>`
   ${commonStyle};
   text-decoration: none;
 `;

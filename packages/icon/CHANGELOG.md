@@ -1,3 +1,8 @@
+## [9.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Changed
+- Uses Theme v7
+- Update typescript to version 3.5.2 and react to version 16.8.4 [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+
 ## [8.2.0] - 2019-07-16 - [HUB-330](https://creditandfinance.atlassian.net/browse/HUB-330)
 ### Changed
 - Change icon default color to 'currentColor'

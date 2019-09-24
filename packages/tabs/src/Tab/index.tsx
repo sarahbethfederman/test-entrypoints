@@ -9,7 +9,7 @@ export interface TabProps {
   href?: string;
 }
 
-export const Tab: React.SFC<TabProps> = ({ icon = '', index = 0, children, href }) => {
+export const Tab: React.FunctionComponent<TabProps> = ({ icon = '', index = 0, children, href }) => {
   const TabWrapper = href ? TabWrapperA : TabWrapperBtn;
   return (
     <TabContext.Consumer>

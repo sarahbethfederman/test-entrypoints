@@ -1,3 +1,6 @@
+## [3.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
 
 ## [2.7.0] - 2019-06-19 - [HUB-215](https://creditandfinance.atlassian.net/browse/HUB-215)
 ### Added
@@ -23,7 +26,7 @@
 ### Changed
 - Add one props `params` to accept query parameters from URL in all links in Footer component
 
-## [2.2.0] - 2019-05-20 - [HUB-110] (https://creditandfinance.atlassian.net/browse/HUB-110)
+## [2.2.0] - 2019-05-20 - [HUB-110](https://creditandfinance.atlassian.net/browse/HUB-110)
 ### Added
 - Lendi Analytics support for Footer
 

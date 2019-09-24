@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
-import Theme from '@lendi-ui/theme';
+import Theme, { theme } from '@lendi-ui/theme';
+import { color } from '@lendi-ui/color';
 import { Lock } from '@lendi-ui/icon';
 import { Button, ButtonSize, ButtonVariant } from '.';
 
@@ -142,12 +143,13 @@ describe('Button', () => {
   describe(`primary`, () => {
     it('should render normal styles', () => {
       render({ variant: 'primary', isInverse: false });
-      expect(button).not.toHaveStyleRule('background-color', '#ffffff');
+
+      expect(button).not.toHaveStyleRule('background-color', color('shade.0')({ theme }));
       expect(button).toMatchSnapshot();
     });
     it('should render inverse styles', () => {
       render({ variant: 'primary', isInverse: true });
-      expect(button).toHaveStyleRule('background-color', '#ffffff');
+      expect(button).toHaveStyleRule('background-color', color('shade.0')({ theme }));
       expect(button).toMatchSnapshot();
     });
     it('should render full width', () => {
@@ -173,12 +175,12 @@ describe('Button', () => {
   describe(`emphasis`, () => {
     it('should render normal styles', () => {
       render({ variant: 'emphasis', isInverse: false });
-      expect(button).not.toHaveStyleRule('background-color', '#ffffff');
+      expect(button).not.toHaveStyleRule('background-color', color('shade.0')({ theme }));
       expect(button).toMatchSnapshot();
     });
     it('should not render inverse styles', () => {
       render({ variant: 'emphasis', isInverse: true });
-      expect(button).not.toHaveStyleRule('background-color', '#ffffff');
+      expect(button).not.toHaveStyleRule('background-color', color('shade.0')({ theme }));
       expect(button).toMatchSnapshot();
     });
     it('should render full width', () => {
@@ -205,12 +207,12 @@ describe('Button', () => {
     describe(`${variant}`, () => {
       it('should render normal styles', () => {
         render({ variant, isInverse: false });
-        expect(button).not.toHaveStyleRule('color', '#ffffff');
+        expect(button).not.toHaveStyleRule('color', color('shade.0')({ theme }));
         expect(button).toMatchSnapshot();
       });
       it('should render inverse styles', () => {
         render({ variant, isInverse: true });
-        expect(button).toHaveStyleRule('color', '#ffffff');
+        expect(button).toHaveStyleRule('color', color('shade.0')({ theme }));
         expect(button).toMatchSnapshot();
       });
     });

@@ -21,7 +21,18 @@ const Square = styled.div`
   ${bg('warn.500')}
 `;
 
-render(<Square/>);
+const TransparentSquare = styled.div`
+  width: 2em;
+  height: 2em;
+  ${bg('warn.500', 0.6)}
+`;
+
+render(
+  <>
+    <Square/>
+    <br />
+    <TransparentSquare />
+  </>);
 ```
 
 With a different color value at each breakpoint:
@@ -33,10 +44,26 @@ const RainbowSquare = styled.div`
   ${bg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'})}
 `;
 
+const TransparentRainbowSquare = styled.div`
+  width: 2em;
+  height: 2em;
+  ${bg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'}, 0.6)}
+`;
+
 render(
   <>
     <RainbowSquare/>
+    <br />
+    <TransparentRainbowSquare />
     Resize the window to see the square change color 👉
   </>
 );
+```
+
+### Note
+
+The <strong>bg</strong> function accept two parameters. The first one is [LUI color](https://lendi.design/packages/color). The second one is transparency value. It should be one of the value below and <strong>default value is 1</strong>:
+
+```
+0 | 0.05 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 0.95 | 1
 ```

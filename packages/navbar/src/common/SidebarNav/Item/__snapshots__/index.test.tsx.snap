@@ -3,7 +3,7 @@
 exports[`Item render a button when there is not a href 1`] = `
 .c1 {
   height: 3rem;
-  color: #00c0a5;
+  color: rgba(0,192,165,1);
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -19,7 +19,7 @@ exports[`Item render a button when there is not a href 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgba(227,227,227,1);
   padding-top: 0;
   padding-bottom: 0;
   border-top: none;
@@ -31,17 +31,17 @@ exports[`Item render a button when there is not a href 1`] = `
 }
 
 .c1:hover {
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c1:hover svg {
-  stroke: #ffffff;
+  stroke: rgba(255,255,255,1);
 }
 
 .c1:active {
-  color: #ffffff;
-  background-color: #009984;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,153,132,1);
 }
 
 .c1:last-type {
@@ -50,7 +50,7 @@ exports[`Item render a button when there is not a href 1`] = `
 
 .c0 {
   height: 3rem;
-  color: #00c0a5;
+  color: rgba(0,192,165,1);
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -66,23 +66,23 @@ exports[`Item render a button when there is not a href 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgba(227,227,227,1);
   padding: 0;
   list-style: none;
 }
 
 .c0:hover {
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:hover svg {
-  stroke: #ffffff;
+  stroke: rgba(255,255,255,1);
 }
 
 .c0:active {
-  color: #ffffff;
-  background-color: #009984;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,153,132,1);
 }
 
 .c0:last-type {
@@ -101,22 +101,238 @@ exports[`Item render a button when there is not a href 1`] = `
   <styled.li
     role="none"
   >
-    <li
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              [Function],
+              " ",
+              "
+    padding-left: ",
+              "calc(1.5 * var(--lendi-ui-size))",
+              ";
+    padding-right: ",
+              "calc(1.5 * var(--lendi-ui-size))",
+              ";
+  ",
+              "
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid ",
+              [Function],
+              ";
+
+  :hover {
+    ",
+              "
+          color: ",
+              [Function],
+              ";
+        ",
+              " ",
+              "
+          background-color: ",
+              [Function],
+              ";
+        ",
+              ";
+
+    svg {
+      stroke: ",
+              [Function],
+              ";
+    }
+  }
+
+  :active {
+    ",
+              "
+          color: ",
+              [Function],
+              ";
+        ",
+              " ",
+              "
+          background-color: ",
+              [Function],
+              ";
+        ",
+              ";
+  }
+
+  :last-type {
+    border-bottom: none;
+  }
+",
+              ";
+  padding: 0;
+  list-style: none;
+
+  > a {
+    border-bottom: 0;
+  }
+
+  > button {
+    border-bottom: 0;
+  }
+",
+            ],
+          },
+          "displayName": "styled.li",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "li",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       role="none"
     >
-      <styled.button
-        depth={0}
-        onClick={[Function]}
+      <li
+        className="c0"
+        role="none"
       >
-        <button
-          className="c1"
+        <styled.button
+          depth={0}
           onClick={[Function]}
         >
-          Foo Bar
-        </button>
-      </styled.button>
-    </li>
+          <StyledComponent
+            depth={0}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    " ",
+                    "
+    padding-left: ",
+                    "calc(1.5 * var(--lendi-ui-size))",
+                    ";
+    padding-right: ",
+                    "calc(1.5 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    "
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid ",
+                    [Function],
+                    ";
+
+  :hover {
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    " ",
+                    "
+          background-color: ",
+                    [Function],
+                    ";
+        ",
+                    ";
+
+    svg {
+      stroke: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  :active {
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    " ",
+                    "
+          background-color: ",
+                    [Function],
+                    ";
+        ",
+                    ";
+  }
+
+  :last-type {
+    border-bottom: none;
+  }
+",
+                    " ",
+                    "
+  ",
+                    "
+    padding-top: ",
+                    "0",
+                    ";
+    padding-bottom: ",
+                    "0",
+                    ";
+  ",
+                    ";
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.button",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "button",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            onClick={[Function]}
+          >
+            <button
+              className="c1"
+              onClick={[Function]}
+            >
+              Foo Bar
+            </button>
+          </StyledComponent>
+        </styled.button>
+      </li>
+    </StyledComponent>
   </styled.li>
 </Item>
 `;
@@ -124,7 +340,7 @@ exports[`Item render a button when there is not a href 1`] = `
 exports[`Item render a link when there is a href 1`] = `
 .c1 {
   height: 3rem;
-  color: #00c0a5;
+  color: rgba(0,192,165,1);
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -140,24 +356,24 @@ exports[`Item render a link when there is a href 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgba(227,227,227,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   width: 100%;
 }
 
 .c1:hover {
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c1:hover svg {
-  stroke: #ffffff;
+  stroke: rgba(255,255,255,1);
 }
 
 .c1:active {
-  color: #ffffff;
-  background-color: #009984;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,153,132,1);
 }
 
 .c1:last-type {
@@ -166,7 +382,7 @@ exports[`Item render a link when there is a href 1`] = `
 
 .c0 {
   height: 3rem;
-  color: #00c0a5;
+  color: rgba(0,192,165,1);
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
@@ -182,23 +398,23 @@ exports[`Item render a link when there is a href 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid rgba(227,227,227,1);
   padding: 0;
   list-style: none;
 }
 
 .c0:hover {
-  color: #ffffff;
-  background-color: #00c0a5;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,192,165,1);
 }
 
 .c0:hover svg {
-  stroke: #ffffff;
+  stroke: rgba(255,255,255,1);
 }
 
 .c0:active {
-  color: #ffffff;
-  background-color: #009984;
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,153,132,1);
 }
 
 .c0:last-type {
@@ -219,26 +435,227 @@ exports[`Item render a link when there is a href 1`] = `
   <styled.li
     role="none"
   >
-    <li
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              [Function],
+              " ",
+              "
+    padding-left: ",
+              "calc(1.5 * var(--lendi-ui-size))",
+              ";
+    padding-right: ",
+              "calc(1.5 * var(--lendi-ui-size))",
+              ";
+  ",
+              "
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid ",
+              [Function],
+              ";
+
+  :hover {
+    ",
+              "
+          color: ",
+              [Function],
+              ";
+        ",
+              " ",
+              "
+          background-color: ",
+              [Function],
+              ";
+        ",
+              ";
+
+    svg {
+      stroke: ",
+              [Function],
+              ";
+    }
+  }
+
+  :active {
+    ",
+              "
+          color: ",
+              [Function],
+              ";
+        ",
+              " ",
+              "
+          background-color: ",
+              [Function],
+              ";
+        ",
+              ";
+  }
+
+  :last-type {
+    border-bottom: none;
+  }
+",
+              ";
+  padding: 0;
+  list-style: none;
+
+  > a {
+    border-bottom: 0;
+  }
+
+  > button {
+    border-bottom: 0;
+  }
+",
+            ],
+          },
+          "displayName": "styled.li",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "li",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       role="none"
     >
-      <styled.a
-        depth={0}
-        href="#foobar"
-        onClick={[Function]}
-        role="menu item"
+      <li
+        className="c0"
+        role="none"
       >
-        <a
-          className="c1"
+        <styled.a
+          depth={0}
           href="#foobar"
           onClick={[Function]}
           role="menu item"
         >
-          Foo Bar
-        </a>
-      </styled.a>
-    </li>
+          <StyledComponent
+            depth={0}
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-gzVnrw",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    " ",
+                    "
+    padding-left: ",
+                    "calc(1.5 * var(--lendi-ui-size))",
+                    ";
+    padding-right: ",
+                    "calc(1.5 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    "
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid ",
+                    [Function],
+                    ";
+
+  :hover {
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    " ",
+                    "
+          background-color: ",
+                    [Function],
+                    ";
+        ",
+                    ";
+
+    svg {
+      stroke: ",
+                    [Function],
+                    ";
+    }
+  }
+
+  :active {
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    " ",
+                    "
+          background-color: ",
+                    [Function],
+                    ";
+        ",
+                    ";
+  }
+
+  :last-type {
+    border-bottom: none;
+  }
+",
+                    ";
+  text-decoration: none;
+  width: 100%;
+",
+                  ],
+                },
+                "displayName": "styled.a",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-gzVnrw",
+                "target": "a",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            href="#foobar"
+            onClick={[Function]}
+            role="menu item"
+          >
+            <a
+              className="c1"
+              href="#foobar"
+              onClick={[Function]}
+              role="menu item"
+            >
+              Foo Bar
+            </a>
+          </StyledComponent>
+        </styled.a>
+      </li>
+    </StyledComponent>
   </styled.li>
 </Item>
 `;

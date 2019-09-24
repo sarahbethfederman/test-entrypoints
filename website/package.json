@@ -1,11 +1,11 @@
 {
   "name": "@lendi-ui/website",
   "private": true,
-  "version": "1.2.2",
+  "version": "2.0.0",
   "dependencies": {
-    "@lendi-ui/fancy-icon": "^1.0.1",
-    "@lendi-ui/icon": "^8.0.1",
-    "@lendi-ui/theme": "^6.1.0",
+    "@lendi-ui/icon": "^9.0.0",
+    "@lendi-ui/fancy-icon": "^2.0.0",
+    "@lendi-ui/theme": "^7.0.0",
     "@mdx-js/tag": "^0.15.0",
     "@sentry/browser": "^5.4.0",
     "@types/marked": "^0.6.5",
@@ -42,7 +42,8 @@
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
     "webpack-serve": "^2.0.2",
-    "workspace-metadata-webpack-plugin": "^1.0.1"
+    "workspace-metadata-webpack-plugin": "^1.0.1",
+    "typescript": "3.5.2"
   },
   "scripts": {
     "start": "webpack-serve",

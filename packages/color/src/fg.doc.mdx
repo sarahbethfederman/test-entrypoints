@@ -19,7 +19,16 @@ const WarningText = styled.span`
   ${fg('warn.500')}
 `;
 
-render(<WarningText>⚠️ Is there something wrong?</WarningText>);
+const TransparentWarningText = styled.span`
+  ${fg('warn.500', 0.6)}
+`;
+
+render(
+  <>
+    <WarningText>⚠️ Is there something wrong?</WarningText>
+    <br />
+    <TransparentWarningText>⚠️ Is there something wrong with transparent text?</TransparentWarningText>
+  </>);
 ```
 
 With a different color value at each breakpoint:
@@ -29,5 +38,22 @@ const RainbowText = styled.span`
   ${fg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'})}
 `;
 
-render(<RainbowText>Resize the window to see the text change color 👉</RainbowText>);
+const TransparentRainbowText = styled.span`
+  ${fg({mobile: 'error.500', tablet: 'success.500', desktop: 'info.500'}, 0.6)}
+`;
+
+render(
+  <>
+    <RainbowText>Resize the window to see the text change color 👉</RainbowText>
+    <br />
+    <TransparentRainbowText>Resize the window to see the transparent text change color 👉</TransparentRainbowText>
+  </>);
+```
+
+### Note
+
+The <strong>fg</strong> function accept two parameters. The first one is [LUI color](https://lendi.design/packages/color). The second one is transparency value. It should be one of the value below and <strong>default value is 1</strong>:
+
+```
+0 | 0.05 | 0.1 | 0.2 | 0.3 | 0.4 | 0.5 | 0.6 | 0.7 | 0.8 | 0.9 | 0.95 | 1
 ```

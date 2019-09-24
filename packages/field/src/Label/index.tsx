@@ -7,14 +7,14 @@ export interface LabelProps {
   label?: string;
   assistiveText?: string;
   link?: React.ReactElement<LinkProps>;
-  isOptional?: boolean;
+  isRequired?: boolean;
 }
 
-const Label = ({ size, label, assistiveText, link, isOptional }: LabelProps) => (
+const Label = ({ size, label, assistiveText, link, isRequired }: LabelProps) => (
   <div>
     <LabelHeading size={size}>
       {label}
-      {isOptional && ' (Optional)'}
+      {!isRequired && ' (Optional)'}
     </LabelHeading>
     {link}
     <AssistiveBody color="shade.400" size={size}>

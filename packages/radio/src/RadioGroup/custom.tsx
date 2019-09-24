@@ -15,7 +15,7 @@ export const CustomRadio = styled(Radio)`
   ${mb('xxs')};
 `;
 
-export const RadioGroupItem: React.SFC<RadioGroupItemProps> = (props) => (
+export const RadioGroupItem: React.FunctionComponent<RadioGroupItemProps> = (props) => (
   <RadioContext.Consumer>
     {(state: RadioGroupContext) => (
       <CustomRadio {...props} {...state} isChecked={state.selectedValue === props.value} />

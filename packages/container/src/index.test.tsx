@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { container } from '.';
 
 describe('container()', () => {
@@ -8,7 +8,7 @@ describe('container()', () => {
     const Component = styled.div`
       ${container()};
     `;
-    const element = shallow(<Component />);
+    const element = mount(<Component />);
     expect(element).toHaveStyleRule('width', '100%');
     expect(element).toHaveStyleRule('max-width', '75rem');
     expect(element).toHaveStyleRule('margin-left', 'auto');

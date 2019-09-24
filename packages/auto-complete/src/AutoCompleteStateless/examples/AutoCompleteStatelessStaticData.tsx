@@ -1,13 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
-
+import { Heading } from '@lendi-ui/typography';
 import { pl } from '@lendi-ui/spacing';
 import { Search } from '@lendi-ui/icon';
-
 import { AutoCompleteStateless } from '..';
-import { DataSourceItem, AutoCompleteValue } from '../../types';
+import { DataSourceItem, AutoCompleteValue } from '../../typings';
 import { getStaticData } from '../../data-source.mock';
-import { Heading } from '@lendi-ui/typography';
 
 const PaddedSearchIcon = styled(Search)`
   ${pl('sm')}
@@ -36,11 +34,11 @@ export default class AutoCompleteStatelessStaticDataExample extends React.Compon
         <Heading size="xs">Basic Example with Static Data</Heading>
         <AutoCompleteStateless
           dataSource={this.state.dataSource}
-          value={this.state.value}
+          value={String(this.state.value)}
           onChange={(e) => {
             this.setState({ value: e.target.value, dataSource: getStaticData(e.target.value) });
           }}
-          onSelect={(item: DataSourceItem) => {
+          onSelectItem={(item: DataSourceItem) => {
             console.log(item);
             this.setState({ value: item.label });
           }}

@@ -27,7 +27,7 @@ exports[`TextBubble should mount 1`] = `
   -moz-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   -ms-letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
   letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
-  color: #929292;
+  color: rgba(146,146,146,1);
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-font-smoothing: antialiased;
@@ -35,13 +35,13 @@ exports[`TextBubble should mount 1`] = `
 }
 
 .c2 {
-  color: #474747;
+  color: rgba(71,71,71,1);
   font-size: var(--lendi-ui-size);
   line-height: calc(24 / 16);
   font-family: 'Open Sans',sans-serif;
   margin-top: calc(0.5 * var(--lendi-ui-size));
   border-radius: 6px;
-  background-color: #e5f8f6;
+  background-color: rgba(229,248,246,1);
   padding: calc(0.75 * var(--lendi-ui-size));
 }
 
@@ -51,22 +51,200 @@ exports[`TextBubble should mount 1`] = `
   <styled.div
     isFullWidth={false}
   >
-    <div
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-gzVnrw",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              " display: inline-block;
+  ",
+              "
+    margin-bottom: ",
+              "calc(0.75 * var(--lendi-ui-size))",
+              ";
+  ",
+              ";
+  ",
+              [Function],
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-gzVnrw",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      isFullWidth={false}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          Test Label
-        </div>
-      </styled.div>
-      <styled.div>
-        <div
-          className="c2"
-        />
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htoDjs",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    display: block;
+    font-family: ",
+                    [Function],
+                    ";
+    text-transform: uppercase;
+    font-weight: 400;
+    ",
+                    "
+        font-size: calc(0.75 * var(--lendi-ui-size));
+        line-height: calc(0.75 * var(--lendi-ui-size));
+        letter-spacing: calc(calc(0.75 * var(--lendi-ui-size))/10);
+      ",
+                    "
+    ",
+                    "
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    "
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  ",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htoDjs",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c1"
+            >
+              Test Label
+            </div>
+          </StyledComponent>
+        </styled.div>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-dnqmqq",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    ",
+                    "
+          color: ",
+                    [Function],
+                    ";
+        ",
+                    "
+    ",
+                    "
+    ",
+                    "
+        font-size: var(--lendi-ui-size);
+        line-height: calc(24 / 16);
+      ",
+                    "
+    font-family: ",
+                    [Function],
+                    ";
+  ",
+                    ";
+  ",
+                    "
+    margin-top: ",
+                    "calc(0.5 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    ";
+  border-radius: ",
+                    [Function],
+                    ";
+  ",
+                    "
+          background-color: ",
+                    [Function],
+                    ";
+        ",
+                    ";
+  ",
+                    "
+    padding: ",
+                    "calc(0.75 * var(--lendi-ui-size))",
+                    ";
+  ",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-dnqmqq",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="c2"
+            />
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
   </styled.div>
 </TextBubble>
 `;

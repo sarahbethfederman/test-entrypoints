@@ -189,7 +189,11 @@ export const InputWrapper = styled.input`
   }
 `;
 
-export const BeforeWrapper = styled.span`
+interface BeforeAfterWrapperProps {
+  isDisabled: boolean;
+}
+
+export const BeforeWrapper = styled.span<BeforeAfterWrapperProps>`
   ${InputButton} {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -198,7 +202,7 @@ export const BeforeWrapper = styled.span`
   padding-right: 1px;
   flex: 1 0 auto;
   line-height: 1px;
-  ${({ isDisabled }: { isDisabled: boolean }) => {
+  ${({ isDisabled }: BeforeAfterWrapperProps) => {
     if (isDisabled) {
       return css`
         pointer-events: none;
@@ -208,7 +212,7 @@ export const BeforeWrapper = styled.span`
   }};
 `;
 
-export const AfterWrapper = styled.span`
+export const AfterWrapper = styled.span<BeforeAfterWrapperProps>`
   ${InputButton} {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -217,7 +221,7 @@ export const AfterWrapper = styled.span`
   padding-left: 1px;
   flex: 1 0 auto;
   line-height: 1px;
-  ${({ isDisabled }: { isDisabled: boolean }) => {
+  ${({ isDisabled }: BeforeAfterWrapperProps) => {
     if (isDisabled) {
       return css`
         pointer-events: none;

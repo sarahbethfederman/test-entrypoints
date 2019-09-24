@@ -5,8 +5,7 @@ import Pagination from './index';
 import { Wrapper, ChevronLeftIcon, ChevronRightIcon, ButtonWrapper, IconButtonWrapper } from './index.style';
 
 let element: any;
-const handleChange = jest.fn();
-const handleClick = jest.fn();
+const onChangePage = jest.fn();
 
 const render = (props: any) => {
   element = mount(
@@ -19,14 +18,14 @@ const render = (props: any) => {
 describe('pagination', () => {
   it('should render the whole Pagination component', () => {
     const currentPage = 1;
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     expect(element.find(Pagination)).toHaveLength(1);
     expect(element.find(Wrapper)).toHaveLength(1);
   });
 
   it('should render ChevronLeftIcon and ChevronRightIcon', () => {
     const currentPage = 1;
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     expect(element.find(IconButtonWrapper)).toHaveLength(2);
     expect(element.find(ChevronLeftIcon)).toHaveLength(1);
     expect(element.find(ChevronRightIcon)).toHaveLength(1);
@@ -34,39 +33,29 @@ describe('pagination', () => {
 
   it('should render ChevronLeftIcon and ChevronRightIcon', () => {
     const currentPage = 1;
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     expect(element.find(ButtonWrapper)).toHaveLength(7);
   });
 
   it('should send console.warn message if currentPage is greater than totalPages', () => {
     const currentPage = 11;
     console.warn = jest.fn();
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     expect(console.warn).toBeCalled();
   });
 
   it('should send console.warn message if currentPage is less than 1', () => {
     const currentPage = 0;
     console.warn = jest.fn();
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     expect(console.warn).toBeCalled();
   });
 
-  it('should call handleChange function when clicking IconButtonWrapper', () => {
+  it('should call onChangePage function when clicking IconButtonWrapper', () => {
     const currentPage = 1;
-    render({ currentPage, handleChange, handleClick });
+    render({ currentPage, onChangePage });
     element.find(IconButtonWrapper).forEach((SingleIconButtonWrapper) => SingleIconButtonWrapper.simulate('click'));
-    expect(handleChange).toBeCalled();
-  });
-
-  it('should call handleChange function when clicking ButtonWrapper', () => {
-    const currentPage = 1;
-    render({ currentPage, handleChange, handleClick });
-    element
-      .find(ButtonWrapper)
-      .at(0)
-      .forEach((SingleButtonWrapper) => SingleButtonWrapper.simulate('click'));
-    expect(handleClick).toBeCalled();
+    expect(onChangePage).toBeCalled();
   });
 
   describe('test native props and Standard HTML Attributes', () => {

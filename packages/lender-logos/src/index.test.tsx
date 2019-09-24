@@ -6,6 +6,7 @@ import LenderLogos, { LenderLogosProps, LenderIDType } from './index';
 let element: ReactWrapper<LenderLogosProps>;
 const lenderLogosID: LenderIDType[] = [
   'adelaide_bank',
+  'amp',
   'anz_bank',
   'australian_first_mortgage',
   'auswide_bank',
@@ -21,9 +22,9 @@ const lenderLogosID: LenderIDType[] = [
   'click_loans',
   'commonwealth_bank',
   'connective_home_loans',
+  'first_mac',
   'gateway_bank',
   'heritage',
-  'hsbc',
   'ing',
   'la_trobe',
   'loanave',
@@ -31,7 +32,9 @@ const lenderLogosID: LenderIDType[] = [
   'me_bank',
   'mkm_capital',
   'my_state_bank',
+  'nab',
   'newcastle_permanent_building_society',
+  'paramount',
   'pepper',
   'pn_bank',
   'resimac',

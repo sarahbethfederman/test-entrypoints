@@ -34,19 +34,12 @@ pipelines:
           artifacts:
             - "**/dist/**"
 
-      - step:
-          name: 📝 Test (react@^16)
-          script:
-            - ./ci/test.sh
-          caches:
-            - node
-
-      - step:
-          name: 📝 Test (react@^15)
-          script:
-            - ./ci/test-react-15.sh
-          caches:
-            - node
+    - step:
+        name: 📝 Test
+        script:
+          - ./ci/test.sh
+        caches:
+          - node
 
     - step:
         name: 🚀 Deploy
@@ -86,19 +79,12 @@ pipelines:
             artifacts:
               - "**/dist/**"
 
-        - step:
-            name: 📝 Test (react@^16)
-            script:
-              - ./ci/test.sh
-            caches:
-              - node
-
-        - step:
-            name: 📝 Test (react@^15)
-            script:
-              - ./ci/test-react-15.sh
-            caches:
-              - node
+      - step:
+          name: 📝 Test 
+          script:
+            - ./ci/test.sh
+          caches:
+            - node
 
       - step:
           name: 🚀 Deploy

@@ -1,3 +1,7 @@
+## [3.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4
+
 ## [2.2.2] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
 ### Changed
 - Update icon imports based on new icon naming.

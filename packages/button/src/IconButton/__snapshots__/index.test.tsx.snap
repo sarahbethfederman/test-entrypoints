@@ -9,7 +9,7 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -58,44 +58,161 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
     disabled={false}
     size="lg"
   >
-    <button
-      className="c0"
+    <StyledComponent
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  cursor: pointer;
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  text-align: center;
+  transition: all 0.1s;
+  background: inherit;
+
+  :focus {
+    background: none;
+  }
+  :hover {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.15);
+  }
+  :active {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.2);
+  }
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="lg"
     >
-      <Lock
-        color="primary.500"
-        height="calc(2 * var(--lendi-ui-size))"
-        width="calc(2 * var(--lendi-ui-size))"
+      <button
+        className="c0"
+        disabled={false}
+        size="lg"
       >
-        <styled.span
+        <Lock
           color="primary.500"
           height="calc(2 * var(--lendi-ui-size))"
           width="calc(2 * var(--lendi-ui-size))"
         >
-          <span
-            className="c1"
+          <styled.span
             color="primary.500"
             height="calc(2 * var(--lendi-ui-size))"
             width="calc(2 * var(--lendi-ui-size))"
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              color="primary.500"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              height="calc(2 * var(--lendi-ui-size))"
+              width="calc(2 * var(--lendi-ui-size))"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Lock>
-    </button>
+              <span
+                className="c1"
+                color="primary.500"
+                height="calc(2 * var(--lendi-ui-size))"
+                width="calc(2 * var(--lendi-ui-size))"
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Lock>
+      </button>
+    </StyledComponent>
   </styled.button>
 </IconButton>
 `;
@@ -109,7 +226,7 @@ exports[`IconButton should render the "md" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -158,44 +275,161 @@ exports[`IconButton should render the "md" size correctly 1`] = `
     disabled={false}
     size="md"
   >
-    <button
-      className="c0"
+    <StyledComponent
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  cursor: pointer;
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  text-align: center;
+  transition: all 0.1s;
+  background: inherit;
+
+  :focus {
+    background: none;
+  }
+  :hover {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.15);
+  }
+  :active {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.2);
+  }
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="md"
     >
-      <Lock
-        color="primary.500"
-        height="calc(1.5 * var(--lendi-ui-size))"
-        width="calc(1.5 * var(--lendi-ui-size))"
+      <button
+        className="c0"
+        disabled={false}
+        size="md"
       >
-        <styled.span
+        <Lock
           color="primary.500"
           height="calc(1.5 * var(--lendi-ui-size))"
           width="calc(1.5 * var(--lendi-ui-size))"
         >
-          <span
-            className="c1"
+          <styled.span
             color="primary.500"
             height="calc(1.5 * var(--lendi-ui-size))"
             width="calc(1.5 * var(--lendi-ui-size))"
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              color="primary.500"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              height="calc(1.5 * var(--lendi-ui-size))"
+              width="calc(1.5 * var(--lendi-ui-size))"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Lock>
-    </button>
+              <span
+                className="c1"
+                color="primary.500"
+                height="calc(1.5 * var(--lendi-ui-size))"
+                width="calc(1.5 * var(--lendi-ui-size))"
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Lock>
+      </button>
+    </StyledComponent>
   </styled.button>
 </IconButton>
 `;
@@ -209,7 +443,7 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -258,44 +492,161 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
     disabled={false}
     size="sm"
   >
-    <button
-      className="c0"
+    <StyledComponent
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  cursor: pointer;
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  text-align: center;
+  transition: all 0.1s;
+  background: inherit;
+
+  :focus {
+    background: none;
+  }
+  :hover {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.15);
+  }
+  :active {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.2);
+  }
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="sm"
     >
-      <Lock
-        color="primary.500"
-        height="calc(1.25 * var(--lendi-ui-size))"
-        width="calc(1.25 * var(--lendi-ui-size))"
+      <button
+        className="c0"
+        disabled={false}
+        size="sm"
       >
-        <styled.span
+        <Lock
           color="primary.500"
           height="calc(1.25 * var(--lendi-ui-size))"
           width="calc(1.25 * var(--lendi-ui-size))"
         >
-          <span
-            className="c1"
+          <styled.span
             color="primary.500"
             height="calc(1.25 * var(--lendi-ui-size))"
             width="calc(1.25 * var(--lendi-ui-size))"
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              color="primary.500"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              height="calc(1.25 * var(--lendi-ui-size))"
+              width="calc(1.25 * var(--lendi-ui-size))"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Lock>
-    </button>
+              <span
+                className="c1"
+                color="primary.500"
+                height="calc(1.25 * var(--lendi-ui-size))"
+                width="calc(1.25 * var(--lendi-ui-size))"
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Lock>
+      </button>
+    </StyledComponent>
   </styled.button>
 </IconButton>
 `;
@@ -309,7 +660,7 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }
@@ -358,44 +709,161 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
     disabled={false}
     size="xs"
   >
-    <button
-      className="c0"
+    <StyledComponent
       disabled={false}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+  cursor: pointer;
+  border: none;
+  border-radius: ",
+              [Function],
+              ";
+  text-align: center;
+  transition: all 0.1s;
+  background: inherit;
+
+  :focus {
+    background: none;
+  }
+  :hover {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.15);
+  }
+  :active {
+    background: inherit; /* IE11 fallback */
+    background: rgba(74, 74, 74, 0.2);
+  }
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="xs"
     >
-      <Lock
-        color="primary.500"
-        height="var(--lendi-ui-size)"
-        width="var(--lendi-ui-size)"
+      <button
+        className="c0"
+        disabled={false}
+        size="xs"
       >
-        <styled.span
+        <Lock
           color="primary.500"
           height="var(--lendi-ui-size)"
           width="var(--lendi-ui-size)"
         >
-          <span
-            className="c1"
+          <styled.span
             color="primary.500"
             height="var(--lendi-ui-size)"
             width="var(--lendi-ui-size)"
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              color="primary.500"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              height="var(--lendi-ui-size)"
+              width="var(--lendi-ui-size)"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </Lock>
-    </button>
+              <span
+                className="c1"
+                color="primary.500"
+                height="var(--lendi-ui-size)"
+                width="var(--lendi-ui-size)"
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </Lock>
+      </button>
+    </StyledComponent>
   </styled.button>
 </IconButton>
 `;

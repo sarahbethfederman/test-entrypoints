@@ -49,7 +49,7 @@ export interface SEMNavigationButtonsState {
 }
 
 export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsProps, SEMNavigationButtonsState> {
-  private displayPanel: React.RefObject<HTMLElement> = createRef();
+  private displayPanel: React.RefObject<HTMLDivElement> = createRef();
   private prevSelected: string = '';
   state = {
     currentSelected: '',
@@ -98,7 +98,7 @@ export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsPr
   };
 
   renderProfilePanel = (onLogout: () => void) => (
-    <DisplayPanel innerRef={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
+    <DisplayPanel ref={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
       <ProfileList>
         <ProfileListItem>
           <PanelLink size="sm" color="shade.700" href={DASHBOARD_LINK}>

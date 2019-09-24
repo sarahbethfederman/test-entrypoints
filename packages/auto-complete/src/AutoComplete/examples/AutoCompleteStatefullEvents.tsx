@@ -1,12 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
-
 import { pl } from '@lendi-ui/spacing';
+import { Heading } from '@lendi-ui/typography';
 import { Search } from '@lendi-ui/icon';
-
 import { AutoComplete } from '..';
 import { MOCK_DATA_SOURCE } from '../../data-source.mock';
-import { Heading } from '@lendi-ui/typography';
 
 const PaddedSearchIcon = styled(Search)`
   ${pl('sm')}

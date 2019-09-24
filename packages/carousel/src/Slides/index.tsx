@@ -65,7 +65,7 @@ const CarouselSlidesInner: React.FunctionComponent<SlidesProps> = ({
       currentLeft={currentLeft}
       height={height}
       speed={speed}
-      innerRef={container}
+      ref={container}
       {...luiProps}
     >
       {newChildren}

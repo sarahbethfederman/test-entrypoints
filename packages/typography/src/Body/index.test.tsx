@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 
-import Theme, { theme } from '@lendi-ui/theme';
+import Theme, { Colors, theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';
 import { Body, BodySize, BodyAlign } from '..';
 import { deriveSize } from '@lendi-ui/utils';
@@ -17,7 +17,7 @@ const render = (props) => {
 
 describe('Body', () => {
   const sizes: BodySize[] = [undefined, 'lg', 'md', 'sm', 'xs', 'xxs'];
-  const colors = [undefined, 'primary.500', 'shade.0', 'shade.1000'];
+  const colors: Colors[] = [undefined, 'primary.500', 'shade.0', 'shade.1000'];
   const alignments: BodyAlign[] = [undefined, 'left', 'center', 'right', { mobile: 'left', desktop: 'right' }];
 
   sizes.forEach((size) => {

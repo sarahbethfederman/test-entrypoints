@@ -29,10 +29,69 @@ exports[`Link should render styles for size lg 1`] = `
   <styled.button
     size="lg"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  ",
+              [Function],
+              " ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background-color: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="lg"
-    />
+    >
+      <button
+        className="c0"
+        size="lg"
+      />
+    </StyledComponent>
   </styled.button>
 </Component>
 `;
@@ -66,10 +125,69 @@ exports[`Link should render styles for size md 1`] = `
   <styled.button
     size="md"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  ",
+              [Function],
+              " ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background-color: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="md"
-    />
+    >
+      <button
+        className="c0"
+        size="md"
+      />
+    </StyledComponent>
   </styled.button>
 </Component>
 `;
@@ -103,10 +221,69 @@ exports[`Link should render styles for size sm 1`] = `
   <styled.button
     size="sm"
   >
-    <button
-      className="c0"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  font-size: 1em;
+  border: none;
+  padding: 0;
+  ",
+              [Function],
+              " ",
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+              ";
+  background-color: inherit;
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       size="sm"
-    />
+    >
+      <button
+        className="c0"
+        size="sm"
+      />
+    </StyledComponent>
   </styled.button>
 </Component>
 `;

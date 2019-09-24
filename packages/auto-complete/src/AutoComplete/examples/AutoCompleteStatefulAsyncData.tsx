@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { AutoComplete } from '../index';
-import { Phone } from '@lendi-ui/icon';
-import { pl } from '@lendi-ui/spacing';
 import styled from 'styled-components';
-import { getAsyncData } from '../../data-source.mock';
+import { Phone } from '@lendi-ui/icon';
 import { Heading } from '@lendi-ui/typography';
+import { pl } from '@lendi-ui/spacing';
+import { AutoComplete } from '../index';
+import { getAsyncData } from '../../data-source.mock';
 
 const PaddedPhoneIcon = styled(Phone)`
   ${pl('sm')}
@@ -20,7 +20,7 @@ export class AutoCompleteStatefullAsyncDataExample extends React.Component {
           dataSource={(userInput: string) => getAsyncData(userInput)}
           isFullWidth={true}
           placeholder={'Testing'}
-          onSelect={(item) => console.log(item)}
+          onSelectItem={(item) => console.log(item)}
         />
       </>
     );

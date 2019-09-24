@@ -3,12 +3,6 @@
   "compilerOptions": {
     "outDir": "./dist/types"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": [
-    "src/**/*.test.ts",
-    "src/**/*.test.tsx",
-    "src/**/*.example.tsx",
-    "src/**/*.mock.ts",
-    "src/**/examples/**.tsx"
-  ]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/typings/*.d.ts"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.example.tsx", "src/**/*.mock.ts", "src/**/examples/**"]
 }

@@ -29,7 +29,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
 }
 
 .c1 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -37,7 +37,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
 .c2 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ff1c4a;
+  color: rgba(255,28,74,1);
   font-size: calc(0.75 * var(--lendi-ui-size));
   line-height: calc(16 / 12);
   font-family: 'Open Sans',sans-serif;
@@ -47,50 +47,202 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
 <styled.div
   color="error.500"
 >
-  <div
-    className="c0"
+  <StyledComponent
     color="error.500"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: base-line;
+  ",
+            "
+    padding-top: ",
+            "calc(0.25 * var(--lendi-ui-size))",
+            ";
+  ",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
   >
-    <HighlightOff
+    <div
+      className="c0"
       color="error.500"
     >
-      <styled.span
+      <HighlightOff
         color="error.500"
       >
-        <span
-          className="c1"
+        <styled.span
           color="error.500"
         >
-          <svg
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
+          <StyledComponent
+            color="error.500"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c1",
+                  "rules": Array [
+                    "
+  width: ",
+                    [Function],
+                    ";
+  height: ",
+                    [Function],
+                    ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                    [Function],
+                    ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                  ],
+                },
+                "displayName": "styled.span",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "span",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-            />
-          </svg>
-        </span>
-      </styled.span>
-    </HighlightOff>
-    <styled.p
-      color="error.500"
-      ml="xxxs"
-      size="xs"
-    >
-      <p
-        className="c2"
+            <span
+              className="c1"
+              color="error.500"
+            >
+              <svg
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                />
+              </svg>
+            </span>
+          </StyledComponent>
+        </styled.span>
+      </HighlightOff>
+      <styled.p
         color="error.500"
+        ml="xxxs"
         size="xs"
       >
-        error message
-      </p>
-    </styled.p>
-  </div>
+        <StyledComponent
+          color="error.500"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-bxivhb",
+                "isStatic": false,
+                "lastClassName": "c2",
+                "rules": Array [
+                  "
+  ",
+                  "
+    margin-top: ",
+                  "0",
+                  ";
+    margin-bottom: ",
+                  "0",
+                  ";
+  ",
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+  ",
+                  [Function],
+                  "
+",
+                  ";
+",
+                ],
+              },
+              "displayName": "styled.p",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-bxivhb",
+              "target": "p",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          ml="xxxs"
+          size="xs"
+        >
+          <p
+            className="c2"
+            color="error.500"
+            size="xs"
+          >
+            error message
+          </p>
+        </StyledComponent>
+      </styled.p>
+    </div>
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -103,7 +255,7 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
 }
 
 .c0 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -114,24 +266,68 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
   <styled.span
     color="error.500"
   >
-    <span
-      className="c0"
+    <StyledComponent
       color="error.500"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: ",
+              [Function],
+              ";
+  height: ",
+              [Function],
+              ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+              [Function],
+              ";
+    width: inherit;
+    height: inherit;
+  }
+",
+            ],
+          },
+          "displayName": "styled.span",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "span",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <svg
-        height="1em"
-        viewBox="0 0 24 24"
-        width="1em"
+      <span
+        className="c0"
+        color="error.500"
       >
-        <path
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path
-          d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-        />
-      </svg>
-    </span>
+        <svg
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
+          />
+          <path
+            d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+          />
+        </svg>
+      </span>
+    </StyledComponent>
   </styled.span>
 </HighlightOff>
 `;
@@ -140,7 +336,7 @@ exports[`ErrorMessage should render a paragraph use LUI Body called "MessageBody
 .c0 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ff1c4a;
+  color: rgba(255,28,74,1);
   font-size: calc(0.75 * var(--lendi-ui-size));
   line-height: calc(16 / 12);
   font-family: 'Open Sans',sans-serif;
@@ -152,13 +348,81 @@ exports[`ErrorMessage should render a paragraph use LUI Body called "MessageBody
   ml="xxxs"
   size="xs"
 >
-  <p
-    className="c0"
+  <StyledComponent
     color="error.500"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  ",
+            "
+    margin-top: ",
+            "0",
+            ";
+    margin-bottom: ",
+            "0",
+            ";
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+            ";
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    ml="xxxs"
     size="xs"
   >
-    error message
-  </p>
+    <p
+      className="c0"
+      color="error.500"
+      size="xs"
+    >
+      error message
+    </p>
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -191,7 +455,7 @@ exports[`ErrorMessage should render whole component 1`] = `
 }
 
 .c1 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -199,7 +463,7 @@ exports[`ErrorMessage should render whole component 1`] = `
 .c2 {
   margin-top: 0;
   margin-bottom: 0;
-  color: #ff1c4a;
+  color: rgba(255,28,74,1);
   font-size: calc(0.75 * var(--lendi-ui-size));
   line-height: calc(16 / 12);
   font-family: 'Open Sans',sans-serif;
@@ -212,50 +476,202 @@ exports[`ErrorMessage should render whole component 1`] = `
   <styled.div
     color="error.500"
   >
-    <div
-      className="c0"
+    <StyledComponent
       color="error.500"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: base-line;
+  ",
+              "
+    padding-top: ",
+              "calc(0.25 * var(--lendi-ui-size))",
+              ";
+  ",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <HighlightOff
+      <div
+        className="c0"
         color="error.500"
       >
-        <styled.span
+        <HighlightOff
           color="error.500"
         >
-          <span
-            className="c1"
+          <styled.span
             color="error.500"
           >
-            <svg
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
+            <StyledComponent
+              color="error.500"
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": false,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "
+  width: ",
+                      [Function],
+                      ";
+  height: ",
+                      [Function],
+                      ";
+  vertical-align: middle;
+  display: inline-block;
+
+  & > svg {
+    fill: ",
+                      [Function],
+                      ";
+    width: inherit;
+    height: inherit;
+  }
+",
+                    ],
+                  },
+                  "displayName": "styled.span",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "span",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
-              />
-            </svg>
-          </span>
-        </styled.span>
-      </HighlightOff>
-      <styled.p
-        color="error.500"
-        ml="xxxs"
-        size="xs"
-      >
-        <p
-          className="c2"
+              <span
+                className="c1"
+                color="error.500"
+              >
+                <svg
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  />
+                </svg>
+              </span>
+            </StyledComponent>
+          </styled.span>
+        </HighlightOff>
+        <styled.p
           color="error.500"
+          ml="xxxs"
           size="xs"
         >
-          error message
-        </p>
-      </styled.p>
-    </div>
+          <StyledComponent
+            color="error.500"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bxivhb",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  ",
+                    "
+    margin-top: ",
+                    "0",
+                    ";
+    margin-bottom: ",
+                    "0",
+                    ";
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.p",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bxivhb",
+                "target": "p",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+            ml="xxxs"
+            size="xs"
+          >
+            <p
+              className="c2"
+              color="error.500"
+              size="xs"
+            >
+              error message
+            </p>
+          </StyledComponent>
+        </styled.p>
+      </div>
+    </StyledComponent>
   </styled.div>
 </ErrorMessage>
 `;

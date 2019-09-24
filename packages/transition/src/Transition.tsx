@@ -4,12 +4,12 @@ import { polyfill } from 'react-lifecycles-compat';
 export type State = 'enter' | 'entering' | 'entered' | 'exit' | 'exiting' | 'exited' | undefined;
 
 export interface TransitionProps {
-  active: boolean;
+  isActive: boolean;
   timeout: number;
-  appear?: boolean;
-  mountOnEnter?: boolean;
-  unmountOnExit?: boolean;
-  onStateChange?: (state: State) => void;
+  isVisible?: boolean;
+  shouldMountOnEnter?: boolean;
+  shouldUnmountOnExit?: boolean;
+  onChangeState?: (state: State) => void;
   children: (state?: State) => React.ReactNode;
 }
 
@@ -23,24 +23,17 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
     state: TransitionState
   ): Partial<TransitionState> | null {
     if (state.mounted === false) {
-      if (props.appear && props.active) {
+      if (props.isVisible && props.isActive) {
         return {
           mounted: true,
           state: 'enter',
         };
       }
 
-      if (props.appear && !props.active) {
+      if (props.isVisible && !props.isActive) {
         return {
           mounted: true,
           state: 'exit',
-        };
-      }
-
-      if (!props.appear && !props.active) {
-        return {
-          mounted: true,
-          state: 'exited', // Skip the exit transition all together
         };
       }
 
@@ -49,7 +42,7 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
       };
     } else {
       if (
-        !props.active &&
+        !props.isActive &&
         (state.state === undefined ||
           state.state === 'enter' ||
           state.state === 'entering' ||
@@ -61,7 +54,7 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
       }
 
       if (
-        props.active &&
+        props.isActive &&
         (state.state === undefined || state.state === 'exit' || state.state === 'exiting' || state.state === 'exited')
       ) {
         return {
@@ -82,10 +75,10 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
   private raf: any = null;
 
   private notifyStateChange() {
-    const { onStateChange } = this.props;
+    const { onChangeState } = this.props;
     const { state } = this.state;
-    if (onStateChange) {
-      onStateChange(state);
+    if (onChangeState) {
+      onChangeState(state);
     }
   }
 
@@ -139,14 +132,14 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
   }
 
   public render() {
-    const { mountOnEnter, unmountOnExit, children } = this.props;
+    const { shouldMountOnEnter, shouldUnmountOnExit, children } = this.props;
     const { state } = this.state;
 
-    if (mountOnEnter && state === undefined) {
+    if (shouldMountOnEnter && state === undefined) {
       return null;
     }
 
-    if (unmountOnExit && state === 'exited') {
+    if (shouldUnmountOnExit && state === 'exited') {
       return null;
     }
 

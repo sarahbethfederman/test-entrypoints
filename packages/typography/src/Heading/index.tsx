@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { fg } from '@lendi-ui/color';
 import { margin, MarginOptions, my } from '@lendi-ui/spacing';
-import { select } from '@lendi-ui/theme';
+import { select, Colors } from '@lendi-ui/theme';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { deriveSize, LUIGlobalProps } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
@@ -13,7 +13,7 @@ export type HeadingAlignment = AlignmentOrAlignmentMap;
 
 export interface HeadingOptions extends LUIGlobalProps {
   size: HeadingSize;
-  color?: string;
+  color?: Colors;
   align?: HeadingAlignment;
 }
 
@@ -100,6 +100,8 @@ function HeadingTag({ as, size, ...otherProps }: HeadingProps) {
   return <Component size={size} {...otherProps} />;
 }
 
-export const Heading = styled<HeadingProps & MarginOptions>(HeadingTag)`
-  ${my('nil')} ${heading} ${margin};
+export const Heading = styled<React.ElementType>(HeadingTag)<HeadingProps & MarginOptions>`
+  ${my('nil')}
+  ${heading}
+  ${margin};
 `;

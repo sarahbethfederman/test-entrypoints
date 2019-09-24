@@ -22,9 +22,9 @@ class Sidebar extends React.Component<SidebarProps> {
     return (
       <Fragment>
         <OverlayWrapper>
-          <Overlay show={show} onHide={onHide} />
+          <Overlay isVisible={show} onHide={onHide} />
         </OverlayWrapper>
-        <Transition active={show} timeout={250}>
+        <Transition isActive={show} timeout={250}>
           {(state: State) => (
             <Wrapper side={side} transition={state}>
               {includeClose && (

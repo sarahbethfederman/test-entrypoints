@@ -8,7 +8,7 @@ import { RightPanelSection } from '../common/RightPanelSection';
 import { Application, Broker } from '../common/types';
 import { Wrapper } from './index.style';
 import { AnalyticsContextProvider, LUIGlobalProps } from '@lendi-ui/utils';
-import { analysticHelper } from '../helpers/helpers';
+import { analyticsHelper } from '../helpers/helpers';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
@@ -75,7 +75,7 @@ class ApplicationNavbar extends React.Component<ApplicationNavbarProps, Applicat
         <AnalyticsContextProvider
           value={{
             analyticsForNavigation: (text: string, position: WindowPosition) =>
-              analysticHelper(text, !!broker, position, theme),
+              analyticsHelper(text, !!broker, position, theme),
           }}
         >
           <Header

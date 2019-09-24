@@ -1,3 +1,9 @@
+## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated 
+- Update typescript to version 3.5.2 and react to version 16.8.4 [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+
+### Changed
+- Refactored card so that a Header, Content and Footer is exported
 ## [3.2.3] - 2019-08-15 - [HUB-260](https://creditandfinance.atlassian.net/browse/HUB-260)
 ### updated
 - bump the version so that it could use latest dropdown version.

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Body } from '@lendi-ui/typography';
+import { body, BodyOptions } from '@lendi-ui/typography';
 import { deriveSize, normalise } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 import { bg, color } from '@lendi-ui/color';
@@ -9,8 +9,8 @@ import { hoverState, hoverCheckedState, boxedHoverState, boxedHoverCheckedState 
 import { focusState, boxedFocusCheckedState, boxedFocusState } from './styles/focus.style';
 import { disabledState, boxedDisabledState, boxedDisabledCheckedState } from './styles/disabled.style';
 import { checkedState, boxedCheckedState } from './styles/checked.style';
-import { Size } from './index';
 
+type Size = 'xs' | 'sm' | 'md' | 'lg';
 interface WrapperProps {
   isBoxed: boolean;
   checked: boolean;
@@ -120,7 +120,8 @@ interface RadioWrapperProps {
   inputSize: Size;
 }
 
-export const RadioLabel = styled(Body)`
+export const RadioLabel = styled.p`
+  ${(props: BodyOptions) => body(props)}
   display: inline-block;
 `;
 

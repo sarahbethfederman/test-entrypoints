@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "4.2.1",
+  "version": "5.0.0",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -10,16 +10,17 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^6.1.1",
-    "@lendi-ui/theme-domain": "^2.0.0",
-    "@types/react": "^15 || ^16.4",
-    "react": "^15 || ^16.4",
-    "styled-components": "^3",
-    "@lendi-ui/utils": "^2.5.0"
+    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme-domain": "3.0.0",
+    "@lendi-ui/utils": "3.0.0",
+    "@types/react": "^16.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.8",
+    "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^3.0.0",
-    "@lendi-ui/icon": "^7.0.0"
+    "@lendi-ui/color": "^4.0.0",
+    "@lendi-ui/icon": "9.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

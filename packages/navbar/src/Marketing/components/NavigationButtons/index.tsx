@@ -1,8 +1,4 @@
 import * as React from 'react';
-import createRef from 'react-create-ref';
-
-import { Heading } from '@lendi-ui/typography';
-import { KeyboardArrowRight } from '@lendi-ui/icon';
 
 import {
   Wrapper,
@@ -28,6 +24,8 @@ import {
 } from './index.style';
 import { defaultMenu, MenuSubItem } from '../../../constants/menu-data';
 import { HOME_PAGE_LINK, SIGN_UP_LINK, DASHBOARD_LINK, PROPERTY_REPORT_LINK } from '../../../constants/links';
+import { Heading } from '@lendi-ui/typography';
+import { KeyboardArrowRight } from '@lendi-ui/icon';
 
 export interface NavigationButtonsProps {
   isAuthenticated?: boolean;
@@ -41,7 +39,7 @@ export interface NavigationButtonsState {
 }
 
 export class NavigationButtons extends React.Component<NavigationButtonsProps, NavigationButtonsState> {
-  private displayPanel: React.RefObject<HTMLElement> = createRef();
+  private displayPanel: React.RefObject<HTMLDivElement> = React.createRef();
   private prevSelected: string = '';
   state = {
     currentSelected: '',
@@ -92,7 +90,7 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
     const { currentSelected } = this.state;
     const selectedItem = defaultMenu.find((menuItem) => menuItem.label === currentSelected)!;
     return (
-      <DisplayPanel innerRef={this.displayPanel}>
+      <DisplayPanel ref={this.displayPanel}>
         <HeadingWrapper>
           <HeadingLink href={`${selectedItem.link || ''}${params}`}>
             <Heading size="md" color="secondary.500" mr="xxs">
@@ -124,7 +122,7 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
   };
 
   renderProfilePanel = (onLogout: () => void) => (
-    <DisplayPanel innerRef={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
+    <DisplayPanel ref={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
       <ProfileList>
         <ProfileListItem>
           <PanelLink size="sm" color="shade.700" href={DASHBOARD_LINK}>

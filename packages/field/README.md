@@ -38,7 +38,7 @@ import Field from '@lendi-ui/field';
   <PropTable.Entry name="children" required type="React.ReactNode" description="The Field content"/>
   <PropTable.Entry name="error" type="string" description="The error message"/>
   <PropTable.Entry name="htmlFor" type="string" description="The for attribute of the <Field> tag should be equal to the id attribute of the related element to bind them together."/>
-  <PropTable.Entry name="isOptional" type="boolean" defaultValue='false' description="The Label optional alert"/>
+  <PropTable.Entry name="isRequired" type="boolean" defaultValue='true' description="Whether or not a field is required"/>
   <PropTable.Entry name="label" type="string" description="The Label content"/>
   <PropTable.Entry name="link" type="string" description="The Label link content"/>
   <PropTable.Entry name="size" type={`"lg" | "sm"`} defaultValue="sm" description="The Field Label size"/>

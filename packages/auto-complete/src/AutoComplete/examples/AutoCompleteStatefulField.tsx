@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { AutoComplete } from '../index';
 import styled from 'styled-components';
 import Field from '@lendi-ui/field';
 import { Button } from '@lendi-ui/button';
 import { Heading } from '@lendi-ui/typography';
+import { AutoComplete } from '../index';
 import { MOCK_DATA_SOURCE } from '../../data-source.mock';
-import { AutoCompleteValue, DataSourceItem } from '../../types';
+import { AutoCompleteValue, DataSourceItem } from '../../typings';
 
 interface MyState {
   errorMessage: string;
@@ -71,7 +71,7 @@ export class AutoCompleteStatefullFieldExample extends React.Component<{}, MySta
               isFullWidth
               isError={!!this.state.errorMessage}
               dataSource={(t) => this.fetchResult(t)}
-              onSelect={(item: DataSourceItem) => {
+              onSelectItem={(item: DataSourceItem) => {
                 this.selectedAddress = item.value;
                 this.setState({
                   inputChanged: false,

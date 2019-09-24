@@ -1,8 +1,7 @@
-import * as createReactContext from 'create-react-context';
+import * as React from 'react';
+import { Direction } from './index';
+import { RadioProps } from '../Radio/index';
 import { LUIFormProps } from '@lendi-ui/utils';
-
-// @ts-ignore
-const PonyfillContext = typeof createReactContext === 'object' ? createReactContext.default : createReactContext;
 
 export interface RadioGroupContext extends LUIFormProps {
   isBoxed?: boolean;
@@ -10,8 +9,13 @@ export interface RadioGroupContext extends LUIFormProps {
   className?: string;
 }
 
-// Supressing "Cannot invoke an expression whose type lacks a call signature." error
-// More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-// @ts-ignore
+export interface RadioGroupProps extends RadioGroupContext {
+  legend?: string;
+  direction?: Direction;
+  isDisabled?: boolean;
+  size?: 'xs' | 'sm' | 'md' | 'lg';
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  children?: React.ReactElement<RadioProps> | React.ReactElement<RadioProps>[] | null;
+}
 
-export const RadioContext = PonyfillContext<RadioGroupContext>({});
+export const RadioContext = React.createContext<RadioGroupContext>({ selectedValue: '' });

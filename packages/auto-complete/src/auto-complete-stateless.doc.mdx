@@ -25,7 +25,7 @@ class PlaygroundComponent extends React.Component{
           onChange={(e) => {
             this.setState({ value: e.target.value, dataSource: this.getStaticData(e.target.value) });
           }}
-          onSelect={(item) => this.setState({ value: item.label })}
+          onSelectItem={(item) => this.setState({ value: item.label })}
           isFullWidth={false}
           onReset={() => {
             this.setState({
@@ -72,7 +72,7 @@ render(<PlaygroundComponent/>)
   <PropTable.Entry name="onKeyDown" type="(event: React.KeyboardEvent<HTMLDivElement>) => void" description="OnKeyDown handler"/>
   <PropTable.Entry name="onMenuVisibilityChange" type="(isOpen: boolean) => void" description="By default Autocomplete will manage its own menu visibility, using basic logic to decide whether or not to display it (e.g. open on focus, keypress, close on blur, select, escape, etc). If you need full control over when the menu opens and closes you can put Autocomplete into 'managed menu visibility mode' by supplying props.open. This will force AutocompleteStateless to ignore its internal menu visibility status and always hide/show the menu based on props.open. Pair this with props.onMenuVisibilityChange - which is invoked each time the internal visibility state changes - for full control over the menu's visibility"/>
   <PropTable.Entry name="onReset" type="() => void" description="Called when clear(cross) button is being called, consumer need to implement it to clear input"/>
-  <PropTable.Entry name="onSelect" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
+  <PropTable.Entry name="onSelectItem" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
   <PropTable.Entry name="placeholder" type="string" description="Placeholder for AutoComplete"/>
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>
   <PropTable.Entry name="value" type="string" description="AutoComplete value"/>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AutoCompleteStateless } from '..';
-import { DataSourceItem, AutoCompleteValue } from '../../types';
+import { DataSourceItem, AutoCompleteValue } from '../../typings';
 import Field from '@lendi-ui/field';
 import { Heading } from '@lendi-ui/typography';
 
@@ -31,7 +31,7 @@ export default class AutoCompleteStatelessErrorExample extends React.Component<{
         <Field error={this.state.errorMessage} touched={!!this.state.errorMessage}>
           <AutoCompleteStateless
             dataSource={this.state.dataSource}
-            value={this.state.value}
+            value={String(this.state.value)}
             onChange={async (e) => {
               this.setState({ isLoading: true, value: e.target.value, errorMessage: '' });
               const dataSource: DataSourceItem[] = []; // coming from api
@@ -41,7 +41,7 @@ export default class AutoCompleteStatelessErrorExample extends React.Component<{
                 });
               }, 800);
             }}
-            onSelect={(item: DataSourceItem) => this.setState({ value: item.label })}
+            onSelectItem={(item: DataSourceItem) => this.setState({ value: String(item.label) })}
             isLoading={this.state.isLoading}
             isError={this.state.isError}
           />

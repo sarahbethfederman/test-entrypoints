@@ -1,555 +1,202 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card render card with interactive title 1`] = `
-.c4 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(1.375 * var(--lendi-ui-size));
-  font-weight: 400;
-  line-height: calc(28 / 22);
-  font-family: 'Cabin',sans-serif;
-}
-
+exports[`Card Footer renders a footer aligned to the center 1`] = `
 .c0 {
-  box-sizing: border-box;
-  line-height: 1.333;
-  white-space: normal;
-  border-spacing: 2px;
-  text-align: left;
-  word-spacing: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  border: 1px solid #e3e3e3;
-  position: relative;
-  border-radius: 6px;
-  margin-top: calc(1.5 * var(--lendi-ui-size));
-  margin-bottom: calc(1.5 * var(--lendi-ui-size));
-}
-
-.c1 {
-  border-radius: 6px 6px 0 0;
-  background-color: #f1f1f1;
-  min-height: 40px;
-  margin-bottom: -1px;
-  padding: calc(0.5 * var(--lendi-ui-size));
-  border-bottom: 1px solid #f1f1f1;
-  zoom: 1;
+  padding-top: calc(0.5 * var(--lendi-ui-size));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.c2 {
-  margin: auto 0;
-  padding-left: calc(0.75 * var(--lendi-ui-size));
-  padding-right: calc(0.75 * var(--lendi-ui-size));
-}
-
-.c3 {
-  overflow-wrap: normal;
-  word-wrap: break-word;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: inline-block;
-}
-
-.c9 {
-  padding: calc(2 * var(--lendi-ui-size));
-  background: transparent;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-}
-
-.c8 {
-  width: 1em;
-  height: 1em;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.c8 > svg {
-  fill: #00c0a5;
-  width: inherit;
-  height: inherit;
-}
-
-.c5 {
-  box-sizing: border-box;
-  line-height: 1.333;
-  white-space: normal;
-  border-spacing: 2px;
-  text-align: left;
-  word-spacing: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-.c5:hover {
-  box-shadow: 0 12px 17px 2px rgba(0,0,0,0.1), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px 0 rgba(0,0,0,0.14);
-}
-
-.c6 {
-  border-radius: 4px 4px 0 0;
-  font-family: 'Open Sans',sans-serif;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding: calc(0.4 * var(--lendi-ui-size)) calc(2.5 * var(--lendi-ui-size)) calc(0.4 * var(--lendi-ui-size)) calc(0.66 * var(--lendi-ui-size));
-  font-size: var(--lendi-ui-size);
-  width: 100%;
-  border: none;
-}
-
-.c7 {
-  position: absolute;
-  right: 6px;
-  pointer-events: none;
-  top: calc(0.45 * var(--lendi-ui-size));
-  width: calc(1.25 * var(--lendi-ui-size));
-  height: calc(1.25 * var(--lendi-ui-size));
-}
-
-<Card
-  interactiveTitle={
-    <Unknown
-      items={
-        Array [
-          Object {
-            "label": "5 years",
-            "value": "1",
+<Footer
+  align="center"
+>
+  <styled.div
+    align="center"
+  >
+    <StyledComponent
+      align="center"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+    padding-top: ",
+              "calc(0.5 * var(--lendi-ui-size))",
+              ";
+  ",
+              "
+  display: flex;
+  ",
+              [Function],
+              "
+",
+            ],
           },
-          Object {
-            "label": "10 years",
-            "value": "2",
-          },
-        ]
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
       }
-    />
-  }
->
-  <styled.div>
-    <div
-      className="c0"
+      forwardedRef={null}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          <styled.div>
-            <div
-              className="c2"
-            >
-              <Styled(Styled(HeadingTag))
-                size="sm"
-              >
-                <Styled(HeadingTag)
-                  className="c3"
-                  size="sm"
-                >
-                  <HeadingTag
-                    className="c3 c4"
-                    size="sm"
-                  >
-                    <h4
-                      className="c3 c4"
-                      size="sm"
-                    >
-                      <Component
-                        items={
-                          Array [
-                            Object {
-                              "label": "5 years",
-                              "value": "1",
-                            },
-                            Object {
-                              "label": "10 years",
-                              "value": "2",
-                            },
-                          ]
-                        }
-                      >
-                        <styled.div
-                          isDisabled={false}
-                          isFullWidth={true}
-                        >
-                          <div
-                            className="c5"
-                          >
-                            <styled.select
-                              disabled={false}
-                              isError={false}
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onFocus={[Function]}
-                              selectSize="md"
-                            >
-                              <select
-                                className="c6"
-                                disabled={false}
-                                onBlur={[Function]}
-                                onChange={[Function]}
-                                onFocus={[Function]}
-                              >
-                                <option
-                                  disabled={false}
-                                  hidden={false}
-                                  key="1"
-                                  value="1"
-                                >
-                                  5 years
-                                </option>
-                                <option
-                                  disabled={false}
-                                  hidden={false}
-                                  key="2"
-                                  value="2"
-                                >
-                                  10 years
-                                </option>
-                              </select>
-                            </styled.select>
-                            <Styled(ExpandMore)
-                              color="primary.500"
-                              size="md"
-                            >
-                              <ExpandMore
-                                className="c7"
-                                color="primary.500"
-                                size="md"
-                              >
-                                <styled.span
-                                  className="c7"
-                                  color="primary.500"
-                                  size="md"
-                                >
-                                  <span
-                                    className="c7 c8"
-                                    color="primary.500"
-                                    size="md"
-                                  >
-                                    <svg
-                                      height="1em"
-                                      viewBox="0 0 24 24"
-                                      width="1em"
-                                    >
-                                      <path
-                                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                                      />
-                                      <path
-                                        d="M0 0h24v24H0z"
-                                        fill="none"
-                                      />
-                                    </svg>
-                                  </span>
-                                </styled.span>
-                              </ExpandMore>
-                            </Styled(ExpandMore)>
-                          </div>
-                        </styled.div>
-                      </Component>
-                    </h4>
-                  </HeadingTag>
-                </Styled(HeadingTag)>
-              </Styled(Styled(HeadingTag))>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-      <styled.div>
-        <div
-          className="c9"
-        />
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        Some footer
+      </div>
+    </StyledComponent>
   </styled.div>
-</Card>
+</Footer>
 `;
 
-exports[`Card render card with rightHeaderContent 1`] = `
-.c4 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(1.375 * var(--lendi-ui-size));
-  font-weight: 400;
-  line-height: calc(28 / 22);
-  font-family: 'Cabin',sans-serif;
-}
-
+exports[`Card Footer renders a footer aligned to the left 1`] = `
 .c0 {
-  box-sizing: border-box;
-  line-height: 1.333;
-  white-space: normal;
-  border-spacing: 2px;
-  text-align: left;
-  word-spacing: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  border: 1px solid #e3e3e3;
-  position: relative;
-  border-radius: 6px;
-  margin-top: calc(1.5 * var(--lendi-ui-size));
-  margin-bottom: calc(1.5 * var(--lendi-ui-size));
-}
-
-.c1 {
-  border-radius: 6px 6px 0 0;
-  background-color: #f1f1f1;
-  min-height: 40px;
-  margin-bottom: -1px;
-  padding: calc(0.5 * var(--lendi-ui-size));
-  border-bottom: 1px solid #f1f1f1;
-  zoom: 1;
+  padding-top: calc(0.5 * var(--lendi-ui-size));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
-.c2 {
-  margin: auto 0;
-  padding-left: calc(0.75 * var(--lendi-ui-size));
-  padding-right: calc(0.75 * var(--lendi-ui-size));
-}
-
-.c3 {
-  overflow-wrap: normal;
-  word-wrap: break-word;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: inline-block;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-  -webkit-justify-content: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: calc(0.75 * var(--lendi-ui-size));
-}
-
-.c6 {
-  padding: calc(2 * var(--lendi-ui-size));
-  background: transparent;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-}
-
-<Card
-  rightHeaderContent={
-    <div>
-      hello world!
-    </div>
-  }
-  title="My Testing card"
+<Footer
+  align="left"
 >
-  <styled.div>
-    <div
-      className="c0"
+  <styled.div
+    align="left"
+  >
+    <StyledComponent
+      align="left"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+    padding-top: ",
+              "calc(0.5 * var(--lendi-ui-size))",
+              ";
+  ",
+              "
+  display: flex;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          <styled.div>
-            <div
-              className="c2"
-            >
-              <Styled(Styled(HeadingTag))
-                size="sm"
-              >
-                <Styled(HeadingTag)
-                  className="c3"
-                  size="sm"
-                >
-                  <HeadingTag
-                    className="c3 c4"
-                    size="sm"
-                  >
-                    <h4
-                      className="c3 c4"
-                      size="sm"
-                    >
-                      My Testing card
-                    </h4>
-                  </HeadingTag>
-                </Styled(HeadingTag)>
-              </Styled(Styled(HeadingTag))>
-            </div>
-          </styled.div>
-          <styled.div>
-            <div
-              className="c5"
-            >
-              <div>
-                hello world!
-              </div>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-      <styled.div>
-        <div
-          className="c6"
-        />
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        Some footer
+      </div>
+    </StyledComponent>
   </styled.div>
-</Card>
+</Footer>
 `;
 
-exports[`Card render card with sm headersize 1`] = `
-.c4 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: calc(1.375 * var(--lendi-ui-size));
-  font-weight: 400;
-  line-height: calc(28 / 22);
-  font-family: 'Cabin',sans-serif;
-}
-
+exports[`Card Footer renders a footer aligned to the right 1`] = `
 .c0 {
-  box-sizing: border-box;
-  line-height: 1.333;
-  white-space: normal;
-  border-spacing: 2px;
-  text-align: left;
-  word-spacing: normal;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  border: 1px solid #e3e3e3;
-  position: relative;
-  border-radius: 6px;
-  margin-top: calc(1.5 * var(--lendi-ui-size));
-  margin-bottom: calc(1.5 * var(--lendi-ui-size));
-}
-
-.c1 {
-  border-radius: 6px 6px 0 0;
-  background-color: #f1f1f1;
-  min-height: 40px;
-  margin-bottom: -1px;
-  padding: calc(0.5 * var(--lendi-ui-size));
-  border-bottom: 1px solid #f1f1f1;
-  zoom: 1;
+  padding-top: calc(0.5 * var(--lendi-ui-size));
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
-.c2 {
-  margin: auto 0;
-  padding-left: calc(0.75 * var(--lendi-ui-size));
-  padding-right: calc(0.75 * var(--lendi-ui-size));
-}
-
-.c3 {
-  overflow-wrap: normal;
-  word-wrap: break-word;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: inline-block;
-}
-
-.c5 {
-  padding: calc(2 * var(--lendi-ui-size));
-  background: transparent;
-  font-size: calc(0.75 * var(--lendi-ui-size));
-  line-height: calc(16 / 12);
-  font-family: 'Open Sans',sans-serif;
-}
-
-<Card
-  headerSize="sm"
-  title="My Testing card"
+<Footer
+  align="right"
 >
-  <styled.div>
-    <div
-      className="c0"
+  <styled.div
+    align="right"
+  >
+    <StyledComponent
+      align="right"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-iwsKbI",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+    padding-top: ",
+              "calc(0.5 * var(--lendi-ui-size))",
+              ";
+  ",
+              "
+  display: flex;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-iwsKbI",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <styled.div>
-        <div
-          className="c1"
-        >
-          <styled.div>
-            <div
-              className="c2"
-            >
-              <Styled(Styled(HeadingTag))
-                size="sm"
-              >
-                <Styled(HeadingTag)
-                  className="c3"
-                  size="sm"
-                >
-                  <HeadingTag
-                    className="c3 c4"
-                    size="sm"
-                  >
-                    <h4
-                      className="c3 c4"
-                      size="sm"
-                    >
-                      My Testing card
-                    </h4>
-                  </HeadingTag>
-                </Styled(HeadingTag)>
-              </Styled(Styled(HeadingTag))>
-            </div>
-          </styled.div>
-        </div>
-      </styled.div>
-      <styled.div>
-        <div
-          className="c5"
-        />
-      </styled.div>
-    </div>
+      <div
+        className="c0"
+      >
+        Some footer
+      </div>
+    </StyledComponent>
   </styled.div>
-</Card>
+</Footer>
 `;

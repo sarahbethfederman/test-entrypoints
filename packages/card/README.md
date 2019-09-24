@@ -24,15 +24,30 @@ import Card from '@lendi-ui/card';
 
 ## Properties
 
+### Card
+
 ```
 <PropTable>
-  <PropTable.Entry name="cardTitleIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along title"/>
+  <PropTable.Entry name="bg" type="string" description="Background colour"/>
   <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
-  <PropTable.Entry name="interactiveTitle" type="React.ReactElement<DropdownProps>" description="Interactive title - a dropdown to switch between content"/>
-  <PropTable.Entry name="moreIcon" type="React.ReactElement<IconProps>" description="Icon to be shown along Cancel button"/>
-  <PropTable.Entry name="rightHeaderContent" type="React.ReactNode" description="The content of the RHS of the header. This will commonly be a button (eg. 'Cancel', 'Edit' etc), or an icon, or both"/>
-  <PropTable.Entry name="subtitle" type="string" description="SubTitle of card"/>
-  <PropTable.Entry name="title" type="string" description="Title of card"/>
+  <PropTable.Entry name="depth" type="number" description="Depth of the card"/>
+  <PropTable.Entry name="fg" type="string" description="Foreground colour"/>
+  <PropTable.Entry name="size" type="string" description="Size of card"/>
 </PropTable>
 
+### Card.Heading
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+</PropTable>
+
+### Card.Content
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+</PropTable>
+
+### Card.Footer
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="Content of the card"/>
+  <PropTable.Entry name="align" type="left | center | right" description="Content of the card"/>
+</PropTable>
 ```

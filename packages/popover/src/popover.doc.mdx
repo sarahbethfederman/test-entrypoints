@@ -8,20 +8,29 @@ import Popover from '@lendi-ui/popover';
 
 ```jsx
 <>
-  <div>
-    <Popover
-      content={<><Body size='sm' mb='xxs'>Popover Heading</Body><Body size='xs'>This is LUI popover on content body. You can put extra infomation in here.</Body></>}
-      position='top'
-      target={<Body variant="primary" size="sm" style={{display: 'inline'}}><QuestionOutline color="shade.1000" /> You can trigger a popover on any React Component</Body>}
-    />
-  </div>
-  <Popover
-    content={<Body size='sm' mb='xxs'>I pop out from the left</Body>}
-    position='left'
-    target={<ChevronLeft color="secondary.600" />}
-  />
+  <Popover position='top'>
+    <Popover.Target>
+      <Info color="primary.500" />
+    </Popover.Target>
+
+    <Popover.Content>
+      Example Text!
+    </Popover.Content>
+  </Popover>
+
+  <br />
+  <br />
+
+  <Popover position='bottom'>
+    <Popover.Target>
+      Text can be a target as well
+    </Popover.Target>
+
+    <Popover.Content>
+      Example Text!
+    </Popover.Content>
+  </Popover>
 </>
-             
 ```
 ### Design Notes
 Popovers are meant to give related additional content. They can be much more verbose (compared to Tooltips) and they can include a header and many lines of text in the body.
@@ -29,8 +38,7 @@ Popovers are meant to give related additional content. They can be much more ver
 ## Properties
 
 <PropTable>
-  <PropTable.Entry name="content" type="React.ReactNode" description="Popover content"/>
-  <PropTable.Entry name="className" defaultValue=""type="string" description="Custom class name"/>
-  <PropTable.Entry name="position" type="{'top' | 'bottom' | 'left' | 'right'}" defaultValue="top" description="Popover content display position comparing with target component"/>
-  <PropTable.Entry name="target" type="React.ReactNode" description="Target component that trigger Popover by clicking it"/>
+  <PropTable.Entry required name="Popover.Content" type="string | React.ReactNode" description="Popover content, if it is a string it will come with default padding of small, otherwise consumer must style their content entirely."/>
+  <PropTable.Entry name="position" type="{'top' | 'top-end' | 'top-start' | 'bottom' | 'bottom-end' | 'bottom-start' | 'left' | 'left-end' | 'left-start' | 'right' | 'right-end' | 'right-start'}" defaultValue="top" description="Popover content display position comparing with target component"/>
+  <PropTable.Entry required name="Popover.Target" type="string | React.ReactNode" description="Target component that trigger Popover by clicking it"/>
 </PropTable>

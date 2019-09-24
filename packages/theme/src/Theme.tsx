@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 import { theme } from './theme/lendi';
 import { ThemeMap } from './types';
 
@@ -9,8 +9,7 @@ interface ThemeProps {
 }
 
 // Any cross browser resets should occur here
-// tslint:disable-next-line no-unused-expression
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
@@ -32,7 +31,7 @@ injectGlobal`
 `;
 
 const Root = styled.div`
-  color: ${theme.colors.shade[700]};
+  color: ${theme.colors['shade.700']};
 `;
 
 export function Theme(props: ThemeProps) {
@@ -41,7 +40,10 @@ export function Theme(props: ThemeProps) {
 
   return (
     <ThemeProvider theme={kind}>
-      <Root>{children}</Root>
+      <Root>
+        {children}
+        <GlobalStyle />
+      </Root>
     </ThemeProvider>
   );
 }

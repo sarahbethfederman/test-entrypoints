@@ -2,13 +2,12 @@ import * as React from 'react';
 import { Wrapper, RightIconWrapper, LeftIconWrapper } from './index.style';
 import { Tab, TabProps } from '../Tab';
 import { ChevronLeft, ChevronRight } from '@lendi-ui/icon';
-import createRef from 'react-create-ref';
 import TabContext from '../TabContext';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface TabsProps extends LUIGlobalProps {
-  onChangeTab: (key: number) => void;
-  activeTab: number;
+  onChangeTabIndex: (key: number) => void;
+  activeTabIndex: number;
   isInverse?: boolean;
 }
 
@@ -19,10 +18,7 @@ export interface TabsState {
 export default class Tabs extends React.Component<TabsProps, TabsState> {
   static Tab = Tab;
 
-  // Supressing "Cannot invoke an expression whose type lacks a call signature." error
-  // More details here: https://github.com/jamiebuilds/create-react-context/pull/20
-  // @ts-ignore
-  private node: any = createRef();
+  private node: React.RefObject<HTMLDivElement> = React.createRef();
 
   state = {
     isScrollable: false,
@@ -56,7 +52,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   };
 
   private handleClick = (index: number) => {
-    this.props.onChangeTab(index + 1);
+    this.props.onChangeTabIndex(index);
   };
 
   private calculateTabWidth = () => {
@@ -75,17 +71,17 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, isInverse = false, activeTab, ...otherProps } = this.props;
+    const { children, isInverse = false, activeTabIndex, ...otherProps } = this.props;
     const { isScrollable } = this.state;
     return (
       <TabContext.Provider
         value={{
           onClick: this.handleClick,
           tabCount: React.Children.count(children),
-          selectedIndex: activeTab - 1,
+          selectedIndex: activeTabIndex,
         }}
       >
-        <Wrapper {...otherProps} innerRef={this.node} isInverse={isInverse} isScrollable={isScrollable}>
+        <Wrapper {...otherProps} ref={this.node} isInverse={isInverse} isScrollable={isScrollable}>
           {isScrollable && (
             <LeftIconWrapper onClick={this.handleMoveScrollbarRight}>
               <ChevronLeft height="24px" width="24px" color="secondary.500" />

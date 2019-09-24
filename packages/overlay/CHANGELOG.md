@@ -1,6 +1,11 @@
-## [2.2.2] - 2019-06-4 - [HUB-375](https://creditandfinance.atlassian.net/browse/HUB-375)
+## [3.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+### Updated
+Update typescript to version 3.5.2 and react to version 16.8.4
+
 ### Changed
-- Bumped version for transition to 3.1.1 (this affects other projects that depend on this component)
+Prop `show` changed to `isVisible`
+Prop `hideOnClick` changed to `onClickHide`
+Prop `hideOnEscape` changed to `onClickEscape`
 
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
 ### Changed

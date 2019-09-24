@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 
 import Theme, { theme } from '@lendi-ui/theme';
 import { color as getColor } from '@lendi-ui/color';

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import createRef from 'react-create-ref';
 import { isEmpty, debounce } from 'lodash';
 import { MapWrapper } from './index.style';
 
@@ -18,7 +17,7 @@ export interface AddressMapState {
 }
 
 export default class AddressMap extends React.Component<AddressMapProps, AddressMapState> {
-  private mapBox: React.RefObject<HTMLInputElement> = createRef();
+  private mapBox: React.RefObject<HTMLInputElement> = React.createRef();
   private marker: google.maps.Marker = {} as google.maps.Marker;
 
   state = {
@@ -84,6 +83,6 @@ export default class AddressMap extends React.Component<AddressMapProps, Address
       this.addMarker(this.props.place as google.maps.places.PlaceGeometry);
     }
 
-    return <MapWrapper innerRef={this.mapBox} size={this.state.size} showMap={Boolean(this.props.showMap)} />;
+    return <MapWrapper ref={this.mapBox} size={this.state.size} showMap={Boolean(this.props.showMap)} />;
   }
 }

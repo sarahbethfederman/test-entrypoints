@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 import { unit } from '.';
 
@@ -11,37 +11,37 @@ describe('unit()', () => {
 
   describe('size', () => {
     it('should render correctly when default', () => {
-      const element = shallow(<Unit />);
+      const element = mount(<Unit />);
       expect(element).toHaveStyleRule('max-width', '100%');
     });
 
     it('should render correctly when 1/1', () => {
-      const element = shallow(<Unit size={1} />);
+      const element = mount(<Unit size={1} />);
       expect(element).toHaveStyleRule('max-width', '100%');
     });
 
     it('should render correctly when 1/2', () => {
-      const element = shallow(<Unit size={1 / 2} />);
+      const element = mount(<Unit size={1 / 2} />);
       expect(element).toHaveStyleRule('max-width', '50%');
     });
 
     it('should render correctly when 1/3', () => {
-      const element = shallow(<Unit size={1 / 3} />);
+      const element = mount(<Unit size={1 / 3} />);
       expect(element).toHaveStyleRule('max-width', '33.3333%');
     });
 
     it('should render correctly when 1/4', () => {
-      const element = shallow(<Unit size={1 / 4} />);
+      const element = mount(<Unit size={1 / 4} />);
       expect(element).toHaveStyleRule('max-width', '25%');
     });
 
     it('should render correctly when 1/5', () => {
-      const element = shallow(<Unit size={1 / 5} />);
+      const element = mount(<Unit size={1 / 5} />);
       expect(element).toHaveStyleRule('max-width', '20%');
     });
 
     it('should render correctly across breakpoints', () => {
-      const element = shallow(<Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} />);
+      const element = mount(<Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} />);
       expect(element).toHaveStyleRule('max-width', '100%', {
         media: `(min-width:${Breakpoint.mobile})`,
       });
