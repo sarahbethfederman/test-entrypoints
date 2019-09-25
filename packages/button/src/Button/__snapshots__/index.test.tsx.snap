@@ -106,7 +106,7 @@ exports[`Button emphasis should not render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -123,6 +123,7 @@ exports[`Button emphasis should not render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -159,6 +160,7 @@ exports[`Button emphasis should not render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -202,6 +204,7 @@ exports[`Button emphasis should not render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -327,7 +330,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -344,6 +347,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -380,6 +384,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -423,6 +428,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -548,7 +554,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -565,6 +571,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -601,6 +608,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -644,6 +652,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -769,7 +778,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -786,6 +795,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -822,6 +832,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -865,6 +876,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -990,7 +1002,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -1007,6 +1019,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1043,6 +1056,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1086,6 +1100,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1211,7 +1226,7 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -1228,6 +1243,7 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1264,6 +1280,7 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1307,6 +1324,7 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1459,7 +1477,7 @@ exports[`Button emphasis should render disabled button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -1476,6 +1494,7 @@ exports[`Button emphasis should render disabled button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1512,6 +1531,7 @@ exports[`Button emphasis should render disabled button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1555,6 +1575,7 @@ exports[`Button emphasis should render disabled button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1681,7 +1702,7 @@ exports[`Button emphasis should render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -1698,6 +1719,7 @@ exports[`Button emphasis should render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1734,6 +1756,7 @@ exports[`Button emphasis should render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1777,6 +1800,7 @@ exports[`Button emphasis should render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1903,7 +1927,7 @@ exports[`Button emphasis should render normal button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -1920,6 +1944,7 @@ exports[`Button emphasis should render normal button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -1956,6 +1981,7 @@ exports[`Button emphasis should render normal button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -1999,6 +2025,7 @@ exports[`Button emphasis should render normal button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2124,7 +2151,7 @@ exports[`Button emphasis should render normal styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -2141,6 +2168,7 @@ exports[`Button emphasis should render normal styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -2177,6 +2205,7 @@ exports[`Button emphasis should render normal styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2220,6 +2249,7 @@ exports[`Button emphasis should render normal styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2361,7 +2391,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -2378,6 +2408,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -2414,6 +2445,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2457,6 +2489,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2598,7 +2631,7 @@ exports[`Button empty should render "md" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -2615,6 +2648,7 @@ exports[`Button empty should render "md" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -2651,6 +2685,7 @@ exports[`Button empty should render "md" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2694,6 +2729,7 @@ exports[`Button empty should render "md" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2835,7 +2871,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -2852,6 +2888,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -2888,6 +2925,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -2931,6 +2969,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3072,7 +3111,7 @@ exports[`Button empty should render "xs" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -3089,6 +3128,7 @@ exports[`Button empty should render "xs" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3125,6 +3165,7 @@ exports[`Button empty should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3168,6 +3209,7 @@ exports[`Button empty should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3291,7 +3333,7 @@ exports[`Button empty should render inverse styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -3308,6 +3350,7 @@ exports[`Button empty should render inverse styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3344,6 +3387,7 @@ exports[`Button empty should render inverse styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3387,6 +3431,7 @@ exports[`Button empty should render inverse styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3528,7 +3573,7 @@ exports[`Button empty should render normal styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -3545,6 +3590,7 @@ exports[`Button empty should render normal styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3581,6 +3627,7 @@ exports[`Button empty should render normal styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3624,6 +3671,7 @@ exports[`Button empty should render normal styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3749,7 +3797,7 @@ exports[`Button primary should not render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -3766,6 +3814,7 @@ exports[`Button primary should not render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -3802,6 +3851,7 @@ exports[`Button primary should not render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3845,6 +3895,7 @@ exports[`Button primary should not render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -3970,7 +4021,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -3987,6 +4038,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4023,6 +4075,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4066,6 +4119,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4191,7 +4245,7 @@ exports[`Button primary should render "md" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -4208,6 +4262,7 @@ exports[`Button primary should render "md" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4244,6 +4299,7 @@ exports[`Button primary should render "md" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4287,6 +4343,7 @@ exports[`Button primary should render "md" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4412,7 +4469,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -4429,6 +4486,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4465,6 +4523,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4508,6 +4567,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4633,7 +4693,7 @@ exports[`Button primary should render "xs" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -4650,6 +4710,7 @@ exports[`Button primary should render "xs" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4686,6 +4747,7 @@ exports[`Button primary should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4729,6 +4791,7 @@ exports[`Button primary should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4881,7 +4944,7 @@ exports[`Button primary should render disabled button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -4898,6 +4961,7 @@ exports[`Button primary should render disabled button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -4934,6 +4998,7 @@ exports[`Button primary should render disabled button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -4977,6 +5042,7 @@ exports[`Button primary should render disabled button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5103,7 +5169,7 @@ exports[`Button primary should render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -5120,6 +5186,7 @@ exports[`Button primary should render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5156,6 +5223,7 @@ exports[`Button primary should render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5199,6 +5267,7 @@ exports[`Button primary should render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5316,7 +5385,7 @@ exports[`Button primary should render inverse styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -5333,6 +5402,7 @@ exports[`Button primary should render inverse styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5369,6 +5439,7 @@ exports[`Button primary should render inverse styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5412,6 +5483,7 @@ exports[`Button primary should render inverse styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5538,7 +5610,7 @@ exports[`Button primary should render normal button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -5555,6 +5627,7 @@ exports[`Button primary should render normal button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5591,6 +5664,7 @@ exports[`Button primary should render normal button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5634,6 +5708,7 @@ exports[`Button primary should render normal button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5759,7 +5834,7 @@ exports[`Button primary should render normal styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -5776,6 +5851,7 @@ exports[`Button primary should render normal styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -5812,6 +5888,7 @@ exports[`Button primary should render normal styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5855,6 +5932,7 @@ exports[`Button primary should render normal styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -5991,7 +6069,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -6008,6 +6086,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -6044,6 +6123,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6087,6 +6167,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6223,7 +6304,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -6240,6 +6321,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -6276,6 +6358,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6319,6 +6402,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6455,7 +6539,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -6472,6 +6556,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -6508,6 +6593,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6551,6 +6637,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6687,7 +6774,7 @@ exports[`Button secondary should render "xs" size styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -6704,6 +6791,7 @@ exports[`Button secondary should render "xs" size styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -6740,6 +6828,7 @@ exports[`Button secondary should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6783,6 +6872,7 @@ exports[`Button secondary should render "xs" size styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6901,7 +6991,7 @@ exports[`Button secondary should render inverse styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -6918,6 +7008,7 @@ exports[`Button secondary should render inverse styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -6954,6 +7045,7 @@ exports[`Button secondary should render inverse styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -6997,6 +7089,7 @@ exports[`Button secondary should render inverse styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7133,7 +7226,7 @@ exports[`Button secondary should render normal styles 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -7150,6 +7243,7 @@ exports[`Button secondary should render normal styles 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -7186,6 +7280,7 @@ exports[`Button secondary should render normal styles 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7229,6 +7324,7 @@ exports[`Button secondary should render normal styles 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7354,7 +7450,7 @@ exports[`Button should not render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -7371,6 +7467,7 @@ exports[`Button should not render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -7407,6 +7504,7 @@ exports[`Button should not render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7450,6 +7548,7 @@ exports[`Button should not render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7575,7 +7674,7 @@ exports[`Button should not render full width 2`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -7592,6 +7691,7 @@ exports[`Button should not render full width 2`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -7628,6 +7728,7 @@ exports[`Button should not render full width 2`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7671,6 +7772,7 @@ exports[`Button should not render full width 2`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7823,7 +7925,7 @@ exports[`Button should render disabled button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -7840,6 +7942,7 @@ exports[`Button should render disabled button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -7876,6 +7979,7 @@ exports[`Button should render disabled button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -7919,6 +8023,7 @@ exports[`Button should render disabled button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8071,7 +8176,7 @@ exports[`Button should render disabled button 2`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -8088,6 +8193,7 @@ exports[`Button should render disabled button 2`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -8124,6 +8230,7 @@ exports[`Button should render disabled button 2`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8167,6 +8274,7 @@ exports[`Button should render disabled button 2`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8293,7 +8401,7 @@ exports[`Button should render full width 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -8310,6 +8418,7 @@ exports[`Button should render full width 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -8346,6 +8455,7 @@ exports[`Button should render full width 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8389,6 +8499,7 @@ exports[`Button should render full width 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8515,7 +8626,7 @@ exports[`Button should render full width 2`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -8532,6 +8643,7 @@ exports[`Button should render full width 2`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -8568,6 +8680,7 @@ exports[`Button should render full width 2`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8611,6 +8724,7 @@ exports[`Button should render full width 2`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8737,7 +8851,7 @@ exports[`Button should render normal button 1`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -8754,6 +8868,7 @@ exports[`Button should render normal button 1`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -8790,6 +8905,7 @@ exports[`Button should render normal button 1`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8833,6 +8949,7 @@ exports[`Button should render normal button 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -8959,7 +9076,7 @@ exports[`Button should render normal button 2`] = `
           "attrs": Array [],
           "componentStyle": ComponentStyle {
             "componentId": "sc-EHOje",
-            "isStatic": true,
+            "isStatic": false,
             "lastClassName": "c1",
             "rules": Array [
               "
@@ -8976,6 +9093,7 @@ exports[`Button should render normal button 2`] = `
           "styledComponentId": "sc-EHOje",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -9012,6 +9130,7 @@ exports[`Button should render normal button 2`] = `
                 "styledComponentId": "sc-bZQynM",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -9055,6 +9174,7 @@ exports[`Button should render normal button 2`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

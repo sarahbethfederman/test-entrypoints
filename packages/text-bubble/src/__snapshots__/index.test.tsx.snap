@@ -92,6 +92,7 @@ exports[`TextBubble should mount 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -152,6 +153,7 @@ exports[`TextBubble should mount 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -232,6 +234,7 @@ exports[`TextBubble should mount 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

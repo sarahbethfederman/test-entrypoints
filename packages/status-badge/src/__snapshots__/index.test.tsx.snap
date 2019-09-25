@@ -52,7 +52,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
 }
 
 .c2 > svg {
-  fill: rgba(78,192,0,1);
+  fill: #4ec000;
   width: inherit;
   height: inherit;
 }
@@ -115,6 +115,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -134,7 +135,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-htoDjs",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "
@@ -148,6 +149,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -202,6 +204,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                         "styledComponentId": "sc-iwsKbI",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -260,6 +263,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -333,7 +337,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
 }
 
 .c2 > svg {
-  fill: rgba(78,192,0,1);
+  fill: #4ec000;
   width: inherit;
   height: inherit;
 }
@@ -398,6 +402,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -418,7 +423,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
                   "componentId": "sc-htoDjs",
-                  "isStatic": true,
+                  "isStatic": false,
                   "lastClassName": "c1",
                   "rules": Array [
                     "
@@ -432,6 +437,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -486,6 +492,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                         "styledComponentId": "sc-iwsKbI",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -544,6 +551,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "span",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

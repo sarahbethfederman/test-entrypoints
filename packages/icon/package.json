@@ -11,7 +11,7 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",

@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "react": "^16.8",
     "styled-components": "^4",
@@ -23,9 +23,9 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "dependencies": {
-    "@lendi-ui/color": "^4.0.0",
+    "@lendi-ui/color": "^5.0.0",
     "@lendi-ui/container": "^5.0.0",
-    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^3.0.0"
   }

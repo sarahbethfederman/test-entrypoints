@@ -9,16 +9,16 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^3.0.0",
-    "@lendi-ui/color": "^4.0.0",
-    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/breakpoint": "^4.0.0",
+    "@lendi-ui/color": "^5.0.0",
+    "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/utils": "^3.0.0"
   },
   "scripts": {

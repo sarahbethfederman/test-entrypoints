@@ -13,8 +13,8 @@
     "@lendi-ui/theme": "^7.0.0"
   },
   "dependencies": {
-    "@lendi-ui/color": "^4.0.0",
-    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/color": "^5.0.0",
+    "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/typography": "^3.3.0",
     "react-live": "1.11.0",
     "react-element-to-jsx-string": "^14.0.1"

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/utils",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -12,7 +12,7 @@
     "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^3.0.0",
+    "@lendi-ui/breakpoint": "^4.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0",
     "prop-types": "^15.7.2"
   },

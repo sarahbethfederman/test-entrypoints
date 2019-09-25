@@ -9,7 +9,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
 }
 
 .c2 > svg {
-  fill: rgba(0,192,165,1);
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -170,6 +170,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
           "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -215,6 +216,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                 "styledComponentId": "sc-bxivhb",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -269,6 +271,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                         "styledComponentId": "sc-bwzfXH",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -322,6 +325,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                 "styledComponentId": "sc-bZQynM",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -370,6 +374,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                       "styledComponentId": "sc-ifAKCX",
                       "target": "input",
                       "toString": [Function],
+                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -422,6 +427,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                 "styledComponentId": "sc-gzVnrw",
                 "target": "div",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -471,6 +477,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
                       "styledComponentId": "sc-ifAKCX",
                       "target": "input",
                       "toString": [Function],
+                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }

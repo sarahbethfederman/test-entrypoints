@@ -5,15 +5,15 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
   color: #474747;
 }
 
-.c3 {
+.c2 {
   width: 1em;
   height: 1em;
   vertical-align: middle;
   display: inline-block;
 }
 
-.c3 > svg {
-  fill: rgba(0,192,165,1);
+.c2 > svg {
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -31,7 +31,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
   letter-spacing: normal;
 }
 
-.c2 {
+.c3 {
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   -webkit-transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
@@ -130,15 +130,15 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
   color: #474747;
 }
 
-.c3 {
+.c2 {
   width: 1em;
   height: 1em;
   vertical-align: middle;
   display: inline-block;
 }
 
-.c3 > svg {
-  fill: rgba(0,192,165,1);
+.c2 > svg {
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -156,7 +156,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
   letter-spacing: normal;
 }
 
-.c2 {
+.c3 {
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   -webkit-transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
@@ -255,15 +255,15 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
   color: #474747;
 }
 
-.c3 {
+.c2 {
   width: 1em;
   height: 1em;
   vertical-align: middle;
   display: inline-block;
 }
 
-.c3 > svg {
-  fill: rgba(0,192,165,1);
+.c2 > svg {
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -281,7 +281,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
   letter-spacing: normal;
 }
 
-.c2 {
+.c3 {
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   -webkit-transition: transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;

@@ -178,6 +178,7 @@ exports[`radioButton should render correct styles when disabled 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "label",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -233,6 +234,7 @@ exports[`radioButton should render correct styles when disabled 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "input",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -282,6 +284,7 @@ exports[`radioButton should render correct styles when disabled 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "p",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

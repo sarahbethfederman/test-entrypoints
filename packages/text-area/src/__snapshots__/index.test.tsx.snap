@@ -16,29 +16,29 @@ exports[`Text area should render the text area component 1`] = `
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(200,200,200,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -136,6 +136,7 @@ exports[`Text area should render the text area component 1`] = `
           "styledComponentId": "sc-bwzfXH",
           "target": "textarea",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -177,29 +178,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(200,200,200,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -293,6 +294,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -333,30 +335,30 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid rgba(227,227,227,1);
+  border: 1px solid #e3e3e3;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 <styled.textarea
@@ -426,6 +428,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -466,29 +469,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(255,28,74,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -582,6 +585,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -622,29 +626,29 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(255,255,255,1);
+  color: #ffffff;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(248,248,248,1);
+  border: 1px solid #f8f8f8;
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -738,6 +742,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -778,29 +783,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(200,200,200,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -894,6 +899,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -934,30 +940,30 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid rgba(227,227,227,1);
+  border: 1px solid #e3e3e3;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 <styled.textarea
@@ -1027,6 +1033,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1067,29 +1074,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(255,28,74,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1183,6 +1190,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1223,29 +1231,29 @@ exports[`Text area variations of the text area in all given sizes md should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(255,255,255,1);
+  color: #ffffff;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(248,248,248,1);
+  border: 1px solid #f8f8f8;
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1339,6 +1347,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1379,29 +1388,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: 100%;
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(200,200,200,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #c8c8c8;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1495,6 +1504,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1535,30 +1545,30 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
   cursor: not-allowed;
   background-color: #f8f8f8;
-  border: 1px solid rgba(227,227,227,1);
+  border: 1px solid #e3e3e3;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 <styled.textarea
@@ -1628,6 +1638,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1668,29 +1679,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(71,71,71,1);
+  color: #474747;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(255,28,74,1);
-  background-color: rgba(255,255,255,1);
+  border: 1px solid #ff1c4a;
+  background-color: #ffffff;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1784,6 +1795,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1824,29 +1836,29 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
-  color: rgba(255,255,255,1);
+  color: #ffffff;
   width: calc(21.5 * var(--lendi-ui-size));
   height: calc(6 * var(--lendi-ui-size));
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  border: 1px solid rgba(248,248,248,1);
+  border: 1px solid #f8f8f8;
   background-color: transparent;
 }
 
 .c0::-webkit-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::-moz-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:-ms-input-placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0::placeholder {
-  color: rgba(173,173,173,1);
+  color: #adadad;
 }
 
 .c0:hover:not(:focus) border:1px solid function (_a) {
@@ -1940,6 +1952,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
+        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

@@ -1,9 +1,6 @@
-## [4.0.0-alpha.2] 2019-09-05 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
+## [5.0.0] 2019-09-25 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
 ### Fixed
 - Use correct logo variant for the white Application navbar
-
-## [4.0.0-alpha.1] 2019-09-05 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
-### Fixed
 - Added logo back to the Application navbar variant
 
 ## [4.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)

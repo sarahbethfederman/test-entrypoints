@@ -13,12 +13,12 @@
   "peerDependencies": {
     "@types/react": "^16.8",
     "react": "^16.8",
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "styled-components": "^4",
     "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^3.0.0",
+    "@lendi-ui/breakpoint": "^4.0.0",
     "@lendi-ui/button": "7.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^3.0.0"

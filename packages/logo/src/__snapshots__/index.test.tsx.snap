@@ -9,7 +9,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
 }
 
 .c0 > svg {
-  fill: rgba(2,18,21,1);
+  fill: #021215;
   width: inherit;
   height: inherit;
 }
@@ -180,6 +180,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
               "styledComponentId": "sc-bwzfXH",
               "target": "span",
               "toString": [Function],
+              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }

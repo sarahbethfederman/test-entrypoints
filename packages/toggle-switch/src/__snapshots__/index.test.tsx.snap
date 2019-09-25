@@ -196,6 +196,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
           "styledComponentId": "sc-jTzLTM",
           "target": "label",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -256,6 +257,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
                   "styledComponentId": "sc-ifAKCX",
                   "target": "span",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -315,6 +317,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
                         "styledComponentId": "sc-bxivhb",
                         "target": "input",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -401,6 +404,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
                         "styledComponentId": "sc-EHOje",
                         "target": "span",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -487,6 +491,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
                         "styledComponentId": "sc-bZQynM",
                         "target": "div",
                         "toString": [Function],
+                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -579,6 +584,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
                 "styledComponentId": "sc-fjdhpX",
                 "target": "p",
                 "toString": [Function],
+                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

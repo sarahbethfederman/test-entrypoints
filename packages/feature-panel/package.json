@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/feature-panel",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "react": "^16.8",
     "styled-components": "^4",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@lendi-ui/grid": "3.0.0",
     "@lendi-ui/icon": "9.0.0",
-    "@lendi-ui/spacing": "^5.0.0",
+    "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^3.0.0"
   },

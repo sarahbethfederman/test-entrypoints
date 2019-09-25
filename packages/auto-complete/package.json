@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "react": "^16.8",
     "styled-components": "^4",
@@ -27,10 +27,10 @@
     "@lendi-ui/depth": "^3.0.0",
     "@lendi-ui/icon": "9.0.0",
     "@lendi-ui/spacing": "^5",
-    "@lendi-ui/spinner": "^3.0.0",
+    "@lendi-ui/spinner": "^4.0.0",
     "@lendi-ui/text-input": "4.0.0",
     "@lendi-ui/typography": "^4.0.0",
-    "@lendi-ui/utils": "^3.0.0",
+    "@lendi-ui/utils": "^4.0.0",
     "@types/lodash": "^4.14.123",
     "lodash": "^4.17.11"
   },

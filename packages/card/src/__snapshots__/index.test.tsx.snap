@@ -51,6 +51,7 @@ exports[`Card Footer renders a footer aligned to the center 1`] = `
           "styledComponentId": "sc-iwsKbI",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -118,6 +119,7 @@ exports[`Card Footer renders a footer aligned to the left 1`] = `
           "styledComponentId": "sc-iwsKbI",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -185,6 +187,7 @@ exports[`Card Footer renders a footer aligned to the right 1`] = `
           "styledComponentId": "sc-iwsKbI",
           "target": "div",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }

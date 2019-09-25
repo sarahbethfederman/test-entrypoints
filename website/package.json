@@ -4,8 +4,8 @@
   "version": "2.0.0",
   "dependencies": {
     "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/fancy-icon": "^2.0.0",
-    "@lendi-ui/theme": "^7.0.0",
+    "@lendi-ui/fancy-icon": "^3.0.0",
+    "@lendi-ui/theme": "^8.0.0",
     "@mdx-js/tag": "^0.15.0",
     "@sentry/browser": "^5.4.0",
     "@types/marked": "^0.6.5",

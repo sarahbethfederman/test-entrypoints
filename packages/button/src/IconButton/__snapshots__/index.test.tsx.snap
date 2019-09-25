@@ -9,7 +9,7 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: rgba(0,192,165,1);
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -121,6 +121,7 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
           "styledComponentId": "sc-htpNat",
           "target": "button",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -180,6 +181,7 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
                   "styledComponentId": "sc-bwzfXH",
                   "target": "span",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -226,7 +228,7 @@ exports[`IconButton should render the "md" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: rgba(0,192,165,1);
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -338,6 +340,7 @@ exports[`IconButton should render the "md" size correctly 1`] = `
           "styledComponentId": "sc-htpNat",
           "target": "button",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -397,6 +400,7 @@ exports[`IconButton should render the "md" size correctly 1`] = `
                   "styledComponentId": "sc-bwzfXH",
                   "target": "span",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -443,7 +447,7 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: rgba(0,192,165,1);
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -555,6 +559,7 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
           "styledComponentId": "sc-htpNat",
           "target": "button",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -614,6 +619,7 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
                   "styledComponentId": "sc-bwzfXH",
                   "target": "span",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -660,7 +666,7 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
 }
 
 .c1 > svg {
-  fill: rgba(0,192,165,1);
+  fill: #00c0a5;
   width: inherit;
   height: inherit;
 }
@@ -772,6 +778,7 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
           "styledComponentId": "sc-htpNat",
           "target": "button",
           "toString": [Function],
+          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -831,6 +838,7 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
                   "styledComponentId": "sc-bwzfXH",
                   "target": "span",
                   "toString": [Function],
+                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
