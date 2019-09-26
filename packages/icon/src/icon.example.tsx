@@ -1,12 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import * as Icon from '.';
-import Theme from '@lendi-ui/theme';
+import Theme, { Colors } from '@lendi-ui/theme';
 import { Body } from '@lendi-ui/typography';
 import { p, mt } from '@lendi-ui/spacing';
 
 export interface IconProps {
-  color?: string;
+  color?: Colors;
   width?: string;
   height?: string;
   className?: string;

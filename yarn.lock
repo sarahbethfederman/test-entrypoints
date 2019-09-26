@@ -345,19 +345,19 @@
     create-react-context "^0.2.3"
     prop-types "^15.6.2"
 
-"@lendi-ui/color@4.0.0", "@lendi-ui/color@^4", "@lendi-ui/color@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/color/-/color-4.0.0.tgz#383652b5c96a50390e5190925e23be467519cacd"
-  integrity sha512-OTrSJGNLT3Bohgd63WOhBQjZn/Z9PnhooXfLudtxRXIv7uwTo5Iun5sKbx/GPEslaiN5JGRGGOKffALq+RIHSg==
-  dependencies:
-    "@lendi-ui/breakpoint" "^3.0.0"
-
 "@lendi-ui/color@^3.0.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/color/-/color-3.1.0.tgz#95011fb9e6c9049c055bc811b491135e15311086"
   integrity sha512-EeTtNYZ8GdV+L41qZ7O2zJb92vJLXRcKZfGjCQvthelxqJu9u6J48JsVaqKFYOsvkmPcznUu7sOSo/qU9TMElw==
   dependencies:
     "@lendi-ui/breakpoint" "^2.0.0"
+
+"@lendi-ui/color@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/color/-/color-4.0.0.tgz#383652b5c96a50390e5190925e23be467519cacd"
+  integrity sha512-OTrSJGNLT3Bohgd63WOhBQjZn/Z9PnhooXfLudtxRXIv7uwTo5Iun5sKbx/GPEslaiN5JGRGGOKffALq+RIHSg==
+  dependencies:
+    "@lendi-ui/breakpoint" "^3.0.0"
 
 "@lendi-ui/depth@^2.0.0", "@lendi-ui/depth@^2.1.0":
   version "2.1.0"
@@ -368,20 +368,6 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/depth/-/depth-3.0.0.tgz#200e883fc33c863f45bfe9ecad0549c5d02a82c9"
   integrity sha512-HrPrpXJPTWb3cBOKq2suwqPC6Ar6EZ0gTiWyanl2fcj1UFEuEkX4oqeyxDn8h3nRcK9EgmNyU/n9Fnxb0glk8w==
-
-"@lendi-ui/dropdown@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/dropdown/-/dropdown-3.0.1.tgz#57581672f757a1de7e8c774d480ceda7c8763d8a"
-  integrity sha512-fBooAsU+KkMDwHnU3/TS60TcybfySNwUawfQiw4ehwu/9Zd6Yi2btpyAC7Zv3xOkrGzQ43NT6guHACzw9E3BcQ==
-  dependencies:
-    "@lendi-ui/breakpoint" "^2.0.0"
-    "@lendi-ui/depth" "^2.0.0"
-    "@lendi-ui/icon" "^8.0.0"
-    "@lendi-ui/spacing" "^4.0.0"
-    "@lendi-ui/spinner" "^2.0.0"
-    "@lendi-ui/utils" "^2.5.0"
-    "@types/react-select" "^3.0.2"
-    react-select "^3.0.4"
 
 "@lendi-ui/fancy-icon@^1.0.1":
   version "1.1.0"
@@ -466,22 +452,13 @@
     "@lendi-ui/breakpoint" "^2.0.0"
     "@lendi-ui/utils" "^2.5.0"
 
-"@lendi-ui/spacing@^5", "@lendi-ui/spacing@^5.0.0":
+"@lendi-ui/spacing@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-5.0.0.tgz#39f47f634637f1e35c59acea411ecb1dcec79ebf"
   integrity sha512-bkNmK94IU9IHqnHFdbETuz4oLVK9t8wP00LBSatpJ4iaBun1n+ZjEALiC5RIKTU6+CHejiZb4saZaXXLwPUuHA==
   dependencies:
     "@lendi-ui/breakpoint" "^3.0.0"
     "@lendi-ui/utils" "^3.0.0"
-
-"@lendi-ui/spinner@^2.0.0":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/spinner/-/spinner-2.2.1.tgz#858bd83c6093cca4401576d83b3cce7781796e73"
-  integrity sha512-CDJYu613EgpEyAg+MJggFFICbh2pwivdKglFylGlDfowuRxVPRi6+E8kueGqdTNbgjEFmqjyQSVme7bApvyn+Q==
-  dependencies:
-    "@lendi-ui/color" "^3.0.0"
-    "@lendi-ui/icon" "^7.0.0"
-    "@lendi-ui/utils" "^2.5.0"
 
 "@lendi-ui/spinner@^3.0.0":
   version "3.0.0"
@@ -491,16 +468,6 @@
     "@lendi-ui/color" "^4.0.0"
     "@lendi-ui/icon" "^8.2.0"
     "@lendi-ui/utils" "^3.0.0"
-
-"@lendi-ui/text-input@3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@lendi-ui/text-input/-/text-input-3.4.0.tgz#fb637463d8d8aba77bb85872159ff58228e2c58b"
-  integrity sha512-3WXS9EwA2f4whvqGWmrZSuZxov8StIsc5HUGgx8hPW79ud5jQxv1LhIaAsnrohR/3SdkbLOWO88Y7kAA2IDAwQ==
-  dependencies:
-    "@lendi-ui/breakpoint" "^2.0.0"
-    "@lendi-ui/button" "^5.0.0"
-    "@lendi-ui/typography" "^3.0.0"
-    "@lendi-ui/utils" "^2.5.0"
 
 "@lendi-ui/toggle-switch@^2.2.3":
   version "2.3.0"

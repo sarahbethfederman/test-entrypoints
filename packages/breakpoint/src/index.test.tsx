@@ -2,7 +2,9 @@ import 'jest-styled-components';
 import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { mount } from 'enzyme';
+import { Colors } from '@lendi-ui/theme';
 import { gte, between, map, Breakpoint, BreakpointValue, BreakpointValueMap } from '.';
+
 describe('gte()', () => {
   it('should wrap styles in a media rule', () => {
     const Component = styled.div`
@@ -32,7 +34,7 @@ describe('gte()', () => {
   it('should wrap styles consisting of functions in a media rule', () => {
     const ComplexComponent = styled.div`
       ${gte('tablet')`
-        color: ${(props: { color: string }) => props.color};
+        color: ${(props: { color: Colors }) => props.color};
       `};
     `;
 
@@ -67,7 +69,7 @@ describe('between()', () => {
   it('should wrap styles consisting of functions in a media rule', () => {
     const ComplexComponent = styled.div`
       ${between('tablet', 'desktop')`
-        color: ${(props: { color: string }) => props.color};
+        color: ${(props: { color: Colors }) => props.color};
       `};
     `;
 

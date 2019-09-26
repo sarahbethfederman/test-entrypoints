@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/container",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -13,7 +13,7 @@
     "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/spacing": "^5.0.0"
+    "@lendi-ui/spacing": "^6.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

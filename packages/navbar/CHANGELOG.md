@@ -1,3 +1,6 @@
+## [5.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+- Bumped lendi-ui dependencies to latest versions
+
 ## [5.0.0] 2019-09-25 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
 ### Fixed
 - Use correct logo variant for the white Application navbar

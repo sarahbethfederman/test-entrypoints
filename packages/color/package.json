@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/color",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "Color utilities for color.",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
@@ -15,7 +15,7 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^3.0.0"
+    "@lendi-ui/breakpoint": "^4.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

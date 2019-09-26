@@ -10,7 +10,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -276,7 +276,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -535,7 +535,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -764,7 +764,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1021,7 +1021,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1271,7 +1271,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1491,7 +1491,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1748,7 +1748,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -1998,7 +1998,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -2218,7 +2218,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -2472,7 +2472,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -2720,7 +2720,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -2939,7 +2939,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -3205,7 +3205,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -3464,7 +3464,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -3693,7 +3693,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -3950,7 +3950,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -4200,7 +4200,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -4420,7 +4420,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -4677,7 +4677,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }
@@ -4927,7 +4927,7 @@ Array [
 }
 
 .c2 > svg {
-  fill: #adadad;
+  fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
 }

@@ -52,7 +52,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
 }
 
 .c2 > svg {
-  fill: #4ec000;
+  fill: rgba(78,192,0,1);
   width: inherit;
   height: inherit;
 }
@@ -337,7 +337,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
 }
 
 .c2 > svg {
-  fill: #4ec000;
+  fill: rgba(78,192,0,1);
   width: inherit;
   height: inherit;
 }

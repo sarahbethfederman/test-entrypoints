@@ -29,7 +29,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
 }
 
 .c1 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -258,7 +258,7 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
 }
 
 .c0 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }
@@ -460,7 +460,7 @@ exports[`ErrorMessage should render whole component 1`] = `
 }
 
 .c1 > svg {
-  fill: #ff1c4a;
+  fill: rgba(255,28,74,1);
   width: inherit;
   height: inherit;
 }

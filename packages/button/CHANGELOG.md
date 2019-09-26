@@ -1,3 +1,6 @@
+## [7.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+- Bumped lendi-ui dependencies to latest versions
+
 ## [7.0.0] 2019-9-23 - [HUB-412](https://creditandfinance.atlassian.net/browse/HUB-412)
 ### Changed
 - Uses Theme v7

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navigation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -19,12 +19,12 @@
   },
   "dependencies": {
     "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/depth": "^3.0.0",
-    "@lendi-ui/icon": "9.0.0",
+    "@lendi-ui/depth": "^4.0.0",
+    "@lendi-ui/icon": "^9.0.0",
     "@lendi-ui/spacing": "^6.0.0",
-    "@lendi-ui/status-badge": "3.0.0",
+    "@lendi-ui/status-badge": "^3.0.0",
     "@lendi-ui/typography": "^4.0.0",
-    "@lendi-ui/utils": "^3.0.0"
+    "@lendi-ui/utils": "^4.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

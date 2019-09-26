@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -16,11 +16,11 @@
   },
   "dependencies": {
     "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/depth": "^3.0.0",
+    "@lendi-ui/depth": "^4.0.0",
     "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/spinner": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0",
-    "@lendi-ui/breakpoint": "^3.0.0"
+    "@lendi-ui/breakpoint": "^4.0.0"
   },
   "license": "ISC",
   "scripts": {
@@ -29,6 +29,6 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "devDependencies": {
-    "@lendi-ui/icon": "9.0.0"
+    "@lendi-ui/icon": "^9.0.0"
   }
 }

@@ -84,7 +84,7 @@ const CardWithCarousel: React.FunctionComponent<CardWithCarouselProps> = ({ chil
 
 export default () => (
   <Content>
-    <div style={{ height: '200px', backgroundColor: '#ffc5c0', borderRadius: '6px' }}></div>
+    <div style={{ height: '200px', backgroundColor: '#ffc5c0', borderRadius: '6px' }} />
     <Carousel withArrows height={'1000px'} increment={{ mobile: 1, tablet: 4, desktop: 4 }}>
       <CardContainer>
         <CardWithCarousel data={[<Data key={1}>1a</Data>, <Data key={2}>1b</Data>]}>

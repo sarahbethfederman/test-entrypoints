@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { LUIGlobalProps } from '@lendi-ui/utils';
+import { Colors } from '@lendi-ui/theme';
 
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
@@ -18,7 +19,7 @@ export interface ButtonGroupButtonProps {
 }
 
 export interface ButtonGroupIconButtonProps {
-  color?: string;
+  color?: Colors;
   href?: string;
   isDisabled?: boolean;
   isLoading?: boolean;

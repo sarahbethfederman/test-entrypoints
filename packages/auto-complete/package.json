@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/auto-complete",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -23,18 +23,19 @@
     "build": "yarn run build:types && yarn run build:cjs"
   },
   "dependencies": {
-    "@lendi-ui/color": "^4",
-    "@lendi-ui/depth": "^3.0.0",
-    "@lendi-ui/icon": "9.0.0",
-    "@lendi-ui/spacing": "^5",
+    "@lendi-ui/color": "^5",
+    "@lendi-ui/depth": "^4.0.0",
+    "@lendi-ui/icon": "^9.0.0",
+    "@lendi-ui/spacing": "^6",
     "@lendi-ui/spinner": "^4.0.0",
-    "@lendi-ui/text-input": "4.0.0",
+    "@lendi-ui/text-input": "^4.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0",
+    "@lendi-ui/breakpoint": "^4.0.0",
     "@types/lodash": "^4.14.123",
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "@lendi-ui/field": "3.0.0"
+    "@lendi-ui/field": "^3.0.0"
   }
 }

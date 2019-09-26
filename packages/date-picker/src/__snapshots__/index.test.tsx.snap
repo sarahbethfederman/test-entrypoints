@@ -9,7 +9,7 @@ exports[`DatePicker should render the component with month and year sections 1`]
 }
 
 .c2 > svg {
-  fill: #00c0a5;
+  fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
 }

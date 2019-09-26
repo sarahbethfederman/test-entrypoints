@@ -2,18 +2,19 @@ import * as React from 'react';
 import { deriveSize, getDataProps, LUIGlobalProps } from '@lendi-ui/utils';
 import { IconButtonSize, IconButtonWrapper, LinkWrapper } from './index.style';
 import Spinner from '@lendi-ui/spinner';
+import { Colors } from '@lendi-ui/theme';
 
 export { IconButtonSize };
 
 export interface IconProps {
-  color: string;
+  color: Colors;
   width?: string;
   height?: string;
   className?: string;
 }
 
 export interface IconButtonProps extends LUIGlobalProps {
-  color?: string;
+  color?: Colors;
   href?: string;
   isDisabled?: boolean;
   onClick?: (event: React.SyntheticEvent) => void;

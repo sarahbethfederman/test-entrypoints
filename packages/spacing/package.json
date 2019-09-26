@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/spacing",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Utilities for spacing.",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^4.0.0",
-    "@lendi-ui/utils": "^3.0.0"
+    "@lendi-ui/utils": "^4.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

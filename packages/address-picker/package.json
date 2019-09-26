@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/address-picker",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -18,14 +18,14 @@
     "@types/styled-components": "^4.1.18"
   },
   "dependencies": {
-    "@lendi-ui/auto-complete": "5.0.0",
+    "@lendi-ui/auto-complete": "^5.0.0",
     "@lendi-ui/breakpoint": "^4.0.0",
     "@lendi-ui/container": "^5.0.0",
-    "@lendi-ui/icon": "9.0.0",
-    "@lendi-ui/modal": "3.0.0",
-    "@lendi-ui/dropdown": "4.0.0",
-    "@lendi-ui/spacing": "^5",
-    "@lendi-ui/text-input": "4.0.0",
+    "@lendi-ui/icon": "^9.0.0",
+    "@lendi-ui/modal": "^3.0.0",
+    "@lendi-ui/dropdown": "^4.0.0",
+    "@lendi-ui/spacing": "^6",
+    "@lendi-ui/text-input": "^4.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0",
     "@types/googlemaps": "^3.36.5",
