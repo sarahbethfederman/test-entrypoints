@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -32,7 +32,6 @@
     "@lendi-ui/utils": "^4.0.0",
     "@lendi-ui/grid": "^3.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0",
-    "@types/axios": "^0.14.0",
     "@types/react-stickynode": "^1.4.0",
     "axios": "^0.18.0",
     "react-create-ref": "^1.0.1",
