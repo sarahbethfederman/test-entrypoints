@@ -1,3 +1,7 @@
+## [8.0.1] 2019-9-29 [HUB-589](https://creditandfinance.atlassian.net/browse/HUB-589)
+### Changed
+- added font family defaults based on theme
+
 ## [8.0.0] 2019-9-23 - 2019-08-15 - [HUB-412](https://creditandfinance.atlassian.net/browse/HUB-412)
 
 ## [7.0.0] 2019-9-23 - 2019-08-15 - [HUB-412](https://creditandfinance.atlassian.net/browse/HUB-412)

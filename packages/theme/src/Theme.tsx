@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import styled, { ThemeProvider, createGlobalStyle, GlobalStyleComponent, DefaultTheme } from 'styled-components';
 import { theme } from './theme/lendi';
 import { ThemeMap } from './types';
 
@@ -9,10 +9,15 @@ interface ThemeProps {
 }
 
 // Any cross browser resets should occur here
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle: GlobalStyleComponent<{ theme: ThemeMap }, DefaultTheme> = createGlobalStyle`
   html, body {
     margin: 0;
     padding: 0;
+    ${({ theme }) => theme.typography.body};
+  }
+
+  heading, h1, h2, h3, h4, h5, h6 {
+    ${({ theme }) => theme.typography.heading};
   }
 
   input::-ms-clear {
