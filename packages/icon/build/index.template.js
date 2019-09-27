@@ -10,7 +10,7 @@ export interface SvgProps {
 }
 
 export interface IconProps {
-  color: Colors;
+  color?: Colors;
   width?: string;
   height?: string;
   className?: string;

@@ -1,7 +1,10 @@
-## [9.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+## [9.0.2] - 2019-09-27
+- Change color to an optional property.
+
+## [9.0.1] - 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 
-## [9.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
+## [9.0.0] - 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 ### Changed
 - Uses Theme v7
 - Update typescript to version 3.5.2 and react to version 16.8.4 [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
