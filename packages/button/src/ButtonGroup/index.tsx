@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 import { Colors } from '@lendi-ui/theme';
+import { IconProps } from '@lendi-ui/icon';
 
 import { Wrapper } from './index.style';
 import { ButtonVariant, ButtonSize, Button } from '../Button';
-import { IconButton, IconButtonSize, IconProps } from '../IconButton';
+import { IconButton, IconButtonSize } from '../IconButton';
 
 export interface ButtonGroupButtonProps {
   variant: ButtonVariant;

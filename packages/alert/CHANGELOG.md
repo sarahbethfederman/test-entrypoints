@@ -1,3 +1,7 @@
+## [4.0.2] - 2019-09-27 - [HUB-590](https://creditandfinance.atlassian.net/browse/HUB-590)
+### Changed
+- Fix the bug that icon and content not Centralized when no heading.
+
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 

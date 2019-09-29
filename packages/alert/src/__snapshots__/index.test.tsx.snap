@@ -49,6 +49,8 @@ exports[`Alert should mount Alert component with heading 1`] = `
 }
 
 .c4 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: calc(0.875 * var(--lendi-ui-size));
   line-height: calc(20 / 14);
   font-family: 'Open Sans',sans-serif;
@@ -56,6 +58,8 @@ exports[`Alert should mount Alert component with heading 1`] = `
 }
 
 .c5 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: calc(0.75 * var(--lendi-ui-size));
   line-height: calc(16 / 12);
   font-family: 'Open Sans',sans-serif;
@@ -94,7 +98,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
-    ",
+  ",
               "
   box-sizing: border-box;
   line-height: 1.333;
@@ -105,22 +109,22 @@ exports[`Alert should mount Alert component with heading 1`] = `
   letter-spacing: normal;
 ",
               ";
-    display: flex;
-    align-items: flex-start;
-    border-radius: ",
+  display: flex;
+  align-items: flex-start;
+  border-radius: ",
               [Function],
               ";
-    ",
+  ",
               "
     padding: ",
               "var(--lendi-ui-size)",
               ";
   ",
               "
-    ",
+  ",
               [Function],
               "
-    ",
+  ",
               [Function],
               "
 ",
@@ -284,7 +288,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
                   </span>
                 </StyledComponent>
               </styled.span>
-              <styled.p
+              <Styled(styled.p)
                 size="sm"
               >
                 <StyledComponent
@@ -299,7 +303,44 @@ exports[`Alert should mount Alert component with heading 1`] = `
                         "rules": Array [
                           "
   ",
+                          "
+    margin-top: ",
+                          "0",
+                          ";
+    margin-bottom: ",
+                          "0",
+                          ";
+  ",
+                          "
+  ",
                           [Function],
+                          "
+  ",
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+  ",
+                          [Function],
+                          "
+",
+                          ";
+",
                           "
   ",
                           "
@@ -311,8 +352,10 @@ exports[`Alert should mount Alert component with heading 1`] = `
 ",
                         ],
                       },
-                      "displayName": "styled.p",
-                      "foldedComponentIds": Array [],
+                      "displayName": "Styled(styled.p)",
+                      "foldedComponentIds": Array [
+                        "sc-bwzfXH",
+                      ],
                       "render": [Function],
                       "styledComponentId": "sc-iwsKbI",
                       "target": "p",
@@ -334,11 +377,11 @@ exports[`Alert should mount Alert component with heading 1`] = `
                     </strong>
                   </p>
                 </StyledComponent>
-              </styled.p>
+              </Styled(styled.p)>
             </div>
           </StyledComponent>
         </styled.div>
-        <styled.p
+        <Styled(styled.p)
           size="xs"
           withHeading={true}
         >
@@ -354,7 +397,44 @@ exports[`Alert should mount Alert component with heading 1`] = `
                   "rules": Array [
                     "
   ",
+                    "
+    margin-top: ",
+                    "0",
+                    ";
+    margin-bottom: ",
+                    "0",
+                    ";
+  ",
+                    "
+  ",
                     [Function],
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                    ";
+",
                     "
   ",
                     [Function],
@@ -362,8 +442,10 @@ exports[`Alert should mount Alert component with heading 1`] = `
 ",
                   ],
                 },
-                "displayName": "styled.p",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.p)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
                 "render": [Function],
                 "styledComponentId": "sc-gZMcBi",
                 "target": "p",
@@ -384,7 +466,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
               Error description
             </p>
           </StyledComponent>
-        </styled.p>
+        </Styled(styled.p)>
       </div>
     </StyledComponent>
   </styled.div>
@@ -426,6 +508,8 @@ exports[`Alert should mount Alert component without heading 1`] = `
 }
 
 .c3 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: calc(0.75 * var(--lendi-ui-size));
   line-height: calc(16 / 12);
   font-family: 'Open Sans',sans-serif;
@@ -463,7 +547,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
-    ",
+  ",
               "
   box-sizing: border-box;
   line-height: 1.333;
@@ -474,22 +558,22 @@ exports[`Alert should mount Alert component without heading 1`] = `
   letter-spacing: normal;
 ",
               ";
-    display: flex;
-    align-items: flex-start;
-    border-radius: ",
+  display: flex;
+  align-items: flex-start;
+  border-radius: ",
               [Function],
               ";
-    ",
+  ",
               "
     padding: ",
               "var(--lendi-ui-size)",
               ";
   ",
               "
-    ",
+  ",
               [Function],
               "
-    ",
+  ",
               [Function],
               "
 ",
@@ -619,7 +703,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
             </span>
           </StyledComponent>
         </styled.span>
-        <styled.p
+        <Styled(styled.p)
           size="xs"
           withHeading={false}
         >
@@ -635,7 +719,44 @@ exports[`Alert should mount Alert component without heading 1`] = `
                   "rules": Array [
                     "
   ",
+                    "
+    margin-top: ",
+                    "0",
+                    ";
+    margin-bottom: ",
+                    "0",
+                    ";
+  ",
+                    "
+  ",
                     [Function],
+                    "
+  ",
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                    ";
+",
                     "
   ",
                     [Function],
@@ -643,8 +764,10 @@ exports[`Alert should mount Alert component without heading 1`] = `
 ",
                   ],
                 },
-                "displayName": "styled.p",
-                "foldedComponentIds": Array [],
+                "displayName": "Styled(styled.p)",
+                "foldedComponentIds": Array [
+                  "sc-bwzfXH",
+                ],
                 "render": [Function],
                 "styledComponentId": "sc-gZMcBi",
                 "target": "p",
@@ -665,7 +788,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
               Error description
             </p>
           </StyledComponent>
-        </styled.p>
+        </Styled(styled.p)>
       </div>
     </StyledComponent>
   </styled.div>

@@ -3,15 +3,9 @@ import { deriveSize, getDataProps, LUIGlobalProps } from '@lendi-ui/utils';
 import { IconButtonSize, IconButtonWrapper, LinkWrapper } from './index.style';
 import Spinner from '@lendi-ui/spinner';
 import { Colors } from '@lendi-ui/theme';
+import { IconProps } from '@lendi-ui/icon';
 
 export { IconButtonSize };
-
-export interface IconProps {
-  color: Colors;
-  width?: string;
-  height?: string;
-  className?: string;
-}
 
 export interface IconButtonProps extends LUIGlobalProps {
   color?: Colors;
