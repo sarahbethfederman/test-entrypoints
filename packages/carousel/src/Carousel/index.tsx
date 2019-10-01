@@ -72,9 +72,11 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
     }, DEBOUNCE_INTERVAL);
 
     const handleResize = debounce(() => {
-      setWindowWidth(window.innerWidth);
-      setCurrentIndex(initialIndex);
-      handleScroll();
+      if (window.innerWidth !== windowWidth) {
+        setWindowWidth(window.innerWidth);
+        setCurrentIndex(initialIndex);
+        handleScroll();
+      }
     }, DEBOUNCE_INTERVAL);
 
     handleScroll();
