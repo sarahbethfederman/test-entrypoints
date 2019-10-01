@@ -1,3 +1,6 @@
+## [4.0.2] 2019-10-01 [QUAL-694](https://creditandfinance.atlassian.net/browse/HUB-694)
+- Bumped lendi-ui dependencies to latest versions
+
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 

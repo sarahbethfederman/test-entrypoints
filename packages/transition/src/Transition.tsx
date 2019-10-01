@@ -37,6 +37,13 @@ class Transition extends React.Component<TransitionProps, TransitionState> {
         };
       }
 
+      if (!props.isVisible && !props.isActive) {
+        return {
+          mounted: true,
+          state: 'exited', // Skip the exit transition all together
+        };
+      }
+
       return {
         mounted: true,
       };
