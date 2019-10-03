@@ -380,7 +380,54 @@ exports[`input should render the whole input component and a text input 1`] = `
                           "withComponent": [Function],
                         }
                       }
-                      forwardedRef={null}
+                      forwardedRef={
+                        Object {
+                          "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                            class="c0"
+                            font-size="md"
+                            placeholder="input here ..."
+                            type="text"
+                            value=""
+                          />,
+                        }
+                      }
                       isError={false}
                       isInverse={false}
                       onChange={[MockFunction]}
@@ -628,7 +675,54 @@ exports[`input variations of the text input in all given sizes lg should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -846,7 +940,55 @@ exports[`input variations of the text input in all given sizes lg should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                disabled=""
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -1087,7 +1229,54 @@ exports[`input variations of the text input in all given sizes lg should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={true}
           isInverse={false}
           onChange={[MockFunction]}
@@ -1328,7 +1517,54 @@ exports[`input variations of the text input in all given sizes lg should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={true}
           onChange={[MockFunction]}
@@ -1569,7 +1805,54 @@ exports[`input variations of the text input in all given sizes md should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -1787,7 +2070,55 @@ exports[`input variations of the text input in all given sizes md should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                disabled=""
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -2028,7 +2359,54 @@ exports[`input variations of the text input in all given sizes md should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={true}
           isInverse={false}
           onChange={[MockFunction]}
@@ -2269,7 +2647,54 @@ exports[`input variations of the text input in all given sizes md should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={true}
           onChange={[MockFunction]}
@@ -2510,7 +2935,54 @@ exports[`input variations of the text input in all given sizes sm should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -2728,7 +3200,55 @@ exports[`input variations of the text input in all given sizes sm should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                disabled=""
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -2969,7 +3489,54 @@ exports[`input variations of the text input in all given sizes sm should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={true}
           isInverse={false}
           onChange={[MockFunction]}
@@ -3210,7 +3777,54 @@ exports[`input variations of the text input in all given sizes sm should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={true}
           onChange={[MockFunction]}
@@ -3451,7 +4065,54 @@ exports[`input variations of the text input in all given sizes xs should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -3669,7 +4330,55 @@ exports[`input variations of the text input in all given sizes xs should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                disabled=""
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={false}
           onChange={[MockFunction]}
@@ -3910,7 +4619,54 @@ exports[`input variations of the text input in all given sizes xs should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #474747;
+  background-color: #ffffff;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: #f8f8f8;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={true}
           isInverse={false}
           onChange={[MockFunction]}
@@ -4151,7 +4907,54 @@ exports[`input variations of the text input in all given sizes xs should render 
               "withComponent": [Function],
             }
           }
-          forwardedRef={null}
+          forwardedRef={
+            Object {
+              "current": .c0 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  min-width: 0;
+  width: 100%;
+  border: 0px;
+  font-size: var(--lendi-ui-size);
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  font-family: 'Open Sans',sans-serif;
+  padding: 0 var(--lendi-ui-size);
+}
+
+.c0::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+.c0::-moz-placeholder {
+  color: #adadad;
+}
+
+.c0:-ms-input-placeholder {
+  color: #adadad;
+}
+
+.c0::placeholder {
+  color: #adadad;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+<input
+                class="c0"
+                font-size="md"
+                placeholder="input here ..."
+                type="text"
+                value=""
+              />,
+            }
+          }
           isError={false}
           isInverse={true}
           onChange={[MockFunction]}

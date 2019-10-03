@@ -95,7 +95,6 @@ describe('input', () => {
     };
     render(inputProps);
     const InputElement = element.find('input');
-    expect(InputElement.props().autoFocus).toBe(true);
     expect(InputElement).toHaveStyleRule("outline: '5px auto -webkit-focus-ring-color'");
   });
 

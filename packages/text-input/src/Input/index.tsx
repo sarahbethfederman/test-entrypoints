@@ -45,12 +45,20 @@ export const Input = ({
   ...otherProps
 }: InputProp) => {
   const disabledVal = isDisabled || !!otherProps.disabled;
+  const refInput = React.useRef<HTMLInputElement>(null);
+
+  React.useEffect(() => {
+    if (refInput.current && (isAutoFocus || otherProps.autoFocus)) {
+      refInput.current.focus();
+    }
+  });
 
   return (
     <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
       {before && <BeforeWrapper isDisabled={disabledVal}>{before}</BeforeWrapper>}
       <InputWrapper
         {...otherProps}
+        ref={refInput}
         type={supportedTypes.includes(`${type}`) ? `${type}` : 'text'}
         isError={isError}
         isInverse={isInverse}
@@ -58,7 +66,6 @@ export const Input = ({
         size={inputSize}
         readOnly={isReadOnly || otherProps.readOnly} // in order to keep a backward compatibility, and giving preferences to provided InputProps, otherwise fall to HTML defaults.
         disabled={disabledVal}
-        autoFocus={isAutoFocus || otherProps.autoFocus}
         required={isRequired || otherProps.required}
       />
       {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
