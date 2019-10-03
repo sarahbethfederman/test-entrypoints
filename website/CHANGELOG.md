@@ -1,5 +1,9 @@
 # Changelog
 
+## [2.0.1] - [2019-10-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
+### Updated 
+- Update Helmet with name export
+
 ## [2.0.0] - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
 ### Updated 
 - Update typescript to version 3.5.2 and react to version 16.8.4

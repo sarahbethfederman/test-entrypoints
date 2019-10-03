@@ -1,3 +1,7 @@
+## [8.1.0] 2019-10-02 [HUB-589](https://creditandfinance.atlassian.net/browse/HUB-589)
+### Changed
+- Enhancement LUI theme with default font-family for body and font-weight for heading.
+
 ## [8.0.1] 2019-9-29 [HUB-589](https://creditandfinance.atlassian.net/browse/HUB-589)
 ### Changed
 - added font family defaults based on theme

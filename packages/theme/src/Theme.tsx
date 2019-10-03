@@ -13,11 +13,12 @@ const GlobalStyle: GlobalStyleComponent<{ theme: ThemeMap }, DefaultTheme> = cre
   html, body {
     margin: 0;
     padding: 0;
-    ${({ theme }) => theme.typography.body};
+    font-family: ${({ theme }) => theme.typography.body};
   }
 
   heading, h1, h2, h3, h4, h5, h6 {
-    ${({ theme }) => theme.typography.heading};
+    font-family: ${({ theme }) => theme.typography.heading};
+    font-weight: 700;
   }
 
   input::-ms-clear {
