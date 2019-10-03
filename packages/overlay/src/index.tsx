@@ -67,12 +67,13 @@ class Overlay extends React.Component<OverlayProps> {
   }
 
   public render() {
-    const { isVisible, children, zIndex, ...otherProps } = this.props;
+    const { isVisible, children, zIndex } = this.props;
+
     return (
       <div>
         {isVisible && <ScrollLock />}
         <Fade isActive={isVisible} isVisible={isVisible} shouldMountOnEnter={true} shouldUnmountOnExit={true}>
-          <Wrapper onClick={this.handleClick} zIndex={zIndex} {...otherProps}>
+          <Wrapper onClick={this.handleClick} zIndex={zIndex}>
             {children}
           </Wrapper>
         </Fade>
