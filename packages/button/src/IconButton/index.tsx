@@ -4,6 +4,7 @@ import { IconButtonSize, IconButtonWrapper, LinkWrapper } from './index.style';
 import Spinner from '@lendi-ui/spinner';
 import { Colors } from '@lendi-ui/theme';
 import { IconProps } from '@lendi-ui/icon';
+import { ButtonType } from '../Button/index';
 
 export { IconButtonSize };
 
@@ -15,6 +16,7 @@ export interface IconButtonProps extends LUIGlobalProps {
   size?: IconButtonSize;
   icon: React.FunctionComponent<IconProps>;
   isLoading?: boolean;
+  type?: ButtonType;
 }
 
 export class IconButton extends React.Component<IconButtonProps> {
@@ -53,6 +55,7 @@ export class IconButton extends React.Component<IconButtonProps> {
       isDisabled,
       icon,
       onClick,
+      type = 'button',
       ...otherProps
     } = this.props;
     const Icon = isLoading ? Spinner : (this.props.icon as React.FunctionComponent<IconProps>);
@@ -69,6 +72,7 @@ export class IconButton extends React.Component<IconButtonProps> {
           onClick={onClick}
           size={size}
           disabled={isDisabled || isLoading}
+          type={type}
           {...getDataProps(this.props)}
           {...otherProps}
         >

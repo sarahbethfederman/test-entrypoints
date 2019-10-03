@@ -10,7 +10,7 @@ import { IconButton } from '@lendi-ui/button';
 
 ```jsx
 <>
-    <IconButton onClick={(event:React.SyntheticEvent) => alert('Have a nice day!')} size='md' aria-label="Lock" icon={Lock} />
+    <IconButton onClick={() => alert('Have a nice day!')} size='md' aria-label="Lock" icon={Lock} />
 </>
 ```
 
@@ -24,6 +24,7 @@ import { IconButton } from '@lendi-ui/button';
   <PropTable.Entry name="isLoading" type="boolean" defaultValue={false} description="Whether the button is loading. Swaps the icon out for a spinner"/>
   <PropTable.Entry name="onClick" type="(event:React.SyntheticEvent) => void" description="Handle the click event"/>
   <PropTable.Entry name="size" type={`"xs" |"sm" | "md" | "lg"`} defaultValue="md" description="The button size"/>
+  <PropTable.Entry name="type"  defaultValue="button" type="{ 'submit' | 'button' | 'reset' }" description="The default behavior of the button."/>
 </PropTable>
 
 

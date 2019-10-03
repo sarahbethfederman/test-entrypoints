@@ -12,6 +12,8 @@ import {
 
 export { ButtonSize, ButtonVariant };
 
+export type ButtonType = 'submit' | 'button' | 'reset';
+
 export interface ButtonProps extends LUIGlobalProps {
   ariaLabel?: string;
   variant: ButtonVariant;
@@ -25,6 +27,7 @@ export interface ButtonProps extends LUIGlobalProps {
   onClick?: (event: React.SyntheticEvent) => void;
   className?: string;
   children?: React.ReactNode;
+  type?: ButtonType;
 }
 export class Button extends React.Component<ButtonProps> {
   get commonProps() {
@@ -70,7 +73,7 @@ export class Button extends React.Component<ButtonProps> {
   };
 
   render() {
-    const { href, isDisabled, ...otherProps } = this.props;
+    const { href, isDisabled, type = 'button', ...otherProps } = this.props;
     if (href) {
       return (
         <LinkWrapper {...otherProps} {...this.commonProps} {...this.linkProps} onClick={this.handleLinkClick}>
@@ -90,6 +93,7 @@ export class Button extends React.Component<ButtonProps> {
         <ButtonWrapper
           aria-label={buttonLabel}
           disabled={isDisabled}
+          type={type}
           {...getDataProps(this.props)}
           {...this.commonProps}
           {...otherProps}

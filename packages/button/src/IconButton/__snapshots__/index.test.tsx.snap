@@ -57,6 +57,7 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
   <styled.button
     disabled={false}
     size="lg"
+    type="button"
   >
     <StyledComponent
       disabled={false}
@@ -128,11 +129,13 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
       }
       forwardedRef={null}
       size="lg"
+      type="button"
     >
       <button
         className="c0"
         disabled={false}
         size="lg"
+        type="button"
       >
         <Lock
           color="primary.500"
@@ -276,6 +279,7 @@ exports[`IconButton should render the "md" size correctly 1`] = `
   <styled.button
     disabled={false}
     size="md"
+    type="button"
   >
     <StyledComponent
       disabled={false}
@@ -347,11 +351,13 @@ exports[`IconButton should render the "md" size correctly 1`] = `
       }
       forwardedRef={null}
       size="md"
+      type="button"
     >
       <button
         className="c0"
         disabled={false}
         size="md"
+        type="button"
       >
         <Lock
           color="primary.500"
@@ -495,6 +501,7 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
   <styled.button
     disabled={false}
     size="sm"
+    type="button"
   >
     <StyledComponent
       disabled={false}
@@ -566,11 +573,13 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
       }
       forwardedRef={null}
       size="sm"
+      type="button"
     >
       <button
         className="c0"
         disabled={false}
         size="sm"
+        type="button"
       >
         <Lock
           color="primary.500"
@@ -714,6 +723,7 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
   <styled.button
     disabled={false}
     size="xs"
+    type="button"
   >
     <StyledComponent
       disabled={false}
@@ -785,11 +795,13 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
       }
       forwardedRef={null}
       size="xs"
+      type="button"
     >
       <button
         className="c0"
         disabled={false}
         size="xs"
+        type="button"
       >
         <Lock
           color="primary.500"

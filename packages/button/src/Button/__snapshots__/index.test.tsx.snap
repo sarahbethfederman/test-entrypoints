@@ -97,6 +97,7 @@ exports[`Button emphasis should not render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -321,6 +322,7 @@ exports[`Button emphasis should not render inverse styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -545,6 +547,7 @@ exports[`Button emphasis should render "lg" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="lg"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -769,6 +772,7 @@ exports[`Button emphasis should render "md" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -993,6 +997,7 @@ exports[`Button emphasis should render "sm" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="sm"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -1217,6 +1222,7 @@ exports[`Button emphasis should render "xs" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="xs"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -1468,6 +1474,7 @@ exports[`Button emphasis should render disabled button 1`] = `
   className="c0"
   disabled={true}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -1693,6 +1700,7 @@ exports[`Button emphasis should render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -1918,6 +1926,7 @@ exports[`Button emphasis should render normal button 1`] = `
   className="c0"
   disabled={false}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -2142,6 +2151,7 @@ exports[`Button emphasis should render normal styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -2382,6 +2392,7 @@ exports[`Button empty should render "lg" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="lg"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -2622,6 +2633,7 @@ exports[`Button empty should render "md" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -2862,6 +2874,7 @@ exports[`Button empty should render "sm" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="sm"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -3102,6 +3115,7 @@ exports[`Button empty should render "xs" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="xs"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -3324,6 +3338,7 @@ exports[`Button empty should render inverse styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -3564,6 +3579,7 @@ exports[`Button empty should render normal styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -3788,6 +3804,7 @@ exports[`Button primary should not render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -4012,6 +4029,7 @@ exports[`Button primary should render "lg" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="lg"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -4236,6 +4254,7 @@ exports[`Button primary should render "md" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -4460,6 +4479,7 @@ exports[`Button primary should render "sm" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="sm"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -4684,6 +4704,7 @@ exports[`Button primary should render "xs" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="xs"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -4935,6 +4956,7 @@ exports[`Button primary should render disabled button 1`] = `
   className="c0"
   disabled={true}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -5160,6 +5182,7 @@ exports[`Button primary should render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -5376,6 +5399,7 @@ exports[`Button primary should render inverse styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -5601,6 +5625,7 @@ exports[`Button primary should render normal button 1`] = `
   className="c0"
   disabled={false}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -5825,6 +5850,7 @@ exports[`Button primary should render normal styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -6060,6 +6086,7 @@ exports[`Button secondary should render "lg" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="lg"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -6295,6 +6322,7 @@ exports[`Button secondary should render "md" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -6530,6 +6558,7 @@ exports[`Button secondary should render "sm" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="sm"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -6765,6 +6794,7 @@ exports[`Button secondary should render "xs" size styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="xs"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -6982,6 +7012,7 @@ exports[`Button secondary should render inverse styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -7217,6 +7248,7 @@ exports[`Button secondary should render normal styles 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -7441,6 +7473,7 @@ exports[`Button should not render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -7665,6 +7698,7 @@ exports[`Button should not render full width 2`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -7916,6 +7950,7 @@ exports[`Button should render disabled button 1`] = `
   className="c0"
   disabled={true}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -8167,6 +8202,7 @@ exports[`Button should render disabled button 2`] = `
   className="c0"
   disabled={true}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -8392,6 +8428,7 @@ exports[`Button should render full width 1`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -8617,6 +8654,7 @@ exports[`Button should render full width 2`] = `
   aria-label="Click me!"
   className="c0"
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -8842,6 +8880,7 @@ exports[`Button should render normal button 1`] = `
   className="c0"
   disabled={false}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent
@@ -9067,6 +9106,7 @@ exports[`Button should render normal button 2`] = `
   className="c0"
   disabled={false}
   size="md"
+  type="button"
 >
   <styled.div>
     <StyledComponent

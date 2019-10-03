@@ -1,3 +1,7 @@
+## [8.0.0] 2019-10-02 [HUB-593](https://creditandfinance.atlassian.net/browse/HUB-593)
+### Added
+- Add one more prop 'type' to LUI Button and IconButton. The value of 'type' can be button, submit and reset. The default value for 'type' is button.
+
 ## [7.0.2] 2019-09-27 [HUB-590](https://creditandfinance.atlassian.net/browse/HUB-590)
 ### Changed
 - Import IconProps from LUI icon package. 

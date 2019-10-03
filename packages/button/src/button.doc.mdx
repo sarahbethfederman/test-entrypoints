@@ -34,6 +34,7 @@ import {Button} from '@lendi-ui/button';
   <PropTable.Entry name="isInverse" type="boolean" defaultValue={false} description="Whether the button is inversed"/>
   <PropTable.Entry name="onClick" type="(event:React.SyntheticEvent) => void" description="Handle the click event"/>
   <PropTable.Entry name="size" type={`"xs" | "sm" | "md" | "lg"`} defaultValue="md" description="The button size"/>
+  <PropTable.Entry name="type"  defaultValue="button" type="{ 'submit' | 'button' | 'reset' }" description="The default behavior of the button."/>
   <PropTable.Entry name="variant" type={`"primary" | "secondary" | "emphasis" | "empty"`} description="The button type"/>
 </PropTable>
 

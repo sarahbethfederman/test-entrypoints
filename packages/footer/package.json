@@ -30,6 +30,9 @@
     "@lendi-ui/utils": "^4.0.0",
     "@lendi/lendi-analytics-package": "^1.0.0"
   },
+  "devDependencies": {
+    "@lendi-ui/button": "^7.0.2"
+  },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",

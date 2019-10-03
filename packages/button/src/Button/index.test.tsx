@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme, { theme } from '@lendi-ui/theme';
 import { color } from '@lendi-ui/color';
 import { Lock } from '@lendi-ui/icon';
@@ -9,7 +9,7 @@ const allVariants: ButtonVariant[] = ['primary', 'emphasis', 'secondary', 'empty
 const outlinedVariants: ButtonVariant[] = ['secondary', 'empty'];
 const sizes: ButtonSize[] = ['lg', 'md', 'sm', 'xs'];
 
-let button;
+let button: ReactWrapper;
 
 function render(props) {
   const element = mount(
@@ -119,6 +119,16 @@ describe('Button', () => {
     render({ fakeKey: 'doesnt exist' });
 
     expect(button.props()[fakeKey]).toEqual(undefined);
+  });
+
+  it("should have default 'button' type if type is not provided ", () => {
+    render({});
+    expect(button.props().type).toEqual('button');
+  });
+
+  it('should have customer type if type is provided ', () => {
+    render({ type: 'submit' });
+    expect(button.props().type).toEqual('submit');
   });
 
   it("should send back the onClick function with 'SyntheticEvent' event", () => {

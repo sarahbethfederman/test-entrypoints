@@ -345,6 +345,18 @@
     create-react-context "^0.2.3"
     prop-types "^15.6.2"
 
+"@lendi-ui/button@^7.0.0", "@lendi-ui/button@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/button/-/button-7.0.2.tgz#04794e71ac6e39788e96d392815b95924d4964fc"
+  integrity sha512-UTFrRiLS1/EnNvoyo9JxVeYIrtOjBnsoxewty1OupYERpf7XOWv7/uphGE5zy73fHvf6lk/VnlFBhE6Wl5zGCA==
+  dependencies:
+    "@lendi-ui/breakpoint" "^4.0.0"
+    "@lendi-ui/color" "^5.0.0"
+    "@lendi-ui/depth" "^4.0.0"
+    "@lendi-ui/spacing" "^6.0.0"
+    "@lendi-ui/spinner" "^4.0.0"
+    "@lendi-ui/utils" "^4.0.0"
+
 "@lendi-ui/color@^3.0.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/color/-/color-3.1.0.tgz#95011fb9e6c9049c055bc811b491135e15311086"
