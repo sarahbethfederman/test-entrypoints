@@ -1,3 +1,6 @@
+## [3.1.0] - 2019-10-03 - [HUB-544](https://creditandfinance.atlassian.net/browse/HUB-544)
+### Changed
+- Removes react-scrolllock from overlay, which was locking the scrolling of modal content.
 
 ## [3.0.2] - 2019-10-02 - [HUB-605](https://creditandfinance.atlassian.net/browse/HUB-605)
 ### Fixed

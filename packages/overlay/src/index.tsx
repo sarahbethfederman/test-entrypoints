@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ScrollLock from 'react-scrolllock';
 import { Fade } from '@lendi-ui/transition';
 import { Wrapper } from './index.style';
 import { polyfill } from 'react-lifecycles-compat';
@@ -71,7 +70,6 @@ class Overlay extends React.Component<OverlayProps> {
 
     return (
       <div>
-        {isVisible && <ScrollLock />}
         <Fade isActive={isVisible} isVisible={isVisible} shouldMountOnEnter={true} shouldUnmountOnExit={true}>
           <Wrapper onClick={this.handleClick} zIndex={zIndex}>
             {children}
