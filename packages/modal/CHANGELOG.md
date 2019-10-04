@@ -1,3 +1,7 @@
+## [3.1.0] - 2019-10-03 - [HUB-544](https://creditandfinance.atlassian.net/browse/HUB-544)
+### Changed
+- Update overlay dependency which removes react-scrolllock, which was locking the scrolling of modal content.
+
 ## [3.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 
