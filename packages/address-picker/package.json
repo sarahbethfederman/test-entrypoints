@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/address-picker",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@lendi-ui/auto-complete": "^5.0.0",
+    "@lendi-ui/button": "^8.0.0",
     "@lendi-ui/breakpoint": "^4.0.0",
     "@lendi-ui/container": "^5.0.0",
     "@lendi-ui/icon": "^9.0.0",

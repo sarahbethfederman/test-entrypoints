@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.0.2] 2019-10-08 [HUB-586](https://creditandfinance.atlassian.net/browse/HUB-586)
+### Updated
+- Bumped the version of button to ^8 and changed the button type inside the modal to button (it was previously submit by default).
+
 ## [2.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 
