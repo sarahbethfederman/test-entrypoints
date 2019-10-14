@@ -1,3 +1,7 @@
+## [4.0.2] - 2019-10-14 - [FUNNEL-624](https://creditandfinance.atlassian.net/browse/FUNNEL-624)
+### Fixed
+- Prevent onChangeTabIndex being passed down to Wrapper which cause an error
+
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 

@@ -71,7 +71,7 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, isInverse = false, activeTabIndex, ...otherProps } = this.props;
+    const { children, isInverse = false, activeTabIndex, onChangeTabIndex, ...otherProps } = this.props;
     const { isScrollable } = this.state;
     return (
       <TabContext.Provider

@@ -271,6 +271,7 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
       placeholder = '',
       size = 'md',
       onSelectItem = () => {},
+      onMenuVisibilityChange,
       ...inputProps
     } = this.props;
     return (
