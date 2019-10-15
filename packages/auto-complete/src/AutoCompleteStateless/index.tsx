@@ -59,9 +59,11 @@ export class AutoCompleteStateless extends React.Component<AutoCompleteStateless
   }
 
   calcInputWidth = () => {
-    this.setState({
-      menuWidth: (this.inputWrapper.current!.firstElementChild as HTMLUListElement).offsetWidth,
-    });
+    if (this.inputWrapper.current && this.inputWrapper.current.firstElementChild) {
+      this.setState({
+        menuWidth: (this.inputWrapper.current.firstElementChild as HTMLUListElement).offsetWidth,
+      });
+    }
   };
 
   renderMenu() {

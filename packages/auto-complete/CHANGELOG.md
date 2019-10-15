@@ -1,3 +1,7 @@
+## [5.0.3] - 2019-10-15 - [FUNNEL-627](https://creditandfinance.atlassian.net/browse/FUNNEL-627)
+### Fixed
+- TypeError: Cannot read property 'firstElementChild' of null in auto-complete component
+
 ## [5.0.2] - 2019-10-14 - [FUNNEL-624](https://creditandfinance.atlassian.net/browse/FUNNEL-624)
 ### Fixed
 - onMenuVisibilityChange is passed down to Input component which cause an error
