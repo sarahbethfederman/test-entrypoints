@@ -129,7 +129,11 @@ exports[`radioButton should render correct styles when disabled 1`] = `
   position: relative;
   ",
               [Function],
-              " ",
+              "
+  ",
+              [Function],
+              "
+  ",
               [Function],
               ";
   ",

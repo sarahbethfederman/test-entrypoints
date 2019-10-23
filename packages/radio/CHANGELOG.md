@@ -1,3 +1,7 @@
+## [3.0.2] 2019-10-22 [LUIT-51](https://creditandfinance.atlassian.net/browse/LUIT-51)
+### Added
+- Added default white background colour to boxed radio buttons
+
 ## [3.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 

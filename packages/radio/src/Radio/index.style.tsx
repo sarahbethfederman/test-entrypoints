@@ -42,6 +42,14 @@ export const Wrapper = styled.label<WrapperProps>`
     `;
   }}
   position: relative;
+  ${({ isBoxed }) => {
+    if (isBoxed) {
+      return css`
+        ${defaultBackground};
+      `;
+    }
+    return null;
+  }}
   ${({ isBoxed, checked }) => {
     if (isBoxed) {
       if (checked) {
@@ -58,7 +66,8 @@ export const Wrapper = styled.label<WrapperProps>`
       }
     }
     return null;
-  }} ${({ isBoxed, disabled, checked }) => {
+  }}
+  ${({ isBoxed, disabled, checked }) => {
     if (isBoxed && !disabled) {
       if (checked) {
         return boxedHoverCheckedState;
