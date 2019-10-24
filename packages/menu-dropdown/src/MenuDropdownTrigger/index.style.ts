@@ -11,4 +11,5 @@ export const TriggerWrapper = styled.div`
 export const IconWrapper = styled.div`
   ${pl('sm')};
   ${pr('sm')};
+  line-height: 1em;
 `;

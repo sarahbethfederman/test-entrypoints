@@ -38,8 +38,10 @@ export const ItemWrapper = styled.div`
 export const IconWrapper = styled.div`
   ${pl('sm')};
   ${pr('sm')};
+  line-height: 1em;
 `;
 
 export const ChildWrapper = styled.div`
   ${pl('sm')};
+  line-height: 1em;
 `;
