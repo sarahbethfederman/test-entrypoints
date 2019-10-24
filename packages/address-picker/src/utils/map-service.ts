@@ -12,8 +12,8 @@ export default class MapService {
    * @param status google.maps.places.PlacesServiceStatus
    */
   private apiRejectionReason(status: google.maps.places.PlacesServiceStatus): Error {
-    if (status === google.maps.places.PlacesServiceStatus.ERROR) {
-      return new Error('ERROR');
+    if (status === google.maps.places.PlacesServiceStatus.ZERO_RESULTS) {
+      return new Error('ZERO_RESULTS');
     } else if (status === google.maps.places.PlacesServiceStatus.INVALID_REQUEST) {
       return new Error('INVALID_REQUEST');
     } else if (status === google.maps.places.PlacesServiceStatus.OVER_QUERY_LIMIT) {

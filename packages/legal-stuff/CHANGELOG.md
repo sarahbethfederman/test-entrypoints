@@ -1,3 +1,7 @@
+## [4.1.0] - 2019-10-21 - [HUB-639](https://creditandfinance.atlassian.net/browse/HUB-639)
+### Changed
+- Update new text content to legal stuff
+
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped lendi-ui dependencies to latest versions
 
