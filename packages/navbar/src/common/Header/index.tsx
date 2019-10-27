@@ -18,7 +18,6 @@ export const ButtonVariation = ({
   if (!isAuthenticated) {
     return (
       <HeaderButton
-        size="sm"
         variant="secondary"
         href={`${SIGN_UP_LINK}${params}`}
         onClick={() => {
@@ -33,7 +32,6 @@ export const ButtonVariation = ({
   if (!continueApplicationUrl) {
     return (
       <ApplicationStatusButton
-        size="sm"
         variant="emphasis"
         href={`${SEARCH_LOAN_LINK}${params}`}
         onClick={() => {
@@ -47,7 +45,6 @@ export const ButtonVariation = ({
 
   return (
     <ApplicationStatusButton
-      size="sm"
       variant="emphasis"
       href={`${continueApplicationUrl}${params}`}
       onClick={() => {

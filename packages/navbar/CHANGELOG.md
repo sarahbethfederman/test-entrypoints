@@ -1,3 +1,6 @@
+## [5.0.3] - 2019-10-25 - [FUNNEL-667](https://creditandfinance.atlassian.net/browse/FUNNEL-667)
+- Fix the buttons' white background when Navbar is transparent.
+
 ## [5.0.2] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Remove unnecessary axios types dependency.
 

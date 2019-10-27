@@ -99,9 +99,8 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             <RightGroup>
               {/* TODO: ButtonGroup needs to accept nullable children
                 //@ts-ignore */}
-              <ButtonGroup isInverse={isHeaderBgTransparent}>
+              <ButtonGroup size="sm" isInverse={isHeaderBgTransparent}>
                 <HeaderButton
-                  size="sm"
                   variant="secondary"
                   onClick={() => {
                     this.context.analyticsForNavigation('Talk to an expert', WindowPosition.header);
