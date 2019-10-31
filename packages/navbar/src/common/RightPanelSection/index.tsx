@@ -23,7 +23,7 @@ export const RightPanelSection = (props: RightPanelSectionProps) => {
       <RightSidebar.Item icon={<LiveChat />} labelText={'chat online'} onClick={() => onChat()}>
         Chat online
       </RightSidebar.Item>
-      <RightSidebar.Item icon={<PickATime />} href={`/appointment-booking/${params}`}>
+      <RightSidebar.Item icon={<PickATime />} href={`/appointment-booking/postcode/${params}`}>
         Book an appointment
       </RightSidebar.Item>
       {applicationNumber > 0 && (

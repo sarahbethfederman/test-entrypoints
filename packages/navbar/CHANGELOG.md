@@ -1,3 +1,6 @@
+## [5.0.4] - 2019-10-31 - [FUNNEL-639](https://creditandfinance.atlassian.net/browse/FUNNEL-639)
+- Fix appointment booking url.
+
 ## [5.0.3] - 2019-10-25 - [FUNNEL-667](https://creditandfinance.atlassian.net/browse/FUNNEL-667)
 - Fix the buttons' white background when Navbar is transparent.
 
