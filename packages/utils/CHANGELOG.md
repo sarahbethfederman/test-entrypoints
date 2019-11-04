@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/utils
 
+## [4.0.1] 2019-11-04 - [FUNNEL-698](https://creditandfinance.atlassian.net/browse/FUNNEL-698)
+### Updated 
+- Replace use of String.startsWith by lodash.startsWith method to ensure IE11- compatibility.
+
 ## [4.0.0] 2019-9-23 - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
 
 ## [3.0.0] 2019-9-23 - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)

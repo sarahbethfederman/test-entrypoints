@@ -1,3 +1,4 @@
+import { startsWith } from 'lodash';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { css } from 'styled-components';
 
@@ -40,7 +41,7 @@ interface DataObject {
 export const getDataProps = (props: ComponentProps): DataObject => {
   const dataProps: DataObject = {};
   for (const key in props) {
-    if (key.startsWith('data-')) {
+    if (startsWith(key, 'data-')) {
       dataProps[key] = props[key];
     }
   }
