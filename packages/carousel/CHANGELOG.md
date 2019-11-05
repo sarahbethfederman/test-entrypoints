@@ -1,3 +1,7 @@
+## [4.0.3] 2019-11-05 - [FUNNEL-700](https://creditandfinance.atlassian.net/browse/FUNNEL-700)
+### Changed
+- Replace Array.from by lodash .map method.
+
 ## [4.0.2] 2019-10-01 - [HUB-545](https://creditandfinance.atlassian.net/browse/HUB-545)
 ### Changed
 - Fix mobile device only bug where slide index would unexpectedly reset to initial slide

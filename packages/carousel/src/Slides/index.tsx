@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { map } from 'lodash';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 import { SlideContainer } from './index.style';
@@ -39,7 +40,7 @@ const CarouselSlidesInner: React.FunctionComponent<SlidesProps> = ({
         setState((prev) => ({
           ...prev,
           width: (node as HTMLElement).getBoundingClientRect().width,
-          slideWidths: Array.from((node as HTMLElement).children).map((slide) => slide.getBoundingClientRect().width),
+          slideWidths: map((node as HTMLElement).children, (slide) => slide.getBoundingClientRect().width),
         }));
         setSlides(node.childElementCount);
       }

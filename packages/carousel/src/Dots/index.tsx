@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { map } from 'lodash';
 import { IndicatorContainer, Indicator } from './index.style';
 import { CarouselDotsProps } from '../types';
 import { useCarouselContext } from '../Carousel/CarouselContext';
@@ -6,7 +7,7 @@ import { useCarouselContext } from '../Carousel/CarouselContext';
 const initialiseDots = (currentIndex: number, increment: number, slides: number) => {
   const dots = Math.ceil(slides / increment);
   const firstIndex = -currentIndex % increment;
-  return Array.from(Array(dots), (_, i) => firstIndex + increment * i);
+  return map(Array(dots), (_, i) => firstIndex + increment * i);
 };
 
 const CarouselDots: React.FunctionComponent<CarouselDotsProps> = ({ style, children, ...luiProps }) => {
