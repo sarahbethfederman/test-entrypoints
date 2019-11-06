@@ -16,14 +16,9 @@ import {
   LinksGroup,
   LinkItem,
   PanelLink,
-  ProfileWrapper,
-  ProfileList,
-  ProfileListItem,
-  InputIcon,
-  Line,
 } from './index.style';
 import { defaultMenu, MenuSubItem } from '../../../constants/menu-data';
-import { HOME_PAGE_LINK, SIGN_UP_LINK, DASHBOARD_LINK, PROPERTY_REPORT_LINK } from '../../../constants/links';
+import { HOME_PAGE_LINK, SIGN_UP_LINK } from '../../../constants/links';
 import { Heading } from '@lendi-ui/typography';
 import { KeyboardArrowRight } from '@lendi-ui/icon';
 
@@ -121,32 +116,8 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
     );
   };
 
-  renderProfilePanel = (onLogout: () => void) => (
-    <DisplayPanel ref={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
-      <ProfileList>
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" href={DASHBOARD_LINK}>
-            My dashboard
-          </PanelLink>
-        </ProfileListItem>
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" href={PROPERTY_REPORT_LINK}>
-            My property report
-          </PanelLink>
-        </ProfileListItem>
-        <Line />
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" onClick={() => onLogout()}>
-            <InputIcon color="primary.500" />
-            Log out
-          </PanelLink>
-        </ProfileListItem>
-      </ProfileList>
-    </DisplayPanel>
-  );
-
   render() {
-    const { isAuthenticated, params, onLogout = () => {} } = this.props;
+    const { params } = this.props;
     const { currentSelected } = this.state;
     return (
       <Wrapper>
@@ -161,12 +132,6 @@ export class NavigationButtons extends React.Component<NavigationButtonsProps, N
           {defaultMenu.map((menuItem) => this.renderNavigationLink(menuItem.label))}
           {currentSelected && currentSelected !== 'profile' && this.renderDisplayPanel()}
         </NavigationPanel>
-        {isAuthenticated && (
-          <ProfileWrapper>
-            {this.renderNavigationLink('profile')}
-            {currentSelected && currentSelected === 'profile' && this.renderProfilePanel(onLogout)}
-          </ProfileWrapper>
-        )}
       </Wrapper>
     );
   }

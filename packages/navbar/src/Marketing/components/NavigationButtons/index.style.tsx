@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { Link, Body } from '@lendi-ui/typography';
-import { bg, fg, color } from '@lendi-ui/color';
-import { ExpandMore, Input } from '@lendi-ui/icon';
-import { ml, mb, m, mr, px, p, py, pr, pb, pt } from '@lendi-ui/spacing';
+import { bg, fg } from '@lendi-ui/color';
+import { ExpandMore } from '@lendi-ui/icon';
+import { ml, mb, m, px, p, py, pr } from '@lendi-ui/spacing';
 import { depth } from '@lendi-ui/depth';
 import { grid, unit } from '@lendi-ui/grid';
 import { Button } from '@lendi-ui/button';
-import { deriveSize } from '@lendi-ui/utils';
 import { gte } from '@lendi-ui/breakpoint';
 
 export const Wrapper = styled.div`
@@ -24,11 +23,11 @@ export const Wrapper = styled.div`
 export const NavigationPanel = styled.ul`
   list-style-type: none;
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   ${p('nil')} ${m('nil')}
-  position: relative;
 `;
 
 export const NavigationItem = styled.li`
@@ -131,32 +130,4 @@ export const PanelLink = styled(Link)`
   :active {
     ${fg('shade.700')}
   }
-`;
-
-export const ProfileWrapper = styled.div`
-  position: relative;
-`;
-
-export const ProfileList = styled.ul`
-  list-style-type: none;
-  ${p('nil')} ${m('nil')}
-    display: flex;
-  flex-direction: column;
-  > li:last-child {
-    ${pt('sm')} ${pb('nil')}
-  }
-`;
-
-export const ProfileListItem = styled.li`
-  list-style-type: none;
-  ${pb('sm')}
-`;
-
-export const InputIcon = styled(Input)`
-  ${mr('xs')}
-`;
-
-export const Line = styled.hr`
-  margin: 0 ${deriveSize(-1.5)};
-  border-color: ${color('shade.25')};
 `;

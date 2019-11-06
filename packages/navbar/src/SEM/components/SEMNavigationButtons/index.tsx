@@ -13,13 +13,6 @@ import {
   BarWrapper,
   Bar,
   ExpandMoreWrapper,
-  ProfileWrapper,
-  DisplayPanel,
-  PanelLink,
-  ProfileList,
-  ProfileListItem,
-  InputIcon,
-  Line,
   HeadingLink,
 } from '../../../Marketing/components/NavigationButtons/index.style';
 import {
@@ -31,7 +24,7 @@ import {
   SEMLinkItem,
   SEMPanelLink,
 } from './index.style';
-import { SIGN_UP_LINK, DASHBOARD_LINK, PROPERTY_REPORT_LINK } from '../../../constants/links';
+import { SIGN_UP_LINK } from '../../../constants/links';
 import { defaultMenu, MenuSubItem, MenuItem } from '../../../constants/menu-data';
 
 export interface SEMNavigationButtonsProps {
@@ -97,30 +90,6 @@ export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsPr
     );
   };
 
-  renderProfilePanel = (onLogout: () => void) => (
-    <DisplayPanel ref={this.displayPanel} style={{ width: '180%', left: '-50%' }}>
-      <ProfileList>
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" href={DASHBOARD_LINK}>
-            My dashboard
-          </PanelLink>
-        </ProfileListItem>
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" href={PROPERTY_REPORT_LINK}>
-            My property report
-          </PanelLink>
-        </ProfileListItem>
-        <Line />
-        <ProfileListItem>
-          <PanelLink size="sm" color="shade.700" onClick={onLogout}>
-            <InputIcon color="primary.500" />
-            Log out
-          </PanelLink>
-        </ProfileListItem>
-      </ProfileList>
-    </DisplayPanel>
-  );
-
   renderMenu = (menu: MenuItem) => {
     const { isAuthenticated, params, continueApplicationUrl } = this.props;
     return (
@@ -156,8 +125,7 @@ export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsPr
   };
 
   render() {
-    const { isAuthenticated, onLogout = () => {}, isOpenNavigationPanel = false, handleClick = () => {} } = this.props;
-    const { currentSelected } = this.state;
+    const { isOpenNavigationPanel = false, handleClick = () => {} } = this.props;
     const gridSize = defaultMenu.length;
     return (
       <Wrapper>
@@ -174,12 +142,6 @@ export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsPr
             </NavigationButton>
           </NavigationItem>
         </NavigationPanel>
-        {isAuthenticated && (
-          <ProfileWrapper>
-            {this.renderNavigationLink('profile')}
-            {currentSelected === 'profile' && this.renderProfilePanel(onLogout)}
-          </ProfileWrapper>
-        )}
         {isOpenNavigationPanel && (
           <SEMDisplayPanel>
             {defaultMenu.map((menu) => (

@@ -62,6 +62,7 @@ export class MarketingNavbar extends React.Component<MarketingNavbarProps, Marke
           onOpenLeftSidebar={this.onOpenLeftSidebar}
           onOpenRightSidebar={this.onOpenRightSidebar}
           isAuthenticated={isAuthenticated}
+          onLogout={onLogout}
           params={params}
         />
         <LeftSidebar

@@ -1,3 +1,7 @@
+## [5.1.0] - 2019-11-04 - [HUB-661](https://creditandfinance.atlassian.net/browse/HUB-661)
+### Changed
+- Update MarketingNavbar and SEMNavbar header panel button in desktop view the content is 'TALK TO AN EXPERT' and mobile biew the content is 'CONTACT US'.
+
 ## [5.0.4] - 2019-10-31 - [FUNNEL-639](https://creditandfinance.atlassian.net/browse/FUNNEL-639)
 - Fix appointment booking url.
 

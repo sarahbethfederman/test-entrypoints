@@ -7,6 +7,7 @@ import {
   LeftGroup,
   RightGroup,
   OldHeaderLogo,
+  CallToActionWrapper,
   LogoWrapper,
   LogoLink,
   OldMenuButton,
@@ -15,7 +16,6 @@ import {
 import { ButtonVariation } from '../../../common/Header/index';
 import { Menu } from '@lendi-ui/icon';
 import * as ZINDEX from '../../../constants/z-index';
-import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK } from '../../../constants/links';
 import { AnalyticsContext } from '@lendi-ui/utils';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
@@ -99,8 +99,10 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
             <RightGroup>
               {/* TODO: ButtonGroup needs to accept nullable children
                 //@ts-ignore */}
-              <ButtonGroup size="sm" isInverse={isHeaderBgTransparent}>
+              <CallToActionWrapper isAuth={isAuthenticated}>
                 <HeaderButton
+                  size="sm"
+                  isInverse={isHeaderBgTransparent}
                   variant="secondary"
                   onClick={() => {
                     this.context.analyticsForNavigation('Talk to an expert', WindowPosition.header);
@@ -110,12 +112,14 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
                   Talk to an expert
                 </HeaderButton>
                 <ButtonVariation
+                  size="sm"
+                  isInverse={isHeaderBgTransparent}
                   isAuthenticated={isAuthenticated}
                   continueApplicationUrl={continueApplicationUrl}
                   params={params}
                   context={this.context}
                 />
-              </ButtonGroup>
+              </CallToActionWrapper>
             </RightGroup>
           </Container>
         </FullWidthContainer>

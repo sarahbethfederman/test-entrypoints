@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Button } from '@lendi-ui/button';
+import { MoreVert } from '@lendi-ui/icon';
 import { AnalyticsContext } from '@lendi-ui/utils';
 
 import { HOME_PAGE_LINK } from '../../../constants/links';
@@ -10,8 +10,15 @@ import {
   HeaderLogo,
   LogoLink,
   CallToActionWrapper,
+  DesktopButton,
+  MobileButton,
+  LogoutWrapper,
   MenuButton,
   MenuButtonWrapper,
+  ExitToAppWrapper,
+  LogoutLinkWrapper,
+  DesktopLogoutWrapper,
+  IconButtonWrapper,
 } from '../../../common/Header/index.style';
 import { ButtonVariation } from '../../../common/Header/index';
 import { Application } from '../../../common/types';
@@ -22,6 +29,7 @@ export interface SEMHeaderProps {
   application?: Application;
   isAuthenticated?: boolean;
   params?: string;
+  onLogout?: () => void;
   onOpenRightSidebar: () => void;
   onOpenLeftSidebar: () => void;
   isOpenNavigationPanel?: boolean;
@@ -31,16 +39,19 @@ export interface SEMHeaderProps {
 
 interface SEMHeaderState {
   isAtTopOfPage: boolean;
+  isLogoutDisplay: boolean;
 }
 
 export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
   static contextType: any = AnalyticsContext;
+  private logoutPanel: React.RefObject<HTMLDivElement> = React.createRef();
   constructor(props: SEMHeaderProps) {
     super(props);
 
     this.supportsPassive = false;
     this.state = {
       isAtTopOfPage: true,
+      isLogoutDisplay: false,
     };
   }
 
@@ -53,21 +64,30 @@ export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
 
     this.supportsPassive = browserSupportsPassiveListeners();
     window.addEventListener('scroll', this.checkScrollPosition, { passive: this.supportsPassive });
+    window.addEventListener('mousedown', this.closeLogoutPanel);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.checkScrollPosition, {
       passive: this.supportsPassive,
     } as EventListenerOptions);
+    window.removeEventListener('mousedown', this.closeLogoutPanel);
   }
 
   checkScrollPosition = () => {
     this.setState({ isAtTopOfPage: window.pageYOffset === 0 });
   };
 
+  closeLogoutPanel = (e: MouseEvent) => {
+    if (this.logoutPanel.current && !this.logoutPanel.current.contains(e.target as HTMLElement)) {
+      this.setState({ isLogoutDisplay: false });
+    }
+  };
+
   render() {
     const {
       params = '',
+      onLogout,
       onOpenRightSidebar,
       onOpenLeftSidebar,
       application,
@@ -76,7 +96,7 @@ export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
       handleClick,
       CloseSEMDisplayPanel = () => {},
     } = this.props;
-    const { isAtTopOfPage } = this.state;
+    const { isAtTopOfPage, isLogoutDisplay } = this.state;
     const continueApplicationUrl = application ? application.continueURL : undefined;
 
     return (
@@ -101,15 +121,39 @@ export class SEMHeader extends React.Component<SEMHeaderProps, SEMHeaderState> {
           CloseSEMDisplayPanel={CloseSEMDisplayPanel}
         />
         <CallToActionWrapper isAuth={isAuthenticated}>
-          <Button variant="secondary" size="sm" onClick={onOpenRightSidebar}>
+          <DesktopButton variant="secondary" size="sm" onClick={onOpenRightSidebar}>
+            Talk to an expert
+          </DesktopButton>
+          <MobileButton variant="secondary" size="sm" onClick={onOpenRightSidebar}>
             Contact Us
-          </Button>
+          </MobileButton>
           <ButtonVariation
+            size="sm"
             isAuthenticated={isAuthenticated}
             continueApplicationUrl={continueApplicationUrl}
             params={params}
             context={this.context}
           />
+          {isAuthenticated && (
+            <DesktopLogoutWrapper ref={this.logoutPanel}>
+              <IconButtonWrapper
+                className="iconButtonWrapper"
+                size="sm"
+                color="secondary.500"
+                onClick={() => this.setState({ isLogoutDisplay: !this.state.isLogoutDisplay })}
+                aria-label="Lock"
+                icon={MoreVert}
+              />
+              {isLogoutDisplay && (
+                <LogoutWrapper>
+                  <LogoutLinkWrapper className="iconButtonWrapper" color="shade.700" onClick={onLogout}>
+                    <ExitToAppWrapper color="primary.500" width="18px" height="18px" />
+                    Log out
+                  </LogoutLinkWrapper>
+                </LogoutWrapper>
+              )}
+            </DesktopLogoutWrapper>
+          )}
         </CallToActionWrapper>
       </HeaderWrapper>
     );

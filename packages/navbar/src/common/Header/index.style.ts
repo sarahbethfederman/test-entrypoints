@@ -1,13 +1,16 @@
 import styled, { css } from 'styled-components';
 import { gte, between } from '@lendi-ui/breakpoint';
-import { normalise, deriveSize } from '@lendi-ui/utils';
-import { px, py, mr, p, pr, pl, ml, pt, pb } from '@lendi-ui/spacing';
+import { normalise, deriveSize, display } from '@lendi-ui/utils';
+import { px, py, mr, pr, pl, ml, pt, pb } from '@lendi-ui/spacing';
 import { Logo, LogoProps } from '@lendi-ui/logo';
 import { select, ThemeMap } from '@lendi-ui/theme';
 import { bg, fg } from '@lendi-ui/color';
 import { Menu } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
-import { ButtonGroup } from '@lendi-ui/button';
+import { Button, IconButton } from '@lendi-ui/button';
+import { ExitToApp } from '@lendi-ui/icon';
+import { Link } from '@lendi-ui/typography';
+
 // @ts-ignore
 import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
 // @ts-ignore
@@ -52,29 +55,6 @@ export const HeaderWrapper = styled.div`
   ${gte('tablet')`
     ${px('lg')};
   `}
-`;
-
-export const IconButton = styled.button`
-  display: inline-flex;
-  ${p('xxs')};
-
-  cursor: pointer;
-  font-size: 1em;
-  border: none;
-  border-radius: ${select('borderRadius')};
-  ${fg('primary.500')} background-color: transparent;
-
-  :focus {
-    outline: none;
-  }
-
-  :hover,
-  :focus {
-    ${bg('shade.100')};
-  }
-
-  :active {
-  }
 `;
 
 export const FullWidthContainer = styled.header<{ transparent?: boolean }>`
@@ -156,7 +136,7 @@ export const HeaderLogo = styled(Logo)<LogoProps>`
         `}
 `;
 
-export const HeaderButton = styled(ButtonGroup.Button)`
+export const HeaderButton = styled(Button)`
   ${between('mobile', 'tablet')`
     font-size: 0.645em;
     border: none;
@@ -165,7 +145,7 @@ export const HeaderButton = styled(ButtonGroup.Button)`
   `};
 `;
 
-export const ApplicationStatusButton = styled(ButtonGroup.Button)`
+export const ApplicationStatusButton = styled(Button)`
   ${between('mobile', 'tablet')`
     font-size: 0.645em;
     border: none;
@@ -181,6 +161,7 @@ export const NavigationButtons = styled.div`
 
 export const CallToActionWrapper = styled.div`
   display: flex;
+  flex-shrink: 0;
   height: auto;
 
   ${({ isAuth }: CallToActionWrapperProps) =>
@@ -193,13 +174,10 @@ export const CallToActionWrapper = styled.div`
     `};
 
   button {
-    width: ${deriveSize(10)};
-
     ${between('mobile', 'tablet')`
       background: none;
       font-size: 0.645em;
       border: none;
-      width: 100%;
       min-width: ${deriveSize(5)};
       text-transform: uppercase;
       ${mr('nil')};
@@ -211,11 +189,25 @@ export const CallToActionWrapper = styled.div`
     `}
   }
 
+  button.iconButtonWrapper {
+    ${gte('tablet')`
+      ${mr('nil')};
+    `}
+  }
+
   a {
     ${between('mobile', 'tablet')`
       ${px('nil')}
     `}
   }
+`;
+
+export const DesktopButton = styled(Button)`
+  ${display({ mobile: 'none', tablet: 'block' })}
+`;
+
+export const MobileButton = styled(Button)`
+  ${display({ mobile: 'block', tablet: 'none' })}
 `;
 
 export const MenuButtonWrapper = styled.a`
@@ -265,4 +257,34 @@ export const MenuButton = styled(Menu)`
 export const HamburgerLogoWrapper = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const LogoutWrapper = styled.div`
+  position: absolute;
+  right: 5px;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: ${select('borderRadius')};
+  ${px('md')} ${py('sm')} ${depth(2)} ${bg('shade.0')} 
+`;
+
+export const ExitToAppWrapper = styled(ExitToApp)`
+  ${mr('sm')}
+`;
+
+export const LogoutLinkWrapper = styled(Link)`
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: normal;
+  margin-right: 0;
+`;
+
+export const DesktopLogoutWrapper = styled.div`
+  ${display({ mobile: 'none', desktop: 'block' })}
+`;
+
+export const IconButtonWrapper = styled(IconButton)`
+  ${ml('xxxs')}
 `;

@@ -7,6 +7,7 @@ import {
   Container,
   LeftGroup,
   RightGroup,
+  CallToActionWrapper,
   LogoWrapper,
   LogoLink,
   OldHeaderLogo,
@@ -15,7 +16,6 @@ import {
 } from '../../../common/Header/index.style';
 import { Menu } from '@lendi-ui/icon';
 import { Logo } from '@lendi-ui/logo';
-import { ButtonGroup } from '@lendi-ui/button';
 import { HOME_PAGE_LINK } from '../../../constants/links';
 import { AnalyticsContextProps } from '@lendi-ui/utils';
 import { WindowPosition } from '@lendi/lendi-analytics-package';
@@ -75,7 +75,7 @@ describe('Header', () => {
 
     it('should mount the RightGroup component', () => {
       expect(wrapper.find(RightGroup)).toHaveLength(1);
-      expect(wrapper.find(ButtonGroup)).toHaveLength(1);
+      expect(wrapper.find(CallToActionWrapper)).toHaveLength(1);
       expect(wrapper.find(HeaderButton)).toHaveLength(2);
     });
   });

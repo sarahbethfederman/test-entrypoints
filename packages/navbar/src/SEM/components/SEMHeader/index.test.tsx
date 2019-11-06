@@ -65,8 +65,8 @@ describe('Authed Navbar', () => {
       expect(element.find(CallToActionWrapper).length).toEqual(1);
     });
 
-    it('should renderAuthed 2 <Button>s', () => {
-      expect(element.find(Button).length).toEqual(2);
+    it('should renderAuthed 3 <Button>s', () => {
+      expect(element.find(Button).length).toEqual(3);
     });
   });
 
@@ -129,19 +129,5 @@ describe('Authed Navbar', () => {
         expect(mock).toBeCalled();
       });
     });
-  });
-});
-
-describe('Unauthed Navbar', () => {
-  beforeEach(() => {
-    render({ onOpenLeftSidebar, onOpenRightSidebar, application, isAuthenticated: false });
-  });
-  it('should link to the SIGN_UP_LINK', () => {
-    expect(
-      element
-        .find(Button)
-        .at(1)
-        .props().href
-    ).toEqual(SIGN_UP_LINK);
   });
 });
