@@ -80,7 +80,6 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
         "styledComponentId": "sc-bdVaJa",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -134,7 +133,6 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
                 "styledComponentId": "sc-htpNat",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -226,7 +224,6 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
               "styledComponentId": "sc-bxivhb",
               "target": "p",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -306,7 +303,6 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
           "styledComponentId": "sc-htpNat",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -411,7 +407,6 @@ exports[`ErrorMessage should render a paragraph use LUI Body called "MessageBody
         "styledComponentId": "sc-bxivhb",
         "target": "p",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -514,7 +509,6 @@ exports[`ErrorMessage should render whole component 1`] = `
           "styledComponentId": "sc-bdVaJa",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -568,7 +562,6 @@ exports[`ErrorMessage should render whole component 1`] = `
                   "styledComponentId": "sc-htpNat",
                   "target": "span",
                   "toString": [Function],
-                  "usesTheme": false,
                   "warnTooManyClasses": [Function],
                   "withComponent": [Function],
                 }
@@ -660,7 +653,6 @@ exports[`ErrorMessage should render whole component 1`] = `
                 "styledComponentId": "sc-bxivhb",
                 "target": "p",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

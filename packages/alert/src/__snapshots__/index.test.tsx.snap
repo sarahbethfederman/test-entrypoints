@@ -136,7 +136,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -172,7 +171,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "div",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -204,7 +202,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
                       "styledComponentId": "sc-dnqmqq",
                       "target": "span",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -257,7 +254,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
                               "styledComponentId": "sc-gqjmRU",
                               "target": "span",
                               "toString": [Function],
-                              "usesTheme": false,
                               "warnTooManyClasses": [Function],
                               "withComponent": [Function],
                             }
@@ -360,7 +356,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "p",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -450,7 +445,6 @@ exports[`Alert should mount Alert component with heading 1`] = `
                 "styledComponentId": "sc-gZMcBi",
                 "target": "p",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -585,7 +579,6 @@ exports[`Alert should mount Alert component without heading 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -619,7 +612,6 @@ exports[`Alert should mount Alert component without heading 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -672,7 +664,6 @@ exports[`Alert should mount Alert component without heading 1`] = `
                         "styledComponentId": "sc-gqjmRU",
                         "target": "span",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -772,7 +763,6 @@ exports[`Alert should mount Alert component without heading 1`] = `
                 "styledComponentId": "sc-gZMcBi",
                 "target": "p",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

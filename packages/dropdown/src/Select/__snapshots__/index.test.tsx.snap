@@ -62,7 +62,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
               event testing
             </div>
             <div
-              class="css-goycbu-Input"
+              class="css-8c79i4-Input"
             >
               <div
                 class=""
@@ -87,7 +87,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
             </div>
           </div>
           <div
-            class=" css-1g48xl4-IndicatorsContainer"
+            class=" css-1hb7zxy-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"
@@ -187,7 +187,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
               multiple select
             </div>
             <div
-              class="css-goycbu-Input"
+              class="css-8c79i4-Input"
             >
               <div
                 class=""
@@ -212,7 +212,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
             </div>
           </div>
           <div
-            class=" css-1g48xl4-IndicatorsContainer"
+            class=" css-1hb7zxy-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"
@@ -312,7 +312,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
               single select
             </div>
             <div
-              class="css-goycbu-Input"
+              class="css-8c79i4-Input"
             >
               <div
                 class=""
@@ -337,7 +337,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
             </div>
           </div>
           <div
-            class=" css-1g48xl4-IndicatorsContainer"
+            class=" css-1hb7zxy-IndicatorsContainer"
           >
             <span
               class=" css-1okebmr-indicatorSeparator"

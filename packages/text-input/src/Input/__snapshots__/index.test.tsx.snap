@@ -244,7 +244,6 @@ exports[`input should render the whole input component and a text input 1`] = `
             "styledComponentId": "sc-bdVaJa",
             "target": "div",
             "toString": [Function],
-            "usesTheme": false,
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
           }
@@ -309,7 +308,6 @@ exports[`input should render the whole input component and a text input 1`] = `
                     "styledComponentId": "sc-jTzLTM",
                     "target": "div",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -375,7 +373,6 @@ exports[`input should render the whole input component and a text input 1`] = `
                           "styledComponentId": "sc-fjdhpX",
                           "target": "input",
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -604,7 +601,6 @@ exports[`input variations of the text input in all given sizes lg should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -670,7 +666,6 @@ exports[`input variations of the text input in all given sizes lg should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -869,7 +864,6 @@ exports[`input variations of the text input in all given sizes lg should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -935,7 +929,6 @@ exports[`input variations of the text input in all given sizes lg should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1158,7 +1151,6 @@ exports[`input variations of the text input in all given sizes lg should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1224,7 +1216,6 @@ exports[`input variations of the text input in all given sizes lg should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1446,7 +1437,6 @@ exports[`input variations of the text input in all given sizes lg should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1512,7 +1502,6 @@ exports[`input variations of the text input in all given sizes lg should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1734,7 +1723,6 @@ exports[`input variations of the text input in all given sizes md should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1800,7 +1788,6 @@ exports[`input variations of the text input in all given sizes md should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -1999,7 +1986,6 @@ exports[`input variations of the text input in all given sizes md should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2065,7 +2051,6 @@ exports[`input variations of the text input in all given sizes md should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -2288,7 +2273,6 @@ exports[`input variations of the text input in all given sizes md should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2354,7 +2338,6 @@ exports[`input variations of the text input in all given sizes md should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -2576,7 +2559,6 @@ exports[`input variations of the text input in all given sizes md should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2642,7 +2624,6 @@ exports[`input variations of the text input in all given sizes md should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -2864,7 +2845,6 @@ exports[`input variations of the text input in all given sizes sm should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -2930,7 +2910,6 @@ exports[`input variations of the text input in all given sizes sm should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -3129,7 +3108,6 @@ exports[`input variations of the text input in all given sizes sm should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3195,7 +3173,6 @@ exports[`input variations of the text input in all given sizes sm should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -3418,7 +3395,6 @@ exports[`input variations of the text input in all given sizes sm should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3484,7 +3460,6 @@ exports[`input variations of the text input in all given sizes sm should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -3706,7 +3681,6 @@ exports[`input variations of the text input in all given sizes sm should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -3772,7 +3746,6 @@ exports[`input variations of the text input in all given sizes sm should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -3994,7 +3967,6 @@ exports[`input variations of the text input in all given sizes xs should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4060,7 +4032,6 @@ exports[`input variations of the text input in all given sizes xs should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -4259,7 +4230,6 @@ exports[`input variations of the text input in all given sizes xs should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4325,7 +4295,6 @@ exports[`input variations of the text input in all given sizes xs should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -4548,7 +4517,6 @@ exports[`input variations of the text input in all given sizes xs should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4614,7 +4582,6 @@ exports[`input variations of the text input in all given sizes xs should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -4836,7 +4803,6 @@ exports[`input variations of the text input in all given sizes xs should render 
         "styledComponentId": "sc-jTzLTM",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -4902,7 +4868,6 @@ exports[`input variations of the text input in all given sizes xs should render 
               "styledComponentId": "sc-fjdhpX",
               "target": "input",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }

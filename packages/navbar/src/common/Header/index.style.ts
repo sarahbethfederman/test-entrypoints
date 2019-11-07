@@ -98,20 +98,25 @@ export const LogoLink = styled.a`
 `;
 
 export const OldHeaderLogo = styled(Logo)<LogoProps>`
-  width: 66px;
-  height: 21px;
-  ${({ theme }: { theme?: ThemeMap }) => {
-    if (!theme || select('logo.logoName')({ theme })) {
-      return gte('tablet')`
+  width: 98px;
+  height: 30px;
+  padding-bottom: 4px;
+  ${({ theme }: { theme: ThemeMap }) =>
+    select('logo.logoName')({ theme }) === 'LendiLogo'
+      ? css`
+          content: url(${NewLogo});
+          ${gte('tablet')`
         width: 104px;
         height: 33px;
-      `;
-    }
-    return gte('tablet')`
-      width: 240px;
-      height: 33px;
-    `;
-  }}
+      `};
+        `
+      : css`
+          content: url(${DomainLogo});
+          ${gte('tablet')`
+        width: 240px;
+        height: 33px;
+      `};
+        `}
 `;
 
 export const HeaderLogo = styled(Logo)<LogoProps>`

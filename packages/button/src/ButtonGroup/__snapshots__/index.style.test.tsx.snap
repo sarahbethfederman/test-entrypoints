@@ -82,7 +82,6 @@ exports[`Wrapper should have spacing at size "lg" 1`] = `
         "styledComponentId": "sc-iwsKbI",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -180,7 +179,6 @@ exports[`Wrapper should have spacing at size "md" 1`] = `
         "styledComponentId": "sc-iwsKbI",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -278,7 +276,6 @@ exports[`Wrapper should have spacing at size "sm" 1`] = `
         "styledComponentId": "sc-iwsKbI",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -376,7 +373,6 @@ exports[`Wrapper should have spacing at size "xs" 1`] = `
         "styledComponentId": "sc-iwsKbI",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

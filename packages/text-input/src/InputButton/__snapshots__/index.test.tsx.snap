@@ -153,7 +153,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
         "styledComponentId": "c0",
         "target": [Function],
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
         Symbol(Symbol.hasInstance): [Function],
@@ -197,7 +196,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
               "styledComponentId": "sc-chPdSV",
               "target": [Function],
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
               Symbol(Symbol.hasInstance): [Function],
@@ -243,7 +241,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                     "styledComponentId": "sc-bwzfXH",
                     "target": "button",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -282,7 +279,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                           "styledComponentId": "sc-ifAKCX",
                           "target": "div",
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -319,7 +315,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "styledComponentId": "sc-EHOje",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -363,7 +358,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "styledComponentId": "sc-bZQynM",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -538,7 +532,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
         "styledComponentId": "c0",
         "target": [Function],
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
         Symbol(Symbol.hasInstance): [Function],
@@ -582,7 +575,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
               "styledComponentId": "sc-kAzzGY",
               "target": [Function],
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
               Symbol(Symbol.hasInstance): [Function],
@@ -628,7 +620,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                     "styledComponentId": "sc-bwzfXH",
                     "target": "button",
                     "toString": [Function],
-                    "usesTheme": false,
                     "warnTooManyClasses": [Function],
                     "withComponent": [Function],
                   }
@@ -667,7 +658,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                           "styledComponentId": "sc-ifAKCX",
                           "target": "div",
                           "toString": [Function],
-                          "usesTheme": false,
                           "warnTooManyClasses": [Function],
                           "withComponent": [Function],
                         }
@@ -704,7 +694,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "styledComponentId": "sc-EHOje",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }
@@ -748,7 +737,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "styledComponentId": "sc-bZQynM",
                                 "target": "span",
                                 "toString": [Function],
-                                "usesTheme": false,
                                 "warnTooManyClasses": [Function],
                                 "withComponent": [Function],
                               }

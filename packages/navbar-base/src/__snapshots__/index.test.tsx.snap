@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarBase should mount 1`] = `
+.c0 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
+.c1 {
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1), 0 3px 4px 0 rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.14);
+  background-color: rgba(255,255,255,1);
+}
+
+<NavbarBase>
+  <styled.nav>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  ",
+              "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+              ";
+",
+            ],
+          },
+          "displayName": "styled.nav",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "nav",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <nav
+        className="c0"
+      >
+        <Sticky
+          activeClass="active"
+          bottomBoundary={0}
+          enableTransforms={true}
+          enabled={true}
+          innerZ={1}
+          onStateChange={[Function]}
+          releasedClass="released"
+          shouldFreeze={[Function]}
+          top={0}
+        >
+          <div
+            className="sticky-outer-wrapper"
+            style={Object {}}
+          >
+            <div
+              className="sticky-inner-wrapper"
+              style={
+                Object {
+                  "position": "relative",
+                  "top": "",
+                  "transform": "translate3d(0,0px,0)",
+                  "zIndex": 1,
+                }
+              }
+            >
+              <styled.div
+                isTransparent={false}
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-htpNat",
+                        "isStatic": false,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+  ",
+                          [Function],
+                          "
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-htpNat",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                  isTransparent={false}
+                >
+                  <div
+                    className="c1"
+                  />
+                </StyledComponent>
+              </styled.div>
+            </div>
+          </div>
+        </Sticky>
+      </nav>
+    </StyledComponent>
+  </styled.nav>
+</NavbarBase>
+`;

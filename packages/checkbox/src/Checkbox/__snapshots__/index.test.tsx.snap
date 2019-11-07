@@ -126,7 +126,6 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
           "styledComponentId": "sc-htoDjs",
           "target": "label",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -222,7 +221,6 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "input",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -270,7 +268,6 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "p",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -412,7 +409,6 @@ exports[`Checkbox should render whole component 1`] = `
           "styledComponentId": "sc-htoDjs",
           "target": "label",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -508,7 +504,6 @@ exports[`Checkbox should render whole component 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "input",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -556,7 +551,6 @@ exports[`Checkbox should render whole component 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "p",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

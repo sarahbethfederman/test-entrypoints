@@ -72,7 +72,6 @@ export class Header extends React.Component<HeaderProps, HeaderState> {
     } = this.props;
     const { stuck } = this.state;
     const isHeaderBgTransparent = isTransparent && !stuck;
-
     return (
       <Sticky onStateChange={this.handleStickyState} innerZ={ZINDEX.HEADER} ref={this.stickyRef}>
         <FullWidthContainer transparent={isHeaderBgTransparent}>

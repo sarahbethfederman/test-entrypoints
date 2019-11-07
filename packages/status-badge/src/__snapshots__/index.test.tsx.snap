@@ -115,7 +115,6 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -149,7 +148,6 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -204,7 +202,6 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                         "styledComponentId": "sc-iwsKbI",
                         "target": "span",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -263,7 +260,6 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -402,7 +398,6 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
           "styledComponentId": "sc-gzVnrw",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -437,7 +432,6 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -492,7 +486,6 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                         "styledComponentId": "sc-iwsKbI",
                         "target": "span",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }
@@ -551,7 +544,6 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "span",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

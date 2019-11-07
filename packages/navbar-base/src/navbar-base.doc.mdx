@@ -1,0 +1,46 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import NavbarBase from '@lendi-ui/navbar-base';
+```
+
+```jsx
+
+        <NavbarBase isTransparent={true}>
+          <NavbarBase.Left>
+            <div>Left content</div>
+          </NavbarBase.Left>
+          <NavbarBase.Right>
+            <div>Right content</div>
+          </NavbarBase.Right>
+        </NavbarBase>
+             
+```
+## Notes:
+NavbarBase is created to be used as a base to all Navbar Shared components, we will have navbar like, for Marketing, SEM, Funnels, ads pages etc.
+##### https://creditandfinance.atlassian.net/wiki/spaces/UX/pages/846266601/Navigation+states
+##### https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/858292395/Navbar+Base+component+API
+
+## Properties
+### NavbarBase
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base component."/>
+</PropTable>
+
+### NavbarBase Left
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base left component."/>
+</PropTable>
+
+### NavbarBase Right
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base right component."/>
+</PropTable>
+
+### NavbarBaseContext
+You can access the NavbarBaseContext from your custom component by running the function `useNavbarBaseContext()` to get access to isTransparent.
+<PropTable>
+  <PropTable.Entry name="isTransparent" type="boolean" description="Access isTransparent if this got change internally by NavbarBase component"/>
+</PropTable>

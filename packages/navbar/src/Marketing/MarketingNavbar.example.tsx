@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MarketingNavbar } from './index';
 import { Button } from '@lendi-ui/button';
 import { mx, ml } from '@lendi-ui/spacing';
+import { bg } from '@lendi-ui/color';
 
 const STARTED_APPLICATION = {
   type: 'Refinance',
@@ -28,7 +29,7 @@ const ButtonWrapper = styled(Button)`
 const FillerOne = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: lightsalmon;
+  ${bg('secondary.600')}
   padding-top: 6em;
 `;
 

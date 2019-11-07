@@ -1,0 +1,106 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import NavbarBase, {useNavbarBaseContext} from '@lendi-ui/navbar-base';
+```
+
+```js
+
+const Panel = styled.div`
+  min-height: 250px;
+  ${bg('warn.50')};
+  ${p('lg')};
+`;
+
+const Wrapper = styled.div`
+  ${bg('info.300')};
+  height: 500px;
+  overflow: auto;
+`;
+
+
+
+const InitButtons = () => {
+  const { isTransparent } = useNavbarBaseContext();
+  return (
+    <ButtonGroup size="sm" isInverse={isTransparent}>
+      <ButtonGroup.Button variant="secondary">Continue</ButtonGroup.Button>
+      <ButtonGroup.Button variant="secondary">Next</ButtonGroup.Button>
+    </ButtonGroup>
+  );
+};
+
+const InitLeft = () => {
+  const { isTransparent } = useNavbarBaseContext();
+  return (<PaddedWrapper style={{'color': isTransparent? 'white' : 'black'}}>Left content</PaddedWrapper>);
+};
+
+const PaddedWrapper = styled.div`
+  ${m('sm')}
+`;
+
+
+        
+const PlaygroundNavbarBase =() => {
+ const [useTransparent, setUseTransparent] = React.useState(true);  
+  return (
+    <Theme>
+      <Wrapper>
+        <NavbarBase isTransparent={useTransparent}>
+          <NavbarBase.Left>
+              <InitLeft/>
+          </NavbarBase.Left>
+          <NavbarBase.Right>
+              <InitButtons/>
+          </NavbarBase.Right>
+        </NavbarBase>
+        <Panel>
+          <p><strong>Play with Transparent to see the effect via useNavbarBaseContext</strong></p>
+          <ButtonGroup size="lg">
+            <Button variant="secondary" onClick={() => setUseTransparent(true)}>
+              Transparent
+            </Button>
+            <Button variant="secondary" onClick={() => setUseTransparent(false)}>
+              White
+            </Button>
+          </ButtonGroup>
+        </Panel>
+        </Wrapper>
+      </Theme>
+  )
+
+}     
+
+render(<PlaygroundNavbarBase />);
+             
+```
+
+## Notes:
+NavbarBase is created to be used as a base to all Navbar Shared components, we will have navbar like, for Marketing, SEM, Funnels, ads pages etc.
+##### https://creditandfinance.atlassian.net/wiki/spaces/UX/pages/846266601/Navigation+states
+##### https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/858292395/Navbar+Base+component+API
+
+## Properties
+### NavbarBase
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base component."/>
+</PropTable>
+
+### NavbarBase Left
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base left component."/>
+</PropTable>
+
+### NavbarBase Right
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The navbar base right component."/>
+</PropTable>
+
+### NavbarBaseContext
+You can access the NavbarBaseContext from your custom component by running the function `useNavbarBaseContext()` to get access to isTransparent.
+<PropTable>
+  <PropTable.Entry name="isTransparent" type="boolean" description="Access isTransparent if this got change internally by NavbarBase component"/>
+</PropTable>
+

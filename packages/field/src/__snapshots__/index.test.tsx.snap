@@ -101,7 +101,6 @@ exports[`Field should render wrapper component 1`] = `
         "styledComponentId": "sc-gZMcBi",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -146,7 +145,6 @@ exports[`Field should render wrapper component 1`] = `
               "styledComponentId": "sc-gqjmRU",
               "target": "label",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
@@ -232,7 +230,6 @@ exports[`Field should render wrapper component 1`] = `
                         "styledComponentId": "sc-gzVnrw",
                         "target": [Function],
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                         Symbol(Symbol.hasInstance): [Function],
@@ -324,7 +321,6 @@ exports[`Field should render wrapper component 1`] = `
                         "styledComponentId": "sc-htoDjs",
                         "target": "p",
                         "toString": [Function],
-                        "usesTheme": false,
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
                       }

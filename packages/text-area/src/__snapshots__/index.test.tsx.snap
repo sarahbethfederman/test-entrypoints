@@ -136,7 +136,6 @@ exports[`Text area should render the text area component 1`] = `
           "styledComponentId": "sc-bwzfXH",
           "target": "textarea",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -294,7 +293,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -428,7 +426,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -585,7 +582,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -742,7 +738,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -899,7 +894,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1033,7 +1027,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1190,7 +1183,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1347,7 +1339,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1504,7 +1495,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1638,7 +1628,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1795,7 +1784,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -1952,7 +1940,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "styledComponentId": "sc-bwzfXH",
         "target": "textarea",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }

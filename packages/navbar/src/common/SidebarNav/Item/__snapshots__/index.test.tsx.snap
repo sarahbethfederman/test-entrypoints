@@ -196,7 +196,6 @@ exports[`Item render a button when there is not a href 1`] = `
           "styledComponentId": "sc-iwsKbI",
           "target": "li",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -317,7 +316,6 @@ exports[`Item render a button when there is not a href 1`] = `
                 "styledComponentId": "sc-htoDjs",
                 "target": "button",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -532,7 +530,6 @@ exports[`Item render a link when there is a href 1`] = `
           "styledComponentId": "sc-iwsKbI",
           "target": "li",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -638,7 +635,6 @@ exports[`Item render a link when there is a href 1`] = `
                 "styledComponentId": "sc-gzVnrw",
                 "target": "a",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }

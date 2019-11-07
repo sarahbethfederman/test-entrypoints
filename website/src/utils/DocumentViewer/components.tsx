@@ -49,7 +49,7 @@ import AuthLoader from '@lendi-ui/auth-loader';
 import { AccordionGroup, Accordion } from '@lendi-ui/accordion';
 import { heading, body, Body, link, Link, overline, Overline } from '@lendi-ui/typography';
 import LenderLogos from '@lendi-ui/lender-logos';
-
+import NavbarBase, { useNavbarBaseContext } from '@lendi-ui/navbar-base';
 // If there are any conflicts between names, the order of this
 // object will determine the preference. (this is the case with
 // icon.Link and typography.Link)
@@ -129,6 +129,8 @@ const scope = {
   Body,
   Link,
   LenderLogos,
+  NavbarBase,
+  useNavbarBaseContext,
 };
 
 interface GenericProps {

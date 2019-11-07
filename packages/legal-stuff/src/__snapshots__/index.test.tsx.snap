@@ -84,7 +84,6 @@ exports[`Legal should mount 1`] = `
           "styledComponentId": "sc-htoDjs",
           "target": "div",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -139,7 +138,6 @@ exports[`Legal should mount 1`] = `
                 "styledComponentId": "sc-dnqmqq",
                 "target": "div",
                 "toString": [Function],
-                "usesTheme": false,
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
               }
@@ -213,7 +211,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-bxivhb",
                       "target": [Function],
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                       Symbol(Symbol.hasInstance): [Function],
@@ -289,7 +286,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -352,7 +348,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -415,7 +410,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -478,7 +472,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -541,7 +534,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }
@@ -604,7 +596,6 @@ exports[`Legal should mount 1`] = `
                       "styledComponentId": "sc-iwsKbI",
                       "target": "div",
                       "toString": [Function],
-                      "usesTheme": false,
                       "warnTooManyClasses": [Function],
                       "withComponent": [Function],
                     }

@@ -180,7 +180,6 @@ exports[`Logo with no color, width, height and className should render "shade.10
               "styledComponentId": "sc-bwzfXH",
               "target": "span",
               "toString": [Function],
-              "usesTheme": false,
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }

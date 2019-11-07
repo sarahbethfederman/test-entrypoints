@@ -73,7 +73,6 @@ exports[`Overline should render styles for size "lg" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -163,7 +162,6 @@ exports[`Overline should render styles for size "md" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -253,7 +251,6 @@ exports[`Overline should render styles for size "sm" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -343,7 +340,6 @@ exports[`Overline should render styles for size "xl" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -433,7 +429,6 @@ exports[`Overline should render styles for size "xs" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }
@@ -523,7 +518,6 @@ exports[`Overline should render styles for size "xxs" 1`] = `
           "styledComponentId": "sc-bZQynM",
           "target": "span",
           "toString": [Function],
-          "usesTheme": false,
           "warnTooManyClasses": [Function],
           "withComponent": [Function],
         }

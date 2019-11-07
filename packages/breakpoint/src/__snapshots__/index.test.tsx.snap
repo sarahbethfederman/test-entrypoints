@@ -55,7 +55,6 @@ exports[`map() reponsiveness with different order of screen size 1`] = `
         "styledComponentId": "sc-htpNat",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
@@ -138,7 +137,6 @@ exports[`map() reponsiveness with different order of screen size 2`] = `
         "styledComponentId": "sc-htpNat",
         "target": "div",
         "toString": [Function],
-        "usesTheme": false,
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
       }
