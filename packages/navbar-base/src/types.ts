@@ -6,8 +6,8 @@ export interface NavbarBaseProps extends LUIGlobalProps {
   children?: ReactNode;
 }
 export interface NavbarCompoundComponent {
-  Left?: FunctionComponent;
-  Right?: FunctionComponent;
+  Left: FunctionComponent;
+  Right: FunctionComponent;
 }
 export interface NavbarBaseSession {
   isTransparent?: boolean;

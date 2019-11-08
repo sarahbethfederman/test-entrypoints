@@ -28,7 +28,7 @@ const NavbarBase: React.FunctionComponent<NavbarBaseProps> & NavbarCompoundCompo
   return (
     <NavbarWrapper>
       <NavbarBaseContext.Provider value={{ isTransparent }}>
-        <Sticky innerZ={1} onStateChange={handleStickyState}>
+        <Sticky innerZ={3} onStateChange={handleStickyState}>
           <ChildrenWrapper isTransparent={isTransparent}>{children}</ChildrenWrapper>
         </Sticky>
       </NavbarBaseContext.Provider>

@@ -9619,7 +9619,7 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-stickynode@^2.1.0:
+react-stickynode@^2.1.0, react-stickynode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/react-stickynode/-/react-stickynode-2.1.1.tgz#1d5160641c72b1a954c872b26130919cb1ce4a78"
   dependencies:
