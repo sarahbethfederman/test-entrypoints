@@ -78,8 +78,8 @@ describe('unAuthenticated SEMNavigationButtons', () => {
       expect(wrapper.find(BodyWrapper).length).toEqual(1);
     });
 
-    it("should render the BodyWrapper component with text 'more' in NavigationPanel", () => {
-      expect(wrapper.find(BodyWrapper).text()).toEqual('more');
+    it("should render the BodyWrapper component with text 'menu' in NavigationPanel", () => {
+      expect(wrapper.find(BodyWrapper).text()).toEqual('menu');
     });
 
     it('should render one ExpandMoreWrapper component in NavigationPanel', () => {

@@ -1,3 +1,7 @@
+## [5.1.1] - 2019-11-09 - [HUB-662](https://creditandfinance.atlassian.net/browse/HUB-662)
+### Updated
+- Update SEMNavbar header single link 'more' to 'menu'.
+
 ## [5.1.0] - 2019-11-04 - [HUB-661](https://creditandfinance.atlassian.net/browse/HUB-661)
 ### Changed
 - Update MarketingNavbar and SEMNavbar header panel button in desktop view the content is 'TALK TO AN EXPERT' and mobile biew the content is 'CONTACT US'.

@@ -130,11 +130,11 @@ export class SEMNavigationButtons extends React.Component<SEMNavigationButtonsPr
     return (
       <Wrapper>
         <NavigationPanel>
-          <NavigationItem key="more">
+          <NavigationItem key="menu">
             <NavigationButton onClick={handleClick}>
               <BarWrapper>
                 <BodyWrapper size="xs" color="secondary.500">
-                  more
+                  menu
                 </BodyWrapper>
                 <ExpandMoreWrapper color="secondary.500" isSelected={isOpenNavigationPanel} />
               </BarWrapper>
