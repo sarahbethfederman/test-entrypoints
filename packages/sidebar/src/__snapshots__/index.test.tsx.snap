@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar should render <Sidebar /> 1`] = `
+.c0 {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,1);
+  opacity: 0.4;
+}
+
+.c1 {
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 3rem);
+  max-width: 22.5rem;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.25s;
+  -webkit-transition: transform 0.25s;
+  transition: transform 0.25s;
+  z-index: 999;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 2px 0 rgba(0,0,0,0.1), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.14);
+  left: 0;
+  top: 0px;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+<Sidebar
+  isVisible={true}
+>
+  <Overlay
+    isVisible={true}
+    zIndex={2}
+  >
+    <div>
+      <Component
+        isActive={true}
+        isVisible={true}
+        shouldMountOnEnter={true}
+        shouldUnmountOnExit={true}
+      >
+        <Transition
+          isActive={true}
+          isVisible={true}
+          shouldMountOnEnter={true}
+          shouldUnmountOnExit={true}
+          timeout={250}
+        >
+          <div
+            style={
+              Object {
+                "opacity": "0",
+                "transition": "opacity 0.25s",
+              }
+            }
+          >
+            <styled.div
+              onClick={[Function]}
+              zIndex={2}
+            >
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bwzfXH",
+                      "isStatic": false,
+                      "lastClassName": "c0",
+                      "rules": Array [
+                        "
+  position: fixed;
+  z-index: ",
+                        [Function],
+                        ";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: ",
+                        [Function],
+                        ";
+  opacity: 0.4;
+",
+                      ],
+                    },
+                    "displayName": "styled.div",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bwzfXH",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                onClick={[Function]}
+                zIndex={2}
+              >
+                <div
+                  className="c0"
+                  onClick={[Function]}
+                />
+              </StyledComponent>
+            </styled.div>
+          </div>
+        </Transition>
+      </Component>
+    </div>
+  </Overlay>
+  <Transition
+    isActive={true}
+    timeout={250}
+  >
+    <styled.div
+      side="left"
+      top={0}
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-htpNat",
+              "isStatic": false,
+              "lastClassName": "c1",
+              "rules": Array [
+                "
+  ",
+                "
+  box-sizing: border-box;
+  line-height: 1.333;
+  white-space: normal;
+  border-spacing: 2px;
+  text-align: left;
+  word-spacing: normal;
+  letter-spacing: normal;
+",
+                "
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - ",
+                "3rem",
+                ");
+  max-width: 22.5rem;
+  overflow: hidden;
+  transition: transform 0.25s;
+  z-index: ",
+                "999",
+                ";
+  ",
+                "
+          background-color: ",
+                [Function],
+                ";
+        ",
+                " ",
+                "box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1),
+        0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 1px 3px 0 rgba(0, 0, 0, 0.14);",
+                ";
+
+  ",
+                [Function],
+                " ",
+                [Function],
+                ";
+",
+              ],
+            },
+            "displayName": "styled.div",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-htpNat",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        side="left"
+        top={0}
+      >
+        <div
+          className="c1"
+        />
+      </StyledComponent>
+    </styled.div>
+  </Transition>
+</Sidebar>
+`;

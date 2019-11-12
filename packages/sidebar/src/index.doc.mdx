@@ -1,0 +1,40 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import Sidebar from '@lendi-ui/Sidebar';
+```
+
+```jsx
+// Note: setting the prop "isVisible" to "true" will not open the Sidebar here. For a working example you can go to the example page, linked above.
+<Sidebar
+    isVisible={false}
+ />
+             
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The children node inside Sidebar component."/>
+  <PropTable.Entry name="className" type="string" description="The external class name for Sidebar component."/> 
+  <PropTable.Entry name="direction" type="{type SidebarDirection = 'left' | 'right';}" defaultValue="left" description="The side direction that Sidebar component will rendered in the window."/>
+  <PropTable.Entry name="isVisible" type="boolean" defaultValue="false" description="Whether Sidebar component is visible or not."/>
+  <PropTable.Entry name="onHide" type="() => {}" defaultValue="() => {}" description="The function that close Sidebar in the window."/>
+  <PropTable.Entry name="top" type="number" defaultValue="0" description="The margin top value for Sidebar component."/>
+</PropTable>
+
+### Sidebar Content
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The Sidebar Content component."/>
+</PropTable>
+
+### Sidebar Footer
+<PropTable>
+  <PropTable.Entry name="children" type="React.ReactNode" description="The Sidebar Footer component."/>
+  <PropTable.Entry name="isTopShadow" type="boolean" defaultValue="false" description="Whether the Sidebar Footer component has a shadow top border or not."/>
+</PropTable>
+
+### Notes
+In Sidebar component, we use LUI Overlay. The Overlay z-index value is 2 and Sidebar z-index value is 3.
