@@ -12,9 +12,6 @@ exports[`NavbarBase should mount 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-}
-
-.c1 {
   padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,20 +30,51 @@ exports[`NavbarBase should mount 1`] = `
 }
 
 <NavbarBase>
-  <styled.nav>
-    <StyledComponent
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bwzfXH",
-            "isStatic": false,
-            "lastClassName": "c0",
-            "rules": Array [
-              "
+  <nav
+    aria-label="Main navigation"
+  >
+    <Sticky
+      activeClass="active"
+      bottomBoundary={0}
+      enableTransforms={true}
+      enabled={true}
+      innerZ={3}
+      onStateChange={[Function]}
+      releasedClass="released"
+      shouldFreeze={[Function]}
+      top={0}
+    >
+      <div
+        className="sticky-outer-wrapper"
+        style={Object {}}
+      >
+        <div
+          className="sticky-inner-wrapper"
+          style={
+            Object {
+              "position": "relative",
+              "top": "",
+              "transform": "translate3d(0,0px,0)",
+              "zIndex": 3,
+            }
+          }
+        >
+          <styled.div
+            isTransparent={false}
+          >
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bwzfXH",
+                    "isStatic": false,
+                    "lastClassName": "c0",
+                    "rules": Array [
+                      "
   ",
-              "
+                      "
   box-sizing: border-box;
   line-height: 1.333;
   white-space: normal;
@@ -55,65 +83,7 @@ exports[`NavbarBase should mount 1`] = `
   word-spacing: normal;
   letter-spacing: normal;
 ",
-              ";
-",
-            ],
-          },
-          "displayName": "styled.nav",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bwzfXH",
-          "target": "nav",
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
-    >
-      <nav
-        className="c0"
-      >
-        <Sticky
-          activeClass="active"
-          bottomBoundary={0}
-          enableTransforms={true}
-          enabled={true}
-          innerZ={3}
-          onStateChange={[Function]}
-          releasedClass="released"
-          shouldFreeze={[Function]}
-          top={0}
-        >
-          <div
-            className="sticky-outer-wrapper"
-            style={Object {}}
-          >
-            <div
-              className="sticky-inner-wrapper"
-              style={
-                Object {
-                  "position": "relative",
-                  "top": "",
-                  "transform": "translate3d(0,0px,0)",
-                  "zIndex": 3,
-                }
-              }
-            >
-              <styled.div
-                isTransparent={false}
-              >
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-htpNat",
-                        "isStatic": false,
-                        "lastClassName": "c1",
-                        "rules": Array [
-                          "
+                      ";
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -121,34 +91,32 @@ exports[`NavbarBase should mount 1`] = `
   width: 100%;
 
   ",
-                          [Function],
-                          "
+                      [Function],
+                      "
 ",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-htpNat",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                  isTransparent={false}
-                >
-                  <div
-                    className="c1"
-                  />
-                </StyledComponent>
-              </styled.div>
-            </div>
-          </div>
-        </Sticky>
-      </nav>
-    </StyledComponent>
-  </styled.nav>
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bwzfXH",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+              isTransparent={false}
+            >
+              <div
+                className="c0"
+              />
+            </StyledComponent>
+          </styled.div>
+        </div>
+      </div>
+    </Sticky>
+  </nav>
 </NavbarBase>
 `;

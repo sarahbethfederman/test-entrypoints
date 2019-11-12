@@ -5,6 +5,8 @@ import NavbarBase from './components/NavbarBase';
 import { NavbarBaseProps } from './types';
 import { useNavbarBaseContext } from './context/NavbarContext';
 import { Button, ButtonGroup } from '@lendi-ui/button';
+import styled from 'styled-components';
+import { ChildrenWrapper } from './index.style';
 
 let element: ReactWrapper<NavbarBaseProps>;
 
@@ -72,5 +74,29 @@ describe('Navbarbase children to use Transparent property from NavbarBaseContext
   it('should render with inverse styled button', () => {
     const buttons = element.find(Button);
     buttons.forEach((button) => expect(button.prop('isInverse')).toBeTruthy());
+  });
+});
+
+describe('Navbarbase to entertain style from consumer', () => {
+  const NavbarBaseWrapper = styled(NavbarBase)`
+    height: 100px;
+  `;
+  beforeEach(() => {
+    element = mount(
+      <Theme>
+        <NavbarBaseWrapper isTransparent={true}>
+          <NavbarBase.Left>
+            <a href="/">The link</a>
+          </NavbarBase.Left>
+          <NavbarBase.Right>
+            <InitButtons />
+          </NavbarBase.Right>
+        </NavbarBaseWrapper>
+      </Theme>
+    );
+  });
+  it('should render with inverse styled button', () => {
+    const childrenWrapper = element.find(ChildrenWrapper);
+    expect(childrenWrapper).toHaveStyleRule('height', '100px');
   });
 });

@@ -3,6 +3,7 @@ import { LUIGlobalProps } from '@lendi-ui/utils';
 
 export interface NavbarBaseProps extends LUIGlobalProps {
   isTransparent?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 export interface NavbarCompoundComponent {

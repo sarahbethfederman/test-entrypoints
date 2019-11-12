@@ -38,6 +38,10 @@ const LogoWrapper = styled.div`
   ${m('sm')}
 `;
 
+const NavbarBaseWrapper = styled(NavbarBase)`
+  height: 100px;
+`;
+
 export default () => {
   const [useTransparent, setUseTransparent] = React.useState<boolean>(false);
   return (
@@ -46,7 +50,7 @@ export default () => {
         Notification: Reserve Bank <strong>cuts rate</strong> to record low of 0.75%.{' '}
       </Banner>
       <Wrapper>
-        <NavbarBase isTransparent={useTransparent}>
+        <NavbarBaseWrapper isTransparent={useTransparent}>
           <NavbarBase.Left>
             <LogoWrapper>
               <LogoLink href={`/`}>
@@ -58,7 +62,7 @@ export default () => {
           <NavbarBase.Right>
             <InitButtons />
           </NavbarBase.Right>
-        </NavbarBase>
+        </NavbarBaseWrapper>
         <Panel>
           <ButtonGroup size="lg">
             <Button variant="secondary" onClick={() => setUseTransparent(true)}>

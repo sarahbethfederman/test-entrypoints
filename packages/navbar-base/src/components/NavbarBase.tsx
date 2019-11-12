@@ -3,12 +3,13 @@ import NavbarLeft from './NavbarLeft';
 import NavbarRight from './NavbarRight';
 import * as Sticky from 'react-stickynode';
 import { NavbarBaseProps, NavbarCompoundComponent } from '../types';
-import { NavbarWrapper, ChildrenWrapper } from '../index.style';
+import { ChildrenWrapper } from '../index.style';
 import NavbarBaseContext from '../context/NavbarContext';
 
 const NavbarBase: React.FunctionComponent<NavbarBaseProps> & NavbarCompoundComponent = ({
   children,
   isTransparent: useTransparent = false,
+  className,
 }) => {
   const [isTransparent, setIsTransparent] = React.useState<boolean>(useTransparent);
 
@@ -26,13 +27,15 @@ const NavbarBase: React.FunctionComponent<NavbarBaseProps> & NavbarCompoundCompo
     }
   };
   return (
-    <NavbarWrapper>
+    <nav aria-label="Main navigation">
       <NavbarBaseContext.Provider value={{ isTransparent }}>
         <Sticky innerZ={3} onStateChange={handleStickyState}>
-          <ChildrenWrapper isTransparent={isTransparent}>{children}</ChildrenWrapper>
+          <ChildrenWrapper isTransparent={isTransparent} className={className}>
+            {children}
+          </ChildrenWrapper>
         </Sticky>
       </NavbarBaseContext.Provider>
-    </NavbarWrapper>
+    </nav>
   );
 };
 

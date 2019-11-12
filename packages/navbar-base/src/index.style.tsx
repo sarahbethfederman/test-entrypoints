@@ -6,11 +6,8 @@ interface ChildrenWrapperProps {
   isTransparent: boolean;
 }
 
-export const NavbarWrapper = styled.nav`
-  ${normalise};
-`;
-
 export const ChildrenWrapper = styled.div`
+  ${normalise};
   padding: 0;
   display: flex;
   flex-direction: row;
