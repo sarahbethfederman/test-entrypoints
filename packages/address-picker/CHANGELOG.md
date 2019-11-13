@@ -1,5 +1,12 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.1.0] 2019-11-12 [FUNNEL-658](https://creditandfinance.atlassian.net/browse/FUNNEL-658)
+### Changed
+- Add static map.
+- Use mapType instead of showMap.
+- Remove the max-width.
+- Fix the issue with no formatted address.
+
 ## [2.0.3] 2019-10-21 [HUB-639](https://creditandfinance.atlassian.net/browse/HUB-639)
 ### Changed
 - Replaced generic ERROR with ZERO_RESULTS error from google.

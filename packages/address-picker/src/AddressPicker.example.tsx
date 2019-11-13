@@ -4,6 +4,7 @@ import AddressPicker from './index';
 export default class AddressPickerExample extends React.Component {
   state = {
     address: '',
+    formatString: '',
   };
 
   render() {
@@ -14,7 +15,7 @@ export default class AddressPickerExample extends React.Component {
           onSelectAddress={(address, formatString) => {
             this.setState({ address, formatString });
           }}
-          showMap
+          mapType="static"
           country="au"
         />
         <pre>{JSON.stringify(this.state, null, 2)}</pre>

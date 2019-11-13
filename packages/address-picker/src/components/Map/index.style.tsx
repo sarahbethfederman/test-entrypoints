@@ -4,14 +4,20 @@ import { bg } from '@lendi-ui/color';
 
 export interface MapWrapperProps {
   size: number;
-  showMap: boolean;
+  showMap?: boolean;
 }
+
+export const StaticMapWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  ${mb('sm')}
+`;
 
 export const MapWrapper = styled.div`
   margin: 0 auto;
   ${({ size }: MapWrapperProps) => css`
     height: ${size}px;
-    width: ${size}px;
   `};
   ${({ showMap }: MapWrapperProps) => css`
     display: ${showMap ? 'block' : 'none'};

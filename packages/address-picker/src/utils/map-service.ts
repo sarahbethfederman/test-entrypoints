@@ -3,8 +3,8 @@ export default class MapService {
   private autocompleteService: google.maps.places.AutocompleteService = new google.maps.places.AutocompleteService();
   private sessionToken: google.maps.places.AutocompleteSessionToken = new google.maps.places.AutocompleteSessionToken();
 
-  constructor(map: google.maps.Map) {
-    this.placesService = new google.maps.places.PlacesService(map);
+  constructor(map?: google.maps.Map) {
+    this.placesService = new google.maps.places.PlacesService(map || document.createElement('div'));
   }
 
   /**

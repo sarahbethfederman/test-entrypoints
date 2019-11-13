@@ -12,6 +12,7 @@ import { Wrapper, Alert, InfoWrapper } from './index.style';
 import MapService from './utils/map-service';
 import { transformGoogleResponse, getFormatedString } from './utils/util';
 
+export type MapTypes = 'dynamic' | 'static' | 'none';
 type SizeVariant = 'lg' | 'md' | 'sm';
 export type Size = BreakpointValue<SizeVariant> | BreakpointValueMap<SizeVariant>;
 
@@ -21,9 +22,9 @@ export interface AddressPickerProps extends LUIGlobalProps {
   onChange: (e: React.SyntheticEvent) => void;
   onSelectAddress: (selection: AddressObject, formatString?: string) => void;
   onReset?: () => void; // @TODO - HUB-305
-  showMap?: boolean;
   size?: Size;
   value?: string; // @TODO - HUB-305
+  mapType?: MapTypes;
 }
 
 export interface AddressPickerState {
@@ -66,7 +67,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   }
 
   // Once the map has been mounted, setup the required services
-  onMountMap(map: google.maps.Map): void {
+  onMountMap(map?: google.maps.Map): void {
     this.mapService = new MapService(map);
   }
 
@@ -114,11 +115,12 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     this.mapService
       .placeDetails(String(value))
       .then(({ geometry, addressComponents }) => {
+        const responseAddress = transformGoogleResponse(label, addressComponents);
         this.setState({
           addressInput: label,
           selectedPlace: geometry,
         });
-        this.props.onSelectAddress(transformGoogleResponse(label, addressComponents));
+        this.props.onSelectAddress(responseAddress, getFormatedString(responseAddress));
       })
       .catch(() => {
         this.setState({
@@ -148,7 +150,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
 
   render() {
     const {
-      showMap = true,
+      mapType = 'none',
       isDisabled,
       onChange,
       size = 'md',
@@ -166,7 +168,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
 
     return (
       <Wrapper {...globalProps}>
-        <AddressMap onMount={this.onMountMap} place={this.state.selectedPlace} showMap={Boolean(showMap)} />
+        <AddressMap onMount={this.onMountMap} place={this.state.selectedPlace} mapType={mapType} />
         <AutoCompleteStateless
           size={size}
           isDisabled={Boolean(isDisabled)}
