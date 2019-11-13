@@ -1,3 +1,6 @@
+## [2.1.1] 2019-11-13 [FUNNEL-696](https://creditandfinance.atlassian.net/browse/FUNNEL-696)
+- fix Accordion and AccordionGroup exports
+
 ## [2.1.0] 2019-11-11 [FUNNEL-696](https://creditandfinance.atlassian.net/browse/FUNNEL-696)
 - refactor `class` to `function` components
 - add `variant` property support with `primary`, `emphasis` and `empty` style variations
