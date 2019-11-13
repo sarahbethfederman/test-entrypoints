@@ -106,7 +106,7 @@ describe('Accordion accesibility', () => {
   beforeEach(() => {
     element = mount(
       <Theme>
-        <AccordionContext.Provider value={{ isOpen: true, isDisabled: false, ariaId: 'test-id' }}>
+        <AccordionContext.Provider value={{ isOpen: true, isDisabled: false, ariaId: 'test-id', variant: 'primary' }}>
           <Accordion>
             <Accordion.Header onClick={mockClickFn}>About</Accordion.Header>
             <Accordion.Content>

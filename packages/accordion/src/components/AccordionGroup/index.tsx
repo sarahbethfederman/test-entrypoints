@@ -4,24 +4,24 @@ import { Accordion } from '../Accordion/index';
 import { Wrapper } from '../../index.style';
 import { AccordionGroupContext } from '../AccordionGroupContext';
 
-export class AccordionGroup extends React.Component<AccordionGroupProps> {
-  static Accordion = Accordion;
-
-  private renderAccordions = (child: React.ReactChild): React.ReactNode => {
-    if (React.isValidElement<AccordionProps>(child)) {
-      return React.cloneElement(child);
-    }
-    return child;
-  };
-
-  render() {
-    const { children, isOpen = false, ...otherProps } = this.props;
-    return (
-      <Wrapper {...otherProps}>
-        <AccordionGroupContext.Provider value={{ isOpen }}>
-          {React.Children.map(children as React.ReactChild, this.renderAccordions)}
-        </AccordionGroupContext.Provider>
-      </Wrapper>
-    );
+function renderAccordions(child: React.ReactChild) {
+  if (React.isValidElement<AccordionProps>(child)) {
+    return React.cloneElement(child);
   }
+
+  return child;
 }
+
+export function AccordionGroup(props: AccordionGroupProps) {
+  const { children, isOpen = false, variant = 'primary', ...otherProps } = props;
+
+  return (
+    <Wrapper {...otherProps}>
+      <AccordionGroupContext.Provider value={{ isOpen, variant }}>
+        {React.Children.map(children as React.ReactChild, renderAccordions)}
+      </AccordionGroupContext.Provider>
+    </Wrapper>
+  );
+}
+
+AccordionGroup.Accordion = Accordion;

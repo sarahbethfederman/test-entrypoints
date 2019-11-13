@@ -17,7 +17,11 @@ export interface AccordionProps extends LUIGlobalProps {
   isDisabled?: boolean;
   children?: React.ReactNode;
 }
+
+export type AccordionGroupVariant = 'primary' | 'emphasis' | 'empty';
+
 export interface AccordionGroupProps extends LUIGlobalProps {
   children?: React.ReactNode;
   isOpen?: boolean;
+  variant?: AccordionGroupVariant;
 }

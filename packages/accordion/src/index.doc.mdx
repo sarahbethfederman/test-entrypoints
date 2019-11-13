@@ -35,7 +35,7 @@ class PlaygroundComponent extends React.Component{
     return (
       <>
         <Body size="md">Consumer will manage the opening and closing of the Accordion</Body>
-        <AccordionGroup>
+        <AccordionGroup variant="primary">
           <Accordion isOpen={this.state.first} data-id="first">
             <Accordion.Header after={<Lock color="primary.500" />} onClick={(event) => this.onClickHandler(event, 'first')}>
               <>About</>
@@ -75,6 +75,7 @@ render(<PlaygroundComponent/>)
 <PropTable>
   <PropTable.Entry name="children" type="React.ReactNode" description="The AccordionGroup content"/>
   <PropTable.Entry name="isOpen" type="boolean" defaultValue="false" description="To control opening and closing of Accordion Group"/>
+  <PropTable.Entry name="variant" type="string" defaultValue="primary" description="To control the UI variation of the Accordion. ('primary', 'emphasis' or 'empty')"/>
 </PropTable>
 
 
