@@ -66,8 +66,8 @@ export const SidebarContent = styled.div`
 
 export const SidebarFooter = styled.div`
   width: 100%;
-  ${({ isTopShadow }: { isTopShadow: boolean }) => {
-    if (isTopShadow) {
+  ${({ hasTopShadow }: { hasTopShadow: boolean }) => {
+    if (hasTopShadow) {
       return css`
         flex-shrink: 0;
         border-top: 1px solid ${color('shade.100')};

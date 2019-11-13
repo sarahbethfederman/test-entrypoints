@@ -8,9 +8,14 @@ import Sidebar from '@lendi-ui/Sidebar';
 
 ```jsx
 // Note: setting the prop "isVisible" to "true" will not open the Sidebar here. For a working example you can go to the example page, linked above.
-<Sidebar
-    isVisible={false}
- />
+<Sidebar direction="left" top={142} isVisible={isOpen} onHide={() => setIsOpen(false)}>
+  <Sidebar.Content>
+    <>This is content div</>
+  </Sidebar.Content>
+  <Sidebar.Footer hasTopShadow={true}>
+    <>This is footer div</>
+  </Sidebar.Footer>
+</Sidebar>
              
 ```
 
@@ -22,6 +27,7 @@ import Sidebar from '@lendi-ui/Sidebar';
   <PropTable.Entry name="direction" type="{type SidebarDirection = 'left' | 'right';}" defaultValue="left" description="The side direction that Sidebar component will rendered in the window."/>
   <PropTable.Entry name="isVisible" type="boolean" defaultValue="false" description="Whether Sidebar component is visible or not."/>
   <PropTable.Entry name="onHide" type="() => {}" defaultValue="() => {}" description="The function that close Sidebar in the window."/>
+  <PropTable.Entry name="overlayZIndex" type="number" defaultValue="2" description="The value of Sidebar internal Overlay z-index value. All elements z-index less than this value will be hidden in Overlay. All elements z-index great than this value will be displayed in the top of Overlay."/>
   <PropTable.Entry name="top" type="number" defaultValue="0" description="The margin top value for Sidebar component."/>
 </PropTable>
 
@@ -33,8 +39,8 @@ import Sidebar from '@lendi-ui/Sidebar';
 ### Sidebar Footer
 <PropTable>
   <PropTable.Entry name="children" type="React.ReactNode" description="The Sidebar Footer component."/>
-  <PropTable.Entry name="isTopShadow" type="boolean" defaultValue="false" description="Whether the Sidebar Footer component has a shadow top border or not."/>
+  <PropTable.Entry name="hasTopShadow" type="boolean" defaultValue="false" description="Whether the Sidebar Footer component has a shadow top border or not."/>
 </PropTable>
 
 ### Notes
-In Sidebar component, we use LUI Overlay. The Overlay z-index value is 2 and Sidebar z-index value is 3.
+In Sidebar component, we use LUI Overlay. The Overlay z-index value is 2 and Sidebar z-index value is 999. (Once LUI z-index value management compeleted, we will update these values.)

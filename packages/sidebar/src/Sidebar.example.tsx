@@ -41,9 +41,6 @@ const FooterWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.14),
-        0 1px 18px 0 rgba(0, 0, 0, 0.12),
-        0 6px 10px 0 rgba(0, 0, 0, 0.14);
     ${px('md')} ${pt('md')} ${pb('lg')}
 `;
 
@@ -100,7 +97,7 @@ export default () => {
             </BodyWrapper>
           </ContentWrapper>
         </Sidebar.Content>
-        <Sidebar.Footer>
+        <Sidebar.Footer hasTopShadow={true}>
           <FooterWrapper>
             <Button variant="emphasis" isFullWidth>
               Continue Application
