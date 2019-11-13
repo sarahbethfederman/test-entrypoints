@@ -367,6 +367,16 @@
     "@lendi-ui/color" "^3.0.0"
     "@lendi-ui/icon" "^7.0.0"
 
+"@lendi-ui/navbar-base@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/navbar-base/-/navbar-base-1.0.1.tgz#c36f0f550e8cdc8632fe92f95036b6b150b9aae5"
+  dependencies:
+    "@lendi-ui/color" "^5.0.1"
+    "@lendi-ui/depth" "^4.0.0"
+    "@lendi-ui/utils" "^4.0.1"
+    "@types/react-stickynode" "^1.4.0"
+    react-stickynode "^2.1.1"
+
 "@lendi-ui/navbar@^3.0.0":
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/@lendi-ui/navbar/-/navbar-3.0.5.tgz#63e0203c76ffd37e2818b2a22a486b83e096eabb"
