@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/sidebar
 
+## [1.1.1] 2019-11-14 [HUB-hotfix-sidebar](https://creditandfinance.atlassian.net/browse.HUB-hotfix-sidebar)
+### Updated
+- Fix Sidebar Footer component in the bottom.
+
 ## [1.1.0] 2019-11-12 [HUB-hotfix-sidebar](https://creditandfinance.atlassian.net/browse.HUB-hotfix-sidebar)
 ### Updated
 - Add one more prop 'overlayZIndex' to Sidebar component.

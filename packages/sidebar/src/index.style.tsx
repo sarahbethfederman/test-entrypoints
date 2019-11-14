@@ -3,7 +3,6 @@ import { normalise } from '@lendi-ui/utils';
 import { State, mixin } from '@lendi-ui/transition';
 import { depth } from '@lendi-ui/depth';
 import { bg, color } from '@lendi-ui/color';
-import { mt, mb } from '@lendi-ui/spacing';
 
 import { MINIMUM_GUTTER_WIDTH, SIDEBAR_ZINDEX } from './constants';
 
@@ -61,7 +60,7 @@ export const Wrapper = styled.div`
 
 export const SidebarContent = styled.div`
   width: 100%;
-  ${mb('auto')}
+  overflow: auto;
 `;
 
 export const SidebarFooter = styled.div`
@@ -76,5 +75,4 @@ export const SidebarFooter = styled.div`
     }
     return undefined;
   }}
-  ${mt('auto')}
 `;
