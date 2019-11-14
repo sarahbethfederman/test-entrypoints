@@ -1,3 +1,6 @@
+## [2.1.2] 2019-11-14 [FUNNEL-696](https://creditandfinance.atlassian.net/browse/FUNNEL-696)
+- fix Accordion types export using arrow function assignation instead of function declaration
+
 ## [2.1.1] 2019-11-13 [FUNNEL-696](https://creditandfinance.atlassian.net/browse/FUNNEL-696)
 - fix Accordion and AccordionGroup exports
 

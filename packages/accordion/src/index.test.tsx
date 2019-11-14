@@ -79,12 +79,14 @@ describe('Accordion', () => {
   describe('test rendering', () => {
     it('should mount Accordion with children', () => {
       const firstAccordion = element.find(Accordion).at(0);
-      expect(firstAccordion.text).not.toBe('<Accordion />');
+
+      expect(firstAccordion.children().length).toBe(2);
     });
 
     it('should render Accordion without any children', () => {
       const secondAccordion = element.find(Accordion).at(1);
-      expect(secondAccordion.text()).toBe('<Accordion />');
+
+      expect(secondAccordion.children().length).toBe(0);
     });
   });
 

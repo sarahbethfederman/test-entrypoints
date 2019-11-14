@@ -15,7 +15,7 @@ function getChildrenOf(component: React.ReactType, children: React.ReactNode) {
   return foundChildren || null;
 }
 
-function Accordion(props: AccordionProps) {
+export const Accordion = (props: AccordionProps) => {
   const context = React.useContext(AccordionGroupContext);
   const { isOpen = false, isDisabled = false, children, ...otherAccordionProps } = props;
 
@@ -31,9 +31,7 @@ function Accordion(props: AccordionProps) {
       </AccordionWrapper>
     </AccordionContext.Provider>
   );
-}
+};
 
 Accordion.Header = AccordionHeader;
 Accordion.Content = AccordionItem;
-
-export { Accordion };

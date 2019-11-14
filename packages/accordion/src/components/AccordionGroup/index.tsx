@@ -12,7 +12,7 @@ function renderAccordions(child: React.ReactChild) {
   return child;
 }
 
-function AccordionGroup(props: AccordionGroupProps) {
+export const AccordionGroup = (props: AccordionGroupProps) => {
   const { children, isOpen = false, variant = 'primary', ...otherProps } = props;
 
   return (
@@ -22,8 +22,6 @@ function AccordionGroup(props: AccordionGroupProps) {
       </AccordionGroupContext.Provider>
     </Wrapper>
   );
-}
+};
 
 AccordionGroup.Accordion = Accordion;
-
-export { AccordionGroup };
