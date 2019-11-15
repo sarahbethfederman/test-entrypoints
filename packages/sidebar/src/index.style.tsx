@@ -60,11 +60,13 @@ export const Wrapper = styled.div`
 
 export const SidebarContent = styled.div`
   width: 100%;
-  overflow: auto;
+  overflow-y: scroll;
+  flex: 1;
 `;
 
 export const SidebarFooter = styled.div`
   width: 100%;
+  align-self: flex-end;
   ${({ hasTopShadow }: { hasTopShadow: boolean }) => {
     if (hasTopShadow) {
       return css`
