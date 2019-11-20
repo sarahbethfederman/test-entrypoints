@@ -45,7 +45,8 @@ exports[`Link should render styles for size lg 1`] = `
   padding: 0;
   ",
               [Function],
-              " ",
+              ";
+  ",
               "
   ",
               [Function],
@@ -141,7 +142,8 @@ exports[`Link should render styles for size md 1`] = `
   padding: 0;
   ",
               [Function],
-              " ",
+              ";
+  ",
               "
   ",
               [Function],
@@ -237,7 +239,8 @@ exports[`Link should render styles for size sm 1`] = `
   padding: 0;
   ",
               [Function],
-              " ",
+              ";
+  ",
               "
   ",
               [Function],

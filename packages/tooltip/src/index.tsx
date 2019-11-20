@@ -9,6 +9,7 @@ export interface TooltipProps extends LUIGlobalProps {
   content: React.ReactNode;
   position?: Position;
   className?: string;
+  onClick?: () => void;
 }
 
 export interface TooltipState {
@@ -54,13 +55,15 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
   };
 
   render() {
-    const { content, position = 'right', children } = this.props;
+    const { content, position = 'right', children, className, onClick } = this.props;
     const { isOpen } = this.state;
     return (
       <TooltipWrapper
         ref={this.myRef}
         onMouseOver={() => this.changeOpenStatus(true)}
         onMouseLeave={() => this.changeOpenStatus(false)}
+        className={className}
+        onClick={onClick}
       >
         {children}
         <ContentWrapper {...{ isOpen, position }}>

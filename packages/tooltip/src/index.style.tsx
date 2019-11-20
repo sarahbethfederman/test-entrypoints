@@ -44,7 +44,9 @@ export const ContentWrapper = styled.div`
         transition: opacity 0.6s;
       `;
     }
-  }} ${({ position }: ContentProps) => {
+  }};
+
+  ${({ position }: ContentProps) => {
     switch (position) {
       case 'top':
         return css`

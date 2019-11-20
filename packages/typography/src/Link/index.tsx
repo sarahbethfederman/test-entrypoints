@@ -36,14 +36,16 @@ export const link = ({ color, size }: LinkOptions = {}) => {
  * Link component
  */
 const LinkWrapper = styled.a<LinkOptions & MarginOptions>`
-  ${link} ${margin};
+  ${link};
+  ${margin};
 `;
 
 const ButtonWrapper = styled.button<LinkOptions & MarginOptions>`
   font-size: 1em;
   border: none;
   padding: 0;
-  ${link} ${margin};
+  ${link};
+  ${margin};
   background-color: inherit;
 `;
 

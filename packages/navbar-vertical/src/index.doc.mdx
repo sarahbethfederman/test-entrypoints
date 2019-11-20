@@ -1,0 +1,59 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+A Vertical Navbar component for LUI. This is a full page sidebar that is ideal for dashboard applications. The Vertical Navbar is best used inside a grid layout on a modern browser. It allows for a custom heading to sit in line with your horizontal navbar and tabs to take each menu item. It can be collapsed and expanded to take up more or less space on the page.
+
+## Usage
+
+```
+import VerticalNavbar from '@lendi-ui/navbar-vertical';
+```
+
+```jsx
+<VerticalNavbar>
+  <VerticalNavbar.Header>
+    🏡 Homli
+  </VerticalNavbar.Header>
+
+  <VerticalNavbar.Tab tooltip="Tab one">
+    Tab one
+  </VerticalNavbar.Tab>
+
+  <VerticalNavbar.Tab tooltip="Tab two">
+    Tab two
+  </VerticalNavbar.Tab>
+
+  <VerticalNavbar.Tab tooltip="Tab three">
+    Tab three
+  </VerticalNavbar.Tab>
+</VerticalNavbar>
+```
+
+## Properties
+
+### VerticalNavbar
+
+No properties.
+
+### VerticalNavbar.Header
+
+<PropTable>
+  <PropTable.Entry name="height" type="string" defaultValue="56px" description="Provide a height to the nav header to match your top navigation."/>
+</PropTable>
+
+### VerticalNavbar.Tab
+
+<PropTable>
+  <PropTable.Entry name="tooltip" type="string" description="Content for the tooltip shown when the tab is moused over and the vertical navbar is collapsed."/>
+  <PropTable.Entry name="selected" type="boolean" description="Whether the tab is selected." />
+  <PropTable.Entry name="onClick" type="() => void" description="Function to execute when tab is clicked." />
+</PropTable>
+
+### VerticalNavContext
+
+You can access the VerticalNavContext from inside your custom component by running the function `useVerticalNavContext()` or the react component `<VerticalNavContext.Consumer />`.
+
+<PropTable>
+  <PropTable.Entry name="isMouseOver" type="boolean" defaultValue={false} description="Whether the mouse is over the Vertical Navbar."/>
+  <PropTable.Entry name="isExpanded" type="boolean" defaultValue={true} description="Whether the Vertical Navbar is in expanded or collapsed state." />
+  <PropTable.Entry name="setIsExpanded" type="(boolean) => void" description="Function that sets Vertical Navbar expanded or collapsed." />
+</PropTable>
