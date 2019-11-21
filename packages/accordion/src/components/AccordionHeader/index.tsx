@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Colors } from '@lendi-ui/theme';
 import { AccordionHeaderProps } from '../../typings';
-import { ArrowIcon, HeaderButtonWrapper, HeaderContent, HeaderIconContentWrapper } from '../../index.style';
+import { ArrowIcon, HeaderWrapper, HeaderContent, HeaderButtonWrapper, HeaderAfterWrapper } from '../../index.style';
 import { AccordionContext } from '../AccordionContext';
 
 export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
@@ -20,25 +20,25 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
         }
 
         return (
-          <HeaderButtonWrapper
-            id={ariaId}
-            aria-expanded={isOpen}
-            {...otherHeaderProps}
-            disabled={isDisabled}
-            variant={variant}
-            onClick={(e: React.SyntheticEvent) => {
-              if (isDisabled) {
-                return;
-              }
-              onClick(e);
-            }}
-          >
-            <HeaderIconContentWrapper>
+          <HeaderWrapper {...otherHeaderProps} variant={variant}>
+            <HeaderButtonWrapper
+              id={ariaId}
+              aria-expanded={isOpen}
+              type={'button'}
+              onClick={(e: React.SyntheticEvent) => {
+                if (isDisabled) {
+                  return;
+                }
+                onClick(e);
+              }}
+              disabled={isDisabled}
+              variant={variant}
+            >
               <ArrowIcon isRotate={isOpen} isDisabled={isDisabled} color={arrowIconColor} />
               <HeaderContent>{children}</HeaderContent>
-            </HeaderIconContentWrapper>
-            {after && <>{after}</>}
-          </HeaderButtonWrapper>
+            </HeaderButtonWrapper>
+            {after && <HeaderAfterWrapper disabled={isDisabled}>{after}</HeaderAfterWrapper>}
+          </HeaderWrapper>
         );
       }}
     </AccordionContext.Consumer>

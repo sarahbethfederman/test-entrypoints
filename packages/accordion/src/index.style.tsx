@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { normalise, deriveSize } from '@lendi-ui/utils';
 import { color, bg } from '@lendi-ui/color';
-import { mb, pl, pr, px } from '@lendi-ui/spacing';
+import { m, mb, pl, px } from '@lendi-ui/spacing';
 import { ArrowDropDown } from '@lendi-ui/icon';
 import { body } from '@lendi-ui/typography';
 import { AccordionGroupVariant } from './typings';
@@ -10,22 +10,52 @@ export const Wrapper = styled.div`
   ${normalise};
 `;
 
-interface HeaderButtonWrapperProps {
-  disabled: boolean;
+interface HeaderWrapperProps {
   variant: AccordionGroupVariant;
 }
-export const HeaderButtonWrapper = styled.button<HeaderButtonWrapperProps>`
-  display: flex;
+export const HeaderWrapper = styled.h3<HeaderWrapperProps>`
+  ${m('nil')};
   align-items: center;
-  justify-content: space-between;
-  border: none;
-  text-align: left;
-  font-weight: 600;
+  display: flex;
   height: 48px;
-  ${px('xs')};
-  background-color: inherit;
-  width: 100%;
-  font-size: ${deriveSize(1)};
+  justify-content: space-between;
+
+  ${({ variant }) => {
+    switch (variant) {
+      case 'emphasis':
+        return css`
+          ${bg('shade.0')}
+          border: 1px solid ${color('shade.100')};
+          border-radius: 6px;
+
+          ${ArrowIcon} {
+            ${color('primary.500')}
+          }
+        `;
+      case 'empty':
+        return css`
+          ${bg('shade.0')}
+        `;
+      case 'primary':
+      default:
+        return null;
+    }
+  }}
+`;
+
+export const HeaderContent = styled.span`
+  word-wrap: break-word;
+  ${px('xxxs')};
+`;
+
+interface HeaderAfterWrapperProps {
+  disabled: boolean;
+}
+
+export const HeaderAfterWrapper = styled.div<HeaderAfterWrapperProps>`
+  ${px('xs')}
+  display: flex;
+
   ${({ disabled }) =>
     disabled
       ? css`
@@ -36,7 +66,42 @@ export const HeaderButtonWrapper = styled.button<HeaderButtonWrapperProps>`
           :focus {
             pointer-events: inherit;
             cursor: not-allowed;
-            opacity: 0.4;
+            box-shadow: none;
+            transform: scale(1);
+          }
+        `
+      : css`
+          cursor: pointer;
+        `}
+`;
+
+interface HeaderButtonWrapperProps {
+  disabled: boolean;
+  variant: AccordionGroupVariant;
+}
+
+export const HeaderButtonWrapper = styled.button<HeaderButtonWrapperProps>`
+  ${px('xs')}
+  align-items: center;
+  background-color: inherit;
+  border: none;
+  display: flex;
+  font-size: ${deriveSize(1)};
+  font-weight: 600;
+  height: 100%;
+  text-align: left;
+  width: 100%;
+
+  ${({ disabled }) =>
+    disabled
+      ? css`
+          cursor: not-allowed;
+          opacity: 0.4;
+          :hover,
+          :active,
+          :focus {
+            pointer-events: inherit;
+            cursor: not-allowed;
             box-shadow: none;
             transform: scale(1);
           }
@@ -49,20 +114,11 @@ export const HeaderButtonWrapper = styled.button<HeaderButtonWrapperProps>`
     switch (variant) {
       case 'emphasis':
         return css`
-          ${bg('shade.0')}
-          border: 1px solid ${color('shade.100')};
-          border-radius: 6px;
           font-weight: normal;
           ${body({ color: 'shade.700' })}
-
-          ${ArrowIcon} {
-            ${color('primary.500')}
-          }
         `;
       case 'empty':
-        return css`
-          ${bg('shade.0')}
-        `;
+        return null;
       case 'primary':
       default:
         return css`
@@ -71,6 +127,10 @@ export const HeaderButtonWrapper = styled.button<HeaderButtonWrapperProps>`
         `;
     }
   }}
+`;
+
+export const HeaderContentWrapper = styled.div`
+  ${pl('xs')};
 `;
 
 interface AccordionWrapperProps {
@@ -90,7 +150,7 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
             ${mb('nil')}
           }
 
-          ${HeaderButtonWrapper} {
+          ${HeaderWrapper} {
             border-color: ${isSelected ? color('primary.500') : null};
           }
         `;
@@ -110,18 +170,6 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
         `;
     }
   }}
-`;
-
-export const HeaderContent = styled.span`
-  word-wrap: break-word;
-  ${px('xxxs')};
-`;
-
-export const HeaderIconContentWrapper = styled.div`
-  ${pr('xs')}
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const IconWrapper = styled.div`
@@ -151,10 +199,6 @@ export const ArrowIcon = styled(ArrowDropDown)`
       : css`
           visibility: visible;
         `}
-`;
-
-export const HeaderContentWrapper = styled.div`
-  ${pl('xs')};
 `;
 
 export const PaddedItem = styled.div`

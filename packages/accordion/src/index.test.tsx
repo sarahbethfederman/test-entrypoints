@@ -6,7 +6,7 @@ import { AccordionHeader } from './components/AccordionHeader';
 import { AccordionItem } from './components/AccordionItem';
 import { Accordion } from './components/Accordion/index';
 import { Check } from '@lendi-ui/icon';
-import { HeaderButtonWrapper, AccordionItemWrapper } from './index.style';
+import { AccordionItemWrapper, HeaderButtonWrapper } from './index.style';
 import { AccordionContext } from './components/AccordionContext';
 
 let element;
@@ -134,8 +134,8 @@ describe('Accordion accesibility', () => {
   });
 
   it('should contain the correct role', () => {
-    const HeaderButtonWrapper = element.find(AccordionItemWrapper);
-    expect(HeaderButtonWrapper.prop('role')).toEqual('region');
+    const HeaderWrapper = element.find(AccordionItemWrapper);
+    expect(HeaderWrapper.prop('role')).toEqual('region');
   });
 
   it('should contain aria visibility tags', () => {

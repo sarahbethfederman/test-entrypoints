@@ -1,3 +1,7 @@
+## [3.0.0] 2019-11-18 [FUNNEL-682-accordion](https://creditandfinance.atlassian.net/browse/FUNNEL-682)
+- Split accordion header into a wrapper containing the button and the after as siblings, instead of after appearing as a child of button
+- Gave accordion header button type of 'button' to prevent form submission when clicked
+
 ## [2.1.2] 2019-11-14 [FUNNEL-696](https://creditandfinance.atlassian.net/browse/FUNNEL-696)
 - fix Accordion types export using arrow function assignation instead of function declaration
 
