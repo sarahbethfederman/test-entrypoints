@@ -1,5 +1,9 @@
-## [9.1.0] - 2019-11-22 - [HUB-664](https://creditandfinance.atlassian.net/browse/HUB-664)
+## [9.1.1] - 2019-11-22
 ### Changed
+- Fixed the colours in the new PropertyReport icon.
+
+## [9.1.0] - 2019-11-22 - [HUB-664](https://creditandfinance.atlassian.net/browse/HUB-664)
+### Added
 - Added in relation to: HUB-664, HUB-665 and HUB-695
 - Adds: ArrowRightCircle, BullseyeArrow, LightbulbOn, HomeMapMarker, HomeAccount, PropertyReport, CalculatorVariant, IcAssignment and CalendarMonth icons.
 

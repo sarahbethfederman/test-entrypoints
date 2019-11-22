@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <title>Property-Report</title>
-  <path d="M13,9h5.5L13,3.5V9M6,2h8l6,6V20a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V4A1.993,1.993,0,0,1,6,2" />
-  <path class="fillPath" d="M10.9,19.682v-3.3h2.2v3.305h2.754V15.275h1.652L12,10.318,6.492,15.275H8.144v4.407Z" />
+  <path class="fillPath" d="M13,9h5.5L13,3.5V9M6,2h8l6,6V20a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V4A1.993,1.993,0,0,1,6,2" />
+  <path d="M10.9,19.682v-3.3h2.2v3.305h2.754V15.275h1.652L12,10.318,6.492,15.275H8.144v4.407Z" style="fill:#fff" />
 </svg>
