@@ -22,6 +22,10 @@ import { Lock } from '@lendi-ui/icon';
 <Lock color="secondary.500" />;
 ```
 
+## Fill colours not working?
+
+In this case, you will need to add a `fillPath` class to the element in the SVG that needs to be recoloured, this can be determined by inspecting the svg in the browser and changing the fill colour until you find the correct element.
+
 ## Properties
 
 ```

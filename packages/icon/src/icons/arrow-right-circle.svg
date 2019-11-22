@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Common/ic_arrow_drop_down_24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="TeamView_Navigation-V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TeamView_Navigation-1.2---Panel_Right" transform="translate(-129.000000, -159.000000)" fill="#0D5A6D">
+            <g id="Group-10" transform="translate(111.000000, 141.000000)">
+                <g id="Group-3" transform="translate(16.000000, 16.000000)">
+                    <g id="Crowdsource/chevron_right_circle">
+                        <path class="fillPath" d="M22,12 C22,17.5228475 17.5228475,22 12,22 C9.3478351,22 6.80429597,20.9464316 4.92893219,19.0710678 C3.0535684,17.195704 2,14.6521649 2,12 C2,9.3478351 3.0535684,6.80429597 4.92893219,4.92893219 C6.80429597,3.0535684 9.3478351,2 12,2 C14.6521649,2 17.195704,3.0535684 19.0710678,4.92893219 C20.9464316,6.80429597 22,9.3478351 22,12 L22,12 Z M10,18 L16,12 L10,6 L8.6,7.4 L13.2,12 L8.6,16.6 L10,18 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -151,7 +151,7 @@ export class LeftSidebar extends React.Component<SidebarProps, {}> {
   }
 
   public render() {
-    const { show, onHide } = this.props;
+    const { show = false, onHide } = this.props;
     return (
       <Sidebar side="left" show={show} onHide={onHide}>
         <Wrapper>

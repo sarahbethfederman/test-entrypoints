@@ -23,6 +23,10 @@ export const IconWrapper = styled.span\`
     width: inherit;
     height: inherit;
   }
+
+  .fillPath {
+    fill: \${({ color }: IconProps) => color ? getColor(color) : 'currentColor'};
+  }
 \`
 `;
 
