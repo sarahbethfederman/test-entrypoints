@@ -1,3 +1,4 @@
+import * as React from 'react';
 import styled, { css } from 'styled-components';
 import { grid } from '@lendi-ui/grid';
 import { bg } from '@lendi-ui/color';
@@ -33,7 +34,7 @@ export const Wrapper = styled.div`
   ${normalise};
   ${grid({ halign: 'left', wrap: false })};
   ${(props: WrapperProps) => (props.isInverse ? 'background: transparent' : bg('primary.500'))};
-  min-height: 48px;
+  min-height: 30px;
   overflow-x: auto;
   width: 100%;
   position: relative;
@@ -68,4 +69,25 @@ export const LeftIconWrapper = styled.div`
     left: 0px;
     margin-left: -20px;
   `};
+`;
+
+interface ActiveBarStyleProps {
+  styles?: React.CSSProperties;
+}
+
+export const commonActiveBarStyle = css`
+  bottom: 0;
+  content: '';
+  height: 2px;
+  position: absolute;
+  width: inherit;
+`;
+
+export const ActiveBar = styled.span<ActiveBarStyleProps>`
+  ${({ styles }) =>
+    css`
+      ${bg('shade.100')}
+      ${commonActiveBarStyle}
+      ${{ ...styles }}
+    `}
 `;

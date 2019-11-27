@@ -3,16 +3,19 @@ import * as Enzyme from 'enzyme';
 import { Tab } from './index';
 import { Lock } from '@lendi-ui/icon';
 import Theme from '@lendi-ui/theme';
+import { TabActiveBar, TabWrapperBtn } from './index.style';
+import Tabs from '../Tabs';
 
-let mockOnClick;
+let mockedOnChangeTabIndex = jest.fn();
 let tab;
 let wrapper;
 
 function render(props) {
-  mockOnClick = jest.fn();
   wrapper = Enzyme.mount(
     <Theme>
-      <Tab {...props} />
+      <Tabs onChangeTabIndex={mockedOnChangeTabIndex} activeTabIndex={0}>
+        <Tab {...props} />
+      </Tabs>
     </Theme>
   );
   tab = wrapper.find('Tabs');
@@ -27,5 +30,16 @@ describe('Tab', () => {
   it('should render without any mandatory props', () => {
     render({});
     expect(tab).toBeTruthy();
+  });
+
+  it('should render TabActiveBar with active selection', () => {
+    render({ index: 0 });
+    expect(tab.find(TabActiveBar)).toHaveStyleRule('background-color', 'rgba(109,156,167,1)');
+  });
+
+  it('should have role and aria-selected for a11y', () => {
+    render({ index: 0 });
+    expect(tab.find(TabWrapperBtn).props().role).toEqual('tab');
+    expect(tab.find(TabWrapperBtn).props()['aria-selected']).toBeTruthy();
   });
 });

@@ -1,3 +1,10 @@
+## [5.0.0] - 2019-11-26 - [HUB-708(https://creditandfinance.atlassian.net/browse/HUB-708)
+### Fixes
+- As per new Design,
+  1) made the Tabs(Tab) component to take custom styles and
+  2) to showcase a selected tab, added an active-bar component, which could be customised to take custom styles.
+- removing default padding and margin on tab header. See examples please.
+
 ## [4.0.2] - 2019-10-14 - [FUNNEL-624](https://creditandfinance.atlassian.net/browse/FUNNEL-624)
 ### Fixed
 - Prevent onChangeTabIndex being passed down to Wrapper which cause an error

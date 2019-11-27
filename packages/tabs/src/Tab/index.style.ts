@@ -1,23 +1,21 @@
 import styled, { css } from 'styled-components';
-import { unit } from '@lendi-ui/grid';
-import { bg } from '@lendi-ui/color';
-import { py } from '@lendi-ui/spacing';
+import { bg, fg } from '@lendi-ui/color';
 import { body } from '@lendi-ui/typography';
+import { commonActiveBarStyle } from '../Tabs/index.style';
 
-export interface TabWrapperProps {
-  tabCount: number;
+export interface TabActiveBarProps {
   isSelected: boolean;
+  styles?: React.CSSProperties;
 }
 
 const TabWrapper = css`
   border: 0;
   background: none;
-  color: #0d5a6d;
+  ${fg('secondary.500')}
   cursor: pointer;
-  text-align: center;
+  position: relative;
+
   ${body({ size: 'sm' })}
-  border-bottom: ${(props: TabWrapperProps) => (props.isSelected ? `2px solid ${bg('secondary.600')}` : 'none')};
-  ${(props: TabWrapperProps) => unit({ size: 1 / props.tabCount })};
   &:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.1);
@@ -28,7 +26,6 @@ const TabWrapper = css`
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  min-width: 120px;
 `;
 
 export const TabWrapperBtn = styled.button`
@@ -41,5 +38,15 @@ export const TabWrapperA = styled.a`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  ${py('xxs')};
+`;
+
+export const TabActiveBar = styled.span<TabActiveBarProps>`
+  ${({ isSelected }) => isSelected && bg('secondary.300')}
+  ${({ styles }) =>
+    css`
+      ${commonActiveBarStyle}
+      left: 0px;
+      right: 0px;
+      ${{ ...styles }}
+    `}
 `;

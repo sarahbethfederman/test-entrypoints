@@ -4,7 +4,7 @@ import Tabs from '.';
 import { Lock } from '@lendi-ui/icon';
 import Theme from '@lendi-ui/theme';
 import { TabWrapperBtn, TabWrapperA } from '../Tab/index.style';
-import { RightIconWrapper, LeftIconWrapper } from './index.style';
+import { RightIconWrapper, LeftIconWrapper, ActiveBar } from './index.style';
 import { Tab } from '../Tab';
 
 let wrapper;
@@ -76,8 +76,8 @@ describe('Tabs', () => {
         .find(Tab)
         .at(0)
         .find(TabWrapperBtn)
-        .props()['isSelected']
-    ).toBe(true);
+        .props()['aria-selected']
+    ).toBeTruthy();
 
     activeTabIndex = 1;
     render({ isInverse: false, activeTabIndex });
@@ -86,8 +86,8 @@ describe('Tabs', () => {
         .find(Tab)
         .at(1)
         .find(TabWrapperBtn)
-        .props()['isSelected']
-    ).toBe(true);
+        .props()['aria-selected']
+    ).toBeTruthy();
   });
 
   it('should call props onChange when tab is clicked', () => {
@@ -98,6 +98,11 @@ describe('Tabs', () => {
       .simulate('click');
     expect(mockOnChange.mock.calls.length).toBe(1);
     expect(mockOnChange.mock.calls[0][0]).toBe(2);
+  });
+
+  it('renders when ActiveBar is given with custom style', () => {
+    render({ isInverse: true, activeTabIndex: 1, activeBarStyles: { height: '10px' } });
+    expect(tabs.find(ActiveBar)).toHaveStyleRule('height', '10px');
   });
 
   describe('test native props and Standard HTML Attributes', () => {

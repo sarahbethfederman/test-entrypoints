@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Wrapper, RightIconWrapper, LeftIconWrapper } from './index.style';
+import { Wrapper, RightIconWrapper, LeftIconWrapper, ActiveBar } from './index.style';
 import { Tab, TabProps } from '../Tab';
 import { ChevronLeft, ChevronRight } from '@lendi-ui/icon';
 import TabContext from '../TabContext';
@@ -9,6 +9,8 @@ export interface TabsProps extends LUIGlobalProps {
   onChangeTabIndex: (key: number) => void;
   activeTabIndex: number;
   isInverse?: boolean;
+  children?: React.ReactNode;
+  activeBarStyles?: React.CSSProperties;
 }
 
 export interface TabsState {
@@ -71,22 +73,30 @@ export default class Tabs extends React.Component<TabsProps, TabsState> {
   }
 
   render() {
-    const { children, isInverse = false, activeTabIndex, onChangeTabIndex, ...otherProps } = this.props;
+    const {
+      children,
+      isInverse = false,
+      activeTabIndex,
+      onChangeTabIndex,
+      activeBarStyles,
+      ...otherTabsProps
+    } = this.props;
     const { isScrollable } = this.state;
     return (
       <TabContext.Provider
         value={{
           onClick: this.handleClick,
-          tabCount: React.Children.count(children),
           selectedIndex: activeTabIndex,
+          styles: activeBarStyles,
         }}
       >
-        <Wrapper {...otherProps} ref={this.node} isInverse={isInverse} isScrollable={isScrollable}>
+        <Wrapper {...otherTabsProps} ref={this.node} isInverse={isInverse} isScrollable={isScrollable} role="tablist">
           {isScrollable && (
             <LeftIconWrapper onClick={this.handleMoveScrollbarRight}>
               <ChevronLeft height="24px" width="24px" color="secondary.500" />
             </LeftIconWrapper>
           )}
+          {activeBarStyles && <ActiveBar styles={activeBarStyles} />}
           {React.Children.map(children as React.ReactChild, this.renderTab)}
           {isScrollable && (
             <RightIconWrapper onClick={this.handleMoveScrollbarLeft}>
