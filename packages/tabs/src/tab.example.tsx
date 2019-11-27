@@ -54,7 +54,7 @@ export default class TabsExample extends React.Component {
           onChangeTabIndex={(activeTabIndex) => this.setState({ activeTabIndex })}
           activeTabIndex={this.state.activeTabIndex}
           isInverse
-          activeBarStyles={{ height: '8px' }}
+          activeBarStyles={{ height: '5px' }}
         >
           <StyledTab>
             <Label makeBold={0 === this.state.activeTabIndex}>SUMMARY</Label>
