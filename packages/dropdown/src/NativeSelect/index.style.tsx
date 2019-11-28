@@ -75,15 +75,16 @@ export const DropdownWrapper = styled.div`
   display: inline-block;
   position: relative;
   ${({ isFullWidth }: DropdownWrapperProp) => {
-    if (isFullWidth) {
+      if (isFullWidth) {
+        return css`
+          width: 100%;
+        `;
+      }
       return css`
-        width: 100%;
+        ${ml('xxs')};
       `;
-    }
-    return css`
-      ${ml('xxs')};
-    `;
-  }} :hover {
+    }}
+    :hover {
     ${({ isDisabled }: DropdownWrapperProp) => {
       if (isDisabled) {
         return undefined;

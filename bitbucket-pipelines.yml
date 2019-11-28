@@ -96,6 +96,7 @@ pipelines:
 
       - step:
           name: 📦 Publish
+          size: 2x
           script:
             - ./ci/publish.sh
           caches:

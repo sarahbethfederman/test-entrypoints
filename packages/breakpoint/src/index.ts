@@ -1,6 +1,6 @@
 import { css, SimpleInterpolation } from 'styled-components';
 
-export const keys = Object.keys as <T>(o: T) => (Extract<keyof T, string>)[];
+export const keys = Object.keys as <T>(o: T) => Extract<keyof T, string>[];
 
 export enum Breakpoint {
   mobile = '0',

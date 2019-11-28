@@ -177,7 +177,8 @@ export const InputWrapper = styled.input`
     background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
     font-family: ${select('typography.body.fontFamily')};
     padding: ${fontSize === 'xs' ? `0 ${deriveSize(0.25)}` : `0 ${deriveSize(1)}`};
-  `} ::placeholder {
+  `}
+    ::placeholder {
     color: ${select('colors.shade.300')};
   }
 

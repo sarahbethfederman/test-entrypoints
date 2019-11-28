@@ -65,8 +65,7 @@ export const LinksWrapper = styled.div`
 
 export const PageLink = styled(Link)`
   text-decoration: none;
-  ${fg('shade.700')}
-  :hover,
+  ${fg('shade.700')} :hover,
   :focus,
   :active {
     ${fg('shade.700')}

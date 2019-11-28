@@ -159,8 +159,9 @@ const filledStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
     ${({ isDisabled }: WrapperProps) =>
       isDisabled
         ? css`
-            ${bg(`${colorPrefix}.500` as Colors)}
-            :hover, :active, :focus {
+            ${bg(`${colorPrefix}.500` as Colors)} :hover,
+            :active,
+            :focus {
               ${bg(`${colorPrefix}.500` as Colors)}
             }
           `

@@ -13,7 +13,7 @@ import {
 
 export interface PageNotFoundProps {}
 
-export const PageNotFound = ({  }: PageNotFoundProps) => (
+export const PageNotFound = ({}: PageNotFoundProps) => (
   <Layout>
     <ContainerWrapper>
       <a href="/">

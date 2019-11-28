@@ -118,7 +118,14 @@ describe.skip('Dropdown onChange', () => {
 
   const wrapper = mount(
     <Theme>
-      <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onChange={onChange} />
+      <NativeSelect
+        size="md"
+        items={[
+          { value: '1', label: '1' },
+          { value: '2', label: '2' },
+        ]}
+        onChange={onChange}
+      />
     </Theme>
   );
 
@@ -126,7 +133,10 @@ describe.skip('Dropdown onChange', () => {
     const onChange = jest.fn();
     render({
       onChange,
-      items: [{ value: '1', label: '1' }, { value: '2', label: '2' }],
+      items: [
+        { value: '1', label: '1' },
+        { value: '2', label: '2' },
+      ],
     });
 
     const select = Wrapper.find(Select);
@@ -141,7 +151,14 @@ describe.skip('Dropdown onFocus', () => {
 
     const wrapper = mount(
       <Theme>
-        <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onFocus={onFocus} />
+        <NativeSelect
+          size="md"
+          items={[
+            { value: '1', label: '1' },
+            { value: '2', label: '2' },
+          ]}
+          onFocus={onFocus}
+        />
       </Theme>
     );
 
@@ -157,7 +174,14 @@ describe.skip('Dropdown onBlur', () => {
 
     const wrapper = mount(
       <Theme>
-        <NativeSelect size="md" items={[{ value: '1', label: '1' }, { value: '2', label: '2' }]} onBlur={onBlur} />
+        <NativeSelect
+          size="md"
+          items={[
+            { value: '1', label: '1' },
+            { value: '2', label: '2' },
+          ]}
+          onBlur={onBlur}
+        />
       </Theme>
     );
 
