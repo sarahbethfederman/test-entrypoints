@@ -14,10 +14,6 @@ exports[`Logo with no color, width, height and className should render "shade.10
   height: inherit;
 }
 
-.c0 .fillPath {
-  fill: rgba(2,18,21,1);
-}
-
 <WithTheme(Logo)>
   <Logo
     theme={
@@ -174,12 +170,6 @@ exports[`Logo with no color, width, height and className should render "shade.10
                   ";
     width: inherit;
     height: inherit;
-  }
-
-  .fillPath {
-    fill: ",
-                  [Function],
-                  ";
   }
 ",
                 ],

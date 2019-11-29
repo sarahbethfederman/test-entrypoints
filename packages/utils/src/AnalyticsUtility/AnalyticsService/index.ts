@@ -9,7 +9,7 @@ export const trackNavigation = (
 ) => {
   switch (themeName) {
     case 'LendiLogo':
-      track({
+      track('', {
         action: Action.navigate,
         button_text: text.toLowerCase(),
         category,

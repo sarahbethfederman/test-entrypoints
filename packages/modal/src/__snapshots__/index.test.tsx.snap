@@ -15,10 +15,6 @@ Array [
   height: inherit;
 }
 
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -226,12 +222,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -286,10 +276,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -493,12 +479,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -552,10 +532,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -725,12 +701,6 @@ Array [
                       ";
     width: inherit;
     height: inherit;
-  }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
   }
 ",
                     ],
@@ -791,10 +761,6 @@ Array [
   height: inherit;
 }
 
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
-}
-
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -993,12 +959,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -1053,10 +1013,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -1251,12 +1207,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -1310,10 +1260,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -1475,12 +1421,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -1538,10 +1478,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -1742,12 +1678,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -1802,10 +1732,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -2000,12 +1926,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -2059,10 +1979,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -2224,12 +2140,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -2287,10 +2197,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -2488,12 +2394,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -2548,10 +2448,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -2744,12 +2640,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -2803,10 +2693,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -2967,12 +2853,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -3030,10 +2910,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -3243,12 +3119,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -3303,10 +3173,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -3510,12 +3376,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -3569,10 +3429,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -3743,12 +3599,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -3806,10 +3656,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -4010,12 +3856,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -4070,10 +3910,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -4268,12 +4104,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -4327,10 +4157,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -4492,12 +4318,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -4555,10 +4375,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -4759,12 +4575,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                          [Function],
-                          ";
-  }
 ",
                         ],
                       },
@@ -4819,10 +4629,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -5017,12 +4823,6 @@ Array [
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                        [Function],
-                        ";
-  }
 ",
                       ],
                     },
@@ -5076,10 +4876,6 @@ Array [
   fill: rgba(173,173,173,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(173,173,173,1);
 }
 
 .c0 {
@@ -5240,12 +5036,6 @@ Array [
                       ";
     width: inherit;
     height: inherit;
-  }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
   }
 ",
                     ],

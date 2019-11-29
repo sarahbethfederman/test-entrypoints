@@ -14,7 +14,7 @@ describe('analytics tracking', () => {
     });
     it('should call track with correct parameter', () => {
       trackNavigation('test', false, LAP.WindowPosition.footer, LAP.Category.home, 'LendiLogo');
-      expect(trackMock).toHaveBeenCalledWith({
+      expect(trackMock).toHaveBeenCalledWith('', {
         action: 'navigate',
         button_text: 'test',
         category: 'home-page',

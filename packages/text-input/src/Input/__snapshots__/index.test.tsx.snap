@@ -352,7 +352,8 @@ exports[`input should render the whole input component and a text input 1`] = `
   border: 0px;
   ",
                               [Function],
-                              " ::placeholder {
+                              "
+    ::placeholder {
     color: ",
                               [Function],
                               ";
@@ -645,7 +646,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -908,7 +910,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -1195,7 +1198,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -1481,7 +1485,8 @@ exports[`input variations of the text input in all given sizes lg should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -1767,7 +1772,8 @@ exports[`input variations of the text input in all given sizes md should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -2030,7 +2036,8 @@ exports[`input variations of the text input in all given sizes md should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -2317,7 +2324,8 @@ exports[`input variations of the text input in all given sizes md should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -2603,7 +2611,8 @@ exports[`input variations of the text input in all given sizes md should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -2889,7 +2898,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -3152,7 +3162,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -3439,7 +3450,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -3725,7 +3737,8 @@ exports[`input variations of the text input in all given sizes sm should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -4011,7 +4024,8 @@ exports[`input variations of the text input in all given sizes xs should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -4274,7 +4288,8 @@ exports[`input variations of the text input in all given sizes xs should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -4561,7 +4576,8 @@ exports[`input variations of the text input in all given sizes xs should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";
@@ -4847,7 +4863,8 @@ exports[`input variations of the text input in all given sizes xs should render 
   border: 0px;
   ",
                   [Function],
-                  " ::placeholder {
+                  "
+    ::placeholder {
     color: ",
                   [Function],
                   ";

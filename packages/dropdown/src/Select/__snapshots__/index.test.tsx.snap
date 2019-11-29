@@ -18,10 +18,6 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
   height: inherit;
 }
 
-.c2 .fillPath {
-  fill: rgba(0,192,165,1);
-}
-
 .c1 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -147,10 +143,6 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
   height: inherit;
 }
 
-.c2 .fillPath {
-  fill: rgba(0,192,165,1);
-}
-
 .c1 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -274,10 +266,6 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
   fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
-}
-
-.c2 .fillPath {
-  fill: rgba(0,192,165,1);
 }
 
 .c1 {

@@ -56,6 +56,21 @@ exports[`Sidebar should render <Sidebar /> 1`] = `
     zIndex={2}
   >
     <div>
+      <TouchProvider>
+        <ScrollLock
+          accountForScrollbars={true}
+        >
+          <Sheet
+            styles="body {
+      box-sizing: border-box !important;
+      overflow: hidden !important;
+      position: relative !important;
+      
+      padding-right: 1024px !important;
+    }"
+          />
+        </ScrollLock>
+      </TouchProvider>
       <Component
         isActive={true}
         isVisible={true}

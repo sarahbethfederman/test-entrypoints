@@ -14,10 +14,6 @@ exports[`DatePicker should render the component with month and year sections 1`]
   height: inherit;
 }
 
-.c2 .fillPath {
-  fill: rgba(0,192,165,1);
-}
-
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -263,12 +259,6 @@ exports[`DatePicker should render the component with month and year sections 1`]
                             ";
     width: inherit;
     height: inherit;
-  }
-
-  .fillPath {
-    fill: ",
-                            [Function],
-                            ";
   }
 ",
                           ],

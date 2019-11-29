@@ -14,10 +14,6 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
   height: inherit;
 }
 
-.c1 .fillPath {
-  fill: rgba(0,192,165,1);
-}
-
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -178,12 +174,6 @@ exports[`IconButton should render the "lg" size correctly 1`] = `
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -242,10 +232,6 @@ exports[`IconButton should render the "md" size correctly 1`] = `
   fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
-}
-
-.c1 .fillPath {
-  fill: rgba(0,192,165,1);
 }
 
 .c0 {
@@ -408,12 +394,6 @@ exports[`IconButton should render the "md" size correctly 1`] = `
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -472,10 +452,6 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
   fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
-}
-
-.c1 .fillPath {
-  fill: rgba(0,192,165,1);
 }
 
 .c0 {
@@ -638,12 +614,6 @@ exports[`IconButton should render the "sm" size correctly 1`] = `
     width: inherit;
     height: inherit;
   }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
-  }
 ",
                     ],
                   },
@@ -702,10 +672,6 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
   fill: rgba(0,192,165,1);
   width: inherit;
   height: inherit;
-}
-
-.c1 .fillPath {
-  fill: rgba(0,192,165,1);
 }
 
 .c0 {
@@ -867,12 +833,6 @@ exports[`IconButton should render the "xs" size correctly 1`] = `
                       ";
     width: inherit;
     height: inherit;
-  }
-
-  .fillPath {
-    fill: ",
-                      [Function],
-                      ";
   }
 ",
                     ],
