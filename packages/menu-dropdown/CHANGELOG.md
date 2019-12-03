@@ -1,3 +1,9 @@
+## [4.1.0] - 2019-11-28 - [HUB-707](https://creditandfinance.atlassian.net/browse/HUB-707)
+### Changed
+- Added customisability to all of the components through LUI global props and onClicks
+- Added MenuDropdownContext which exposes `showDropdown`
+- Removed restriction that only MenuDropdown compound components can be valid children of MenuDropdown
+
 ## [4.0.2] - 2019-10-23 - [FUNNEL-642](https://creditandfinance.atlassian.net/browse/FUNNEL-642)
 ### Fixed
 - Miss alignment in dropdown trigger and content
@@ -8,7 +14,7 @@
 ## [4.0.0] 2019-9-23 - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
 
 ## [3.0.0] 2019-9-23 - [2019-07-02] - [HUB-151](https://creditandfinance.atlassian.net/browse/HUB-151)
-### Updated 
+### Updated
 - Update typescript to version 3.5.2 and react to version 16.8.4
 
 ## [2.2.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)

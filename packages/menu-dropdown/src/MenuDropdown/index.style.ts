@@ -1,11 +1,6 @@
 import styled from 'styled-components';
-import { bg, fg } from '@lendi-ui/color';
-import { depth } from '@lendi-ui/depth';
 import { normalise } from '@lendi-ui/utils';
-
-export interface ItemContainerProps {
-  displayDropdown: boolean;
-}
+import { select } from '@lendi-ui/theme';
 
 export const Wrapper = styled.div`
   ${normalise};
@@ -14,21 +9,5 @@ export const Wrapper = styled.div`
   line-height: 45px;
   position: relative;
   display: inline-block;
-`;
-export const ItemContainer = styled.div`
-  position: absolute;
-  ${(props: ItemContainerProps) => (props.displayDropdown ? 'display:block' : 'display:none')};
-  width: 100%;
-  z-index: 1;
-  ${depth(3)};
-`;
-
-export const TopItemContainer = styled.div`
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:hover {
-    ${fg('shade.0')} ${bg('secondary.500')};
-  }
+  font-family: ${select('typography.body.fontFamily')};
 `;

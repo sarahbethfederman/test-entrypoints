@@ -1,16 +1,15 @@
 import * as React from 'react';
 import * as Enzyme from 'enzyme';
-import { Lock } from '@lendi-ui/icon';
 import Theme from '@lendi-ui/theme';
-import MenuDropdown from '.';
-import { ItemContainer, TopItemContainer } from './index.style';
+import MenuDropdown, { MenuDropDownProps } from '.';
 import { MenuDropdownContent } from '../MenuDropdownContent';
+import { TriggerWrapper } from '../MenuDropdownTrigger/index.style';
 
 let wrapper;
 let menuDropdown;
 let mockOnClick;
 
-function render(props) {
+function render(props?: MenuDropDownProps) {
   mockOnClick = jest.fn();
   wrapper = Enzyme.mount(
     <Theme>
@@ -33,7 +32,7 @@ function render(props) {
       </MenuDropdown>
     </Theme>
   );
-  menuDropdown = wrapper.find('MenuDropdown');
+  menuDropdown = wrapper.find('MenuDropdown').instance();
 }
 
 describe('MenuDropdown', () => {
@@ -44,8 +43,9 @@ describe('MenuDropdown', () => {
 
   it('should call onclick when menu item is clicked', () => {
     render();
-    menuDropdown.find(TopItemContainer).simulate('click');
-    menuDropdown
+    menuDropdown.setState({ showDropdown: true });
+    wrapper.update();
+    wrapper
       .find(MenuDropdownContent.Item)
       .at(0)
       .simulate('click');

@@ -1,23 +1,15 @@
 import * as React from 'react';
-
 import { LUIGlobalProps } from '@lendi-ui/utils';
 
 import { MenuDropdownContent } from '../MenuDropdownContent';
 import { MenuDropdownTrigger } from '../MenuDropdownTrigger';
-import { Wrapper, ItemContainer, TopItemContainer } from './index.style';
+import { Wrapper } from './index.style';
+import MenuDropdownContext from '../MenuDropdownContext';
 
 export interface MenuDropDownProps extends LUIGlobalProps {}
 
 export interface DropdownState {
   showDropdown: boolean;
-}
-
-function getChildrenOf(component: React.ReactType, children: React.ReactNode) {
-  const foundChildren = React.Children.toArray(children).filter(
-    (child) => React.isValidElement(child) && child.type === component && child
-  );
-
-  return foundChildren || null;
 }
 
 export default class MenuDropdown extends React.Component<MenuDropDownProps, DropdownState> {
@@ -61,11 +53,9 @@ export default class MenuDropdown extends React.Component<MenuDropDownProps, Dro
 
   render() {
     const { children, ...otherProps } = this.props;
-    const { showDropdown } = this.state;
     return (
       <Wrapper ref={this.node} {...otherProps}>
-        <TopItemContainer>{getChildrenOf(MenuDropdownTrigger, children)}</TopItemContainer>
-        <ItemContainer displayDropdown={showDropdown}>{getChildrenOf(MenuDropdownContent, children)}</ItemContainer>
+        <MenuDropdownContext.Provider value={this.state}>{children}</MenuDropdownContext.Provider>
       </Wrapper>
     );
   }
