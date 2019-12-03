@@ -34,6 +34,10 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
   height: inherit;
 }
 
+.c1 .fillPath {
+  fill: rgba(255,28,74,1);
+}
+
 .c2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -123,6 +127,12 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
                     ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                    [Function],
+                    ";
   }
 ",
                   ],
@@ -260,6 +270,10 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
   height: inherit;
 }
 
+.c0 .fillPath {
+  fill: rgba(255,28,74,1);
+}
+
 <HighlightOff
   color="error.500"
 >
@@ -293,6 +307,12 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
               ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+              [Function],
+              ";
   }
 ",
             ],
@@ -460,6 +480,10 @@ exports[`ErrorMessage should render whole component 1`] = `
   height: inherit;
 }
 
+.c1 .fillPath {
+  fill: rgba(255,28,74,1);
+}
+
 .c2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -552,6 +576,12 @@ exports[`ErrorMessage should render whole component 1`] = `
                       ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                      [Function],
+                      ";
   }
 ",
                     ],

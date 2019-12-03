@@ -79,6 +79,10 @@ exports[`Alert should mount Alert component with heading 1`] = `
   height: inherit;
 }
 
+.c3 .fillPath {
+  fill: rgba(255,28,74,1);
+}
+
 <Alert
   heading="Alert label"
   variant="error"
@@ -244,6 +248,12 @@ exports[`Alert should mount Alert component with heading 1`] = `
                                   ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                                  [Function],
+                                  ";
   }
 ",
                                 ],
@@ -523,6 +533,10 @@ exports[`Alert should mount Alert component without heading 1`] = `
   height: inherit;
 }
 
+.c2 .fillPath {
+  fill: rgba(255,28,74,1);
+}
+
 <Alert
   variant="error"
 >
@@ -654,6 +668,12 @@ exports[`Alert should mount Alert component without heading 1`] = `
                             ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                            [Function],
+                            ";
   }
 ",
                           ],

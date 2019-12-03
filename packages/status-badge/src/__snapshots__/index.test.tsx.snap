@@ -57,6 +57,10 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
   height: inherit;
 }
 
+.c2 .fillPath {
+  fill: rgba(78,192,0,1);
+}
+
 <StatusBadge
   hasIcon={true}
   statusText="COMPLETED"
@@ -192,6 +196,12 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
                             ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                            [Function],
+                            ";
   }
 ",
                           ],
@@ -338,6 +348,10 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
   height: inherit;
 }
 
+.c2 .fillPath {
+  fill: rgba(78,192,0,1);
+}
+
 <StatusBadge
   hasIcon={true}
   icon={false}
@@ -476,6 +490,12 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
                             ";
     width: inherit;
     height: inherit;
+  }
+
+  .fillPath {
+    fill: ",
+                            [Function],
+                            ";
   }
 ",
                           ],
