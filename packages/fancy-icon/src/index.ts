@@ -22,6 +22,7 @@ export { ArrowRight } from './fancy-icons-compiled/arrow-right';
 export { BloomSavings } from './fancy-icons-compiled/bloom-savings';
 export { BookAppointment } from './fancy-icons-compiled/book-appointment';
 export { Briefcase } from './fancy-icons-compiled/briefcase';
+export { BtnGoogleLightNormalIos } from './fancy-icons-compiled/btn_google_light_normal_ios';
 export { CalendarHandShake } from './fancy-icons-compiled/calendar-hand-shake';
 export { CashFlow } from './fancy-icons-compiled/cash-flow';
 export { CashOut } from './fancy-icons-compiled/cash-out';
