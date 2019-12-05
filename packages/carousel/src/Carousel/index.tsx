@@ -7,9 +7,10 @@ import { NextArrow, PreviousArrow } from '../Arrows';
 import CarouselDots from '../Dots';
 import { CarouselProps, CarouselCompoundComponent, CarouselSession, SlidesProps } from '../types';
 import CarouselContext from './CarouselContext';
-import { useInterval, setInfiniteCurrentIndex, isType, getIncrement, getBreakpoint } from './util';
+import { useInterval, setInfiniteCurrentIndex, isType, getIncrement } from './util';
 import CarouselSlides from '../Slides';
 import { SlidesContext } from '../Slides/SlidesContext';
+import { getBreakpoint } from '@lendi-ui/breakpoint';
 
 const DEBOUNCE_INTERVAL = 100;
 

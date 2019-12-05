@@ -1,9 +1,14 @@
 import 'jest-styled-components';
 import * as React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, SimpleInterpolation } from 'styled-components';
 import { mount } from 'enzyme';
 import { Colors } from '@lendi-ui/theme';
-import { gte, between, map, Breakpoint, BreakpointValue, BreakpointValueMap } from '.';
+import { gte, between, map, Breakpoint, BreakpointValue, BreakpointValueMap, getBreakpoint } from '.';
+import { match } from 'css-mediaquery';
+
+interface ComplexComponentProps {
+  color: Colors;
+}
 
 describe('gte()', () => {
   it('should wrap styles in a media rule', () => {
@@ -32,14 +37,14 @@ describe('gte()', () => {
   });
 
   it('should wrap styles consisting of functions in a media rule', () => {
-    const ComplexComponent = styled.div`
+    const ComplexComponent = styled.div<ComplexComponentProps>`
       ${gte('tablet')`
-        color: ${(props: { color: Colors }) => props.color};
+        color: ${((({ color }) => color) as unknown) as SimpleInterpolation};
       `};
     `;
 
-    const element = mount(<ComplexComponent color="purple" />);
-    expect(element).toHaveStyleRule('color', 'purple', {
+    const element = mount(<ComplexComponent color="primary.100" />);
+    expect(element).toHaveStyleRule('color', 'primary.100', {
       media: `(min-width:${Breakpoint.tablet})`,
     });
   });
@@ -50,7 +55,8 @@ describe('between()', () => {
     const Component = styled.div`
       ${between('mobile', 'tablet')`
         color: red;
-      `} ${between('tablet', 'desktop')`
+      `};
+      ${between('tablet', 'desktop')`
         color: green;
       `}
       color: blue;
@@ -69,7 +75,7 @@ describe('between()', () => {
   it('should wrap styles consisting of functions in a media rule', () => {
     const ComplexComponent = styled.div`
       ${between('tablet', 'desktop')`
-        color: ${(props: { color: Colors }) => props.color};
+        color: ${(((props: { color: Colors }) => props.color) as unknown) as SimpleInterpolation};
       `};
     `;
 
@@ -165,5 +171,19 @@ describe('map()', () => {
     expect(element).toMatchSnapshot();
     element = mount(<ResponsiveMapComponent size={{ tablet: '50%', mobile: '25%', desktop: '100%' }} />); // change the order and check the snapshot
     expect(element).toMatchSnapshot();
+  });
+});
+
+describe('getBreakpoint', () => {
+  it.each([
+    [1201, 'desktop'],
+    [577, 'tablet'],
+    [360, 'mobile'],
+  ])('when window width is %s, should return "%s"', (width: number, result: string) => {
+    window.matchMedia = jest.fn().mockImplementation((query: string) => ({
+      matches: match(query, { type: 'screen', width: `${width}px` }),
+    }));
+
+    expect(getBreakpoint()).toBe(result);
   });
 });

@@ -3,9 +3,9 @@
 
 Apply styles at a size larger or equal to the specified breakpoint.
 
-## Import 
+## Import
 ```
-import { gte } from '@lendi-ui/breakpoint';
+import { gte, useBreakpoint, getBreakpoint } from '@lendi-ui/breakpoint';
 ```
 
 ## Usage
@@ -22,6 +22,7 @@ const common = css`
 
 const Mobile = styled.code`
   ${common} ${gte('mobile')`
+    ${fg('shade.0')}
     ${bg('primary.800')}
   `};
 `;
@@ -38,12 +39,22 @@ const Desktop = styled.code`
   `};
 `;
 
+const CurrentBreakpoint = () => {
+  const [breakpoint, setBreakpoint] = React.useState('mobile');
+
+  useBreakpoint(setBreakpoint);
+
+  return (<>{breakpoint}</>);
+}
+
 render(
   <>
     👇 Resize the window to see the color change at each breakpoint:
     <Mobile>gte('mobile')</Mobile>
     <Tablet>gte('tablet')</Tablet>
     <Desktop>gte('desktop')</Desktop>
+    <Body>Breakpoint on page load is: {getBreakpoint()}</Body>
+    <Body>The current breakpoint is: <CurrentBreakpoint /></Body>
   </>
 );
 ```

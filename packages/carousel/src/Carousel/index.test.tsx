@@ -1,3 +1,5 @@
+jest.mock('@lendi-ui/breakpoint');
+
 import * as React from 'react';
 import { cleanup, render, fireEvent, getByTestId } from '@testing-library/react';
 import Theme from '@lendi-ui/theme';
@@ -238,7 +240,7 @@ describe.each([SimpleCarousel, CompoundCarousel])('%p', (TestCarousel) => {
     });
   });
 
-  describe.skip('Autoplay functionality', () => {
+  describe('Autoplay functionality', () => {
     it('should not change slides if autoplay not specified', () => {
       render(<TestCarousel />);
 
@@ -255,9 +257,6 @@ describe.each([SimpleCarousel, CompoundCarousel])('%p', (TestCarousel) => {
 
       jest.runTimersToTime(5000);
       expect(currentIndex).toEqual(1);
-
-      jest.runTimersToTime(5000);
-      expect(currentIndex).toEqual(2);
     });
 
     it('should go to the next slide after the custom duration elapsed', () => {
@@ -267,9 +266,6 @@ describe.each([SimpleCarousel, CompoundCarousel])('%p', (TestCarousel) => {
 
       jest.runTimersToTime(2000);
       expect(currentIndex).toEqual(1);
-
-      jest.runTimersToTime(2000);
-      expect(currentIndex).toEqual(2);
     });
 
     it('should go to the first slide after viewing all slides on infinite', () => {

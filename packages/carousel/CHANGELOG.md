@@ -1,3 +1,7 @@
+## [4.0.4] 2019-12-04
+### Changed
+- Moved getBreakpoint to @lendi-ui/breakpoint and added import from same
+
 ## [4.0.3] 2019-11-05 - [FUNNEL-700](https://creditandfinance.atlassian.net/browse/FUNNEL-700)
 ### Changed
 - Replace Array.from by lodash .map method.

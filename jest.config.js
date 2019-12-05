@@ -6,7 +6,7 @@ module.exports = {
   setupFiles: ['<rootDir>/test-environment-setup.ts'],
   setupTestFrameworkScriptFile: '<rootDir>/test-framework-setup.ts',
   testPathIgnorePatterns: ['/node_modules/'],
-  testRegex: '(/test/.*|(\\.|/)(test|spec))\\.(ts|tsx|js)$',
+  testRegex: '(/test/.*|(\\.|/)(test|spec))\\.(ts|tsx)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
   moduleNameMapper: {
     '^@lendi-ui/(.*)-utils$': '<rootDir>/utils/$1-utils/src',

@@ -1,4 +1,8 @@
 import { css, SimpleInterpolation } from 'styled-components';
+import { useEffect } from 'react';
+import { debounce } from 'lodash';
+
+const DEBOUNCE_INTERVAL = 100;
 
 export const keys = Object.keys as <T>(o: T) => Extract<keyof T, string>[];
 
@@ -54,3 +58,24 @@ export function map<V extends string | number | boolean>(
     return accum.concat(template([] as any, style));
   }, ([] as SimpleInterpolation[]).concat(mapValueToStyle(undefined)));
 }
+
+export const useBreakpoint = (callback: (breakpoint: BreakpointName) => any, debounceInterval?: number) =>
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const handleResize = debounce(() => callback(getBreakpoint()), debounceInterval || DEBOUNCE_INTERVAL);
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  });
+
+export const getBreakpoint = (): BreakpointName => {
+  if (typeof window === 'undefined') return 'mobile';
+
+  if (window.matchMedia(`(min-width: ${Breakpoint.desktop})`).matches) return 'desktop';
+  else if (window.matchMedia(`(min-width: ${Breakpoint.tablet})`).matches) return 'tablet';
+  return 'mobile';
+};

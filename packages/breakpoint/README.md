@@ -8,6 +8,18 @@ Breakpoint CSS style with `between`, `gte` and `map`.
 yarn add @lendi-ui/breakpoint
 ```
 
+## Testing
+
+When testing with `getBreakpoint` or `useBreakpoint` it is advised to mock `@lendi-ui/breakpoint` as `window.matchMedia` is not available on the JSDOM. If you need to test resize functionality, you can instead add something like the following code to your tests to mock the `window.matchMedia` function:
+
+```jsx
+const width: number = 1201;
+
+window.matchMedia = jest.fn().mockImplementation((query: string) => ({
+  matches: match(query, { type: 'screen', width: `${width}px` }),
+}));
+```
+
 ## Usage
 
 - `between` receives two parameters. The first one is the smaller breakpoint and the second one is the larger breakpoint. The CSS style will be between these two breakpoints.
