@@ -75,6 +75,13 @@ const navTabStyles = css<VerticalNavTabProps>`
     ${fg('shade.0')};
     border-right: 4px solid transparent;
   }
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      pointer-events: none;
+      ${bg('shade.200')};
+    `}
 `;
 
 export const VerticalNavTabExpanded = styled.div<VerticalNavTabProps>`

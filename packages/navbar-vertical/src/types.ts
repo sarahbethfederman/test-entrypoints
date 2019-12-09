@@ -25,4 +25,5 @@ export interface VerticalNavTabProps extends LUIGlobalProps {
   tooltip?: string;
   onClick?: () => void;
   maxHeight?: string;
+  disabled?: boolean;
 }

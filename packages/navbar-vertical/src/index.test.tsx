@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
+import Theme, { theme } from '@lendi-ui/theme';
+import { color } from '@lendi-ui/color';
 
 import VerticalNavbar, { useVerticalNavContext } from './index';
-import Theme from '@lendi-ui/theme';
 
 let testIsExpanded: boolean, testIsMouseOver: boolean;
 
@@ -20,7 +21,9 @@ const TestNavbarContent = () => {
 
       <VerticalNavbar.Tab tooltip="Tab two">Tab two</VerticalNavbar.Tab>
 
-      <VerticalNavbar.Tab tooltip="Tab three">Tab three</VerticalNavbar.Tab>
+      <VerticalNavbar.Tab tooltip="Tab three" disabled>
+        Tab three
+      </VerticalNavbar.Tab>
     </>
   );
 };
@@ -101,5 +104,14 @@ describe('Vertical Navbar', () => {
     fireEvent.click(getByTestId('vn expander'));
 
     expect(testIsExpanded).toBe(true);
+  });
+
+  it('should be greyed out and unclickable tab if disabled', () => {
+    const { getByText } = render(<TestNavbarWrapper />);
+
+    expect(getByText('Tab three')).toHaveStyle(`
+      background-color: ${color('shade.200')({ theme })};
+      pointer-events: none;
+    `);
   });
 });

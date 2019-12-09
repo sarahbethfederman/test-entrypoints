@@ -88,6 +88,7 @@ export default () => {
               {menus.map((menu, i) => (
                 <VNTab
                   key={i}
+                  disabled={i === 6}
                   selected={i === currentTab}
                   onClick={() => setCurrentTab(i)}
                   tooltip={menu.text}

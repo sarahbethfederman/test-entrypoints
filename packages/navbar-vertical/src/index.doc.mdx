@@ -43,9 +43,10 @@ No properties.
 ### VerticalNavbar.Tab
 
 <PropTable>
-  <PropTable.Entry name="tooltip" type="string" description="Content for the tooltip shown when the tab is moused over and the vertical navbar is collapsed."/>
-  <PropTable.Entry name="selected" type="boolean" description="Whether the tab is selected." />
+  <PropTable.Entry name="disabled" type="boolean" description="Whether the tab is disabled." />
   <PropTable.Entry name="onClick" type="() => void" description="Function to execute when tab is clicked." />
+  <PropTable.Entry name="selected" type="boolean" description="Whether the tab is selected." />
+  <PropTable.Entry name="tooltip" type="string" description="Content for the tooltip shown when the tab is moused over and the vertical navbar is collapsed."/>
 </PropTable>
 
 ### VerticalNavContext
@@ -53,7 +54,7 @@ No properties.
 You can access the VerticalNavContext from inside your custom component by running the function `useVerticalNavContext()` or the react component `<VerticalNavContext.Consumer />`.
 
 <PropTable>
-  <PropTable.Entry name="isMouseOver" type="boolean" defaultValue={false} description="Whether the mouse is over the Vertical Navbar."/>
   <PropTable.Entry name="isExpanded" type="boolean" defaultValue={true} description="Whether the Vertical Navbar is in expanded or collapsed state." />
+  <PropTable.Entry name="isMouseOver" type="boolean" defaultValue={false} description="Whether the mouse is over the Vertical Navbar."/>
   <PropTable.Entry name="setIsExpanded" type="(boolean) => void" description="Function that sets Vertical Navbar expanded or collapsed." />
 </PropTable>
