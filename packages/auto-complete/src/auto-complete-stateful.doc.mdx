@@ -45,10 +45,10 @@ return new Promise(function(res, rej){
   <PropTable.Entry name="onBlur" type="(event: React.FocusEvent<HTMLInputElement>)=> void" description="Blur handler"/>
   <PropTable.Entry name="onChange" type="(event: React.ChangeEvent<HTMLInputElement>)=> void" description="Change handler"/>
   <PropTable.Entry name="onFocus" type="(event: React.FocusEvent<HTMLInputElement>) => void" description="Focus handler"/>
-  <PropTable.Entry name="onSelectItem" type="(selectedItem: string | number)=> void" description="Selected item from the datasource"/>
+  <PropTable.Entry name="onSelectItem" type="(selectedItem: string | number)=> void" description="Selected item from the datasource. Also triggered with empty string as value when input field is cleared through pressing X button."/>
   <PropTable.Entry name="placeholder" type="string" description="Placeholder for AutoComplete"/>
   <PropTable.Entry name="size" type={`"lg" | "md" | "sm"`} defaultValue='md' description="Size to AutoComplete"/>
-  <PropTable.Entry name="value" type="string" description="AutoComplete value"/>
+  <PropTable.Entry name="initialValue" type="string" description="initial value displayed in input element"/>
 </PropTable>
 
 ```
