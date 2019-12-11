@@ -1,3 +1,7 @@
+## [8.0.1] 2019-10-02 [FUNNEL-772](https://creditandfinance.atlassian.net/browse/FUNNEL-772)
+### Changed
+- Fix ButtonGroup isFullWidth.
+
 ## [8.0.0] 2019-10-02 [HUB-593](https://creditandfinance.atlassian.net/browse/HUB-593)
 ### Added
 - Add one more prop 'type' to LUI Button and IconButton. The value of 'type' can be button, submit and reset. The default value for 'type' is button.

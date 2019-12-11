@@ -83,6 +83,7 @@ export const Wrapper = styled.div<WrapperProps>`
   ${({ size, isFullWidth }) =>
     isFullWidth &&
     css`
+      width: 100%;
       ${spacingRightBySizeMixin(size)};
     `}
   ${ButtonWrapper}, ${LinkWrapper}, ${IconButtonWrapper} {
