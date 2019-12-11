@@ -27,37 +27,37 @@ const spacingRightBySizeMixin = (size: ButtonSize): SpacingName =>
       case 'sm':
       case 'md':
       case 'lg':
-        return `
-        margin-right: calc(-1 * ${Spacing[spacingBySize[val]]});
-      `;
+        return css`
+          margin-right: calc(-1 * ${Spacing[spacingBySize[val]]});
+        `;
       default:
         return undefined;
     }
   });
 
-const wrapperBySizeMixin = (size: ButtonSize): SpacingName =>
+const wrapperBySizeMixin = (size: ButtonSize, isFullWidth?: boolean): SpacingName =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
-        return `
-        margin-top: ${deriveSize(0.5)};
-        margin-right: ${deriveSize(0.5)};
-      `;
+        return css`
+          margin-top: ${deriveSize(0.5)};
+          ${!isFullWidth && `margin-right: ${deriveSize(0.5)}`};
+        `;
       case 'sm':
-        return `
-        margin-top: ${deriveSize(0.75)};
-        margin-right: ${deriveSize(0.75)};
-      `;
+        return css`
+          margin-top: ${deriveSize(0.75)};
+          ${!isFullWidth && `margin-right: ${deriveSize(0.75)}`};
+        `;
       case 'md':
-        return `
-        margin-top: ${deriveSize(1)};
-        margin-right: ${deriveSize(1)};
-      `;
+        return css`
+          margin-top: ${deriveSize(1)};
+          ${!isFullWidth && `margin-right: ${deriveSize(1)}`};
+        `;
       case 'lg':
-        return `
-        margin-top: ${deriveSize(1.5)};
-        margin-right: ${deriveSize(1.5)};
-      `;
+        return css`
+          margin-top: ${deriveSize(1.5)};
+          ${!isFullWidth && `margin-right: ${deriveSize(1.5)}`};
+        `;
       default:
         return undefined;
     }
@@ -87,8 +87,8 @@ export const Wrapper = styled.div<WrapperProps>`
       ${spacingRightBySizeMixin(size)};
     `}
   ${ButtonWrapper}, ${LinkWrapper}, ${IconButtonWrapper} {
-    ${({ size }) => css`
-      ${wrapperBySizeMixin(size)};
+    ${({ size, isFullWidth }) => css`
+      ${wrapperBySizeMixin(size, isFullWidth)};
     `};
   }
 `;

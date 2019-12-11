@@ -1,3 +1,7 @@
+## [8.0.2] 2019-10-02 [FUNNEL-772](https://creditandfinance.atlassian.net/browse/FUNNEL-772)
+### Changed
+- Remove the margin right if ButtonGroup isFullWidth.
+
 ## [8.0.1] 2019-10-02 [FUNNEL-772](https://creditandfinance.atlassian.net/browse/FUNNEL-772)
 ### Changed
 - Fix ButtonGroup isFullWidth.
