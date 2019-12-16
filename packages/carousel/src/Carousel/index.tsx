@@ -148,8 +148,9 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
       height,
       speed,
       windowWidth,
+      autoplay,
     }),
-    [height, speed, windowWidth]
+    [height, speed, windowWidth, autoplay]
   );
 
   const renderChildren = (children: React.ReactNode, hasSlidesComponent: boolean) => {

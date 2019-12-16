@@ -1,3 +1,7 @@
+## [4.0.5] 2019-12-13 - [HUB-711](https://creditandfinance.atlassian.net/browse/HUB-711)
+### Changed
+- Render only the components that are visible in the transition
+
 ## [4.0.4] 2019-12-04
 ### Changed
 - Moved getBreakpoint to @lendi-ui/breakpoint and added import from same

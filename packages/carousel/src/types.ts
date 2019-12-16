@@ -19,6 +19,7 @@ export interface SlidesProps extends LUIGlobalProps {
   height: string;
   speed: number;
   windowWidth: number;
+  autoplay: boolean;
 }
 
 export interface SlidesState {

@@ -4,7 +4,7 @@ import { LUIGlobalProps } from '@lendi-ui/utils';
 
 import { SlideContainer } from './index.style';
 import { SlidesState, SlidesProps } from '../types';
-import { SlidesContext } from './SlidesContext';
+import { SlidesContext, useSlidesContext } from './SlidesContext';
 import { useInfiniteChildren, getLeft } from './util';
 import { useCarouselContext } from '../Carousel/CarouselContext';
 
@@ -18,6 +18,7 @@ const CarouselSlidesInner: React.FunctionComponent<SlidesProps> = ({
   ...luiProps
 }) => {
   const { currentIndex, infinite, containerBox } = useCarouselContext();
+  const { autoplay } = useSlidesContext();
 
   const [state, setState] = React.useState<SlidesState>({
     width: containerBox.width,
@@ -27,11 +28,25 @@ const CarouselSlidesInner: React.FunctionComponent<SlidesProps> = ({
   });
 
   React.useEffect(() => {
+    const isDifferent = currentIndex !== state.currentIndex;
+    let timeout: NodeJS.Timeout;
+
+    if (!autoplay && isDifferent) {
+      timeout = setTimeout(() => {
+        setState((prev) => ({
+          ...prev,
+          previousIndex: currentIndex,
+        }));
+      }, speed);
+    }
+
     setState((prev) => ({
       ...prev,
       previousIndex: prev.currentIndex,
       currentIndex,
     }));
+
+    return () => clearTimeout(timeout);
   }, [currentIndex]);
 
   const container = React.useCallback(
@@ -48,17 +63,14 @@ const CarouselSlidesInner: React.FunctionComponent<SlidesProps> = ({
     [windowWidth]
   );
 
-  const { previousIndex: newPrevious, currentIndex: newCurrent, children: newChildren } = useInfiniteChildren(
-    state.previousIndex,
-    state.currentIndex,
-    children,
-    state.slideWidths,
-    state.width,
-    infinite
+  const { previousIndex: newPrevious, currentIndex: newCurrent, children: newChildren } = React.useMemo(
+    () =>
+      useInfiniteChildren(state.previousIndex, state.currentIndex, children, state.slideWidths, state.width, infinite),
+    [state.previousIndex, state.currentIndex, children, state.slideWidths, state.width, infinite]
   );
 
-  const previousLeft = getLeft(newPrevious, state.slideWidths);
-  const currentLeft = getLeft(newCurrent, state.slideWidths);
+  const previousLeft = React.useMemo(() => getLeft(newPrevious, state.slideWidths), [newPrevious, state.slideWidths]);
+  const currentLeft = React.useMemo(() => getLeft(newCurrent, state.slideWidths), [newCurrent, state.slideWidths]);
 
   return (
     <SlideContainer

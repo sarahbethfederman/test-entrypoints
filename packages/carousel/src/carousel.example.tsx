@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { container } from '@lendi-ui/container';
 import { p, mb } from '@lendi-ui/spacing';
-import { bg } from '@lendi-ui/color';
+import { bg, NameOrNameMap, fg } from '@lendi-ui/color';
 
 import Carousel from '.';
 import { CarouselArrowStyleProps, CarouselDotsStyleProps } from './types';
@@ -14,12 +14,14 @@ const Content = styled.div`
 `;
 
 interface SlideProps {
-  background: string;
+  background: NameOrNameMap;
+  foreground?: NameOrNameMap;
 }
 
 const Slide = styled.div<SlideProps>`
   ${p('sm')};
-  ${(props) => bg(props.background)};
+  ${({ background }) => bg(background)};
+  ${({ foreground }) => foreground && fg(foreground)};
 `;
 
 const HalfWidthSlide = styled(Slide)`
@@ -208,6 +210,14 @@ export default () => (
 
       <HalfWidthSlide background="error.200">
         <h2>Seventh Slide</h2>
+      </HalfWidthSlide>
+
+      <HalfWidthSlide background="success.200">
+        <h2>Eighth Slide</h2>
+      </HalfWidthSlide>
+
+      <HalfWidthSlide background="secondary.800" foreground="shade.0">
+        <h2>Ninth Slide</h2>
       </HalfWidthSlide>
     </Carousel>
 
