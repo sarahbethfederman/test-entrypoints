@@ -1,9 +1,8 @@
-import * as React from 'react';
-import { Position, TooltipWrapper, ContentWrapper } from './index.style';
 import { Body } from '@lendi-ui/typography';
 import { LUIGlobalProps } from '@lendi-ui/utils';
-
 import * as Hammer from 'hammerjs';
+import * as React from 'react';
+import { ContentWrapper, Position, TooltipWrapper } from './index.style';
 
 export interface TooltipProps extends LUIGlobalProps {
   content: React.ReactNode;
@@ -20,12 +19,12 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
   state = {
     isOpen: false,
   };
+  private hammer: HammerManager | undefined = undefined;
   private _isMounted: boolean = false;
   private myRef: React.RefObject<HTMLElement> = React.createRef();
 
   componentDidMount() {
     this._isMounted = true;
-    let hammer: HammerManager;
     const manager = new Hammer.Manager(this.myRef.current as EventTarget);
 
     const Press = new Hammer.Press({
@@ -36,8 +35,8 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
       this.setState({ isOpen: true });
     });
 
-    hammer = new Hammer(document.body);
-    hammer.on('tap', (e) => {
+    this.hammer = new Hammer(document.body);
+    this.hammer.on('tap', (e) => {
       if (e.target !== this.myRef.current) {
         this.setState({ isOpen: false });
       }
@@ -46,6 +45,7 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
 
   componentWillUnmount() {
     this._isMounted = false;
+    this.hammer!.destroy();
   }
 
   changeOpenStatus = (bool: boolean) => {

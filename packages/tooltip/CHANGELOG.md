@@ -1,3 +1,6 @@
+## [3.1.1] 2019-12-18 [HUB-742](https://creditandfinance.atlassian.net/browse/HUB-742)
+- Hammerjs: unbinds all events and input events and makes the manager unusable.
+
 ## [3.1.0] 2019-11-20 [HUB-696](https://creditandfinance.atlassian.net/browse/HUB-696)
 - Updated tooltip to use the className it is passed and to pass through onClick
 
