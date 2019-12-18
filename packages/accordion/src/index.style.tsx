@@ -12,7 +12,9 @@ export const Wrapper = styled.div`
 
 interface HeaderWrapperProps {
   variant: AccordionGroupVariant;
+  isTransparent?: boolean;
 }
+
 export const HeaderWrapper = styled.h3<HeaderWrapperProps>`
   ${m('nil')};
   align-items: center;
@@ -24,7 +26,6 @@ export const HeaderWrapper = styled.h3<HeaderWrapperProps>`
     switch (variant) {
       case 'emphasis':
         return css`
-          ${bg('shade.0')}
           border: 1px solid ${color('shade.100')};
           border-radius: 6px;
 
@@ -32,6 +33,21 @@ export const HeaderWrapper = styled.h3<HeaderWrapperProps>`
             ${color('primary.500')}
           }
         `;
+      case 'empty':
+      case 'primary':
+      default:
+        return null;
+    }
+  }}
+
+  ${({ variant, isTransparent }) => {
+    if (isTransparent) {
+      return css`
+        background-color: transparent;
+      `;
+    }
+    switch (variant) {
+      case 'emphasis':
       case 'empty':
         return css`
           ${bg('shade.0')}
@@ -136,6 +152,7 @@ export const HeaderContentWrapper = styled.div`
 interface AccordionWrapperProps {
   isSelected: boolean;
   variant?: AccordionGroupVariant;
+  isTransparent?: boolean;
 }
 
 export const AccordionWrapper = styled.div<AccordionWrapperProps>`
@@ -143,7 +160,6 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
     switch (variant) {
       case 'emphasis':
         return css`
-          ${bg(isSelected ? 'shade.25' : 'shade.0')}
           ${mb('xxs')}
 
           &:last-child {
@@ -161,12 +177,29 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
       case 'primary':
       default:
         return css`
-          ${bg(isSelected ? 'shade.25' : 'shade.0')}
           border-bottom: 1px solid ${color('shade.100')};
 
           &:first-child {
             border-top: 1px solid ${color('shade.100')};
           }
+        `;
+    }
+  }}
+
+  ${({ variant, isSelected, isTransparent }) => {
+    if (isTransparent) {
+      return css`
+        background-color: transparent;
+      `;
+    }
+    switch (variant) {
+      case 'empty':
+        return null;
+      case 'primary':
+      case 'emphasis':
+      default:
+        return css`
+          ${bg(isSelected ? 'shade.25' : 'shade.0')}
         `;
     }
   }}
@@ -210,15 +243,10 @@ export const AccordionItemWrapper = styled.div`
   ${({ show }: { show: boolean }) =>
     !show
       ? css`
-          max-height: 0;
-          opacity: 0;
-          padding: 0;
-          visibility: hidden;
+          display: none;
         `
       : css`
-          max-height: 1000px;
-          opacity: 1;
-          visibility: visible;
+          display: block;
         `};
   ${body()};
 `;

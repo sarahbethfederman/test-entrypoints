@@ -1,3 +1,7 @@
+## [3.1.0] 2019-12-12 [FUNNEL-682-accordion](https://creditandfinance.atlassian.net/browse/FUNNEL-807)
+- Added isTransparent prop that will remove all background colour from the header and content wrappers
+- Removed maximum height and opening/closing animation
+
 ## [3.0.0] 2019-11-18 [FUNNEL-682-accordion](https://creditandfinance.atlassian.net/browse/FUNNEL-682)
 - Split accordion header into a wrapper containing the button and the after as siblings, instead of after appearing as a child of button
 - Gave accordion header button type of 'button' to prevent form submission when clicked

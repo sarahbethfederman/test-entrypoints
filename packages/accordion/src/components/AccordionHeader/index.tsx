@@ -12,7 +12,7 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
 }) => {
   return (
     <AccordionContext.Consumer>
-      {({ isOpen, isDisabled, ariaId, variant }) => {
+      {({ isOpen, isDisabled, isTransparent, ariaId, variant }) => {
         let arrowIconColor: Colors = 'secondary.500';
 
         if (['emphasis', 'empty'].indexOf(variant) !== -1) {
@@ -20,7 +20,7 @@ export const AccordionHeader: React.FC<AccordionHeaderProps> = ({
         }
 
         return (
-          <HeaderWrapper {...otherHeaderProps} variant={variant}>
+          <HeaderWrapper {...otherHeaderProps} isTransparent={isTransparent} variant={variant}>
             <HeaderButtonWrapper
               id={ariaId}
               aria-expanded={isOpen}

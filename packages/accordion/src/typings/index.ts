@@ -15,6 +15,7 @@ export interface AccordionHeaderProps extends LUIGlobalProps {
 export interface AccordionProps extends LUIGlobalProps {
   isOpen?: boolean;
   isDisabled?: boolean;
+  isTransparent?: boolean;
   children?: React.ReactNode;
 }
 
