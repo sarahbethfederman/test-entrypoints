@@ -609,7 +609,7 @@ exports[`Legal should mount 1`] = `
                     <span
                       className="curYear"
                     >
-                      2019
+                      2020
                     </span>
                     . All rights reserved.
                   </div>

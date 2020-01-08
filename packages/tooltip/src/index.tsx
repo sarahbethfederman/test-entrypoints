@@ -1,6 +1,5 @@
 import { Body } from '@lendi-ui/typography';
 import { LUIGlobalProps } from '@lendi-ui/utils';
-import * as Hammer from 'hammerjs';
 import * as React from 'react';
 import { ContentWrapper, Position, TooltipWrapper } from './index.style';
 
@@ -25,27 +24,33 @@ class Tooltip extends React.Component<TooltipProps, TooltipState> {
 
   componentDidMount() {
     this._isMounted = true;
-    const manager = new Hammer.Manager(this.myRef.current as EventTarget);
+    if (typeof window !== `undefined`) {
+      const Hammer = require('hammerjs');
+      let hammer: HammerManager;
+      const manager = new Hammer.Manager(this.myRef.current as EventTarget);
 
-    const Press = new Hammer.Press({
-      time: 300,
-    });
-    manager.add(Press);
-    manager.on('press', () => {
-      this.setState({ isOpen: true });
-    });
+      const Press = new Hammer.Press({
+        time: 300,
+      });
+      manager.add(Press);
+      manager.on('press', () => {
+        this.setState({ isOpen: true });
+      });
 
-    this.hammer = new Hammer(document.body);
-    this.hammer.on('tap', (e) => {
-      if (e.target !== this.myRef.current) {
-        this.setState({ isOpen: false });
-      }
-    });
+      hammer = new Hammer(document.body);
+      hammer.on('tap', (e) => {
+        if (e.target !== this.myRef.current) {
+          this.setState({ isOpen: false });
+        }
+      });
+    }
   }
 
   componentWillUnmount() {
     this._isMounted = false;
-    this.hammer!.destroy();
+    if (typeof this.hammer !== 'undefined') {
+      this.hammer.destroy();
+    }
   }
 
   changeOpenStatus = (bool: boolean) => {

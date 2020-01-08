@@ -1,3 +1,6 @@
+## [3.1.2] 2020-01-08 [HUB-754](https://creditandfinance.atlassian.net/browse/HUB-754)
+- Updated tooltip to load Hammerjs when the window object is defined
+
 ## [3.1.1] 2019-12-18 [HUB-742](https://creditandfinance.atlassian.net/browse/HUB-742)
 - Hammerjs: unbinds all events and input events and makes the manager unusable.
 
