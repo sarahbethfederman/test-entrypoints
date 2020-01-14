@@ -21,18 +21,14 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
 
   // Google has no concept of "street". See if we recognise a streetType from
   // the route then use that to generate streetName and streetType
-  const streetType = String(
-    STREET_TYPE.reduce((acc, { value = '' }) => {
-      if (streetName.includes(value)) {
-        return acc + value.toLowerCase();
-      }
-      return acc;
-    }, '')
-  );
-  streetName = streetName
-    .toLowerCase()
-    .replace(streetType, '')
-    .trim();
+  // streetType default to 'street'
+  const street = streetName.trim().split(' ');
+  const streetTypeWith = street[street.length - 1];
+  const streetType = STREET_TYPE.find((street_type) => street_type.label === streetTypeWith)
+    ? streetTypeWith
+    : 'Street';
+
+  streetName = streetName.replace(streetType, '').trim();
 
   // edge case, state is listed as JBT for jervis bay when it should be ACT. Naughty Google
   if (state === 'JBT') {
@@ -40,7 +36,7 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
   }
 
   // check for unit / subpremise info by crossreferencing against user input
-  const streetNumberData = label.substring(0, label.indexOf(streetName)).trim();
+  const streetNumberData = label.substring(0, label.indexOf(streetName.toLowerCase())).trim();
   if (streetNumberData !== streetNumber) {
     if (streetNumberData.includes('/')) {
       unit = streetNumberData.substring(0, streetNumberData.indexOf('/'));
@@ -57,24 +53,25 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
     streetNumber,
     streetName,
     streetType,
-    suburb: suburb.toLowerCase(),
+    suburb,
     postcode,
     state,
-    country: country.toLowerCase(),
+    country,
   };
 };
 
 export const getFormatedString = (address: AddressObject) => {
+  console.log('address', address.streetName);
   let formatString = address.unit ? ''.concat(address.unit, '/') : '';
   formatString = address.lotSection ? formatString.concat('Lot. ', address.lotSection) : formatString;
   formatString = address.level ? formatString.concat(' level ', address.level) : formatString;
-  formatString = address.buildingName ? formatString.concat(' ', to.pascal(address.buildingName), ' ') : formatString;
+  formatString = address.buildingName ? formatString.concat(' ', to.capital(address.buildingName), ' ') : formatString;
   formatString = address.streetNumber ? formatString.concat(address.streetNumber) : formatString;
-  formatString = address.streetName ? formatString.concat(' ', to.pascal(address.streetName)) : formatString;
-  formatString = address.streetType ? formatString.concat(' ', to.pascal(address.streetType)) : formatString;
-  formatString = address.suburb ? formatString.concat(', ', to.pascal(address.suburb)) : formatString;
+  formatString = address.streetName ? formatString.concat(' ', to.capital(address.streetName)) : formatString;
+  formatString = address.streetType ? formatString.concat(' ', to.capital(address.streetType)) : formatString;
+  formatString = address.suburb ? formatString.concat(', ', to.capital(address.suburb)) : formatString;
   formatString = address.state ? formatString.concat(', ', to.upper(address.state)) : formatString;
   formatString = address.postcode ? formatString.concat(' ', address.postcode) : formatString;
-  formatString = address.country ? formatString.concat(', ', to.pascal(address.country)) : formatString;
+  formatString = address.country ? formatString.concat(', ', to.capital(address.country)) : formatString;
   return formatString;
 };

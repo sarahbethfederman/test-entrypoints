@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.1.1] 2020-01-14 [HUB-724](https://creditandfinance.atlassian.net/browse/HUB-724)
+### Fixed
+- Fixed a bug that street name and street type mixed in some case.
+
 ## [2.1.0] 2019-11-12 [FUNNEL-658](https://creditandfinance.atlassian.net/browse/FUNNEL-658)
 ### Changed
 - Add static map.
