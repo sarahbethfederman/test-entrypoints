@@ -1,3 +1,7 @@
+## [4.0.3] - 2019-01-20 - [HUB-800](https://creditandfinance.atlassian.net/browse/HUB-800)
+### Fixed
+- Autofocus keep the focus even on tabbing, this version contains the fix.
+
 ## [4.0.2] - 2019-10-02 - [HUB-604](https://creditandfinance.atlassian.net/browse/HUB-604)
 ### Fixed
 - Fix LUI Input autoFocus doesn't work

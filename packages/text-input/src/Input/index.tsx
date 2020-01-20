@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { InputSize, InputWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
+import { AfterWrapper, BeforeWrapper, InputSize, InputWrapper, Layout } from './index.style';
 
 type ReactInputProps = React.InputHTMLAttributes<HTMLInputElement>;
 
@@ -51,7 +51,7 @@ export const Input = ({
     if (refInput.current && (isAutoFocus || otherProps.autoFocus)) {
       refInput.current.focus();
     }
-  });
+  }, []);
 
   return (
     <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
