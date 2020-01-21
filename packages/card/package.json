@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/card",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -30,7 +30,7 @@
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0",
     "@lendi-ui/button": "^7.0.0",
-    "@lendi-ui/dropdown": "^4.0.0"
+    "@lendi-ui/dropdown": "^4.0.2"
   },
   "devDependencies": {
     "@lendi-ui/icon": "^9.0.0",

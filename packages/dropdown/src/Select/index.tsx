@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { withTheme } from 'styled-components';
 import Select from 'react-select';
-import { LUISelectProps } from '../types';
+import { withTheme } from 'styled-components';
 import { ClearIndicator, DropdownIndicator } from '../components';
+import { LUISelectProps } from '../types';
 import { LUISelectStyles, SelectWrapper } from './index.style';
 
 class LUISelect extends React.Component<LUISelectProps> {
@@ -34,7 +34,7 @@ class LUISelect extends React.Component<LUISelectProps> {
           onChange={onChangeItem}
           backspaceRemovesValue={isClearableByBackspace}
           components={{ ClearIndicator, DropdownIndicator }}
-          menuPortalTarget={document.body} // React-select exposes a menuPortalTarget prop, that lets you portal the select menu to a dom node of your choosing,
+          menuPortalTarget={typeof window !== 'undefined' && typeof document !== 'undefined' ? document.body : null} // React-select exposes a menuPortalTarget prop, that lets you portal the select menu to a dom node of your choosing,
           // this is specifically useful when you use select inside modal, `see select-modal-example`
         />
       </SelectWrapper>
