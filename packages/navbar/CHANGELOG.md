@@ -1,3 +1,7 @@
+## [5.2.0] - 2020-01-21 - [HUB-hotfix-navbar]
+### Updated
+- Update overlay dependency which removes react-scrolllock, which was locking the scrolling of navbar.
+
 ## [5.1.1] - 2019-11-09 - [HUB-662](https://creditandfinance.atlassian.net/browse/HUB-662)
 ### Updated
 - Update SEMNavbar header single link 'more' to 'menu'.

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar",
-  "version": "5.1.1",
+  "version": "5.2.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -25,7 +25,7 @@
     "@lendi-ui/fancy-icon": "^3.0.0",
     "@lendi-ui/icon": "^9.0.0",
     "@lendi-ui/logo": "^6.0.0",
-    "@lendi-ui/overlay": "^3.0.0",
+    "@lendi-ui/overlay": "^3.1.0",
     "@lendi-ui/spacing": "^6.0.0",
     "@lendi-ui/transition": "^4.0.0",
     "@lendi-ui/typography": "^4.0.0",
