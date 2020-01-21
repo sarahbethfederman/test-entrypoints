@@ -1,3 +1,7 @@
+## [5.0.4] 2020-01-21 [HUB-hotfix-autocomplete](
+### Updated
+- Bump text-input version for fixing autofocus bug.
+
 ## [5.0.3] - 2019-10-15 - [FUNNEL-627](https://creditandfinance.atlassian.net/browse/FUNNEL-627)
 ### Fixed
 - TypeError: Cannot read property 'firstElementChild' of null in auto-complete component

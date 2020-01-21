@@ -1,3 +1,7 @@
+## [5.2.1] 2020-01-21 [HUB-hotfix-autocomplete](
+### Updated
+- Bump text-input version for fixing autofocus bug.
+
 ## [5.2.0] - 2020-01-21 - [HUB-hotfix-navbar]
 ### Updated
 - Update overlay dependency which removes react-scrolllock, which was locking the scrolling of navbar.

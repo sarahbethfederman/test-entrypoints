@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/auto-complete",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",
@@ -28,7 +28,7 @@
     "@lendi-ui/icon": "^9.0.0",
     "@lendi-ui/spacing": "^6",
     "@lendi-ui/spinner": "^4.0.0",
-    "@lendi-ui/text-input": "^4.0.0",
+    "@lendi-ui/text-input": "^4.0.3",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0",
     "@lendi-ui/breakpoint": "^4.0.0",

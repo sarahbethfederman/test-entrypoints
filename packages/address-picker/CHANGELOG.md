@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.1.3] 2020-01-21 [HUB-hotfix-autocomplete](
+### Updated
+- Bump text-input version for fixing autofocus bug.
+
 ## [2.1.2] 2020-01-21 [hotfix]
 - Using Lui SSR enabled Select
 
