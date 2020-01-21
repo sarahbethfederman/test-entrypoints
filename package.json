@@ -80,7 +80,8 @@
     "danger": "^7.1.4",
     "fast-glob": "^2.2.6",
     "yarn": "^1.13.0",
-    "yarn-deduplicate": "^1.1.0"
+    "yarn-deduplicate": "^1.1.0",
+    "@lendi/lsd": "2.2.19"
   },
   "peerDependencies": {
     "@lendi-ui/theme": "^8.0.0"
