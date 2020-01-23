@@ -616,7 +616,7 @@
   resolved "https://registry.yarnpkg.com/@lendi/lendi-analytics-package/-/lendi-analytics-package-1.0.1.tgz#0bc1679195a5b8f1ea5ce2cf756f751726c8bd9c"
   integrity sha512-LErzhQpk4MnM0IcVVDE88Hih5EnG96S765gXVwO/vCTov7aIX/55aJcFTzNUi/vHeJIYS6lt/OFsEb/BuKd5uQ==
 
-"@lendi/lsd@2.2.19":
+"@lendi/lsd@^2.2.19":
   version "2.2.19"
   resolved "https://registry.yarnpkg.com/@lendi/lsd/-/lsd-2.2.19.tgz#188100731af3e9d7d61ccb1a9ddcb7780322369f"
   integrity sha512-XKKIKkGRgQVeomCvnO5m6xj/ROC408fTXT+AT2aAFSiaiLgZCqTUHV1lvyfMutu9Cp1Ltgre2vkREVFi9JekAA==
@@ -9464,11 +9464,6 @@ miller-rabin@^4.0.0:
   dependencies:
     bn.js "^4.0.0"
     brorand "^1.0.1"
-
-mime-db@1.42.0:
-  version "1.42.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.42.0.tgz#3e252907b4c7adb906597b4b65636272cf9e7bac"
-  integrity sha512-UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==
 
 mime-db@1.43.0, mime-db@^1.28.0:
   version "1.43.0"

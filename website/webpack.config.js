@@ -12,6 +12,8 @@ const history = require('connect-history-api-fallback');
 
 const workspaceMetadata = require('./utils/workspaceMetadata');
 
+const BASE_URL = process.env.BASE_URL || '/';
+
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
 
@@ -21,7 +23,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     path: __dirname + '/dist',
-    publicPath: '/',
+    publicPath: BASE_URL,
     filename: '[name].[hash].js',
     chunkFilename: '[name].[contenthash].js',
   },

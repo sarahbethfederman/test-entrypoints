@@ -69,6 +69,7 @@
     "precommit": "yarn run format:fix && yarn run test -o",
     "prepush": "yarn run precommit && yarn run remove:duplicates && yarn run check",
     "remove:duplicates": "yarn-deduplicate",
+    "build:website": "cd website && yarn build",
     "start": "cd website && yarn start",
     "test": "jest",
     "test:debug": "node --inspect-brk node_modules/.bin/jest --runInBand --watch",

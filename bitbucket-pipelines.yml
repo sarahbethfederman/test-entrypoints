@@ -6,51 +6,6 @@ clone:
 pipelines:
   default:
     - parallel:
-      - step:
-          name: Deduplicate
-          script:
-            - ./ci/deduplicate.sh
-          caches:
-            - node
-      - step:
-          name: 🔎 Check
-          script:
-            - ./ci/check.sh
-          caches:
-            - node
-      - step:
-          name: ✅ Lint
-          script:
-            - ./ci/lint.sh
-          caches:
-            - node
-
-      - step:
-          name: ⚒ Build
-          script:
-            - ./ci/build.sh
-          caches:
-            - node
-          artifacts:
-            - "**/dist/**"
-
-    - step:
-        name: 📝 Test
-        script:
-          - ./ci/test.sh
-        caches:
-          - node
-
-    - step:
-        name: 🚀 Deploy
-        script:
-          - ./ci/deploy.sh
-        caches:
-          - node
-
-  branches:
-    master:
-      - parallel:
         - step:
             name: Deduplicate
             script:
@@ -71,29 +26,87 @@ pipelines:
               - node
 
         - step:
-            name: ⚒ Build
+            name: ⚒ Build all packages
             script:
               - ./ci/build.sh
             caches:
               - node
             artifacts:
-              - "**/dist/**"
+              - '**/dist/**'
 
+    - step:
+        name: ⚒ Build LUI website
+        script:
+          - ./ci/build-lui-website.sh development
+        caches:
+          - node
+        artifacts:
+          - 'website/dist/**'
+
+    - step:
+        name: 🚀 Deploy LUI website
+        script:
+          - ./ci/deploy-lui-website.sh development
+        caches:
+          - node
+
+    - step:
+        name: 📝 Test
+        script:
+          - ./ci/test.sh
+        caches:
+          - node
+
+  branches:
+    master:
+      - parallel:
+          - step:
+              name: Deduplicate
+              script:
+                - ./ci/deduplicate.sh
+              caches:
+                - node
+          - step:
+              name: 🔎 Check
+              script:
+                - ./ci/check.sh
+              caches:
+                - node
+          - step:
+              name: ✅ Lint
+              script:
+                - ./ci/lint.sh
+              caches:
+                - node
+          - step:
+              name: ⚒ Build all packages
+              script:
+                - ./ci/build.sh
+              caches:
+                - node
+              artifacts:
+                - '**/dist/**'
       - step:
-          name: 📝 Test 
+          name: ⚒ Build LUI website
+          script:
+            - ./ci/build-lui-website.sh production
+          caches:
+            - node
+          artifacts:
+            - 'website/dist/**'
+      - step:
+          name: 🚀 Deploy LUI website
+          deployment: production
+          script:
+            - ./ci/deploy-lui-website.sh production
+          caches:
+            - node
+      - step:
+          name: 📝 Test
           script:
             - ./ci/test.sh
           caches:
             - node
-
-      - step:
-          name: 🚀 Deploy
-          deployment: production
-          script:
-            - ./ci/deploy.sh
-          caches:
-            - node
-
       - step:
           name: 📦 Publish
           size: 2x
