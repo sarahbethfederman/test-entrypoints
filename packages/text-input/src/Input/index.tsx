@@ -29,46 +29,51 @@ export type InputProp = Pick<
   type?: string;
 };
 
-export const Input = ({
-  size = 'md',
-  before,
-  after,
-  isError = false,
-  isInverse = false,
-  isFullWidth = false,
-  isDisabled = false,
-  isReadOnly = false,
-  isAutoFocus = false,
-  isRequired = false,
-  inputSize,
-  type = 'text',
-  ...otherProps
-}: InputProp) => {
-  const disabledVal = isDisabled || !!otherProps.disabled;
-  const refInput = React.useRef<HTMLInputElement>(null);
+export const Input = React.forwardRef(
+  (
+    {
+      size = 'md',
+      before,
+      after,
+      isError = false,
+      isInverse = false,
+      isFullWidth = false,
+      isDisabled = false,
+      isReadOnly = false,
+      isAutoFocus = false,
+      isRequired = false,
+      inputSize,
+      type = 'text',
+      ...otherProps
+    }: InputProp,
+    parentRef?: React.Ref<HTMLInputElement>
+  ) => {
+    const disabledVal = isDisabled || !!otherProps.disabled;
+    const refInput = React.useRef<HTMLInputElement>(null);
 
-  React.useEffect(() => {
-    if (refInput.current && (isAutoFocus || otherProps.autoFocus)) {
-      refInput.current.focus();
-    }
-  }, []);
+    React.useEffect(() => {
+      if (refInput.current && (isAutoFocus || otherProps.autoFocus)) {
+        refInput.current.focus();
+      }
+    }, []);
 
-  return (
-    <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
-      {before && <BeforeWrapper isDisabled={disabledVal}>{before}</BeforeWrapper>}
-      <InputWrapper
-        {...otherProps}
-        ref={refInput}
-        type={supportedTypes.includes(`${type}`) ? `${type}` : 'text'}
-        isError={isError}
-        isInverse={isInverse}
-        fontSize={size}
-        size={inputSize}
-        readOnly={isReadOnly || otherProps.readOnly} // in order to keep a backward compatibility, and giving preferences to provided InputProps, otherwise fall to HTML defaults.
-        disabled={disabledVal}
-        required={isRequired || otherProps.required}
-      />
-      {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
-    </Layout>
-  );
-};
+    return (
+      <Layout size={size} isFullWidth={isFullWidth} isInverse={isInverse} isError={isError} isDisabled={disabledVal}>
+        {before && <BeforeWrapper isDisabled={disabledVal}>{before}</BeforeWrapper>}
+        <InputWrapper
+          {...otherProps}
+          ref={parentRef ? parentRef : refInput}
+          type={supportedTypes.includes(`${type}`) ? `${type}` : 'text'}
+          isError={isError}
+          isInverse={isInverse}
+          fontSize={size}
+          size={inputSize}
+          readOnly={isReadOnly || otherProps.readOnly} // in order to keep a backward compatibility, and giving preferences to provided InputProps, otherwise fall to HTML defaults.
+          disabled={disabledVal}
+          required={isRequired || otherProps.required}
+        />
+        {after && <AfterWrapper isDisabled={isDisabled}>{after}</AfterWrapper>}
+      </Layout>
+    );
+  }
+);

@@ -20,6 +20,7 @@ const AfterIcon = styled(Lock)`
 `;
 
 class Example extends React.Component<{}, ExampleState> {
+  ref = React.createRef<HTMLInputElement>();
   state = {
     value: '',
   };
@@ -28,6 +29,12 @@ class Example extends React.Component<{}, ExampleState> {
     this.setState({
       value: e.target.value,
     });
+  };
+
+  componentDidMount = () => {
+    if (this.ref && this.ref.current) {
+      this.ref.current.focus();
+    }
   };
 
   render() {
@@ -47,7 +54,8 @@ class Example extends React.Component<{}, ExampleState> {
         <br />
         <Input
           size={'md'}
-          placeholder="Input here ..."
+          ref={this.ref}
+          placeholder="Focused by parent ref control ..."
           onChange={this.onChange}
           isFullWidth={false}
           after={<AfterIcon color="primary.500" height="26px" />}

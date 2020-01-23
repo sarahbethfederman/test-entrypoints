@@ -1,3 +1,7 @@
+## [4.1.0] - 2020-01-23 - [LUIT-139](https://creditandfinance.atlassian.net/browse/LUIT-139)
+### Updated
+- Refactor LUI text-input by using forwardRef.
+
 ## [4.0.3] - 2019-01-20 - [HUB-800](https://creditandfinance.atlassian.net/browse/HUB-800)
 ### Fixed
 - Autofocus keep the focus even on tabbing, this version contains the fix.
