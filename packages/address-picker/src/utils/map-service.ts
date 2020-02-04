@@ -30,7 +30,8 @@ export default class MapService {
 
   public placePredictions(
     input: string,
-    componentRestrictions: google.maps.places.ComponentRestrictions
+    componentRestrictions: google.maps.places.ComponentRestrictions,
+    regionSearchOnly?: boolean
   ): Promise<google.maps.places.AutocompletePrediction[]> {
     return new Promise((resolve, reject) => {
       (this.autocompleteService as google.maps.places.AutocompleteService).getPlacePredictions(
@@ -38,6 +39,7 @@ export default class MapService {
           input,
           sessionToken: this.sessionToken,
           componentRestrictions,
+          types: regionSearchOnly ? ['(regions)'] : undefined,
         },
         (suggestions: google.maps.places.AutocompletePrediction[], status: google.maps.places.PlacesServiceStatus) => {
           if (status === google.maps.places.PlacesServiceStatus.OK && suggestions !== null) {

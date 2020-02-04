@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.2.0] 2020-02-04 [FUNNEL-1007](https://creditandfinance.atlassian.net/browse/FUNNEL-1007)
+### Updated
+- Allow user to search regions only.
+
 ## [2.1.3] 2020-01-21 [HUB-hotfix-autocomplete](
 ### Updated
 - Bump text-input version for fixing autofocus bug.

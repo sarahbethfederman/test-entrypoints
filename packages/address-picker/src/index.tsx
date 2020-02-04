@@ -25,6 +25,7 @@ export interface AddressPickerProps extends LUIGlobalProps {
   size?: Size;
   value?: string; // @TODO - HUB-305
   mapType?: MapTypes;
+  regionSearchOnly?: boolean;
 }
 
 export interface AddressPickerState {
@@ -80,10 +81,10 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     }
 
     this.setState({ isLoading: true });
-    const { country = 'au' } = this.props;
+    const { country = 'au', regionSearchOnly } = this.props;
 
     this.mapService
-      .placePredictions(input, { country })
+      .placePredictions(input, { country }, regionSearchOnly)
       .then((suggestions: google.maps.places.AutocompletePrediction[]) => {
         this.setState({
           suggestions,
@@ -135,14 +136,19 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
       <Alert>
         <Body color="warn.500" size="xs">
           <InfoWrapper color="warn.500" /> No matches found.
-          <Link
-            color="warn.500"
-            onClick={() => {
-              this.setState({ showModal: true });
-            }}
-          >
-            Enter address manually
-          </Link>
+          {!this.props.regionSearchOnly && (
+            <>
+              {' '}
+              <Link
+                color="warn.500"
+                onClick={() => {
+                  this.setState({ showModal: true });
+                }}
+              >
+                Enter address manually
+              </Link>
+            </>
+          )}
         </Body>
       </Alert>
     );

@@ -7,7 +7,11 @@ import * as to from 'to-case';
  * Google's address information and enhances it with more
  * accurate subpremise/unit information
  */
-export const transformGoogleResponse = (label: string, res: google.maps.GeocoderAddressComponent[]): AddressObject => {
+export const transformGoogleResponse = (
+  label: string,
+  res: google.maps.GeocoderAddressComponent[],
+  regionSearchOnly?: boolean
+): AddressObject => {
   label = label.toLowerCase();
 
   // pick the easily determined properties from response
@@ -21,12 +25,13 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
 
   // Google has no concept of "street". See if we recognise a streetType from
   // the route then use that to generate streetName and streetType
-  // streetType default to 'street'
+  // streetType default to 'street' if regionSearchOnly is false
   const street = streetName.trim().split(' ');
   const streetTypeWith = street[street.length - 1];
-  const streetType = STREET_TYPE.find((street_type) => street_type.label === streetTypeWith)
-    ? streetTypeWith
-    : 'Street';
+  let streetType = !regionSearchOnly ? 'Street' : '';
+  if (STREET_TYPE.find((street_type) => street_type.label === streetTypeWith)) {
+    streetType = streetTypeWith;
+  }
 
   streetName = streetName.replace(streetType, '').trim();
 
@@ -61,7 +66,6 @@ export const transformGoogleResponse = (label: string, res: google.maps.Geocoder
 };
 
 export const getFormatedString = (address: AddressObject) => {
-  console.log('address', address.streetName);
   let formatString = address.unit ? ''.concat(address.unit, '/') : '';
   formatString = address.lotSection ? formatString.concat('Lot. ', address.lotSection) : formatString;
   formatString = address.level ? formatString.concat(' level ', address.level) : formatString;
