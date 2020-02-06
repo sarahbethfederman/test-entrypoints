@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/address-picker",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/cjs/index.js",

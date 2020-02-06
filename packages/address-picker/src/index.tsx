@@ -116,7 +116,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
     this.mapService
       .placeDetails(String(value))
       .then(({ geometry, addressComponents }) => {
-        const responseAddress = transformGoogleResponse(label, addressComponents);
+        const responseAddress = transformGoogleResponse(label, addressComponents, this.props.regionSearchOnly);
         this.setState({
           addressInput: label,
           selectedPlace: geometry,

@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.2.1] 2020-02-06 [FUNNEL-1007](https://creditandfinance.atlassian.net/browse/FUNNEL-1007)
+### Updated
+- Fixed the issue with showing street type when user search regions only.
+
 ## [2.2.0] 2020-02-04 [FUNNEL-1007](https://creditandfinance.atlassian.net/browse/FUNNEL-1007)
 ### Updated
 - Allow user to search regions only.
