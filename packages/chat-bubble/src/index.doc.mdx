@@ -1,0 +1,45 @@
+import { PropTable } from '@lendi-ui/doc-utils';
+
+## Usage
+
+```
+import ChatBubble from '@lendi-ui/chat-bubble';
+```
+
+```js
+const CustomerChatBubble = styled(ChatBubble)`
+    ${mb('xs')}
+    ${ml('md')}
+    ${mr('lg')}
+`;
+
+const CustomerContent = styled(ChatBubble.Content)`
+    ${bg('primary.500')} ${fg('shade.0')}
+`;
+
+const ContentBodyWrapper = styled(Body)`
+    ${p('xs')}
+`;
+
+const PlaygroundCarousel = () => (
+  <CustomerChatBubble direction='right'>
+    <CustomerContent><ContentBodyWrapper size='sm'>Hi there, I’d like to know something, can you help me to get a loan?</ContentBodyWrapper></CustomerContent>
+    <ChatBubble.Footer><Body size='xs' color='shade.200' mt='xxxs'>12:35PM Read</Body></ChatBubble.Footer>
+  </CustomerChatBubble>
+);
+
+render(<PlaygroundCarousel />);
+
+```
+
+## Properties
+
+<PropTable>
+  <PropTable.Entry name="direction" type="{type Direction = 'left' | 'right';}" defaultValue="left" description="The side direction that ChatBubble component will rendered in the window."/>
+</PropTable>
+
+### Sidebar Content
+All the props that contains in LUIGlobalProps.
+
+### Sidebar Footer
+All the props that contains in LUIGlobalProps.

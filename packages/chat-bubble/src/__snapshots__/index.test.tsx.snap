@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChatBubble should render ChatBubble component 1`] = `
+.c0 {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c1 {
+  position: relative;
+  border-radius: 0 5px 5px 5px;
+}
+
+.c1:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: 100%;
+  position: absolute;
+  background: inherit;
+}
+
+.c1:after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 0px;
+  right: 100%;
+  position: absolute;
+  background-color: rgba(255,255,255,1);
+}
+
+<div
+  class="c0"
+  data-testid="chat-bubble"
+  direction="left"
+>
+  <div
+    class="c1 cutomer-class"
+    data-testid="chat-bubble-content"
+    direction="left"
+    itemid="chat-content"
+  >
+    Can you help me to get a loan?
+  </div>
+  <span>
+    12:34PM Read
+  </span>
+</div>
+`;

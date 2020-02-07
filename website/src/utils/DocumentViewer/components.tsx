@@ -52,6 +52,7 @@ import LenderLogos from '@lendi-ui/lender-logos';
 import NavbarBase, { useNavbarBaseContext } from '@lendi-ui/navbar-base';
 import Sidebar from '@lendi-ui/sidebar';
 import VerticalNavbar from '@lendi-ui/navbar-vertical';
+import ChatBubble from '@lendi-ui/chat-bubble';
 // If there are any conflicts between names, the order of this
 // object will determine the preference. (this is the case with
 // icon.Link and typography.Link)
@@ -135,6 +136,7 @@ const scope = {
   useNavbarBaseContext,
   Sidebar,
   VerticalNavbar,
+  ChatBubble,
 };
 
 interface GenericProps {
