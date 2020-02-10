@@ -65,7 +65,7 @@ export const transformGoogleResponse = (
   };
 };
 
-export const getFormatedString = (address: AddressObject) => {
+export const getFormattedString = (address: AddressObject) => {
   let formatString = address.unit ? ''.concat(address.unit, '/') : '';
   formatString = address.lotSection ? formatString.concat('Lot. ', address.lotSection) : formatString;
   formatString = address.level ? formatString.concat(' level ', address.level) : formatString;

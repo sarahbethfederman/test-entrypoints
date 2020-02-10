@@ -1,4 +1,4 @@
-import { transformGoogleResponse, getFormatedString } from './util';
+import { transformGoogleResponse, getFormattedString } from './util';
 
 const MOCK_DATA = [
   {
@@ -152,14 +152,14 @@ describe('transformGoogleResponse', () => {
   });
 });
 
-describe('getFormatedString', () => {
+describe('getFormattedString', () => {
   it('is a function', () => {
-    expect(getFormatedString).toBeDefined();
+    expect(getFormattedString).toBeDefined();
   });
 
   MOCK_DATA.forEach(({ formatString, addressObject }) => {
     it(`Generates correct response for: ${formatString}`, () => {
-      expect(getFormatedString(addressObject)).toEqual(formatString);
+      expect(getFormattedString(addressObject)).toEqual(formatString);
     });
   });
 });

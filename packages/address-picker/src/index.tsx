@@ -10,7 +10,7 @@ import AddressModal, { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
 import MapService from './utils/map-service';
-import { transformGoogleResponse, getFormatedString } from './utils/util';
+import { transformGoogleResponse, getFormattedString } from './utils/util';
 
 export type MapTypes = 'dynamic' | 'static' | 'none';
 type SizeVariant = 'lg' | 'md' | 'sm';
@@ -103,9 +103,9 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   }
 
   onSave = (address: AddressObject) => {
-    // @TODO - HUB-305 display this data in the input
-    this.setState({ showModal: false });
-    this.props.onSelectAddress(address, getFormatedString(address));
+    const formattedAddress = getFormattedString(address);
+    this.setState({ addressInput: formattedAddress, showModal: false });
+    this.props.onSelectAddress(address, formattedAddress);
   };
 
   /**
@@ -121,7 +121,7 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
           addressInput: label,
           selectedPlace: geometry,
         });
-        this.props.onSelectAddress(responseAddress, getFormatedString(responseAddress));
+        this.props.onSelectAddress(responseAddress, getFormattedString(responseAddress));
       })
       .catch(() => {
         this.setState({
