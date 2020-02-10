@@ -57,7 +57,7 @@ describe('AddressModal', () => {
           'Street No.',
           'Street name',
           'Street type',
-          'Suburb',
+          'City',
           'Postcode',
           'State',
           'Country',
@@ -156,7 +156,7 @@ describe('AddressModal', () => {
           streetNumber: '10',
           streetName: 'King',
           streetType: 'Street',
-          suburb: 'Rock',
+          city: 'Rock',
           postcode: '2000',
           state: 'NSW',
         });

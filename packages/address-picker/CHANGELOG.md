@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.3.0] 2020-02-10 [FUNNEL-1036](https://creditandfinance.atlassian.net/browse/FUNNEL-1036)
+### Updated
+- Use city instead of suburb because SF support city only.
+
 ## [2.2.2] 2020-02-10 [LUIT-141](https://creditandfinance.atlassian.net/browse/LUIT-141)
 ### Updated
 - Show formatted address on input field when user enter an address manually.

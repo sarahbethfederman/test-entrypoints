@@ -19,7 +19,7 @@ export const transformGoogleResponse = (
   let { short_name: state = '' } = res.find((curr) => curr.types.includes('administrative_area_level_1')) || {};
   let { long_name: streetName = '' } = res.find((curr) => curr.types.includes('route')) || {};
   let { short_name: streetNumber = '' } = res.find((curr) => curr.types.includes('street_number')) || {};
-  const { long_name: suburb = '' } = res.find((curr) => curr.types.includes('locality')) || {};
+  const { long_name: city = '' } = res.find((curr) => curr.types.includes('locality')) || {};
   const { long_name: country = '' } = res.find((curr) => curr.types.includes('country')) || {};
   let unit = '';
 
@@ -58,7 +58,7 @@ export const transformGoogleResponse = (
     streetNumber,
     streetName,
     streetType,
-    suburb,
+    city,
     postcode,
     state,
     country,
@@ -73,7 +73,7 @@ export const getFormattedString = (address: AddressObject) => {
   formatString = address.streetNumber ? formatString.concat(address.streetNumber) : formatString;
   formatString = address.streetName ? formatString.concat(' ', to.capital(address.streetName)) : formatString;
   formatString = address.streetType ? formatString.concat(' ', to.capital(address.streetType)) : formatString;
-  formatString = address.suburb ? formatString.concat(', ', to.capital(address.suburb)) : formatString;
+  formatString = address.city ? formatString.concat(', ', to.capital(address.city)) : formatString;
   formatString = address.state ? formatString.concat(', ', to.upper(address.state)) : formatString;
   formatString = address.postcode ? formatString.concat(' ', address.postcode) : formatString;
   formatString = address.country ? formatString.concat(', ', to.capital(address.country)) : formatString;

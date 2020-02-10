@@ -21,7 +21,7 @@ export interface AddressObject {
   streetNumber?: string;
   streetName?: string;
   streetType?: string;
-  suburb?: string;
+  city?: string;
   postcode?: string;
   state?: string;
   country?: string;
@@ -42,7 +42,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       streetNumber: '',
       streetName: '',
       streetType: '',
-      suburb: '',
+      city: '',
       postcode: '',
       state: '',
       country: 'Australia',
@@ -62,7 +62,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       lotOrStreetNumber &&
       address.streetName &&
       address.streetType &&
-      address.suburb &&
+      address.city &&
       address.postcode &&
       address.state
     ) {
@@ -98,8 +98,8 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       case 'Street name':
         address.streetName = e.target.value;
         break;
-      case 'Suburb':
-        address.suburb = e.target.value;
+      case 'City':
+        address.city = e.target.value;
         break;
       case 'Postcode':
         address.postcode = e.target.value;
@@ -135,7 +135,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
       streetNumber,
       streetName,
       streetType,
-      suburb,
+      city,
       postcode,
       state,
       country,
@@ -214,11 +214,11 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
               />
             </UnitWrapper>
             <UnitWrapper size={{ mobile: 1 / 2, tablet: 1 / 4 }}>
-              <Label>Suburb</Label>
+              <Label>City</Label>
               <Input
-                value={suburb}
+                value={city}
                 isFullWidth
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.handleInputOnChange('Suburb', e)}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.handleInputOnChange('City', e)}
                 size="sm"
               />
             </UnitWrapper>
