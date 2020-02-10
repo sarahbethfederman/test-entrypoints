@@ -12,8 +12,8 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   ${({ direction }: WrapperProps) => {
-    if (direction === 'left') return `align-items: flex-start;`;
-    return `align-items: flex-end;`;
+    if (direction === 'left') return `align-items: flex-end;`;
+    return `align-items: flex-start;`;
   }}
 `;
 
@@ -33,9 +33,9 @@ const LeftSideWrapper = () => css`
 
   :after {
     content: '';
-    width: 40px;
+    width: 20px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 0 20px 20px 0;
     top: 0px;
     right: 100%;
     position: absolute;
@@ -59,9 +59,9 @@ const RightSideWrapper = () => css`
 
   :after {
     content: '';
-    width: 40px;
+    width: 20px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 20px 0 0 20px;
     top: 0px;
     left: 100%;
     position: absolute;

@@ -10,10 +10,10 @@ exports[`ChatBubble should render ChatBubble component 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
 }
 
 .c1 {
@@ -33,9 +33,9 @@ exports[`ChatBubble should render ChatBubble component 1`] = `
 
 .c1:after {
   content: '';
-  width: 40px;
+  width: 20px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 0 20px 20px 0;
   top: 0px;
   right: 100%;
   position: absolute;

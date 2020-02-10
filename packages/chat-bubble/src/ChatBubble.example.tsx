@@ -51,6 +51,14 @@ const ContentBodyWrapper = styled(Body)`
   ${p('xs')}
 `;
 
+const LeftFooterBodyWrapper = styled(Body)`
+  ${mr('xs')}
+`;
+
+const RightFooterBodyWrapper = styled(Body)`
+  ${ml('xs')}
+`;
+
 export default () => (
   <>
     <ChatWrapper>
@@ -63,9 +71,9 @@ export default () => (
           </ContentBodyWrapper>
         </BrokerContent>
         <ChatBubble.Footer>
-          <Body size="xs" color="shade.200" mt="xxxs">
+          <LeftFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
             12:34PM Read
-          </Body>
+          </LeftFooterBodyWrapper>
         </ChatBubble.Footer>
       </BrokerChatBubble>
       <CustomerChatBubble direction="right">
@@ -75,9 +83,9 @@ export default () => (
           </ContentBodyWrapper>
         </CustomerContent>
         <ChatBubble.Footer>
-          <Body size="xs" color="shade.200" mt="xxxs">
+          <RightFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
             12:35PM Read
-          </Body>
+          </RightFooterBodyWrapper>
         </ChatBubble.Footer>
       </CustomerChatBubble>
     </ChatWrapper>
@@ -91,9 +99,9 @@ export default () => (
           </ContentBodyWrapper>
         </BrokerContent>
         <ChatBubble.Footer>
-          <Body size="xs" color="shade.200" mt="xxxs">
+          <LeftFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
             12:34PM Read
-          </Body>
+          </LeftFooterBodyWrapper>
         </ChatBubble.Footer>
       </BrokerChatBubble>
       <CustomerChatBubble direction="right">
@@ -103,9 +111,9 @@ export default () => (
           </ContentBodyWrapper>
         </TeamViewContent>
         <ChatBubble.Footer>
-          <Body size="xs" color="shade.200" mt="xxxs">
+          <RightFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
             12:35PM Read
-          </Body>
+          </RightFooterBodyWrapper>
         </ChatBubble.Footer>
       </CustomerChatBubble>
     </TeamViewChatWrapper>
