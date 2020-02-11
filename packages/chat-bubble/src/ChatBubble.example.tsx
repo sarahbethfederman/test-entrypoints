@@ -51,46 +51,36 @@ const ContentBodyWrapper = styled(Body)`
   ${p('xs')}
 `;
 
-const LeftFooterBodyWrapper = styled(Body)`
-  ${mr('xs')}
-`;
-
-const RightFooterBodyWrapper = styled(Body)`
-  ${ml('xs')}
-`;
-
 export default () => (
   <>
     <ChatWrapper>
       <ExampleHeading>Customer View:</ExampleHeading>
       <BrokerChatBubble direction="left">
         <BrokerContent>
-          <ContentBodyWrapper size="sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore.
-          </ContentBodyWrapper>
+          <ContentBodyWrapper size="sm">Hello</ContentBodyWrapper>
         </BrokerContent>
-        <ChatBubble.Footer>
-          <LeftFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
-            12:34PM Read
-          </LeftFooterBodyWrapper>
-        </ChatBubble.Footer>
       </BrokerChatBubble>
       <CustomerChatBubble direction="right">
         <CustomerContent>
-          <ContentBodyWrapper size="sm">
-            Hi there, I’d like to know something, can you help me to get a loan?
-          </ContentBodyWrapper>
+          <ContentBodyWrapper size="sm">It's very nice to meet you.</ContentBodyWrapper>
         </CustomerContent>
         <ChatBubble.Footer>
-          <RightFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
+          <Body size="xs" color="shade.200" mt="xxxs">
             12:35PM Read
-          </RightFooterBodyWrapper>
+          </Body>
         </ChatBubble.Footer>
       </CustomerChatBubble>
     </ChatWrapper>
     <TeamViewChatWrapper>
       <ExampleHeading>Broker View:</ExampleHeading>
+
+      <CustomerChatBubble direction="right">
+        <TeamViewContent>
+          <ContentBodyWrapper size="sm">
+            Hi there, I’d like to know something, can you help me to get a loan?
+          </ContentBodyWrapper>
+        </TeamViewContent>
+      </CustomerChatBubble>
       <BrokerChatBubble direction="left">
         <BrokerContent>
           <ContentBodyWrapper size="sm">
@@ -99,23 +89,11 @@ export default () => (
           </ContentBodyWrapper>
         </BrokerContent>
         <ChatBubble.Footer>
-          <LeftFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
-            12:34PM Read
-          </LeftFooterBodyWrapper>
+          <Body size="xs" color="shade.200" mt="xxxs">
+            12:35PM Read
+          </Body>
         </ChatBubble.Footer>
       </BrokerChatBubble>
-      <CustomerChatBubble direction="right">
-        <TeamViewContent>
-          <ContentBodyWrapper size="sm">
-            Hi there, I’d like to know something, can you help me to get a loan?
-          </ContentBodyWrapper>
-        </TeamViewContent>
-        <ChatBubble.Footer>
-          <RightFooterBodyWrapper size="xs" color="shade.200" mt="xxxs">
-            12:35PM Read
-          </RightFooterBodyWrapper>
-        </ChatBubble.Footer>
-      </CustomerChatBubble>
     </TeamViewChatWrapper>
   </>
 );

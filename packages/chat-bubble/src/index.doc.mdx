@@ -7,7 +7,7 @@ import ChatBubble from '@lendi-ui/chat-bubble';
 ```
 
 ```js
-const CustomerChatBubble = styled(ChatBubble)`
+const ExampleChatBubble = styled(ChatBubble)`
     ${mb('xs')}
     ${ml('md')}
     ${mr('lg')}
@@ -21,11 +21,20 @@ const ContentBodyWrapper = styled(Body)`
     ${p('xs')}
 `;
 
+const BrokerContent = styled(ChatBubble.Content)`
+    ${bg('shade.100')} ${fg('shade.700')}
+`;
+
 const PlaygroundCarousel = () => (
-  <CustomerChatBubble direction='right'>
-    <CustomerContent><ContentBodyWrapper size='sm'>Hi there, I’d like to know something, can you help me to get a loan?</ContentBodyWrapper></CustomerContent>
-    <ChatBubble.Footer><Body size='xs' color='shade.200' mt='xxxs'>12:35PM Read</Body></ChatBubble.Footer>
-  </CustomerChatBubble>
+  <>
+    <ExampleChatBubble direction='left'>
+      <BrokerContent><ContentBodyWrapper size='sm'>Hey this is Lendi. Nice to meet you!</ContentBodyWrapper></BrokerContent>
+    </ExampleChatBubble>
+    <ExampleChatBubble direction='right'>
+      <CustomerContent><ContentBodyWrapper size='sm'>Hi there, I’d like to know something, can you help me to get a loan?</ContentBodyWrapper></CustomerContent>
+      <ChatBubble.Footer><Body size='xs' color='shade.200' mt='xxxs'>12:35PM Read</Body></ChatBubble.Footer>
+    </ExampleChatBubble>
+  </>
 );
 
 render(<PlaygroundCarousel />);

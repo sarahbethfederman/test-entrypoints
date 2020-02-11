@@ -7,7 +7,7 @@ import {
   ChatBubbleContentProps,
   ChatBubbleFooterProps,
 } from './types';
-import { Wrapper, ChatBubbleContentWrapper } from './index.style';
+import { Wrapper, ChatBubbleContentWrapper, AlignmentDiv } from './index.style';
 
 const ChatContext = React.createContext('left' as Direction);
 
@@ -19,7 +19,7 @@ const ChatBubble: React.FunctionComponent<ChatBubbleProps> & SidebarCompoundComp
   return (
     <ChatContext.Provider value={direction}>
       <Wrapper direction={direction} {...props} data-testid="chat-bubble">
-        {children}
+        <AlignmentDiv direction={direction}>{children}</AlignmentDiv>
       </Wrapper>
     </ChatContext.Provider>
   );

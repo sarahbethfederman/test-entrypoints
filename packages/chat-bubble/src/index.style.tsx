@@ -8,38 +8,56 @@ interface WrapperProps {
 }
 
 export const Wrapper = styled.div`
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   ${({ direction }: WrapperProps) => {
-    if (direction === 'left') return `align-items: flex-end;`;
-    return `align-items: flex-start;`;
+    if (direction === 'left') return `align-items: flex-start;`;
+    return `align-items: flex-end;`;
   }}
+`;
+
+export const AlignmentDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  ${({ direction }: WrapperProps) => {
+    if (direction === 'left') return `align-items: flex-start;`;
+    return `align-items: flex-end;`;
+  }}
+`;
+
+const BeforeCommonStyle = () => css`
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  position: absolute;
+  background: inherit;
+`;
+
+const AfterCommonStyle = () => css`
+  content: '';
+  width: 20px;
+  height: 40px;
+  top: 0px;
+  position: absolute;
+  ${bg('shade.0')}
 `;
 
 const LeftSideWrapper = () => css`
   position: relative;
   border-radius: 0 5px 5px 5px;
 
+  display: flex;
+
   :before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    top: 0px;
+    ${BeforeCommonStyle}
     right: 100%;
-    position: absolute;
-    background: inherit;
   }
 
   :after {
-    content: '';
-    width: 20px;
-    height: 40px;
+    ${AfterCommonStyle}
     border-radius: 0 20px 20px 0;
-    top: 0px;
     right: 100%;
-    position: absolute;
-    ${bg('shade.0')}
   }
 `;
 
@@ -48,24 +66,14 @@ const RightSideWrapper = () => css`
   border-radius: 5px 0 5px 5px;
 
   :before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    top: 0px;
+    ${BeforeCommonStyle}
     left: 100%;
-    position: absolute;
-    background: inherit;
   }
 
   :after {
-    content: '';
-    width: 20px;
-    height: 40px;
+    ${AfterCommonStyle}
     border-radius: 20px 0 0 20px;
-    top: 0px;
     left: 100%;
-    position: absolute;
-    ${bg('shade.0')}
   }
 `;
 
