@@ -10,60 +10,29 @@ const stylesBySizeMixin = (size: Size) =>
     switch (val) {
       case 'xs':
         return `
-          height: ${deriveSize(4.5)};
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(0.875)};
         `;
       case 'sm':
         return `
-          height: ${deriveSize(4.5)};
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(1)};
         `;
       case 'md':
         return `
-          height: ${deriveSize(6)};
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
         `;
       case 'lg':
         return `
-          height: ${deriveSize(7.5)};
           padding: ${deriveSize(1)} ${deriveSize(1.5)};
           font-size: ${deriveSize(1.375)};
         `;
       default:
         return `
-          height: ${deriveSize(6)};
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
         `;
-    }
-  });
-
-const widthBySizeMixin = (size: Size) =>
-  map(size, (val) => {
-    switch (val) {
-      case 'xs':
-        return `
-          width: ${deriveSize(12.5)};
-        `;
-      case 'sm':
-        return `
-          width: ${deriveSize(14.5)};
-        `;
-      case 'md':
-        return `
-          width: ${deriveSize(21.5)};
-        `;
-      case 'lg':
-        return `
-          width: ${deriveSize(24)};
-       `;
-      default:
-        return `
-          width: ${deriveSize(21.5)};
-      `;
     }
   });
 
@@ -111,7 +80,7 @@ export const TextAreaWrapper = styled.textarea`
   font-family: ${select('typography.body.fontFamily')};
   ${({ size, isInverse, isFullWidth }: TextAreaProps) => css`
     color: ${isInverse ? color('shade.0') : color('shade.700')};
-    ${isFullWidth ? 'width: 100%' : widthBySizeMixin(size)};
+    ${isFullWidth ? 'width: 100%' : 'width:auto'};
     ${stylesBySizeMixin(size)};
   `} ${({ isInverse, isDisabled }: TextAreaProps) => {
     if (isDisabled) {

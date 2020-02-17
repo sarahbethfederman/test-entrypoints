@@ -8,7 +8,7 @@ import TextArea from '@lendi-ui/text-area';
 
 ```jsx
 
-<TextArea size="md" placeholder="I'm a placeholder 🎉"/>
+<TextArea size="md" rows={3} cols={80} placeholder="I'm a placeholder 🎉"/>
        
 ```
 
@@ -27,3 +27,6 @@ import TextArea from '@lendi-ui/text-area';
   <PropTable.Entry name="size" type="{ 'xs' | 'sm' | 'md' | 'lg' }" defaultValue="md" description="The input size"/>
   <PropTable.Entry name="value" type="string" description="The input content"/>
 </PropTable>
+
+## Notes
+You can parse all the other native textarea attributes as props to LUI Textarea except 'size', 'placeholder' and 'value' that please follow the LUI documentation.

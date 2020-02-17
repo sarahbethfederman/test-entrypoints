@@ -1,8 +1,12 @@
 import * as React from 'react';
 import { Size, TextAreaWrapper } from './index.style';
-import { LUIFormProps } from '@lendi-ui/utils';
 
-export interface TextAreaProps extends LUIFormProps {
+type ReactTextAreaProps = React.InputHTMLAttributes<HTMLTextAreaElement>;
+
+export type TextAreaProps = Pick<
+  ReactTextAreaProps,
+  Exclude<keyof ReactTextAreaProps, 'size' | 'placeholder' | 'value'>
+> & {
   size?: Size;
   isError?: boolean;
   isInverse?: boolean;
@@ -14,29 +18,35 @@ export interface TextAreaProps extends LUIFormProps {
   onBlur?: (event: React.FocusEvent<HTMLTextAreaElement>) => void;
   onChange: (event: React.ChangeEvent<HTMLTextAreaElement>) => void;
   className?: string;
-}
-
-const TextArea = ({
-  size = 'md',
-  isError = false,
-  isInverse = false,
-  isFullWidth = false,
-  isDisabled = false,
-  className = '',
-  ...otherProps
-}: TextAreaProps) => {
-  return (
-    <TextAreaWrapper
-      size={size}
-      isError={isError}
-      isInverse={isInverse}
-      isFullWidth={isFullWidth}
-      disabled={isDisabled}
-      isDisabled={isDisabled}
-      className={className}
-      {...otherProps}
-    />
-  );
 };
+
+const TextArea = React.forwardRef(
+  (
+    {
+      size = 'md',
+      isError = false,
+      isInverse = false,
+      isFullWidth = false,
+      isDisabled = false,
+      className = '',
+      ...otherProps
+    }: TextAreaProps,
+    parentRef?: React.Ref<HTMLTextAreaElement>
+  ) => {
+    return (
+      <TextAreaWrapper
+        size={size}
+        ref={parentRef}
+        isError={isError}
+        isInverse={isInverse}
+        isFullWidth={isFullWidth}
+        disabled={isDisabled}
+        isDisabled={isDisabled}
+        className={className}
+        {...otherProps}
+      />
+    );
+  }
+);
 
 export default TextArea;
