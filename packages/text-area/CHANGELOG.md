@@ -1,3 +1,7 @@
+## [4.0.1] 2020-02-18 [HUB-hotfix-textarea]
+### Fixed
+- Fix a bug that textarea interface should be React.TextareaHTMLAttributes<HTMLTextAreaElement>.
+
 ## [4.0.0] 2020-02-13 [HUB-903](https://creditandfinance.atlassian.net/browse/HUB-903)
 ### Changed
 - Refactor LUI Textarea with forwardRef and remove the fixed height and width to allow all native html text area attributes.

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Size, TextAreaWrapper } from './index.style';
 
-type ReactTextAreaProps = React.InputHTMLAttributes<HTMLTextAreaElement>;
+type ReactTextAreaProps = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
 export type TextAreaProps = Pick<
   ReactTextAreaProps,
