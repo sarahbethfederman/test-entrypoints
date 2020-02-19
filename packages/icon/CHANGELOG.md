@@ -1,3 +1,7 @@
+## [9.2.0] - 2020-02-19 - [HUB-893](https://creditandfinance.atlassian.net/browse/HUB-893)
+### Added
+- Added unread icon.
+
 ## [9.1.1] - 2019-11-22
 ### Changed
 - Fixed the colours in the new PropertyReport icon.
