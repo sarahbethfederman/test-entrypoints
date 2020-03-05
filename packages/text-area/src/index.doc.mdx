@@ -8,7 +8,7 @@ import TextArea from '@lendi-ui/text-area';
 
 ```jsx
 
-<TextArea size="md" rows={3} cols={80} placeholder="I'm a placeholder 🎉"/>
+<TextArea size="md" rows={3} maxRows={7} cols={80} placeholder="I'm a placeholder 🎉"/>
        
 ```
 
@@ -20,8 +20,9 @@ import TextArea from '@lendi-ui/text-area';
   <PropTable.Entry name="isError" type='boolean' defaultValue="false" description="Whether the input content is valid"/>
   <PropTable.Entry name="isFullWidth" type='boolean' defaultValue="false" description="Whether the input is full width"/>
   <PropTable.Entry name="isInverse" type='boolean' defaultValue="false" description="Whether the input is inversed"/>
+  <PropTable.Entry name="maxRows" type="number" description="The maxrows textarea auto expand can be."/>
   <PropTable.Entry name="onBlur" type='() => void' description="Blur handler"/>
-  <PropTable.Entry name="onChange" required={true} type='() => void' description="Change handler"/>
+  <PropTable.Entry name="onChange" type='() => void' description="Change handler"/>
   <PropTable.Entry name="onFocus" type='() => void' description="Focus handler"/>
   <PropTable.Entry name="placeholder" type='string' description="The input placeholder"/>
   <PropTable.Entry name="size" type="{ 'xs' | 'sm' | 'md' | 'lg' }" defaultValue="md" description="The input size"/>

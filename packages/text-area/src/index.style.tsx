@@ -1,37 +1,42 @@
 import styled, { css } from 'styled-components';
-import { deriveSize, normalise } from '@lendi-ui/utils';
+import { deriveSize, normalise, NORMALISE_LINE_HEIGHT } from '@lendi-ui/utils';
 import { map } from '@lendi-ui/breakpoint';
 import { select } from '@lendi-ui/theme';
 export type Size = 'xs' | 'sm' | 'md' | 'lg';
 import { color } from '@lendi-ui/color';
 
-const stylesBySizeMixin = (size: Size) =>
+const styleBySizeMixin = (size: Size, rows: number) =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
         return `
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(0.875)};
+          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(0.875)} + 2 * ${deriveSize(0.5)});
         `;
       case 'sm':
         return `
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(1)};
+          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1)} + 2 * ${deriveSize(0.5)});
         `;
       case 'md':
         return `
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
+          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
         `;
       case 'lg':
         return `
           padding: ${deriveSize(1)} ${deriveSize(1.5)};
           font-size: ${deriveSize(1.375)};
+          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.375)} + 2 * ${deriveSize(1)});
         `;
       default:
         return `
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
+          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
         `;
     }
   });
@@ -70,19 +75,22 @@ export interface TextAreaProps {
   isInverse: boolean;
   isError: boolean;
   isDisabled: boolean;
+  rows: number;
 }
 
-export const TextAreaWrapper = styled.textarea`
+export const TextAreaWrapper = styled.textarea<TextAreaProps>`
   ${normalise};
   resize: none;
+  overflow: auto;
   border-radius: ${select('borderRadius')};
   box-sizing: border-box;
   font-family: ${select('typography.body.fontFamily')};
-  ${({ size, isInverse, isFullWidth }: TextAreaProps) => css`
+  ${({ size, isInverse, isFullWidth, rows }) => css`
     color: ${isInverse ? color('shade.0') : color('shade.700')};
     ${isFullWidth ? 'width: 100%' : 'width:auto'};
-    ${stylesBySizeMixin(size)};
-  `} ${({ isInverse, isDisabled }: TextAreaProps) => {
+    ${styleBySizeMixin(size, rows)};
+  `};
+  ${({ isInverse, isDisabled }) => {
     if (isDisabled) {
       return css`
         cursor: not-allowed;
@@ -100,6 +108,6 @@ export const TextAreaWrapper = styled.textarea`
     color: ${color('shade.300')};
   }
   :hover:not(:focus) {
-    ${({ isDisabled }: TextAreaProps) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
+    ${({ isDisabled }) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
   }
 `;

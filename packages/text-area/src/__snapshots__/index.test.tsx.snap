@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text area should render the text area component 1`] = `
+exports[`Text area should renderTextarea the text area component 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -13,6 +13,7 @@ exports[`Text area should render the text area component 1`] = `
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -20,6 +21,7 @@ exports[`Text area should render the text area component 1`] = `
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -70,17 +72,22 @@ exports[`Text area should render the text area component 1`] = `
 >
   <styled.textarea
     className=""
+    data-testid="lui-textarea"
     disabled={false}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <StyledComponent
       className=""
+      data-testid="lui-textarea"
       disabled={false}
       forwardedComponent={
         Object {
@@ -104,6 +111,7 @@ exports[`Text area should render the text area component 1`] = `
 ",
               ";
   resize: none;
+  overflow: auto;
   border-radius: ",
               [Function],
               ";
@@ -113,7 +121,8 @@ exports[`Text area should render the text area component 1`] = `
               ";
   ",
               [Function],
-              " ",
+              ";
+  ",
               [Function],
               ";
   ::placeholder {
@@ -139,28 +148,35 @@ exports[`Text area should render the text area component 1`] = `
           "withComponent": [Function],
         }
       }
-      forwardedRef={null}
+      forwardedRef={[Function]}
+      id="lui-textarea"
       isDisabled={false}
       isError={false}
       isFullWidth={false}
       isInverse={false}
-      onChange={[MockFunction]}
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     >
       <textarea
         className="c0"
+        data-testid="lui-textarea"
         disabled={false}
-        onChange={[MockFunction]}
+        id="lui-textarea"
+        onChange={[Function]}
         placeholder="input here ..."
+        rows={3}
         size="md"
+        value=""
       />
     </StyledComponent>
   </styled.textarea>
 </ForwardRef>
 `;
 
-exports[`Text area variations of the text area in all given sizes lg should render 100% width of with isFullWidth prop 1`] = `
+exports[`Text area variations of the text area in all given sizes lg should renderTextarea 100% width of with isFullWidth prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -173,6 +189,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -180,6 +197,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -226,17 +244,22 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={true}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -260,6 +283,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -269,7 +293,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -295,27 +320,34 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={true}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes lg should render the component in a disabled state with the isDisabled prop 1`] = `
+exports[`Text area variations of the text area in all given sizes lg should renderTextarea the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -328,6 +360,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -335,6 +368,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -358,17 +392,22 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={true}
+  id="lui-textarea"
   isDisabled={true}
   isError={false}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={true}
     forwardedComponent={
       Object {
@@ -392,6 +431,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -401,7 +441,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -427,27 +468,34 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={true}
     isError={false}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={true}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes lg should render the component with a red border if the isError state is true 1`] = `
+exports[`Text area variations of the text area in all given sizes lg should renderTextarea the component with a red border if the isError state is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -460,6 +508,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -467,6 +516,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -513,17 +563,22 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={true}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -547,6 +602,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -556,7 +612,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -582,27 +639,34 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={true}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes lg should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+exports[`Text area variations of the text area in all given sizes lg should renderTextarea the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -615,6 +679,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -622,6 +687,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -668,17 +734,22 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={false}
   isInverse={true}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -702,6 +773,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -711,7 +783,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -737,27 +810,34 @@ exports[`Text area variations of the text area in all given sizes lg should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={false}
     isInverse={true}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes md should render 100% width of with isFullWidth prop 1`] = `
+exports[`Text area variations of the text area in all given sizes md should renderTextarea 100% width of with isFullWidth prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -770,6 +850,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -777,6 +858,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -823,17 +905,22 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={true}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -857,6 +944,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -866,7 +954,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -892,27 +981,34 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={true}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes md should render the component in a disabled state with the isDisabled prop 1`] = `
+exports[`Text area variations of the text area in all given sizes md should renderTextarea the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -925,6 +1021,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -932,6 +1029,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -955,17 +1053,22 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={true}
+  id="lui-textarea"
   isDisabled={true}
   isError={false}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={true}
     forwardedComponent={
       Object {
@@ -989,6 +1092,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -998,7 +1102,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1024,27 +1129,34 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={true}
     isError={false}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={true}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes md should render the component with a red border if the isError state is true 1`] = `
+exports[`Text area variations of the text area in all given sizes md should renderTextarea the component with a red border if the isError state is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1057,6 +1169,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1064,6 +1177,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1110,17 +1224,22 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={true}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -1144,6 +1263,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1153,7 +1273,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1179,27 +1300,34 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={true}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes md should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+exports[`Text area variations of the text area in all given sizes md should renderTextarea the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1212,6 +1340,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1219,6 +1348,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -1265,17 +1395,22 @@ exports[`Text area variations of the text area in all given sizes md should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={false}
   isInverse={true}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -1299,6 +1434,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1308,7 +1444,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1334,27 +1471,34 @@ exports[`Text area variations of the text area in all given sizes md should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={false}
     isInverse={true}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes sm should render 100% width of with isFullWidth prop 1`] = `
+exports[`Text area variations of the text area in all given sizes sm should renderTextarea 100% width of with isFullWidth prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1367,6 +1511,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1374,6 +1519,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1420,17 +1566,22 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={true}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -1454,6 +1605,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1463,7 +1615,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1489,27 +1642,34 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={true}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes sm should render the component in a disabled state with the isDisabled prop 1`] = `
+exports[`Text area variations of the text area in all given sizes sm should renderTextarea the component in a disabled state with the isDisabled prop 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1522,6 +1682,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1529,6 +1690,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -1552,17 +1714,22 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={true}
+  id="lui-textarea"
   isDisabled={true}
   isError={false}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={true}
     forwardedComponent={
       Object {
@@ -1586,6 +1753,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1595,7 +1763,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1621,27 +1790,34 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={true}
     isError={false}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={true}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes sm should render the component with a red border if the isError state is true 1`] = `
+exports[`Text area variations of the text area in all given sizes sm should renderTextarea the component with a red border if the isError state is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1654,6 +1830,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1661,6 +1838,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1707,17 +1885,22 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={true}
   isFullWidth={false}
   isInverse={false}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -1741,6 +1924,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1750,7 +1934,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1776,27 +1961,34 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={true}
     isFullWidth={false}
     isInverse={false}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>
 `;
 
-exports[`Text area variations of the text area in all given sizes sm should render the component with a white border and transparent background if the isInverse prop is true 1`] = `
+exports[`Text area variations of the text area in all given sizes sm should renderTextarea the component with a white border and transparent background if the isInverse prop is true 1`] = `
 .c0 {
   box-sizing: border-box;
   line-height: 1.333;
@@ -1809,6 +2001,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   resize: none;
+  overflow: auto;
   border-radius: 6px;
   box-sizing: border-box;
   font-family: 'Open Sans',sans-serif;
@@ -1816,6 +2009,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
+  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -1862,17 +2056,22 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 
 <styled.textarea
   className=""
+  data-testid="lui-textarea"
   disabled={false}
+  id="lui-textarea"
   isDisabled={false}
   isError={false}
   isFullWidth={false}
   isInverse={true}
-  onChange={[MockFunction]}
+  onChange={[Function]}
   placeholder="input here ..."
+  rows={3}
   size="md"
+  value=""
 >
   <StyledComponent
     className=""
+    data-testid="lui-textarea"
     disabled={false}
     forwardedComponent={
       Object {
@@ -1896,6 +2095,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
 ",
             ";
   resize: none;
+  overflow: auto;
   border-radius: ",
             [Function],
             ";
@@ -1905,7 +2105,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
             ";
   ",
             [Function],
-            " ",
+            ";
+  ",
             [Function],
             ";
   ::placeholder {
@@ -1931,21 +2132,28 @@ exports[`Text area variations of the text area in all given sizes sm should rend
         "withComponent": [Function],
       }
     }
-    forwardedRef={null}
+    forwardedRef={[Function]}
+    id="lui-textarea"
     isDisabled={false}
     isError={false}
     isFullWidth={false}
     isInverse={true}
-    onChange={[MockFunction]}
+    onChange={[Function]}
     placeholder="input here ..."
+    rows={3}
     size="md"
+    value=""
   >
     <textarea
       className="c0"
+      data-testid="lui-textarea"
       disabled={false}
-      onChange={[MockFunction]}
+      id="lui-textarea"
+      onChange={[Function]}
       placeholder="input here ..."
+      rows={3}
       size="md"
+      value=""
     />
   </StyledComponent>
 </styled.textarea>

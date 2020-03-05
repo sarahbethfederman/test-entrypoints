@@ -1,3 +1,7 @@
+## [4.1.0] - 2020-02-29 - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
+### Added
+- Add maxRows feature for auto resize textarea.
+
 ## [4.0.1] 2020-02-18 [HUB-hotfix-textarea]
 ### Fixed
 - Fix a bug that textarea interface should be React.TextareaHTMLAttributes<HTMLTextAreaElement>.

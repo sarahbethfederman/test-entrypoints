@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/utils
 
+## [4.1.0] 2020-3-06 - [2020-3-06] - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
+### Added 
+- Added one exported constant value for LUI line height.
+
 ## [4.0.1] 2019-11-04 - [FUNNEL-698](https://creditandfinance.atlassian.net/browse/FUNNEL-698)
 ### Updated 
 - Replace use of String.startsWith by lodash.startsWith method to ensure IE11- compatibility.

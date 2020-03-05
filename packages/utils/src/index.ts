@@ -26,6 +26,9 @@ export const normalise = css`
   word-spacing: normal;
   letter-spacing: normal;
 `;
+
+export const NORMALISE_LINE_HEIGHT = 1.333;
+
 interface ComponentProps {
   [key: string]: any;
 }

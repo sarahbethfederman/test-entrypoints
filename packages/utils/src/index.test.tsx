@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { mount } from 'enzyme';
-import { display, getDataProps } from '.';
+import { display, getDataProps, NORMALISE_LINE_HEIGHT } from '.';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 
 describe('display()', () => {
@@ -38,6 +38,10 @@ describe('display()', () => {
     expect(element).not.toHaveStyleRule('display', 'undefined', {
       media: `(min-width:${Breakpoint.tablet})`,
     });
+  });
+
+  it('should get the value of NORMALISE_LINE_HEIGHT is 1.333', () => {
+    expect(NORMALISE_LINE_HEIGHT).toEqual(1.333);
   });
 });
 
