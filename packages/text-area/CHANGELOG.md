@@ -1,3 +1,7 @@
+## [4.1.1] - 2020-03-06 - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
+### Fixed
+- Fixed a bug that set textarea value internal.
+
 ## [4.1.0] - 2020-02-29 - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
 ### Added
 - Add maxRows feature for auto resize textarea.

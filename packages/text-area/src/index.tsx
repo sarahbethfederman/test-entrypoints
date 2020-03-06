@@ -34,13 +34,11 @@ const TextArea = React.forwardRef(
       onChange,
       rows: initialRows = 3,
       className = '',
-      value: initialValue = '',
       ...otherProps
     }: TextAreaProps,
     parentRef?: React.Ref<HTMLTextAreaElement>
   ) => {
     const [rows, setRows] = React.useState<number>(maxRows && initialRows > maxRows ? maxRows : initialRows);
-    const [value, setValue] = React.useState<string>(initialValue);
     // we can use this to tell us what the new row value needs to be
     const [scrollHeightRatio, setScrollHeightRatio] = React.useState(0);
     const [scrollHeight, setScrollHeight] = React.useState(0);
@@ -98,7 +96,6 @@ const TextArea = React.forwardRef(
         event.target.rows = rows;
         event.target.style.height = null;
       }
-      setValue(event.target.value);
 
       if (onChange) {
         onChange(event);
@@ -118,7 +115,6 @@ const TextArea = React.forwardRef(
         disabled={isDisabled}
         isDisabled={isDisabled}
         className={className}
-        value={value}
         onChange={handleChange}
         {...otherProps}
       />

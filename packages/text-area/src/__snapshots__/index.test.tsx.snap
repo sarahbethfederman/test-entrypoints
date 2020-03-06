@@ -83,7 +83,6 @@ exports[`Text area should renderTextarea the text area component 1`] = `
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <StyledComponent
       className=""
@@ -158,7 +157,6 @@ exports[`Text area should renderTextarea the text area component 1`] = `
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     >
       <textarea
         className="c0"
@@ -169,7 +167,6 @@ exports[`Text area should renderTextarea the text area component 1`] = `
         placeholder="input here ..."
         rows={3}
         size="md"
-        value=""
       />
     </StyledComponent>
   </styled.textarea>
@@ -255,7 +252,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -330,7 +326,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -341,7 +336,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -403,7 +397,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -478,7 +471,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -489,7 +481,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -574,7 +565,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -649,7 +639,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -660,7 +649,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -745,7 +733,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -820,7 +807,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -831,7 +817,6 @@ exports[`Text area variations of the text area in all given sizes lg should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -916,7 +901,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -991,7 +975,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1002,7 +985,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1064,7 +1046,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1139,7 +1120,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1150,7 +1130,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1235,7 +1214,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1310,7 +1288,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1321,7 +1298,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1406,7 +1382,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1481,7 +1456,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1492,7 +1466,6 @@ exports[`Text area variations of the text area in all given sizes md should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1577,7 +1550,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1652,7 +1624,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1663,7 +1634,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1725,7 +1695,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1800,7 +1769,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1811,7 +1779,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -1896,7 +1863,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -1971,7 +1937,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -1982,7 +1947,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
@@ -2067,7 +2031,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   placeholder="input here ..."
   rows={3}
   size="md"
-  value=""
 >
   <StyledComponent
     className=""
@@ -2142,7 +2105,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
     placeholder="input here ..."
     rows={3}
     size="md"
-    value=""
   >
     <textarea
       className="c0"
@@ -2153,7 +2115,6 @@ exports[`Text area variations of the text area in all given sizes sm should rend
       placeholder="input here ..."
       rows={3}
       size="md"
-      value=""
     />
   </StyledComponent>
 </styled.textarea>
