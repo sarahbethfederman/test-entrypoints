@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.3.1] 2020-03-09 [FUNNEL-1095](https://creditandfinance.atlassian.net/browse/FUNNEL-1095)
+### Updated
+- Remove the redundant comma from formatString.
+
 ## [2.3.0] 2020-02-10 [FUNNEL-1036](https://creditandfinance.atlassian.net/browse/FUNNEL-1036)
 ### Updated
 - Use city instead of suburb because SF support city only.

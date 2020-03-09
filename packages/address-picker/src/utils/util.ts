@@ -65,17 +65,24 @@ export const transformGoogleResponse = (
   };
 };
 
+const formattedAddress = (formatString: string, addressPart: string, concatBefore = '', concatAfter = '') => {
+  if (formatString) {
+    return formatString.concat(concatBefore, addressPart, concatAfter);
+  }
+  return addressPart;
+};
+
 export const getFormattedString = (address: AddressObject) => {
   let formatString = address.unit ? ''.concat(address.unit, '/') : '';
-  formatString = address.lotSection ? formatString.concat('Lot. ', address.lotSection) : formatString;
-  formatString = address.level ? formatString.concat(' level ', address.level) : formatString;
-  formatString = address.buildingName ? formatString.concat(' ', to.capital(address.buildingName), ' ') : formatString;
-  formatString = address.streetNumber ? formatString.concat(address.streetNumber) : formatString;
-  formatString = address.streetName ? formatString.concat(' ', to.capital(address.streetName)) : formatString;
-  formatString = address.streetType ? formatString.concat(' ', to.capital(address.streetType)) : formatString;
-  formatString = address.city ? formatString.concat(', ', to.capital(address.city)) : formatString;
-  formatString = address.state ? formatString.concat(', ', to.upper(address.state)) : formatString;
-  formatString = address.postcode ? formatString.concat(' ', address.postcode) : formatString;
-  formatString = address.country ? formatString.concat(', ', to.capital(address.country)) : formatString;
+  formatString = address.lotSection ? formattedAddress(formatString, address.lotSection, 'Lot. ') : formatString;
+  formatString = address.level ? formattedAddress(formatString, address.level, ' level ') : formatString;
+  formatString = address.buildingName ? formattedAddress(formatString, address.buildingName, ' ', ' ') : formatString;
+  formatString = address.streetNumber ? formattedAddress(formatString, address.streetNumber) : formatString;
+  formatString = address.streetName ? formattedAddress(formatString, address.streetName, ' ') : formatString;
+  formatString = address.streetType ? formattedAddress(formatString, address.streetType, ' ') : formatString;
+  formatString = address.city ? formattedAddress(formatString, to.capital(address.city), ', ') : formatString;
+  formatString = address.state ? formattedAddress(formatString, to.upper(address.state), ', ') : formatString;
+  formatString = address.postcode ? formattedAddress(formatString, address.postcode, ' ') : formatString;
+  formatString = address.country ? formattedAddress(formatString, to.capital(address.country), ', ') : formatString;
   return formatString;
 };
