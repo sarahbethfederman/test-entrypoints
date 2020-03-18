@@ -62,8 +62,11 @@ export class AutoComplete extends React.Component<AutoCompleteStatefulProps, Aut
   };
 
   getFilteredData = async (userInput: string) => {
-    const { dataSource } = this.props;
+    const { dataSource, backupOption } = this.props;
     const filteredDataSource = await extractData(userInput, dataSource);
+    if (!filteredDataSource.length && backupOption) {
+      filteredDataSource.push(backupOption);
+    }
     this.setState({
       activeSelection: 0,
       filteredDataSource,

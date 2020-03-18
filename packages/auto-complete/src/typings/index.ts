@@ -33,6 +33,7 @@ export interface AutoCompleteBaseProps extends LUIFormProps {
 
 export interface AutoCompleteStatefulProps extends AutoCompleteBaseProps {
   dataSource: ((input: string) => Promise<DataSourceItem[]>) | DataSourceItem[];
+  backupOption?: DataSourceItem;
   initialValue?: string;
 }
 

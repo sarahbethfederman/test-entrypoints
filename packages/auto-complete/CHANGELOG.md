@@ -1,3 +1,7 @@
+## [5.1.0] 2020-03-17 [FUNNEL-1124](
+### Changed
+- Added backupOption as a prop, display backup option as the suggestion if no match found.
+
 ## [5.0.4] 2020-01-21 [HUB-hotfix-autocomplete](
 ### Updated
 - Bump text-input version for fixing autofocus bug.

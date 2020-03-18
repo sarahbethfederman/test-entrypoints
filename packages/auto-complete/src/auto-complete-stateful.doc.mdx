@@ -35,6 +35,8 @@ return new Promise(function(res, rej){
   <PropTable.Entry name="className" type="string" description="External classname to override style of the component"/>
   <PropTable.Entry name="dataSource" required type="(input) => Promise.resolve([{label, value}]) | [{label, value}]"
    description="Datasource - It could resolve to a promise of an array of {label, value} or just an array of {label, value}, where label is searchable"/>
+  <PropTable.Entry name="backupOption" type="{label, value}"
+   description="Optional - Display provided backupOption if no match found."/>
   <PropTable.Entry name="isAutoFocus" type="boolean" defaultValue={false} description="Whether the Input is automatically focused on when form loads."/>
   <PropTable.Entry name="isDisabled" type="boolean" description="Disable AutoComplete"/>
   <PropTable.Entry name="isError" type="boolean" description="Errored AutoComplete"/>

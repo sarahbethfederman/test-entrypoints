@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ReactWrapper, mount } from 'enzyme';
 import AutoCompleteMenuList, { AutoCompleteMenuListProps } from '.';
 import Theme from '@lendi-ui/theme';
-import { TEST_DATA_SOURCE } from '../index.test';
+import { TEST_DATA_SOURCE, BACKUP_OPTION } from '../index.test';
 import { AutoCompleteListItem } from '../../common/index.style';
 
 describe('AutoCompleteMenuList', () => {

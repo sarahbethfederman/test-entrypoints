@@ -42,6 +42,12 @@ export const TEST_DATA_SOURCE = [
     value: 'bcu',
   },
 ];
+
+export const BACKUP_OPTION = {
+  label: 'Other',
+  value: 'other',
+};
+
 describe('AutoComplete', () => {
   let wrapper: ReactWrapper<AutoComplete>, autoCompleteProps: AutoCompleteStatefulProps;
   let autoCompleteInstance: AutoComplete;
@@ -145,6 +151,34 @@ describe('AutoComplete', () => {
         });
       });
     });
+
+    describe('when list component renders backup option', () => {
+      beforeEach(() => {
+        const onSelectMock = jest.fn();
+        render({
+          dataSource: (str) => getData(str),
+          onSelectItem: onSelectMock,
+          backupOption: BACKUP_OPTION,
+        });
+        autoCompleteInstance.setState({
+          activeSelection: 0,
+          showList: true,
+          userInput: 'SOMETHING',
+          filteredDataSource: [BACKUP_OPTION],
+        });
+        wrapper.update();
+      });
+      describe('should render list components', () => {
+        it('should render list', () => {
+          expect(wrapper.find(AutoCompleteList)).toHaveLength(1);
+        });
+        it('should render list items with backup option', () => {
+          wrapper.find('input').simulate('keyDown', { key: 'Enter' });
+          expect(autoCompleteProps.onSelectItem).toHaveBeenCalledWith(BACKUP_OPTION);
+        });
+      });
+    });
+
     describe('when list component does not renders', () => {
       beforeEach(() => {
         render({
