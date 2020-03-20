@@ -1,3 +1,8 @@
+## [9.3.0] - 2020-03-18 - [HUB-hotfix-domainIcon](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
+### Added
+- Added domain logomark icon.
+- Added domain teamview logo icon.
+
 ## [9.2.0] - 2020-02-19 - [HUB-893](https://creditandfinance.atlassian.net/browse/HUB-893)
 ### Added
 - Added unread icon.
