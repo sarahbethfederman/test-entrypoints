@@ -56,6 +56,7 @@ export { HandshakeSettled } from './fancy-icons-compiled/handshake-settled';
 export { HereToHelp } from './fancy-icons-compiled/here-to-help';
 export { HomeLoanRepayments } from './fancy-icons-compiled/home-loan-repayments';
 export { HomeTime } from './fancy-icons-compiled/home-time';
+export { HourGlass } from './fancy-icons-compiled/hour-glass';
 export { IdVerify } from './fancy-icons-compiled/id-verify';
 export { Id } from './fancy-icons-compiled/id';
 export { LargeLock } from './fancy-icons-compiled/large-lock';

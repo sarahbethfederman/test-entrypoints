@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="27px" viewBox="0 0 26 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Team-View" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team-0.3---Team0.5" transform="translate(-270.000000, -111.000000)">
+            <g id="Group-10">
+                <g id="Group-16" transform="translate(249.000000, 107.000000)">
+                    <g id="Group-2" transform="translate(19.000000, 4.000000)">
+                        <g class="fillPath" id="Communication/ic_message" fill="#90ee90" transform="translate(0.000000, 5.000000)">
+                            <path d="M20,2 L4,2 C2.9,2 2.01,2.9 2.01,4 L2,22 L6,18 L20,18 C21.1,18 22,17.1 22,16 L22,4 C22,2.9 21.1,2 20,2 Z M18,14 L6,14 L6,12 L18,12 L18,14 Z M18,11 L6,11 L6,9 L18,9 L18,11 Z M18,8 L6,8 L6,6 L18,6 L18,8 Z" id="Shape"></path>
+                        </g>
+                        <circle id="Oval" fill="#E02020" cx="23" cy="5" r="5"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

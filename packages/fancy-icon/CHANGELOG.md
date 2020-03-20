@@ -1,3 +1,7 @@
+## [3.0.3] - 2019-03-20
+### Added
+- Added HourGlass icon
+
 ## [3.0.2] - 2019-12-04 - [HUB-716](https://creditandfinance.atlassian.net/browse/HUB-716)
 ### Added
 - Added Google icon
