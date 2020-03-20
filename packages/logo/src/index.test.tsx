@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import Logo from '.';
 import Theme from '@lendi-ui/theme';
 import { theme as domainTheme } from '@lendi-ui/theme-domain';
-import { LendiLogo, DomainLogo } from '@lendi-ui/icon';
+import { LendiLogo, DomainLogo, DomainLogomark, LendiLogomark, DomainTeamViewLogo } from '@lendi-ui/icon';
 import { element } from 'prop-types';
 
 /**
@@ -88,6 +88,42 @@ describe('Logo', () => {
     it('should mount with native props like id, tabIndex', () => {
       expect(logoAttributes.id).toBe('testId');
       expect(logoAttributes.tabIndex).toBe(1);
+    });
+  });
+  describe('Logo mark in Lendi theme', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme>
+          <Logo variant="light" isExpanded={false} />
+        </Theme>
+      );
+    });
+    it('should render lendi logo mark', () => {
+      expect(Wrapper.find(LendiLogomark).length).toEqual(1);
+    });
+  });
+  describe('Logo mark in Domain theme', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme kind={domainTheme}>
+          <Logo variant="light" isExpanded={false} isTeamView />
+        </Theme>
+      );
+    });
+    it('should render domain logo mark', () => {
+      expect(Wrapper.find(DomainLogomark).length).toEqual(1);
+    });
+  });
+  describe('TeamView logo in Domain theme', () => {
+    beforeEach(() => {
+      Wrapper = mount(
+        <Theme kind={domainTheme}>
+          <Logo variant="light" isTeamView />
+        </Theme>
+      );
+    });
+    it('should render domain teamview logo', () => {
+      expect(Wrapper.find(DomainTeamViewLogo).length).toEqual(1);
     });
   });
 });

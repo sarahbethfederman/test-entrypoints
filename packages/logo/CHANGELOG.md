@@ -1,3 +1,9 @@
+## [6.0.3] - 2020-03-17 - [HUB-hotfix-domainIcon](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
+### Changed
+- Added Domain Logo Mark svg.
+- Added isExpanded to props.
+- Added Domain TeamView Logo svg.
+
 ## [6.0.2] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 - Bumped theme-domain version to latest major release.
 

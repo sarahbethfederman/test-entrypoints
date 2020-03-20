@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
-import { LendiLogo, LuiLogo, DomainLogo } from '@lendi-ui/icon';
+import { LendiLogo, LuiLogo, DomainLogo, LendiLogomark, DomainLogomark, DomainTeamViewLogo } from '@lendi-ui/icon';
 
 export type Variant = 'dark' | 'light';
 
@@ -11,27 +11,45 @@ export interface LogoProps {
   height?: string;
   theme?: ThemeMap;
   className?: string;
+  isExpanded?: boolean;
+  isTeamView?: boolean;
 }
 
 export class Logo extends React.Component<LogoProps> {
   render() {
-    const { variant = 'dark', width = '160px', height = '100px', className, theme, ...otherProps } = this.props;
-
+    const {
+      variant = 'dark',
+      width = '160px',
+      height = '100px',
+      className,
+      theme,
+      isExpanded = true,
+      isTeamView = false,
+      ...otherProps
+    } = this.props;
     let logoName = 'LendiLogo';
     if (theme) {
       logoName = theme!.logo.logoName;
     }
+    if (isTeamView && logoName === 'DomainLogo') {
+      logoName = 'DomainTeamViewLogo';
+    }
     const color = variant === 'dark' ? 'secondary.900' : 'shade.0';
 
-    switch (logoName) {
-      case 'LendiLogo':
-        return <LendiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
-      case 'DomainLogo':
-        return <DomainLogo color={color} width={width} height={height} className={className} {...otherProps} />;
-      case 'LUIlogo':
-        return <LuiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
-      default:
-        return <LendiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+    if (logoName === 'LendiLogo' && isExpanded) {
+      return <LendiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+    } else if (logoName === 'LendiLogo' && !isExpanded) {
+      return <LendiLogomark width={width} height={height} {...otherProps} />;
+    } else if (logoName === 'DomainLogo') {
+      return <DomainLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+    } else if (logoName === 'DomainTeamViewLogo' && isExpanded) {
+      return <DomainTeamViewLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+    } else if (logoName === 'DomainTeamViewLogo' && !isExpanded) {
+      return <DomainLogomark width={width} height={height} {...otherProps} />;
+    } else if (logoName === 'LUIlogo') {
+      return <LuiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+    } else {
+      return <LendiLogo color={color} width={width} height={height} className={className} {...otherProps} />;
     }
   }
 }
