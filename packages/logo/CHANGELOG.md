@@ -1,3 +1,7 @@
+## [6.1.0] - 2020-03-23 - [FUNNEL-1081](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
+### Changed
+- Updated document
+
 ## [6.0.3] - 2020-03-17 - [HUB-hotfix-domainIcon](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
 ### Changed
 - Added Domain Logo Mark svg.
