@@ -1,3 +1,6 @@
+## [3.2.0] 2020-3-23 [FUNNEL-1115](https://creditandfinance.atlassian.net/browse/FUNNEL-1115)
+- Change background colour to white when `variant` is `empty`
+
 ## [3.1.0] 2019-12-12 [FUNNEL-682-accordion](https://creditandfinance.atlassian.net/browse/FUNNEL-807)
 - Added isTransparent prop that will remove all background colour from the header and content wrappers
 - Removed maximum height and opening/closing animation

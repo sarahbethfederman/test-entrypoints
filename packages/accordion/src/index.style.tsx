@@ -194,7 +194,9 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
     }
     switch (variant) {
       case 'empty':
-        return null;
+        return css`
+          ${bg('shade.0')}
+        `;
       case 'primary':
       case 'emphasis':
       default:
