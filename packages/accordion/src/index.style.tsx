@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { normalise, deriveSize } from '@lendi-ui/utils';
 import { color, bg } from '@lendi-ui/color';
-import { m, mb, pl, px } from '@lendi-ui/spacing';
+import { m, mb, pl, px, pb } from '@lendi-ui/spacing';
 import { ArrowDropDown } from '@lendi-ui/icon';
 import { body } from '@lendi-ui/typography';
 import { AccordionGroupVariant } from './typings';
@@ -172,6 +172,12 @@ export const AccordionWrapper = styled.div<AccordionWrapperProps>`
         `;
       case 'empty':
         return css`
+          ${mb('sm')}
+
+          &:last-child {
+            ${mb('nil')}
+          }
+
           border-bottom: 1px solid ${color('shade.100')};
         `;
       case 'primary':
@@ -237,7 +243,21 @@ export const ArrowIcon = styled(ArrowDropDown)`
 `;
 
 export const PaddedItem = styled.div`
-  ${px('xxxs')};
+  ${({ variant }: { variant: AccordionGroupVariant }) => {
+    switch (variant) {
+      case 'empty':
+        return css`
+          ${px('sm')};
+          ${pb('sm')};
+        `;
+      case 'emphasis':
+      case 'primary':
+      default:
+        return css`
+          ${px('xxxs')};
+        `;
+    }
+  }}
 `;
 
 export const AccordionItemWrapper = styled.div`

@@ -1,3 +1,6 @@
+## [3.2.1] 2020-3-25 [FUNNEL-1115](https://creditandfinance.atlassian.net/browse/FUNNEL-1115)
+- Make panel separately when `variant` is `empty`
+
 ## [3.2.0] 2020-3-23 [FUNNEL-1115](https://creditandfinance.atlassian.net/browse/FUNNEL-1115)
 - Change background colour to white when `variant` is `empty`
 

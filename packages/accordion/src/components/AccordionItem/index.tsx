@@ -5,7 +5,7 @@ import { AccordionContext } from '../AccordionContext';
 
 export const AccordionItem: React.FC<AccordionItemProps> = ({ children, ...otherAccordionItemProps }) => (
   <AccordionContext.Consumer>
-    {({ isOpen, ariaId }) => (
+    {({ isOpen, ariaId, variant }) => (
       <AccordionItemWrapper
         role="region"
         aria-labelledby={ariaId}
@@ -14,7 +14,7 @@ export const AccordionItem: React.FC<AccordionItemProps> = ({ children, ...other
         show={isOpen}
         {...otherAccordionItemProps}
       >
-        <PaddedItem>{children}</PaddedItem>
+        <PaddedItem variant={variant}>{children}</PaddedItem>
       </AccordionItemWrapper>
     )}
   </AccordionContext.Consumer>
