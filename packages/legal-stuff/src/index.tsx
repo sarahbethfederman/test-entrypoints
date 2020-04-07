@@ -17,6 +17,10 @@ const Legal = (props: LUIGlobalProps) => {
           your email address to any third party or send you nasty spam, promise.
         </BodyContainer>
         <BodyContainer>
+          # Quoted rate applies only to PAYG loans with LVR of 80% or less with security in non-remote areas. All
+          applications are subject to assessment and lender approval.
+        </BodyContainer>
+        <BodyContainer>
           Lendi is a privately owned and operated Aussie business. Our mission is to provide Aussies with the right
           experience when choosing a home loan from our panel of lenders including ClickLoans, a related body corporate
           of Auscred Services. Although Lendi compares over 1600 products from over 35 lenders, we don't cover the whole
@@ -28,7 +32,9 @@ const Legal = (props: LUIGlobalProps) => {
         <BodyContainer>
           WARNING: This comparison rate is true only for the example given and may not include all fees and charges.
           Different terms, fees or other loan amounts might result in a different comparison rate. The comparison rates
-          are based on a loan amount of $150,000 over a loan term of 25 years.
+          are based on a loan amount of $150,000 over a loan term of 25 years. Fees and charges apply. All applications
+          are subject to assessment and lender approval. Quoted rate applies only to PAYG loans with LVR of 80% or less
+          with security in non-remote areas. All applications are subject to assessment and lender approval.
         </BodyContainer>
         <BodyContainer>
           EXAMPLE: This example is current as at 20th October 2016. A Click Loans Online Principal and Interest Loan of

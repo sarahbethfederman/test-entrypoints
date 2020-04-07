@@ -1,3 +1,6 @@
+## [5.0.0] 2020-04-07 [ACQUIRE-117](https://creditandfinance.atlassian.net/browse/AC-117)
+- Update comparison rate disclaimer and add quoted rate disclaimer
+
 ## [4.1.0] - 2019-10-21 - [HUB-639](https://creditandfinance.atlassian.net/browse/HUB-639)
 ### Changed
 - Update new text content to legal stuff

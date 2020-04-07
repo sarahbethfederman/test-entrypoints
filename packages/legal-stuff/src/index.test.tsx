@@ -21,7 +21,7 @@ describe('Legal', () => {
     expect(element.find('.curYear').text()).toEqual(curYear.toString());
     expect(element.find(Wrapper)).toHaveLength(1);
     expect(element.find(ContentContainer)).toHaveLength(1);
-    expect(element.find(BodyContainer)).toHaveLength(6);
+    expect(element.find(BodyContainer)).toHaveLength(7);
     expect(element.find(Heading)).toHaveLength(1);
     expect(element.find(Legal)).toMatchSnapshot();
     expect(element.find("meta[name='format-detection']").exists()).toEqual(true);
