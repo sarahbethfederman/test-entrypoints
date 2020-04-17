@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^4.0.0",
-    "@lendi-ui/button": "^7.0.0",
+    "@lendi-ui/button": "^8.0.0",
     "@lendi-ui/typography": "^4.0.0",
     "@lendi-ui/utils": "^4.0.0"
   },

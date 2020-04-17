@@ -1,3 +1,7 @@
+## [8.1.0] 2020-04-17 [AC-126](https://creditandfinance.atlassian.net/browse/AC-126)
+### Updated
+- Update button dependency to get button type for InputButton.
+
 ## [8.0.2] 2019-10-02 [FUNNEL-772](https://creditandfinance.atlassian.net/browse/FUNNEL-772)
 ### Changed
 - Remove the margin right if ButtonGroup isFullWidth.
