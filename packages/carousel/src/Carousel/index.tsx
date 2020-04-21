@@ -1,6 +1,9 @@
 import * as React from 'react';
-import * as Hammer from 'hammerjs';
+if (typeof window !== 'undefined') {
+  var Hammer = require('hammerjs');
+}
 import { debounce } from 'lodash';
+import { getBreakpoint } from '@lendi-ui/breakpoint';
 
 import { CarouselContainer } from './index.style';
 import { NextArrow, PreviousArrow } from '../Arrows';
@@ -10,7 +13,6 @@ import CarouselContext from './CarouselContext';
 import { useInterval, setInfiniteCurrentIndex, isType, getIncrement } from './util';
 import CarouselSlides from '../Slides';
 import { SlidesContext } from '../Slides/SlidesContext';
-import { getBreakpoint } from '@lendi-ui/breakpoint';
 
 const DEBOUNCE_INTERVAL = 100;
 
@@ -30,10 +32,12 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
     ...luiProps
   } = props;
 
+  const hasWindow = React.useMemo(() => typeof window !== undefined, []);
+
   const [currentIndex, setCurrentIndex] = React.useState<number>(initialIndex);
   const [hammer, setHammer] = React.useState<HammerManager>();
   const [slides, setTotalSlides] = React.useState<number>(1);
-  const [windowWidth, setWindowWidth] = React.useState<number>(window.innerWidth);
+  const [windowWidth, setWindowWidth] = React.useState<number>(hasWindow ? window.innerWidth : 1);
   const [boundingBox, setBoundingBox] = React.useState<ClientRect | DOMRect>({
     bottom: 0,
     height: 0,
@@ -66,6 +70,8 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
   const container = React.useRef<HTMLDivElement>(null);
 
   React.useEffect(() => {
+    if (!hasWindow) return;
+
     if (swipe && container.current) setHammer(new Hammer(container.current));
 
     const handleScroll = debounce(() => {
@@ -85,7 +91,10 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const hasCustomDots = React.useMemo(

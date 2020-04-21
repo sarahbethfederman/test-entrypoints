@@ -1,3 +1,7 @@
+## [4.1.0] 2020-04-21 - Hotfix
+### Changed
+- Carousel can be used in server rendered applications
+
 ## [4.0.5] 2019-12-13 - [HUB-711](https://creditandfinance.atlassian.net/browse/HUB-711)
 ### Changed
 - Render only the components that are visible in the transition
