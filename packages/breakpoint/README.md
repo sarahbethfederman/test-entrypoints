@@ -13,6 +13,8 @@ yarn add @lendi-ui/breakpoint
 When testing with `getBreakpoint` or `useBreakpoint` it is advised to mock `@lendi-ui/breakpoint` as `window.matchMedia` is not available on the JSDOM. If you need to test resize functionality, you can instead add something like the following code to your tests to mock the `window.matchMedia` function:
 
 ```jsx
+import { match } from 'css-mediaquery';
+
 const width: number = 1201;
 
 window.matchMedia = jest.fn().mockImplementation((query: string) => ({

@@ -1,3 +1,7 @@
+## [4.1.1] 2020-04-21 - Hotfix
+### Changed
+- Fixed bug in hasWindow function
+
 ## [4.1.0] 2020-04-21 - Hotfix
 ### Changed
 - Carousel can be used in server rendered applications

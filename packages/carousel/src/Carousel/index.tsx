@@ -32,7 +32,7 @@ const Carousel: React.FunctionComponent<CarouselProps> & CarouselCompoundCompone
     ...luiProps
   } = props;
 
-  const hasWindow = React.useMemo(() => typeof window !== undefined, []);
+  const hasWindow = React.useMemo(() => typeof window !== 'undefined', []);
 
   const [currentIndex, setCurrentIndex] = React.useState<number>(initialIndex);
   const [hammer, setHammer] = React.useState<HammerManager>();
