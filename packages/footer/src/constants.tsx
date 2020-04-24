@@ -166,7 +166,7 @@ export const GENERAL_PAGES = [
   },
   {
     label: 'Careers',
-    url: '/careers/',
+    url: 'https://lendi.recruiterbox.com',
   },
   {
     label: 'Privacy policy',

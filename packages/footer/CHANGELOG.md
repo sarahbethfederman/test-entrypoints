@@ -1,3 +1,7 @@
+## [4.1.0] - 2020-04-24 - [AC-152](https://creditandfinance.atlassian.net/browse/AC-152)
+### Updated
+- Update career link URL in LUI Footer
+
 ## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
 ## [3.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
