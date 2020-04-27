@@ -1,3 +1,7 @@
+## [4.2.0] - 2020-04-27 - [AC-152](https://creditandfinance.atlassian.net/browse/AC-152)
+### Updated
+- Open career link to in new tab
+
 ## [4.1.0] - 2020-04-24 - [AC-152](https://creditandfinance.atlassian.net/browse/AC-152)
 ### Updated
 - Update career link URL in LUI Footer

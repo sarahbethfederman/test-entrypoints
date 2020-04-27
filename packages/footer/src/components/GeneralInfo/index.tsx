@@ -30,6 +30,7 @@ export class GeneralInfo extends React.Component<GeneralInfoProps> {
               <LinkWrapper key={page.label}>
                 <PageLink
                   href={page.label === 'Careers' ? page.url : `https://www.lendi.com.au${page.url}${params}`}
+                  target={page.label === 'Careers' ? '_blank' : undefined}
                   onClick={() => this.context.analyticsForNavigation(page.label, WindowPosition.footer)}
                 >
                   {page.label}
