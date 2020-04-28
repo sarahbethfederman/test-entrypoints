@@ -1,3 +1,7 @@
+## [9.4.1] - 2020-04-28 - [SUB-hotfix-unreadMessageClass]
+### Added
+- Updated the fillPath class on the unread message icon.
+
 ## [9.4.0] - 2020-04-28 - [SUB-hotfix-redDot]
 ### Added
 - Added red dot icon.
