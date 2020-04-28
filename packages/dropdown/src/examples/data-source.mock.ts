@@ -12,7 +12,8 @@ export const MOCK_DATA_SOURCE: any[] = [
     value: 'ADE',
   },
   {
-    label: 'Adelaide Bank (Commercial) - a very very very long name',
+    label:
+      'Adelaide Bank (Commercial) - a very very very very very very very very very very very very very very very long name',
     value: 'ADEC',
   },
   {

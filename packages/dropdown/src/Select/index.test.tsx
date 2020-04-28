@@ -6,6 +6,7 @@ import '@testing-library/jest-dom/extend-expect';
 import '@testing-library/react/cleanup-after-each';
 import { MOCK_DATA_SOURCE } from '../examples/data-source.mock';
 import { LUISelectProps } from '../types';
+import { mount } from 'enzyme';
 const singleValueTestProps: LUISelectProps = {
   options: MOCK_DATA_SOURCE,
   placeholder: 'single select',
@@ -100,6 +101,37 @@ describe('Select - the fancy one', () => {
       const singleValue = container.parentElement.parentElement.querySelector("div[class*='-singleValue']");
       expect(singleValue.innerHTML).toEqual('Adelaide Bank');
     });
+
+    /* textOverflow:'ellipsis' is in css level so the label text won't have any difference when toggling isOptionsOverflow
+        need to compare css attribute in this case.
+        This simulates react-select to trigger the custom css of option
+    */
+    it("should display each option's text content with ellipsis overflow (...) when isOptionsOverflow is false in single select", () => {
+      const wrapper = mount(<LUIfiedSelect value={{ ...singleValueTestProps, isOptionsOverflow: false }} />);
+
+      const theInput = wrapper.find('input');
+      theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
+
+      const optionCss = wrapper
+        .find('Option')
+        .first()
+        .get(0)
+        .props.selectProps.styles.option(true, true);
+      expect(optionCss).toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
+    });
+    it("should display each option's full text content when isOptionsOverflow is true in single select", () => {
+      const wrapper = mount(<LUIfiedSelect value={{ ...singleValueTestProps, isOptionsOverflow: true }} />);
+
+      const theInput = wrapper.find('input');
+      theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
+
+      const optionCss = wrapper
+        .find('Option')
+        .first()
+        .get(0)
+        .props.selectProps.styles.option(true, true);
+      expect(optionCss).not.toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
+    });
   });
 
   describe('render multiple value - LUIfied select', () => {
@@ -123,6 +155,37 @@ describe('Select - the fancy one', () => {
       fireEvent.keyDown(theInput, { key: 'Enter' });
       const multiValue = container.parentElement.parentElement.querySelectorAll("div[class*='-multiValue']");
       expect(multiValue.length).toEqual(2);
+    });
+
+    /* textOverflow:'ellipsis' is in css level so the label text won't have any difference when toggling isOptionsOverflow
+        need to compare css attribute in this case.
+        This simulates react-select to trigger the custom css of option
+    */
+    it("should display each option's text content with ellipsis overflow (...) when isOptionsOverflow is false in mulitple select", () => {
+      const wrapper = mount(<LUIfiedSelect value={{ ...multipleValueTestProps, isOptionsOverflow: false }} />);
+
+      const theInput = wrapper.find('input');
+      theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
+
+      const optionCss = wrapper
+        .find('Option')
+        .first()
+        .get(0)
+        .props.selectProps.styles.option(true, true);
+      expect(optionCss).toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
+    });
+    it("should display each option's full text content when isOptionsOverflow is true in mulitple select", () => {
+      const wrapper = mount(<LUIfiedSelect value={{ ...multipleValueTestProps, isOptionsOverflow: true }} />);
+
+      const theInput = wrapper.find('input');
+      theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
+
+      const optionCss = wrapper
+        .find('Option')
+        .first()
+        .get(0)
+        .props.selectProps.styles.option(true, true);
+      expect(optionCss).not.toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
     });
   });
 

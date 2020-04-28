@@ -34,6 +34,7 @@ export interface LUISelectProps extends LUIGlobalProps {
   isFullWidth?: boolean;
   isInverse?: boolean;
   isMenuOpen?: boolean;
+  isOptionsOverflow?: boolean;
   /* enable multi select*/
   isMultiple?: boolean;
   isSearchable?: boolean;

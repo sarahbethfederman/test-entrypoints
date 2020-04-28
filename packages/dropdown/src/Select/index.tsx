@@ -19,6 +19,7 @@ class LUISelect extends React.Component<LUISelectProps> {
       isAutoFocus = false,
       onChangeItem = () => {},
       isClearableByBackspace = false,
+      isOptionsOverflow = false,
       ...otherProps
     } = this.props;
     return (
@@ -26,7 +27,7 @@ class LUISelect extends React.Component<LUISelectProps> {
         <Select
           {...otherProps}
           // @ts-ignore
-          styles={LUISelectStyles(theme!, size, isInverse, isFullWidth, isError, isDisabled)}
+          styles={LUISelectStyles(theme!, size, isInverse, isFullWidth, isError, isDisabled, isOptionsOverflow)}
           isDisabled={isDisabled}
           isMulti={isMultiple}
           menuIsOpen={isMenuOpen!}

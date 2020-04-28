@@ -1,3 +1,7 @@
+## [4.1.0] - 2019-04-22 - [FUNNEL-1237](https://creditandfinance.atlassian.net/browse/FUNNEL-1237)
+### Changed
+- Add isOptionsOverflow props for displaying overflow text.
+
 ## [4.0.2] 2020-01-21 [hotfix]
 - Make Lui Select SSR friendly
 

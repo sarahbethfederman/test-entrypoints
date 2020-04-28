@@ -22,7 +22,8 @@ export const LUISelectStyles = (
   isInverse: boolean,
   isFullWidth: boolean,
   isError: boolean,
-  isDisabled: boolean
+  isDisabled: boolean,
+  isOptionsOverflow: boolean
 ) => ({
   // the dropdown
   control: (defaultStyles: React.CSSProperties) => {
@@ -115,6 +116,9 @@ export const LUISelectStyles = (
       : isFocused
       ? getColor('secondary.25')({ theme })
       : 'transparent';
+    const overflowCss = isOptionsOverflow
+      ? {}
+      : { maxHeight: '48px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' };
     return {
       ...defaultStyles,
       color,
@@ -123,11 +127,8 @@ export const LUISelectStyles = (
       paddingRight: pr('sm')[1],
       paddingTop: pt('xs')[1],
       paddingBottom: pb('xs')[1],
-      maxHeight: '48px',
       backgroundColor,
-      whiteSpace: 'nowrap',
-      overflow: 'hidden',
-      textOverflow: 'ellipsis',
+      ...overflowCss,
       ':active': {
         backgroundColor: !isDisabled && (isSelected ? getColor('secondary.600') : getColor('secondary.50')),
       },

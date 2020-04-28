@@ -22,7 +22,7 @@ const items = [{
                 value: 'ADE',
               },
               {
-                label: 'Adelaide Bank (Commercial) - a very very very long name',
+                label: 'Adelaide Bank (Commercial) - a very very very very very very very very very very very very very very very long name',
                 value: 'ADEC',
               }]
 
@@ -104,6 +104,7 @@ render(<PlaygoundComponent/>)
   <PropTable.Entry name="placeholder" required type={'string'} defaultValue="" description="The placeholder to appear inside select"/>
   <PropTable.Entry name="size" type={'"lg" | "md" | "sm"'} defaultValue="md" description="the select size"/>
   <PropTable.Entry name="value" required type={'ValueType<OptionType>'} defaultValue="" description="The value to the Select"/>
+  <PropTable.Entry name="isOptionsOverflow" type={'"true | false"'} defaultValue="false" description="Display each option's text content with ellipsis overflow (...)"/>
 </PropTable>
 
 
