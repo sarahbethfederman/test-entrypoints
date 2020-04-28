@@ -1,3 +1,7 @@
+## [9.4.0] - 2020-04-28 - [SUB-hotfix-redDot]
+### Added
+- Added red dot icon.
+
 ## [9.3.0] - 2020-03-18 - [HUB-hotfix-domainIcon](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
 ### Added
 - Added domain logomark icon.
