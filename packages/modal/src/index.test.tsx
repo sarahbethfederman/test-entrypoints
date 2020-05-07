@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { mount } from 'enzyme';
+import { mount, ReactWrapper } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 import Modal, { ModalProps } from './index';
-import { widthBySize, ModalSize } from './index.style';
+import { widthBySize, ModalSize, CloseIcon } from './index.style';
 
-let element;
+let element: ReactWrapper;
 let modalContainer;
 let onHide;
 
@@ -168,6 +168,65 @@ describe('Modal', () => {
       const modalAttributes = element.find(Modal).props();
       expect(modalAttributes.id).toBe(TEXT_ID);
       expect(modalAttributes.tabIndex).toBe(1);
+    });
+  });
+
+  describe('disableClose prop', () => {
+    describe('disableClose is true', () => {
+      beforeEach(() => {
+        render({ isVisible: true, onHide, disableClose: true });
+      });
+
+      it('should NOT render the close icon when disableClose is true', () => {
+        expect(element.find(CloseIcon)).toHaveLength(0);
+      });
+
+      it('should NOT close the modal when clicking overlay spacing  when disableClose is true', () => {
+        window.dispatchEvent(
+          new KeyboardEvent('keydown', {
+            key: 'Escape',
+          })
+        );
+        expect(onHide).toBeCalledTimes(0);
+      });
+    });
+
+    describe('disableClose is false', () => {
+      beforeEach(() => {
+        render({ isVisible: true, onHide, disableClose: false });
+      });
+
+      it('should render the close icon when disableClose is true', () => {
+        expect(element.find(CloseIcon)).toHaveLength(1);
+      });
+
+      it('should close the modal when clicking overlay spacing  when disableClose is true', () => {
+        window.dispatchEvent(
+          new KeyboardEvent('keydown', {
+            key: 'Escape',
+          })
+        );
+        expect(onHide).toBeCalledTimes(1);
+      });
+    });
+  });
+
+  describe('disableClose value is not set', () => {
+    beforeEach(() => {
+      render({ isVisible: true, onHide });
+    });
+
+    it('should render the close icon when disableClose is true', () => {
+      expect(element.find(CloseIcon)).toHaveLength(1);
+    });
+
+    it('should close the modal when clicking overlay spacing  when disableClose is true', () => {
+      window.dispatchEvent(
+        new KeyboardEvent('keydown', {
+          key: 'Escape',
+        })
+      );
+      expect(onHide).toBeCalledTimes(1);
     });
   });
 });

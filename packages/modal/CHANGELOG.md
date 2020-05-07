@@ -1,3 +1,7 @@
+## [3.2.0] - 2020-05-06 - [LUIT-153](https://creditandfinance.atlassian.net/browse/LUIT-153)
+### Added
+- Add one more prop `disableClose` to remove the close icon and not allow overlay to close the modal.
+
 ## [3.1.0] - 2019-10-03 - [HUB-544](https://creditandfinance.atlassian.net/browse/HUB-544)
 ### Changed
 - Update overlay dependency which removes react-scrolllock, which was locking the scrolling of modal content.
