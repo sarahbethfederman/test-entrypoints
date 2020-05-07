@@ -22,6 +22,7 @@ import {
   Firstmac,
   GatewayBank,
   Heritage,
+  Hsbc,
   Ing,
   LaTrobe,
   Loanave,
@@ -63,6 +64,7 @@ export type LenderIDType =
   | 'first_mac'
   | 'gateway_bank'
   | 'heritage'
+  | 'hsbc'
   | 'ing'
   | 'la_trobe'
   | 'loanave'
@@ -145,6 +147,8 @@ const LenderLogos = ({ lenderId, width = '91px', height = '32px', className = ''
       return <GatewayBank width={width} height={height} className={className} data-testd="gateway_bank" />;
     case 'heritage':
       return <Heritage width={width} height={height} className={className} data-testd="heritage" />;
+    case 'hsbc':
+      return <Hsbc width={width} height={height} className={className} data-testd="hsbc" />;
     case 'ing':
       return <Ing width={width} height={height} className={className} data-testd="ing" />;
     case 'la_trobe':
