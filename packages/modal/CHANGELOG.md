@@ -1,3 +1,7 @@
+## [3.3.0] - 2020-05-19 - [LUIT-157](https://creditandfinance.atlassian.net/browse/LUIT-157)
+### Deleted
+- Delete the prop `disableClose` and revert modal to 3.1.0.
+
 ## [3.2.0] - 2020-05-06 - [LUIT-153](https://creditandfinance.atlassian.net/browse/LUIT-153)
 ### Added
 - Add one more prop `disableClose` to remove the close icon and not allow overlay to close the modal.

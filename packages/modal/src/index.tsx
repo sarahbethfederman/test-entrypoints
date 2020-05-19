@@ -22,7 +22,6 @@ export interface ModalProps extends LUIGlobalProps {
   isVisible: boolean;
   onHide: () => void;
   children?: React.ReactNode;
-  disableClose?: boolean;
 }
 
 export interface ModalHeaderProps {
@@ -50,19 +49,11 @@ class Modal extends React.Component<ModalProps> {
   public static Footer = Footer;
 
   render() {
-    const {
-      isVisible: show,
-      size,
-      onHide,
-      isHeaderFixed = false,
-      children,
-      disableClose = false,
-      ...otherProps
-    } = this.props;
+    const { isVisible: show, size, onHide, isHeaderFixed = false, children, ...otherProps } = this.props;
 
     return (
       <Wrapper>
-        <Overlay isVisible={show} zIndex={5} onHide={disableClose ? undefined : onHide} />
+        <Overlay isVisible={show} zIndex={5} onHide={onHide} />
         <Fade isActive={show}>
           <Container
             isVisible={show}
@@ -71,7 +62,7 @@ class Modal extends React.Component<ModalProps> {
             className="modal-container"
             {...otherProps}
           >
-            {!disableClose && <CloseIcon color="shade.300" onClick={onHide} />}
+            <CloseIcon color="shade.300" onClick={onHide} />
             {children}
           </Container>
         </Fade>
