@@ -1,3 +1,7 @@
+## [9.5.0] - 2020-04-28 - [HUB-242][https://creditandfinance.atlassian.net/browse/SUB-242]
+### Added
+- Added autobot icon
+
 ## [9.4.1] - 2020-04-28 - [SUB-hotfix-unreadMessageClass]
 ### Added
 - Updated the fillPath class on the unread message icon.
