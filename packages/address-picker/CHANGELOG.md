@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.3.2] 2020-06-16 [FUNNEL-1095](https://creditandfinance.atlassian.net/browse/FUNNEL-1363)
+### Updated
+- Updated address to a pick list, enable a free text input for state when country is not AU.
+
 ## [2.3.1] 2020-03-09 [FUNNEL-1095](https://creditandfinance.atlassian.net/browse/FUNNEL-1095)
 ### Updated
 - Remove the redundant comma from formatString.

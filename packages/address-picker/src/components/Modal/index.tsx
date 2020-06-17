@@ -5,7 +5,7 @@ import Modal from '@lendi-ui/modal';
 import Grid from '@lendi-ui/grid';
 import { AutoComplete, DataSourceItem } from '@lendi-ui/auto-complete';
 import { UnitWrapper, Label, StyledDropdown } from './index.style';
-import { AUSTRALIA_STATES, STREET_TYPE } from './constants';
+import { AUSTRALIA_STATES, STREET_TYPE, COUNTRY } from './constants';
 
 export interface AddressModalProps {
   show?: boolean;
@@ -71,9 +71,20 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
     this.setState({ isCompleted });
   };
 
-  handleOnSelect = ({ value = '' }: DataSourceItem) => {
+  handleOnSelect = (field: string, { value = '' }: DataSourceItem) => {
     const { address } = this.state;
     address.streetType = value as string;
+    switch (field) {
+      case 'Street type':
+        address.streetType = `${value}`;
+        break;
+      case 'Country':
+        address.country = `${value}`;
+        break;
+      default:
+        undefined;
+    }
+
     this.setState({ address }, this.checkFormIsCompleted);
   };
 
@@ -106,6 +117,9 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
         break;
       case 'Country':
         address.country = e.target.value;
+        break;
+      case 'State':
+        address.state = e.target.value;
         break;
       default:
         undefined;
@@ -209,7 +223,7 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                   this.handleInputOnChange('Street type', e);
                 }}
-                onSelectItem={this.handleOnSelect}
+                onSelectItem={(item) => this.handleOnSelect('Street type', item)}
                 isFullWidth={true}
               />
             </UnitWrapper>
@@ -233,20 +247,33 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
             </UnitWrapper>
             <UnitWrapper size={{ mobile: 1 / 2, tablet: 1 / 4 }}>
               <Label>State</Label>
-              <StyledDropdown
-                items={AUSTRALIA_STATES}
-                isFullWidth={true}
-                value={state}
-                onChange={this.handleSelectOnChange}
-              />
+              {country === 'Australia' ? (
+                <StyledDropdown
+                  items={AUSTRALIA_STATES}
+                  isFullWidth={true}
+                  value={state}
+                  onChange={this.handleSelectOnChange}
+                />
+              ) : (
+                <Input
+                  value={state}
+                  isFullWidth
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.handleInputOnChange('State', e)}
+                  size="sm"
+                />
+              )}
             </UnitWrapper>
             <UnitWrapper size={{ mobile: 1, tablet: 1 / 4 }}>
               <Label>Country</Label>
-              <Input
-                value={country}
-                isFullWidth
-                onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.handleInputOnChange('Country', e)}
+              <AutoComplete
                 size="sm"
+                initialValue={country}
+                dataSource={COUNTRY}
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                  this.handleInputOnChange('Country', e);
+                }}
+                onSelectItem={(item) => this.handleOnSelect('Country', item)}
+                isFullWidth={true}
               />
             </UnitWrapper>
           </Grid>
