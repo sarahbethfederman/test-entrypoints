@@ -73,7 +73,6 @@ export default class AddressModal extends React.Component<AddressModalProps, Add
 
   handleOnSelect = (field: string, { value = '' }: DataSourceItem) => {
     const { address } = this.state;
-    address.streetType = value as string;
     switch (field) {
       case 'Street type':
         address.streetType = `${value}`;

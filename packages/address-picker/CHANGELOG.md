@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/address-picker
 
+## [2.3.3] 2020-06-16 [FUNNEL-1095](https://creditandfinance.atlassian.net/browse/FUNNEL-1363)
+### Fixed
+- Fixed country is being saved into street type.
+
 ## [2.3.2] 2020-06-16 [FUNNEL-1095](https://creditandfinance.atlassian.net/browse/FUNNEL-1363)
 ### Updated
 - Updated address to a pick list, enable a free text input for state when country is not AU.
