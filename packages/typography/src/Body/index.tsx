@@ -6,7 +6,7 @@ import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { deriveSize } from '@lendi-ui/utils';
 import { AlignmentOrAlignmentMap, align as alignMixin } from '../mixins';
 
-export type Size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg';
+export type Size = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 export type BodySize = BreakpointValue<Size> | BreakpointValueMap<Size>;
 export type BodyAlign = AlignmentOrAlignmentMap;
 
@@ -43,6 +43,11 @@ const bodySizeMixin = (size: BodySize) =>
         return `
         font-size: ${deriveSize(1.125)};
         line-height: calc(24 / 18);
+      `;
+      case 'xl':
+        return `
+        font-size: ${deriveSize(1.5)};
+        line-height: 1;
       `;
       default:
         return undefined;
