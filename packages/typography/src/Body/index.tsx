@@ -47,7 +47,7 @@ const bodySizeMixin = (size: BodySize) =>
       case 'xl':
         return `
         font-size: ${deriveSize(1.5)};
-        line-height: 1;
+        line-height: calc(30 / 24);
       `;
       default:
         return undefined;

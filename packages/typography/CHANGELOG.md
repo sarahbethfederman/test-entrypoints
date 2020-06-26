@@ -1,3 +1,6 @@
+## [4.1.1] 2020-06-26 [Release Notes]
+- Changed line-height of 'xl' on Body
+
 ## [4.1.0] 2020-06-24 [Release Notes]
 - Added 'xl' as a size for Body
 
