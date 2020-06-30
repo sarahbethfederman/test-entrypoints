@@ -138,6 +138,34 @@ describe('map()', () => {
     });
   });
 
+  it('should wrap styles in a media rule at each tshirt breakpoint', () => {
+    const element = mount(
+      <SimpleMapComponent bg={{ xs: 'red', sm: 'green', md: 'blue', lg: 'yellow', xl: 'orange' }} />
+    );
+    expect(element).toHaveStyleRule('background-color', 'unset');
+    expect(element).toHaveStyleRule('background-color', 'red', {
+      media: `(min-width:${Breakpoint.xs})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'green', {
+      media: `(min-width:${Breakpoint.sm})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'blue', {
+      media: `(min-width:${Breakpoint.md})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'yellow', {
+      media: `(min-width:${Breakpoint.lg})`,
+    });
+    expect(element).toHaveStyleRule('background-color', 'orange', {
+      media: `(min-width:${Breakpoint.xl})`,
+    });
+  });
+
+  it('should throw an error if mixing descriptive and tshirt breakpoints', () => {
+    expect(() => mount(<SimpleMapComponent bg={{ xs: 'red', mobile: 'blue' }} />)).toThrow(
+      new Error('Mobile and xs are synonyms for the same breakpoint, please use only one.')
+    );
+  });
+
   it('should not wrap styles consisting of functions in a media rule', () => {
     const element = mount(<ComplexMapComponent size={1 / 2} multiplier={2} />);
     expect(element).toHaveStyleRule('width', '100%');

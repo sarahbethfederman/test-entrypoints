@@ -7,7 +7,42 @@ import { map } from '@lendi-ui/breakpoint';
 
 ## Usage
 
-`map` will match different breakpoint style for this property.
+`map` allows you to create rules that change values based on breakpoints. You can build your own component that accepts any string, number or boolean or a partial breakpoint map of that value. Alternatively you can use it in your own styled components.
+
+### Inside a styled component
+
+const TextWithDifferentColoursForEachBreakpoint = styled(Text)`
+  ${map({ xs: 'red', sm: 'green', md: 'pink', lg: '#ffee12' }, (value: Colors) => `color: ${value}`)};
+`;
+
+### As part of a custom component
+
 ```
-<ComponentName size={{ mobile: 'xs', tablet: 'sm', 'desktop': 'lg'}} />
+type TshirtSize = 'xs' | 'sm' | 'lg';
+
+interface ComponentNameProps {
+  size: BreakpointValue<TshirtSize> | BreakpointValueMap<TshirtSize>;
+}
+
+const ComponentName = styled.div<ComponentNameProps>`
+  ${({size}) => map(size, (value: TshirtSize) => switch(value) {
+    case 'xs':
+      return `
+        font-size: 0.5rem;
+        margin: 1rem;
+    `;
+    case 'sm':
+      return `
+        font-size: 0.75rem;
+        margin: 1.25rem;
+      `;
+    case 'lg':
+      return`
+        font-size: 1.9rem;
+        margin: 1rem;
+      `;
+  })}
+`;
+
+<ComponentName size={{ xs: 'xs', md: 'sm', xl: 'lg'}} />
 ```

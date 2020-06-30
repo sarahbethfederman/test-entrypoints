@@ -14,35 +14,53 @@ import { gte, useBreakpoint, getBreakpoint } from '@lendi-ui/breakpoint';
 
 const common = css`
   display: block;
-  ${p('sm')}
-  ${body}
-  ${fg('shade.800')}
-  ${bg('shade.300')}
+  ${p('sm')};
+  ${body};
+  ${fg('shade.800')};
+  ${bg('shade.300')};
 `;
 
-const Mobile = styled.code`
-  ${common} ${gte('mobile')`
-    ${fg('shade.0')}
-    ${bg('primary.800')}
+const ExtraSmall = styled.code`
+  ${common};
+  ${gte('xs')`
+    ${fg('shade.0')};
+    ${bg('primary.900')};
   `};
 `;
 
-const Tablet = styled.code`
-  ${common} ${gte('tablet')`
-    ${bg('primary.500')}
+const Small = styled.code`
+  ${common};
+  ${gte('sm')`
+    ${fg('shade.0')};
+    ${bg('primary.700')};
   `};
 `;
 
-const Desktop = styled.code`
-  ${common} ${gte('desktop')`
-    ${bg('primary.300')}
+const Medium = styled.code`
+  ${common};
+  ${gte('md')`
+    ${bg('primary.500')};
+  `}
+`;
+
+const Large = styled.code`
+  ${common};
+  ${gte('lg')`
+    ${bg('primary.300')};
+  `}
+`
+
+const ExtraLarge = styled.code`
+  ${common};
+  ${gte('xl')`
+    ${bg('primary.100')};
   `};
 `;
 
 const CurrentBreakpoint = () => {
-  const [breakpoint, setBreakpoint] = React.useState('mobile');
+  const [breakpoint, setBreakpoint] = React.useState('xs');
 
-  useBreakpoint(setBreakpoint);
+  useBreakpoint(setBreakpoint, undefined, true);
 
   return (<>{breakpoint}</>);
 }
@@ -50,10 +68,12 @@ const CurrentBreakpoint = () => {
 render(
   <>
     👇 Resize the window to see the color change at each breakpoint:
-    <Mobile>gte('mobile')</Mobile>
-    <Tablet>gte('tablet')</Tablet>
-    <Desktop>gte('desktop')</Desktop>
-    <Body>Breakpoint on page load is: {getBreakpoint()}</Body>
+    <ExtraSmall>gte('xs')</ExtraSmall>
+    <Small>gte('sm')</Small>
+    <Medium>gte('md')</Medium>
+    <Large>gte('lg')</Large>
+    <ExtraLarge>gte('xl')</ExtraLarge>
+    <Body>Breakpoint on page load is: {getTshirtBreakpoint()}</Body>
     <Body>The current breakpoint is: <CurrentBreakpoint /></Body>
   </>
 );

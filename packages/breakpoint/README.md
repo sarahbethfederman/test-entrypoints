@@ -29,9 +29,9 @@ window.matchMedia = jest.fn().mockImplementation((query: string) => ({
 ```jsx
 import { between } from '@lendi-ui/breakpoint';
 const Component = styled.div`
-  ${between('mobile', 'tablet')`
+  ${between('xs', 'md')`
     color: red;
-  `} ${between('tablet', 'desktop')`
+  `} ${between('lg', 'xl')`
     color: green;
   `}
   color: pink;
@@ -43,7 +43,7 @@ const Component = styled.div`
 ```jsx
 import { gte } from '@lendi-ui/breakpoint';
 const Mobile = styled.code`
-  ${gte('mobile')`
+  ${gte('sm')`
     ${bg('primary.800')}
   `};
 `;
@@ -53,5 +53,7 @@ const Mobile = styled.code`
 
 ```jsx
 import { map } from '@lendi-ui/breakpoint';
-<ComponentName size={{ mobile: 'xs', tablet: 'sm', desktop: 'lg' }} />;
+const TextWithDifferentColoursForEachBreakpoint = styled(Text)`
+  ${map({ xs: 'red', sm: 'green', md: 'pink', lg: '#ffee12' }, (value: Colors) => `color: ${value}`)};
+`;
 ```

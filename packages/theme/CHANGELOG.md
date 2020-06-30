@@ -1,3 +1,7 @@
+## [9.0.0] 2020-06-29
+### Changed
+- lendi-ui-size root size breakpoint changed to 576px instead of 577px
+
 ## [8.1.0] 2019-10-02 [HUB-589](https://creditandfinance.atlassian.net/browse/HUB-589)
 ### Changed
 - Enhancement LUI theme with default font-family for body and font-weight for heading.

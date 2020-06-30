@@ -11,13 +11,13 @@ exports[`map() reponsiveness with different order of screen size 1`] = `
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: 50%;
   }
 }
 
-@media (min-width:75.0625em) {
+@media (min-width:75rem) {
   .c0 {
     width: 100%;
   }
@@ -93,13 +93,13 @@ exports[`map() reponsiveness with different order of screen size 2`] = `
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: 50%;
   }
 }
 
-@media (min-width:75.0625em) {
+@media (min-width:75rem) {
   .c0 {
     width: 100%;
   }

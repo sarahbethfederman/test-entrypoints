@@ -29,7 +29,7 @@ const GlobalStyle: GlobalStyleComponent<{ theme: ThemeMap }, DefaultTheme> = cre
     --lendi-ui-size: 14px;
   }
 
-  @media (min-width: 36.0625em) {
+  @media (min-width: 36rem) {
     :root {
       --lendi-ui-size: 16px;
     }

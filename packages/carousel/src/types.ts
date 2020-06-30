@@ -1,5 +1,5 @@
 import { LUIGlobalProps } from '@lendi-ui/utils';
-import { CSSProperties, ReactElement, FunctionComponent } from 'react';
+import { CSSProperties, FunctionComponent, ReactElement } from 'react';
 
 export interface CarouselSession {
   isNextDisabled: boolean;
@@ -33,6 +33,11 @@ export interface IncrementMap {
   mobile: number;
   tablet: number;
   desktop: number;
+  xs: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
 }
 
 export interface CarouselProps extends LUIGlobalProps {

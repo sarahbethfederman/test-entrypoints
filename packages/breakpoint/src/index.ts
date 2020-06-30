@@ -8,8 +8,13 @@ export const keys = Object.keys as <T>(o: T) => Extract<keyof T, string>[];
 
 export enum Breakpoint {
   mobile = '0',
-  tablet = '36.0625em',
-  desktop = '75.0625em',
+  tablet = '36rem',
+  desktop = '75rem',
+  xs = '0',
+  sm = '36rem',
+  md = '48rem',
+  lg = '62rem',
+  xl = '75rem',
 }
 
 export type BreakpointName = keyof typeof Breakpoint;
@@ -40,6 +45,18 @@ export function between(gte: BreakpointName, lt: BreakpointName) {
   };
 }
 
+function throwErrorIfMixingBreakpoints(breakpoints: BreakpointName[]) {
+  if (breakpoints.includes('mobile') && breakpoints.includes('xs')) {
+    throw new Error('Mobile and xs are synonyms for the same breakpoint, please use only one.');
+  }
+  if (breakpoints.includes('tablet') && breakpoints.includes('sm')) {
+    throw new Error('Tablet and sm are synonyms for the same breakpoint, please use only one.');
+  }
+  if (breakpoints.includes('desktop') && breakpoints.includes('xl')) {
+    throw new Error('Desktop and xl are synonyms for the same breakpoint, please use only one.');
+  }
+}
+
 export function map<V extends string | number | boolean>(
   values: BreakpointValue<V> | BreakpointValueMap<V>,
   mapValueToStyle: MapValueToStyleFunction<V>
@@ -48,6 +65,7 @@ export function map<V extends string | number | boolean>(
     return mapValueToStyle(values);
   }
   const breakpoints = keys(values);
+  throwErrorIfMixingBreakpoints(breakpoints);
   // sort the breakpoints(responsive-screens) in the order of Breakpoint values so that generated
   // css will always have the @media-queries in the order of mobile, tablet and desktop.
   breakpoints.sort((a, b) => parseFloat(Breakpoint[a]) - parseFloat(Breakpoint[b]));
@@ -59,21 +77,37 @@ export function map<V extends string | number | boolean>(
   }, ([] as SimpleInterpolation[]).concat(mapValueToStyle(undefined)));
 }
 
-export const useBreakpoint = (callback: (breakpoint: BreakpointName) => any, debounceInterval?: number) =>
+export const useBreakpoint = (
+  callback: (breakpoint: BreakpointName) => any,
+  debounceInterval?: number,
+  useTshirt: boolean = false
+) =>
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    const handleResize = debounce(() => callback(getBreakpoint()), debounceInterval || DEBOUNCE_INTERVAL);
+    const getBreakpointFunction = useTshirt ? getTshirtBreakpoint : getBreakpoint;
+
+    const handleResize = debounce(() => callback(getBreakpointFunction()), debounceInterval || DEBOUNCE_INTERVAL);
 
     handleResize();
 
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
-  });
+  }, []);
+
+export const getTshirtBreakpoint = (): BreakpointName => {
+  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return 'xs';
+
+  if (window.matchMedia(`(min-width: ${Breakpoint.xl})`).matches) return 'xl';
+  else if (window.matchMedia(`(min-width: ${Breakpoint.lg})`).matches) return 'lg';
+  else if (window.matchMedia(`(min-width: ${Breakpoint.md})`).matches) return 'md';
+  else if (window.matchMedia(`(min-width: ${Breakpoint.sm})`).matches) return 'sm';
+  return 'xs';
+};
 
 export const getBreakpoint = (): BreakpointName => {
-  if (typeof window === 'undefined') return 'mobile';
+  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') return 'mobile';
 
   if (window.matchMedia(`(min-width: ${Breakpoint.desktop})`).matches) return 'desktop';
   else if (window.matchMedia(`(min-width: ${Breakpoint.tablet})`).matches) return 'tablet';

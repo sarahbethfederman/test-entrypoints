@@ -1,4 +1,5 @@
-import { useRef, useEffect, ReactNode, isValidElement, ReactType } from 'react';
+import { BreakpointName } from '@lendi-ui/breakpoint';
+import { isValidElement, ReactNode, ReactType, useEffect, useRef } from 'react';
 import { IncrementMap } from '../types';
 
 interface SavedCallback {
@@ -46,5 +47,5 @@ export const setInfiniteCurrentIndex = (value: number, length: number, infinite:
 export const isType = (child: ReactNode, ...components: ReactType[]): boolean =>
   components.filter((component) => isValidElement(child) && child.type === component).length > 0;
 
-export const getIncrement = (increment: number | IncrementMap, breakpoint: 'mobile' | 'tablet' | 'desktop') =>
+export const getIncrement = (increment: number | IncrementMap, breakpoint: BreakpointName) =>
   typeof increment === 'number' ? increment : increment[breakpoint];

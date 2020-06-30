@@ -1,3 +1,7 @@
+## [4.1.2] 2020-06-26 - Type changee
+### Changed
+- Modified carousel increment map to import breakpoint types instead of implementing self
+
 ## [4.1.1] 2020-04-21 - Hotfix
 ### Changed
 - Fixed bug in hasWindow function

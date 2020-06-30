@@ -1,3 +1,7 @@
+## [5.0.0] 2020-06-26
+### Changed
+- Now offering tshirt breakpoints xs, sm, md, lg, and xl. Still backwards compatible to old breakpoints
+
 ## [4.1.0] 2019-12-04
 ### Changed
 - Can now get name of current breakpoint in JS using getBreakpoint() or useBreakpoint()
