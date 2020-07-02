@@ -27,8 +27,8 @@ export const AlignmentDiv = styled.div`
 
 const BeforeCommonStyle = () => css`
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   top: 0px;
   position: absolute;
   background: inherit;
@@ -36,8 +36,8 @@ const BeforeCommonStyle = () => css`
 
 const AfterCommonStyle = () => css`
   content: '';
-  width: 20px;
-  height: 40px;
+  width: 16px;
+  height: 32px;
   top: 0px;
   position: absolute;
   ${bg('shade.0')}
@@ -50,12 +50,12 @@ const LeftSideWrapper = () => css`
   display: flex;
 
   :before {
-    ${BeforeCommonStyle}
+    ${BeforeCommonStyle};
     right: 100%;
   }
 
   :after {
-    ${AfterCommonStyle}
+    ${AfterCommonStyle};
     border-radius: 0 20px 20px 0;
     right: 100%;
   }
@@ -66,12 +66,12 @@ const RightSideWrapper = () => css`
   border-radius: 5px 0 5px 5px;
 
   :before {
-    ${BeforeCommonStyle}
+    ${BeforeCommonStyle};
     left: 100%;
   }
 
   :after {
-    ${AfterCommonStyle}
+    ${AfterCommonStyle};
     border-radius: 20px 0 0 20px;
     left: 100%;
   }

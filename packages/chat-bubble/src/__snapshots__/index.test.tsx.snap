@@ -40,8 +40,8 @@ exports[`ChatBubble should render ChatBubble component 1`] = `
 
 .c2:before {
   content: '';
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   top: 0px;
   position: absolute;
   background: inherit;
@@ -50,8 +50,8 @@ exports[`ChatBubble should render ChatBubble component 1`] = `
 
 .c2:after {
   content: '';
-  width: 20px;
-  height: 40px;
+  width: 16px;
+  height: 32px;
   top: 0px;
   position: absolute;
   background-color: rgba(255,255,255,1);

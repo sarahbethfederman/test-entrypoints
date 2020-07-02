@@ -1,5 +1,9 @@
 # Changelog - @lendi-ui/chat-bubble
 
+## [1.0.3] 2020-7-2 [SUB-307](https://creditandfinance.atlassian.net/browse/SUB-307)
+### Fixed
+- Fixed a bug about ChatBubble Wiggle width.
+
 ## [1.0.2] 2020-2-10 [HUB-895](https://creditandfinance.atlassian.net/browse.HUB-895)
 ### Fixed
 - Fixed a bug that ChatBubble content length will adjust it's text.
