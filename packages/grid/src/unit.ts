@@ -56,6 +56,7 @@ function sizeMixin({ size = 1 }: { size?: BreakpointValue<Size> | BreakpointValu
 export function unit(props: UnitOptions = {}) {
   return css`
     box-sizing: border-box;
-    ${offsetMixin(props)} ${sizeMixin(props)};
+    ${offsetMixin(props)};
+    ${sizeMixin(props)};
   `;
 }

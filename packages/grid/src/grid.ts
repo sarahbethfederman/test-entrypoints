@@ -1,16 +1,20 @@
 import { css } from 'styled-components';
 import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { gutter as defaultGutter } from './tokens';
+import { SpacingName, Spacing } from '@lendi-ui/spacing';
 
 export type Wrap = boolean;
 export type Reverse = boolean;
 export type HAlign = 'left' | 'right' | 'center' | 'justify-center' | 'justify';
 export type VAlign = 'top' | 'bottom' | 'center' | 'stretch';
+export type Gutter = string | SpacingName;
 
 export interface GridOptions {
   wrap?: BreakpointValue<Wrap> | BreakpointValueMap<Wrap>;
   halign?: BreakpointValue<HAlign> | BreakpointValueMap<HAlign>;
   valign?: BreakpointValue<VAlign> | BreakpointValueMap<VAlign>;
   reverse?: BreakpointValue<Reverse> | BreakpointValueMap<Reverse>;
+  gutter?: BreakpointValue<Gutter> | BreakpointValueMap<Gutter>;
 }
 
 function halignMixin({
@@ -130,12 +134,32 @@ function wrapMixin({
   });
 }
 
+function isSpacingName(gutter: Gutter | undefined): gutter is SpacingName {
+  return Spacing[gutter as SpacingName] !== undefined;
+}
+
+function gutterMixin({ gutter = defaultGutter }: { gutter?: BreakpointValue<Gutter> | BreakpointValueMap<Gutter> }) {
+  return map(gutter, (value) => {
+    const val = isSpacingName(value) ? Spacing[value] : value;
+    return `
+        margin-left: calc(${val} * -1);
+        margin-right: calc(${val} * -1);
+
+        & > * {
+          padding-left: ${val};
+          padding-right: ${val};
+        }
+      `;
+  });
+}
+
 export function grid(props: GridOptions = {}) {
   return css`
     display: flex;
-    ${halignMixin(props)}
-    ${valignMixin(props)}
-    ${reverseMixin(props)}
-    ${wrapMixin(props)}
+    ${halignMixin(props)};
+    ${valignMixin(props)};
+    ${reverseMixin(props)};
+    ${wrapMixin(props)};
+    ${gutterMixin(props)};
   `;
 }

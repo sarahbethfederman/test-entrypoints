@@ -18,30 +18,40 @@ const Grid = styled.div`
 
 const Quarter = styled.div`
   ${unit({offset: 1/4, size: 1/4})}
-  text-align: center;
-  background: tomato;
 `;
 
 const Eighth = styled.div`
-  ${unit({size: 1/8})}
+  ${unit({size: {xs: 1/2, sm: 1/4, lg: 1/8}})}
+`;
+
+const Content = styled.div`
   text-align: center;
+`;
+
+const QuarterContent = styled(Content)`
+  background: tomato;
+`;
+
+const EighthContent = styled(Content)`
   background: peachpuff;
 `;
 
 render(
   <Grid>
-    <Eighth> ⅛ </Eighth>
-    <Quarter> ¼ </Quarter>
-    <Eighth> ⅛ </Eighth>
+    <Eighth><EighthContent> ⅛ </EighthContent></Eighth>
+    <Quarter><QuarterContent> ¼ </QuarterContent></Quarter>
+    <Eighth><EighthContent> ⅛ </EighthContent></Eighth>
   </Grid>
 )
 ```
 
 ### Options
 
+Note all props can consume (BreakpointValueMap)[/packages/breakpoint] which allows you to specify values per breakpoint.
+
 <PropTable>
-  <PropTable.Entry name="offset" type="number" defaultValue={0} description="The size of the grid unit offset as a fraction"/>
-  <PropTable.Entry name="size" type="number" defaultValue={1} description="The size of the grid unit as a fraction"/>
+  <PropTable.Entry name="offset" type="number | BreakpointValueMap<number>" defaultValue={0} description="The size of the grid unit offset as a fraction"/>
+  <PropTable.Entry name="size" type="number | BreakpointValueMap<number>" defaultValue={1} description="The size of the grid unit as a fraction"/>
 </PropTable>
 
 ## Component
@@ -50,18 +60,32 @@ render(
 import Grid from '@lendi-ui/grid';
 ```
 
-```jsx
-<Grid>
-  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
-  <Grid.Unit offset={1/4} size={1/4}> ¼ </Grid.Unit>
-  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
-</Grid>
+```js
+const Content = styled.div`
+  text-align: center;
+`;
+
+const QuarterContent = styled(Content)`
+  background: tomato;
+`;
+
+const EighthContent = styled(Content)`
+  background: peachpuff;
+`;
+
+render(
+  <Grid>
+    <Grid.Unit size={1/8}><EighthContent> ⅛ </EighthContent></Grid.Unit>
+    <Grid.Unit offset={1/4} size={1/4}><QuarterContent> ¼ </QuarterContent></Grid.Unit>
+    <Grid.Unit size={1/8}><EighthContent> ⅛ </EighthContent></Grid.Unit>
+  </Grid>
+);
 ```
 
 ### Properties
 
 <PropTable>
-  <PropTable.Entry name="offset" type="number" defaultValue={0} description="The size of the grid unit offset as a fraction"/>
-  <PropTable.Entry name="size" type="number" defaultValue={1} description="The size of the grid unit as a fraction"/>
+  <PropTable.Entry name="offset" type="number | BreakpointValueMap<number>" defaultValue={0} description="The size of the grid unit offset as a fraction"/>
+  <PropTable.Entry name="size" type="number | BreakpointValueMap<number>" defaultValue={1} description="The size of the grid unit as a fraction"/>
 </PropTable>
 

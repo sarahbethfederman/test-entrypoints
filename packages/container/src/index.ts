@@ -1,11 +1,19 @@
-import styled, { css } from 'styled-components';
+import { gte, map } from '@lendi-ui/breakpoint';
 import { mx } from '@lendi-ui/spacing';
+import styled, { css } from 'styled-components';
+import { marginX, responsiveMaxWidth } from './tokens';
 
 export const container = () => css`
   box-sizing: border-box;
-  max-width: 75rem;
-  width: 100%;
-  ${mx('auto')};
+  margin: auto ${marginX};
+
+  ${map(responsiveMaxWidth, (value) => `width: ${value}`)};
+
+  width: calc(100% - ${marginX} * 2);
+
+  ${gte('tablet')`
+    ${mx('auto')};
+  `};
 `;
 
 const Container = styled.div`

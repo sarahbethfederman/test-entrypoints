@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { mount } from 'enzyme';
 import { container } from '.';
+import { marginX } from './tokens';
 
 describe('container()', () => {
   it('should have a max width', () => {
@@ -9,9 +10,7 @@ describe('container()', () => {
       ${container()};
     `;
     const element = mount(<Component />);
-    expect(element).toHaveStyleRule('width', '100%');
-    expect(element).toHaveStyleRule('max-width', '75rem');
-    expect(element).toHaveStyleRule('margin-left', 'auto');
-    expect(element).toHaveStyleRule('margin-right', 'auto');
+    expect(element).toHaveStyleRule('width', `calc(100% - ${marginX} * 2)`);
+    expect(element).toHaveStyleRule('margin', `auto ${marginX}`);
   });
 });

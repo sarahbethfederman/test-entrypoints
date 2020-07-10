@@ -12,26 +12,33 @@ import { grid } from '@lendi-ui/grid';
 
 ```js
 const Grid = styled.div`
-  ${grid({halign: 'justify-center'})}
+  ${grid({halign: 'justify-center'})};
 `;
 
 const Quarter = styled.div`
-  ${unit({size: 1/4})}
-  text-align: center;
-  background: tomato;
+  ${unit({size: 1/4})};
 `;
 
 const Eighth = styled.div`
-  ${unit({size: 1/8})}
+  ${unit({size: 1/8})};
+`;
+
+const QuarterContent = styled.div`
+  text-align: center;
+  background: tomato;
+  ${body({size: 'xl'})};
+`;
+
+const EighthContent = styled.div`
   text-align: center;
   background: peachpuff;
 `;
 
 render(
   <Grid>
-    <Eighth> ⅛ </Eighth>
-    <Quarter> ¼ </Quarter>
-    <Eighth> ⅛ </Eighth>
+    <Eighth><EighthContent> ⅛ </EighthContent></Eighth>
+    <Quarter><QuarterContent> ¼ </QuarterContent></Quarter>
+    <Eighth><EighthContent> ⅛ </EighthContent></Eighth>
   </Grid>
 )
 ```
@@ -39,10 +46,11 @@ render(
 ### Options
 
 <PropTable>
-  <PropTable.Entry name="halign" type={`"left" | "center" | "right" | "justify" | "justify-center"`} defaultValue="left" description="Align grid units horizontally"/>
-  <PropTable.Entry name="valign" type={`"top" | "bottom" | "center" | "stretch"`} defaultValue="stretch" description="Align grid units vertically"/>
-  <PropTable.Entry name="reverse" type="boolean" defaultValue={false} description="Reverse the grid units"/>
-  <PropTable.Entry name="wrap" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="halign" type={`"left" | "center" | "right" | "justify" | "justify-center" | BreakpointValueMap<"left" | "center" | "right" | "justify" | "justify-center">`} defaultValue="left" description="Align grid units horizontally"/>
+  <PropTable.Entry name="valign" type={`"top" | "bottom" | "center" | "stretch" | BreakpointValueMap<"top" | "bottom" | "center" | "stretch">`} defaultValue="stretch" description="Align grid units vertically"/>
+  <PropTable.Entry name="reverse" type="boolean | BreakpointValueMap<boolean>" defaultValue={false} description="Reverse the grid units"/>
+  <PropTable.Entry name="wrap" type="boolean | BreakpointValueMap<boolean>" defaultValue={true} description="Whether to wrap the grid units if they total more than 100%" />
+  <PropTable.Entry name="gutter" type="SpacingName | string | BreakpointValueMap<SpacingName | string>" defaultValue="{ xs: '0.5rem', md: '0.625rem', lg: '0.75rem' }" description="The margins between grid units" />
 </PropTable>
 
 ## Component
@@ -51,20 +59,42 @@ render(
 import Grid from '@lendi-ui/grid';
 ```
 
-```jsx
-<Grid halign="justify-center">
-  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
-  <Grid.Unit size={1/4}> ¼ </Grid.Unit>
-  <Grid.Unit size={1/8}> ⅛ </Grid.Unit>
-</Grid>
+```js
+const HalfContent = styled.div`
+  text-align: center;
+  background: tomato;
+  ${body({size: 'xl'})};
+`;
+
+const QuarterContent = styled.div`
+  text-align: center;
+  background: peachpuff;
+`;
+
+render(
+  <>
+    <Grid halign={{sm: "right", xl: "justify-center"}}>
+      <Grid.Unit size={1/4}><QuarterContent> ¼ </QuarterContent></Grid.Unit>
+      <Grid.Unit size={1/2}><HalfContent> ½ </HalfContent></Grid.Unit>
+      <Grid.Unit size={1/4}><QuarterContent> ¼ </QuarterContent></Grid.Unit>
+    </Grid>
+
+    <Grid halign={{sm: "right", xl: "justify-center"}} gutter={{xs: 'nil', md: 'md', xl: 'xl'}}>
+      <Grid.Unit size={1/4}><QuarterContent> ¼ </QuarterContent></Grid.Unit>
+      <Grid.Unit size={1/2}><HalfContent> ½ </HalfContent></Grid.Unit>
+      <Grid.Unit size={1/4}><QuarterContent> ¼ </QuarterContent></Grid.Unit>
+    </Grid>
+  </>
+);
 ```
 
 ### Options
 
 <PropTable>
-  <PropTable.Entry name="halign" type={`"left" | "center" | "right" | "justify" | "justify-center"`} defaultValue="left" description="Align grid units horizontally"/>
-  <PropTable.Entry name="valign" type={`"top" | "bottom" | "center" | "stretch"`} defaultValue="stretch" description="Align grid units vertically"/>
-  <PropTable.Entry name="reverse" type="boolean" defaultValue={false} description="Reverse the grid units"/>
-  <PropTable.Entry name="wrap" type="boolean" defaultValue={true} />
+  <PropTable.Entry name="halign" type={`"left" | "center" | "right" | "justify" | "justify-center" | BreakpointValueMap<"left" | "center" | "right" | "justify" | "justify-center">`} defaultValue="left" description="Align grid units horizontally"/>
+  <PropTable.Entry name="valign" type={`"top" | "bottom" | "center" | "stretch" | BreakpointValueMap<"top" | "bottom" | "center" | "stretch">`} defaultValue="stretch" description="Align grid units vertically"/>
+  <PropTable.Entry name="reverse" type="boolean | BreakpointValueMap<boolean>" defaultValue={false} description="Reverse the grid units"/>
+  <PropTable.Entry name="wrap" type="boolean | BreakpointValueMap<boolean>" defaultValue={true} description="Whether to wrap the grid units if they total more than 100%" />
+  <PropTable.Entry name="gutter" type="SpacingName | string | BreakpointValueMap<SpacingName | string>" defaultValue="{ xs: '0.5rem', md: '0.625rem', lg: '0.75rem' }" description="The margins between grid units" />
 </PropTable>
 

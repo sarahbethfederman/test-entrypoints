@@ -332,6 +332,13 @@
   resolved "https://registry.yarnpkg.com/@lendi-ui/breakpoint/-/breakpoint-3.0.0.tgz#736feb01407e7ab0d231329d271b11db7bda5cb4"
   integrity sha512-94vpt5wub/XfHlsiTw0A4nhZPtwsXFIzQW/AOVa11g/xlWreSkiz+HU2GNOb1X1UIVC6yuYoC73eqaLl/FVoqg==
 
+"@lendi-ui/breakpoint@^4.0.0", "@lendi-ui/breakpoint@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/breakpoint/-/breakpoint-4.1.0.tgz#f33a5462715b6c81be8f7adcc2b5dfb12d1a696e"
+  integrity sha512-i+3PDnALiWrMcQL/Wqy6zxVGilfckSzarMwa2DnvDmWnZoVeqz3lMnNJXdpSc7IF9p01+ft/3ecEbX2pCkbq3Q==
+  dependencies:
+    lodash "^4.17.15"
+
 "@lendi-ui/button@^5.0.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/button/-/button-5.4.0.tgz#ddaef8be301d7f00d55d92663e046940f510db4c"
@@ -371,6 +378,13 @@
   dependencies:
     "@lendi-ui/breakpoint" "^3.0.0"
 
+"@lendi-ui/container@^5.0.0":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/container/-/container-5.0.1.tgz#9024a9cc3426f0ac1e8337d9911b21674f8aa90c"
+  integrity sha512-rFUpjDGJ71K2pxHNAT1rKZT4Js5/p8QXNjuRT27mWso472i2hzPCSUMDGsC6xaq1Ejxig80Rop10BudPyOA6kw==
+  dependencies:
+    "@lendi-ui/spacing" "^6.0.0"
+
 "@lendi-ui/depth@^2.0.0", "@lendi-ui/depth@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/depth/-/depth-2.1.0.tgz#be11875f3d8c15a351fdcfbb7f00976cefdd1101"
@@ -394,6 +408,13 @@
   integrity sha512-r2GMoMhaKfmSbh6XFhbYiz9CE6FuxtmZ4hy1k4tRj4t4a2CJO6HQYzSPjsQ0oybNQoQawzDITY/P8dW7IZBwgw==
   dependencies:
     "@lendi-ui/breakpoint" "^2.0.0"
+
+"@lendi-ui/grid@^3.0.0":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/grid/-/grid-3.0.1.tgz#53a33271043fc409e4d94238a93c1851540ae3a5"
+  integrity sha512-8xyelFj8R+O4H0QvqkYrGmRD8lLFQzZLnhRi+MVinUR7tTRNS5/4NIxomocmXMujC+Lf0jYxqpjjNF7dYowOKw==
+  dependencies:
+    "@lendi-ui/breakpoint" "^4.0.0"
 
 "@lendi-ui/icon@^7.0.0":
   version "7.2.0"

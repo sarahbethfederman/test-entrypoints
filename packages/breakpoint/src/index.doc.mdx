@@ -8,6 +8,18 @@
 | lg      | 992px   |
 | xl      | 1200px  |
 
+## LUI and BreakpointValueMatch
+
+Many LUI components have props that are responsive compatible. They accept an object of type BreakpointValueMatch. This allows you to, instead of providing a single value for the prop, provide a value per breakpoint.
+
+For example our grid unit can be written:
+
+```tsx
+<Grid.Unit size={{xs: 1, md: 1 / 2, xl: 1 / 4}}>{children}</Grid.Unit>
+```
+
+This will apply the desired values using our `gte` (greater than or equal to) media query function.
+
 ## legacy breakpoints
 
 For versions ^5.0.0 we will continue to support our legacy breakpoints. However it is recommended to modify your code to use the new breakpoints as soon as possible as they will not be supported in the future.
@@ -28,7 +40,7 @@ If you need to update the breakpoint as the window changes you can use the helpe
 
 When testing with `getBreakpoint` or `useBreakpoint` it is advised to mock `@lendi-ui/breakpoint` as `window.matchMedia` is not available on the JSDOM. If you need to test resize functionality, you can instead add something like the following code to your tests to mock the `window.matchMedia` function:
 
-```jsx
+```ts
 import { match } from 'css-mediaquery';
 
 const width: number = 1201
