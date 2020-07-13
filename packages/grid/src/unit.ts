@@ -14,7 +14,7 @@ function offsetMixin({ offset }: { offset?: BreakpointValue<Offset> | Breakpoint
     return undefined;
   }
   return map(offset, (value) => {
-    if (value) {
+    if (value !== undefined) {
       const pct = Math.round(value * 100 * 10000) / 10000; // round to 4 decimal places
       return `margin-left: ${pct}%;`;
     }

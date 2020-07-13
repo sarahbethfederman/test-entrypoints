@@ -1,3 +1,6 @@
+## [4.0.1] 2020-07-13
+- Fixed bug in units where offset of zero is returned undefined
+
 ## [4.0.0] 2020-07-01
 - Grid now implements its own gutters
 

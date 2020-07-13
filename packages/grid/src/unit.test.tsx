@@ -40,6 +40,16 @@ describe('unit()', () => {
       expect(element).toHaveStyleRule('max-width', '20%');
     });
 
+    it.each([
+      [1, '100%'],
+      [1 / 2, '50%'],
+      [1 / 4, '25%'],
+      [0, '0%'],
+    ])('should render offset of %d correctly', ([val, result]) => {
+      const element = mount(<Unit offset={val} />);
+      expect(element).toHaveStyleRule('margin-left', result);
+    });
+
     it('should render correctly across breakpoints', () => {
       const element = mount(<Unit size={{ mobile: 1, tablet: 1 / 2, desktop: 1 / 4 }} />);
       expect(element).toHaveStyleRule('max-width', '100%', {
