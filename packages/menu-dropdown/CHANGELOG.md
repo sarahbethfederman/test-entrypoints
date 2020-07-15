@@ -1,3 +1,6 @@
+## [4.1.1] - 2020-7-15 - [RD-926](https://creditandfinance.atlassian.net/browse/RD-926)
+- fixed the issue that click event didn't work on span
+
 ## [4.1.0] - 2019-11-28 - [HUB-707](https://creditandfinance.atlassian.net/browse/HUB-707)
 ### Changed
 - Added customisability to all of the components through LUI global props and onClicks

@@ -33,6 +33,9 @@ export const ItemWrapper = styled.div`
   &:hover {
     ${fg('shade.0')} ${bg('secondary.500')};
   }
+  span {
+    pointer-events: none;
+  }
 `;
 
 export const IconWrapper = styled.div`
