@@ -7,7 +7,7 @@ export const container = () => css`
   box-sizing: border-box;
   margin: auto ${marginX};
 
-  ${map(responsiveMaxWidth, (value) => `width: ${value}`)};
+  ${map(responsiveMaxWidth, (value) => (value === undefined ? '' : `width: ${value}`))};
 
   width: calc(100% - ${marginX} * 2);
 

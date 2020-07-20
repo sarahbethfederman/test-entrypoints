@@ -1,3 +1,6 @@
+## [6.0.1] 2020-07-20
+- Container doesn't map with `width: undefined`.
+
 ## [6.0.0] 2020-07-01
 - Container is now responsive
 - Container applies a margin when full width
