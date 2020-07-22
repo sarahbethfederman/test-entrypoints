@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/spacing",
-  "version": "6.0.1",
+  "version": "7.0.0",
   "description": "Utilities for spacing.",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
@@ -10,12 +10,12 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "styled-components": "^4",
-    "@types/styled-components": "^4.1.18"
+    "@types/styled-components": "^4.1.18",
+    "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^4.0.0",
-    "@lendi-ui/utils": "^4.0.0"
+    "@lendi-ui/breakpoint": "^5.0.0",
+    "@lendi-ui/utils": "^5.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

@@ -1,3 +1,6 @@
+## [5.0.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
+- Update dependencies (Breakpoint & Utils)
+
 ## [4.1.1] 2020-06-26 [Release Notes]
 - Changed line-height of 'xl' on Body
 

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { ThemeProvider, createGlobalStyle, GlobalStyleComponent, DefaultTheme } from 'styled-components';
+import { Breakpoint } from '@lendi-ui/breakpoint';
 import { theme } from './theme/lendi';
 import { ThemeMap } from './types';
 
@@ -29,7 +30,7 @@ const GlobalStyle: GlobalStyleComponent<{ theme: ThemeMap }, DefaultTheme> = cre
     --lendi-ui-size: 14px;
   }
 
-  @media (min-width: 36rem) {
+  @media (min-width: ${Breakpoint.md}) {
     :root {
       --lendi-ui-size: 16px;
     }

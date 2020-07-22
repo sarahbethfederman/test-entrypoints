@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "source": "src/index.ts",
   "main": "dist/cjs/index.js",
   "types": "dist/types/index.d.ts",
@@ -9,17 +9,16 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^4.0.0",
+    "@lendi-ui/breakpoint": "^5.0.0",
     "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/spacing": "^6.0.0",
-    "@lendi-ui/utils": "^4.0.0"
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/utils": "^5.0.0"
   },
   "scripts": {
     "build:cjs": "tsc --project tsconfig.cjs.json",

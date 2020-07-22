@@ -1,5 +1,8 @@
 # Changelog - @lendi-ui/utils
 
+## [5.0.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
+- Update dependencies (Theme & Breakpoint)
+
 ## [4.1.0] 2020-3-06 - [2020-3-06] - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
 ### Added 
 - Added one exported constant value for LUI line height.

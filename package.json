@@ -68,7 +68,7 @@
     "create-component": "yo @lendi/create-lui-component && rm packages/.yo-rc.json",
     "format:fix": "prettier --write '**/*.{json,js,jsx,ts,tsx,md}' --loglevel silent",
     "list": "lerna ls",
-    "prebuild": "yarn build:assets && yarn build:theme && yarn build:utils && yarn build:breakpoint && yarn build:spacing",
+    "prebuild": "yarn build:assets && yarn build:breakpoint && yarn build:theme && yarn build:utils && yarn build:spacing",
     "precommit": "yarn run format:fix && yarn run test -o",
     "prepush": "yarn run precommit && yarn run remove:duplicates && yarn run check",
     "remove:duplicates": "yarn-deduplicate",

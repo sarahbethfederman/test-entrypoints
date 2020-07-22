@@ -1,3 +1,6 @@
+## [6.1.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
+- Update dependencies (Spacing)
+
 ## [6.0.1] 2020-07-20
 - Container doesn't map with `width: undefined`.
 

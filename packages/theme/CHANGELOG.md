@@ -1,3 +1,6 @@
+## [9.1.0] 2020-06-29 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
+- Change `--lend-ui-size` to use new t-shirt breakpoints.
+
 ## [9.0.0] 2020-06-29
 ### Changed
 - lendi-ui-size root size breakpoint changed to 576px instead of 577px

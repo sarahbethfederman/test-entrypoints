@@ -504,6 +504,14 @@
     "@lendi-ui/breakpoint" "^3.0.0"
     "@lendi-ui/utils" "^3.0.0"
 
+"@lendi-ui/spacing@^6", "@lendi-ui/spacing@^6.0.0", "@lendi-ui/spacing@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/spacing/-/spacing-6.0.1.tgz#88d32095f117cd2f2ae0a726cbdecbc9ee86ac77"
+  integrity sha512-hBRPBOBCi8pJlFyNjQF6VUsQxfj3mj8XCNuUsumIewfGSidtDXinqdAGGs7lyTtHW5MkF3ILb+Eh6AmvD+XUeA==
+  dependencies:
+    "@lendi-ui/breakpoint" "^4.0.0"
+    "@lendi-ui/utils" "^4.0.0"
+
 "@lendi-ui/spinner@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/spinner/-/spinner-3.0.0.tgz#f34db2f8ba0342456eb07d28580ebc8dd86a62b1"
@@ -545,6 +553,16 @@
     "@lendi-ui/spacing" "^5.0.0"
     "@lendi-ui/utils" "^3.0.0"
 
+"@lendi-ui/typography@^4.0.0", "@lendi-ui/typography@^4.0.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/typography/-/typography-4.1.1.tgz#98f64470d51c664b774c17244c1920910fff71e6"
+  integrity sha512-1swTxfEtZIhDvesPH1EnJxVLDBVNsjj2Ez9keIp6dW24ib+976qBa0oLtnvrFwJiEAqSEAihq0YJEtNrDDuVuQ==
+  dependencies:
+    "@lendi-ui/breakpoint" "^4.0.0"
+    "@lendi-ui/color" "^5.0.0"
+    "@lendi-ui/spacing" "^6.0.0"
+    "@lendi-ui/utils" "^4.0.0"
+
 "@lendi-ui/utils@^2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@lendi-ui/utils/-/utils-2.5.0.tgz#ca536021d1edf7e6b3c94eea2a4ab3f5b7ef7f39"
@@ -562,6 +580,17 @@
   dependencies:
     "@lendi-ui/breakpoint" "^3.0.0"
     "@lendi/lendi-analytics-package" "^1.0.0"
+    prop-types "^15.7.2"
+
+"@lendi-ui/utils@^4.0.0", "@lendi-ui/utils@^4.0.1", "@lendi-ui/utils@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@lendi-ui/utils/-/utils-4.1.0.tgz#2082255ee1226a44b534b33001a48b565308b1ff"
+  integrity sha512-szaFlI++V8Tjz+q6rZHxuLndNrDoEzRqDR6/EW9wpZ3Lo7k5jTNRfztljyLvVNmnP3CMJ+UFRboJihprT59JkQ==
+  dependencies:
+    "@lendi-ui/breakpoint" "^4.0.0"
+    "@lendi/lendi-analytics-package" "^1.0.1"
+    "@types/lodash" "^4.14.144"
+    lodash "^4.17.15"
     prop-types "^15.7.2"
 
 "@lendi/aws-cloudformation@^2.14.0":
