@@ -1,3 +1,6 @@
+## [4.0.2] 2020-07-22
+- Fixed bug in grid where gutter using LUI spacing was doubled
+
 ## [4.0.1] 2020-07-13
 - Fixed bug in units where offset of zero is returned undefined
 

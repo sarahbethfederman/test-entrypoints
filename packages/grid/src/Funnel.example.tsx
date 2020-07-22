@@ -53,7 +53,7 @@ export default () => (
 
           <Spacer marginTop="sm" />
 
-          <Grid gutter="xxs">
+          <Grid gutter="sm">
             <Grid.Unit size={1 / 2}>
               <Input isFullWidth onChange={(e) => e} />
             </Grid.Unit>

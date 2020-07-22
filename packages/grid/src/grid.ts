@@ -140,14 +140,15 @@ function isSpacingName(gutter: Gutter | undefined): gutter is SpacingName {
 
 function gutterMixin({ gutter = defaultGutter }: { gutter?: BreakpointValue<Gutter> | BreakpointValueMap<Gutter> }) {
   return map(gutter, (value) => {
+    if (value === undefined) return;
     const val = isSpacingName(value) ? Spacing[value] : value;
     return `
-        margin-left: calc(${val} * -1);
-        margin-right: calc(${val} * -1);
+        margin-left: calc(${val} / 2 * -1);
+        margin-right: calc(${val} / 2 * -1);
 
         & > * {
-          padding-left: ${val};
-          padding-right: ${val};
+          padding-left: calc(${val} / 2);
+          padding-right: calc(${val} / 2);
         }
       `;
   });
