@@ -1,3 +1,7 @@
+## [6.0.0] 2020-7-22
+### Fix - Update 
+- Fix Tabs gutter & Update dependencies
+
 ## [5.0.0] - 2019-11-26 - [HUB-708(https://creditandfinance.atlassian.net/browse/HUB-708)
 ### Fixes
 - As per new Design,
