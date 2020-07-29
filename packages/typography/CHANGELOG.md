@@ -1,3 +1,6 @@
+## [5.0.1] 2020-07-21 [RD-517](https://creditandfinance.atlassian.net/browse/RD-517)
+- Added prop 'target' on Link
+
 ## [5.0.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
 - Update dependencies (Breakpoint & Utils)
 
