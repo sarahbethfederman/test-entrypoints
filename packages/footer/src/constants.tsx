@@ -45,7 +45,7 @@ export const MAIN_PAGES = [
       },
       {
         label: 'Borrowing power calculator',
-        url: '/home-loans/calculators/borrowing-power-calculator/',
+        url: '/home-loans/basics/borrowing-power/',
       },
       {
         label: 'Offset calculator',

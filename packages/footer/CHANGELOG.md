@@ -1,3 +1,7 @@
+## [4.2.1] - 2020-07-27 - [FUNNEL-1620](https://creditandfinance.atlassian.net/browse/FUNNEL-1620)
+### Updated
+- Update funnel borrowing power URL
+
 ## [4.2.0] - 2020-04-27 - [AC-152](https://creditandfinance.atlassian.net/browse/AC-152)
 ### Updated
 - Open career link to in new tab
