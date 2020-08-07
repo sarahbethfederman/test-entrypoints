@@ -1,3 +1,7 @@
+## [5.1.0] 2020-08-06
+### Changed
+- Added breakpoint parameter to mapValueToStyle on map function
+
 ## [5.0.0] 2020-06-26
 ### Changed
 - Now offering tshirt breakpoints xs, sm, md, lg, and xl. Still backwards compatible to old breakpoints

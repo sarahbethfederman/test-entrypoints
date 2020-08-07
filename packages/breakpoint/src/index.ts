@@ -21,7 +21,7 @@ export type BreakpointName = keyof typeof Breakpoint;
 export type BreakpointValue<T> = T;
 export type BreakpointValueMap<T> = Partial<{ [name in BreakpointName]: BreakpointValue<T> }>;
 
-export type MapValueToStyleFunction<V> = (value?: BreakpointValue<V>) => any; // FIXME: figure out what type this should be
+export type MapValueToStyleFunction<V> = (value?: BreakpointValue<V>, breakpoint?: BreakpointName) => any; // FIXME: figure out what type this should be
 
 export function gte(breakpoint: BreakpointName) {
   return (strings: TemplateStringsArray, ...interpolations: SimpleInterpolation[]) => {
@@ -72,7 +72,7 @@ export function map<V extends string | number | boolean>(
   return breakpoints.reduce<SimpleInterpolation[]>((accum, breakpoint) => {
     const template = gte(breakpoint);
     const value = values[breakpoint];
-    const style = mapValueToStyle(value);
+    const style = mapValueToStyle(value, breakpoint);
     return accum.concat(template([] as any, style));
   }, ([] as SimpleInterpolation[]).concat(mapValueToStyle(undefined)));
 }

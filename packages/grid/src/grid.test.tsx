@@ -150,6 +150,11 @@ describe('grid()', () => {
       expect(element).toHaveStyleRule('flex-wrap', 'nowrap');
     });
 
+    it('should render correctly when true and reversed with breakpoints', () => {
+      const element = mount(<Grid wrap={{ lg: true }} reverse={{ lg: true }} />);
+      expect(element).toHaveStyleRule('flex-wrap', 'wrap-reverse');
+    });
+
     it('should render correctly across breakpoints', () => {
       const element = mount(<Grid wrap={{ mobile: true, tablet: false, desktop: true }} />);
       expect(element).toHaveStyleRule('flex-wrap', 'wrap', {

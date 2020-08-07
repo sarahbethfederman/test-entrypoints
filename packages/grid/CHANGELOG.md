@@ -1,3 +1,6 @@
+## [4.0.3] 2020-08-06
+- Fixed bug in grid where wrap wasn't using reverse breakpoint value
+
 ## [4.0.2] 2020-07-22
 - Fixed bug in grid where gutter using LUI spacing was doubled
 

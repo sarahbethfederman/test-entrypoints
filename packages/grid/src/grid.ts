@@ -123,8 +123,9 @@ function wrapMixin({
   if (wrap === undefined) {
     return 'flex-wrap: wrap;';
   }
-  return map(wrap, (value = true) => {
-    if (value && reverse) {
+  return map(wrap, (value = true, breakpoint) => {
+    const reverseVal = typeof reverse === 'object' && breakpoint ? reverse[breakpoint] : reverse;
+    if (value && reverseVal) {
       return 'flex-wrap: wrap-reverse;';
     } else if (value === false) {
       return 'flex-wrap: nowrap;';
