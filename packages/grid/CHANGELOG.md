@@ -1,3 +1,6 @@
+## [4.0.4] 2020-08-12
+- Make the Grid full width
+
 ## [4.0.3] 2020-08-06
 - Fixed bug in grid where wrap wasn't using reverse breakpoint value
 

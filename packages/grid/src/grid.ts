@@ -158,6 +158,7 @@ function gutterMixin({ gutter = defaultGutter }: { gutter?: BreakpointValue<Gutt
 export function grid(props: GridOptions = {}) {
   return css`
     display: flex;
+    width: 100%;
     ${halignMixin(props)};
     ${valignMixin(props)};
     ${reverseMixin(props)};
