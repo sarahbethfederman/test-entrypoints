@@ -1,3 +1,6 @@
+## [4.0.5] 2020-08-17
+- Fix the Grid full width
+
 ## [4.0.4] 2020-08-12
 - Make the Grid full width
 

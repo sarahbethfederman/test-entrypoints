@@ -144,6 +144,7 @@ function gutterMixin({ gutter = defaultGutter }: { gutter?: BreakpointValue<Gutt
     if (value === undefined) return;
     const val = isSpacingName(value) ? Spacing[value] : value;
     return `
+        width: calc(100% + ${val});
         margin-left: calc(${val} / 2 * -1);
         margin-right: calc(${val} / 2 * -1);
 
@@ -158,7 +159,6 @@ function gutterMixin({ gutter = defaultGutter }: { gutter?: BreakpointValue<Gutt
 export function grid(props: GridOptions = {}) {
   return css`
     display: flex;
-    width: 100%;
     ${halignMixin(props)};
     ${valignMixin(props)};
     ${reverseMixin(props)};
