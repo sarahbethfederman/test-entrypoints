@@ -3,8 +3,13 @@ import { mount } from 'enzyme';
 import Logo from '.';
 import Theme from '@lendi-ui/theme';
 import { theme as domainTheme } from '@lendi-ui/theme-domain';
-import { LendiLogo, DomainLogo, DomainLogomark, LendiLogomark, DomainTeamViewLogo } from '@lendi-ui/icon';
-import { element } from 'prop-types';
+import {
+  LendiLogo,
+  DomainHomeLoansLogo,
+  DomainLogomark,
+  LendiLogomark,
+  DomainHomeLoansTeamViewLogo,
+} from '@lendi-ui/icon';
 
 /**
  * Test case Logo
@@ -68,7 +73,7 @@ describe('Logo', () => {
       );
     });
     it('should render domain logo', () => {
-      expect(Wrapper.find(DomainLogo).length).toEqual(1);
+      expect(Wrapper.find(DomainHomeLoansLogo).length).toEqual(1);
     });
   });
   describe('test native props and Standard HTML Attributes', () => {
@@ -123,7 +128,7 @@ describe('Logo', () => {
       );
     });
     it('should render domain teamview logo', () => {
-      expect(Wrapper.find(DomainTeamViewLogo).length).toEqual(1);
+      expect(Wrapper.find(DomainHomeLoansTeamViewLogo).length).toEqual(1);
     });
   });
 });

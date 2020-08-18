@@ -1,4 +1,8 @@
-## [9.5.0] - 2020-04-28 - [HUB-242][https://creditandfinance.atlassian.net/browse/SUB-242]
+## [9.5.1] - 2020-08-18 - [SUB-461][https://creditandfinance.atlassian.net/browse/SUB-461]
+### Added
+- Added Domain Home Loans logos
+
+## [9.5.0] - 2020-04-28 - [SUB-242][https://creditandfinance.atlassian.net/browse/SUB-242]
 ### Added
 - Added autobot icon
 

@@ -1,3 +1,7 @@
+## [6.1.1] - 2020-08-18 - [SUB-461][https://creditandfinance.atlassian.net/browse/SUB-461]
+### Changed
+- Updated Domain Logo from Domain Loan Finder to Domain Home Loans
+
 ## [6.1.0] - 2020-03-23 - [FUNNEL-1081](https://creditandfinance.atlassian.net/browse/FUNNEL-1081)
 ### Changed
 - Updated document

@@ -1,7 +1,14 @@
 import * as React from 'react';
 import { withTheme } from 'styled-components';
 import { ThemeMap } from '@lendi-ui/theme';
-import { LendiLogo, LuiLogo, DomainLogo, LendiLogomark, DomainLogomark, DomainTeamViewLogo } from '@lendi-ui/icon';
+import {
+  LendiLogo,
+  LuiLogo,
+  DomainHomeLoansLogo,
+  LendiLogomark,
+  DomainLogomark,
+  DomainHomeLoansTeamViewLogo,
+} from '@lendi-ui/icon';
 
 export type Variant = 'dark' | 'light';
 
@@ -41,9 +48,17 @@ export class Logo extends React.Component<LogoProps> {
     } else if (logoName === 'LendiLogo' && !isExpanded) {
       return <LendiLogomark width={width} height={height} {...otherProps} />;
     } else if (logoName === 'DomainLogo') {
-      return <DomainLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+      return <DomainHomeLoansLogo color={color} width={width} height={height} className={className} {...otherProps} />;
     } else if (logoName === 'DomainTeamViewLogo' && isExpanded) {
-      return <DomainTeamViewLogo color={color} width={width} height={height} className={className} {...otherProps} />;
+      return (
+        <DomainHomeLoansTeamViewLogo
+          color={color}
+          width={width}
+          height={height}
+          className={className}
+          {...otherProps}
+        />
+      );
     } else if (logoName === 'DomainTeamViewLogo' && !isExpanded) {
       return <DomainLogomark width={width} height={height} {...otherProps} />;
     } else if (logoName === 'LUIlogo') {
