@@ -1,3 +1,7 @@
+## [9.5.2] - 2020-08-27 - [SUB-601][https://creditandfinance.atlassian.net/browse/SUB-601]
+### Updated
+- Updated Domain Home Loans for Team View
+
 ## [9.5.1] - 2020-08-18 - [SUB-461][https://creditandfinance.atlassian.net/browse/SUB-461]
 ### Added
 - Added Domain Home Loans logos
