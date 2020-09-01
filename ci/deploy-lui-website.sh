@@ -3,10 +3,10 @@ source ./ci/utils/install.sh
 
 ENVIRONMENT=$1
 
-if [ "$BITBUCKET_BRANCH" == "master" ]; then
+if [ "$BUILDKITE_BRANCH" == "master" ]; then
     tag="latest"
 else
-    tag=$BITBUCKET_BRANCH
+    tag=$BUILDKITE_BRANCH
 fi
 
 echo "ENVIRONMENT: $ENVIRONMENT"

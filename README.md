@@ -1,6 +1,6 @@
 # LUI (Lendi UI)
 
-https://lendi.design
+https://lendi.design [![Build status](https://badge.buildkite.com/e0b109f38e66234d41546957bd37139b78445efab56659266d.svg)](https://buildkite.com/lendi-pty-ltd/lui)
 
 ![King Louie](https://vignette.wikia.nocookie.net/ryans-funny-parts/images/7/71/King-louie.jpg/revision/latest?cb=20160613001549)
 
