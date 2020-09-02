@@ -7,32 +7,31 @@ import { deriveSize } from '@lendi-ui/utils';
 import { select } from '@lendi-ui/theme';
 
 export const MenuWrapper = styled.div`
-    width: 100%;
-    display; flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: ${select('borderRadius')};
-    ${depth(1)} ${my('xs')}
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: ${select('borderRadius')};
+  ${depth(1)} ${my('xs')}
 `;
 
 export const HeadWrapper = styled.button`
-    appearance: none;
-    border: none;
-    width: 100%;
-    background: inherit;
-    cursor: pointer;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    ${pl('xxs')} ${pr('xs')} ${py('xs')}
+  appearance: none;
+  border: none;
+  width: 100%;
+  background: inherit;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  ${pl('xxs')} ${pr('xs')} ${py('xs')}
     ${bg('secondary.500')}
     ${({ isOpen }: { isOpen: boolean }) =>
-      isOpen
-        ? `border-radius: ${select('borderRadius')} ${select('borderRadius')} 0 0;`
-        : `border-radius: ${select('borderRadius')};`}
+    isOpen
+      ? `border-radius: ${select('borderRadius')} ${select('borderRadius')} 0 0;`
+      : `border-radius: ${select('borderRadius')};`}
 `;
 
 export const MainWrapper = styled.div`

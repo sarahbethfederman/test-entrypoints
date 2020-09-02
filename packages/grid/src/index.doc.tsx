@@ -11,7 +11,7 @@ const Content = styled.code`
   ${bg('primary.300')}
   ${body({ size: 'xs', align: 'center' })}
   font-weight: bold;
-  border: 1px solid ${color('shade.0')}
+  border: 1px solid ${color('shade.0')};
 `;
 
 const Story = () => (

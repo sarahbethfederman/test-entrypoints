@@ -1,9 +1,0 @@
-{
-  "extends": "../../tsconfig.types.json",
-  "compilerOptions": {
-    "keyofStringsOnly": true, // FIXME: react-live has issues, remove when its been updated
-    "outDir": "./dist/types"
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/**/*.doc.ts", "src/**/*.doc.tsx"]
-}

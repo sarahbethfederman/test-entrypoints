@@ -2,7 +2,6 @@ const path = require('path');
 const marked = require('marked');
 const renderer = marked.Renderer();
 const webpack = require('webpack');
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WorkspaceMetadataPlugin = require('workspace-metadata-webpack-plugin').Plugin;
@@ -47,16 +46,17 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['env']],
+            rootMode: 'upward',
           },
         },
       },
+
       {
         test: /\.tsx?$/,
         use: {
-          loader: 'ts-loader',
+          loader: 'babel-loader',
           options: {
-            transpileOnly: true,
+            rootMode: 'upward',
           },
         },
       },
@@ -66,8 +66,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['env', 'react'],
-              plugins: ['transform-object-rest-spread'],
+              rootMode: 'upward',
             },
           },
           '@mdx-js/loader',
@@ -112,8 +111,8 @@ module.exports = {
       },
     }),
 
-    // delegate type-checking to a separate process for improved compile speed
-    new ForkTsCheckerWebpackPlugin(),
+    // // delegate type-checking to a separate process for improved compile speed
+    // new ForkTsCheckerWebpackPlugin(),
 
     // create the HTML file
     new HtmlWebpackPlugin({

@@ -73,7 +73,6 @@ exports[`Heading should render styles for size "lg" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -165,7 +164,6 @@ exports[`Heading should render styles for size "md" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -257,7 +255,6 @@ exports[`Heading should render styles for size "sm" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -349,7 +346,6 @@ exports[`Heading should render styles for size "xl" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -441,7 +437,6 @@ exports[`Heading should render styles for size "xs" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -533,7 +528,6 @@ exports[`Heading should render styles for size "xxs" 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}

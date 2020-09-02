@@ -1,5 +1,4 @@
-import * as React from 'react';
-import * as Fragment from 'react-dot-fragment';
+import React, { Fragment } from 'react';
 import { SidebarNav } from '../../../../../common/SidebarNav';
 import { OLD_DASHBOARD_LINK, DASHBOARD_LINK } from '../../../../../constants/links';
 

@@ -39,10 +39,7 @@ describe('AutoCompleteMenuList', () => {
 
     it('should be able to call onSelectItem', () => {
       const { onSelectItem } = props;
-      wrapper
-        .find(AutoCompleteListItem)
-        .at(0)
-        .simulate('click');
+      wrapper.find(AutoCompleteListItem).at(0).simulate('click');
       expect(onSelectItem).toHaveBeenCalled();
     });
 
@@ -58,10 +55,7 @@ describe('AutoCompleteMenuList', () => {
 
     it('should be able to call onMouseEnter', () => {
       const { onMouseEnter } = props;
-      wrapper
-        .find(AutoCompleteListItem)
-        .at(0)
-        .simulate('mouseEnter');
+      wrapper.find(AutoCompleteListItem).at(0).simulate('mouseEnter');
       expect(onMouseEnter).toHaveBeenCalledWith(0);
     });
   });

@@ -5,13 +5,14 @@ import { depth } from '@lendi-ui/depth';
 import { select } from '@lendi-ui/theme';
 
 export const Wrapper = styled.div`
-    position: relative;
-    ${px('xxs')} ${py('xxxs')} ${bg('shade.0')}
+  position: relative;
+  ${px('xxs')} ${py('xxxs')} ${bg('shade.0')}
 `;
 
 export const ItemWrapper = styled.div`
   border-radius: ${select('borderRadius')};
-  ${bg('shade.25')} :hover {
+  ${bg('shade.25')}
+  &:hover {
     ${depth(2)} ${bg('shade.0')};
   }
 `;

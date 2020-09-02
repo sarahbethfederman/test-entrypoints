@@ -4,8 +4,9 @@
     "lib": ["dom", "es2018"],
     "jsx": "react",
     "module": "commonjs",
-    "target": "es5"
-  },
-  "include": ["typings/**/*.d.ts"],
-  "exclude": ["node_modules", "packages/*/src/**/*.d.ts"]
+    "target": "es5",
+    "esModuleInterop": true,
+    "isolatedModules": true, // this is just for clarity, babel assumes this https://github.com/babel/babel/issues/11464#issuecomment-617609332
+    "baseUrl": "./"
+  }
 }

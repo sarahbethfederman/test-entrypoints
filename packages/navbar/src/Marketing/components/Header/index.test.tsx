@@ -75,12 +75,7 @@ describe('Authed Navbar', () => {
     });
 
     it('should link to the HOME_PAGE_LINK', () => {
-      expect(
-        element
-          .find(LogoLink)
-          .props()
-          .href.includes(HOME_PAGE_LINK)
-      );
+      expect(element.find(LogoLink).props().href.includes(HOME_PAGE_LINK));
     });
   });
 
@@ -105,10 +100,7 @@ describe('Authed Navbar', () => {
     });
 
     it('should run the onOpenLeftSidebar method on click', () => {
-      element
-        .find(MenuButtonWrapper)
-        .at(0)
-        .simulate('click');
+      element.find(MenuButtonWrapper).at(0).simulate('click');
       expect(mock).toBeCalled();
     });
   });
@@ -120,10 +112,7 @@ describe('Authed Navbar', () => {
         render({ onOpenLeftSidebar, onOpenRightSidebar: mock, application, isAuthenticated: true });
       });
       it('should open the onOpenRightSidebar method on click', () => {
-        element
-          .find(Button)
-          .at(0)
-          .simulate('click');
+        element.find(Button).at(0).simulate('click');
         expect(mock).toBeCalled();
       });
     });

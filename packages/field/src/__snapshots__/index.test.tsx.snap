@@ -232,7 +232,6 @@ exports[`Field should render wrapper component 1`] = `
                         "toString": [Function],
                         "warnTooManyClasses": [Function],
                         "withComponent": [Function],
-                        Symbol(Symbol.hasInstance): [Function],
                       }
                     }
                     forwardedRef={null}

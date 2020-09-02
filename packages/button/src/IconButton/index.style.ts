@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { select } from '@lendi-ui/theme';
 import { deriveSize, normalise } from '@lendi-ui/utils';
-import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import type { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 import { color } from '@lendi-ui/color';
 
 export type Size = 'xs' | 'sm' | 'md' | 'lg';

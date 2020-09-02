@@ -67,7 +67,9 @@ export const heading = (options: HeadingOptions) => {
     ${color && fg(color)}
     ${align && alignMixin(align)}
     ${headingSizeMixin(size)}
-    font-family: ${select('typography.heading.fontFamily')};
+    font-family: ${select(
+      'typography.heading.fontFamily'
+    )};
   `;
 };
 

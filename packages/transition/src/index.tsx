@@ -1,5 +1,7 @@
-export * from './Fade';
-import Transition, { State, TransitionProps, TransitionState, mixin } from './Transition';
+import Transition, { mixin } from './Transition';
+import type { State, TransitionProps, TransitionState } from './Transition';
 
+export * from './Fade';
 export default Transition;
-export { State, TransitionProps, TransitionState, mixin };
+export { mixin };
+export type { State, TransitionProps, TransitionState };

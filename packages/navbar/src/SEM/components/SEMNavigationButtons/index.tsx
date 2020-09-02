@@ -1,5 +1,4 @@
-import * as React from 'react';
-import createRef from 'react-create-ref';
+import React, { createRef } from 'react';
 
 import { Heading } from '@lendi-ui/typography';
 import { KeyboardArrowRight } from '@lendi-ui/icon';

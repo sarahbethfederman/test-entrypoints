@@ -19,7 +19,7 @@ exports[`Overline should render styles for size "lg" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="lg"
 >
   <styled.span
@@ -86,7 +86,7 @@ exports[`Overline should render styles for size "lg" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;
 
 exports[`Overline should render styles for size "md" 1`] = `
@@ -108,7 +108,7 @@ exports[`Overline should render styles for size "md" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="md"
 >
   <styled.span
@@ -175,7 +175,7 @@ exports[`Overline should render styles for size "md" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;
 
 exports[`Overline should render styles for size "sm" 1`] = `
@@ -197,7 +197,7 @@ exports[`Overline should render styles for size "sm" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="sm"
 >
   <styled.span
@@ -264,7 +264,7 @@ exports[`Overline should render styles for size "sm" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;
 
 exports[`Overline should render styles for size "xl" 1`] = `
@@ -286,7 +286,7 @@ exports[`Overline should render styles for size "xl" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="xl"
 >
   <styled.span
@@ -353,7 +353,7 @@ exports[`Overline should render styles for size "xl" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;
 
 exports[`Overline should render styles for size "xs" 1`] = `
@@ -375,7 +375,7 @@ exports[`Overline should render styles for size "xs" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="xs"
 >
   <styled.span
@@ -442,7 +442,7 @@ exports[`Overline should render styles for size "xs" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;
 
 exports[`Overline should render styles for size "xxs" 1`] = `
@@ -464,7 +464,7 @@ exports[`Overline should render styles for size "xxs" 1`] = `
   -moz-osx-font-smoothing: grayscale;
 }
 
-<Component
+<Overline
   size="xxs"
 >
   <styled.span
@@ -531,5 +531,5 @@ exports[`Overline should render styles for size "xxs" 1`] = `
       />
     </StyledComponent>
   </styled.span>
-</Component>
+</Overline>
 `;

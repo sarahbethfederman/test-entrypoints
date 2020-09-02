@@ -70,17 +70,17 @@ export const Wrapper = styled.label<WrapperProps>`
     }
     return null;
   }} ${({ disabled }: WrapperProps) => {
-  if (disabled) {
+    if (disabled) {
+      return css`
+        cursor: not-allowed;
+        opacity: 0.4;
+      `;
+    }
     return css`
-      cursor: not-allowed;
-      opacity: 0.4;
+      cursor: pointer;
     `;
-  }
-  return css`
-    cursor: pointer;
-  `;
-}};
-  :hover {
+  }};
+  &:hover {
     ${({ isBoxed, checked, disabled }: WrapperProps) => {
       if (isBoxed && !disabled) {
         if (checked) {
@@ -150,7 +150,7 @@ export const CheckboxWrapper = styled.input<CheckboxWrapperProps>`
         border: 2px solid ${color('shade.200')};
       `;
     }
-  }}}
+  }}
   ${({ inputSize }) => {
     switch (inputSize) {
       case 'xs':
@@ -176,7 +176,7 @@ export const CheckboxWrapper = styled.input<CheckboxWrapperProps>`
         `;
     }
   }}
-  :hover {
+  &:hover {
     ${({ checked, disabled }) => {
       if (!disabled) {
         if (checked) {
@@ -191,18 +191,18 @@ export const CheckboxWrapper = styled.input<CheckboxWrapperProps>`
       return null;
     }};
   }
-  :focus {
+  &:focus {
     ${({ disabled }) =>
       disabled &&
       css`
         outline: none;
       `}
   }
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     pointer-events: none;
   }
-  :checked::after {
+  &:checked::after {
     content: '';
     left: 0;
     right: 0;
@@ -224,4 +224,5 @@ export const CheckboxWrapper = styled.input<CheckboxWrapperProps>`
           return tickMixin(32 / 16);
       }
     }}
+  }
 `;

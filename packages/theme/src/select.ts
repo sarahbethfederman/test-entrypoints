@@ -15,7 +15,7 @@ export function select(path: string, defaultValue?: any): any {
       // check if there is a key that matches the remainder of the path
       const restOfPath = path.substr(startIndex + 1);
 
-      if (obj.hasOwnProperty(restOfPath)) {
+      if (Object.prototype.hasOwnProperty.call(obj, restOfPath)) {
         return obj[restOfPath];
       }
 
@@ -23,7 +23,7 @@ export function select(path: string, defaultValue?: any): any {
       finishIndex = path.indexOf('.', startIndex + 1);
       const nextPartOfPath = path.substr(startIndex + 1, finishIndex - startIndex - 1);
 
-      if (finishIndex === -1 || !obj.hasOwnProperty(nextPartOfPath)) {
+      if (finishIndex === -1 || !Object.prototype.hasOwnProperty.call(obj, nextPartOfPath)) {
         if (defaultValue !== undefined) {
           return defaultValue;
         } else {
@@ -33,6 +33,6 @@ export function select(path: string, defaultValue?: any): any {
 
       obj = obj[nextPartOfPath];
       startIndex = finishIndex;
-    } while (true);
+    } while (true); // eslint-disable-line no-constant-condition
   };
 }

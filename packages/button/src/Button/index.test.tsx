@@ -99,7 +99,7 @@ describe('Button', () => {
     const element = mount(
       <Theme>
         <Button ariaLabel="Locked" variant="primary" onClick={jest.fn()}>
-          <Lock color="primary.500" />>
+          <Lock color="primary.500" />
         </Button>
       </Theme>
     );

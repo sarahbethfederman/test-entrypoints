@@ -85,10 +85,7 @@ describe('Left side bar - click event', () => {
 
   it('should call AnalyticsContext fn', () => {
     expect(wrapper.find(OldMenuButton)).toHaveLength(1);
-    wrapper
-      .find(OldMenuButton)
-      .at(0)
-      .simulate('click');
+    wrapper.find(OldMenuButton).at(0).simulate('click');
     wrapper.update();
 
     expect(mockAnalyticsContext.analyticsForNavigation).toBeCalledTimes(1);

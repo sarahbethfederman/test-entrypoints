@@ -2,7 +2,8 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import Theme from '@lendi-ui/theme';
 import { Lock, Spinner } from '@lendi-ui/icon';
-import { IconButton, IconButtonSize } from '.';
+import { IconButton } from '.';
+import type { IconButtonSize } from '.';
 
 const sizes: IconButtonSize[] = ['lg', 'md', 'sm', 'xs'];
 

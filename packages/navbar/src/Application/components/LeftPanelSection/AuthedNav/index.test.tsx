@@ -18,10 +18,7 @@ const applicationDetails = {
 describe('Authed Left Nav', () => {
   it('should render start new loan nav item if application stage is not specify', () => {
     const wrapper = shallow(<AuthedNav />);
-    const firstNavItem = wrapper
-      .find(SidebarNav.Item)
-      .first()
-      .props();
+    const firstNavItem = wrapper.find(SidebarNav.Item).first().props();
     expect(firstNavItem.children === 'Start a new loan').toBeTruthy();
     expect(firstNavItem.href && firstNavItem.href.includes('/home-loans/search')).toBeTruthy();
   });

@@ -1,5 +1,4 @@
-import * as React from 'react';
-import * as Fragment from 'react-dot-fragment';
+import React, { Fragment } from 'react';
 import { ExpandMore } from '@lendi-ui/icon';
 import { ItemProps } from '../Item';
 import { MenuToggle, MenuContent, ListWrapper, ListItem } from './index.style';

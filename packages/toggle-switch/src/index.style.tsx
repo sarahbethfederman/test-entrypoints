@@ -37,7 +37,7 @@ export const Wrapper = styled.label`
     }
     return null;
   }}
-  
+
   /* Disabled styles */
   ${({ disabled }: WrapperProps) => {
     if (disabled) {

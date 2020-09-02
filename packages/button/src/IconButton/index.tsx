@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { deriveSize, getDataProps, LUIGlobalProps } from '@lendi-ui/utils';
-import { IconButtonSize, IconButtonWrapper, LinkWrapper } from './index.style';
+import { IconButtonWrapper, LinkWrapper } from './index.style';
+import type { IconButtonSize } from './index.style';
 import Spinner from '@lendi-ui/spinner';
 import { Colors } from '@lendi-ui/theme';
 import { IconProps } from '@lendi-ui/icon';
 import { ButtonType } from '../Button/index';
 
-export { IconButtonSize };
+export type { IconButtonSize };
 
 export interface IconButtonProps extends LUIGlobalProps {
   color?: Colors;

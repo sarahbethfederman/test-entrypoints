@@ -73,7 +73,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
   top: 2px;
 }
 
-<Component
+<Checkbox
   isBoxed={true}
   label="LUI single Checkbox"
   onChange={[Function]}
@@ -112,7 +112,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
               " ",
               [Function],
               ";
-  :hover {
+  &:hover {
     ",
               [Function],
               ";
@@ -180,25 +180,25 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
                     "
   ",
                     [Function],
-                    "}
+                    "
   ",
                     [Function],
                     "
-  :hover {
+  &:hover {
     ",
                     [Function],
                     ";
   }
-  :focus {
+  &:focus {
     ",
                     [Function],
                     "
   }
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     pointer-events: none;
   }
-  :checked::after {
+  &:checked::after {
     content: '';
     left: 0;
     right: 0;
@@ -212,6 +212,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
     ",
                     [Function],
                     "
+  }
 ",
                   ],
                 },
@@ -286,7 +287,7 @@ exports[`Checkbox should render box style when it is setup isBoxed 1`] = `
       </label>
     </StyledComponent>
   </styled.label>
-</Component>
+</Checkbox>
 `;
 
 exports[`Checkbox should render whole component 1`] = `
@@ -357,7 +358,7 @@ exports[`Checkbox should render whole component 1`] = `
   top: 2px;
 }
 
-<Component
+<Checkbox
   label="LUI single Checkbox"
   onChange={[Function]}
   value="1"
@@ -395,7 +396,7 @@ exports[`Checkbox should render whole component 1`] = `
               " ",
               [Function],
               ";
-  :hover {
+  &:hover {
     ",
               [Function],
               ";
@@ -463,25 +464,25 @@ exports[`Checkbox should render whole component 1`] = `
                     "
   ",
                     [Function],
-                    "}
+                    "
   ",
                     [Function],
                     "
-  :hover {
+  &:hover {
     ",
                     [Function],
                     ";
   }
-  :focus {
+  &:focus {
     ",
                     [Function],
                     "
   }
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     pointer-events: none;
   }
-  :checked::after {
+  &:checked::after {
     content: '';
     left: 0;
     right: 0;
@@ -495,6 +496,7 @@ exports[`Checkbox should render whole component 1`] = `
     ",
                     [Function],
                     "
+  }
 ",
                   ],
                 },
@@ -569,5 +571,5 @@ exports[`Checkbox should render whole component 1`] = `
       </label>
     </StyledComponent>
   </styled.label>
-</Component>
+</Checkbox>
 `;

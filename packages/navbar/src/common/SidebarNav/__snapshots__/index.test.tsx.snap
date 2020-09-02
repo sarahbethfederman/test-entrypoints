@@ -4,7 +4,7 @@ exports[`Group should mount 1`] = `
 <styled.nav
   role="Primary navigation"
 >
-  <Component>
+  <Section>
     <Group
       title="A"
     >
@@ -18,6 +18,6 @@ exports[`Group should mount 1`] = `
     <Item>
       C
     </Item>
-  </Component>
+  </Section>
 </styled.nav>
 `;

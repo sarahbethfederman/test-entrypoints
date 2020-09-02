@@ -27,15 +27,9 @@ describe('tooltip', () => {
 
   it('should display the tooltip onMouseEnter and hide it oMouseLeave', () => {
     expect(element.find(ContentWrapper).props().isOpen).toEqual(false);
-    element
-      .find('span')
-      .at(0)
-      .simulate('mouseover');
+    element.find('span').at(0).simulate('mouseover');
     expect(element.find(ContentWrapper).props().isOpen).toEqual(true);
-    element
-      .find('span')
-      .at(0)
-      .simulate('mouseleave');
+    element.find('span').at(0).simulate('mouseleave');
     expect(element.find(ContentWrapper).props().isOpen).toEqual(false);
   });
 });

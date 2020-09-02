@@ -27,22 +27,22 @@ const wrapperBySizeMixin = (size: DatePickerSize, hasDayField: boolean): Spacing
   map(size, (val) => {
     switch (val) {
       case 'sm':
-        return `
-        height: ${deriveSize(2.5)};
-        font-size: ${deriveSize(1)};
-        min-width: ${hasDayField ? deriveSize(14) : deriveSize(10.125)};
+        return css`
+          height: ${deriveSize(2.5)};
+          font-size: ${deriveSize(1)};
+          min-width: ${hasDayField ? deriveSize(14) : deriveSize(10.125)};
         `;
       case 'md':
-        return `
-        height: ${deriveSize(3)};
-        font-size: ${deriveSize(1.125)};
-        min-width: ${hasDayField ? deriveSize(16.25) : deriveSize(11.75)};
+        return css`
+          height: ${deriveSize(3)};
+          font-size: ${deriveSize(1.125)};
+          min-width: ${hasDayField ? deriveSize(16.25) : deriveSize(11.75)};
         `;
       case 'lg':
-        return `
-        height: ${deriveSize(4)};
-        font-size: ${deriveSize(1.375)};
-        min-width: ${hasDayField ? deriveSize(20.5) : deriveSize(15)};
+        return css`
+          height: ${deriveSize(4)};
+          font-size: ${deriveSize(1.375)};
+          min-width: ${hasDayField ? deriveSize(20.5) : deriveSize(15)};
         `;
       default:
         return undefined;
@@ -53,30 +53,30 @@ const iconWrapperBySizeMixin = (size: DatePickerSize): SpacingName =>
   map(size, (val) => {
     switch (val) {
       case 'sm':
-        return `
-        min-width: ${deriveSize(2.5)};
-        padding-top: ${deriveSize(0.125)};
-        font-size: ${deriveSize(1.25)};
-      `;
+        return css`
+          min-width: ${deriveSize(2.5)};
+          padding-top: ${deriveSize(0.125)};
+          font-size: ${deriveSize(1.25)};
+        `;
       case 'md':
-        return `
-        min-width: ${deriveSize(3)};
-        padding-top: ${deriveSize(0.1875)};
-        font-size: ${deriveSize(1.875)};;
-      `;
+        return css`
+          min-width: ${deriveSize(3)};
+          padding-top: ${deriveSize(0.1875)};
+          font-size: ${deriveSize(1.875)};
+        `;
       case 'lg':
-        return `
-        min-width: ${deriveSize(4)};
-        padding-top: ${deriveSize(0.3125)};
-        font-size: ${deriveSize(2.5)};
-      `;
+        return css`
+          min-width: ${deriveSize(4)};
+          padding-top: ${deriveSize(0.3125)};
+          font-size: ${deriveSize(2.5)};
+        `;
       default:
         return undefined;
     }
   });
 
 export const Wrapper = styled.div<WrapperProps>`
-  ${normalise};
+  ${normalise}
   ${bg('shade.0')}
   ${({ size, hasDayField }: { size: DatePickerSize; hasDayField: boolean }) =>
     css`
@@ -96,17 +96,16 @@ export const Wrapper = styled.div<WrapperProps>`
           cursor: not-allowed;
         `
       : css`
-          :hover {
+          &:hover {
             border: solid 1px ${color('shade.600')};
           }
         `}
-
   font-family: ${select('typography.body.fontFamily')};
   border-radius: ${select('borderRadius')};
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  `;
+`;
 
 export const IconWrapper = styled.div`
   display: flex;
@@ -117,7 +116,6 @@ export const IconWrapper = styled.div`
     css`
       ${size && iconWrapperBySizeMixin(size)};
     `};
-  };
 `;
 
 export const InputWrapper = styled.input<InputWrapperProps>`
@@ -138,7 +136,8 @@ export const InputWrapper = styled.input<InputWrapperProps>`
       `;
     }
     return undefined;
-  }} font-size: inherit;
+  }}
+  font-size: inherit;
   height: 100%;
   width: 100%;
   border: 0px;

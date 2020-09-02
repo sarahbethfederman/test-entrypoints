@@ -3,8 +3,8 @@
   "version": "7.0.0",
   "description": "Utilities for spacing.",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/spacing.cjs.js",
+  "module": "dist/spacing.esm.js",
   "files": [
     "dist"
   ],
@@ -17,9 +17,8 @@
     "@lendi-ui/breakpoint": "^5.0.0",
     "@lendi-ui/utils": "^5.0.0"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@types/styled-components": "^4.1.18",
+    "styled-components": "^4"
   }
 }

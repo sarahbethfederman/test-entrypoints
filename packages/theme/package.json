@@ -2,8 +2,8 @@
   "name": "@lendi-ui/theme",
   "version": "9.1.0",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/theme.cjs.js",
+  "module": "dist/theme.esm.js",
   "files": [
     "dist"
   ],
@@ -17,9 +17,11 @@
     "react": "^16.8",
     "styled-components": "^4"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/breakpoint": "*",
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

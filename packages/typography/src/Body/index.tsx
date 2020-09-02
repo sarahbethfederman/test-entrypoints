@@ -63,7 +63,9 @@ export const body = (options: BodyOptions = {}) => {
     ${color && fg(color)}
     ${align && alignMixin(align)}
     ${size && bodySizeMixin(size)}
-    font-family: ${select('typography.body.fontFamily')};
+    font-family: ${select(
+      'typography.body.fontFamily'
+    )};
   `;
 };
 

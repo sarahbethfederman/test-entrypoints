@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as cuid from 'cuid';
+import cuid from 'cuid';
 import { AccordionProps } from '../../typings';
 import { AccordionItem } from '../AccordionItem';
 import { AccordionHeader } from '../AccordionHeader';

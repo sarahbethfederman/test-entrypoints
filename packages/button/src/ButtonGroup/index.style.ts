@@ -86,7 +86,7 @@ export const Wrapper = styled.div<WrapperProps>`
       width: 100%;
       ${spacingRightBySizeMixin(size)};
     `}
-  ${ButtonWrapper}, ${LinkWrapper}, ${IconButtonWrapper} {
+  ${ButtonWrapper}, ${IconButtonWrapper} {
     ${({ size, isFullWidth }) => css`
       ${wrapperBySizeMixin(size, isFullWidth)};
     `};

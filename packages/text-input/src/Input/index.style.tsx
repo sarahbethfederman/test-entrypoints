@@ -12,24 +12,24 @@ const heightBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
-        return `
+        return css`
           height: ${deriveSize(1.57)};
           ${gte('desktop')`
             height: ${deriveSize(1.625)};
           `}
-      `;
+        `;
       case 'sm':
-        return `
+        return css`
           height: ${deriveSize(2.5)};
-      `;
+        `;
       case 'md':
-        return `
+        return css`
           height: ${deriveSize(3)};
-      `;
+        `;
       case 'lg':
-        return `
+        return css`
           height: ${deriveSize(4)};
-      `;
+        `;
       default:
         return undefined;
     }
@@ -39,24 +39,22 @@ const fontBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
-        return `
+        return css`
           font-size: ${deriveSize(0.7857)};
-          ${gte('desktop')`
-            font-size: ${deriveSize(0.75)};
-          `}
-      `;
+          ${gte('desktop')`font-size: ${deriveSize(0.75)};`}
+        `;
       case 'sm':
-        return `
-        font-size: ${deriveSize(0.875)};
-      `;
+        return css`
+          font-size: ${deriveSize(0.875)};
+        `;
       case 'md':
-        return `
-        font-size: ${deriveSize(1)};
-      `;
+        return css`
+          font-size: ${deriveSize(1)};
+        `;
       case 'lg':
-        return `
-        font-size: ${deriveSize(1.125)};
-      `;
+        return css`
+          font-size: ${deriveSize(1.125)};
+        `;
       default:
         return undefined;
     }
@@ -97,63 +95,69 @@ export interface LayoutProp {
   isError: boolean;
   isDisabled: boolean;
 }
-export const Layout = styled.div`
-  ${normalise};
+
+export const Layout = styled.div<LayoutProp>`
+  ${normalise}
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  ${({ isFullWidth, size, isInverse, isDisabled }: LayoutProp) => {
-    if (isDisabled) {
-      return css`
-        border-radius: ${size === 'xs' ? '12px' : select('borderRadius')};
-        cursor: not-allowed;
-        width: ${isFullWidth ? '100%' : 'auto'};
-        background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
-        border: 1px solid ${isInverse ? select('colors.shade.0') : select('colors.shade.100')};
-        ${heightBySizeMixin(size)};
-        ${isFullWidth ? 'width: 100%' : widthBySizeMixin(size)};
-      `;
-    } else {
-      return css`
-        border-radius: ${size === 'xs' ? '21px' : select('borderRadius')};
-        border: 1px solid ${InputBorderColor};
-        width: ${isFullWidth ? '100%' : 'auto'};
-        background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
-        ${heightBySizeMixin(size)};
-        ${isFullWidth ? 'width: 100%' : widthBySizeMixin(size)};
-      `;
-    }
-  }};
-
-  :hover:not(:focus) {
-    ${({ isDisabled }: LayoutProp) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
+  ${({ isFullWidth, size, isInverse, isDisabled }: LayoutProp) =>
+    isDisabled
+      ? css`
+          border-radius: ${size === 'xs' ? '12px' : select('borderRadius')};
+          cursor: not-allowed;
+          width: ${isFullWidth ? '100%' : 'auto'};
+          background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
+          border: 1px solid ${isInverse ? select('colors.shade.0') : select('colors.shade.100')};
+          :hover:not(:focus) {
+            border: 1px solid ${InputBorderHoverColor};
+          }
+          ${heightBySizeMixin(size)}
+          ${isFullWidth
+            ? css`
+                width: 100%;
+              `
+            : widthBySizeMixin(size)}
+        `
+      : css`
+          border-radius: ${size === 'xs' ? '21px' : select('borderRadius')};
+          border: 1px solid ${InputBorderColor};
+          width: ${isFullWidth ? '100%' : 'auto'};
+          background-color: ${isInverse ? 'transparent' : select('colors.shade.0')};
+          ${heightBySizeMixin(size)}
+          ${isFullWidth
+            ? css`
+                width: 100%;
+              `
+            : widthBySizeMixin(size)}
+        `}
 `;
 
 const widthBySizeMixin = (size: InputSize) =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
-        return `
+        return css`
           width: ${deriveSize(12.5)};
         `;
       case 'sm':
-        return `
+        return css`
           width: ${deriveSize(14.5)};
         `;
       case 'md':
-        return `
+        return css`
           width: ${deriveSize(21.5)};
         `;
       case 'lg':
-        return `
+        return css`
           width: ${deriveSize(24)};
-       `;
+        `;
       default:
-        return `
+        return css`
           width: ${deriveSize(21.5)};
-      `;
+        `;
     }
   });
 
@@ -164,12 +168,21 @@ export interface InputWrapperProps {
   isDisabled?: boolean;
 }
 
-export const InputWrapper = styled.input`
+export const InputWrapper = styled.input<InputWrapperProps>`
   flex: 1 1 auto;
   height: 100%;
   min-width: 0;
   width: 100%;
   border: 0px;
+  &::placeholder {
+    color: ${select('colors.shade.300')};
+  }
+  &:disabled {
+    cursor: not-allowed;
+    ${({ isInverse }: InputWrapperProps) => css`
+      background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
+    `};
+  }
   ${({ fontSize, isInverse }: InputWrapperProps) => css`
     ${fontBySizeMixin(fontSize)}
     border-radius: ${fontSize === 'xs' ? '21px' : select('borderRadius')};
@@ -178,16 +191,6 @@ export const InputWrapper = styled.input`
     font-family: ${select('typography.body.fontFamily')};
     padding: ${fontSize === 'xs' ? `0 ${deriveSize(0.25)}` : `0 ${deriveSize(1)}`};
   `}
-    ::placeholder {
-    color: ${select('colors.shade.300')};
-  }
-
-  :disabled {
-    cursor: not-allowed;
-    ${({ isInverse }: InputWrapperProps) => css`
-      background-color: ${isInverse ? 'transparent' : select('colors.shade.25')};
-    `};
-  }
 `;
 
 interface BeforeAfterWrapperProps {
@@ -203,14 +206,11 @@ export const BeforeWrapper = styled.span<BeforeAfterWrapperProps>`
   padding-right: 1px;
   flex: 1 0 auto;
   line-height: 1px;
-  ${({ isDisabled }: BeforeAfterWrapperProps) => {
-    if (isDisabled) {
-      return css`
-        pointer-events: none;
-      `;
-    }
-    return undefined;
-  }};
+  ${({ isDisabled }: BeforeAfterWrapperProps) =>
+    isDisabled &&
+    css`
+      pointer-events: none;
+    `}
 `;
 
 export const AfterWrapper = styled.span<BeforeAfterWrapperProps>`

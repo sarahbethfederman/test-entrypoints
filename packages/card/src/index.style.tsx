@@ -20,7 +20,8 @@ export const CardWrapper = styled.div`
   ${p('xs')};
   ${({ bg = 'shade.0' }: CardWrapperProps) => getBg(bg)}
   ${({ depth = 1 }: CardWrapperProps) => cardDepth(depth)}
-  ${({ size = 'md' }: CardWrapperProps) => body({ size })}
+  ${({ size = 'md' }: CardWrapperProps) =>
+    body({ size })}
   ${({ fg }: CardWrapperProps) => getFg(fg)}
   ${({ border }: CardWrapperProps) =>
     border &&
@@ -28,7 +29,7 @@ export const CardWrapper = styled.div`
       border: ${border};
     `}
 
-  :hover {
+  &:hover {
     ${cardDepth(4)}
   }
 `;

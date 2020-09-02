@@ -47,10 +47,7 @@ describe('ExpertAdvice', () => {
   });
 
   it('the first LinkWrapperOne in LinkGroup component should render one LinkWrapper, one Telephone component and one BodyWrapper component', () => {
-    const linkGroupWrapperOne = element
-      .find(LinkGroup)
-      .at(0)
-      .find(LinkWrapperOne);
+    const linkGroupWrapperOne = element.find(LinkGroup).at(0).find(LinkWrapperOne);
     expect(linkGroupWrapperOne.find(LinkWrapper)).toHaveLength(1);
     expect(linkGroupWrapperOne.find(LinkWrapper).props().href).toEqual('tel:1300323181');
     expect(linkGroupWrapperOne.find(Telephone)).toHaveLength(1);
@@ -59,10 +56,7 @@ describe('ExpertAdvice', () => {
   });
 
   it('the first LinkWrapperOne in LinkGroup component should render one LinkWrapper, one Telephone component and one BodyWrapper component', () => {
-    const linkGroupWrapperTwo = element
-      .find(LinkGroup)
-      .at(0)
-      .find(LinkWrapperTwo);
+    const linkGroupWrapperTwo = element.find(LinkGroup).at(0).find(LinkWrapperTwo);
     expect(linkGroupWrapperTwo.find(LinkWrapper)).toHaveLength(1);
     expect(linkGroupWrapperTwo.find(LinkWrapper).props().href).toEqual('/appointment-booking');
     expect(linkGroupWrapperTwo.find(PickATime)).toHaveLength(1);
@@ -71,10 +65,7 @@ describe('ExpertAdvice', () => {
   });
 
   it('the first LinkWrapperOne in LinkGroup component should render one LinkWrapper, one Telephone component and one BodyWrapper component', () => {
-    const linkGroupWrapperOne = element
-      .find(LinkGroup)
-      .at(1)
-      .find(LinkWrapperOne);
+    const linkGroupWrapperOne = element.find(LinkGroup).at(1).find(LinkWrapperOne);
     expect(linkGroupWrapperOne.find(LinkWrapper)).toHaveLength(1);
     linkGroupWrapperOne.find(LinkWrapper).simulate('click');
     expect(onChat).toBeCalled();
@@ -84,10 +75,7 @@ describe('ExpertAdvice', () => {
   });
 
   it('the first LinkWrapperOne in LinkGroup component should render one LinkWrapper, one Telephone component and one BodyWrapper component', () => {
-    const linkGroupWrapperTwo = element
-      .find(LinkGroup)
-      .at(1)
-      .find(LinkWrapperTwo);
+    const linkGroupWrapperTwo = element.find(LinkGroup).at(1).find(LinkWrapperTwo);
     expect(linkGroupWrapperTwo.find(LinkWrapper)).toHaveLength(1);
     expect(linkGroupWrapperTwo.find(LinkWrapper).props().href).toEqual('mailto:heretohelp@lendi.com.au');
     expect(linkGroupWrapperTwo.find(HereToHelp)).toHaveLength(1);

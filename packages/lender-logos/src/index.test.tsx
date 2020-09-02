@@ -61,12 +61,7 @@ lenderLogosID.forEach((lenderLogoID) => {
     });
 
     it('should mount LenderLogos component', () => {
-      expect(
-        element
-          .find(LenderLogos)
-          .find('span')
-          .prop('data-testd')
-      ).toEqual(lenderLogoID);
+      expect(element.find(LenderLogos).find('span').prop('data-testd')).toEqual(lenderLogoID);
     });
   });
 });

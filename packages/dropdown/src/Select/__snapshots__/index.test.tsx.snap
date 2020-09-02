@@ -58,7 +58,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
           class=" css-3vppv-control"
         >
           <div
-            class=" css-1hwfws3"
+            class=" css-g1d714-ValueContainer"
           >
             <div
               class=" css-ep7en5-placeholder"
@@ -79,13 +79,13 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
                   autocorrect="off"
                   id="react-select-19-input"
                   spellcheck="false"
-                  style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                  style="box-sizing: content-box; width: 2px; border: 0px; opacity: 1; outline: 0; padding: 0px;"
                   tabindex="0"
                   type="text"
                   value=""
                 />
                 <div
-                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
                 />
               </div>
             </div>
@@ -187,7 +187,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
           class=" css-3vppv-control"
         >
           <div
-            class=" css-1hwfws3"
+            class=" css-g1d714-ValueContainer"
           >
             <div
               class=" css-ep7en5-placeholder"
@@ -208,13 +208,13 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
                   autocorrect="off"
                   id="react-select-14-input"
                   spellcheck="false"
-                  style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                  style="box-sizing: content-box; width: 2px; border: 0px; opacity: 1; outline: 0; padding: 0px;"
                   tabindex="0"
                   type="text"
                   value=""
                 />
                 <div
-                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
                 />
               </div>
             </div>
@@ -316,7 +316,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
           class=" css-3vppv-control"
         >
           <div
-            class=" css-1hwfws3"
+            class=" css-g1d714-ValueContainer"
           >
             <div
               class=" css-ep7en5-placeholder"
@@ -337,13 +337,13 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
                   autocorrect="off"
                   id="react-select-6-input"
                   spellcheck="false"
-                  style="box-sizing: content-box; width: 2px; border: 0px; font-size: inherit; opacity: 1; outline: 0; padding: 0px;"
+                  style="box-sizing: content-box; width: 2px; border: 0px; opacity: 1; outline: 0; padding: 0px;"
                   tabindex="0"
                   type="text"
                   value=""
                 />
                 <div
-                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-size: inherit; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
+                  style="position: absolute; top: 0px; left: 0px; visibility: hidden; height: 0px; overflow: scroll; white-space: pre; font-family: -webkit-small-control; letter-spacing: normal; text-transform: none;"
                 />
               </div>
             </div>

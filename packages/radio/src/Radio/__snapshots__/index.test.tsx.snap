@@ -82,7 +82,7 @@ exports[`radioButton should render correct styles when disabled 1`] = `
   height: calc(2 * var(--lendi-ui-size))px;
 }
 
-<Component
+<Radio
   isDisabled={true}
   label="LUI single Radio Button"
   onChange={[MockFunction]}
@@ -305,5 +305,5 @@ exports[`radioButton should render correct styles when disabled 1`] = `
       </label>
     </StyledComponent>
   </styled.label>
-</Component>
+</Radio>
 `;

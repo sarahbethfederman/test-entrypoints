@@ -34,7 +34,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   content: '';
   width: var(--width);
   height: var(--height);
-  top: calc(50% - var(--height)/2);
+  top: calc(50% - var(--height) / 2);
   border-radius: 6px;
   margin-left: calc(var(--handle-width) * 0.3);
   margin-right: calc(var(--handle-width) * 0.3);
@@ -54,7 +54,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   content: '';
   width: var(--width);
   height: var(--height);
-  top: calc(50% - var(--height)/2);
+  top: calc(50% - var(--height) / 2);
   border: 1px solid transparent;
   background-color: rgba(248,248,248,1);
   border-radius: 50%;
@@ -154,7 +154,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   ",
               [Function],
               "
-  
+
   /* Disabled styles */
   ",
               [Function],
@@ -296,16 +296,18 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   width: 0;
 
   /* Focus styles for sibling span (Toggle Track) */
-  :focus ~ span {
-  ",
+  &:focus ~ span {
+    ",
                             [Function],
-                            ";
+                            "
+  }
 
   /* Focus styles for sibling div (Toggle Handle) */
   :focus ~ div {
-  ",
+    ",
                             [Function],
                             ";
+  }
 ",
                           ],
                         },
@@ -362,7 +364,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   content: '';
   width: var(--width);
   height: var(--height);
-  top: calc(50% - var(--height)/2);
+  top: calc(50% - var(--height) / 2);
   border-radius: ",
                             [Function],
                             ";
@@ -450,7 +452,7 @@ exports[`ToggleSwitch should render the whole component 1`] = `
   content: '';
   width: var(--width);
   height: var(--height);
-  top: calc(50% - var(--height)/2);
+  top: calc(50% - var(--height) / 2);
   border: 1px solid transparent;
   ",
                             "

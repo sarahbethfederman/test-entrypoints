@@ -9,34 +9,34 @@ const styleBySizeMixin = (size: Size, rows: number) =>
   map(size, (val) => {
     switch (val) {
       case 'xs':
-        return `
+        return css`
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(0.875)};
-          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(0.875)} + 2 * ${deriveSize(0.5)});
+          height: calc(${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(0.875)} + 2 * ${deriveSize(0.5)});
         `;
       case 'sm':
-        return `
+        return css`
           padding: ${deriveSize(0.5)} ${deriveSize(0.75)};
           font-size: ${deriveSize(1)};
-          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1)} + 2 * ${deriveSize(0.5)});
+          height: calc(${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1)} + 2 * ${deriveSize(0.5)});
         `;
       case 'md':
-        return `
+        return css`
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
-          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
+          height: calc(${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
         `;
       case 'lg':
-        return `
+        return css`
           padding: ${deriveSize(1)} ${deriveSize(1.5)};
           font-size: ${deriveSize(1.375)};
-          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.375)} + 2 * ${deriveSize(1)});
+          height: calc(${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.375)} + 2 * ${deriveSize(1)});
         `;
       default:
-        return `
+        return css`
           padding: ${deriveSize(0.75)} ${deriveSize(1)};
           font-size: ${deriveSize(1.125)};
-          height: calc( ${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
+          height: calc(${NORMALISE_LINE_HEIGHT} * ${rows} * ${deriveSize(1.125)} + 2 * ${deriveSize(0.75)});
         `;
     }
   });
@@ -87,7 +87,13 @@ export const TextAreaWrapper = styled.textarea<TextAreaProps>`
   font-family: ${select('typography.body.fontFamily')};
   ${({ size, isInverse, isFullWidth, rows }) => css`
     color: ${isInverse ? color('shade.0') : color('shade.700')};
-    ${isFullWidth ? 'width: 100%' : 'width:auto'};
+    ${isFullWidth
+      ? css`
+          width: 100%;
+        `
+      : css`
+          width: auto;
+        `};
     ${styleBySizeMixin(size, rows)};
   `};
   ${({ isInverse, isDisabled }) => {
@@ -108,6 +114,11 @@ export const TextAreaWrapper = styled.textarea<TextAreaProps>`
     color: ${color('shade.300')};
   }
   :hover:not(:focus) {
-    ${({ isDisabled }) => (isDisabled ? undefined : `border: 1px solid ${InputBorderHoverColor};`)}
+    ${({ isDisabled }) =>
+      isDisabled
+        ? undefined
+        : css`
+            border: 1px solid ${InputBorderHoverColor};
+          `}
   }
 `;

@@ -92,7 +92,8 @@ describe('map()', () => {
   }
 
   const SimpleMapComponent = styled.div`
-    ${(props: SimpleMapComponentProps) => map(props.bg, (val = 'unset') => `background-color: ${val};`)};
+    ${(props: SimpleMapComponentProps) =>
+      /* prettier-ignore */ map(props.bg, (val = 'unset') => `background-color: ${val}`)};
   `;
 
   interface ComplexMapComponentProps {
@@ -102,11 +103,12 @@ describe('map()', () => {
 
   const ComplexMapComponent = styled.div`
     ${(props: ComplexMapComponentProps) =>
+      /* prettier-ignore */
       map(
         props.size,
         (val = 1) =>
           css`
-            width: ${(childProps: ComplexMapComponentProps) => childProps.multiplier * val * 100}%;
+            width: ${(childProps: ComplexMapComponentProps) => childProps.multiplier * val * 100}%
           `
       )};
   `;
@@ -116,7 +118,7 @@ describe('map()', () => {
   }
 
   const ResponsiveMapComponent = styled.div`
-    ${(props: ResponsiveMapComponentProps) => map(props.size, (val) => `width:${val}`)};
+    ${(props: ResponsiveMapComponentProps) => /* prettier-ignore */ map(props.size, (val = '0') => `width: ${val}`)};
   `;
 
   it('should not wrap styles in a media rule', () => {

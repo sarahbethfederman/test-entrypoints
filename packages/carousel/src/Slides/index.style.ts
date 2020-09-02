@@ -29,7 +29,7 @@ export const SlideContainer = styled.div<SlideContainerProps>`
     flex-shrink: 0;
     box-sizing: border-box;
     animation: ${(props) => slide(props.previousLeft, props.currentLeft)} ${(props) => props.speed}ms ease-in-out;
-    transform: translate(${(props) => props.currentLeft}px)
+    transform: translate(${(props) => props.currentLeft}px);
   }
 
   /* > *:first-child {

@@ -44,7 +44,7 @@ exports[`Item render a button when there is not a href 1`] = `
   background-color: rgba(0,153,132,1);
 }
 
-.c1:last-type {
+.c1:last-of-type {
   border-bottom: none;
 }
 
@@ -85,7 +85,7 @@ exports[`Item render a button when there is not a href 1`] = `
   background-color: rgba(0,153,132,1);
 }
 
-.c0:last-type {
+.c0:last-of-type {
   border-bottom: none;
 }
 
@@ -116,7 +116,8 @@ exports[`Item render a button when there is not a href 1`] = `
               "
   ",
               [Function],
-              " ",
+              "
+  ",
               "
     padding-left: ",
               "calc(1.5 * var(--lendi-ui-size))",
@@ -133,8 +134,7 @@ exports[`Item render a button when there is not a href 1`] = `
   border-bottom: 1px solid ",
               [Function],
               ";
-
-  :hover {
+  &:hover {
     ",
               "
           color: ",
@@ -156,7 +156,7 @@ exports[`Item render a button when there is not a href 1`] = `
     }
   }
 
-  :active {
+  &:active {
     ",
               "
           color: ",
@@ -172,7 +172,7 @@ exports[`Item render a button when there is not a href 1`] = `
               ";
   }
 
-  :last-type {
+  &:last-of-type {
     border-bottom: none;
   }
 ",
@@ -227,7 +227,8 @@ exports[`Item render a button when there is not a href 1`] = `
                     "
   ",
                     [Function],
-                    " ",
+                    "
+  ",
                     "
     padding-left: ",
                     "calc(1.5 * var(--lendi-ui-size))",
@@ -244,8 +245,7 @@ exports[`Item render a button when there is not a href 1`] = `
   border-bottom: 1px solid ",
                     [Function],
                     ";
-
-  :hover {
+  &:hover {
     ",
                     "
           color: ",
@@ -267,7 +267,7 @@ exports[`Item render a button when there is not a href 1`] = `
     }
   }
 
-  :active {
+  &:active {
     ",
                     "
           color: ",
@@ -283,11 +283,12 @@ exports[`Item render a button when there is not a href 1`] = `
                     ";
   }
 
-  :last-type {
+  &:last-of-type {
     border-bottom: none;
   }
 ",
-                    " ",
+                    "
+  ",
                     "
   ",
                     "
@@ -376,7 +377,7 @@ exports[`Item render a link when there is a href 1`] = `
   background-color: rgba(0,153,132,1);
 }
 
-.c1:last-type {
+.c1:last-of-type {
   border-bottom: none;
 }
 
@@ -417,7 +418,7 @@ exports[`Item render a link when there is a href 1`] = `
   background-color: rgba(0,153,132,1);
 }
 
-.c0:last-type {
+.c0:last-of-type {
   border-bottom: none;
 }
 
@@ -450,7 +451,8 @@ exports[`Item render a link when there is a href 1`] = `
               "
   ",
               [Function],
-              " ",
+              "
+  ",
               "
     padding-left: ",
               "calc(1.5 * var(--lendi-ui-size))",
@@ -467,8 +469,7 @@ exports[`Item render a link when there is a href 1`] = `
   border-bottom: 1px solid ",
               [Function],
               ";
-
-  :hover {
+  &:hover {
     ",
               "
           color: ",
@@ -490,7 +491,7 @@ exports[`Item render a link when there is a href 1`] = `
     }
   }
 
-  :active {
+  &:active {
     ",
               "
           color: ",
@@ -506,7 +507,7 @@ exports[`Item render a link when there is a href 1`] = `
               ";
   }
 
-  :last-type {
+  &:last-of-type {
     border-bottom: none;
   }
 ",
@@ -563,7 +564,8 @@ exports[`Item render a link when there is a href 1`] = `
                     "
   ",
                     [Function],
-                    " ",
+                    "
+  ",
                     "
     padding-left: ",
                     "calc(1.5 * var(--lendi-ui-size))",
@@ -580,8 +582,7 @@ exports[`Item render a link when there is a href 1`] = `
   border-bottom: 1px solid ",
                     [Function],
                     ";
-
-  :hover {
+  &:hover {
     ",
                     "
           color: ",
@@ -603,7 +604,7 @@ exports[`Item render a link when there is a href 1`] = `
     }
   }
 
-  :active {
+  &:active {
     ",
                     "
           color: ",
@@ -619,7 +620,7 @@ exports[`Item render a link when there is a href 1`] = `
                     ";
   }
 
-  :last-type {
+  &:last-of-type {
     border-bottom: none;
   }
 ",

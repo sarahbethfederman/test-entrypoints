@@ -30,14 +30,14 @@ export const style = css`
         ${body({ size: 'sm', color: 'shade.700' })};
       `;
     }
-  }} ${px('md')}
+  }}
+  ${px('md')}
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   border-bottom: 1px solid ${color('shade.100')};
-
-  :hover {
+  &:hover {
     ${fg('shade.0')} ${bg('primary.500')};
 
     svg {
@@ -45,11 +45,11 @@ export const style = css`
     }
   }
 
-  :active {
+  &:active {
     ${fg('shade.0')} ${bg('primary.600')};
   }
 
-  :last-type {
+  &:last-of-type {
     border-bottom: none;
   }
 `;
@@ -61,7 +61,8 @@ export const Link = styled.a`
 `;
 
 export const Button = styled.button`
-  ${style} ${buttonReset};
+  ${style}
+  ${buttonReset};
 `;
 
 export const Icon = styled.div`

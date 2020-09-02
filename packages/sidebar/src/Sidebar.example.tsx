@@ -18,7 +18,14 @@ const ButtonWrapper = styled(Button)`
 `;
 
 const BodyWrapper = styled(Body)`
-  ${py('sm')} ${pl('sm')}
+  ${py('sm')}
+  ${pl('sm')}
+  .content-wrapper & {
+    border-bottom: 1px solid ${color('shade.25')};
+  }
+  .content-wrapper &:first-of-type {
+    border-top: 1px solid ${color('shade.100')};
+  }
 `;
 
 const LinkWrapper = styled(Link)`
@@ -27,21 +34,12 @@ const LinkWrapper = styled(Link)`
   font-weight: bold;
 `;
 
-const ContentWrapper = styled.div`
-  ${BodyWrapper} {
-    border-bottom: 1px solid ${color('shade.25')};
-  }
-  ${BodyWrapper}:first-of-type {
-    border-top: 1px solid ${color('shade.100')};
-  }
-`;
-
 const FooterWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    ${px('md')} ${pt('md')} ${pb('lg')}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ${px('md')} ${pt('md')} ${pb('lg')}
 `;
 
 const LogoutLinkWrapper = styled(Link)`
@@ -79,7 +77,7 @@ export default () => {
 
       <Sidebar direction="left" top={142} isVisible={isOpen} onHide={() => setIsOpen(false)}>
         <Sidebar.Content>
-          <ContentWrapper>
+          <div className="content-wrapper">
             <BodyWrapper>
               <LinkWrapper>ABOUT US</LinkWrapper>
             </BodyWrapper>
@@ -167,7 +165,7 @@ export default () => {
             <BodyWrapper>
               <LinkWrapper>GUIDES</LinkWrapper>
             </BodyWrapper>
-          </ContentWrapper>
+          </div>
         </Sidebar.Content>
         <Sidebar.Footer hasTopShadow={true}>
           <FooterWrapper>

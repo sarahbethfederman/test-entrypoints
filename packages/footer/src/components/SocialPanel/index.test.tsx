@@ -39,12 +39,7 @@ describe('SocialPanel', () => {
   describe('SectionWrapperOne', () => {
     const sectionWrapperOne = element.find(SectionWrapperOne);
     it('should render Logo in SectionWrapperOne component', () => {
-      expect(
-        sectionWrapperOne
-          .find(Link)
-          .at(0)
-          .props().href
-      ).toEqual('https://www.lendi.com.au/');
+      expect(sectionWrapperOne.find(Link).at(0).props().href).toEqual('https://www.lendi.com.au/');
       expect(sectionWrapperOne.find(Logo)).toHaveLength(1);
     });
 

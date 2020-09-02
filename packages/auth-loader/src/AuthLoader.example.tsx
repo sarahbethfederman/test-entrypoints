@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import AuthLoader from './index';
-import Navbar from '@lendi-ui/navbar';
+// import Navbar from '@lendi-ui/navbar';
 
 const Wrapper = styled.div`
   position: absolute;
@@ -10,16 +10,16 @@ const Wrapper = styled.div`
   height: 100%;
 `;
 
-const NavbarWrapper = styled(Navbar)`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-`;
+// const NavbarWrapper = styled(Navbar)`
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+// `;
 
 export default () => (
   <Wrapper>
-    <NavbarWrapper variant="white" />
+    {/* <NavbarWrapper variant="white" /> */}
     <AuthLoader />
   </Wrapper>
 );

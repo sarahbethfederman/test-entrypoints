@@ -10,17 +10,19 @@ export const PanelWrapper = styled.div`
 `;
 
 export const ApplicantOverline = styled(Overline)`
-   ${pb('xxs')}
+  ${pb('xxs')}
   border-bottom: 1px solid ${color('shade.100')};
 `;
 
 export const ApplicantLink = styled(Link)`
   display: block;
   background: inherit;
-  text-decoration : none;
-    :hover, :focus, :active {
-        text-decoration : none;
-    }
+  text-decoration: none;
+  :hover,
+  :focus,
+  :active {
+    text-decoration: none;
+  }
   ${mr('xs')} ${my('xxs')} ${ml('sm')}
 `;
 

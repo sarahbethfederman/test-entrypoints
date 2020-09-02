@@ -17,44 +17,44 @@ export interface SizeOption {
 }
 
 export const Wrapper = styled.div`
-    ${normalise};
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 12px;
-    width: min-content;
-    ${({ withIcon }: WrapperProps) => {
-      return css`
-        ${!withIcon && pl('xxxs')};
-      `;
-    }}
-    ${pr('xxs')}
+  ${normalise};
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 12px;
+  width: min-content;
+  ${({ withIcon }: WrapperProps) => {
+    return css`
+      ${!withIcon && pl('xxxs')};
+    `;
+  }}
+  ${pr('xxs')}
     ${({ variant }: WrapperProps) => {
-      switch (variant) {
-        case 'error':
-          return css`
-            border: 1px solid ${color('error.500')};
-            ${fg('error.500')} ${bg('error.25')};
-          `;
-        case 'info':
-          return css`
-            border: 1px solid ${color('info.500')};
-            ${fg('info.500')} ${bg('info.25')};
-          `;
-        case 'success':
-          return css`
-            border: 1px solid ${color('success.500')};
-            ${fg('success.500')} ${bg('success.25')};
-          `;
-        case 'warn':
-          return css`
-            border: 1px solid ${color('warn.500')};
-            ${fg('warn.500')} ${bg('warn.25')};
-          `;
-        default:
-          return undefined;
-      }
-    }}
+    switch (variant) {
+      case 'error':
+        return css`
+          border: 1px solid ${color('error.500')};
+          ${fg('error.500')} ${bg('error.25')};
+        `;
+      case 'info':
+        return css`
+          border: 1px solid ${color('info.500')};
+          ${fg('info.500')} ${bg('info.25')};
+        `;
+      case 'success':
+        return css`
+          border: 1px solid ${color('success.500')};
+          ${fg('success.500')} ${bg('success.25')};
+        `;
+      case 'warn':
+        return css`
+          border: 1px solid ${color('warn.500')};
+          ${fg('warn.500')} ${bg('warn.25')};
+        `;
+      default:
+        return undefined;
+    }
+  }}
 `;
 
 /**

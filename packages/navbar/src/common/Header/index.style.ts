@@ -12,9 +12,14 @@ import { ExitToApp } from '@lendi-ui/icon';
 import { Link } from '@lendi-ui/typography';
 
 // @ts-ignore
-import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
+// make preconstruct ignore this by using require instead of import
+const NewLogo = require('../assets/Lendi-Logo-Pos.svg');
+// import * as NewLogo from '../assets/Lendi-Logo-Pos.svg';
+
 // @ts-ignore
-import * as DomainLogo from '../assets/domain-logo.svg';
+// make preconstruct ignore this by using require instead of import
+const DomainLogo = require('../assets/domain-logo.svg');
+// import * as DomainLogo from '../assets/domain-logo.svg';
 
 /**
  * OldHeaderLogo & OldMenuButton can be removed
@@ -272,7 +277,7 @@ export const LogoutWrapper = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: ${select('borderRadius')};
-  ${px('md')} ${py('sm')} ${depth(2)} ${bg('shade.0')} 
+  ${px('md')} ${py('sm')} ${depth(2)} ${bg('shade.0')}
 `;
 
 export const ExitToAppWrapper = styled(ExitToApp)`

@@ -1,6 +1,6 @@
 // this file is used by the website
 {
-  "extends": "../tsconfig.base.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {

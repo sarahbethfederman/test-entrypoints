@@ -7,11 +7,11 @@ import { gte, between } from '@lendi-ui/breakpoint';
 import { Heading } from '@lendi-ui/typography';
 
 export const Wrapper = styled.div`
-    ${normalise};
-    ${container};
-    ${bg('secondary.600')};
-    ${px('xl')}
-    ${py('xxl')}
+  ${normalise};
+  ${container};
+  ${bg('secondary.600')};
+  ${px('xl')}
+  ${py('xxl')}
     ${gte('tablet')`
       ${p('xxxl')};
     `}
@@ -27,15 +27,27 @@ export const HeadingWrapper = styled(Heading)`
   ${mb('xl')};
 `;
 
-export const ButtonsWrapper = styled.div`
-  a:first-child {
-    ${mr('sm')}
+export const ModalFooterWrapper = styled.div`
+  text-align: center;
+  a {
+    width: ${deriveSize(16)};
   }
+  ${between('mobile', 'tablet')`
+    a {
+      width: 100%;
+    }
+  `}
+`;
 
+export const ButtonsWrapper = styled.div`
   a,
   button {
     ${mb('sm')};
     width: ${deriveSize(17)};
+  }
+
+  a:first-child {
+    ${mr('sm')}
   }
 
   ${between('mobile', 'tablet')`
@@ -48,18 +60,4 @@ export const ButtonsWrapper = styled.div`
 
 export const ModalContentWrapper = styled.div`
   text-align: center;
-`;
-
-export const ModalFooterWrapper = styled.div`
-  text-align: center;
-
-  a {
-    width: ${deriveSize(16)};
-  }
-
-  ${between('mobile', 'tablet')`
-  a {
-    width: 100%;
-  }
-`}
 `;

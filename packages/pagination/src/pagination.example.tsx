@@ -11,12 +11,12 @@ const ExampleWrapper = styled.div`
 `;
 
 const Card = styled.div`
-    ${mx('auto')} ${my('sm')} ${pl('lg')} ${pt('lg')}
+  ${mx('auto')} ${my('sm')} ${pl('lg')} ${pt('lg')}
     border: 2px solid #00c0a5;
-    border-radius: 6px;
-    width: 30rem;
-    height: 30rem;
-  `;
+  border-radius: 6px;
+  width: 30rem;
+  height: 30rem;
+`;
 
 export interface ExampleState {
   currentPage: number;

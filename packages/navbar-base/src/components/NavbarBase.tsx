@@ -1,7 +1,7 @@
 import * as React from 'react';
 import NavbarLeft from './NavbarLeft';
 import NavbarRight from './NavbarRight';
-import * as Sticky from 'react-stickynode';
+import Sticky from 'react-stickynode';
 import { NavbarBaseProps, NavbarCompoundComponent } from '../types';
 import { ChildrenWrapper } from '../index.style';
 import NavbarBaseContext from '../context/NavbarContext';

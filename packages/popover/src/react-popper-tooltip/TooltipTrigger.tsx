@@ -76,15 +76,7 @@ class TooltipTrigger extends React.Component<TooltipTriggerProps, TooltipTrigger
           ...modifiers,
         }}
       >
-        {({
-          ref,
-          style,
-          // tslint:disable-next-line
-          placement,
-          arrowProps,
-          outOfBoundaries,
-          scheduleUpdate,
-        }) => {
+        {({ ref, style, placement, arrowProps, outOfBoundaries, scheduleUpdate }) => {
           if (followCursor && this.popperOffset) {
             const { pageX, pageY } = this.state;
             const { width, height } = this.popperOffset;

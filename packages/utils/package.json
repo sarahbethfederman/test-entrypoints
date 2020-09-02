@@ -2,14 +2,15 @@
   "name": "@lendi-ui/utils",
   "version": "5.0.0",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/utils.cjs.js",
+  "module": "dist/utils.esm.js",
   "files": [
     "dist"
   ],
   "peerDependencies": {
     "@lendi-ui/theme": "^9.0.0",
     "@types/styled-components": "^4.1.18",
+    "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
@@ -20,9 +21,10 @@
     "prop-types": "^15.7.2"
   },
   "license": "ISC",
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/theme": "*",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

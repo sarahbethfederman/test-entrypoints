@@ -1,9 +1,9 @@
 {
   "name": "@lendi-ui/fancy-icon",
   "version": "3.0.3",
-  "main": "dist/cjs/index.js",
-  "source": "src/index.tsx",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/fancy-icon.cjs.js",
+  "module": "dist/fancy-icon.esm.js",
+  "source": "src/index.ts",
   "files": [
     "dist"
   ],
@@ -11,24 +11,27 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.8",
-    "styled-components": "^4",
-    "@types/styled-components": "^4.1.18"
+    "styled-components": "^4"
   },
   "devDependencies": {
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/theme": "*",
+    "@lendi-ui/typography": "^5.0.1",
     "@svgr/core": "^2.2.0",
-    "@lendi-ui/typography": "^4.0.0",
-    "@lendi-ui/spacing": "^6.0.0"
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   },
   "dependencies": {
     "@lendi-ui/color": "^5.0.0"
   },
   "scripts": {
     "build:svg": "node ./build/index.js",
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:svg && yarn run build:types && yarn run build:cjs"
+    "build": "yarn run build:svg"
   }
 }

@@ -1,7 +1,12 @@
-image: node:10.15.2
+image: node:12.18.3
 
 clone:
   depth: full
+
+definitions:
+  services:
+    docker:
+      memory: 8192
 
 pipelines:
   default:
@@ -27,7 +32,9 @@ pipelines:
 
         - step:
             name: ⚒ Build all packages
+            size: 2x
             script:
+              - export NODE_OPTIONS=--max-old-space-size=8192
               - ./ci/build.sh
             caches:
               - node
@@ -114,3 +121,4 @@ pipelines:
             - ./ci/publish.sh
           caches:
             - node
+

@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { mount } from 'enzyme';
 import { Breakpoint } from '@lendi-ui/breakpoint';
 import { unit } from '.';
+import type { UnitOptions } from './unit';
 
 describe('unit()', () => {
-  const Unit = styled.div`
+  const Unit = styled.div<UnitOptions>`
     ${unit};
   `;
 
@@ -42,10 +43,10 @@ describe('unit()', () => {
 
     it.each([
       [1, '100%'],
-      [1 / 2, '50%'],
-      [1 / 4, '25%'],
+      [0.5, '50%'],
+      [0.25, '25%'],
       [0, '0%'],
-    ])('should render offset of %d correctly', ([val, result]) => {
+    ])('should render offset of %d correctly', (val, result) => {
       const element = mount(<Unit offset={val} />);
       expect(element).toHaveStyleRule('margin-left', result);
     });

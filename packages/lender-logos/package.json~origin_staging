@@ -23,7 +23,7 @@
   },
   "scripts": {
     "build:svg": "node ./build/index.js",
-    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:cjs": "tsc --project tsconfig.json",
     "build:types": "tsc --project tsconfig.types.json",
     "build": "yarn run build:svg && yarn run build:types && yarn run build:cjs"
   }

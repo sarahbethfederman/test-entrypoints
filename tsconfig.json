@@ -1,0 +1,27 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "typings/**/*.d.ts",
+    "packages/*/src/**/*.ts",
+    "packages/*/src/**/*.tsx",
+    "utils/*/src/**/*.ts",
+    "utils/*/src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "packages/*/src/**/*.d.ts",
+    "packages/*/src/**/*.test.ts",
+    "packages/*/src/**/*.test.tsx",
+    "packages/*/src/packages/*/**/*.example.tsx",
+    "packages/*/src/examples/**.tsx",
+    "packages/*/src/**/*.doc.ts",
+    "packages/*/src/**/*.doc.tsx",
+    "utils/*/src/**/*.d.ts",
+    "utils/*/src/**/*.test.ts",
+    "utils/*/src/**/*.test.tsx",
+    "utils/*/src/packages/*/**/*.example.tsx",
+    "utils/*/src/examples/**.tsx",
+    "utils/*/src/**/*.doc.ts",
+    "utils/*/src/**/*.doc.tsx"
+  ]
+}

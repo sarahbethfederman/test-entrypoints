@@ -21,7 +21,7 @@ exports[`Text area should renderTextarea the text area component 1`] = `
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -42,28 +42,8 @@ exports[`Text area should renderTextarea the text area component 1`] = `
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(146,146,146,1);
 }
 
 <ForwardRef
@@ -194,7 +174,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -215,28 +195,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(146,146,146,1);
 }
 
 <styled.textarea
@@ -362,7 +322,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -507,7 +467,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -528,28 +488,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,28,74,1);
 }
 
 <styled.textarea
@@ -675,7 +615,7 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -696,28 +636,8 @@ exports[`Text area variations of the text area in all given sizes lg should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,255,255,1);
 }
 
 <styled.textarea
@@ -843,7 +763,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -864,28 +784,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(146,146,146,1);
 }
 
 <styled.textarea
@@ -1011,7 +911,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -1156,7 +1056,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1177,28 +1077,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,28,74,1);
 }
 
 <styled.textarea
@@ -1324,7 +1204,7 @@ exports[`Text area variations of the text area in all given sizes md should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -1345,28 +1225,8 @@ exports[`Text area variations of the text area in all given sizes md should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,255,255,1);
 }
 
 <styled.textarea
@@ -1492,7 +1352,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: 100%;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(200,200,200,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1513,28 +1373,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(146,146,146,1);
 }
 
 <styled.textarea
@@ -1660,7 +1500,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   cursor: not-allowed;
   background-color: #f8f8f8;
   border: 1px solid rgba(227,227,227,1);
@@ -1805,7 +1645,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(255,28,74,1);
   background-color: rgba(255,255,255,1);
 }
@@ -1826,28 +1666,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,28,74,1);
 }
 
 <styled.textarea
@@ -1973,7 +1793,7 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   width: auto;
   padding: calc(0.75 * var(--lendi-ui-size)) var(--lendi-ui-size);
   font-size: calc(1.125 * var(--lendi-ui-size));
-  height: calc( 1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
+  height: calc(1.333 * 3 * calc(1.125 * var(--lendi-ui-size)) + 2 * calc(0.75 * var(--lendi-ui-size)));
   border: 1px solid rgba(248,248,248,1);
   background-color: transparent;
 }
@@ -1994,28 +1814,8 @@ exports[`Text area variations of the text area in all given sizes sm should rend
   color: rgba(173,173,173,1);
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: hoverColor;
-  -moz-var: hoverColor;
-  -ms-var: hoverColor;
-  var: hoverColor;
-  return: hoverColor;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  hoverColor: = color_1.color('shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  hoverColor: = color_1.color('shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  hoverColor: = color_1.color('error.500');
+.c0:hover:not(:focus) {
+  border: 1px solid rgba(255,255,255,1);
 }
 
 <styled.textarea

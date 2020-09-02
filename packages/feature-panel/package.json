@@ -3,30 +3,32 @@
   "version": "4.0.1",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/feature-panel.cjs.js",
+  "module": "dist/feature-panel.esm.js",
   "files": [
     "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.8",
-    "styled-components": "^4",
-    "@types/styled-components": "^4.1.18"
+    "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/grid": "^3.0.0",
+    "@lendi-ui/grid": "^4.0.3",
     "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/spacing": "^6.0.0",
-    "@lendi-ui/typography": "^4.0.0",
-    "@lendi-ui/utils": "^4.0.0"
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/typography": "^5.0.1",
+    "@lendi-ui/utils": "^5.0.0"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/theme": "*",
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

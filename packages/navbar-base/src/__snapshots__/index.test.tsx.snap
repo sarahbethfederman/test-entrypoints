@@ -38,6 +38,7 @@ exports[`NavbarBase should mount 1`] = `
       bottomBoundary={0}
       enableTransforms={true}
       enabled={true}
+      innerClass=""
       innerZ={3}
       onStateChange={[Function]}
       releasedClass="released"
@@ -49,7 +50,7 @@ exports[`NavbarBase should mount 1`] = `
         style={Object {}}
       >
         <div
-          className="sticky-inner-wrapper"
+          className="sticky-inner-wrapper "
           style={
             Object {
               "position": "relative",

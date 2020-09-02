@@ -1,5 +1,4 @@
-import * as React from 'react';
-import * as Fragment from 'react-dot-fragment';
+import React, { Fragment } from 'react';
 import { ItemProps } from '../Item';
 import { GroupProps } from '../Group';
 import { Title, ListWrapper } from './index.style';

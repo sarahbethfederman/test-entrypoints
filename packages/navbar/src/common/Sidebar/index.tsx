@@ -1,5 +1,4 @@
-import * as React from 'react';
-import * as Fragment from 'react-dot-fragment';
+import React, { Fragment } from 'react';
 import Overlay from '@lendi-ui/overlay';
 import Transition, { State } from '@lendi-ui/transition';
 import { Wrapper, CloseButton, OverlayWrapper } from './index.style';

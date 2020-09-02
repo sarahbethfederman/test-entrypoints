@@ -56,7 +56,7 @@ exports[`Sidebar should render <Sidebar /> 1`] = `
     zIndex={2}
   >
     <div>
-      <Component
+      <Fade
         isActive={true}
         isVisible={true}
         shouldMountOnEnter={true}
@@ -129,7 +129,7 @@ exports[`Sidebar should render <Sidebar /> 1`] = `
             </styled.div>
           </div>
         </Transition>
-      </Component>
+      </Fade>
     </div>
   </Overlay>
   <Transition

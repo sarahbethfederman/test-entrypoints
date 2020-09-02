@@ -3,40 +3,43 @@
   "version": "2.3.3",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/address-picker.cjs.js",
+  "module": "dist/address-picker.esm.js",
   "files": [
     "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
+    "@types/styled-components": "^4.1.18",
     "react": "^16.8",
-    "styled-components": "^4",
-    "@types/styled-components": "^4.1.18"
+    "styled-components": "^4"
   },
   "dependencies": {
     "@lendi-ui/auto-complete": "^5.0.0",
+    "@lendi-ui/breakpoint": "^5.1.0",
     "@lendi-ui/button": "^8.0.0",
-    "@lendi-ui/breakpoint": "^4.0.0",
-    "@lendi-ui/container": "^5.0.0",
+    "@lendi-ui/color": "^5.0.1",
+    "@lendi-ui/container": "^6.1.0",
+    "@lendi-ui/dropdown": "^4.0.2",
+    "@lendi-ui/grid": "^4.0.3",
     "@lendi-ui/icon": "^9.0.0",
     "@lendi-ui/modal": "^3.0.0",
-    "@lendi-ui/dropdown": "^4.0.2",
-    "@lendi-ui/spacing": "^6",
+    "@lendi-ui/spacing": "^7.0.0",
     "@lendi-ui/text-input": "^4.0.3",
-    "@lendi-ui/typography": "^4.0.0",
-    "@lendi-ui/utils": "^4.0.0",
+    "@lendi-ui/typography": "^5.0.1",
+    "@lendi-ui/utils": "^5.0.0",
     "@types/googlemaps": "^3.36.5",
-    "lodash": "^4.17.11",
-    "react-create-ref": "^1.0.1",
+    "lodash": "^4.17.15",
     "to-case": "^2.0.0"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/theme": "*",
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

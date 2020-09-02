@@ -43,22 +43,22 @@ export const Wrapper = styled.div`
       `;
     }
   }} ${({ side, transition }: WrapperProps) => {
-  if (side === 'left') {
-    return mixin(transition, {
-      entering: { transform: 'translateX(0)' },
-      entered: { transform: 'translateX(0)' },
-      exit: { transform: 'translateX(0)' },
-      exiting: { transform: 'translateX(-100%)' },
-    });
-  } else {
-    return mixin(transition, {
-      entering: { transform: 'translateX(0)' },
-      entered: { transform: 'translateX(0)' },
-      exit: { transform: 'translateX(0)' },
-      exiting: { transform: 'translateX(100%)' },
-    });
-  }
-}};
+    if (side === 'left') {
+      return mixin(transition, {
+        entering: { transform: 'translateX(0)' },
+        entered: { transform: 'translateX(0)' },
+        exit: { transform: 'translateX(0)' },
+        exiting: { transform: 'translateX(-100%)' },
+      });
+    } else {
+      return mixin(transition, {
+        entering: { transform: 'translateX(0)' },
+        entered: { transform: 'translateX(0)' },
+        exit: { transform: 'translateX(0)' },
+        exiting: { transform: 'translateX(100%)' },
+      });
+    }
+  }};
 `;
 
 export interface CloseButtonProps {

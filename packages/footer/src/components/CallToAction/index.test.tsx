@@ -57,22 +57,12 @@ describe('CallToAction footer component', () => {
 
       it('should show the I want to refinance button', () => {
         render();
-        expect(
-          element
-            .find(Button)
-            .at(0)
-            .text()
-        ).toEqual(refinanceLabel);
+        expect(element.find(Button).at(0).text()).toEqual(refinanceLabel);
       });
 
       it('should show the I want to buy a home button', () => {
         render();
-        expect(
-          element
-            .find(Button)
-            .at(1)
-            .text()
-        ).toEqual(buyNewLabel);
+        expect(element.find(Button).at(1).text()).toEqual(buyNewLabel);
       });
     });
 
@@ -85,22 +75,12 @@ describe('CallToAction footer component', () => {
 
       it('should show the Start new application button if they do not have an application', () => {
         render({ isAuth: true });
-        expect(
-          element
-            .find(Button)
-            .at(0)
-            .text()
-        ).toEqual(startNewLabel);
+        expect(element.find(Button).at(0).text()).toEqual(startNewLabel);
       });
 
       it('should show the continue application button if they have an application', () => {
         render({ isAuth: true, continueApplicationUrl: '/', applicationDate: '6 February 2019' });
-        expect(
-          element
-            .find(Button)
-            .at(0)
-            .text()
-        ).toEqual(continueLabel);
+        expect(element.find(Button).at(0).text()).toEqual(continueLabel);
       });
     });
   });
@@ -110,24 +90,14 @@ describe('CallToAction footer component', () => {
       describe('the I want to refinance button', () => {
         it('should link to the correct location', () => {
           render();
-          expect(
-            element
-              .find(Button)
-              .at(0)
-              .props().href
-          ).toEqual(REFINANCE_LINK);
+          expect(element.find(Button).at(0).props().href).toEqual(REFINANCE_LINK);
         });
       });
 
       describe('the I want to buy a new home button', () => {
         it('should link to the correct location', () => {
           render();
-          expect(
-            element
-              .find(Button)
-              .at(1)
-              .props().href
-          ).toEqual(BUY_NEW_LINK);
+          expect(element.find(Button).at(1).props().href).toEqual(BUY_NEW_LINK);
         });
       });
     });
@@ -136,12 +106,7 @@ describe('CallToAction footer component', () => {
       describe('the Start new application button', () => {
         it('should link to the correct location', () => {
           render({ isAuth: true });
-          expect(
-            element
-              .find(Button)
-              .at(0)
-              .props().href
-          ).toEqual(START_NEW_LINK);
+          expect(element.find(Button).at(0).props().href).toEqual(START_NEW_LINK);
         });
       });
 
@@ -149,10 +114,7 @@ describe('CallToAction footer component', () => {
         it('should open a Modal', () => {
           render({ isAuth: true, continueApplicationUrl: '/', applicationDate: '6 February 2019' });
           expect(element.find(Modal).props().isVisible).toEqual(false);
-          element
-            .find(Button)
-            .at(0)
-            .simulate('click');
+          element.find(Button).at(0).simulate('click');
           expect(element.find(Modal).props().isVisible).toEqual(true);
         });
       });
@@ -162,10 +124,7 @@ describe('CallToAction footer component', () => {
         const continueApplicationUrl = '/';
         beforeEach(() => {
           render({ isAuth: true, continueApplicationUrl, applicationDate });
-          element
-            .find(Button)
-            .at(0)
-            .simulate('click');
+          element.find(Button).at(0).simulate('click');
         });
 
         it('should include the applicationDate in the text', () => {
@@ -174,23 +133,13 @@ describe('CallToAction footer component', () => {
 
         describe('the Start new application button', () => {
           it('should link to the correct location', () => {
-            expect(
-              element
-                .find(Button)
-                .at(1)
-                .props().href
-            ).toEqual(START_NEW_LINK);
+            expect(element.find(Button).at(1).props().href).toEqual(START_NEW_LINK);
           });
         });
 
         describe('the Continue application button', () => {
           it('should link to the continueApplicationUrl', () => {
-            expect(
-              element
-                .find(Button)
-                .at(2)
-                .props().href
-            ).toEqual(continueApplicationUrl);
+            expect(element.find(Button).at(2).props().href).toEqual(continueApplicationUrl);
           });
         });
       });

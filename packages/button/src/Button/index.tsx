@@ -1,16 +1,10 @@
 import * as React from 'react';
 import { getDataProps, LUIGlobalProps } from '@lendi-ui/utils';
-import {
-  ButtonVariant,
-  ButtonSize,
-  ButtonWrapper,
-  LinkWrapper,
-  Layout,
-  BeforeWrapper,
-  AfterWrapper,
-} from './index.style';
+import { ButtonWrapper, LinkWrapper, Layout, BeforeWrapper, AfterWrapper } from './index.style';
 
-export { ButtonSize, ButtonVariant };
+import type { ButtonVariant, ButtonSize } from './index.style';
+
+export type { ButtonVariant, ButtonSize };
 
 export type ButtonType = 'submit' | 'button' | 'reset';
 

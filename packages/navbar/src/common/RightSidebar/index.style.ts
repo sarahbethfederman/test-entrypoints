@@ -14,7 +14,7 @@ export const Header = styled.header`
   ${pb('md')}
   ${px('xxs')}
   flex-shrink: 0;
-  border-bottom: 1px solid ${color('shade.100')}
+  border-bottom: 1px solid ${color('shade.100')};
 `;
 
 export const BrokerWrapper = styled.div`
@@ -24,7 +24,7 @@ export const BrokerWrapper = styled.div`
 `;
 
 export const BrokerFaces = styled.img`
-  width: 80%
+  width: 80%;
   display: block;
   margin: auto;
 `;

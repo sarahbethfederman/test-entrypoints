@@ -112,11 +112,7 @@ describe('Select - the fancy one', () => {
       const theInput = wrapper.find('input');
       theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
 
-      const optionCss = wrapper
-        .find('Option')
-        .first()
-        .get(0)
-        .props.selectProps.styles.option(true, true);
+      const optionCss = wrapper.find('Option').first().get(0).props.selectProps.styles.option(true, true);
       expect(optionCss).toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
     });
     it("should display each option's full text content when isOptionsOverflow is true in single select", () => {
@@ -125,11 +121,7 @@ describe('Select - the fancy one', () => {
       const theInput = wrapper.find('input');
       theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
 
-      const optionCss = wrapper
-        .find('Option')
-        .first()
-        .get(0)
-        .props.selectProps.styles.option(true, true);
+      const optionCss = wrapper.find('Option').first().get(0).props.selectProps.styles.option(true, true);
       expect(optionCss).not.toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
     });
   });
@@ -167,11 +159,7 @@ describe('Select - the fancy one', () => {
       const theInput = wrapper.find('input');
       theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
 
-      const optionCss = wrapper
-        .find('Option')
-        .first()
-        .get(0)
-        .props.selectProps.styles.option(true, true);
+      const optionCss = wrapper.find('Option').first().get(0).props.selectProps.styles.option(true, true);
       expect(optionCss).toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
     });
     it("should display each option's full text content when isOptionsOverflow is true in mulitple select", () => {
@@ -180,11 +168,7 @@ describe('Select - the fancy one', () => {
       const theInput = wrapper.find('input');
       theInput.simulate('keyDown', { key: 'ArrowDown', keyCode: 40, which: 40 });
 
-      const optionCss = wrapper
-        .find('Option')
-        .first()
-        .get(0)
-        .props.selectProps.styles.option(true, true);
+      const optionCss = wrapper.find('Option').first().get(0).props.selectProps.styles.option(true, true);
       expect(optionCss).not.toMatchObject({ textOverflow: 'ellipsis', whiteSpace: 'nowrap', overflow: 'hidden' });
     });
   });

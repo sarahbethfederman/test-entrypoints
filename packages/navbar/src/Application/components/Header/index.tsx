@@ -1,6 +1,5 @@
-import * as React from 'react';
-import * as Sticky from 'react-stickynode';
-import createRef from 'react-create-ref';
+import React, { createRef } from 'react';
+import Sticky from 'react-stickynode';
 import {
   FullWidthContainer,
   Container,

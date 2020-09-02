@@ -74,7 +74,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -84,14 +84,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -181,7 +181,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -347,7 +346,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -357,14 +356,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -448,7 +447,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -613,7 +611,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -623,14 +621,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -681,7 +679,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -850,7 +847,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -860,7 +857,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -948,7 +945,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -1114,7 +1110,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -1124,7 +1120,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -1206,7 +1202,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -1371,7 +1366,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -1381,7 +1376,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -1430,7 +1425,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -1599,7 +1593,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -1609,7 +1603,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -1697,7 +1691,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -1863,7 +1856,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -1873,7 +1866,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -1955,7 +1948,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -2120,7 +2112,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -2130,7 +2122,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -2179,7 +2171,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -2348,7 +2339,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -2358,7 +2349,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -2443,7 +2434,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -2609,7 +2599,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -2619,7 +2609,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -2699,7 +2689,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -2864,7 +2853,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -2874,7 +2863,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -2922,7 +2911,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -3091,7 +3079,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -3101,14 +3089,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -3198,7 +3186,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -3364,7 +3351,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -3374,14 +3361,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -3465,7 +3452,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -3630,7 +3616,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(37.5 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -3640,14 +3626,14 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c3 {
     padding-left: calc(2 * var(--lendi-ui-size));
     padding-right: calc(2 * var(--lendi-ui-size));
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -3698,7 +3684,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -3867,7 +3852,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -3877,7 +3862,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -3965,7 +3950,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -4131,7 +4115,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -4141,7 +4125,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -4223,7 +4207,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -4388,7 +4371,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(25 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -4398,7 +4381,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -4447,7 +4430,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}
@@ -4616,7 +4598,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -4626,7 +4608,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -4714,7 +4696,6 @@ Array [
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
                 "withComponent": [Function],
-                Symbol(Symbol.hasInstance): [Function],
               }
             }
             forwardedRef={null}
@@ -4880,7 +4861,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -4890,7 +4871,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -4972,7 +4953,6 @@ Array [
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -5137,7 +5117,7 @@ Array [
   cursor: pointer;
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 {
     width: calc(22 * var(--lendi-ui-size));
     border-radius: 6px;
@@ -5147,7 +5127,7 @@ Array [
   }
 }
 
-@media (min-width:36.0625em) {
+@media (min-width:36rem) {
   .c0 .c4 {
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
@@ -5196,7 +5176,6 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
-            Symbol(Symbol.hasInstance): [Function],
           }
         }
         forwardedRef={null}

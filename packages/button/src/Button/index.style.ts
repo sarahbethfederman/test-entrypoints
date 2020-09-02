@@ -3,7 +3,8 @@ import { select, Colors, ColorPrefixes } from '@lendi-ui/theme';
 import { fg, bg, color } from '@lendi-ui/color';
 import { depth } from '@lendi-ui/depth';
 import { deriveSize, normalise } from '@lendi-ui/utils';
-import { map, BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
+import { map } from '@lendi-ui/breakpoint';
+import type { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
 export type Size = 'lg' | 'md' | 'sm' | 'xs';
 export type ButtonSize = BreakpointValue<Size> | BreakpointValueMap<Size>;
@@ -96,23 +97,24 @@ const commonStyle = css`
   ${({ size }: WrapperProps) => css`
     ${size && commonStyleBySizeMixin(size)}
     font-family: ${select('typography.body.fontFamily')};
-  `} ${({ isFullWidth = false }: WrapperProps) => {
-    if (isFullWidth) {
-      return 'width: 100%;';
-    }
-    return undefined;
-  }}
+  `}
 
-  :focus {
+  ${({ isFullWidth = false }: WrapperProps) =>
+    isFullWidth &&
+    css`
+      width: 100%;
+    `}
+
+  &:focus {
     outline: none;
     ${depth(2)};
   }
 
-  :hover {
+  &:hover {
     ${depth(4)};
   }
 
-  :active {
+  &:active {
     transform: scale(0.98);
   }
 
@@ -143,30 +145,29 @@ const filledStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
     ${fg('shade.0')}
     ${bg(`${colorPrefix}.500` as Colors)};
 
-    :focus {
+    &:focus {
       ${bg(`${colorPrefix}.400` as Colors)}
     }
 
-    :hover {
+    &:hover {
       ${bg(`${colorPrefix}.400` as Colors)}
     }
 
-    :active {
+    &:active {
       ${bg(`${colorPrefix}.600` as Colors)}
     }
-
 
     ${({ isDisabled }: WrapperProps) =>
       isDisabled
         ? css`
-            ${bg(`${colorPrefix}.500` as Colors)} :hover,
-            :active,
-            :focus {
+            ${bg(`${colorPrefix}.500` as Colors)}
+            &:hover,
+            &:active,
+            &:focus {
               ${bg(`${colorPrefix}.500` as Colors)}
             }
           `
         : undefined}
-
   `;
 };
 
@@ -176,7 +177,7 @@ const inversedFilledStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) =>
     ${fg(`${colorPrefix}.500` as Colors)};
     ${bg('shade.0')};
 
-    :active {
+    &:active {
       opacity: 0.9;
     }
   `;
@@ -187,30 +188,31 @@ const outlineStyle = ({ colorPrefix }: { colorPrefix: ColorPrefixes }) => {
     ${commonStyle}
     ${fg(`${colorPrefix}.500` as Colors)}
     ${bg('shade.0')}
-    border: 1px solid ${color(`${colorPrefix}.500` as Colors)};
+    border: 1px solid ${color(
+      `${colorPrefix}.500` as Colors
+    )};
 
-    :focus {
+    &:focus {
       border-color: ${color(`${colorPrefix}.400` as Colors)};
     }
 
-    :hover {
+    &:hover {
       border-color: ${color(`${colorPrefix}.400` as Colors)};
     }
 
-    :active {
+    &:active {
       ${fg(`${colorPrefix}.600` as Colors)};
       ${bg(`${colorPrefix}.50` as Colors)};
       border-color: ${color(`${colorPrefix}.600` as Colors)};
     }
 
-    :disabled:hover,
-    :disabled:active,
-    :disabled:focus {
+    &:disabled:hover,
+    &:disabled:active,
+    &:disabled:focus {
       ${fg(`${colorPrefix}.500` as Colors)}
       ${bg('shade.0')}
       border-color: ${color(`${colorPrefix}.500` as Colors)};
     }
-
   `;
 };
 
@@ -263,7 +265,9 @@ export const ButtonWrapper = styled.button`
   ${buttonStyle};
 `;
 
-export const LinkWrapper = styled(ButtonWrapper.withComponent('a'))`
+export const LinkWrapper = styled(ButtonWrapper).attrs((props) => ({
+  as: 'a',
+}))`
   display: inline-block;
   text-decoration: none;
 `;

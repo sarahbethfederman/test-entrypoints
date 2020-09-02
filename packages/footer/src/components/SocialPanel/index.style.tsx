@@ -65,9 +65,10 @@ export const LinksWrapper = styled.div`
 
 export const PageLink = styled(Link)`
   text-decoration: none;
-  ${fg('shade.700')} :hover,
-  :focus,
-  :active {
+  ${fg('shade.700')}
+  &:hover,
+  &:focus,
+  &:active {
     ${fg('shade.700')}
   }
 `;
@@ -99,7 +100,7 @@ export const SocialLink = styled(Link)`
 `;
 
 const animationIcon = () => css`
-  :hover {
+  &:hover {
     transform: scale(1.2);
   }
   transition: all 100ms linear;

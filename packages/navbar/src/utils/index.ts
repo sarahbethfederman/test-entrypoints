@@ -2,7 +2,7 @@ export const browserSupportsPassiveListeners = () => {
   let supportsPassive = false;
   try {
     var opts = Object.defineProperty({}, 'passive', {
-      get: function() {
+      get: function () {
         supportsPassive = true;
       },
     });

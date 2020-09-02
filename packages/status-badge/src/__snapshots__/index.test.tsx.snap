@@ -81,7 +81,7 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
-    ",
+  ",
               "
   box-sizing: border-box;
   line-height: 1.333;
@@ -92,15 +92,15 @@ exports[`StatusBadge should mount StatusBadge component with icon 1`] = `
   letter-spacing: normal;
 ",
               ";
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 12px;
-    width: min-content;
-    ",
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 12px;
+  width: min-content;
+  ",
               [Function],
               "
-    ",
+  ",
               "
     padding-right: ",
               "calc(0.5 * var(--lendi-ui-size))",
@@ -374,7 +374,7 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
             "lastClassName": "c0",
             "rules": Array [
               "
-    ",
+  ",
               "
   box-sizing: border-box;
   line-height: 1.333;
@@ -385,15 +385,15 @@ exports[`StatusBadge should mount StatusBadge component without icon 1`] = `
   letter-spacing: normal;
 ",
               ";
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-radius: 12px;
-    width: min-content;
-    ",
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 12px;
+  width: min-content;
+  ",
               [Function],
               "
-    ",
+  ",
               "
     padding-right: ",
               "calc(0.5 * var(--lendi-ui-size))",

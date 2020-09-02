@@ -155,7 +155,6 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -179,9 +178,9 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-chPdSV",
+                "componentId": "sc-kAzzGY",
                 "isStatic": false,
-                "lastClassName": "fctdxF",
+                "lastClassName": "cXbMyc",
                 "rules": Array [
                   "
     ",
@@ -193,12 +192,11 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
               "displayName": "Styled(Button)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-chPdSV",
+              "styledComponentId": "sc-kAzzGY",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -264,7 +262,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-bxivhb",
                             "isStatic": false,
                             "lastClassName": "c3",
                             "rules": Array [
@@ -279,7 +277,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-bxivhb",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -300,7 +298,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-EHOje",
+                                  "componentId": "sc-ifAKCX",
                                   "isStatic": false,
                                   "lastClassName": "c4",
                                   "rules": Array [
@@ -315,7 +313,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "displayName": "styled.span",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-EHOje",
+                                "styledComponentId": "sc-ifAKCX",
                                 "target": "span",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -343,7 +341,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bZQynM",
+                                  "componentId": "sc-EHOje",
                                   "isStatic": false,
                                   "lastClassName": "c5",
                                   "rules": Array [
@@ -358,7 +356,7 @@ exports[`InputButton should render InputButton in after wrapper 1`] = `
                                 "displayName": "styled.span",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-bZQynM",
+                                "styledComponentId": "sc-EHOje",
                                 "target": "span",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -537,7 +535,6 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}
@@ -561,9 +558,9 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-kAzzGY",
+                "componentId": "sc-cSHVUG",
                 "isStatic": false,
-                "lastClassName": "cXbMyc",
+                "lastClassName": "hLMVzC",
                 "rules": Array [
                   "
     ",
@@ -575,12 +572,11 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
               "displayName": "Styled(Button)",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-kAzzGY",
+              "styledComponentId": "sc-cSHVUG",
               "target": [Function],
               "toString": [Function],
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
-              Symbol(Symbol.hasInstance): [Function],
             }
           }
           forwardedRef={null}
@@ -646,7 +642,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-ifAKCX",
+                            "componentId": "sc-bxivhb",
                             "isStatic": false,
                             "lastClassName": "c3",
                             "rules": Array [
@@ -661,7 +657,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                           "displayName": "styled.div",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-ifAKCX",
+                          "styledComponentId": "sc-bxivhb",
                           "target": "div",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -682,7 +678,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-EHOje",
+                                  "componentId": "sc-ifAKCX",
                                   "isStatic": false,
                                   "lastClassName": "c4",
                                   "rules": Array [
@@ -697,7 +693,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "displayName": "styled.span",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-EHOje",
+                                "styledComponentId": "sc-ifAKCX",
                                 "target": "span",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],
@@ -725,7 +721,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "$$typeof": Symbol(react.forward_ref),
                                 "attrs": Array [],
                                 "componentStyle": ComponentStyle {
-                                  "componentId": "sc-bZQynM",
+                                  "componentId": "sc-EHOje",
                                   "isStatic": false,
                                   "lastClassName": "c5",
                                   "rules": Array [
@@ -740,7 +736,7 @@ exports[`InputButton should render InputButton in before wrapper 1`] = `
                                 "displayName": "styled.span",
                                 "foldedComponentIds": Array [],
                                 "render": [Function],
-                                "styledComponentId": "sc-bZQynM",
+                                "styledComponentId": "sc-EHOje",
                                 "target": "span",
                                 "toString": [Function],
                                 "warnTooManyClasses": [Function],

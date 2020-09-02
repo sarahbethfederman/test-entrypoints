@@ -1,10 +1,13 @@
 import * as React from 'react';
-import { Section, SectionProps } from './Section';
-import { Group, GroupProps } from './Group';
-import { Item, ItemProps } from './Item';
+import { Section } from './Section';
+import type { SectionProps } from './Section';
+import { Group } from './Group';
+import type { GroupProps } from './Group';
+import { Item } from './Item';
+import type { ItemProps } from './Item';
 import { Wrapper } from './index.style';
 
-export { SectionProps, GroupProps, ItemProps };
+export type { SectionProps, GroupProps, ItemProps };
 
 export interface NavProps {
   children?: React.ReactElement<SectionProps> | React.ReactElement<SectionProps>[];

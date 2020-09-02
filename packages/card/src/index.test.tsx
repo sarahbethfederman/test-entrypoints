@@ -10,7 +10,7 @@ let wrapper;
 const renderInsideCard = (content) => {
   wrapper = mount(
     <Theme>
-      <Card>{...content}</Card>
+      <Card>{content}</Card>
     </Theme>
   );
 };

@@ -2,8 +2,8 @@
   "name": "@lendi-ui/container",
   "version": "6.1.0",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/container.cjs.js",
+  "module": "dist/container.esm.js",
   "files": [
     "dist"
   ],
@@ -16,9 +16,9 @@
   "dependencies": {
     "@lendi-ui/spacing": "^7.0.0"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/breakpoint": "*",
+    "@types/styled-components": "^4.1.18",
+    "styled-components": "^4"
   }
 }

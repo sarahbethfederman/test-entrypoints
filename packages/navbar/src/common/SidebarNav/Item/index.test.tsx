@@ -63,10 +63,7 @@ describe('Item', () => {
     });
     it('should call AnalyticsContext fn', () => {
       expect(wrapper.find(Link)).toHaveLength(1);
-      wrapper
-        .find(Link)
-        .at(0)
-        .simulate('click');
+      wrapper.find(Link).at(0).simulate('click');
       expect(mockAnalyticsContext.analyticsForNavigation).toBeCalledTimes(1);
     });
     it('should call AnalyticsContext fn with correct params', () => {

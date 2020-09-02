@@ -183,12 +183,7 @@ describe('UnAuthed LeftSidebar', () => {
           } as Application,
         });
 
-        expect(
-          element
-            .find(CTAButton)
-            .at(0)
-            .props().href
-        ).toEqual(testURL);
+        expect(element.find(CTAButton).at(0).props().href).toEqual(testURL);
       });
     });
 
@@ -197,10 +192,7 @@ describe('UnAuthed LeftSidebar', () => {
         const mock = jest.fn();
         renderAuthed({ ...defaultProps, onLogout: mock });
 
-        element
-          .find(CTAButton)
-          .at(1)
-          .simulate('click');
+        element.find(CTAButton).at(1).simulate('click');
         expect(mock).toBeCalled();
       });
     });

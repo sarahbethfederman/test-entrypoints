@@ -10,7 +10,7 @@ const camelCase = (str) =>
     .replace(/ /g, '');
 
 const pascalCase = (str) =>
-  camelCase(str).replace(/\w+/g, function(w) {
+  camelCase(str).replace(/\w+/g, function (w) {
     return w[0].toUpperCase() + w.slice(1);
   });
 

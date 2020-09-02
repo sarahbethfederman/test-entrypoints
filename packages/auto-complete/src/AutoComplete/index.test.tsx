@@ -369,10 +369,7 @@ describe('AutoComplete', () => {
         wrapper.find('input').simulate('keyDown', { key: 'ArrowDown' });
         wrapper.find('input').simulate('keyDown', { key: 'ArrowDown' });
         // simulate mouseover on first element.
-        wrapper
-          .find(AutoCompleteListItem)
-          .at(0)
-          .simulate('mouseEnter');
+        wrapper.find(AutoCompleteListItem).at(0).simulate('mouseEnter');
         expect(autoCompleteInstance.state.activeSelection).toEqual(0);
       });
     });

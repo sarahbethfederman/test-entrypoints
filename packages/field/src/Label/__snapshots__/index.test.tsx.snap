@@ -122,7 +122,7 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
   text-decoration: underline;
 }
 
-<Component
+<Link
   size="md"
 >
   <styled.button
@@ -195,7 +195,7 @@ exports[`Large Label should render LUI "md" Link component 1`] = `
       </button>
     </StyledComponent>
   </styled.button>
-</Component>
+</Link>
 `;
 
 exports[`Large Label should render LUI "md" heading component 1`] = `
@@ -281,7 +281,6 @@ exports[`Large Label should render LUI "md" heading component 1`] = `
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
-        Symbol(Symbol.hasInstance): [Function],
       }
     }
     forwardedRef={null}

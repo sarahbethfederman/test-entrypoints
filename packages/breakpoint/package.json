@@ -2,8 +2,8 @@
   "name": "@lendi-ui/breakpoint",
   "version": "5.1.0",
   "source": "src/index.ts",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/breakpoint.cjs.js",
+  "module": "dist/breakpoint.esm.js",
   "files": [
     "dist"
   ],
@@ -14,15 +14,14 @@
     "react": "^16.8.0",
     "styled-components": "^4"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
-  },
   "dependencies": {
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "css-mediaquery": "^0.1.2"
+    "@lendi-ui/theme": "*",
+    "@types/styled-components": "^4.1.18",
+    "css-mediaquery": "^0.1.2",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

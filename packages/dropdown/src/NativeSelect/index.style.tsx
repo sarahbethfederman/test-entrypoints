@@ -75,16 +75,16 @@ export const DropdownWrapper = styled.div`
   display: inline-block;
   position: relative;
   ${({ isFullWidth }: DropdownWrapperProp) => {
-      if (isFullWidth) {
-        return css`
-          width: 100%;
-        `;
-      }
+    if (isFullWidth) {
       return css`
-        ${ml('xxs')};
+        width: 100%;
       `;
-    }}
-    :hover {
+    }
+    return css`
+      ${ml('xxs')};
+    `;
+  }}
+  &:hover {
     ${({ isDisabled }: DropdownWrapperProp) => {
       if (isDisabled) {
         return undefined;
@@ -99,8 +99,7 @@ export const DropdownWrapper = styled.div`
 export const Select = styled.select<LayoutProp>`
   border-radius: 4px 4px 0 0;
   font-family: ${select('typography.body.fontFamily')};
-  -webkit-appearance: none;
-
+  appearance: none;
   ${({ disabled }: { disabled: boolean }) => {
     if (disabled) {
       return css`

@@ -17,7 +17,7 @@ const GlobalStyle: GlobalStyleComponent<{ theme: ThemeMap }, DefaultTheme> = cre
     font-family: ${({ theme }) => theme.typography.body};
   }
 
-  heading, h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.typography.heading};
     font-weight: 700;
   }

@@ -6,7 +6,8 @@ import { Body, Link } from '@lendi-ui/typography';
 import { AutoCompleteStateless, DataSourceItem } from '@lendi-ui/auto-complete';
 import { BreakpointValue, BreakpointValueMap } from '@lendi-ui/breakpoint';
 
-import AddressModal, { AddressObject } from './components/Modal';
+import AddressModal from './components/Modal';
+import type { AddressObject } from './components/Modal';
 import AddressMap from './components/Map';
 import { Wrapper, Alert, InfoWrapper } from './index.style';
 import MapService from './utils/map-service';
@@ -60,7 +61,6 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
 
   componentDidMount(): void {
     if (!google || !google.maps || !google.maps.places) {
-      // tslint:disable-next-line
       console.error('LUI AddressPicker: Google Maps not loaded');
       this.setState({ showModal: true });
       return;
@@ -75,7 +75,6 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   fetchSuggestion(input: string): void {
     if (input.length < 3) return; // quietly exit when input is too short
     if (!google.maps.places) {
-      // tslint:disable-next-line
       console.error('LUI: Cannot fetch suggestions on unloaded API');
       return;
     }
@@ -211,4 +210,4 @@ export default class AddressPicker extends React.Component<AddressPickerProps, A
   }
 }
 
-export { AddressObject } from './components/Modal';
+export type { AddressObject } from './components/Modal';

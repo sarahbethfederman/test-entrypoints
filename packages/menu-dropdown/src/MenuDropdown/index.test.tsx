@@ -45,10 +45,7 @@ describe('MenuDropdown', () => {
     render();
     menuDropdown.setState({ showDropdown: true });
     wrapper.update();
-    wrapper
-      .find(MenuDropdownContent.Item)
-      .at(0)
-      .simulate('click');
+    wrapper.find(MenuDropdownContent.Item).at(0).simulate('click');
     expect(mockOnClick.mock.calls.length).toBe(1);
   });
 });

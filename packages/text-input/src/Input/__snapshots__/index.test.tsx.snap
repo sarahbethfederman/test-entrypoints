@@ -40,30 +40,6 @@ exports[`input should render the whole input component and a text input 1`] = `
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c1:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c1:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c1:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c1:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c2 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -270,7 +246,7 @@ exports[`input should render the whole input component and a text input 1`] = `
                     "$$typeof": Symbol(react.forward_ref),
                     "attrs": Array [],
                     "componentStyle": ComponentStyle {
-                      "componentId": "sc-jTzLTM",
+                      "componentId": "sc-VigVT",
                       "isStatic": false,
                       "lastClassName": "c1",
                       "rules": Array [
@@ -285,18 +261,13 @@ exports[`input should render the whole input component and a text input 1`] = `
   word-spacing: normal;
   letter-spacing: normal;
 ",
-                        ";
+                        "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-                        [Function],
-                        ";
-
-  :hover:not(:focus) {
-    ",
                         [Function],
                         "
 ",
@@ -305,7 +276,7 @@ exports[`input should render the whole input component and a text input 1`] = `
                     "displayName": "styled.div",
                     "foldedComponentIds": Array [],
                     "render": [Function],
-                    "styledComponentId": "sc-jTzLTM",
+                    "styledComponentId": "sc-VigVT",
                     "target": "div",
                     "toString": [Function],
                     "warnTooManyClasses": [Function],
@@ -340,7 +311,7 @@ exports[`input should render the whole input component and a text input 1`] = `
                           "$$typeof": Symbol(react.forward_ref),
                           "attrs": Array [],
                           "componentStyle": ComponentStyle {
-                            "componentId": "sc-fjdhpX",
+                            "componentId": "sc-jTzLTM",
                             "isStatic": false,
                             "lastClassName": "c2",
                             "rules": Array [
@@ -350,28 +321,27 @@ exports[`input should render the whole input component and a text input 1`] = `
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                              [Function],
-                              "
-    ::placeholder {
+  &::placeholder {
     color: ",
                               [Function],
                               ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                               [Function],
                               ";
   }
+  ",
+                              [Function],
+                              "
 ",
                             ],
                           },
                           "displayName": "styled.input",
                           "foldedComponentIds": Array [],
                           "render": [Function],
-                          "styledComponentId": "sc-fjdhpX",
+                          "styledComponentId": "sc-jTzLTM",
                           "target": "input",
                           "toString": [Function],
                           "warnTooManyClasses": [Function],
@@ -490,30 +460,6 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -564,7 +510,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -579,18 +525,13 @@ exports[`input variations of the text input in all given sizes lg should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -599,7 +540,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -634,7 +575,7 @@ exports[`input variations of the text input in all given sizes lg should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -644,28 +585,27 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -778,6 +718,10 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -828,7 +772,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -843,18 +787,13 @@ exports[`input variations of the text input in all given sizes lg should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -863,7 +802,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -898,7 +837,7 @@ exports[`input variations of the text input in all given sizes lg should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -908,28 +847,27 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1042,30 +980,6 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1116,7 +1030,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -1131,18 +1045,13 @@ exports[`input variations of the text input in all given sizes lg should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -1151,7 +1060,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1186,7 +1095,7 @@ exports[`input variations of the text input in all given sizes lg should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -1196,28 +1105,27 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1329,30 +1237,6 @@ exports[`input variations of the text input in all given sizes lg should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1403,7 +1287,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -1418,18 +1302,13 @@ exports[`input variations of the text input in all given sizes lg should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -1438,7 +1317,7 @@ exports[`input variations of the text input in all given sizes lg should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1473,7 +1352,7 @@ exports[`input variations of the text input in all given sizes lg should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -1483,28 +1362,27 @@ exports[`input variations of the text input in all given sizes lg should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1616,30 +1494,6 @@ exports[`input variations of the text input in all given sizes md should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1690,7 +1544,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -1705,18 +1559,13 @@ exports[`input variations of the text input in all given sizes md should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -1725,7 +1574,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1760,7 +1609,7 @@ exports[`input variations of the text input in all given sizes md should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -1770,28 +1619,27 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -1904,6 +1752,10 @@ exports[`input variations of the text input in all given sizes md should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -1954,7 +1806,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -1969,18 +1821,13 @@ exports[`input variations of the text input in all given sizes md should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -1989,7 +1836,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -2024,7 +1871,7 @@ exports[`input variations of the text input in all given sizes md should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -2034,28 +1881,27 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2168,30 +2014,6 @@ exports[`input variations of the text input in all given sizes md should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2242,7 +2064,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -2257,18 +2079,13 @@ exports[`input variations of the text input in all given sizes md should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -2277,7 +2094,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -2312,7 +2129,7 @@ exports[`input variations of the text input in all given sizes md should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -2322,28 +2139,27 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2455,30 +2271,6 @@ exports[`input variations of the text input in all given sizes md should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2529,7 +2321,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -2544,18 +2336,13 @@ exports[`input variations of the text input in all given sizes md should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -2564,7 +2351,7 @@ exports[`input variations of the text input in all given sizes md should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -2599,7 +2386,7 @@ exports[`input variations of the text input in all given sizes md should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -2609,28 +2396,27 @@ exports[`input variations of the text input in all given sizes md should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -2742,30 +2528,6 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -2816,7 +2578,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -2831,18 +2593,13 @@ exports[`input variations of the text input in all given sizes sm should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -2851,7 +2608,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -2886,7 +2643,7 @@ exports[`input variations of the text input in all given sizes sm should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -2896,28 +2653,27 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3030,6 +2786,10 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3080,7 +2840,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -3095,18 +2855,13 @@ exports[`input variations of the text input in all given sizes sm should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -3115,7 +2870,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -3150,7 +2905,7 @@ exports[`input variations of the text input in all given sizes sm should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -3160,28 +2915,27 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3294,30 +3048,6 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3368,7 +3098,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -3383,18 +3113,13 @@ exports[`input variations of the text input in all given sizes sm should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -3403,7 +3128,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -3438,7 +3163,7 @@ exports[`input variations of the text input in all given sizes sm should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -3448,28 +3173,27 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3581,30 +3305,6 @@ exports[`input variations of the text input in all given sizes sm should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3655,7 +3355,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -3670,18 +3370,13 @@ exports[`input variations of the text input in all given sizes sm should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -3690,7 +3385,7 @@ exports[`input variations of the text input in all given sizes sm should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -3725,7 +3420,7 @@ exports[`input variations of the text input in all given sizes sm should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -3735,28 +3430,27 @@ exports[`input variations of the text input in all given sizes sm should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -3868,30 +3562,6 @@ exports[`input variations of the text input in all given sizes xs should render 
   width: 100%;
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -3942,7 +3612,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -3957,18 +3627,13 @@ exports[`input variations of the text input in all given sizes xs should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -3977,7 +3642,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -4012,7 +3677,7 @@ exports[`input variations of the text input in all given sizes xs should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -4022,28 +3687,27 @@ exports[`input variations of the text input in all given sizes xs should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -4156,6 +3820,10 @@ exports[`input variations of the text input in all given sizes xs should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
+.c0:hover:not(:focus) {
+  border: 1px solid #929292;
+}
+
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4206,7 +3874,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -4221,18 +3889,13 @@ exports[`input variations of the text input in all given sizes xs should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -4241,7 +3904,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -4276,7 +3939,7 @@ exports[`input variations of the text input in all given sizes xs should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -4286,28 +3949,27 @@ exports[`input variations of the text input in all given sizes xs should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -4420,30 +4082,6 @@ exports[`input variations of the text input in all given sizes xs should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4494,7 +4132,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -4509,18 +4147,13 @@ exports[`input variations of the text input in all given sizes xs should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -4529,7 +4162,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -4564,7 +4197,7 @@ exports[`input variations of the text input in all given sizes xs should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -4574,28 +4207,27 @@ exports[`input variations of the text input in all given sizes xs should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],
@@ -4707,30 +4339,6 @@ exports[`input variations of the text input in all given sizes xs should render 
   width: calc(21.5 * var(--lendi-ui-size));
 }
 
-.c0:hover:not(:focus) border:1px solid function (_a) {
-  -webkit-var: isInverse = _a.isInverse, isError = _a.isError;
-  -moz-var: isInverse = _a.isInverse, isError = _a.isError;
-  -ms-var: isInverse = _a.isInverse, isError = _a.isError;
-  var: isInverse = _a.isInverse, isError = _a.isError;
-  -webkit-var: color;
-  -moz-var: color;
-  -ms-var: color;
-  var: color;
-  return: color;
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) if (!isInverse) {
-  color: = theme_1.select('colors.shade.400');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) if (!isError) else {
-  color: = theme_1.select('colors.shade.0');
-}
-
-.c0:hover:not(:focus) border:1px solid function (_a) else {
-  color: = theme_1.select('colors.error.500');
-}
-
 .c1 {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -4781,7 +4389,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "sc-jTzLTM",
+          "componentId": "sc-VigVT",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -4796,18 +4404,13 @@ exports[`input variations of the text input in all given sizes xs should render 
   word-spacing: normal;
   letter-spacing: normal;
 ",
-            ";
+            "
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   ",
-            [Function],
-            ";
-
-  :hover:not(:focus) {
-    ",
             [Function],
             "
 ",
@@ -4816,7 +4419,7 @@ exports[`input variations of the text input in all given sizes xs should render 
         "displayName": "styled.div",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "sc-jTzLTM",
+        "styledComponentId": "sc-VigVT",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -4851,7 +4454,7 @@ exports[`input variations of the text input in all given sizes xs should render 
               "$$typeof": Symbol(react.forward_ref),
               "attrs": Array [],
               "componentStyle": ComponentStyle {
-                "componentId": "sc-fjdhpX",
+                "componentId": "sc-jTzLTM",
                 "isStatic": false,
                 "lastClassName": "c1",
                 "rules": Array [
@@ -4861,28 +4464,27 @@ exports[`input variations of the text input in all given sizes xs should render 
   min-width: 0;
   width: 100%;
   border: 0px;
-  ",
-                  [Function],
-                  "
-    ::placeholder {
+  &::placeholder {
     color: ",
                   [Function],
                   ";
   }
-
-  :disabled {
+  &:disabled {
     cursor: not-allowed;
     ",
                   [Function],
                   ";
   }
+  ",
+                  [Function],
+                  "
 ",
                 ],
               },
               "displayName": "styled.input",
               "foldedComponentIds": Array [],
               "render": [Function],
-              "styledComponentId": "sc-fjdhpX",
+              "styledComponentId": "sc-jTzLTM",
               "target": "input",
               "toString": [Function],
               "warnTooManyClasses": [Function],

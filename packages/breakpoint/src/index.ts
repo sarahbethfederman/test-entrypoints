@@ -33,7 +33,6 @@ export function gte(breakpoint: BreakpointName) {
   };
 }
 
-// tslint:disable:next-line no-shadowed-variable
 export function between(gte: BreakpointName, lt: BreakpointName) {
   return (strings: TemplateStringsArray, ...interpolations: SimpleInterpolation[]) => {
     // TODO: lt needs to be lt - 1px

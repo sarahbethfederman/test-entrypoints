@@ -6,8 +6,8 @@ import { mb, p, mr, ml } from '@lendi-ui/spacing';
 import ChatBubble from './index';
 
 const ExampleHeading = styled(Heading)`
-    ${mb('xl')}
-    border-bottom: 1px solid ${color('shade.100')};
+  ${mb('xl')}
+  border-bottom: 1px solid ${color('shade.100')};
 `;
 
 const ChatWrapper = styled.div`

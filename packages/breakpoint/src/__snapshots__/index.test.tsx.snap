@@ -2,7 +2,7 @@
 
 exports[`map() reponsiveness with different order of screen size 1`] = `
 .c0 {
-  width: undefined;
+  width: 0;
 }
 
 @media (min-width:0) {
@@ -84,7 +84,7 @@ exports[`map() reponsiveness with different order of screen size 1`] = `
 
 exports[`map() reponsiveness with different order of screen size 2`] = `
 .c0 {
-  width: undefined;
+  width: 0;
 }
 
 @media (min-width:0) {

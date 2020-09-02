@@ -4,7 +4,7 @@ import Label from './Label/index';
 import ErrorMessage from './ErrorMessage/index';
 import { LinkProps } from '@lendi-ui/typography';
 import { FieldWrapper, LabelField, ToolTip } from './index.style';
-import * as cuid from 'cuid';
+import cuid from 'cuid';
 import { LUIGlobalProps } from '@lendi-ui/utils';
 export interface FieldProps extends LUIGlobalProps {
   size?: LabelSize;

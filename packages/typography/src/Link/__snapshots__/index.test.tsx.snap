@@ -23,7 +23,7 @@ exports[`Link should render styles for size lg 1`] = `
   text-decoration: underline;
 }
 
-<Component
+<Link
   size="lg"
 >
   <styled.button
@@ -94,7 +94,7 @@ exports[`Link should render styles for size lg 1`] = `
       />
     </StyledComponent>
   </styled.button>
-</Component>
+</Link>
 `;
 
 exports[`Link should render styles for size md 1`] = `
@@ -120,7 +120,7 @@ exports[`Link should render styles for size md 1`] = `
   text-decoration: underline;
 }
 
-<Component
+<Link
   size="md"
 >
   <styled.button
@@ -191,7 +191,7 @@ exports[`Link should render styles for size md 1`] = `
       />
     </StyledComponent>
   </styled.button>
-</Component>
+</Link>
 `;
 
 exports[`Link should render styles for size sm 1`] = `
@@ -217,7 +217,7 @@ exports[`Link should render styles for size sm 1`] = `
   text-decoration: underline;
 }
 
-<Component
+<Link
   size="sm"
 >
   <styled.button
@@ -288,5 +288,5 @@ exports[`Link should render styles for size sm 1`] = `
       />
     </StyledComponent>
   </styled.button>
-</Component>
+</Link>
 `;

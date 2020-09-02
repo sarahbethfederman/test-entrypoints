@@ -7,11 +7,11 @@ import { gte } from '@lendi-ui/breakpoint';
 import { bg } from '@lendi-ui/color';
 
 export const Wrapper = styled.div`
-    ${normalise};
-    ${container};
-    ${bg('secondary.500')};
-    ${px('xl')}
-    ${py('xxl')}
+  ${normalise};
+  ${container};
+  ${bg('secondary.500')};
+  ${px('xl')}
+  ${py('xxl')}
     ${gte('tablet')`
       ${p('xxxl')};
     `}

@@ -3,13 +3,17 @@ source ./ci/utils/install.sh
 
 env=$1;
 
-if [ "$BITBUCKET_BRANCH" == "master" ]; then
+if [ "$BITBUCKET_BRANCH" == "master" ] || [ "$BUILDKITE_BRANCH" == "master" ]
+then
     tag="latest"
+elif [ "$BUILDKITE" == "true" ]
+then
+    tag=$BUILDKITE_BRANCH
 else
     tag=$BITBUCKET_BRANCH
 fi
 
-baseurl=$(lsd url --environment $env --project lui --tag $tag)
+baseurl=$(yarn lsd url --environment $env --project lui --tag $tag)
 if [[ $? -ne  0 ]]; then
   echo $baseurl
   exit 1
@@ -26,10 +30,6 @@ export ENVIRONMENT=$env
 export TAG=$tag
 export NODE_ENV=production
 
-yarn run build:assets
-yarn run build:icons
-yarn run build:fancy-icons
-yarn run build:lender-logos
-yarn run build:theme
+yarn build:assets
 yarn run build:website
 

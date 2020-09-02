@@ -3,25 +3,27 @@
   "private": true,
   "version": "1.0.1",
   "source": "src/index.ts",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/doc-utils.cjs.js",
+  "module": "dist/doc-utils.esm.js",
   "peerDependencies": {
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
-    "react": "^16.8",
-    "styled-components": "^4",
     "@types/styled-components": "^4.1.18",
-    "@lendi-ui/theme": "^8.0.0"
+    "react": "^16.8",
+    "styled-components": "^4"
   },
   "dependencies": {
     "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/spacing": "^6.0.0",
-    "@lendi-ui/typography": "^3.3.0",
-    "react-live": "1.11.0",
-    "react-element-to-jsx-string": "^14.0.1"
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/typography": "^5.0.1",
+    "react-element-to-jsx-string": "^14.0.1",
+    "react-live": "^1.11.0"
   },
-  "scripts": {
-    "build:esm": "tsc --project tsconfig.esm.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:esm"
+  "devDependencies": {
+    "@lendi-ui/theme": "*",
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

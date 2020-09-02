@@ -71,31 +71,16 @@ describe('Tabs', () => {
   it('should select the tab specified by activeTabIndex', () => {
     let activeTabIndex = 0;
     render({ isInverse: false, activeTabIndex });
-    expect(
-      tabs
-        .find(Tab)
-        .at(0)
-        .find(TabWrapperBtn)
-        .props()['aria-selected']
-    ).toBeTruthy();
+    expect(tabs.find(Tab).at(0).find(TabWrapperBtn).props()['aria-selected']).toBeTruthy();
 
     activeTabIndex = 1;
     render({ isInverse: false, activeTabIndex });
-    expect(
-      tabs
-        .find(Tab)
-        .at(1)
-        .find(TabWrapperBtn)
-        .props()['aria-selected']
-    ).toBeTruthy();
+    expect(tabs.find(Tab).at(1).find(TabWrapperBtn).props()['aria-selected']).toBeTruthy();
   });
 
   it('should call props onChange when tab is clicked', () => {
     render({ isInverse: false });
-    tabs
-      .find(Tab)
-      .at(2)
-      .simulate('click');
+    tabs.find(Tab).at(2).simulate('click');
     expect(mockOnChange.mock.calls.length).toBe(1);
     expect(mockOnChange.mock.calls[0][0]).toBe(2);
   });

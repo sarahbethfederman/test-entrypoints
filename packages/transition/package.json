@@ -3,30 +3,28 @@
   "version": "4.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/transition.cjs.js",
+  "module": "dist/transition.esm.js",
   "files": [
     "dist"
   ],
   "keywords": [],
   "author": "Lendi Devs",
   "dependencies": {
-    "react-lifecycles-compat": "^3.0.4",
-    "styled-components": "^4",
+    "@lendi-ui/color": "^5.0.0",
     "@types/styled-components": "^4.1.18",
-    "@lendi-ui/color": "^5.0.0"
+    "react-lifecycles-compat": "^3.0.4",
+    "styled-components": "^4"
   },
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
     "react": "^16.8"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
-  },
   "devDependencies": {
-    "@lendi-ui/toggle-switch": "^2.2.3"
+    "@lendi-ui/theme": "*",
+    "@lendi-ui/toggle-switch": "^3.0.1",
+    "@types/react": "^16.4.8",
+    "react": "^16.9.0"
   }
 }

@@ -3,16 +3,16 @@
   "version": "6.1.1",
   "description": "The logo.",
   "source": "src/index.tsx",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/logo.cjs.js",
+  "module": "dist/logo.esm.js",
   "files": [
     "dist"
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/theme": "^8.0.0",
-    "@lendi-ui/theme-domain": "^4.0.0",
-    "@lendi-ui/utils": "^4.0.0",
+    "@lendi-ui/theme": "^9.1.0",
+    "@lendi-ui/theme-domain": "^5.0.0",
+    "@lendi-ui/utils": "^5.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
@@ -22,9 +22,13 @@
     "@lendi-ui/color": "^5.0.0",
     "@lendi-ui/icon": "^9.0.0"
   },
-  "scripts": {
-    "build:cjs": "tsc --project tsconfig.cjs.json",
-    "build:types": "tsc --project tsconfig.types.json",
-    "build": "yarn run build:types && yarn run build:cjs"
+  "devDependencies": {
+    "@lendi-ui/theme": "*",
+    "@lendi-ui/theme-domain": "*",
+    "@lendi-ui/utils": "*",
+    "@types/react": "^16.4.8",
+    "@types/styled-components": "^4.1.18",
+    "react": "^16.9.0",
+    "styled-components": "^4"
   }
 }

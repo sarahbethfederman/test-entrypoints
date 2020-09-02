@@ -114,19 +114,13 @@ describe('AddressModal', () => {
         .find('input')
         .at(6)
         .simulate('change', { target: { value: 'St' } }); // this not working
-      element
-        .find('input')
-        .at(6)
-        .simulate('keyDown', { key: 'ArrowDown' });
+      element.find('input').at(6).simulate('keyDown', { key: 'ArrowDown' });
 
-      element
-        .find('input')
-        .at(6)
-        .simulate('keyDown', {
-          key: 'Enter',
-          keyCode: 13,
-          which: 13,
-        });
+      element.find('input').at(6).simulate('keyDown', {
+        key: 'Enter',
+        keyCode: 13,
+        which: 13,
+      });
 
       element
         .find('input')

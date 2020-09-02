@@ -31,7 +31,7 @@ fs.readdir(SOURCE_PATH, async (err, files) => {
     fs.mkdirSync(DESTINATION_PATH);
   }
 
-  const svgList = fileList.map(function(file) {
+  const svgList = fileList.map(function (file) {
     const fileStream = fs.readFileSync(`${SOURCE_PATH}/${file}`, { encoding: 'utf-8' });
 
     return generateReactFromSvg(svgr, fileStream, file);

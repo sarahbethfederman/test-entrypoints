@@ -45,7 +45,6 @@ export class DocumentViewer extends React.Component<DocumentViewerProps, Documen
         components: components.components,
       });
     } catch (error) {
-      // tslint:disable-next-line:no-console
       console.error(error);
     }
   }

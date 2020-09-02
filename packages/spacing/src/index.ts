@@ -125,8 +125,11 @@ export const margin = css`
   ${(props: MarginOptions) => props.m && m(props.m)}
   ${(props: MarginOptions) => props.mx && mx(props.mx)}
   ${(props: MarginOptions) => props.my && my(props.my)}
-  ${(props: MarginOptions) => props.mt && mt(props.mt)}
+  ${(
+    props: MarginOptions
+  ) => props.mt && mt(props.mt)}
   ${(props: MarginOptions) => props.mr && mr(props.mr)}
-  ${(props: MarginOptions) => props.mb && mb(props.mb)}
+  ${(props: MarginOptions) =>
+    props.mb && mb(props.mb)}
   ${(props: MarginOptions) => props.ml && ml(props.ml)}
 `;
