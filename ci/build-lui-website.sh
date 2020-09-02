@@ -3,10 +3,10 @@ source ./ci/utils/install.sh
 
 env=$1;
 
-if [ "$BUILDKITE_BRANCH" == "master" ]; then
+if [ "$BITBUCKET_BRANCH" == "master" ]; then
     tag="latest"
 else
-    tag=$BUILDKITE_BRANCH
+    tag=$BITBUCKET_BRANCH
 fi
 
 baseurl=$(lsd url --environment $env --project lui --tag $tag)

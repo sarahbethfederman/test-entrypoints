@@ -1,3 +1,7 @@
+## [9.6.2] - 2020-09-02 - [SUB-609][https://creditandfinance.atlassian.net/browse/SUB-609]
+### Added
+- Added the domain bot Icon && Updated the autobot Icon name to LendiBotIcon
+
 ## [9.5.2] - 2020-08-27 - [SUB-601][https://creditandfinance.atlassian.net/browse/SUB-601]
 ### Updated
 - Updated Domain Home Loans for Team View

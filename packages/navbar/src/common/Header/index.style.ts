@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, StyledComponent } from 'styled-components';
 import { gte, between } from '@lendi-ui/breakpoint';
 import { normalise, deriveSize, display } from '@lendi-ui/utils';
 import { px, py, mr, pr, pl, ml, pt, pb } from '@lendi-ui/spacing';
@@ -97,7 +97,7 @@ export const LogoLink = styled.a`
   cursor: pointer;
 `;
 
-export const OldHeaderLogo = styled(Logo)<LogoProps>`
+export const OldHeaderLogo: StyledComponent<any, any> = styled(Logo)<LogoProps>`
   width: 98px;
   height: 30px;
   padding-bottom: 4px;
@@ -119,7 +119,7 @@ export const OldHeaderLogo = styled(Logo)<LogoProps>`
         `}
 `;
 
-export const HeaderLogo = styled(Logo)<LogoProps>`
+export const HeaderLogo: StyledComponent<any, any> = styled(Logo)<LogoProps>`
   width: 98px;
   height: 30px;
   padding-bottom: 4px;
