@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/container",
-  "version": "6.1.0",
+  "version": "7.0.0-beta.0",
   "source": "src/index.ts",
   "main": "dist/container.cjs.js",
   "module": "dist/container.esm.js",
@@ -9,15 +9,15 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/breakpoint": "^5.0.0",
+    "@lendi-ui/breakpoint": "^6.0.0-beta.0",
     "@types/styled-components": "^4.1.18",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/spacing": "^7.0.0"
+    "@lendi-ui/spacing": "^7.1.0-beta.0"
   },
   "devDependencies": {
-    "@lendi-ui/breakpoint": "*",
+    "@lendi-ui/breakpoint": "6.0.0-beta.0",
     "@types/styled-components": "^4.1.18",
     "styled-components": "^4"
   }

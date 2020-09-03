@@ -21,6 +21,12 @@ yarn test
 yarn start
 ```
 
+## Publishing
+
+Changes must include a changeset. Run `yarn changeset` after your changes. This will ask you what kind of change you made (major/minor/patch) and then ask for a description of your changes. Commit the resulting file before making a PR.
+
+If your changes won't result in any changes to packages (ex, repo config) then add an empty changeset with `yarn changeset --empty`
+
 ## Creating a component
 
 - If don't have @lendi/generator-create-lui-component installed globally, run this cli at first:
@@ -66,10 +72,6 @@ yarn test
 ## Prettier
 
 - In LUI, prettier function has been combined with `git commit -m 'comments'`. It's encouraged to commit WITHOUT `--no-verify`.
-
-## Publishing
-
-Bump the `version` in the package's `package.json` then create a Pull Request and Merge it to the `master` branch. After CI checks, tests and builds your changes, it will publish any packages with an unpublished `version`.
 
 ### Versioning
 

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme",
-  "version": "9.1.0",
+  "version": "10.0.0-beta.0",
   "source": "src/index.ts",
   "main": "dist/theme.cjs.js",
   "module": "dist/theme.esm.js",
@@ -11,14 +11,14 @@
   "author": "Lendi Devs",
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/breakpoint": "^5.0.0",
+    "@lendi-ui/breakpoint": "^6.0.0-beta.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "devDependencies": {
-    "@lendi-ui/breakpoint": "*",
+    "@lendi-ui/breakpoint": "6.0.0-beta.0",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

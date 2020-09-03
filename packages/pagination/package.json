@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/pagination",
-  "version": "3.0.1",
+  "version": "4.0.0-beta.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/pagination.cjs.js",
@@ -11,20 +11,20 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^9.1.0",
+    "@lendi-ui/theme": "^10.0.0-beta.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/button": "^8.1.0",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/button": "^9.0.0-beta.0",
+    "@lendi-ui/icon": "^10.0.0-beta.0",
+    "@lendi-ui/spacing": "^7.1.0-beta.0",
+    "@lendi-ui/utils": "^6.0.0-beta.0"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "*",
+    "@lendi-ui/theme": "10.0.0-beta.0",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",
