@@ -34,6 +34,9 @@ const PlaygroundCarousel = () => (
       <CustomerContent><ContentBodyWrapper size='sm'>Hi there, I’d like to know something, can you help me to get a loan?</ContentBodyWrapper></CustomerContent>
       <ChatBubble.Footer><Body size='xs' color='shade.200' mt='xxxs'>12:35PM Read</Body></ChatBubble.Footer>
     </ExampleChatBubble>
+    <ExampleChatBubble direction='right' hasTail={false}>
+      <CustomerContent><ContentBodyWrapper size='sm'>Without the tail</ContentBodyWrapper></CustomerContent>
+    </ExampleChatBubble>
   </>
 );
 
@@ -45,6 +48,7 @@ render(<PlaygroundCarousel />);
 
 <PropTable>
   <PropTable.Entry name="direction" type="{type Direction = 'left' | 'right';}" defaultValue="left" description="The side direction that ChatBubble component will rendered in the window."/>
+  <PropTable.Entry name="hasTail" type="boolean" defaultValue="true" description="Prop to conditionally show the tail(top edge) on the chat bubble."/>
 </PropTable>
 
 ### Sidebar Content

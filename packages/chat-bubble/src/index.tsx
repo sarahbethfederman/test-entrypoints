@@ -9,15 +9,21 @@ import {
 } from './types';
 import { Wrapper, ChatBubbleContentWrapper, AlignmentDiv } from './index.style';
 
-const ChatContext = React.createContext('left' as Direction);
+export interface ChatContextState {
+  direction: Direction;
+  hasTail: boolean;
+}
+
+const ChatContext = React.createContext<ChatContextState>({ direction: 'left', hasTail: false });
 
 const ChatBubble: React.FunctionComponent<ChatBubbleProps> & SidebarCompoundComponent = ({
   direction = 'left',
+  hasTail = true,
   children,
   ...props
 }) => {
   return (
-    <ChatContext.Provider value={direction}>
+    <ChatContext.Provider value={{ direction, hasTail }}>
       <Wrapper direction={direction} {...props} data-testid="chat-bubble">
         <AlignmentDiv direction={direction}>{children}</AlignmentDiv>
       </Wrapper>
@@ -26,9 +32,9 @@ const ChatBubble: React.FunctionComponent<ChatBubbleProps> & SidebarCompoundComp
 };
 
 const Content: React.FC<ChatBubbleContentProps> = ({ children, ...props }) => {
-  const ChatDirection: Direction = React.useContext(ChatContext);
+  const { direction, hasTail } = React.useContext(ChatContext);
   return (
-    <ChatBubbleContentWrapper direction={ChatDirection} data-testid="chat-bubble-content" {...props}>
+    <ChatBubbleContentWrapper direction={direction} hasTail={hasTail} data-testid="chat-bubble-content" {...props}>
       {children}
     </ChatBubbleContentWrapper>
   );

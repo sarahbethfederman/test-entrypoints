@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { bg } from '@lendi-ui/color';
 
 import { Direction } from './types';
+import { ChatContextState } from '.';
 
 interface WrapperProps {
   direction: Direction;
@@ -77,13 +78,15 @@ const RightSideWrapper = () => css`
   }
 `;
 
-interface ChatBubbleContentWrapperProps {
-  direction: Direction;
-}
-
 export const ChatBubbleContentWrapper = styled.div`
-  ${({ direction }: ChatBubbleContentWrapperProps) => {
-    if (direction === 'left') return LeftSideWrapper();
-    return RightSideWrapper();
+  ${({ direction, hasTail }: ChatContextState) => {
+    if (hasTail) {
+      if (direction === 'left') return LeftSideWrapper();
+      return RightSideWrapper();
+    } else {
+      return css`
+        border-radius: 5px;
+      `;
+    }
   }}
 `;

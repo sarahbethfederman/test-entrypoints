@@ -13,4 +13,5 @@ export interface SidebarCompoundComponent {
 
 export interface ChatBubbleProps extends LUIGlobalProps {
   direction?: Direction;
+  hasTail?: boolean;
 }
