@@ -11,7 +11,7 @@ then
   yarn manypkg exec cp "$PWD/.npmrc_config" .npmrc
 fi
 
-git checkout master
+git checkout
 
 # publish each package version if it isn't already published
 yarn changeset version
