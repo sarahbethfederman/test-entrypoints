@@ -1,276 +1,172 @@
 ## [5.2.1] 2020-01-21 [HUB-hotfix-autocomplete](
-
-## 6.0.0-beta.0
-
-### Minor Changes
-
-- preconstruct infra update
-
-### Patch Changes
-
-- Updated dependencies [undefined]
-  - @lendi-ui/breakpoint@6.0.0-beta.0
-  - @lendi-ui/button@9.0.0-beta.0
-  - @lendi-ui/color@6.0.0-beta.0
-  - @lendi-ui/depth@4.1.0-beta.0
-  - @lendi-ui/fancy-icon@4.0.0-beta.0
-  - @lendi-ui/grid@5.0.0-beta.0
-  - @lendi-ui/icon@10.0.0-beta.0
-  - @lendi-ui/logo@7.0.0-beta.0
-  - @lendi-ui/overlay@4.0.0-beta.0
-  - @lendi-ui/spacing@7.1.0-beta.0
-  - @lendi-ui/theme@10.0.0-beta.0
-  - @lendi-ui/transition@5.0.0-beta.0
-  - @lendi-ui/typography@6.0.0-beta.0
-  - @lendi-ui/utils@6.0.0-beta.0
-
 ### Updated
-
 - Bump text-input version for fixing autofocus bug.
 
 ## [5.2.0] - 2020-01-21 - [HUB-hotfix-navbar]
-
 ### Updated
-
 - Update overlay dependency which removes react-scrolllock, which was locking the scrolling of navbar.
 
 ## [5.1.1] - 2019-11-09 - [HUB-662](https://creditandfinance.atlassian.net/browse/HUB-662)
-
 ### Updated
-
 - Update SEMNavbar header single link 'more' to 'menu'.
 
 ## [5.1.0] - 2019-11-04 - [HUB-661](https://creditandfinance.atlassian.net/browse/HUB-661)
-
 ### Changed
-
 - Update MarketingNavbar and SEMNavbar header panel button in desktop view the content is 'TALK TO AN EXPERT' and mobile biew the content is 'CONTACT US'.
 
 ## [5.0.4] - 2019-10-31 - [FUNNEL-639](https://creditandfinance.atlassian.net/browse/FUNNEL-639)
-
 - Fix appointment booking url.
 
 ## [5.0.3] - 2019-10-25 - [FUNNEL-667](https://creditandfinance.atlassian.net/browse/FUNNEL-667)
-
 - Fix the buttons' white background when Navbar is transparent.
 
 ## [5.0.2] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
-
 - Remove unnecessary axios types dependency.
 
 ## [5.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
-
 - Bumped lendi-ui dependencies to latest versions
 
 ## [5.0.0] 2019-09-25 [HUB-508](https://creditandfinance.atlassian.net/browse/HUB-508)
-
 ### Fixed
-
 - Use correct logo variant for the white Application navbar
 - Added logo back to the Application navbar variant
 
 ## [4.0.0] 2019-9-23 2019-8-21 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
-
-### Updated
-
+### Updated 
 - Update typescript to version 3.5.2 and react to version 16.8.4
 
 ## [3.0.0] - 2019-08-22 - [HUB-417-navbar](https://creditandfinance.atlassian.net/browse/HUB-417-navbar)
-
 ### Changed
-
 - change sign-in link to new auth stuff.
 
 ## [2.5.1] - 2019-07-26 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
-
 ### Changed
-
 - Change `type` default to 'application'
 
 ## [2.5.0] - 2019-07-23 - [HUB-321](https://creditandfinance.atlassian.net/browse/HUB-321)
-
 ### Added
-
 - Add SEMNavbar into navbar package
 
 ## [2.4.4] - 2019-07-19 - [HUB-navbar-hotfix](https://creditandfinance.atlassian.net/browse/HUB-navbar-hotfix)
-
 ### Changed
-
 - Change assets build script and folder structre
 
 ## [2.4.3] - 2019-07-18 - [HUB-navbar-svg](https://creditandfinance.atlassian.net/browse/HUB-navbar-svg)
-
 ### Changed
-
 - Add one more svg.d.ts module in typings
 
 ## [2.4.2] - 2019-07-17 - [HUB-4](https://creditandfinance.atlassian.net/browse/HUB-4)
-
 ### updated
-
 - Bump patch version to reflect the relative path issue fix
 
 ## [2.4.1] - 2019-06-4 - [HUB-262](https://creditandfinance.atlassian.net/browse/HUB-262)
-
 ### Changed
-
 - Updated utils dependency to get correct types
 
 ## [2.4.0] - 2019-05-27 - [HUB-169](https://creditandfinance.atlassian.net/browse/HUB-169)
-
 ### Changed
-
 - Support for native props like Aria attributes, Standard HTML Attributes like title, classname, id, role, itemProp, itemID, itemRef
 
 ## [2.3.4] - 2019-05-29 - [HUB-144](https://creditandfinance.atlassian.net/browse/HUB-144)
-
 ### Changed
-
 - Updated the icon imports to be from the new fancy-icons package.
 - Update icon imports to match new icon naming.
 
 ## [2.3.3] - 2019-05-24 - [HUB-147](https://creditandfinance.atlassian.net/browse/HUB-147)
-
 ### Changed
-
 - Update the logo size in the Header and LeftSidebar based on the currently selected theme.
 
 ## [2.3.2] - 2019-05-23 - [HUB-143](https://creditandfinance.atlassian.net/browse/HUB-143)
-
 ### Changed
-
 - Updated the header styles of the buttons so they display correctly in mobile view.
 
 ## [2.3.1] - 2019-05-22 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
-
 ### Added
-
 - Export all defined types in './type.ts' file
 
 ## [2.3.0] - 2019-05-17 - [HUB-175](https://creditandfinance.atlassian.net/browse/HUB-175)
-
 ### Changed
-
 - Add one props `params` to accept query parameters from URL in all links in Navbar component
 
 ## [2.2.1] - 2019-05-21 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
-
 ### Changed
-
 - Change build of images to point to CJS.
 
 ## [2.2.0] - 2019-05-20] - [HUB-110](https://creditandfinance.atlassian.net/browse/HUB-110)
-
 ### Added
-
 - Lendi Analytics support for Navbar
 
 ## [2.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
-
 ### Changed
-
 - Module format reverted back to CJS.
 
 ### Deleted
-
 - Dropped "module" property from package.json.
 
 ## [2.0.5] - 2019-05-02 - [HUB-88](https://creditandfinance.atlassian.net/browse/HUB-88)
-
 ### Changed
-
 - replace `border-radius: 6px` with select function in theme
 
 ## [2.0.4] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
-
 ### Changed
-
 - Updated CHANGELOG to match required parsing format.
 
 ## [2.0.3] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
-
 ### Changed
-
 - Change module main entry point to esm in package.json
 
 ## [2.0.2] - 2019-04-29 - [HUB-94](https://creditandfinance.atlassian.net/browse/HUB-94)
-
 ### Added
-
 - Created outer Wrapper component.
 - Added normalise mixin to outer component.
 
 ## [2.0.1] - 2019-04-26 - [HUB-99](https://creditandfinance.atlassian.net/browse/HUB-99)
-
 ### Added
-
 - Bump theme and Logo version
 
 ## [2.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
 
 ### Deleted
-
 - Remove the CJS bundles.
 
 ## [1.1.1] - 2019-04-30 - [HUB-135](https://creditandfinance.atlassian.net/browse/HUB-135)
-
 ### Added
-
 - Added the `createdDate` property to the results of the `fetchApplication()` helper.
 
 ## [1.1.0] - 2019-04-08 - [HUB-68](https://creditandfinance.atlassian.net/browse/HUB-68)
-
 ### Added
-
 - Added `fetchApplication` and `fetchBroker` helper methods which can be used to fetch the application & broker data for the `NavBar`, can be imported with `import { fetchApplication, fetchBroker } from '@lendi-ui/navbar'`.
 
 ## [1.0.9] - 2019-04-12 [HUB-89](https://creditandfinance.atlassian.net/browse/HUB-89)
-
 ### Changed
-
 - Changed left navbar header wrapper to explicitly use box-sizing: border-box; and removed the height on the header, resolving a bug where half the header was being cutoff based on box-sizing.
 - Fixed the build script to copy images from src to dist/esm.
 
 ## [1.0.8] - 2019-03-05 - [BRAVO-535](https://creditandfinance.atlassian.net/browse/BRAVO-535)
-
 ### Changed
-
 - Updated icon dependency from ^4 to ^5
 
 ## [1.0.7] - 2019-03-01
-
 ### Changed
-
 - Removed aria-role attribute for just role on ul element.
 - Fixed React warning under unit tests
 
 ## [1.0.6] - 2019-02-14
-
 ### Changed
-
 - Added header tag to Header to improve semantics
 
 ## [1.0.5] - 2019-02-08
-
 ### Changed
-
 - Fixed that the logo in the header didn't link to '/'
 
 ## [1.0.4] - 2019-01-24
-
 ### Changed
-
 - Gave the Overlay in Sidebar and wrapper to fix z-index stacking context issue that was causing the overlay to be painted behind the header while fading
 
 ## [1.0.3] - 2019-01-15
-
 ### Changed
-
 - Fixed some styling in LeftSidebar and add more variants to the navbar example.
 
 ## [1.0.2] - 2019-01-14
-
 ### Changed
-
 - Updated icon dependency from ^4 to ^5

@@ -2385,11 +2385,6 @@
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-15.0.0.tgz#cb3f9f741869e20cce330ffbeb9271590483882d"
   integrity sha512-FA/BWv8t8ZWJ+gEOnLLd8ygxH/2UFbAvgEonyfN6yWGLKc7zVjbpl2Y4CTjid9h2RfgPP6SEt6uHwEOply00yw==
 
-"@types/yargs@^11.1.1":
-  version "11.1.6"
-  resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-11.1.6.tgz#02c2f4740e30c113717e44cd8be0d591b7a286ca"
-  integrity sha512-AknAe0PLtzjcmT6kYIGLSL1hkdU+xrpxZXspM6UOHoFW+F+2FAWiRvQ0qSVpnLwjUc3dsrFyMAHK5A8nzmLlCg==
-
 "@types/yargs@^12.0.0", "@types/yargs@^12.0.1":
   version "12.0.18"
   resolved "https://registry.yarnpkg.com/@types/yargs/-/yargs-12.0.18.tgz#df12d5f1ab40463d445dd0ee44999b527c1364da"
@@ -10950,16 +10945,6 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
     safe-buffer "^5.1.2"
 
-publish-if-not-published@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/publish-if-not-published/-/publish-if-not-published-1.0.2.tgz#bb459c07b7e06b5b5fb6ebcf1c946fe8bc744a0c"
-  integrity sha512-hfj3CPdJARZf8uHH19Laca3oE8UzJBrsdCl/CHptmOymbToIf1lvaeRlyvvj7pi/BTP+oSqSaDArifKJAKw4Qw==
-  dependencies:
-    "@types/node" "^9.4.6"
-    "@types/yargs" "^11.1.1"
-    chalk "^2.4.1"
-    yargs "^12.0.1"
-
 pump@^2.0.0, pump@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pump/-/pump-2.0.1.tgz#12399add6e4cf7526d973cbc8b5ce2e2908b3909"
@@ -14411,7 +14396,7 @@ yargs-parser@^18.1.2, yargs-parser@^18.1.3:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs@^12.0.1, yargs@^12.0.2:
+yargs@^12.0.2:
   version "12.0.5"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-12.0.5.tgz#05f5997b609647b64f66b81e3b4b10a368e7ad13"
   integrity sha512-Lhz8TLaYnxq/2ObqHDql8dX8CJi97oHxrjUcYtzKbbykPtVW9WB+poxI+NM2UIzsMgNCZTIf0AQwsjK5yMAqZw==

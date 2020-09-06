@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/tooltip",
-  "version": "4.0.0-beta.0",
+  "version": "3.1.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/tooltip.cjs.js",
@@ -11,22 +11,22 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^10.0.0-beta.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^6.0.0-beta.0",
-    "@lendi-ui/depth": "^4.1.0-beta.0",
-    "@lendi-ui/spacing": "^7.1.0-beta.0",
-    "@lendi-ui/typography": "^6.0.0-beta.0",
-    "@lendi-ui/utils": "^6.0.0-beta.0",
+    "@lendi-ui/color": "^5.0.0",
+    "@lendi-ui/depth": "^4.0.0",
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/typography": "^5.0.1",
+    "@lendi-ui/utils": "^5.0.0",
     "hammerjs": "^2.0.8"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "10.0.0-beta.0",
+    "@lendi-ui/theme": "*",
     "@types/hammerjs": "^2.0.36",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

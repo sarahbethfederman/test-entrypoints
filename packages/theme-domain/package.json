@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme-domain",
-  "version": "6.0.0-beta.0",
+  "version": "5.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/theme-domain.cjs.js",
@@ -11,14 +11,14 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^10.0.0-beta.0",
+    "@lendi-ui/theme": "^9.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "10.0.0-beta.0",
+    "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

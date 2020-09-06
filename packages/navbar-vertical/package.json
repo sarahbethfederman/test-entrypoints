@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/navbar-vertical",
-  "version": "2.0.0-beta.0",
+  "version": "1.0.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/navbar-vertical.cjs.js",
@@ -11,26 +11,26 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^10.0.0-beta.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^6.0.0-beta.0",
-    "@lendi-ui/depth": "^4.1.0-beta.0",
-    "@lendi-ui/icon": "^10.0.0-beta.0",
-    "@lendi-ui/tooltip": "^4.0.0-beta.0",
-    "@lendi-ui/transition": "^5.0.0-beta.0",
-    "@lendi-ui/typography": "^6.0.0-beta.0",
-    "@lendi-ui/utils": "^6.0.0-beta.0"
+    "@lendi-ui/color": "^5.0.1",
+    "@lendi-ui/depth": "^4.0.0",
+    "@lendi-ui/icon": "^9.5.0",
+    "@lendi-ui/tooltip": "^3.0.1",
+    "@lendi-ui/transition": "^4.0.2",
+    "@lendi-ui/typography": "^5.0.1",
+    "@lendi-ui/utils": "^5.0.0"
   },
   "devDependencies": {
-    "@lendi-ui/logo": "^7.0.0-beta.0",
-    "@lendi-ui/navbar-base": "^2.0.0-beta.0",
-    "@lendi-ui/spacing": "^7.1.0-beta.0",
-    "@lendi-ui/theme": "10.0.0-beta.0",
+    "@lendi-ui/logo": "^6.0.2",
+    "@lendi-ui/navbar-base": "^1.0.2",
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

@@ -1,61 +1,34 @@
 ## [6.1.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
-
-## 7.0.0-beta.0
-
-### Minor Changes
-
-- preconstruct infra update
-
-### Patch Changes
-
-- Updated dependencies [undefined]
-  - @lendi-ui/breakpoint@6.0.0-beta.0
-  - @lendi-ui/spacing@7.1.0-beta.0
 - Update dependencies (Spacing)
 
 ## [6.0.1] 2020-07-20
-
 - Container doesn't map with `width: undefined`.
 
 ## [6.0.0] 2020-07-01
-
 - Container is now responsive
 - Container applies a margin when full width
 
 ## [5.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
-
 - Bumped lendi-ui dependencies to latest versions
 
 ## [5.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
-
 ### Updated
-
 - Update typescript to version 3.5.2 and react to version 16.8.4
 
 ## [4.1.0] - 2019-05-17 - [HUB-174](https://creditandfinance.atlassian.net/browse/HUB-174)
-
 ### Changed
-
 - Module format reverted back to CJS.
-
 ### Deleted
-
 - Dropped "module" property from package.json.
 
 ## [4.0.2] - 2019-05-09 - [HUB-92](https://creditandfinance.atlassian.net/browse/HUB-92)
-
 ### Changed
-
 - Updated CHANGELOG to match required parsing format.
 
 ## [4.0.1] - 2019-05-08 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
-
 ### Changed
-
 - Change module main entry point to esm in package.json
 
 ## [4.0.0] - 2019-04-30 - [HUB-54](https://creditandfinance.atlassian.net/browse/HUB-54)
-
 ### Deleted
-
 - Remove the CJS bundles.

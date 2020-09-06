@@ -7,7 +7,10 @@ set -e
 export PATH="$PATH:$(yarn bin)"
 
 # # setup .npmrc in the root directory so we can use NPM_TOKEN from env var to install all the dependencies
-cp .npmrc_config .npmrc
+if [ "$BUILDKITE" != "true" ]
+then
+  cp .npmrc_config .npmrc
+fi
 
 # install all the dependencies
 yarn --mutex network

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/tabs",
-  "version": "7.0.0-beta.0",
+  "version": "6.0.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/tabs.cjs.js",
@@ -11,23 +11,23 @@
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
-    "@lendi-ui/theme": "^10.0.0-beta.0",
+    "@lendi-ui/theme": "^9.0.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^6.0.0-beta.0",
-    "@lendi-ui/color": "^6.0.0-beta.0",
-    "@lendi-ui/grid": "^5.0.0-beta.0",
-    "@lendi-ui/icon": "^10.0.0-beta.0",
-    "@lendi-ui/typography": "^6.0.0-beta.0",
-    "@lendi-ui/utils": "^6.0.0-beta.0",
+    "@lendi-ui/breakpoint": "^5.0.0",
+    "@lendi-ui/color": "^5.0.0",
+    "@lendi-ui/grid": "^4.0.0",
+    "@lendi-ui/icon": "^9.0.0",
+    "@lendi-ui/typography": "^5.0.1",
+    "@lendi-ui/utils": "^5.0.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "10.0.0-beta.0",
+    "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

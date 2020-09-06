@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/grid",
-  "version": "5.0.0-beta.0",
+  "version": "4.0.5",
   "description": "Grid utilities for layout.",
   "source": "src/index.ts",
   "main": "dist/grid.cjs.js",
@@ -10,16 +10,16 @@
   ],
   "license": "ISC",
   "peerDependencies": {
-    "@lendi-ui/breakpoint": ">=6.0.0-beta.0",
-    "@lendi-ui/spacing": ">=7.1.0-beta.0",
+    "@lendi-ui/breakpoint": ">=5.1.0",
+    "@lendi-ui/spacing": ">=6.0.1",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "devDependencies": {
-    "@lendi-ui/breakpoint": "6.0.0-beta.0",
-    "@lendi-ui/spacing": "7.1.0-beta.0",
+    "@lendi-ui/breakpoint": "*",
+    "@lendi-ui/spacing": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

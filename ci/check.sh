@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 source ./ci/utils/install.sh
-source ./ci/utils/setup-git.sh
+
+# if we are on a branch, check for a changeset
+if [ "$BUILDKITE_BRANCH" != "master" ]; then
+  yarn changeset status --since master
+fi
 
 yarn run check
-# if [ "$BITBUCKET_BRANCH" == "master" ]; then
-#   yarn run check:danger
-# fi

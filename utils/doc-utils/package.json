@@ -1,26 +1,26 @@
 {
   "name": "@lendi-ui/doc-utils",
   "private": true,
-  "version": "2.0.0-beta.0",
+  "version": "1.0.1",
   "source": "src/index.ts",
   "main": "dist/doc-utils.cjs.js",
   "module": "dist/doc-utils.esm.js",
   "peerDependencies": {
-    "@lendi-ui/theme": "^10.0.0-beta.0",
+    "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.8",
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^6.0.0-beta.0",
-    "@lendi-ui/spacing": "^7.1.0-beta.0",
-    "@lendi-ui/typography": "^6.0.0-beta.0",
+    "@lendi-ui/color": "^5.0.0",
+    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/typography": "^5.0.1",
     "react-element-to-jsx-string": "^14.0.1",
     "react-live": "^1.11.0"
   },
   "devDependencies": {
-    "@lendi-ui/theme": "10.0.0-beta.0",
+    "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",
