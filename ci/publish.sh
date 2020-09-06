@@ -12,12 +12,14 @@ then
 fi
 
 git checkout
+git config --global user.email $BUILDKITE_BUILD_CREATOR_EMAIL
+git config --global user.name $BUILDKITE_BUILD_CREATOR
+
+git diff HEAD HEAD~1 --no-patch --exit-code
+echo $?
 
 # publish each package version if it isn't already published
 yarn changeset version
-
-git config --global user.email $BUILDKITE_BUILD_CREATOR_EMAIL
-git config --global user.name $BUILDKITE_BUILD_CREATOR
 
 # Here we commit our versioning back to master
 git add .
