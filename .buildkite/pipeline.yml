@@ -1,14 +1,4 @@
 steps:
-  - label: 'Install'
-    key: install
-    commands:
-      - ./ci/utils/install.sh
-    plugins:
-      - lendi-au/ssm#0.5.2:
-          ssmkey: 'NPM_TOKEN'
-    artifact_paths:
-      - '**/node_modules/**'
-
   - label: ':mag: Check'
     key: check
     commands:
