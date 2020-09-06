@@ -2,7 +2,7 @@ steps:
   - label: 'Install'
     key: install
     commands:
-      - ./ci/install.sh
+      - ./ci/utils/install.sh
     plugins:
       - lendi-au/ssm#0.5.2:
           ssmkey: 'NPM_TOKEN'
@@ -26,6 +26,14 @@ steps:
           ssmkey: 'NPM_TOKEN'
 
   - wait
+  - label: ':memo: Test'
+    key: test
+    commands:
+      - ./ci/test.sh
+    plugins:
+      - lendi-au/ssm#0.5.2:
+          ssmkey: 'NPM_TOKEN'
+
   - label: ':hammer_and_pick: Build All Packages'
     key: build
     agents:
@@ -37,14 +45,6 @@ steps:
           ssmkey: 'NPM_TOKEN'
     artifact_paths:
       - '**/dist/**'
-
-  - label: ':memo: Test'
-    key: test
-    commands:
-      - ./ci/test.sh
-    plugins:
-      - lendi-au/ssm#0.5.2:
-          ssmkey: 'NPM_TOKEN'
 
   #   _______   ___________    ____
   #  |       \ |   ____\   \  /   /
