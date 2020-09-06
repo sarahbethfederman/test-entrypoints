@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 source ./ci/utils/install.sh
+if [ "$BUILDKITE" == "true" ]
+then
+    buildkite-agent artifact download '**/dist/**' 
+fi
+
+yarn run build
 
 # setup .npmrc in each workspace directory so we can use NPM_TOKEN from env var to publish all the packages
 if [ "$BUILDKITE" != "true" ]
@@ -9,7 +15,6 @@ fi
 
 # publish each package version if it isn't already published
 yarn changeset version
-
 
 git config --global user.email $BUILDKITE_BUILD_CREATOR_EMAIL
 git config --global user.name $BUILDKITE_BUILD_CREATOR
