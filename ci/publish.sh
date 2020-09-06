@@ -15,17 +15,17 @@ git checkout
 git config --global user.email $BUILDKITE_BUILD_CREATOR_EMAIL
 git config --global user.name $BUILDKITE_BUILD_CREATOR
 
-git diff HEAD HEAD~1 --no-patch
-# echo $?
+git status --porcelain
 
-# publish each package version if it isn't already published
-yarn changeset version
+# # publish each package version if it isn't already published
+# yarn changeset version
 
-# Here we commit our versioning back to master
-git add .
-git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
-git push
+# # Here we commit our versioning back to master
+# git add .
+# git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
+# git push
 
-yarn changeset publish
+# yarn changeset publish
 
-git push --follow-tags
+# # Here we commit our new tags back to master
+# git push --follow-tags
