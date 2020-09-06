@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/feature-panel",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/feature-panel.cjs.js",
   "module": "dist/feature-panel.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,11 +16,11 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/grid": "^4.0.3",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/typography": "^5.0.1",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/grid": "^4.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/utils": "^5.1.0"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

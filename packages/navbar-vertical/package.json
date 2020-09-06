@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/navbar-vertical",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/navbar-vertical.cjs.js",
   "module": "dist/navbar-vertical.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,18 +16,18 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.0.1",
-    "@lendi-ui/depth": "^4.0.0",
-    "@lendi-ui/icon": "^9.5.0",
-    "@lendi-ui/tooltip": "^3.0.1",
-    "@lendi-ui/transition": "^4.0.2",
-    "@lendi-ui/typography": "^5.0.1",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/depth": "^4.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/tooltip": "^3.2.0",
+    "@lendi-ui/transition": "^4.1.0",
+    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/utils": "^5.1.0"
   },
   "devDependencies": {
-    "@lendi-ui/logo": "^6.0.2",
-    "@lendi-ui/navbar-base": "^1.0.2",
-    "@lendi-ui/spacing": "^7.0.0",
+    "@lendi-ui/logo": "^6.2.0",
+    "@lendi-ui/navbar-base": "^1.1.0",
+    "@lendi-ui/spacing": "^7.1.0",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

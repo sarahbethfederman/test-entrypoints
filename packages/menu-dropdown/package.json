@@ -1,21 +1,19 @@
 {
   "name": "@lendi-ui/menu-dropdown",
-  "version": "4.1.1",
+  "version": "4.2.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/menu-dropdown.cjs.js",
   "module": "dist/menu-dropdown.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "dependencies": {
-    "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/depth": "^4.0.0",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/depth": "^4.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/utils": "^5.1.0"
   },
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",

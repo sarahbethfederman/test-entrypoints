@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/depth",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "source": "src/index.ts",
   "main": "dist/depth.cjs.js",
   "module": "dist/depth.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "author": "Lendi Devs"
 }

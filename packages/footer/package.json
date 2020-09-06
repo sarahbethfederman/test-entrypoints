@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/footer",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/footer.cjs.js",
   "module": "dist/footer.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,20 +16,20 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.1.0",
-    "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/container": "^6.1.0",
-    "@lendi-ui/fancy-icon": "^3.0.0",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/logo": "^6.0.0",
-    "@lendi-ui/modal": "^3.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/typography": "^5.0.1",
-    "@lendi-ui/utils": "^5.0.0",
+    "@lendi-ui/breakpoint": "^5.2.0",
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/container": "^6.2.0",
+    "@lendi-ui/fancy-icon": "^3.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/logo": "^6.2.0",
+    "@lendi-ui/modal": "^3.4.0",
+    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/utils": "^5.1.0",
     "@lendi/lendi-analytics-package": "^1.0.1"
   },
   "devDependencies": {
-    "@lendi-ui/button": "^8.1.0",
+    "@lendi-ui/button": "^8.2.0",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

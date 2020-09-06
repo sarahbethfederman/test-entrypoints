@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/theme-domain",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/theme-domain.cjs.js",
   "module": "dist/theme-domain.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

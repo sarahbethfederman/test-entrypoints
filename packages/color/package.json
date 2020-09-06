@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/color",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "description": "Color utilities for color.",
   "source": "src/index.ts",
   "main": "dist/color.cjs.js",
   "module": "dist/color.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",
@@ -15,7 +13,7 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.1.0"
+    "@lendi-ui/breakpoint": "^5.2.0"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

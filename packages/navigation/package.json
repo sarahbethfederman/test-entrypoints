@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/navigation",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/navigation.cjs.js",
   "module": "dist/navigation.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,13 +16,13 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/depth": "^4.0.0",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/status-badge": "^3.0.0",
-    "@lendi-ui/typography": "^5.0.1",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/depth": "^4.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/status-badge": "^3.1.0",
+    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/utils": "^5.1.0"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

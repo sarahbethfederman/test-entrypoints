@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/breakpoint",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "source": "src/index.ts",
   "main": "dist/breakpoint.cjs.js",
   "module": "dist/breakpoint.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.0.0",

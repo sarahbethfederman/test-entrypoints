@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/grid",
-  "version": "4.0.5",
+  "version": "4.1.0",
   "description": "Grid utilities for layout.",
   "source": "src/index.ts",
   "main": "dist/grid.cjs.js",
   "module": "dist/grid.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/breakpoint": ">=5.1.0",

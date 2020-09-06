@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "source": "src/index.ts",
   "main": "dist/typography.cjs.js",
   "module": "dist/typography.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.0.0",
@@ -16,10 +14,10 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.0.0",
-    "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/spacing": "^7.0.0",
-    "@lendi-ui/utils": "^5.0.0"
+    "@lendi-ui/breakpoint": "^5.2.0",
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/utils": "^5.1.0"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

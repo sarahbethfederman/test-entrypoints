@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/tabs",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/tabs.cjs.js",
   "module": "dist/tabs.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,12 +16,12 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.0.0",
-    "@lendi-ui/color": "^5.0.0",
-    "@lendi-ui/grid": "^4.0.0",
-    "@lendi-ui/icon": "^9.0.0",
-    "@lendi-ui/typography": "^5.0.1",
-    "@lendi-ui/utils": "^5.0.0",
+    "@lendi-ui/breakpoint": "^5.2.0",
+    "@lendi-ui/color": "^5.1.0",
+    "@lendi-ui/grid": "^4.1.0",
+    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/utils": "^5.1.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
