@@ -5,13 +5,13 @@ then
     buildkite-agent artifact download '**/dist/**' '.'
 fi
 
-yarn run build
-
 # setup .npmrc in each workspace directory so we can use NPM_TOKEN from env var to publish all the packages
 if [ "$BUILDKITE" != "true" ]
 then
   yarn manypkg exec cp "$PWD/.npmrc_config" .npmrc
 fi
+
+git checkout master
 
 # publish each package version if it isn't already published
 yarn changeset version
