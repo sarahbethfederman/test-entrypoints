@@ -44,7 +44,8 @@ steps:
       - lendi-au/ssm#0.5.2:
           ssmkey: 'NPM_TOKEN'
     artifact_paths:
-      - '**/dist/**'
+      - 'packages/*/dist/**'
+      - 'utils/*/dist/**'
 
   #   _______   ___________    ____
   #  |       \ |   ____\   \  /   /
