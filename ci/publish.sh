@@ -2,7 +2,7 @@
 source ./ci/utils/install.sh
 if [ "$BUILDKITE" == "true" ]
 then
-    buildkite-agent artifact download '**/dist/**' 
+    buildkite-agent artifact download '**/dist/**' '**/dist/**' 
 fi
 
 yarn run build
