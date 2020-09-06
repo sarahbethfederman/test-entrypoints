@@ -105,6 +105,7 @@ steps:
     allow_dependency_failure: false
     depends_on:
       - step: test
+      - step: build
     commands:
       - ./ci/build-lui-website.sh production
     plugins:

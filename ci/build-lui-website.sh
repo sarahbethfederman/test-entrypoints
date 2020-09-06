@@ -3,6 +3,11 @@ source ./ci/utils/install.sh
 
 env=$1;
 
+if [ "$BUILDKITE" == "true" ]
+then
+    buildkite-agent artifact download '**/dist/**' '.'
+fi
+
 if [ "$BITBUCKET_BRANCH" == "master" ] || [ "$BUILDKITE_BRANCH" == "master" ]
 then
     tag="latest"
