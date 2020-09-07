@@ -18,16 +18,26 @@ git config --global user.name $BUILDKITE_BUILD_CREATOR
 # version packages
 yarn changeset version
 
-if output=$(git status --porcelain) && [ -z "$output" ]; then
+if [ -z "$(git status --porcelain)" ] 
+then 
   # Working directory clean
+  echo 'clean!'
+   -z "$(git status --porcelain)"
 else 
-  # Here we commit our versioning back to master
-  git add .
-  git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
-  git push
+  # Uncommitted changes
+  echo 'changed!'
 fi
 
-yarn changeset publish
+# if output=$(git status --porcelain) && [ -z "$output" ]; then
+#   # Working directory clean
+# else 
+#   # Here we commit our versioning back to master
+#   git add .
+#   git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
+#   git push
+# fi
 
-# Here we commit our new tags back to master
-git push --follow-tags
+# yarn changeset publish
+
+# # Here we commit our new tags back to master
+# git push --follow-tags
