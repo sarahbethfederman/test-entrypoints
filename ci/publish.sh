@@ -27,14 +27,15 @@ if [ $? == 1 ] ; then
   # Here we commit our versioning back to master
   git add .
   git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
-  git push
+  git push origin HEAD:master
+
+  # publish unpublished versions
+  yarn changeset publish
+
+  # Here we commit our new tags back to master
+  git push --follow-tags
 else
   set -e
   echo 'no new changesets!'
 fi
 
-# publish unpublished versions
-yarn changeset publish
-
-# Here we commit our new tags back to master
-git push --follow-tags
