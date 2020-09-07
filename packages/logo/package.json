@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/logo.cjs.js",
   "module": "dist/logo.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",

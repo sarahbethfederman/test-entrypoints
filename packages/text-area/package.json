@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/text-area.cjs.js",
   "module": "dist/text-area.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

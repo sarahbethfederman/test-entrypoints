@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/status-badge.cjs.js",
   "module": "dist/status-badge.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/theme-domain.cjs.js",
   "module": "dist/theme-domain.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

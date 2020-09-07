@@ -4,7 +4,9 @@
   "source": "src/index.ts",
   "main": "dist/container.cjs.js",
   "module": "dist/container.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/breakpoint": "^5.0.0",

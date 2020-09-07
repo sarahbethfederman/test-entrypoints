@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/checkbox.cjs.js",
   "module": "dist/checkbox.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

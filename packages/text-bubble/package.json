@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/text-bubble.cjs.js",
   "module": "dist/text-bubble.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

@@ -4,7 +4,9 @@
   "main": "dist/icon.cjs.js",
   "module": "dist/icon.esm.js",
   "source": "src/index.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",

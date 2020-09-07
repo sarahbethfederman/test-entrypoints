@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/chat-bubble.cjs.js",
   "module": "dist/chat-bubble.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

@@ -5,7 +5,9 @@
   "source": "src/index.ts",
   "main": "dist/spacing.cjs.js",
   "module": "dist/spacing.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "@types/styled-components": "^4.1.18",

@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/overlay.cjs.js",
   "module": "dist/overlay.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "dependencies": {

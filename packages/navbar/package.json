@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/navbar.cjs.js",
   "module": "dist/navbar.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "devDependencies": {

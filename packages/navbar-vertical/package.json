@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/navbar-vertical.cjs.js",
   "module": "dist/navbar-vertical.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

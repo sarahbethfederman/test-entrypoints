@@ -4,7 +4,9 @@
   "source": "src/index.ts",
   "main": "dist/theme.cjs.js",
   "module": "dist/theme.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",

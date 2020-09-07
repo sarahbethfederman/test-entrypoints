@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/pagination.cjs.js",
   "module": "dist/pagination.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

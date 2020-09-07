@@ -4,7 +4,9 @@
   "main": "dist/fancy-icon.cjs.js",
   "module": "dist/fancy-icon.esm.js",
   "source": "src/index.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",

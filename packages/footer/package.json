@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/footer.cjs.js",
   "module": "dist/footer.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

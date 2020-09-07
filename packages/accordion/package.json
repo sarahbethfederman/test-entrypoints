@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/accordion.cjs.js",
   "module": "dist/accordion.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

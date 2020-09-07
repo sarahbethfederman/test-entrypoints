@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/feature-panel.cjs.js",
   "module": "dist/feature-panel.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

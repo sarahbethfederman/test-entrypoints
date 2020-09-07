@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/transition.cjs.js",
   "module": "dist/transition.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "dependencies": {

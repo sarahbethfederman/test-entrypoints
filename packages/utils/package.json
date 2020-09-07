@@ -4,7 +4,9 @@
   "source": "src/index.ts",
   "main": "dist/utils.cjs.js",
   "module": "dist/utils.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "peerDependencies": {
     "@lendi-ui/theme": "^9.0.0",
     "@types/styled-components": "^4.1.18",

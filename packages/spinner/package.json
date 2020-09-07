@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/spinner.cjs.js",
   "module": "dist/spinner.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

@@ -4,7 +4,9 @@
   "source": "src/index.ts",
   "main": "dist/depth.cjs.js",
   "module": "dist/depth.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "author": "Lendi Devs"
 }

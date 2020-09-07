@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/lender-logos.cjs.js",
   "module": "dist/lender-logos.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

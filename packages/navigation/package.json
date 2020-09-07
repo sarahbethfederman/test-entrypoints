@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/navigation.cjs.js",
   "module": "dist/navigation.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

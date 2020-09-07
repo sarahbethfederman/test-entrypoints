@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/auth-loader.cjs.js",
   "module": "dist/auth-loader.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

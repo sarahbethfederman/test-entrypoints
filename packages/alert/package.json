@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/alert.cjs.js",
   "module": "dist/alert.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

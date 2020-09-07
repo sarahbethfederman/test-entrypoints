@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/sidebar.cjs.js",
   "module": "dist/sidebar.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

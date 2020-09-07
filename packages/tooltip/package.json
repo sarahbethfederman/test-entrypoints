@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/tooltip.cjs.js",
   "module": "dist/tooltip.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

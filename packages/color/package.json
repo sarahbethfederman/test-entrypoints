@@ -5,7 +5,9 @@
   "source": "src/index.ts",
   "main": "dist/color.cjs.js",
   "module": "dist/color.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",
