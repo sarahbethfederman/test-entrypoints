@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/text-bubble",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/text-bubble.cjs.js",
@@ -16,10 +16,10 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/spacing": "^7.1.0",
-    "@lendi-ui/typography": "^5.1.0",
-    "@lendi-ui/utils": "^5.1.0"
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/spacing": "^7.1.1",
+    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

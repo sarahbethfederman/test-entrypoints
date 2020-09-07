@@ -1,5 +1,13 @@
 ## [3.0.3] - 2019-03-20
 
+## 3.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+
 ## 3.1.0
 
 ### Minor Changes

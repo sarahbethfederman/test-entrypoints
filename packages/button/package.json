@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "8.2.0",
+  "version": "8.2.1",
   "source": "src/index.ts",
   "main": "dist/button.cjs.js",
   "module": "dist/button.esm.js",
@@ -13,16 +13,16 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.2.0",
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/depth": "^4.1.0",
-    "@lendi-ui/spacing": "^7.1.0",
-    "@lendi-ui/spinner": "^4.1.0",
-    "@lendi-ui/utils": "^5.1.0"
+    "@lendi-ui/breakpoint": "^5.2.1",
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/depth": "^4.1.1",
+    "@lendi-ui/spacing": "^7.1.1",
+    "@lendi-ui/spinner": "^4.1.1",
+    "@lendi-ui/utils": "^5.1.1"
   },
   "license": "ISC",
   "devDependencies": {
-    "@lendi-ui/icon": "^9.7.0",
+    "@lendi-ui/icon": "^9.7.1",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

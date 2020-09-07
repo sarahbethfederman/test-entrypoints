@@ -1,5 +1,17 @@
 ## [3.1.2] 2020-01-08 [HUB-754](https://creditandfinance.atlassian.net/browse/HUB-754)
 
+## 3.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.2.0
 
 ### Minor Changes

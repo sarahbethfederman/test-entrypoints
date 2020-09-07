@@ -1,5 +1,13 @@
 ## [9.6.2] - 2020-09-02 - [SUB-609][https://creditandfinance.atlassian.net/browse/sub-609]
 
+## 9.7.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+
 ## 9.7.0
 
 ### Minor Changes

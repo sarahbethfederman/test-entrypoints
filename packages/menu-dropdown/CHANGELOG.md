@@ -1,5 +1,17 @@
 ## [4.1.1] - 2020-7-15 - [RD-926](https://creditandfinance.atlassian.net/browse/RD-926)
 
+## 4.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 4.2.0
 
 ### Minor Changes

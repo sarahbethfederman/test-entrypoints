@@ -1,5 +1,64 @@
 # Changelog
 
+## 2.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/accordion@3.3.1
+  - @lendi-ui/address-picker@2.4.1
+  - @lendi-ui/alert@4.1.1
+  - @lendi-ui/auth-loader@3.1.1
+  - @lendi-ui/auto-complete@5.2.1
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/button@8.2.1
+  - @lendi-ui/card@4.1.1
+  - @lendi-ui/carousel@4.2.1
+  - @lendi-ui/chat-bubble@1.1.1
+  - @lendi-ui/checkbox@4.1.1
+  - @lendi-ui/collapse@4.1.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/container@6.2.1
+  - @lendi-ui/date-picker@4.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/dropdown@4.2.1
+  - @lendi-ui/fancy-icon@3.1.1
+  - @lendi-ui/feature-panel@4.1.1
+  - @lendi-ui/field@3.1.1
+  - @lendi-ui/footer@4.3.1
+  - @lendi-ui/grid@4.1.1
+  - @lendi-ui/legal-stuff@5.1.1
+  - @lendi-ui/lender-logos@2.1.1
+  - @lendi-ui/logo@6.2.1
+  - @lendi-ui/menu-dropdown@4.2.1
+  - @lendi-ui/modal@3.4.1
+  - @lendi-ui/navbar@5.3.1
+  - @lendi-ui/navbar-base@1.1.1
+  - @lendi-ui/navbar-vertical@1.1.1
+  - @lendi-ui/navigation@1.1.1
+  - @lendi-ui/overlay@3.2.1
+  - @lendi-ui/pagination@3.1.1
+  - @lendi-ui/popover@4.1.1
+  - @lendi-ui/radio@3.1.1
+  - @lendi-ui/sidebar@1.2.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/spinner@4.1.1
+  - @lendi-ui/status-badge@3.1.1
+  - @lendi-ui/tabs@6.1.1
+  - @lendi-ui/text-area@4.2.1
+  - @lendi-ui/text-bubble@4.1.1
+  - @lendi-ui/text-input@4.2.1
+  - @lendi-ui/theme@9.2.1
+  - @lendi-ui/theme-domain@5.1.1
+  - @lendi-ui/toggle-switch@3.1.1
+  - @lendi-ui/tooltip@3.2.1
+  - @lendi-ui/transition@4.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+  - @lendi-ui/doc-utils@1.1.1
+
 ## 2.1.0
 
 ### Minor Changes

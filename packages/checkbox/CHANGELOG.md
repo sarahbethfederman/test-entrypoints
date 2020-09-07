@@ -1,5 +1,16 @@
 ## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
+## 4.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 4.1.0
 
 ### Minor Changes

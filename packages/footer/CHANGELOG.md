@@ -1,5 +1,22 @@
 ## [4.2.1] - 2020-07-27 - [FUNNEL-1620](https://creditandfinance.atlassian.net/browse/FUNNEL-1620)
 
+## 4.3.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/container@6.2.1
+  - @lendi-ui/fancy-icon@3.1.1
+  - @lendi-ui/logo@6.2.1
+  - @lendi-ui/modal@3.4.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 4.3.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/theme",
-  "version": "9.2.0",
+  "version": "9.2.1",
   "source": "src/index.ts",
   "main": "dist/theme.cjs.js",
   "module": "dist/theme.esm.js",

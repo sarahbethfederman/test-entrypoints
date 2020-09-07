@@ -1,5 +1,17 @@
 ## [3.2.1] 2020-3-25 [FUNNEL-1115](https://creditandfinance.atlassian.net/browse/FUNNEL-1115)
 
+## 3.3.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.3.0
 
 ### Minor Changes

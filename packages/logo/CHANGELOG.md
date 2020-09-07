@@ -1,5 +1,14 @@
 ## [6.1.1] - 2020-08-18 - [SUB-461][https://creditandfinance.atlassian.net/browse/sub-461]
 
+## 6.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/color@5.1.1
+
 ## 6.2.0
 
 ### Minor Changes

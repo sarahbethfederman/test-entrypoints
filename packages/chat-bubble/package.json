@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/chat-bubble",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/chat-bubble.cjs.js",
@@ -16,13 +16,13 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/utils": "^5.1.0"
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {
-    "@lendi-ui/spacing": "^7.1.0",
+    "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/theme": "*",
-    "@lendi-ui/typography": "^5.1.0",
+    "@lendi-ui/typography": "^5.1.1",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

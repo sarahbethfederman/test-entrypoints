@@ -1,5 +1,15 @@
 # Changelog - @lendi-ui/navbar-base
 
+## 1.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 1.1.0
 
 ### Minor Changes

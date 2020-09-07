@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/accordion",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/accordion.cjs.js",
@@ -23,11 +23,11 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/icon": "^9.7.0",
-    "@lendi-ui/spacing": "^7.1.0",
-    "@lendi-ui/typography": "^5.1.0",
-    "@lendi-ui/utils": "^5.1.0",
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/spacing": "^7.1.1",
+    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/utils": "^5.1.1",
     "cuid": "^2.1.8"
   }
 }

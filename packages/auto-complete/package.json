@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/auto-complete",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/auto-complete.cjs.js",
@@ -16,20 +16,20 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.2.0",
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/depth": "^4.1.0",
-    "@lendi-ui/icon": "^9.7.0",
-    "@lendi-ui/spacing": "^7.1.0",
-    "@lendi-ui/spinner": "^4.1.0",
-    "@lendi-ui/text-input": "^4.2.0",
-    "@lendi-ui/typography": "^5.1.0",
-    "@lendi-ui/utils": "^5.1.0",
+    "@lendi-ui/breakpoint": "^5.2.1",
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/depth": "^4.1.1",
+    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/spacing": "^7.1.1",
+    "@lendi-ui/spinner": "^4.1.1",
+    "@lendi-ui/text-input": "^4.2.1",
+    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/utils": "^5.1.1",
     "@types/lodash": "^4.14.144",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
-    "@lendi-ui/field": "^3.1.0",
+    "@lendi-ui/field": "^3.1.1",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

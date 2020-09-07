@@ -1,5 +1,18 @@
 ## [6.0.0] 2020-7-22
 
+## 6.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/grid@4.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 6.1.0
 
 ### Minor Changes

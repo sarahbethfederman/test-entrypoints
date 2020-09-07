@@ -1,5 +1,15 @@
 # Changelog - @lendi-ui/auth-loader
 
+## 3.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.1.0
 
 ### Minor Changes

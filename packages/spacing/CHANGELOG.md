@@ -1,5 +1,14 @@
 ## [7.0.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
 
+## 7.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/utils@5.1.1
+
 ## 7.1.0
 
 ### Minor Changes

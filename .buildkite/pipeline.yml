@@ -28,6 +28,8 @@ steps:
     key: build
     agents:
       queue: build # build queues run on bigger instances.
+    depends_on:
+      - step: test
     commands:
       - ./ci/build.sh
     plugins:

@@ -1,5 +1,15 @@
 ## [4.1.1] - 2020-03-06 - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
 
+## 4.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 4.2.0
 
 ### Minor Changes

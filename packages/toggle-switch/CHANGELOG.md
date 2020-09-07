@@ -1,5 +1,19 @@
 ## [3.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
+## 3.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/spinner@4.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.1.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 ## [4.0.5] 2020-08-17
 
+## 4.1.1
+
+### Patch Changes
+
+- fix publish issue
+
 ## 4.1.0
 
 ### Minor Changes

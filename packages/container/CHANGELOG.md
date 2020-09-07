@@ -1,5 +1,13 @@
 ## [6.1.0] 2020-07-21 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
 
+## 6.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/spacing@7.1.1
+
 ## 6.2.0
 
 ### Minor Changes

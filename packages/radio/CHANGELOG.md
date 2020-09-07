@@ -1,5 +1,17 @@
 ## [3.0.2] 2019-10-22 [LUIT-51](https://creditandfinance.atlassian.net/browse/LUIT-51)
 
+## 3.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/container@6.2.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.1.0
 
 ### Minor Changes

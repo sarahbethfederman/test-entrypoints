@@ -1,5 +1,13 @@
 # Changelog - @lendi-ui/partner-logo
 
+## 2.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/utils@5.1.1
+
 ## 2.1.0
 
 ### Minor Changes

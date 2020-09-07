@@ -1,5 +1,25 @@
 ## [5.2.1] 2020-01-21 [HUB-hotfix-autocomplete](
 
+## 5.3.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/button@8.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/fancy-icon@3.1.1
+  - @lendi-ui/grid@4.1.1
+  - @lendi-ui/logo@6.2.1
+  - @lendi-ui/overlay@3.2.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/transition@4.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 5.3.0
 
 ### Minor Changes

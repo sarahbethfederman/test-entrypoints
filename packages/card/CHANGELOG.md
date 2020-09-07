@@ -1,5 +1,20 @@
 ## [4.0.2] 2020-01-21 [hotfix]
 
+## 4.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/button@8.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/dropdown@4.2.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 4.1.0
 
 ### Minor Changes

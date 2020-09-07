@@ -1,5 +1,13 @@
 ## [4.0.2] 2019-10-01 [QUAL-694](https://creditandfinance.atlassian.net/browse/HUB-694)
 
+## 4.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/color@5.1.1
+
 ## 4.1.0
 
 ### Minor Changes

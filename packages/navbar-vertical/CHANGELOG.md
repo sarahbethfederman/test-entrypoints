@@ -1,5 +1,19 @@
 # Changelog - @lendi-ui/navbar-vertical
 
+## 1.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/depth@4.1.1
+  - @lendi-ui/tooltip@3.2.1
+  - @lendi-ui/transition@4.1.1
+  - @lendi-ui/typography@5.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 1.1.0
 
 ### Minor Changes

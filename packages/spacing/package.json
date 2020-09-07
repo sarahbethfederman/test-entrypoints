@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/spacing",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "Utilities for spacing.",
   "source": "src/index.ts",
   "main": "dist/spacing.cjs.js",
@@ -12,8 +12,8 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.2.0",
-    "@lendi-ui/utils": "^5.1.0"
+    "@lendi-ui/breakpoint": "^5.2.1",
+    "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {
     "@types/styled-components": "^4.1.18",

@@ -1,5 +1,11 @@
 ## [5.0.0] 2020-06-29 [FUNNEL-1473](https://creditandfinance.atlassian.net/browse/FUNNEL-1473)
 
+## 5.1.1
+
+### Patch Changes
+
+- fix publish issue
+
 ## 5.1.0
 
 ### Minor Changes

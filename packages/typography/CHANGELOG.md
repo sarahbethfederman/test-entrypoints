@@ -1,5 +1,16 @@
 ## [5.0.1] 2020-07-21 [RD-517](https://creditandfinance.atlassian.net/browse/RD-517)
 
+## 5.1.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/breakpoint@5.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/spacing@7.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 5.1.0
 
 ### Minor Changes

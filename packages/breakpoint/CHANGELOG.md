@@ -1,5 +1,11 @@
 ## [5.1.0] 2020-08-06
 
+## 5.2.1
+
+### Patch Changes
+
+- fix publish issue
+
 ## 5.2.0
 
 ### Minor Changes

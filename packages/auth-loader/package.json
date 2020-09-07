@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/auth-loader",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/auth-loader.cjs.js",
@@ -16,9 +16,9 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/typography": "^5.1.0",
-    "@lendi-ui/utils": "^5.1.0"
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

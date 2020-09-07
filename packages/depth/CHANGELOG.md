@@ -1,5 +1,11 @@
 ## [4.0.0] 2019-9-23 [Release notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
+## 4.1.1
+
+### Patch Changes
+
+- fix publish issue
+
 ## 4.1.0
 
 ### Minor Changes

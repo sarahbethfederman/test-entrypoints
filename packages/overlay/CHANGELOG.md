@@ -1,5 +1,16 @@
 ## [3.1.0] - 2019-10-03 - [HUB-544](https://creditandfinance.atlassian.net/browse/HUB-544)
 
+## 3.2.1
+
+### Patch Changes
+
+- fix publish issue
+- Updated dependencies [undefined]
+  - @lendi-ui/button@8.2.1
+  - @lendi-ui/color@5.1.1
+  - @lendi-ui/transition@4.1.1
+  - @lendi-ui/utils@5.1.1
+
 ## 3.2.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/carousel",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "source": "src/index.tsx",
   "main": "dist/carousel.cjs.js",
   "module": "dist/carousel.esm.js",
@@ -16,10 +16,10 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/breakpoint": "^5.2.0",
-    "@lendi-ui/color": "^5.1.0",
-    "@lendi-ui/icon": "^9.7.0",
-    "@lendi-ui/utils": "^5.1.0",
+    "@lendi-ui/breakpoint": "^5.2.1",
+    "@lendi-ui/color": "^5.1.1",
+    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/utils": "^5.1.1",
     "hammerjs": "^2.0.8",
     "lodash": "^4.17.15"
   },

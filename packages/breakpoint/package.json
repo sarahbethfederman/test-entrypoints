@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/breakpoint",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "source": "src/index.ts",
   "main": "dist/breakpoint.cjs.js",
   "module": "dist/breakpoint.esm.js",
