@@ -1,5 +1,29 @@
 ## [4.1.1] - 2020-7-15 - [RD-926](https://creditandfinance.atlassian.net/browse/RD-926)
 
+## 4.2.4
+
+### Patch Changes
+
+- type issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.5
+
+## 4.2.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+- Updated dependencies [cd0b310a]
+  - @lendi-ui/icon@9.7.4
+
+## 4.2.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+- Updated dependencies [0f4cc643]
+  - @lendi-ui/icon@9.7.3
+
 ## 4.2.1
 
 ### Patch Changes

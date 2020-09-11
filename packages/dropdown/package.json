@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/dropdown",
-  "version": "4.2.1",
+  "version": "4.2.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/dropdown.cjs.js",
   "module": "dist/dropdown.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -21,7 +19,7 @@
     "@lendi-ui/breakpoint": "^5.2.1",
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/depth": "^4.1.1",
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/spinner": "^4.1.1",
     "@lendi-ui/utils": "^5.1.1",
@@ -29,11 +27,11 @@
     "react-select": "^3.0.4"
   },
   "devDependencies": {
-    "@lendi-ui/button": "^8.2.1",
-    "@lendi-ui/field": "^3.1.1",
+    "@lendi-ui/button": "^8.2.4",
+    "@lendi-ui/field": "^3.1.4",
     "@lendi-ui/modal": "^3.4.1",
     "@lendi-ui/theme": "*",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
     "react": "^16.9.0",

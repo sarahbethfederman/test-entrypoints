@@ -1,5 +1,23 @@
 ## [4.0.5] 2020-08-17
 
+## 4.1.4
+
+### Patch Changes
+
+- type issue
+
+## 4.1.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+
+## 4.1.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+
 ## 4.1.1
 
 ### Patch Changes

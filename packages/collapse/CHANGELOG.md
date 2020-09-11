@@ -1,5 +1,32 @@
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
+## 4.1.4
+
+### Patch Changes
+
+- type issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.5
+  - @lendi-ui/typography@5.1.4
+
+## 4.1.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+- Updated dependencies [cd0b310a]
+  - @lendi-ui/icon@9.7.4
+  - @lendi-ui/typography@5.1.3
+
+## 4.1.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+- Updated dependencies [0f4cc643]
+  - @lendi-ui/icon@9.7.3
+  - @lendi-ui/typography@5.1.2
+
 ## 4.1.1
 
 ### Patch Changes

@@ -1,5 +1,23 @@
 ## [4.1.1] - 2020-03-06 - [HUB-918](https://creditandfinance.atlassian.net/browse/HUB-918)
 
+## 4.2.4
+
+### Patch Changes
+
+- type issue
+
+## 4.2.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+
+## 4.2.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+
 ## 4.2.1
 
 ### Patch Changes

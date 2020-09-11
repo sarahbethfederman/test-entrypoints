@@ -1,5 +1,23 @@
 ## [8.1.0] 2020-04-17 [AC-126](https://creditandfinance.atlassian.net/browse/AC-126)
 
+## 8.2.4
+
+### Patch Changes
+
+- type issue
+
+## 8.2.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+
+## 8.2.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+
 ## 8.2.1
 
 ### Patch Changes

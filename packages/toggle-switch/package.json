@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/toggle-switch",
-  "version": "3.1.1",
+  "version": "3.1.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/toggle-switch.cjs.js",
   "module": "dist/toggle-switch.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -20,10 +18,10 @@
   "dependencies": {
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/depth": "^4.1.1",
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/spinner": "^4.1.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {

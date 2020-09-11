@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/checkbox",
-  "version": "4.1.1",
+  "version": "4.1.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/checkbox.cjs.js",
   "module": "dist/checkbox.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -20,7 +18,7 @@
   "dependencies": {
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/spacing": "^7.1.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1",
     "prop-types": "^15.7.2"
   },

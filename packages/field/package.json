@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/field",
-  "version": "3.1.1",
+  "version": "3.1.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/field.cjs.js",
   "module": "dist/field.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -19,9 +17,9 @@
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^5.2.1",
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/spacing": "^7.1.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1",
     "@types/cuid": "^1.3.0",
     "cuid": "^2.1.8"

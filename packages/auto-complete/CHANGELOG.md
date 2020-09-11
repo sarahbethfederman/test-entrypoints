@@ -1,5 +1,34 @@
 ## [5.1.0] 2020-03-17 [FUNNEL-1124](
 
+## 5.2.4
+
+### Patch Changes
+
+- type issue
+- Updated dependencies [undefined]
+  - @lendi-ui/icon@9.7.5
+  - @lendi-ui/text-input@4.2.3
+  - @lendi-ui/typography@5.1.4
+
+## 5.2.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+- Updated dependencies [cd0b310a]
+  - @lendi-ui/icon@9.7.4
+  - @lendi-ui/text-input@4.2.2
+  - @lendi-ui/typography@5.1.3
+
+## 5.2.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+- Updated dependencies [0f4cc643]
+  - @lendi-ui/icon@9.7.3
+  - @lendi-ui/typography@5.1.2
+
 ## 5.2.1
 
 ### Patch Changes

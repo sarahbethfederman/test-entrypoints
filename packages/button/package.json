@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/button",
-  "version": "8.2.1",
+  "version": "8.2.4",
   "source": "src/index.ts",
   "main": "dist/button.cjs.js",
   "module": "dist/button.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",
     "@types/react": "^16.8",
@@ -24,7 +22,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

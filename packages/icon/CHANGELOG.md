@@ -1,5 +1,29 @@
 ## [9.6.2] - 2020-09-02 - [SUB-609][https://creditandfinance.atlassian.net/browse/sub-609]
 
+## 9.7.5
+
+### Patch Changes
+
+- type issue
+
+## 9.7.4
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+
+## 9.7.3
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+
+## 9.7.2
+
+### Patch Changes
+
+- 6776f0a9: changed side effects
+
 ## 9.7.1
 
 ### Patch Changes

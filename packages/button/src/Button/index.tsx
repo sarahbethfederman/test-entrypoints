@@ -11,7 +11,7 @@ export type ButtonType = 'submit' | 'button' | 'reset';
 export interface ButtonProps extends LUIGlobalProps {
   ariaLabel?: string;
   variant: ButtonVariant;
-  size?: ButtonSize;
+  size?: any;
   isInverse?: boolean;
   isFullWidth?: boolean;
   isDisabled?: boolean;

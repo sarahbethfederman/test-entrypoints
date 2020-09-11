@@ -20,7 +20,7 @@
     "@lendi/lsd": "^3.4.0",
     "@lendi/prettier-config": "^1.0.0",
     "@lendi/typescript-config": "^2.0.0",
-    "@manypkg/cli": "^0.14.0",
+    "@manypkg/cli": "^0.16.0",
     "@preconstruct/cli": "^1.1.27",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.8",

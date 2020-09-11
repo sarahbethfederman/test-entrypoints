@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/text-input",
-  "version": "4.2.1",
+  "version": "4.2.3",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/text-input.cjs.js",
   "module": "dist/text-input.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -19,13 +17,13 @@
   },
   "dependencies": {
     "@lendi-ui/breakpoint": "^5.2.1",
-    "@lendi-ui/button": "^8.2.1",
+    "@lendi-ui/button": "^8.2.4",
     "@lendi-ui/color": "^5.1.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/theme": "*",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",

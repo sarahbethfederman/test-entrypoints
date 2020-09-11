@@ -1,5 +1,23 @@
 ## [5.0.1] 2020-07-21 [RD-517](https://creditandfinance.atlassian.net/browse/RD-517)
 
+## 5.1.4
+
+### Patch Changes
+
+- type issue
+
+## 5.1.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+
+## 5.1.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+
 ## 5.1.1
 
 ### Patch Changes

@@ -8,6 +8,7 @@
  * ----------------------------------------------------
  */
 
+
 import { Colors } from '@lendi-ui/theme';
 
 export interface SvgProps {

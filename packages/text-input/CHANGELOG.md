@@ -1,5 +1,23 @@
 ## [4.1.0] - 2020-01-23 - [LUIT-139](https://creditandfinance.atlassian.net/browse/LUIT-139)
 
+## 4.2.3
+
+### Patch Changes
+
+- type issue
+- Updated dependencies [undefined]
+  - @lendi-ui/button@8.2.4
+  - @lendi-ui/typography@5.1.4
+
+## 4.2.2
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+- Updated dependencies [cd0b310a]
+  - @lendi-ui/button@8.2.3
+  - @lendi-ui/typography@5.1.3
+
 ## 4.2.1
 
 ### Patch Changes

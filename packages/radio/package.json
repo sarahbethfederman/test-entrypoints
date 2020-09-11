@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/radio",
-  "version": "3.1.1",
+  "version": "3.1.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/radio.cjs.js",
   "module": "dist/radio.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -21,7 +19,7 @@
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/container": "^6.2.1",
     "@lendi-ui/spacing": "^7.1.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1"
   },
   "devDependencies": {

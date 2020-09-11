@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/text-area",
-  "version": "4.2.1",
+  "version": "4.2.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/text-area.cjs.js",
   "module": "dist/text-area.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

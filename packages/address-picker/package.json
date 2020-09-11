@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/address-picker",
-  "version": "2.4.1",
+  "version": "2.4.4",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/address-picker.cjs.js",
   "module": "dist/address-picker.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -18,18 +16,18 @@
     "styled-components": "^4"
   },
   "dependencies": {
-    "@lendi-ui/auto-complete": "^5.2.1",
+    "@lendi-ui/auto-complete": "^5.2.4",
     "@lendi-ui/breakpoint": "^5.2.1",
-    "@lendi-ui/button": "^8.2.1",
+    "@lendi-ui/button": "^8.2.4",
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/container": "^6.2.1",
-    "@lendi-ui/dropdown": "^4.2.1",
-    "@lendi-ui/grid": "^4.1.1",
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/dropdown": "^4.2.4",
+    "@lendi-ui/grid": "^4.1.4",
+    "@lendi-ui/icon": "^9.7.5",
     "@lendi-ui/modal": "^3.4.1",
     "@lendi-ui/spacing": "^7.1.1",
-    "@lendi-ui/text-input": "^4.2.1",
-    "@lendi-ui/typography": "^5.1.1",
+    "@lendi-ui/text-input": "^4.2.3",
+    "@lendi-ui/typography": "^5.1.4",
     "@lendi-ui/utils": "^5.1.1",
     "@types/googlemaps": "^3.36.5",
     "lodash": "^4.17.15",

@@ -1,5 +1,29 @@
 ## [3.0.2] 2019-10-22 [LUIT-51](https://creditandfinance.atlassian.net/browse/LUIT-51)
 
+## 3.1.4
+
+### Patch Changes
+
+- type issue
+- Updated dependencies [undefined]
+  - @lendi-ui/typography@5.1.4
+
+## 3.1.3
+
+### Patch Changes
+
+- cd0b310a: temporary workaround for type issue
+- Updated dependencies [cd0b310a]
+  - @lendi-ui/typography@5.1.3
+
+## 3.1.2
+
+### Patch Changes
+
+- 0f4cc643: fixed Size type problem
+- Updated dependencies [0f4cc643]
+  - @lendi-ui/typography@5.1.2
+
 ## 3.1.1
 
 ### Patch Changes

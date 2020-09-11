@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/typography",
-  "version": "5.1.1",
+  "version": "5.1.4",
   "source": "src/index.ts",
   "main": "dist/typography.cjs.js",
   "module": "dist/typography.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.0.0",

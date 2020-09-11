@@ -9,7 +9,7 @@ export type InputProp = Pick<
   ReactInputProps,
   Exclude<keyof ReactInputProps, 'size' | 'placeholder' | 'value' | 'readonly'>
 > & {
-  size?: InputSize;
+  size?: any;
   inputSize?: React.InputHTMLAttributes<HTMLInputElement>['size'];
   isError?: boolean;
   isInverse?: boolean;
