@@ -5,7 +5,7 @@ env=$1;
 
 if [ "$BUILDKITE" == "true" ]
 then
-    buildkite-agent artifact download '**/dist/**' '.'
+    buildkite-agent artifact download '**/dist/**/*' '.'
 fi
 
 if [ "$BITBUCKET_BRANCH" == "master" ] || [ "$BUILDKITE_BRANCH" == "master" ]
