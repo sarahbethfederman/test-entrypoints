@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 source ./ci/utils/install.sh
-git checkout master
 
 if [ "$BUILDKITE" == "true" ]
 then
