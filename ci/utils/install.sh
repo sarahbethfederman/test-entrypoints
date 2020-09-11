@@ -5,12 +5,9 @@ set -e
 
 # add yarn binaries to the path
 export PATH="$PATH:$(yarn bin)"
-
+echo $NPM_TOKEN
 # # setup .npmrc in the root directory so we can use NPM_TOKEN from env var to install all the dependencies
-if [ "$BUILDKITE" != "true" ]
-then
-  cp .npmrc_config .npmrc
-fi
+cp .npmrc_config .npmrc
 
 # install all the dependencies
 yarn --mutex network
