@@ -26,7 +26,7 @@ git diff-index --quiet HEAD
 if [ $? == 1 ] ; then
   set -e
   # Here we commit our versioning back to master
-  git add .
+  git add -u
   git commit -m "[ci skip] VERSION_COMMIT_NO_CI"
   git push origin HEAD:master
 
