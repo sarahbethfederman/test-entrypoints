@@ -16,12 +16,18 @@
     "packages/*/src/examples/**.tsx",
     "packages/*/src/**/*.doc.ts",
     "packages/*/src/**/*.doc.tsx",
+    "packages/*/src/packages/*/**/*.stories.tsx",
+    "packages/*/src/stories/**.tsx",
+    "packages/*/src/**/*.stories.tsx",
     "utils/*/src/**/*.d.ts",
     "utils/*/src/**/*.test.ts",
     "utils/*/src/**/*.test.tsx",
     "utils/*/src/packages/*/**/*.example.tsx",
     "utils/*/src/examples/**.tsx",
     "utils/*/src/**/*.doc.ts",
-    "utils/*/src/**/*.doc.tsx"
+    "utils/*/src/**/*.doc.tsx",
+    "utils/*/src/packages/*/**/*.stories.tsx",
+    "utils/*/src/stories/**.tsx",
+    "utils/*/src/**/*.stories.tsx"
   ]
 }
