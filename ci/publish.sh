@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 source ./ci/utils/install.sh
+git checkout master
+
 if [ "$BUILDKITE" == "true" ]
 then
     buildkite-agent artifact download '**/dist/**' '.'
@@ -11,7 +13,6 @@ then
   yarn manypkg exec cp "$PWD/.npmrc_config" .npmrc
 fi
 
-git checkout
 git config --global user.email $BUILDKITE_BUILD_CREATOR_EMAIL
 git config --global user.name $BUILDKITE_BUILD_CREATOR
 
@@ -33,7 +34,7 @@ if [ $? == 1 ] ; then
   yarn changeset publish
 
   # Here we commit our new tags back to master
-  git push --follow-tags
+  git push origin HEAD:master --follow-tags
 else
   set -e
   echo 'no new changesets!'
