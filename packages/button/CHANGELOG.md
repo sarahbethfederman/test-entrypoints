@@ -1,5 +1,11 @@
 ## [8.1.0] 2020-04-17 [AC-126](https://creditandfinance.atlassian.net/browse/AC-126)
 
+## 8.2.5
+
+### Patch Changes
+
+- 95dd1da3: added a storybook story
+
 ## 8.2.4
 
 ### Patch Changes
