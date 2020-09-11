@@ -1,5 +1,11 @@
 ## [8.1.0] 2020-04-17 [AC-126](https://creditandfinance.atlassian.net/browse/AC-126)
 
+## 8.2.7
+
+### Patch Changes
+
+- 073c3f07: fix build
+
 ## 8.2.6
 
 ### Patch Changes
