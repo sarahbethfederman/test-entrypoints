@@ -3,7 +3,7 @@ source ./ci/utils/install.sh
 
 if [ "$BUILDKITE" == "true" ]
 then
-    buildkite-agent artifact download '**/dist/**/*' '.'
+    buildkite-agent artifact download '**/dist/**' '.'
 fi
 
 # setup .npmrc in each workspace directory so we can use NPM_TOKEN from env var to publish all the packages
