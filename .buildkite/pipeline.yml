@@ -36,8 +36,8 @@ steps:
       - lendi-au/ssm#0.5.2:
           ssmkey: 'NPM_TOKEN'
     artifact_paths:
-      - 'packages/*/dist/**/*'
-      - 'utils/*/dist/**/*'
+      - 'packages/*/dist/**'
+      - 'utils/*/dist/**'
 
   #   _______   ___________    ____
   #  |       \ |   ____\   \  /   /
@@ -65,7 +65,7 @@ steps:
       - lendi-au/ssm#0.5.2:
           ssmkey: 'NPM_TOKEN'
     artifact_paths:
-      - 'website/dist/**/*'
+      - 'website/dist/**'
 
   - label: ':rocket: Deploy LUI Website'
     key: deploy-website
@@ -105,7 +105,7 @@ steps:
       - lendi-au/ssm#0.5.2:
           ssmkey: 'NPM_TOKEN'
     artifact_paths:
-      - 'website/dist/**/*'
+      - 'website/dist/**'
 
   - label: ':rocket: Deploy LUI Website'
     key: deploy-website-prod
