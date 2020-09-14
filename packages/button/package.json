@@ -1,6 +1,6 @@
 {
   "name": "@lendi-ui/button",
-  "version": "8.2.7",
+  "version": "8.2.8",
   "source": "src/index.ts",
   "main": "dist/button.cjs.js",
   "module": "dist/button.esm.js",
