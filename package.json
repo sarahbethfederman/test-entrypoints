@@ -107,7 +107,7 @@
   },
   "preconstruct": {
     "packages": [
-      "packages/!(navbar)",
+      "packages/*",
       "utils/*"
     ]
   }
