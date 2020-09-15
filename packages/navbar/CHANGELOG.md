@@ -1,5 +1,11 @@
 ## [5.2.1] 2020-01-21 [HUB-hotfix-autocomplete](
 
+## 5.3.2
+
+### Patch Changes
+
+- ed9596d0: added navbar back to build
+
 ## 5.3.1
 
 ### Patch Changes
