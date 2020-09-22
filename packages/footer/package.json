@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/footer",
-  "version": "4.3.2",
+  "version": "4.3.3",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/footer.cjs.js",
   "module": "dist/footer.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
