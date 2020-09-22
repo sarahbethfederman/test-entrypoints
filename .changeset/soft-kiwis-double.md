@@ -3,3 +3,4 @@
 ---
 
 Added rel="noreferrer" to footer links
+Fixed noreferrer tag for external links only
