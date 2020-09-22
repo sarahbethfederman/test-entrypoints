@@ -1,4 +1,11 @@
 ## [4.2.1] - 2020-07-27 - [FUNNEL-1620](https://creditandfinance.atlassian.net/browse/FUNNEL-1620)
+  
+## 4.3.2
+
+### Patch Changes
+
+- Fixed noreferrer tag for external links only
+- Added rel="noreferrer" to footer links
 
 ## 4.3.1
 
