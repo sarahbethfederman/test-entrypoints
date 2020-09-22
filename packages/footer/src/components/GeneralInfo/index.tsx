@@ -29,7 +29,7 @@ export class GeneralInfo extends React.Component<GeneralInfoProps> {
             {GENERAL_PAGES.map((page, index) => (
               <LinkWrapper key={page.label}>
                 <PageLink
-                  rel="noreferrer"
+                  rel={page.label === 'Careers' ? 'noreferrer' : null}
                   href={page.label === 'Careers' ? page.url : `https://www.lendi.com.au${page.url}${params}`}
                   target={page.label === 'Careers' ? '_blank' : undefined}
                   onClick={() => this.context.analyticsForNavigation(page.label, WindowPosition.footer)}
