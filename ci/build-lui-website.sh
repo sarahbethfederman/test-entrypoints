@@ -3,9 +3,10 @@ source ./ci/utils/install.sh
 
 env=$1;
 
+# download built packages
 if [ "$BUILDKITE" == "true" ]
 then
-    buildkite-agent artifact download '**/dist/**/*' '.'
+    buildkite-agent artifact download '**/dist/**' '.'
 fi
 
 if [ "$BITBUCKET_BRANCH" == "master" ] || [ "$BUILDKITE_BRANCH" == "master" ]

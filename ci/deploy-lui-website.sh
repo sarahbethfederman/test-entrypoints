@@ -6,7 +6,7 @@ ENVIRONMENT=$1;
 if [ "$BUILDKITE" == "true" ]
 then
     mkdir -p ./website/dist
-    buildkite-agent artifact download 'website/dist/**/*' 'website/dist'
+    buildkite-agent artifact download 'website/dist/**' 'website/dist'
 fi
 
 if [ "$BITBUCKET_BRANCH" == "master" ] || [ "$BUILDKITE_BRANCH" == "master" ]
