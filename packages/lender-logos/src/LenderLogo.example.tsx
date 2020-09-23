@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import * as LenderLogos from './lender-logos-compiled/LenderLogo';
+import { LenderLogoProps } from './LenderLogo';
+import * as LenderLogos from './lender-logos-compiled';
 import Theme from '@lendi-ui/theme';
 import { Body } from '@lendi-ui/typography';
 import { p, mt } from '@lendi-ui/spacing';
@@ -17,12 +18,10 @@ const NameWrapper = styled(Body)`
   ${mt('xxxs')};
 `;
 
-export default () => (
+const LenderLogo = () => (
   <Theme>
     {Object.keys(LenderLogos).map((component, i) => {
-      const MyComponent: React.FC<LenderLogos.LenderLogoProps> = (LenderLogos as any)[component] as React.SFC<
-        LenderLogos.LenderLogoProps
-      >;
+      const MyComponent: React.FC<LenderLogoProps> = (LenderLogos as any)[component] as React.SFC<LenderLogoProps>;
       return (
         <Wrapper key={i}>
           <MyComponent width="50px" height="50px" />
@@ -32,3 +31,4 @@ export default () => (
     })}
   </Theme>
 );
+export default LenderLogo;

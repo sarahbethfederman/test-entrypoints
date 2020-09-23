@@ -78,7 +78,7 @@
     "build:assets": "yarn build:icons && yarn build:fancy-icons && yarn build:lender-logos",
     "build:icons": "node packages/icon/build/index.js",
     "build:fancy-icons": "node packages/fancy-icon/build/index.js",
-    "build:lender-logos": "node packages/lender-logos/build/index.js",
+    "build:lender-logos": "yarn workspace @lendi-ui/lender-logos build",
     "check": "yarn run check:duplicates && yarn run check:dependencies",
     "check:dependencies": "yarn manypkg check",
     "check:changesets": "yarn changeset status",

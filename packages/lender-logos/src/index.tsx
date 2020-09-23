@@ -41,7 +41,7 @@ import {
   TeachersMutualBank,
   VirginMoney,
   Westpac,
-} from './lender-logos-compiled/LenderLogo';
+} from './lender-logos-compiled';
 
 export type LenderIDType =
   | 'adelaide_bank'
@@ -197,4 +197,5 @@ const LenderLogos = ({ lenderId, width = '91px', height = '32px', className = ''
   }
 };
 
+export * from './lender-logos-compiled';
 export default LenderLogos;
