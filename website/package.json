@@ -1,7 +1,7 @@
 {
   "name": "@lendi-ui/website",
   "private": true,
-  "version": "2.1.1",
+  "version": "2.1.2",
   "dependencies": {
     "@lendi-ui/accordion": "*",
     "@lendi-ui/address-picker": "*",

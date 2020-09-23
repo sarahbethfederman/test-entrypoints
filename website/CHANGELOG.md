@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.2
+
+### Patch Changes
+
+- 8ceffbc4: updated internal deps
+
 ## 2.1.1
 
 ### Patch Changes
