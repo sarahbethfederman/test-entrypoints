@@ -1,5 +1,11 @@
 # Changelog - @lendi-ui/partner-logo
 
+## 2.2.0
+
+### Minor Changes
+
+- 9ec259b1: refactored build to use new svgr
+
 ## 2.1.1
 
 ### Patch Changes
