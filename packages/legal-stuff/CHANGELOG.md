@@ -1,5 +1,15 @@
 ## 5.1.1
 
+## 5.2.0
+
+### Minor Changes
+
+- f839a050: Updated Text Copy
+
+### Patch Changes
+
+- f839a050: Updated with new legal copy (Removed Click Loans)
+
 ### Patch Changes
 
 - fix publish issue
