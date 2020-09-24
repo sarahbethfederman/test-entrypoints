@@ -12,9 +12,9 @@ const Legal = (props: LUIGlobalProps) => {
           Important legal stuff
         </Heading>
         <BodyContainer>
-          Lendi is the trading name of Lendi Pty Ltd (ACN 611 161 856, Credit Representative 518849), a related body
-          corporate of Auscred Services Pty Ltd (ACN 164 638 171, Australian Credit Licence 442372). We will never sell
-          your email address to any third party or send you nasty spam, promise.
+          Lendi is the trading name of Lendi Pty Ltd (ACN 611 161 856), a related body corporate of Auscred Services Pty
+          Ltd (ACN 164 638 171, Australian Credit Licence 442372). We will never sell your email address to any third
+          party or send you nasty spam, promise.
         </BodyContainer>
         <BodyContainer>
           # Quoted rate applies only to PAYG loans with LVR of 80% or less with security in non-remote areas. All
@@ -22,12 +22,11 @@ const Legal = (props: LUIGlobalProps) => {
         </BodyContainer>
         <BodyContainer>
           Lendi is a privately owned and operated Aussie business. Our mission is to provide Aussies with the right
-          experience when choosing a home loan from our panel of lenders including ClickLoans, a related body corporate
-          of Auscred Services. Although Lendi compares over 1600 products from over 35 lenders, we don't cover the whole
-          market or compare all features and there may be other features or options available to you. While Lendi is 40%
-          owned by founders and employees, we have also been supported by some great minority shareholders including
-          Bailador, Macquarie Bank Ltd and a number of Australian sophisticated investors. We have an independent and
-          founder led board.
+          experience when choosing a home loan from our panel of lenders. Although Lendi compares over 1600 products
+          from over 35 lenders, we don't cover the whole market or compare all features and there may be other features
+          or options available to you. While Lendi is 40% owned by founders and employees, we have also been supported
+          by some great minority shareholders including Bailador, Macquarie Bank Ltd and a number of Australian
+          sophisticated investors. We have an independent and founder led board.
         </BodyContainer>
         <BodyContainer>
           WARNING: This comparison rate is true only for the example given and may not include all fees and charges.
@@ -35,11 +34,6 @@ const Legal = (props: LUIGlobalProps) => {
           are based on a loan amount of $150,000 over a loan term of 25 years. Fees and charges apply. All applications
           are subject to assessment and lender approval. Quoted rate applies only to PAYG loans with LVR of 80% or less
           with security in non-remote areas. All applications are subject to assessment and lender approval.
-        </BodyContainer>
-        <BodyContainer>
-          EXAMPLE: This example is current as at 20th October 2016. A Click Loans Online Principal and Interest Loan of
-          $150,000 over 25 years has monthly repayments of $767. This is calculated based on the interest rate of 3.69%,
-          comparison rate of 3.69%, upfront fees of $0 and annual fees of $0.
         </BodyContainer>
         <BodyContainer>
           IMPORTANT INFORMATION: Loan terms of between 1 Year and 40 Years are available subject to lender and credit

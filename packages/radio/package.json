@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/radio.cjs.js",
   "module": "dist/radio.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

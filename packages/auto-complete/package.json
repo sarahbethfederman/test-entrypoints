@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/auto-complete.cjs.js",
   "module": "dist/auto-complete.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

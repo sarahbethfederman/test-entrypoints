@@ -5,7 +5,9 @@
   "source": "src/index.tsx",
   "main": "dist/collapse.cjs.js",
   "module": "dist/collapse.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {

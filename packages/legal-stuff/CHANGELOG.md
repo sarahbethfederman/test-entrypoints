@@ -1,5 +1,3 @@
-## [5.0.0] 2020-04-07 [ACQUIRE-117](https://creditandfinance.atlassian.net/browse/AC-117)
-
 ## 5.1.1
 
 ### Patch Changes
