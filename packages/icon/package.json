@@ -5,8 +5,17 @@
   "module": "dist/icon.esm.js",
   "source": "src/index.tsx",
   "files": [
-    "dist"
+    "dist",
+    "*",
+    "!(src|build-scripts|node_modules)"
   ],
+  "preconstruct": {
+    "entrypoints": [
+      ".",
+      "*",
+      "!(dist|src|build-scripts|node_modules)"
+    ]
+  },
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",
@@ -34,7 +43,9 @@
     "@lendi-ui/color": "^5.1.1"
   },
   "scripts": {
+    "format:entrypoints": "prettier --write '**/package.json' --loglevel silent",
+    "build:entrypoints": "node build-scripts/generate-entrypoints.js",
     "build:svg": "yarn svgr --silent --out-dir src/icons-compiled src/icons",
-    "build": "yarn run build:svg"
+    "build": "yarn run build:svg && yarn run build:entrypoints && yarn run format:entrypoints"
   }
 }

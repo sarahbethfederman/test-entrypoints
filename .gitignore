@@ -1,4 +1,9 @@
 # ignore generated entrypoints
+packages/icon/**
+!packages/icon/*
+!packages/icon/src/**
+!packages/icon/build-scripts/**
+
 packages/fancy-icon/**
 !packages/fancy-icon/*
 !packages/fancy-icon/src/**
