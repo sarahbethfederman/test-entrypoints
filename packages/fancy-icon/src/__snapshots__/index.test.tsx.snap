@@ -12,7 +12,7 @@ exports[`Icon component ArrowRight should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ArrowRight>
+<SvgArrowRight>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -107,7 +107,7 @@ exports[`Icon component ArrowRight should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ArrowRight>
+</SvgArrowRight>
 `;
 
 exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
@@ -122,7 +122,7 @@ exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<BloomSavings>
+<SvgBloomSavings>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -452,7 +452,7 @@ exports[`Icon component BloomSavings should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</BloomSavings>
+</SvgBloomSavings>
 `;
 
 exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
@@ -467,7 +467,7 @@ exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<BookAppointment>
+<SvgBookAppointment>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -573,7 +573,7 @@ exports[`Icon component BookAppointment should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</BookAppointment>
+</SvgBookAppointment>
 `;
 
 exports[`Icon component Briefcase should fetch icon correctly 1`] = `
@@ -588,7 +588,7 @@ exports[`Icon component Briefcase should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Briefcase>
+<SvgBriefcase>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -676,7 +676,7 @@ exports[`Icon component Briefcase should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Briefcase>
+</SvgBriefcase>
 `;
 
 exports[`Icon component BtnGoogleLightNormalIos should fetch icon correctly 1`] = `
@@ -691,7 +691,7 @@ exports[`Icon component BtnGoogleLightNormalIos should fetch icon correctly 1`] 
   height: inherit;
 }
 
-<BtnGoogleLightNormalIos>
+<SvgBtnGoogleLightNormalIos>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -735,14 +735,12 @@ exports[`Icon component BtnGoogleLightNormalIos should fetch icon correctly 1`] 
         className="c0"
       >
         <svg
-          height={46}
-          width={46}
-          xmlnsXlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 46 46"
         >
           <defs>
             <rect
               height={40}
-              id="a"
+              id="btn_google_light_normal_ios_svg__a"
               rx={2}
               width={40}
               x={0}
@@ -754,21 +752,21 @@ exports[`Icon component BtnGoogleLightNormalIos should fetch icon correctly 1`] 
             fillRule="evenodd"
           >
             <g
-              filter="url(#filter-1)"
+              filter="url(#btn_google_light_normal_ios_svg__filter-1)"
               transform="translate(3 3)"
             >
               <use
                 fill="#FFF"
-                xlinkHref="#a"
+                xlinkHref="#btn_google_light_normal_ios_svg__a"
               />
               <use
-                xlinkHref="#a"
+                xlinkHref="#btn_google_light_normal_ios_svg__a"
               />
               <use
-                xlinkHref="#a"
+                xlinkHref="#btn_google_light_normal_ios_svg__a"
               />
               <use
-                xlinkHref="#a"
+                xlinkHref="#btn_google_light_normal_ios_svg__a"
               />
             </g>
             <path
@@ -795,7 +793,7 @@ exports[`Icon component BtnGoogleLightNormalIos should fetch icon correctly 1`] 
       </span>
     </StyledComponent>
   </styled.span>
-</BtnGoogleLightNormalIos>
+</SvgBtnGoogleLightNormalIos>
 `;
 
 exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
@@ -810,7 +808,7 @@ exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<CalendarHandShake>
+<SvgCalendarHandShake>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1014,7 +1012,7 @@ exports[`Icon component CalendarHandShake should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</CalendarHandShake>
+</SvgCalendarHandShake>
 `;
 
 exports[`Icon component CashFlow should fetch icon correctly 1`] = `
@@ -1029,7 +1027,7 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<CashFlow>
+<SvgCashFlow>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1118,7 +1116,7 @@ exports[`Icon component CashFlow should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</CashFlow>
+</SvgCashFlow>
 `;
 
 exports[`Icon component CashOut should fetch icon correctly 1`] = `
@@ -1133,7 +1131,7 @@ exports[`Icon component CashOut should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<CashOut>
+<SvgCashOut>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1241,7 +1239,7 @@ exports[`Icon component CashOut should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</CashOut>
+</SvgCashOut>
 `;
 
 exports[`Icon component Chat should fetch icon correctly 1`] = `
@@ -1256,7 +1254,7 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Chat>
+<SvgChat>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1327,7 +1325,7 @@ exports[`Icon component Chat should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Chat>
+</SvgChat>
 `;
 
 exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
@@ -1342,7 +1340,7 @@ exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ChatSmileyFace>
+<SvgChatSmileyFace>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1423,7 +1421,7 @@ exports[`Icon component ChatSmileyFace should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ChatSmileyFace>
+</SvgChatSmileyFace>
 `;
 
 exports[`Icon component Check should fetch icon correctly 1`] = `
@@ -1438,7 +1436,7 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Check>
+<SvgCheck>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1510,7 +1508,7 @@ exports[`Icon component Check should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Check>
+</SvgCheck>
 `;
 
 exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
@@ -1525,7 +1523,7 @@ exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ChooseLoan>
+<SvgChooseLoan>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1650,7 +1648,7 @@ exports[`Icon component ChooseLoan should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ChooseLoan>
+</SvgChooseLoan>
 `;
 
 exports[`Icon component Clock should fetch icon correctly 1`] = `
@@ -1665,7 +1663,7 @@ exports[`Icon component Clock should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Clock>
+<SvgClock>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1737,7 +1735,7 @@ exports[`Icon component Clock should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Clock>
+</SvgClock>
 `;
 
 exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
@@ -1752,7 +1750,7 @@ exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ComputerBank>
+<SvgComputerBank>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1819,7 +1817,7 @@ exports[`Icon component ComputerBank should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ComputerBank>
+</SvgComputerBank>
 `;
 
 exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
@@ -1834,7 +1832,7 @@ exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ComputerTools>
+<SvgComputerTools>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -1905,7 +1903,7 @@ exports[`Icon component ComputerTools should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ComputerTools>
+</SvgComputerTools>
 `;
 
 exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
@@ -1920,7 +1918,7 @@ exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<ConsolidateDebt>
+<SvgConsolidateDebt>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2053,7 +2051,7 @@ exports[`Icon component ConsolidateDebt should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</ConsolidateDebt>
+</SvgConsolidateDebt>
 `;
 
 exports[`Icon component Consolidations should fetch icon correctly 1`] = `
@@ -2068,7 +2066,7 @@ exports[`Icon component Consolidations should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Consolidations>
+<SvgConsolidations>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2147,7 +2145,7 @@ exports[`Icon component Consolidations should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Consolidations>
+</SvgConsolidations>
 `;
 
 exports[`Icon component Construction should fetch icon correctly 1`] = `
@@ -2162,7 +2160,7 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Construction>
+<SvgConstruction>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2233,7 +2231,7 @@ exports[`Icon component Construction should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Construction>
+</SvgConstruction>
 `;
 
 exports[`Icon component Credit should fetch icon correctly 1`] = `
@@ -2248,7 +2246,7 @@ exports[`Icon component Credit should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Credit>
+<SvgCredit>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2335,7 +2333,7 @@ exports[`Icon component Credit should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Credit>
+</SvgCredit>
 `;
 
 exports[`Icon component Deposits should fetch icon correctly 1`] = `
@@ -2350,7 +2348,7 @@ exports[`Icon component Deposits should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Deposits>
+<SvgDeposits>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2421,7 +2419,7 @@ exports[`Icon component Deposits should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Deposits>
+</SvgDeposits>
 `;
 
 exports[`Icon component Document should fetch icon correctly 1`] = `
@@ -2436,7 +2434,7 @@ exports[`Icon component Document should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Document>
+<SvgDocument>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2506,7 +2504,7 @@ exports[`Icon component Document should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Document>
+</SvgDocument>
 `;
 
 exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
@@ -2521,7 +2519,7 @@ exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<DocumentArrowLink>
+<SvgDocumentArrowLink>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2619,7 +2617,7 @@ exports[`Icon component DocumentArrowLink should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</DocumentArrowLink>
+</SvgDocumentArrowLink>
 `;
 
 exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
@@ -2634,7 +2632,7 @@ exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<DocumentLoan>
+<SvgDocumentLoan>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2720,7 +2718,7 @@ exports[`Icon component DocumentLoan should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</DocumentLoan>
+</SvgDocumentLoan>
 `;
 
 exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
@@ -2735,7 +2733,7 @@ exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<EmptyBox>
+<SvgEmptyBox>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2836,7 +2834,7 @@ exports[`Icon component EmptyBox should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</EmptyBox>
+</SvgEmptyBox>
 `;
 
 exports[`Icon component Eyes should fetch icon correctly 1`] = `
@@ -2851,7 +2849,7 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Eyes>
+<SvgEyes>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -2926,7 +2924,7 @@ exports[`Icon component Eyes should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Eyes>
+</SvgEyes>
 `;
 
 exports[`Icon component FancyCheck should fetch icon correctly 1`] = `
@@ -2941,7 +2939,7 @@ exports[`Icon component FancyCheck should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<FancyCheck>
+<SvgFancyCheck>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3013,7 +3011,7 @@ exports[`Icon component FancyCheck should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</FancyCheck>
+</SvgFancyCheck>
 `;
 
 exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
@@ -3028,7 +3026,7 @@ exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<FancyInfo>
+<SvgFancyInfo>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3125,7 +3123,7 @@ exports[`Icon component FancyInfo should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</FancyInfo>
+</SvgFancyInfo>
 `;
 
 exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
@@ -3140,7 +3138,7 @@ exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<FixedMortgageRates>
+<SvgFixedMortgageRates>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3215,7 +3213,7 @@ exports[`Icon component FixedMortgageRates should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</FixedMortgageRates>
+</SvgFixedMortgageRates>
 `;
 
 exports[`Icon component Flow should fetch icon correctly 1`] = `
@@ -3230,7 +3228,7 @@ exports[`Icon component Flow should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Flow>
+<SvgFlow>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3332,7 +3330,7 @@ exports[`Icon component Flow should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Flow>
+</SvgFlow>
 `;
 
 exports[`Icon component Folder should fetch icon correctly 1`] = `
@@ -3347,7 +3345,7 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Folder>
+<SvgFolder>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3442,7 +3440,7 @@ exports[`Icon component Folder should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Folder>
+</SvgFolder>
 `;
 
 exports[`Icon component Gauge should fetch icon correctly 1`] = `
@@ -3457,7 +3455,7 @@ exports[`Icon component Gauge should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Gauge>
+<SvgGauge>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3521,7 +3519,7 @@ exports[`Icon component Gauge should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Gauge>
+</SvgGauge>
 `;
 
 exports[`Icon component Graph should fetch icon correctly 1`] = `
@@ -3536,7 +3534,7 @@ exports[`Icon component Graph should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Graph>
+<SvgGraph>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3606,7 +3604,7 @@ exports[`Icon component Graph should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Graph>
+</SvgGraph>
 `;
 
 exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
@@ -3621,7 +3619,7 @@ exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<GrowSavings>
+<SvgGrowSavings>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3739,7 +3737,7 @@ exports[`Icon component GrowSavings should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</GrowSavings>
+</SvgGrowSavings>
 `;
 
 exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
@@ -3754,7 +3752,7 @@ exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<GuaranteedLoans>
+<SvgGuaranteedLoans>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -3859,7 +3857,7 @@ exports[`Icon component GuaranteedLoans should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</GuaranteedLoans>
+</SvgGuaranteedLoans>
 `;
 
 exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
@@ -3874,7 +3872,7 @@ exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<HandshakeSettled>
+<SvgHandshakeSettled>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4051,7 +4049,7 @@ exports[`Icon component HandshakeSettled should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HandshakeSettled>
+</SvgHandshakeSettled>
 `;
 
 exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
@@ -4066,7 +4064,7 @@ exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<HereToHelp>
+<SvgHereToHelp>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4145,7 +4143,7 @@ exports[`Icon component HereToHelp should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HereToHelp>
+</SvgHereToHelp>
 `;
 
 exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
@@ -4160,7 +4158,7 @@ exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<HomeLoanRepayments>
+<SvgHomeLoanRepayments>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4239,7 +4237,7 @@ exports[`Icon component HomeLoanRepayments should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HomeLoanRepayments>
+</SvgHomeLoanRepayments>
 `;
 
 exports[`Icon component HomeTime should fetch icon correctly 1`] = `
@@ -4254,7 +4252,7 @@ exports[`Icon component HomeTime should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<HomeTime>
+<SvgHomeTime>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4339,7 +4337,7 @@ exports[`Icon component HomeTime should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HomeTime>
+</SvgHomeTime>
 `;
 
 exports[`Icon component HourGlass should fetch icon correctly 1`] = `
@@ -4354,7 +4352,7 @@ exports[`Icon component HourGlass should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<HourGlass>
+<SvgHourGlass>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4420,7 +4418,7 @@ exports[`Icon component HourGlass should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HourGlass>
+</SvgHourGlass>
 `;
 
 exports[`Icon component Id should fetch icon correctly 1`] = `
@@ -4435,7 +4433,7 @@ exports[`Icon component Id should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Id>
+<SvgId>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4536,7 +4534,7 @@ exports[`Icon component Id should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Id>
+</SvgId>
 `;
 
 exports[`Icon component IdVerify should fetch icon correctly 1`] = `
@@ -4551,7 +4549,7 @@ exports[`Icon component IdVerify should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<IdVerify>
+<SvgIdVerify>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4659,7 +4657,7 @@ exports[`Icon component IdVerify should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</IdVerify>
+</SvgIdVerify>
 `;
 
 exports[`Icon component LargeLock should fetch icon correctly 1`] = `
@@ -4674,7 +4672,7 @@ exports[`Icon component LargeLock should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<LargeLock>
+<SvgLargeLock>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4768,7 +4766,7 @@ exports[`Icon component LargeLock should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</LargeLock>
+</SvgLargeLock>
 `;
 
 exports[`Icon component LiveChat should fetch icon correctly 1`] = `
@@ -4783,7 +4781,7 @@ exports[`Icon component LiveChat should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<LiveChat>
+<SvgLiveChat>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4850,7 +4848,7 @@ exports[`Icon component LiveChat should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</LiveChat>
+</SvgLiveChat>
 `;
 
 exports[`Icon component Lmi should fetch icon correctly 1`] = `
@@ -4865,7 +4863,7 @@ exports[`Icon component Lmi should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Lmi>
+<SvgLmi>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -4932,7 +4930,7 @@ exports[`Icon component Lmi should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Lmi>
+</SvgLmi>
 `;
 
 exports[`Icon component LockCircle should fetch icon correctly 1`] = `
@@ -4947,7 +4945,7 @@ exports[`Icon component LockCircle should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<LockCircle>
+<SvgLockCircle>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5050,7 +5048,7 @@ exports[`Icon component LockCircle should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</LockCircle>
+</SvgLockCircle>
 `;
 
 exports[`Icon component LowDoc should fetch icon correctly 1`] = `
@@ -5065,7 +5063,7 @@ exports[`Icon component LowDoc should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<LowDoc>
+<SvgLowDoc>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5132,7 +5130,7 @@ exports[`Icon component LowDoc should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</LowDoc>
+</SvgLowDoc>
 `;
 
 exports[`Icon component Lvr should fetch icon correctly 1`] = `
@@ -5147,7 +5145,7 @@ exports[`Icon component Lvr should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Lvr>
+<SvgLvr>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5242,7 +5240,7 @@ exports[`Icon component Lvr should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Lvr>
+</SvgLvr>
 `;
 
 exports[`Icon component Maintenance should fetch icon correctly 1`] = `
@@ -5257,7 +5255,7 @@ exports[`Icon component Maintenance should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Maintenance>
+<SvgMaintenance>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5368,7 +5366,7 @@ exports[`Icon component Maintenance should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Maintenance>
+</SvgMaintenance>
 `;
 
 exports[`Icon component Money should fetch icon correctly 1`] = `
@@ -5383,7 +5381,7 @@ exports[`Icon component Money should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Money>
+<SvgMoney>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5492,7 +5490,7 @@ exports[`Icon component Money should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Money>
+</SvgMoney>
 `;
 
 exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`] = `
@@ -5507,7 +5505,7 @@ exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`]
   height: inherit;
 }
 
-<MortgageProtectInsurance>
+<SvgMortgageProtectInsurance>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5574,7 +5572,7 @@ exports[`Icon component MortgageProtectInsurance should fetch icon correctly 1`]
       </span>
     </StyledComponent>
   </styled.span>
-</MortgageProtectInsurance>
+</SvgMortgageProtectInsurance>
 `;
 
 exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
@@ -5589,7 +5587,7 @@ exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<NoDeposit>
+<SvgNoDeposit>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5664,7 +5662,7 @@ exports[`Icon component NoDeposit should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</NoDeposit>
+</SvgNoDeposit>
 `;
 
 exports[`Icon component Offset should fetch icon correctly 1`] = `
@@ -5679,7 +5677,7 @@ exports[`Icon component Offset should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Offset>
+<SvgOffset>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5746,7 +5744,7 @@ exports[`Icon component Offset should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Offset>
+</SvgOffset>
 `;
 
 exports[`Icon component PageNotFound should fetch icon correctly 1`] = `
@@ -5761,7 +5759,7 @@ exports[`Icon component PageNotFound should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<PageNotFound>
+<SvgPageNotFound>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -5886,7 +5884,7 @@ exports[`Icon component PageNotFound should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</PageNotFound>
+</SvgPageNotFound>
 `;
 
 exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
@@ -5901,7 +5899,7 @@ exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<PartyPopper>
+<SvgPartyPopper>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6019,7 +6017,7 @@ exports[`Icon component PartyPopper should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</PartyPopper>
+</SvgPartyPopper>
 `;
 
 exports[`Icon component PickATime should fetch icon correctly 1`] = `
@@ -6034,7 +6032,7 @@ exports[`Icon component PickATime should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<PickATime>
+<SvgPickATime>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6105,7 +6103,7 @@ exports[`Icon component PickATime should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</PickATime>
+</SvgPickATime>
 `;
 
 exports[`Icon component PreApproval should fetch icon correctly 1`] = `
@@ -6120,7 +6118,7 @@ exports[`Icon component PreApproval should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<PreApproval>
+<SvgPreApproval>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6183,7 +6181,7 @@ exports[`Icon component PreApproval should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</PreApproval>
+</SvgPreApproval>
 `;
 
 exports[`Icon component Preferences should fetch icon correctly 1`] = `
@@ -6198,7 +6196,7 @@ exports[`Icon component Preferences should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Preferences>
+<SvgPreferences>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6288,7 +6286,7 @@ exports[`Icon component Preferences should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Preferences>
+</SvgPreferences>
 `;
 
 exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
@@ -6303,7 +6301,7 @@ exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<RefinanceDocument>
+<SvgRefinanceDocument>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6370,7 +6368,7 @@ exports[`Icon component RefinanceDocument should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</RefinanceDocument>
+</SvgRefinanceDocument>
 `;
 
 exports[`Icon component Relax should fetch icon correctly 1`] = `
@@ -6385,7 +6383,7 @@ exports[`Icon component Relax should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Relax>
+<SvgRelax>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6468,7 +6466,7 @@ exports[`Icon component Relax should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Relax>
+</SvgRelax>
 `;
 
 exports[`Icon component Savings should fetch icon correctly 1`] = `
@@ -6483,7 +6481,7 @@ exports[`Icon component Savings should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Savings>
+<SvgSavings>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6576,7 +6574,7 @@ exports[`Icon component Savings should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Savings>
+</SvgSavings>
 `;
 
 exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
@@ -6591,7 +6589,7 @@ exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<SavingsOptions>
+<SvgSavingsOptions>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6683,7 +6681,7 @@ exports[`Icon component SavingsOptions should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</SavingsOptions>
+</SvgSavingsOptions>
 `;
 
 exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
@@ -6698,7 +6696,7 @@ exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<SearchFilter>
+<SvgSearchFilter>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6804,7 +6802,7 @@ exports[`Icon component SearchFilter should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</SearchFilter>
+</SvgSearchFilter>
 `;
 
 exports[`Icon component Secure should fetch icon correctly 1`] = `
@@ -6819,7 +6817,7 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Secure>
+<SvgSecure>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -6917,7 +6915,7 @@ exports[`Icon component Secure should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Secure>
+</SvgSecure>
 `;
 
 exports[`Icon component Secured should fetch icon correctly 1`] = `
@@ -6932,7 +6930,7 @@ exports[`Icon component Secured should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Secured>
+<SvgSecured>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7031,7 +7029,7 @@ exports[`Icon component Secured should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Secured>
+</SvgSecured>
 `;
 
 exports[`Icon component Settings should fetch icon correctly 1`] = `
@@ -7046,7 +7044,7 @@ exports[`Icon component Settings should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Settings>
+<SvgSettings>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7145,7 +7143,7 @@ exports[`Icon component Settings should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Settings>
+</SvgSettings>
 `;
 
 exports[`Icon component Shapes should fetch icon correctly 1`] = `
@@ -7160,7 +7158,7 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Shapes>
+<SvgShapes>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7250,7 +7248,7 @@ exports[`Icon component Shapes should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Shapes>
+</SvgShapes>
 `;
 
 exports[`Icon component Split should fetch icon correctly 1`] = `
@@ -7265,7 +7263,7 @@ exports[`Icon component Split should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Split>
+<SvgSplit>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7328,7 +7326,7 @@ exports[`Icon component Split should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Split>
+</SvgSplit>
 `;
 
 exports[`Icon component SunBed should fetch icon correctly 1`] = `
@@ -7343,7 +7341,7 @@ exports[`Icon component SunBed should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<SunBed>
+<SvgSunBed>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7414,7 +7412,7 @@ exports[`Icon component SunBed should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</SunBed>
+</SvgSunBed>
 `;
 
 exports[`Icon component Target should fetch icon correctly 1`] = `
@@ -7429,7 +7427,7 @@ exports[`Icon component Target should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Target>
+<SvgTarget>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7519,7 +7517,7 @@ exports[`Icon component Target should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Target>
+</SvgTarget>
 `;
 
 exports[`Icon component Telephone should fetch icon correctly 1`] = `
@@ -7534,7 +7532,7 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Telephone>
+<SvgTelephone>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7604,7 +7602,7 @@ exports[`Icon component Telephone should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Telephone>
+</SvgTelephone>
 `;
 
 exports[`Icon component Upload should fetch icon correctly 1`] = `
@@ -7619,7 +7617,7 @@ exports[`Icon component Upload should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Upload>
+<SvgUpload>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7677,7 +7675,7 @@ exports[`Icon component Upload should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Upload>
+</SvgUpload>
 `;
 
 exports[`Icon component Weather should fetch icon correctly 1`] = `
@@ -7692,7 +7690,7 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
   height: inherit;
 }
 
-<Weather>
+<SvgWeather>
   <styled.span>
     <StyledComponent
       forwardedComponent={
@@ -7771,5 +7769,5 @@ exports[`Icon component Weather should fetch icon correctly 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</Weather>
+</SvgWeather>
 `;

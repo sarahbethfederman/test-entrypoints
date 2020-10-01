@@ -5,9 +5,12 @@
   "source": "src/index.tsx",
   "main": "dist/lender-logos.cjs.js",
   "module": "dist/lender-logos.esm.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
+  "sideEffects": false,
   "peerDependencies": {
     "@types/react": "^16.8",
     "@types/styled-components": "^4.1.18",
@@ -15,6 +18,8 @@
     "styled-components": "^4"
   },
   "devDependencies": {
+    "@babel/register": "^7.11.5",
+    "@lendi-ui/babel-plugin-wrapper": "^1.0.0",
     "@svgr/cli": "^5.4.0",
     "@types/react": "^16.4.8",
     "@types/styled-components": "^4.1.18",
@@ -25,7 +30,7 @@
     "@lendi-ui/utils": "^5.1.1"
   },
   "scripts": {
-    "build:svg": "yarn svgr --out-dir src/lender-logos-compiled src/lender-logos",
+    "build:svg": "yarn svgr --silent --out-dir src/lender-logos-compiled src/lender-logos",
     "build": "yarn run build:svg"
   }
 }

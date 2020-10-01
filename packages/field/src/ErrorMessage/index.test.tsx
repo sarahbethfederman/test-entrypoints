@@ -26,8 +26,8 @@ describe('ErrorMessage', () => {
   });
 
   it('should render a icon called "HighlightOff"', () => {
-    expect(wrapper.find('HighlightOff').length).toEqual(1);
-    expect(wrapper.find('HighlightOff')).toMatchSnapshot();
+    expect(wrapper.find('SvgHighlightOff').length).toEqual(1);
+    expect(wrapper.find('SvgHighlightOff')).toMatchSnapshot();
   });
 
   it('should render a paragraph use LUI Body called "MessageBody"', () => {

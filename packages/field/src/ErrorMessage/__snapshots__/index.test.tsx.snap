@@ -94,7 +94,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
       className="c0"
       color="error.500"
     >
-      <HighlightOff
+      <SvgHighlightOff
         color="error.500"
       >
         <styled.span
@@ -154,9 +154,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
               color="error.500"
             >
               <svg
-                height="1em"
                 viewBox="0 0 24 24"
-                width="1em"
               >
                 <path
                   d="M0 0h24v24H0z"
@@ -169,7 +167,7 @@ exports[`ErrorMessage should render a div called "Wrapper" 1`] = `
             </span>
           </StyledComponent>
         </styled.span>
-      </HighlightOff>
+      </SvgHighlightOff>
       <styled.p
         color="error.500"
         ml="xxxs"
@@ -274,7 +272,7 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
   fill: rgba(255,28,74,1);
 }
 
-<HighlightOff
+<SvgHighlightOff
   color="error.500"
 >
   <styled.span
@@ -334,9 +332,7 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
         color="error.500"
       >
         <svg
-          height="1em"
           viewBox="0 0 24 24"
-          width="1em"
         >
           <path
             d="M0 0h24v24H0z"
@@ -349,7 +345,7 @@ exports[`ErrorMessage should render a icon called "HighlightOff" 1`] = `
       </span>
     </StyledComponent>
   </styled.span>
-</HighlightOff>
+</SvgHighlightOff>
 `;
 
 exports[`ErrorMessage should render a paragraph use LUI Body called "MessageBody" 1`] = `
@@ -543,7 +539,7 @@ exports[`ErrorMessage should render whole component 1`] = `
         className="c0"
         color="error.500"
       >
-        <HighlightOff
+        <SvgHighlightOff
           color="error.500"
         >
           <styled.span
@@ -603,9 +599,7 @@ exports[`ErrorMessage should render whole component 1`] = `
                 color="error.500"
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M0 0h24v24H0z"
@@ -618,7 +612,7 @@ exports[`ErrorMessage should render whole component 1`] = `
               </span>
             </StyledComponent>
           </styled.span>
-        </HighlightOff>
+        </SvgHighlightOff>
         <styled.p
           color="error.500"
           ml="xxxs"

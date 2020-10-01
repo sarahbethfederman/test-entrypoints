@@ -137,7 +137,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
       }
     }
   >
-    <LendiLogo
+    <SvgLendiLogo
       color="secondary.900"
       height="100px"
       width="160px"
@@ -206,9 +206,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
           >
             <svg
               fill="currentColor"
-              height="1em"
               viewBox="0 0 1915.11 609.271"
-              width="1em"
             >
               <path
                 d="M1830.4 186.955h43.565a41.306 41.306 0 0141.145 41.134v25.421h-84.71v-66.555z"
@@ -225,7 +223,7 @@ exports[`Logo with no color, width, height and className should render "shade.10
           </span>
         </StyledComponent>
       </styled.span>
-    </LendiLogo>
+    </SvgLendiLogo>
   </Logo>
 </WithTheme(Logo)>
 `;

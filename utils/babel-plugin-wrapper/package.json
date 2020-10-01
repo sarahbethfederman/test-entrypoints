@@ -1,0 +1,7 @@
+{
+  "name": "@lendi-ui/babel-plugin-wrapper",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/babel-plugin-wrapper.cjs.js",
+  "source": "src/index.js"
+}

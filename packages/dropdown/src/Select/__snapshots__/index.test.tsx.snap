@@ -106,9 +106,7 @@ exports[`Select - the fancy one event testing - LUIfied select should all the st
                   data-testid="dropDownIcon"
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
@@ -235,9 +233,7 @@ exports[`Select - the fancy one render multiple value - LUIfied select should al
                   data-testid="dropDownIcon"
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"
@@ -364,9 +360,7 @@ exports[`Select - the fancy one render single value - LUIfied select should all 
                   data-testid="dropDownIcon"
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"

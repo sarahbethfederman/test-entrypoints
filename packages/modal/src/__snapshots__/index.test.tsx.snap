@@ -143,7 +143,7 @@ Array [
         className="c0 modal-container"
         size="lg"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -173,7 +173,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -186,7 +186,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -253,9 +253,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -268,9 +266,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -409,7 +407,7 @@ Array [
       className="c0 modal-container"
       size="lg"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -439,7 +437,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -452,7 +450,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -519,9 +517,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -534,9 +530,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -641,7 +637,7 @@ Array [
     className="c0 modal-container"
     size="lg"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -671,7 +667,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -684,7 +680,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -751,9 +747,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -766,9 +760,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -907,7 +901,7 @@ Array [
         className="c0 modal-container"
         size="md"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -937,7 +931,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -950,7 +944,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -1017,9 +1011,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -1032,9 +1024,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -1164,7 +1156,7 @@ Array [
       className="c0 modal-container"
       size="md"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -1194,7 +1186,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -1207,7 +1199,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -1274,9 +1266,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -1289,9 +1279,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -1387,7 +1377,7 @@ Array [
     className="c0 modal-container"
     size="md"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -1417,7 +1407,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -1430,7 +1420,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -1497,9 +1487,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -1512,9 +1500,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -1653,7 +1641,7 @@ Array [
         className="c0 modal-container"
         size="sm"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -1683,7 +1671,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -1696,7 +1684,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -1763,9 +1751,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -1778,9 +1764,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -1910,7 +1896,7 @@ Array [
       className="c0 modal-container"
       size="sm"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -1940,7 +1926,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -1953,7 +1939,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -2020,9 +2006,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -2035,9 +2019,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -2133,7 +2117,7 @@ Array [
     className="c0 modal-container"
     size="sm"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -2163,7 +2147,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -2176,7 +2160,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -2243,9 +2227,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -2258,9 +2240,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -2396,7 +2378,7 @@ Array [
       <div
         className="c0 modal-container"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -2426,7 +2408,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -2439,7 +2421,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -2506,9 +2488,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -2521,9 +2501,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -2651,7 +2631,7 @@ Array [
     <div
       className="c0 modal-container"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -2681,7 +2661,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -2694,7 +2674,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -2761,9 +2741,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -2776,9 +2754,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -2873,7 +2851,7 @@ Array [
 <div
     className="c0 modal-container"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -2903,7 +2881,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -2916,7 +2894,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -2983,9 +2961,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -2998,9 +2974,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -3148,7 +3124,7 @@ Array [
         className="c0 modal-container"
         size="lg"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -3178,7 +3154,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -3191,7 +3167,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -3258,9 +3234,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -3273,9 +3247,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -3414,7 +3388,7 @@ Array [
       className="c0 modal-container"
       size="lg"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -3444,7 +3418,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -3457,7 +3431,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -3524,9 +3498,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -3539,9 +3511,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -3646,7 +3618,7 @@ Array [
     className="c0 modal-container"
     size="lg"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -3676,7 +3648,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -3689,7 +3661,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -3756,9 +3728,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -3771,9 +3741,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -3912,7 +3882,7 @@ Array [
         className="c0 modal-container"
         size="md"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -3942,7 +3912,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -3955,7 +3925,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -4022,9 +3992,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -4037,9 +4005,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -4169,7 +4137,7 @@ Array [
       className="c0 modal-container"
       size="md"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -4199,7 +4167,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -4212,7 +4180,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -4279,9 +4247,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -4294,9 +4260,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -4392,7 +4358,7 @@ Array [
     className="c0 modal-container"
     size="md"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -4422,7 +4388,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -4435,7 +4401,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -4502,9 +4468,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -4517,9 +4481,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;
@@ -4658,7 +4622,7 @@ Array [
         className="c0 modal-container"
         size="sm"
       >
-        <Styled(Close)
+        <Styled(SvgClose)
           color="shade.300"
           onClick={[MockFunction]}
         >
@@ -4688,7 +4652,7 @@ Array [
 ",
                   ],
                 },
-                "displayName": "Styled(Close)",
+                "displayName": "Styled(SvgClose)",
                 "foldedComponentIds": Array [],
                 "render": [Function],
                 "styledComponentId": "sc-jzJRlG",
@@ -4701,7 +4665,7 @@ Array [
             forwardedRef={null}
             onClick={[MockFunction]}
           >
-            <Close
+            <SvgClose
               className="c1"
               color="shade.300"
               onClick={[MockFunction]}
@@ -4768,9 +4732,7 @@ Array [
                     onClick={[MockFunction]}
                   >
                     <svg
-                      height="1em"
                       viewBox="0 0 24 24"
-                      width="1em"
                     >
                       <path
                         d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -4783,9 +4745,9 @@ Array [
                   </span>
                 </StyledComponent>
               </styled.span>
-            </Close>
+            </SvgClose>
           </StyledComponent>
-        </Styled(Close)>
+        </Styled(SvgClose)>
       </div>
     </StyledComponent>
   </styled.div>,
@@ -4915,7 +4877,7 @@ Array [
       className="c0 modal-container"
       size="sm"
     >
-      <Styled(Close)
+      <Styled(SvgClose)
         color="shade.300"
         onClick={[MockFunction]}
       >
@@ -4945,7 +4907,7 @@ Array [
 ",
                 ],
               },
-              "displayName": "Styled(Close)",
+              "displayName": "Styled(SvgClose)",
               "foldedComponentIds": Array [],
               "render": [Function],
               "styledComponentId": "sc-jzJRlG",
@@ -4958,7 +4920,7 @@ Array [
           forwardedRef={null}
           onClick={[MockFunction]}
         >
-          <Close
+          <SvgClose
             className="c1"
             color="shade.300"
             onClick={[MockFunction]}
@@ -5025,9 +4987,7 @@ Array [
                   onClick={[MockFunction]}
                 >
                   <svg
-                    height="1em"
                     viewBox="0 0 24 24"
-                    width="1em"
                   >
                     <path
                       d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -5040,9 +5000,9 @@ Array [
                 </span>
               </StyledComponent>
             </styled.span>
-          </Close>
+          </SvgClose>
         </StyledComponent>
-      </Styled(Close)>
+      </Styled(SvgClose)>
     </div>
   </StyledComponent>,
   .c2 {
@@ -5138,7 +5098,7 @@ Array [
     className="c0 modal-container"
     size="sm"
   >
-    <Styled(Close)
+    <Styled(SvgClose)
       color="shade.300"
       onClick={[MockFunction]}
     >
@@ -5168,7 +5128,7 @@ Array [
 ",
               ],
             },
-            "displayName": "Styled(Close)",
+            "displayName": "Styled(SvgClose)",
             "foldedComponentIds": Array [],
             "render": [Function],
             "styledComponentId": "sc-jzJRlG",
@@ -5181,7 +5141,7 @@ Array [
         forwardedRef={null}
         onClick={[MockFunction]}
       >
-        <Close
+        <SvgClose
           className="c1"
           color="shade.300"
           onClick={[MockFunction]}
@@ -5248,9 +5208,7 @@ Array [
                 onClick={[MockFunction]}
               >
                 <svg
-                  height="1em"
                   viewBox="0 0 24 24"
-                  width="1em"
                 >
                   <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
@@ -5263,9 +5221,9 @@ Array [
               </span>
             </StyledComponent>
           </styled.span>
-        </Close>
+        </SvgClose>
       </StyledComponent>
-    </Styled(Close)>
+    </Styled(SvgClose)>
   </div>,
 ]
 `;

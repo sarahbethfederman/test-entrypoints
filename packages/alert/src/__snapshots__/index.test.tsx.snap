@@ -215,7 +215,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
                   <span
                     className="c2"
                   >
-                    <ErrorOutline
+                    <SvgErrorOutline
                       color="error.500"
                     >
                       <styled.span
@@ -275,9 +275,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
                             color="error.500"
                           >
                             <svg
-                              height="1em"
                               viewBox="0 0 24 24"
-                              width="1em"
                             >
                               <path
                                 d="M0 0h24v24H0V0z"
@@ -290,7 +288,7 @@ exports[`Alert should mount Alert component with heading 1`] = `
                           </span>
                         </StyledComponent>
                       </styled.span>
-                    </ErrorOutline>
+                    </SvgErrorOutline>
                   </span>
                 </StyledComponent>
               </styled.span>
@@ -635,7 +633,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
             <span
               className="c1"
             >
-              <ErrorOutline
+              <SvgErrorOutline
                 color="error.500"
               >
                 <styled.span
@@ -695,9 +693,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
                       color="error.500"
                     >
                       <svg
-                        height="1em"
                         viewBox="0 0 24 24"
-                        width="1em"
                       >
                         <path
                           d="M0 0h24v24H0V0z"
@@ -710,7 +706,7 @@ exports[`Alert should mount Alert component without heading 1`] = `
                     </span>
                   </StyledComponent>
                 </styled.span>
-              </ErrorOutline>
+              </SvgErrorOutline>
             </span>
           </StyledComponent>
         </styled.span>

@@ -2,7 +2,7 @@
 **/dist/**/*
 **/icons-compiled/**/*
 **/fancy-icons-compiled/**/*
+**/lender-logos-compiled/**/*
 **/CHANGELOG.md
 **/.vscode/**/*
 *.mdx
-packages/icon/src/index.ts

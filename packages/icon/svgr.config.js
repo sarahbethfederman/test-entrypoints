@@ -3,7 +3,7 @@ const babelPluginWrapper = require('@lendi-ui/babel-plugin-wrapper/src');
 
 module.exports = {
   typescript: true,
-  template: require('./build/template'),
+  template: require('./build-scripts/template'),
   icon: true,
   dimensions: false,
   expandProps: false,
@@ -13,7 +13,7 @@ module.exports = {
         [
           babelPluginWrapper,
           {
-            wrapper: 'LenderLogoWrapper',
+            wrapper: 'IconWrapper',
           },
         ],
       ],
