@@ -1,4 +1,9 @@
 # ignore generated entrypoints
+packages/fancy-icon/**
+!packages/fancy-icon/*
+!packages/fancy-icon/src/**
+!packages/fancy-icon/build/**
+
 packages/lender-logos/**
 !packages/lender-logos/*
 !packages/lender-logos/src/**

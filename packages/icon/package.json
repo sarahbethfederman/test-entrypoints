@@ -3,7 +3,7 @@
   "version": "9.8.0",
   "main": "dist/icon.cjs.js",
   "module": "dist/icon.esm.js",
-  "source": "src/index.ts",
+  "source": "src/index.tsx",
   "files": [
     "dist"
   ],

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 source ./ci/utils/install.sh
+yarn run build:assets 
 
 env=$1;
 
