@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { bg, fg, color } from '@lendi-ui/color';
-import { ChevronRight, ChevronLeft } from '@lendi-ui/icon';
+// import { ChevronRight, ChevronLeft } from '@lendi-ui/icon';
 import { depth } from '@lendi-ui/depth';
 
 import { VerticalNavHeaderProps, VerticalNavTabProps, StyledVerticalNavbarProps } from '../types';
@@ -27,14 +27,14 @@ export const StyledVerticalNavExpander = styled.div`
   cursor: pointer;
 `;
 
-export const ExpandChevron = styled(ChevronRight)`
+export const ExpandChevron = styled.span`
   ${bg('secondary.300')};
   border-radius: 10px;
   width: 20px;
   height: 20px;
 `;
 
-export const CollapseChevron = styled(ChevronLeft)`
+export const CollapseChevron = styled.span`
   ${bg('secondary.300')};
   border-radius: 10px;
   width: 20px;

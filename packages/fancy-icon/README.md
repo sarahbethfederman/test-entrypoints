@@ -22,6 +22,14 @@ import { Relax } from '@lendi-ui/fancy-icon';
 <Relax />;
 ```
 
+or
+
+```jsx
+import Relax from '@lendi-ui/fancy-icon/Relax';
+
+<Relax />;
+```
+
 ## Properties
 
 ```

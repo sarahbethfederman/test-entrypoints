@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-source ./ci/utils/install.sh
+# source ./ci/utils/install.sh
 
-yarn run lint
+# yarn run lint

@@ -5,8 +5,17 @@
   "module": "dist/icon.esm.js",
   "source": "src/index.tsx",
   "files": [
-    "dist"
+    "dist",
+    "*",
+    "!(src|build-scripts|node_modules)"
   ],
+  "preconstruct": {
+    "entrypoints": [
+      ".",
+      "*",
+      "!(dist|src|build-scripts|node_modules)"
+    ]
+  },
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",
