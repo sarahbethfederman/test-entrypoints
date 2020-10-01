@@ -1,5 +1,11 @@
 ## [8.1.0] 2020-04-17 [AC-126](https://creditandfinance.atlassian.net/browse/AC-126)
 
+## 8.2.9
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+
 ## 8.2.8
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # Changelog - @lendi-ui/partner-logo
 
+## 2.2.1
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- a3be1ff2: moved babel plugin to new package
+
 ## 2.2.0
 
 ### Minor Changes

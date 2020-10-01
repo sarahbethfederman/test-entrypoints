@@ -1,5 +1,13 @@
 ## [3.3.0] - 2020-05-19 - [LUIT-157](https://creditandfinance.atlassian.net/browse/LUIT-157)
 
+## 3.4.2
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- Updated dependencies [a3be1ff2]
+  - @lendi-ui/icon@9.8.0
+
 ## 3.4.1
 
 ### Patch Changes

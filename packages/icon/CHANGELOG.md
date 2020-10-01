@@ -1,5 +1,11 @@
 ## [9.6.2] - 2020-09-02 - [SUB-609][https://creditandfinance.atlassian.net/browse/sub-609]
 
+## 9.8.0
+
+### Minor Changes
+
+- a3be1ff2: moved icon to new build system
+
 ## 9.7.5
 
 ### Patch Changes

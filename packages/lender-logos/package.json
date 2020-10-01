@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/lender-logos",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/lender-logos.cjs.js",
   "module": "dist/lender-logos.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "sideEffects": false,

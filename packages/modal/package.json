@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/modal",
-  "version": "3.4.1",
+  "version": "3.4.2",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/modal.cjs.js",
   "module": "dist/modal.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -21,7 +19,7 @@
     "@lendi-ui/breakpoint": "^5.2.1",
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/depth": "^4.1.1",
-    "@lendi-ui/icon": "^9.7.1",
+    "@lendi-ui/icon": "^9.8.0",
     "@lendi-ui/overlay": "^3.2.1",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/transition": "^4.1.1",

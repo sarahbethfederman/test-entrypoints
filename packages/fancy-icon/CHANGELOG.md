@@ -1,5 +1,15 @@
 ## [3.0.3] - 2019-03-20
 
+## 3.2.0
+
+### Minor Changes
+
+- a3be1ff2: moved fancy-icon to new build
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+
 ## 3.1.1
 
 ### Patch Changes

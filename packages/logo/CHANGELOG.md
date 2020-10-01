@@ -1,5 +1,13 @@
 ## [6.1.1] - 2020-08-18 - [SUB-461][https://creditandfinance.atlassian.net/browse/sub-461]
 
+## 6.2.2
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- Updated dependencies [a3be1ff2]
+  - @lendi-ui/icon@9.8.0
+
 ## 6.2.1
 
 ### Patch Changes

@@ -1,12 +1,10 @@
 {
   "name": "@lendi-ui/fancy-icon",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "main": "dist/fancy-icon.cjs.js",
   "module": "dist/fancy-icon.esm.js",
   "source": "src/index.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",

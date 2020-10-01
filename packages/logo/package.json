@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/logo",
-  "version": "6.2.1",
+  "version": "6.2.2",
   "description": "The logo.",
   "source": "src/index.tsx",
   "main": "dist/logo.cjs.js",
   "module": "dist/logo.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "license": "ISC",
   "peerDependencies": {
     "@lendi-ui/theme": "^9.1.0",
@@ -20,7 +18,7 @@
   },
   "dependencies": {
     "@lendi-ui/color": "^5.1.1",
-    "@lendi-ui/icon": "^9.7.1"
+    "@lendi-ui/icon": "^9.8.0"
   },
   "devDependencies": {
     "@lendi-ui/theme": "*",

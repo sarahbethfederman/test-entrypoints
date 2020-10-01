@@ -1,13 +1,11 @@
 {
   "name": "@lendi-ui/date-picker",
-  "version": "4.1.4",
+  "version": "4.1.5",
   "license": "ISC",
   "source": "src/index.tsx",
   "main": "dist/date-picker.cjs.js",
   "module": "dist/date-picker.esm.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "keywords": [],
   "author": "Lendi Devs",
   "peerDependencies": {
@@ -21,7 +19,7 @@
     "@lendi-ui/breakpoint": "^5.2.1",
     "@lendi-ui/color": "^5.1.1",
     "@lendi-ui/field": "^3.1.4",
-    "@lendi-ui/icon": "^9.7.5",
+    "@lendi-ui/icon": "^9.8.0",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/utils": "^5.1.1"
   },

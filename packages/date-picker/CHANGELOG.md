@@ -1,5 +1,13 @@
 ## [4.0.1] 2019-09-26 [Release Notes](https://creditandfinance.atlassian.net/wiki/spaces/HUB/pages/803930391/Upcoming+Major+Changes)
 
+## 4.1.5
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- Updated dependencies [a3be1ff2]
+  - @lendi-ui/icon@9.8.0
+
 ## 4.1.4
 
 ### Patch Changes

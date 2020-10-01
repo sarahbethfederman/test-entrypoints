@@ -1,5 +1,13 @@
 ## [4.0.2] - 2019-09-27 - [HUB-590](https://creditandfinance.atlassian.net/browse/HUB-590)
 
+## 4.1.2
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- Updated dependencies [a3be1ff2]
+  - @lendi-ui/icon@9.8.0
+
 ## 4.1.1
 
 ### Patch Changes

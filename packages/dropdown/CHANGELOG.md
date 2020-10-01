@@ -1,5 +1,13 @@
 ## [4.1.0] - 2019-04-22 - [FUNNEL-1237](https://creditandfinance.atlassian.net/browse/FUNNEL-1237)
 
+## 4.2.5
+
+### Patch Changes
+
+- a3be1ff2: moved icon to new build system
+- Updated dependencies [a3be1ff2]
+  - @lendi-ui/icon@9.8.0
+
 ## 4.2.4
 
 ### Patch Changes
