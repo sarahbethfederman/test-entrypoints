@@ -1,0 +1,7 @@
+{
+  "name": "@lendi-ui/asset-utils",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/asset-utils.cjs.js",
+  "source": "src/index.js"
+}

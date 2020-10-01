@@ -4,7 +4,9 @@
   "main": "dist/icon.cjs.js",
   "module": "dist/icon.esm.js",
   "source": "src/index.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "Lendi Devs",
   "license": "ISC",
@@ -18,7 +20,7 @@
   },
   "devDependencies": {
     "@babel/register": "^7.11.5",
-    "@lendi-ui/babel-plugin-wrapper": "^1.0.0",
+    "@lendi-ui/asset-utils": "^1.0.0",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/theme": "*",
     "@lendi-ui/typography": "^5.1.4",

@@ -1,6 +1,6 @@
 // note: https://github.com/preconstruct/preconstruct/issues/324
 require('@babel/register')({ extensions: ['.tsx', '.ts', '.js'], rootMode: 'upward-optional' });
-const babelPluginWrapper = require('@lendi-ui/babel-plugin-wrapper/src');
+const babelPluginWrapper = require('@lendi-ui/asset-utils/src/babel-plugin-wrapper');
 
 module.exports = {
   typescript: true,
