@@ -1,1 +1,4 @@
-export const babelWrapper = require('./babel-plugin-wrapper');
+module.exports = {
+  babelPluginWrapper: require('./babel-plugin-wrapper'),
+  generateEntrypoints: require('./generate-entrypoints'),
+};

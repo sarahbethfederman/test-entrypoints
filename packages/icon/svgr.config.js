@@ -1,5 +1,4 @@
-require('@babel/register')({ extensions: ['.tsx', '.ts', '.js'], rootMode: 'upward-optional' });
-const babelPluginWrapper = require('@lendi-ui/asset-utils/src/babel-plugin-wrapper');
+const babelPluginWrapper = require('@lendi-ui/asset-utils').babelPluginWrapper;
 
 module.exports = {
   typescript: true,

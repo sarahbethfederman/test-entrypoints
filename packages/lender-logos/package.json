@@ -6,8 +6,17 @@
   "main": "dist/lender-logos.cjs.js",
   "module": "dist/lender-logos.esm.js",
   "files": [
-    "dist"
+    "dist",
+    "*",
+    "!(src|build|node_modules)"
   ],
+  "preconstruct": {
+    "entrypoints": [
+      ".",
+      "*",
+      "!(dist|src|build|node_modules)"
+    ]
+  },
   "keywords": [],
   "author": "Lendi Devs",
   "sideEffects": false,
@@ -30,7 +39,9 @@
     "@lendi-ui/utils": "^5.1.1"
   },
   "scripts": {
+    "format:entrypoints": "prettier --write '**/package.json' --loglevel silent",
+    "build:entrypoints": "node build/generate-entrypoints.js",
     "build:svg": "yarn svgr --silent --out-dir src/lender-logos-compiled src/lender-logos",
-    "build": "yarn run build:svg"
+    "build": "yarn run build:svg && yarn run build:entrypoints && yarn run format:entrypoints"
   }
 }

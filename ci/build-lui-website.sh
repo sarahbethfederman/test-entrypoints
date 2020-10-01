@@ -36,6 +36,5 @@ export ENVIRONMENT=$env
 export TAG=$tag
 export NODE_ENV=production
 
-yarn build:assets
 yarn run build:website
 

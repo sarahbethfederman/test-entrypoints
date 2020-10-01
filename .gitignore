@@ -1,3 +1,9 @@
+# ignore generated entrypoints
+packages/lender-logos/**
+!packages/lender-logos/*
+!packages/lender-logos/src/**
+!packages/lender-logos/build/**
+
 .DS_Store
 lerna-debug.log
 **/coverage/*

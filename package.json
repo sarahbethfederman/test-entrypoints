@@ -97,7 +97,7 @@
     "prebuild": "yarn build:assets",
     "precommit": "yarn run format:fix && yarn run test -o",
     "prepush": "yarn run remove:duplicates && yarn run check",
-    "postinstall": "yarn build:assets && preconstruct dev",
+    "postinstall": "preconstruct dev",
     "remove:duplicates": "yarn-deduplicate",
     "start": "yarn workspace @lendi-ui/website run start",
     "test": "preconstruct dev && jest",
