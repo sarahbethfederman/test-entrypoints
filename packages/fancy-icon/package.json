@@ -28,7 +28,6 @@
     "styled-components": "^4"
   },
   "devDependencies": {
-    "@babel/register": "^7.11.5",
     "@lendi-ui/asset-utils": "^1.0.0",
     "@lendi-ui/spacing": "^7.1.1",
     "@lendi-ui/theme": "*",
