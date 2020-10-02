@@ -1,0 +1,24 @@
+{
+  "name": "@monorepo-starter/icon",
+  "version": "1.0.0",
+  "main": "dist/icon.cjs.js",
+  "module": "dist/icon.esm.js",
+  "files": [
+    "dist",
+    "*",
+    "!(src|build-scripts|node_modules)"
+  ],
+  "preconstruct": {
+    "entrypoints": [
+      ".",
+      "*",
+      "!(dist|src|build-scripts|node_modules)"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "scripts": {
+    "build": "node build-scripts/generate.js"
+  }
+}
